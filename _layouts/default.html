@@ -20,6 +20,11 @@
           <summary>Lessons</summary>
           {% include lesson-list.html %}
         </details>
+        <script>
+          if (window.matchMedia("(max-width: 56rem)").matches) {
+            document.querySelector(".course-navigation").open = false;
+          }
+        </script>
       </aside>
       <main id="main" tabindex="-1">
         {{ content }}
