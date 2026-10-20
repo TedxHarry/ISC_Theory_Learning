@@ -141,14 +141,14 @@ FND-001 is the existing foundation pilot for identities and accounts, now review
 - 3.2 [Virtual Appliances and clusters: their place in a connection](lessons/ARC-002_Virtual_Appliances_and_Clusters.md).
 - 3.3 [SaaS connectors and their connection path](lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md).
 - 3.4 [Where IQService fits when a connector requires it](lessons/ARC-004_Where_IQService_Fits.md).
-- 3.5 Network reachability, authentication, permissions, and operation support.
+- 3.5 [Network reachability, authentication, permissions, and operation support](lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md).
 - 3.6 How UI actions, APIs, and automation interact with platform capabilities.
 - 3.7 Signing into ISC, external identity providers, and source password operations.
 - 3.8 Requesting work, executing work, and observing completion.
 
 **Outcome:** Locate an operation's execution boundary and identify the dependencies needed for it to work.
 
-ARC-001 is the authored Module 3.1 lesson on tenant, service, customer, and connected-system responsibilities. ARC-002 is the authored Module 3.2 lesson on VA/cluster execution, communication, health, and recovery boundaries. ARC-003 is the authored Module 3.3 lesson on SaaS connector execution, external API authority, read/write flows, evidence, and migration boundaries. ARC-004 is the authored Module 3.4 lesson on IQService's operation-specific Windows role, secured connection and credential boundaries, evidence, and shared-service dependencies. Lessons 3.5-3.8 remain planned.
+ARC-001 is the authored Module 3.1 lesson on tenant, service, customer, and connected-system responsibilities. ARC-002 is the authored Module 3.2 lesson on VA/cluster execution, communication, health, and recovery boundaries. ARC-003 is the authored Module 3.3 lesson on SaaS connector execution, external API authority, read/write flows, evidence, and migration boundaries. ARC-004 is the authored Module 3.4 lesson on IQService's operation-specific Windows role, secured connection and credential boundaries, evidence, and shared-service dependencies. ARC-005 is the authored Module 3.5 lesson on connection dependencies, operation-specific support/authority/input, failure evidence, and outcome recovery. Lessons 3.6-3.8 remain planned.
 
 Connection diagrams follow the documented distinction between VA-based and SaaS connectivity. They must not imply that every connector uses a VA. [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html)
 

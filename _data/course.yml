@@ -135,3 +135,11 @@ lessons:
     source: "lessons/ARC-004_Where_IQService_Fits.md"
     url: "/lessons/ARC-004_Where_IQService_Fits.html"
     description: "Trace Windows-side connector work, distinct credential roles, secured connections, and operation evidence."
+
+  - id: ARC-005
+    module: architecture
+    placement: "Module 3.5"
+    title: "Connection dependencies and operation support"
+    source: "lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md"
+    url: "/lessons/ARC-005_Connection_Dependencies_and_Operation_Support.html"
+    description: "Distinguish reachability, trust, caller authority, capability, valid input, and evidence of the actual outcome."

@@ -1,0 +1,8 @@
+VA-based API operation
+[ISC] -> [VA connector work] -> [Target API]
+
+SaaS connector operation
+[ISC: hosted connector work] -> [Target API]
+
+Applicable IQService operation
+[ISC] -> [VA] -> [IQService] -> [Target]

@@ -1,0 +1,16 @@
+[Exact operation + intended result identified]
+                      |
+                      v
+[Actual path and relevant evidence located]
+                      |
+                      v
+[Enough evidence for a scoped next action?]
+       | no                      | yes
+       v                         v
+[Get missing evidence]    [Validate scoped action]
+       |                         |
+       v                         v
+[Reassess evidence]       [Recover or reconcile]
+                                 |
+                                 v
+                         [Verify target outcome]

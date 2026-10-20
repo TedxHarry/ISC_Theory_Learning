@@ -105,6 +105,14 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Native after-script result | Result of supported IQService customization following request processing | After execution isn't proof of primary provisioning success, universal rollback, or a cloud-rule execution guarantee |
 | UpdateService | Companion service for supported IQService software updates | Automatic-update capability requires configured supported arrangement; host maintenance, credentials, trust, validation and shared-service impact remain |
 | Shared IQService dependency | More than one source or VA path relies on the same Windows-side endpoint | VA cluster redundancy doesn't create an alternative IQService instance or guarantee every operation survives maintenance |
+| Connection-test scope | Checks implemented by the selected connector under the tested configuration and time | Successful test isn't every read/write, correct external destination, current future connectivity or verified business access |
+| Runtime-relative reachability | Required service can be contacted from the actual execution environment over its configured path | A laptop or different VA member isn't an interchangeable test; cloud communication and target communication are separate |
+| Gateway / error origin | Intermediary controlling or forwarding requests / component that produced a reported failure | Response number alone doesn't identify the target, account, missing role, or whether work was forwarded |
+| Operation dependency map | Relevant destination, supported configuration, protected path, accepted caller, resource authority, valid input and target conditions must fit | Not a fixed packet order or private execution sequence; pre-call validation and target-side refusal are different possible boundaries |
+| Payload / mapping | Information carried in an operation request / connection between represented input and required destination field | Valid credentials don't supply a missing workspace/account value or make a label the target key |
+| HTTP response scope | Status plus origin, context and detail classify a response | 400/401/403 aren't unique root-cause diagnoses; 407 concerns proxy admission; 429 concerns rate limiting, not an immediate-repeat guarantee |
+| Idempotent operation | Repeating equivalent requests has the same intended target effect as one request | Not universal connector behavior, identical responses, no logging/side effects, or permission to blindly retry unknown outcomes |
+| Repair / reconciliation / target verification | Restore prerequisite / establish and recover actual work outcome / check intended target state | One doesn't establish the other; timeout and older collected state don't prove no change |
 
 ## Source anchors
 

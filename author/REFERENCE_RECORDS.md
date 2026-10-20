@@ -866,6 +866,72 @@ Questions and worked reasoning stay in the learner file. Source references, asse
 
 Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent, and review limitations stay outside it.
 
+## ARC-005
+
+- Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
+- Course placement: Module 3.5.
+- Documentation checked: October 20, 2026; current official VA network/proxy requirements, source/SaaS definitions, connector capability/authorization examples, account schema, provisioning evidence and primary HTTP semantics references reviewed. Supporting IQService, identity/account/access-profile and source-correlation meanings retain earlier checks on the same date.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 35005, OrderDesk, orders-35005, svc-order-isc, orders.export, Orders-Prod, source/cluster/VA names, audit and network incidents, and ResearchArchive are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: operational dependency reasoning and evidence across actual runtime paths, not a full network/protocol course, connector setup runbook, universal API error dictionary, or private platform execution algorithm.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [VA system and network requirements](https://documentation.sailpoint.com/saas/help/va/requirements_va.html) | Relevant runtime's DNS, time synchronization, required cloud and target connectivity, target-specific ports and private-CA/inspection trust conditions. The lesson doesn't freeze changeable endpoint/IP/port lists or treat cloud connectivity as a target test. |
+| [VA configuration](https://documentation.sailpoint.com/saas/help/va/config_va.html) | HTTP proxy route includes applicable source HTTP/HTTPS traffic; actual configuration and supported exceptions matter. Proxy admission differs from target admission. No proxy credentials, bootstrap commands, bypass changes or unrestricted firewall opening are prescribed. |
+| [VA deployment](https://documentation.sailpoint.com/saas/help/va/deploy_va.html) and [management](https://documentation.sailpoint.com/saas/help/va/manage_va.html) | Source-to-cluster/member execution and health scope retained from ARC-002. Main member selection is supplied evidence, not a fixed worker algorithm. A different VA or laptop check isn't substituted for the actual member. |
+| [Sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Configured source versus connector, VA versus SaaS mode, and read-only versus write-capable options. A source label or successful read doesn't create capability, destination correctness or target authority. |
+| [SaaS connectivity](https://developer.sailpoint.com/docs/connectivity/saas-connectivity/) | Hosted connector runtime and no customer VA for that supported path; cloud-hosted business application doesn't by itself select mode or supply private API reachability. No generic direct-cloud inspection tool is assumed. |
+| [IQService introduction](https://documentation.sailpoint.com/connectors/iqservice/help/integrating_iqservice_admin/intro.html), [prerequisites](https://documentation.sailpoint.com/connectors/iqservice/help/integrating_iqservice_admin/system_requirements.html), and [TLS/client authentication](https://documentation.sailpoint.com/connectors/iqservice/help/common/topics/configuring_tls_and_client_authentication_for_iqservice.html) | Supporting operation-specific Windows leg, source/client/process credential roles, separate trust and client registration boundaries verified in ARC-004. IQService isn't used in the main OrderDesk path. The alternate case supplies corrected TLS followed by an unregistered-client refusal; no universal check order or full handshake is claimed. |
+| [Google Workspace SaaS prerequisites](https://documentation.sailpoint.com/connectors/saas/googleworkspace/help/saas_connectivity/google_workspace/prerequisites.html) | Concrete external authorization-context example: scopes alone don't describe all effective permission conditions; consent, roles and applicable user/impersonation context matter. Google-specific roles or additional product licensing aren't generalized to every connector. |
+| [Salesforce SaaS features](https://documentation.sailpoint.com/connectors/saas/salesforce/help/saas_connectivity/salesforce/supported_features.html) | Exact-operation/account-type support and activation conditions; enable/disable exception for portal and partner users. This short example isn't a timeless feature table or a recommendation to change Salesforce settings. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Represented fields, designated account identifier and input interpretation. A display label isn't automatically an operation key. No schema designation changes or runnable operation payloads are proposed. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) and [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Source/recipient/action/progress/result/error context and supported access-changing work versus represented reads. The lesson distinguishes repaired dependencies, recovered/reconciled work and verified target outcomes; it doesn't promise immediate refresh, rollback or universal retries. |
+| [HTTP semantics, RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html), sections 3.7, 9.2.2, 15.5.1, 15.5.2, 15.5.4 and 15.5.8 | Supporting intermediary, idempotence and 400/401/403/407 meanings. These classify responses, not unique ISC root causes. Fictional error details and known target effects supply the case conclusions; protocol definitions aren't connector recovery instructions. |
+| [Additional HTTP codes, RFC 6585](https://www.rfc-editor.org/rfc/rfc6585.html), section 4 | Supporting 429 rate-limit meaning only. No universal retry delay, counter, immediate-repeat guarantee or claim that every target uses this code. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) and [access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Supporting ownership association and single-source access bundle retain earlier documentation checks. Main correlation, approval, account choice and automatic provisioning eligibility are explicit example assumptions, not an account-selection or lifecycle algorithm. |
+
+### Conditions and limits
+
+- Devi, employee 35005, already has correctly correlated orders-35005. She can view summaries but requires the distinct orders.export entitlement. Export order summaries contains only that entitlement on OrderDesk Production in Orders-Prod.
+- The main hypothetical connector supports automatic assignment to the existing account. No real OrderDesk connector is claimed. No account creation, custom script or IQService leg is required in this example.
+- C-Order-Prod has va-order-01/va-order-02. Supplied evidence identifies member 02 and a direct production API route for the main attempt. An alternate proxy case is a different deployment, not a hidden route change in the main incident.
+- svc-order-isc is the external integration actor. It is distinct from the recipient, an ISC administrator and a caller of ISC's own API. No token value, password, secret key, real endpoint or executable command is supplied.
+- Destination, resolution/reachability, protected service identity, accepted caller, resource-specific authority, supported connector/configuration and valid target inputs are related prerequisites. The table isn't a universal sequence; connector rejection can occur before target contact.
+- The main audit explicitly identifies the caller, workspace, account and missing permission-assignment privilege, and confirms absent export access. The correct narrow conclusion relies on those supplied facts, not green connection/read status.
+- The DNS case supplies member-specific failure before any target session; the proxy case supplies origin and no forwarding; the invalid-input case supplies precise 400 validation detail and no applied change. Those facts aren't inferred from generic error codes or absence of logs.
+- HTTP status numbers don't universally identify the responder, accepted credential, missing role, account or completed effect. IQService and directory messages aren't reduced to HTTP codes.
+- The two-leg IQService example preserves the distinction between corrected trust, registered-client admission and target authority. Required security remains enabled; no credential reset is inferred from unrelated reachability evidence.
+- The timeout case explicitly supplies target audit/current state establishing applied access. No automatic rollback, identical retry response or universal idempotence follows. Current collected ISC data, reported operation state and actual target state remain separate.
+- Rate limiting and repeated-work behavior follow the selected connector/target documentation. The lesson doesn't issue unsupported blanket retries, timing estimates or schedule changes.
+- ResearchArchive is a separate fictional design case. A read-only SaaS source's established reads don't implement target disable; appropriate supported capability/configuration, destination, authority and outcome evidence must be obtained before approving the design.
+- Ownership and handoffs depend on the actual organization. Relevant error context is shared without secrets or unrestricted sensitive trace files. No real incident response, network change or API invocation occurred.
+- Current official naming includes Identity Services / Human Fabric. ISC remains the requested course name. Feature visibility/downloads aren't license promises.
+
+### Diagrams and review checks
+
+- [Runtime paths](../assets/ARC-005_runtime_paths.txt): selected VA API, hosted SaaS connector and applicable IQService work relationships; not all possible protocols or packet routes.
+- [Evidence and recovery](../assets/ARC-005_evidence_and_recovery.txt): human investigation decisions; insufficient evidence returns to assessment, while a justified scoped action leads to recovery/reconciliation and target verification.
+- Assets match inline text exactly. Maximum line widths are 44 and 50 characters. Captions explain returning results, outbound VA initiation, omitted implementation detail and the distinction between investigation and platform execution.
+- Local/live checks separately verify complete prose, tables, diagrams, headings, placement and navigation. These aren't beginner comprehension or tenant-execution tests.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Main denied-export trace | Narrow diagnosis from operation/caller/resource facts | Supplied production audit establishes missing integration privilege; validate scoped correction and recover/verify change | Green test/read proves write privilege; recipient password or DNS explains explicit target denial | Authorization examples; monitoring; supplied audit |
+| Member-specific resolution | Actual runtime and pre-contact defect | Inspect member 02's configured hostname/resolver path; retain security; recover and verify | Laptop/other-member resolution proves all members; target password repairs DNS | VA network/deployment requirements |
+| Corrected TLS, unregistered client | More than one prerequisite can fail | TLS passed for new attempt; repair approved IQService client admission, not unrelated target authority | New downstream refusal means first correction was wrong | IQService TLS/client authentication and role distinctions |
+| Missing workspace input | Valid authority versus invalid request data | Supplied 400 detail identifies mapping/value requirement; validate correct input | Every client error is credential rejection; privileges supply missing fields | Schema/mapping meanings; HTTP semantics; supplied validation facts |
+| Proxy 407 | Error origin and distinct admission contexts | Examine supported proxy authentication/path; no target-token reset inferred | Every authentication-looking error belongs to the target | VA proxy configuration; HTTP 407 semantics |
+| Applied change, lost response | Actual effect versus recorded timeout/older data | Supplied target evidence establishes assignment; reconcile tracked work and collected view without blind repeat | Timeout/older represented view proves no effect or automatic rollback | Monitoring; idempotence semantics; supplied target evidence |
+| Read-only project transfer | Capability-first design reasoning | Existing reads are established; obtain supported exact-operation/account-type path and authority/input/outcome validation | Administrator credentials add missing connector functionality; one green test approves a new write design | Source read-only definitions; capability and authorization examples |
+
+Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-004
 
 - Lesson: [ARC-004](../lessons/ARC-004_Where_IQService_Fits.md), revision 1.0.
