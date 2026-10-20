@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Nine complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; and **FND-003, Account, identity, and entitlement attributes**, revision 1.0.
+The course design and teaching specification are saved. Ten complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; and **FND-004, Entitlements, access profiles, and roles**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. It does not mean that Module 1, Module 2, or the whole course is complete.
 
-The current lesson is FND-003. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is FND-004. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 2.3, FND-003. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 2.4, FND-004. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -30,6 +30,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [FND-001: Identity and account](lessons/FND-001_Identity_and_Account.md) | Complete learner-facing foundation pilot | Revision 1.3 saved; review details below |
 | [FND-002: Sources, connectors, and the systems they connect to](lessons/FND-002_Sources_Connectors_and_Connected_Systems.md) | Complete learner-facing lesson for Module 2.2 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [FND-003: Account, identity, and entitlement attributes](lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md) | Complete learner-facing lesson for Module 2.3 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [FND-004: Entitlements, access profiles, and roles](lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md) | Complete learner-facing lesson for Module 2.4 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -320,9 +321,29 @@ The lesson introduces authoritative-source and identity-profile roles only as ne
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read FND-003 and apply feedback to this same file; then author Module 2.4 |
+| Next action | Preserve FND-003 for further feedback and learner validation; FND-004 was authored following the user's instruction to continue |
 
 The lesson distinguishes a membership-bearing account field marked Entitlement from attributes of an entitlement record. Attribute sync and the FIN-to-Finance transform are explained only to trace value origin and direction; full configuration mechanics remain in their primary lessons. No input snippet is presented as a runnable command or universal connector payload.
+
+### FND-004
+
+| Field | FND-004 |
+|---|---|
+| Title | Entitlements, access profiles, and roles: how the access objects fit together |
+| File | [FND-004_Entitlements_Access_Profiles_and_Roles.md](lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md) |
+| Course placement | Module 2.4 |
+| Revision | 1.0 |
+| Content status | Complete authored lesson with source entitlements, single-source bundles, a cross-source role with direct entitlement, assignment criteria, definition/delivery distinctions, partial outcome and detection variations, removal/deletion cautions, six worked cases, and a transfer exercise |
+| Author review | Revision 1.0 reviewed against teaching specification v2.6 on October 20, 2026; independent context, first-use explanations, source boundaries, role contents, assignment conditions, evidence limits, diagram consistency, and narration checked |
+| Documentation check | October 20, 2026; official role, access-profile, assignment, request, entitlement, processing, and monitoring references mapped in author records |
+| Diagram sources | [Access-object relationships](assets/FND-004_access_object_relationships.txt), [assignment conditions](assets/FND-004_assignment_conditions.txt), and [assignment/delivery flow](assets/FND-004_assignment_and_delivery.txt); synchronized with the three inline text blocks |
+| Tenant execution | Not performed; employee 24004, accounts, source names, entitlement names, work requirement, and outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read FND-004 and apply feedback to this same file; then author Module 2.5 |
+
+This introductory map does not require every role entitlement to pass through an access profile. The example uses ordinary provisioned access, existing accounts, one relevant account per source, and no alternate grants in the successful path. Native application roles, ownership, detected bundles, overlapping role requirements, and definition deletion remain distinct from assignment and actual target operations. Detailed access-model mechanics remain in Modules 10-12.
 
 ## Source-citation relocation
 
@@ -334,17 +355,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-The first three Module 2 lessons are authored: FND-001 has been reviewed in its course position, followed by FND-002 and FND-003. Learner validation and formal publication review remain separate pending stages.
+The first four Module 2 lessons are authored: FND-001 has been reviewed in its course position, followed by FND-002, FND-003, and FND-004. Learner validation and formal publication review remain separate pending stages.
 
-The next new lesson is Module 2.4:
+The next new lesson is Module 2.5:
 
-**Entitlements, access profiles, and roles: an initial relationship map and example.**
+**Sources, access applications, catalogs, and sign-in experiences.**
 
-- Reserved permanent ID: `FND-004`.
-- Planned file: `lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md`.
+- Reserved permanent ID: `FND-005`.
+- Planned file: `lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md`.
 - Status: planned only; no lesson file created.
-- Scope: what each access object represents, single-source access profiles, roles containing profiles and direct entitlements, how identity/account/source relationships connect to those objects, and why definition, assignment, and delivered access are different evidence. Detailed access-model mechanics remain in Modules 10-12.
-- Resolve known feedback on FND-003 before opening the next writing task.
+- Scope: external enterprise application versus ISC source and access application, how access is organized and made available to request, what a learner-facing item represents, and why catalog visibility, requested/granted access, and application sign-in are separate. Detailed request and authentication configuration remain in their primary lessons.
+- Resolve known feedback on FND-004 before opening the next writing task.
 
 ## Recording review status
 
@@ -385,3 +406,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Applied the supplied review selectively: independent example identifiers, SYS-001 text flow, clearer certification vocabulary and LCS shorthand, introductory sign-in scope, module placement, and teaching specification v2.6; current SYS revisions updated | Sources remain outside learner lessons by user instruction; only named technical claims were freshly checked; no tenant testing or learner validation |
 | October 20, 2026 | Reviewed FND-001 revision 1.3 in course order without changing its teaching body; authored and reviewed FND-002 revision 1.0 with read/write boundaries, source/connector distinctions, file-age reasoning, and five worked cases; updated working-edition navigation and reserved FND-003 | Documentation-based author review with selected FND-001 mechanisms rechecked; no tenant testing, learner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed FND-003 revision 1.0 with account/identity/entitlement attribute distinctions, calculated-value and write paths, membership-reference diagrams, typed/missing input reasoning, and five worked cases; updated navigation and reserved FND-004 | Documentation-based author review; fictional records and outcomes; no tenant testing, beginner validation, or formal publication approval |
+| October 20, 2026 | Authored and reviewed FND-004 revision 1.0 with access-object relationships, direct role entitlements, criteria-to-delivery flow, preexisting-access detection, partial outcomes, overlapping role access and definition-deletion distinctions; added six worked cases and updated navigation; reserved FND-005 | Documentation-based author review; fictional records and outcomes; no tenant testing, beginner validation, or formal publication approval |

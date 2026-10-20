@@ -33,6 +33,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Entitlement | An access item represented from a source, such as a permission or group membership | The external system determines its operational meaning |
 | Access profile | A bundle of related entitlements from one source | Detection/assignment and original delivery history must not be conflated |
 | Role | An access grouping whose assignment represents required access for a responsibility or population | Criteria, requested assignment, and fulfilled target access are different evidence |
+| Direct entitlement in a role | A source entitlement included in the role without an access-profile intermediary | It still uses supported source/account fulfillment; it is not a bypass or the same as a direct-permissions schema type |
+| Access assignment | Association of access with its recipient under applicable configuration or a request | Definition, assignment, delivery, and current target state are separate |
+| Access-profile detection | Recognition during processing that held access matches the profile's entitlement contents | It does not prove ISC originally granted the permissions or a broader role was assigned |
+| Requestable | Available to request under the configured process | It does not establish approval or successful delivery |
+| Access-object owner | Person assigned responsibility for an access-model object | Ownership does not automatically confer that object's access |
+| Revocation versus definition deletion | Removing an applicable access assignment versus removing its model object | Role disablement/deletion and access-profile deletion do not deprovision previously granted access |
 | Access request | Asking for specified access for a specified recipient | Request, approval, and delivered access are separate |
 | Provisioning | Carrying out supported account or access changes | Initiation or processing completion does not validate target success |
 | Deprovisioning | Removing previously granted account access or permissions through the applicable operation | A permission removal need not delete the account or end every session |

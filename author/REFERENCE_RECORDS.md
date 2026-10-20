@@ -541,3 +541,71 @@ Worked answers and supplied facts remain in the learner lesson. The metadata abo
 | Chosen-field transfer | Independent object/value tracing | Identify owning object, source record, type/shape, input and configured calculation/write; predict only what the changed condition supports | A field label or memorized definition establishes the complete value flow | Mapped sources within their stated conditions |
 
 Questions and worked answers remain in the learner lesson. Assessment metadata and official links remain outside the reading site.
+
+## FND-004
+
+- Lesson: [FND-004](../lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md), revision 1.0.
+- Course placement: Module 2.4.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the introductory relationship scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 24004, inv-24004, dir-24004, Invoice-System, Corporate-Directory, permission values, role/profile names, assignment conditions, and outcomes are fictional.
+- Learner validation and formal publication approval: pending; working-edition deployment is a separate state.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Entitlements represent source access; they can be grouped in profiles or included directly in roles. Real effects and supported types come from the external system and connector, not an ISC display name. |
+| [Access overview](https://documentation.sailpoint.com/saas/help/access/index.html) | Single-source access-profile purpose and access-management context. The overview's older role wording is not used to exclude directly included entitlements documented by Managing Roles. |
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Single entitlement source and at least one entitlement; profile detection from held contents; applicable automatic multiple-account criteria; deletion does not deprovision previous entitlements and requires removing provisioning references. Main example has one account per source and no activation-dependent access. |
+| [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Provisioning service required; standard role contents can include access profiles and direct entitlements across sources; configured ownership differs from holding access; applying changes; retained overlapping entitlements through another assigned role; disabling/deleting a role does not deprovision previous access. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Criteria, identity-list and request paths, enabled role and applicable processing, AND semantics, automatic criteria removal, and account retention after entitlement revocation. The supplied criteria illustrate logic rather than a complete production eligibility policy. |
+| [Managing requests for roles and access profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Requestability and configured review; request-based role assignment can serve users outside automatic assignment criteria. No universal manager approval is asserted. |
+| [Configuring entitlement requests](https://documentation.sailpoint.com/saas/help/requests/config_entitlements.html) | Supporting requestability of applicable individual entitlements; no blanket assertion that every entitlement is requestable or every tenant has the required service/configuration. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Applicable processing evaluates role assignment and can initiate access changes; processing does not validate successful provisioning. No exact schedule, per-comparison trace, or fixed operation order is taught here. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Separate account/access change fulfillment. Main example uses existing accounts and supported configured writes; no automatic account creation, retry policy, or universal transaction behavior is inferred. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Activity/source/account/recipient scope, operation results, errors, and target-evidence investigation. A recorded role assignment is not proof of every target outcome. |
+| [Identity control panels](https://documentation.sailpoint.com/saas/help/identities/control_panel.html) | Identity access views represent roles, profiles, and entitlements; represented access does not prove original grant history or current live application enforcement. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) and [account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Supporting source/connector/account distinction and verified identity associations. Native application roles can be represented as source entitlements only where the connector and configuration support that access type. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Supporting distinction between population/identity-attribute configuration and a single-source access bundle. Full profile and mapping mechanics remain outside this introductory access-model lesson. |
+
+### Conditions and reasoning boundaries
+
+- Devi has employee number 24004, department Finance, and jobCode AP_READER. Her existing finance and directory accounts are correctly collected/correlated, with exactly one relevant account on each source.
+- InvoiceRead and SupplierRead belong to Invoice-System and make up the Invoice reading access profile. FinanceWorkspace belongs to Corporate-Directory and is included directly in Accounts payable reader. The combined role spans sources without changing the profile's single-source boundary.
+- These source values and external effects are fictional. The role/profile labels do not create correspondingly named native target objects, and adding direct role content does not bypass fulfillment controls.
+- The role is enabled with prepared access/assignment configuration and the required Provisioning service. The simplified identity criteria require both department Finance and jobCode AP_READER; they are not a complete safe production policy for every worker population.
+- Main-path access is ordinary provisioned access, not activation-dependent entitlement access. Dynamic-role dimensions and Just-In-Time details remain outside the opening object map.
+- There are no preexisting relevant grants, alternate assignments, or competing access requirements in the main successful example. The detection and overlap variations explicitly change those facts.
+- Automatic assignment, identity-list membership, and configured access requests are different supported paths. Requestability does not establish approval or delivery. No native role-name/job-title similarity is used as an assignment rule.
+- The delivery diagram shows required account operations, not guaranteed concurrency, a source order, an atomic cross-system transaction, or universal rollback/retry behavior.
+- Partial outcome: FinanceWorkspace and InvoiceRead are present; SupplierRead is rejected due to operation authority. This is supplied fictional evidence, not an observed tenant test or general claim about connector error handling.
+- Access-profile detection can recognize an already-held bundle during processing. That representation does not prove a request or the original grant source, nor establish assignment of the broader ISC role.
+- Multiple-account criteria are mentioned only for the documented applicable automatic access-profile path. They are not generalized to direct role entitlements or request-based account selection.
+- Another assigned role retaining overlapping InvoiceRead is the documented overlap case. The lesson does not infer one universal removal rule for all direct, manual, requested, or inherited grants.
+- Criteria-based revocation of an automatic role assignment differs from disabling or deleting the role definition. The latter does not remove previously granted access. Access-profile deletion also is not entitlement deprovisioning.
+- Entitlement revocation does not delete accounts. Account creation/deletion and session behavior are separate conditions; no immediate UI refresh or automatic complete post-write aggregation is promised.
+- Current official branding uses Human Fabric / Identity Services. The requested ISC course name remains; navigation branding does not establish service entitlement or license.
+- Detailed entitlement modeling, access profiles, roles, request/removal mechanics, and overlap analysis remain in their primary modules. This lesson supplies an independently understandable introductory object and flow map.
+
+### Diagram and review checks
+
+- [Access-object relationship tree](../assets/FND-004_access_object_relationships.txt): role contains one single-source profile and one directory entitlement directly. Branches mean contents, not execution.
+- [Assignment conditions](../assets/FND-004_assignment_conditions.txt): department/jobCode comparison and AND relationship; no invented hidden evaluation trace.
+- [Assignment and delivery](../assets/FND-004_assignment_and_delivery.txt): identity inputs, applicable assignment evaluation, separate source-account changes, results, and human verification.
+- All three text assets must match the inline text blocks exactly. Membership conditions, employee/account IDs, source boundaries, and worked answers are reviewed together.
+- Local and rendered-site checks verify complete source text, headings, diagrams, tables, and navigation. Neither source matching nor deployment is beginner learner validation.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Two-source package | Access-profile boundary versus role composition | Keep a single-source finance profile; combine through a role with direct directory entitlement or useful separate directory profile | A broad package name allows a profile to contain entitlements from multiple sources | Access profiles; roles |
+| Similar job title | Definition name versus assignment inputs | AP_MANAGER does not meet the stated AP_READER condition; inspect other assignment/access evidence separately | A similar job title or role label proves automatic assignment | Role assignment; request configuration |
+| Detected profile | Recognition versus historical delivery | Existing held contents can be detected; inspect prior grants/approvals separately, not inferred from represented profile | Seeing a profile proves ISC originally provisioned it | Access profiles; identity processing |
+| Partial delivery | Focused source/account/operation investigation | SupplierRead on inv-24004 is the failed branch; inspect rejection and authorize limited correction/retry; approval does not provide target operation authority | An assigned role or successful neighboring operation proves the entire requirement was delivered | Monitoring; provisioning |
+| Overlapping role | Remaining valid requirement versus failed removal | Inspect the other assigned role and target state; retained overlapping access is not automatically a failure | Removing one role must erase every entitlement it contained | Roles, revoking entitlements with role changes |
+| Deleted definition | Object maintenance versus revocation | Profile deletion/role disablement is not deprovisioning; inspect intended revocation path, remaining grants, activity and target result | Deleting or disabling an access object removes previous target access | Roles; access-profile deletion |
+| Two-system transfer | Independent access design and evidence | Explain useful single-source bundles, cross-source role content, recipients, accounts, fulfillment, preexisting/rejected/overlap variation; direct entitlements are acceptable where useful | Memorizing a three-layer stack supplies a complete integration or evidence model | All mapped references within stated scope |
+
+Learner facts and worked answers stay in the lesson. Assessment intent, limitations, and official links stay in author records.

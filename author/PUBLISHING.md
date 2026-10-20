@@ -27,3 +27,5 @@ Initial deployment covers seven existing lessons: SYS-001 through SYS-006 and th
 As of the Module 2.2 authoring update, the working-edition manifest includes eight lessons, adding FND-002. Module 2.3, FND-003, remains planned. Keep displayed availability separate from beginner validation and formal publication approval.
 
 The Module 2.3 authoring update adds FND-003, bringing the working-edition manifest to nine lessons. FND-004, the introductory entitlement/access-profile/role relationship lesson, remains planned. Author review, deployment checks, and learner validation remain distinct.
+
+The Module 2.4 update adds FND-004, bringing the working-edition manifest to ten lessons. FND-005, covering sources, access applications, catalogs, and sign-in experiences, remains planned. Deployment does not establish learner validation or formal publication approval.

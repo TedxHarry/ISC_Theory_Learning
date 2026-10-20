@@ -1,0 +1,22 @@
+Devi's ISC identity: employee 24004
+  department = Finance
+  jobCode = AP_READER
+             |
+             | Applicable processing evaluates both conditions
+             v
+Role assignment: Accounts payable reader
+             |
+             | Supported configured provisioning of role contents
+             +----------------------------+
+             |                            |
+             v                            v
+Invoice-System                    Corporate-Directory
+Account inv-24004                  Account dir-24004
+  Add InvoiceRead                   Add FinanceWorkspace
+  Add SupplierRead
+
+Each system reports its operation results.
+
+Separate human verification:
+  Inspect the relevant activity and current target accounts.
+  Check later collected access as a separate observation.

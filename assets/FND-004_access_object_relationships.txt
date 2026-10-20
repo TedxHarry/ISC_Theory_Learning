@@ -1,0 +1,14 @@
+ISC role: Accounts payable reader
+  |
+  +-- Access profile: Invoice reading
+  |     Source: Invoice-System
+  |       +-- Entitlement: InvoiceRead
+  |       +-- Entitlement: SupplierRead
+  |
+  +-- Direct entitlement: FinanceWorkspace
+        Source: Corporate-Directory
+
+
+The role groups the work requirement across sources.
+Each access profile keeps its own single-source boundary.
+These branches describe contents, not completed grants.

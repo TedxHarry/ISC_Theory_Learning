@@ -1,0 +1,7 @@
+Assign Accounts payable reader when:
+
+  department equals Finance
+             AND
+  jobCode equals AP_READER
+
+Both conditions must match in this example.
