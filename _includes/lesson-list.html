@@ -1,0 +1,19 @@
+<nav aria-label="Lessons">
+  {% for module in site.data.course.modules %}
+  <section class="nav-module" aria-labelledby="nav-{{ module.id }}">
+    <h2 id="nav-{{ module.id }}">{{ module.title | escape }}</h2>
+    <ol class="lesson-nav">
+      {% for lesson in site.data.course.lessons %}
+        {% if lesson.module == module.id %}
+        <li>
+          <a href="{{ lesson.url | relative_url }}"{% if page.path == lesson.source %} aria-current="page"{% endif %}>
+            <span class="lesson-id">{{ lesson.id }}</span>
+            <span>{{ lesson.title | escape }}</span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</nav>

@@ -1,0 +1,48 @@
+modules:
+  - id: system
+    title: "1. Where ISC fits"
+  - id: foundations
+    title: "2. Objects and relationships"
+lessons:
+  - id: SYS-001
+    module: system
+    title: "Why does an organization need ISC?"
+    source: "lessons/SYS-001_Why_an_Organization_Needs_ISC.md"
+    url: "/lessons/SYS-001_Why_an_Organization_Needs_ISC.html"
+    description: "Connect the business need to access decisions, delivery, and evidence."
+  - id: SYS-002
+    module: system
+    title: "Signing in, using a permission, and where ISC fits"
+    source: "lessons/SYS-002_Authentication_Authorization_and_ISC.md"
+    url: "/lessons/SYS-002_Authentication_Authorization_and_ISC.html"
+    description: "Follow authentication, application authorization, and access management."
+  - id: SYS-003
+    module: system
+    title: "Who owns what when access needs to change?"
+    source: "lessons/SYS-003_Who_Owns_What_in_Identity_and_Access.md"
+    url: "/lessons/SYS-003_Who_Owns_What_in_Identity_and_Access.html"
+    description: "Understand the decisions, responsibilities, and handoffs between teams."
+  - id: SYS-004
+    module: system
+    title: "What should be allowed, what ISC records, and what actually works"
+    source: "lessons/SYS-004_Intended_Known_and_Effective_Access.md"
+    url: "/lessons/SYS-004_Intended_Known_and_Effective_Access.html"
+    description: "Compare intended access, recorded information, and application behavior."
+  - id: SYS-005
+    module: system
+    title: "Building access management is only the beginning"
+    source: "lessons/SYS-005_Implementation_Administration_Support_and_Governance.md"
+    url: "/lessons/SYS-005_Implementation_Administration_Support_and_Governance.html"
+    description: "Connect implementation, administration, support, and governance."
+  - id: SYS-006
+    module: system
+    title: "Follow the access problem across the systems"
+    source: "lessons/SYS-006_Following_an_Access_Problem_Across_the_Enterprise.md"
+    url: "/lessons/SYS-006_Following_an_Access_Problem_Across_the_Enterprise.html"
+    description: "Trace an access problem through its records, conditions, and delivery."
+  - id: FND-001
+    module: foundations
+    title: "Identity and account"
+    source: "lessons/FND-001_Identity_and_Account.md"
+    url: "/lessons/FND-001_Identity_and_Account.html"
+    description: "Understand how one person is represented across systems."

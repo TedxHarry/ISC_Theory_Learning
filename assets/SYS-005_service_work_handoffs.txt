@@ -1,0 +1,28 @@
+Governance: approved need and access boundaries
+                         |
+                         | requirement
+                         v
+Implementation: design, configure, test, and hand over
+                         |
+                         | accepted service and operating guide
+                         v
+Administration: operate, monitor, and maintain
+                         |
+                         | detected or reported failure
+                         v
+Support: diagnose, recover, and verify
+             |                         |
+             | corrected operation     | design defect or new need
+             v                         v
+      Administration              Implementation
+
+Access reviews and operating evidence
+                         |
+                         v
+Governance: retain, remove, or revise the requirement
+                         |
+                         v
+Authorized execution and verification of the decision
+
+These are human work and evidence handoffs,
+not automatic ISC execution stages.

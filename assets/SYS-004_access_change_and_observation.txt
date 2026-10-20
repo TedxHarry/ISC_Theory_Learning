@@ -1,0 +1,32 @@
+CHANGE PATH: seek the required target state
+
+Approved business requirement
+          |
+          v
+ISC configuration and authorized change
+          |
+          v
+Provisioning attempt through supported integration
+          |
+          +-- rejected --> Required target change not completed
+          |
+          +-- applied ---> Target account permissions change
+                                      |
+                                      v
+                         Application enforces its own rules
+                                      |
+                                      v
+                         Operation permitted or denied
+
+OBSERVATION PATH: collect information about the target
+
+Target account data
+          |
+          v
+Aggregation within configured collection scope
+          |
+          v
+ISC account information
+
+HUMAN CHECK: compare requirement, records, and target evidence.
+These paths do not guarantee an immediate round trip.

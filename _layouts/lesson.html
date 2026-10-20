@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="lesson-content">
+  {{ content | replace: '<table>', '<div class="table-scroll" role="region" aria-label="Lesson table" tabindex="0"><table>' | replace: '</table>', '</table></div>' | replace: '<pre', '<pre tabindex="0"' }}
+</article>
+<nav class="lesson-pagination" aria-label="Adjacent lessons">
+  {% for lesson in site.data.course.lessons %}
+    {% if page.path == lesson.source %}
+      {% if forloop.index0 > 0 %}
+        {% assign previous_index = forloop.index0 | minus: 1 %}
+        {% assign previous_lesson = site.data.course.lessons[previous_index] %}
+        <a href="{{ previous_lesson.url | relative_url }}"><span>Previous lesson</span>{{ previous_lesson.title | escape }}</a>
+      {% endif %}
+      {% unless forloop.last %}
+        {% assign next_index = forloop.index0 | plus: 1 %}
+        {% assign next_lesson = site.data.course.lessons[next_index] %}
+        <a href="{{ next_lesson.url | relative_url }}"><span>Next lesson</span>{{ next_lesson.title | escape }}</a>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+</nav>

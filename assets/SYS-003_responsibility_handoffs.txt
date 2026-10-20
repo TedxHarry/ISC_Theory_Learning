@@ -1,0 +1,37 @@
+DATA RESPONSIBILITY
+
+HR confirms today's manager and employee record
+    |
+    | correct current data made available to ISC
+    v
+ISC collection and identity processing
+    |
+    | engineer verifies the intended manager relationship
+    v
+Correct manager relationship available for request routing
+
+
+ACCESS DECISION AND DELIVERY
+
+Manager confirms Devi's invoice-checking responsibility
+Application owner defines the access that work requires
+    |
+    | configured request for FIN_INVOICE_READ
+    v
+Designated reviewer decides
+    | rejected -> no grant from this request
+    | approved
+    v
+ISC sends the supported directory membership change
+    | failure -> ISC and directory teams investigate
+    | directory applies the change
+    v
+Directory evidence confirms the intended account is a member
+    |
+    | application team checks its mapping and recognition
+    v
+Invoice reading works; unrelated access is not added
+    |
+    | coordinator records evidence and confirms closure
+    v
+Resolved outcome, not merely a transferred ticket

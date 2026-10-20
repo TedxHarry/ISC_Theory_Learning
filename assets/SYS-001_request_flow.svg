@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Devi's configured access request</title>
+  <desc id="desc">Devi requests INVOICE_VIEW in ISC. Manager rejection ends this request without a grant. Approval allows ISC to initiate a change through the connector. The finance application adds the permission in the success case, or rejects the operation without a change in the illustrated failure case. Dotted arrows lead to an engineer checking activity and current target state.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#435567"/></marker>
+    <style>
+      text {font-family: 'Segoe UI', Arial, sans-serif; fill: #173047;}
+      .title {font-size: 28px; font-weight: 700;}
+      .subtitle {font-size: 16px; fill: #4f6475;}
+      .label {font-size: 18px; font-weight: 600; text-anchor: middle;}
+      .edge-label {font-size: 15px; fill: #435567;}
+      .node {fill: #eef5fc; stroke: #617e98; stroke-width: 1.6;}
+      .success {fill: #eef8f1; stroke: #5d8568; stroke-width: 1.6;}
+      .stop {fill: #fff5ed; stroke: #b18460; stroke-width: 1.6;}
+      .check {fill: #f4f1fa; stroke: #8973aa; stroke-width: 1.6;}
+      .edge {fill: none; stroke: #435567; stroke-width: 2; marker-end: url(#arrow);}
+      .human {stroke-dasharray: 6 6;}
+    </style>
+  </defs>
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  <text class="title" x="40" y="44">Devi's configured access request</text>
+  <text class="subtitle" x="40" y="73">One existing finance account. Manager approval. Automated fulfillment.</text>
+
+  <path class="edge" data-from="request" data-to="review" d="M 570 170 V 215"/>
+  <text class="edge-label" x="584" y="199">Configured manager review</text>
+  <path class="edge" data-from="review" data-to="declined" d="M 350 250 H 140 V 350"/>
+  <text class="edge-label" x="155" y="305">Manager rejects</text>
+  <path class="edge" data-from="review" data-to="provision" d="M 570 285 V 350"/>
+  <text class="edge-label" x="584" y="323">Manager approves</text>
+  <path class="edge" data-from="provision" data-to="connector" d="M 570 420 V 470"/>
+  <text class="edge-label" x="584" y="450">Supported change operation</text>
+  <path class="edge" data-from="connector" data-to="application" d="M 570 540 V 590"/>
+  <text class="edge-label" x="584" y="570">Application receives operation</text>
+  <path class="edge" data-from="application" data-to="changed" d="M 460 660 V 700 H 270 V 750"/>
+  <text class="edge-label" x="125" y="729">Successful change</text>
+  <path class="edge" data-from="application" data-to="unchanged" d="M 680 660 V 700 H 810 V 750"/>
+  <text class="edge-label" x="830" y="729">Illustrated permission failure</text>
+  <path class="edge human" data-from="changed" data-to="verify" d="M 270 830 V 875 H 460 V 935"/>
+  <text class="edge-label" x="100" y="858">Verify result</text>
+  <path class="edge human" data-from="unchanged" data-to="verify" d="M 810 830 V 875 H 680 V 935"/>
+  <text class="edge-label" x="830" y="858">Investigate result</text>
+
+  <g id="request"><rect class="node" x="350" y="100" width="440" height="70" rx="10"/><text class="label" x="570" y="141">Devi: request INVOICE_VIEW in ISC</text></g>
+  <g id="review"><rect class="node" x="350" y="215" width="440" height="70" rx="10"/><text class="label" x="570" y="256">Manager: review the request in ISC</text></g>
+  <g id="declined"><rect class="stop" x="20" y="350" width="240" height="90" rx="10"/><text class="label" x="140" y="377"><tspan x="140">Request ends without</tspan><tspan x="140" dy="25">a grant from</tspan><tspan x="140" dy="25">this request</tspan></text></g>
+  <g id="provision"><rect class="node" x="350" y="350" width="440" height="70" rx="10"/><text class="label" x="570" y="391">ISC: initiate the account change</text></g>
+  <g id="connector"><rect class="node" x="350" y="470" width="440" height="70" rx="10"/><text class="label" x="570" y="497"><tspan x="570">Connector: send the change</tspan><tspan x="570" dy="25">to the application</tspan></text></g>
+  <g id="application"><rect class="node" x="350" y="590" width="440" height="70" rx="10"/><text class="label" x="570" y="617"><tspan x="570">Finance application:</tspan><tspan x="570" dy="25">process the operation</tspan></text></g>
+  <g id="changed"><rect class="success" x="70" y="750" width="400" height="80" rx="10"/><text class="label" x="270" y="782"><tspan x="270">INVOICE_VIEW added to</tspan><tspan x="270" dy="25">Devi's existing account</tspan></text></g>
+  <g id="unchanged"><rect class="stop" x="610" y="750" width="400" height="80" rx="10"/><text class="label" x="810" y="782"><tspan x="810">Operation rejected;</tspan><tspan x="810" dy="25">account unchanged in this case</tspan></text></g>
+  <g id="verify"><rect class="check" x="350" y="935" width="440" height="70" rx="10"/><text class="label" x="570" y="962"><tspan x="570">Engineer: check activity</tspan><tspan x="570" dy="25">and current target state</tspan></text></g>
+
+  <text class="subtitle" x="40" y="1045">Solid arrows: process paths. Dotted arrows: human verification or investigation.</text>
+  <text class="subtitle" x="40" y="1068">Selected outcomes only; waiting states, retries, and execution components are omitted.</text>
+</svg>

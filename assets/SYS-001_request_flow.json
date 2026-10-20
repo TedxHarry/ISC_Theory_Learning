@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "title": "Devi's configured access request",
+  "description": "One existing finance account, manager approval, and automated fulfillment. A logical teaching flow, not private ISC service architecture or a universal request sequence.",
+  "diagrams": [
+    {
+      "id": "sys001_request_flow",
+      "title": "From a request to a checked result",
+      "kind": "flowchart",
+      "accessibility": "Devi submits a request in ISC. Her manager approves or rejects it. Rejection stops this request without a grant. Approval allows ISC to initiate a change through the connector. The application either adds the permission or rejects the operation in the illustrated cases. The engineer checks the activity and current account state for either result.",
+      "data": {
+        "direction": "TB",
+        "nodes": [
+          {"id": "request", "label": "Devi: request INVOICE_VIEW in ISC"},
+          {"id": "review", "label": "Manager: review the request in ISC"},
+          {"id": "declined", "label": "Request ends without a grant from this request"},
+          {"id": "provision", "label": "ISC: initiate the account change"},
+          {"id": "connector", "label": "Connector: send the change to the application"},
+          {"id": "application", "label": "Finance application: process the operation"},
+          {"id": "changed", "label": "INVOICE_VIEW added to Devi's existing account"},
+          {"id": "unchanged", "label": "Operation rejected; account unchanged in this case"},
+          {"id": "verify", "label": "Engineer: check activity and current target state"}
+        ],
+        "edges": [
+          {"from": "request", "to": "review", "label": "Configured manager review"},
+          {"from": "review", "to": "declined", "label": "Manager rejects"},
+          {"from": "review", "to": "provision", "label": "Manager approves"},
+          {"from": "provision", "to": "connector", "label": "Supported change operation"},
+          {"from": "connector", "to": "application", "label": "Application receives operation"},
+          {"from": "application", "to": "changed", "label": "Successful change"},
+          {"from": "application", "to": "unchanged", "label": "Illustrated permission failure"},
+          {"from": "changed", "to": "verify", "label": "Verify result", "arrow": "-.->"},
+          {"from": "unchanged", "to": "verify", "label": "Investigate result", "arrow": "-.->"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+title: "SailPoint ISC Theory"
+description: "Understand the system. Follow the data, decisions, and access."
+url: "https://tedxharry.github.io"
+baseurl: "/ISC_Theory_Learning"
+repository: "TedxHarry/ISC_Theory_Learning"
+lang: en
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+titles_from_headings:
+  enabled: true
+  strip_title: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "lessons"
+    values:
+      layout: lesson
+exclude:
+  - README.md
+  - COURSE_DESIGN_AND_CONTENTS.md
+  - COURSE_REGISTER.md
+  - TEACHING_SPECIFICATION.md
+  - DESIGN.md
+  - author
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - .github

@@ -1,0 +1,42 @@
+DESIGN BASIS: approved Finance report-viewing requirement.
+The Finance Reports role expresses who qualifies and what access is needed.
+
+DATA AND DECISION PATH
+HR system -------- aggregation ------> HR account data
+Directory -------- aggregation ------> Directory account data
+
+Both collected records are available to identity-profile mappings.
+                         |
+                         v
+Mappings select an input for each identity attribute:
+department <- directory; employment status <- HR
+                         |
+                         v
+Devi's identity attributes
+                         |
+                 identity processing
+                         v
+Enabled Finance Reports role criteria
+                  /                 \
+       not met   /                   \ met
+                v                     v
+No new grant from this role       Role assignment
+                                      |
+                                      v
+                             Required access profile
+                                      |
+                                      v
+                          Provisioning to rpt-10482
+                                      |
+                              applied or rejected
+                                      v
+                           Reporting application
+                                      |
+                          application permission check
+                                      v
+                            Report viewing decision
+
+OBSERVATION: reporting account data -- aggregation --> ISC account view
+HUMAN CHECK: compare requirement, selected inputs, decisions, and outcome.
+Correcting the department mapping selects HR instead of directory.
+Arrows show dependencies in this example, not internal service topology.

@@ -1,0 +1,43 @@
+CHANGE ACCESS: one approved request in this example
+
+ISC request for INVOICE_VIEW on Devi's finance account
+    |
+    v
+Configured manager approval
+    | rejected -> no grant from this request
+    | approved
+    v
+ISC provisioning through the finance connector
+    | failure -> investigate; approval is not delivery
+    | target accepts and applies the change
+    v
+Finance account fin-10482 now has INVOICE_VIEW
+
+
+USE ACCESS: a later visit to the finance application
+
+Devi opens the finance application
+    |
+    v
+Identity provider verifies identity and applies entry policies
+    | denied -> no successful entry through this path
+    | permitted
+    v
+Application validates the response and maps the user
+    | invalid response or no usable account -> entry fails
+    | valid response and enabled account fin-10482
+    v
+Application establishes a session
+    |
+    v
+Devi requests invoice data
+    |
+    v
+Application checks INVOICE_VIEW for that account
+    | absent  -> deny invoice reading
+    | present -> allow invoice reading in this example
+
+
+OBSERVE ACCESS: separate collection, not a sign-in step
+
+Finance account data -> account aggregation -> ISC account view
