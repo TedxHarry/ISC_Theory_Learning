@@ -11,6 +11,14 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Identity | ISC's representation of a person or other entity, connecting relevant attributes, accounts, and access | It is not a target-system account |
 | Account | A record used by a person or service in a particular system | The target record and ISC's representation are distinct |
 | Source | ISC's configured representation of a system or collection of account data | Creating it does not create or replace the external application |
+| Enterprise application | The actual external business software and its own account/access behavior | It is not the ISC access-application configuration or necessarily the same system as the entitlement source |
+| Access application | ISC grouping/configuration for source access profiles in requests and configured password-management functions | It is not an SSO trust, native app deployment, new connector, or proof of all application permissions |
+| Account source for an access application | Source supplying the relevant account and access data for that configuration | A business-facing name does not prove where the native application account or password lives |
+| Access catalog | Discoverable access offerings presented to a requester | It is not a complete inventory of held access or a required additional object named Catalog |
+| Requester / recipient | Person initiating a request / identity intended to receive its access | Their eligibility, permissions, and account context must not be treated as interchangeable |
+| Access-request segment | Configured audience limiting requester visibility of associated items | Documented on-behalf requests can concern authorized other recipients; it is not universal recipient eligibility or runtime authorization |
+| Identity provider / SSO | Sign-in authority / shared sign-in arrangement for participating applications | A catalog or access-application configuration does not establish the application's IdP trust or every permission |
+| Application session | Continuing signed-in application context after authentication | It need not immediately reflect a membership change; catalog changes do not prove session termination |
 | Connector | The integration used to read data and perform supported configured operations | Read support does not prove write support, privileges, or success |
 | Direct connection | Configured connectivity to the external system rather than only an uploaded account export | It does not mean every operation is supported or that all connectors share one hosting path |
 | Flat file connection | Account data supplied through a configured file input | For the read-only file source taught here, importing a file is not writing a change into the external application |

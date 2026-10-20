@@ -77,3 +77,11 @@ lessons:
     source: "lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md"
     url: "/lessons/FND-004_Entitlements_Access_Profiles_and_Roles.html"
     description: "Connect access definitions to assignments, account changes, and outcome evidence."
+
+  - id: FND-005
+    module: foundations
+    placement: "Module 2.5"
+    title: "Sources, access applications, catalogs, and sign-in"
+    source: "lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md"
+    url: "/lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.html"
+    description: "Separate business applications, catalog choices, access delivery, and sign-in."

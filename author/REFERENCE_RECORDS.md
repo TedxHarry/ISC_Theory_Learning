@@ -609,3 +609,68 @@ Questions and worked answers remain in the learner lesson. Assessment metadata a
 | Two-system transfer | Independent access design and evidence | Explain useful single-source bundles, cross-source role content, recipients, accounts, fulfillment, preexisting/rejected/overlap variation; direct entitlements are acceptable where useful | Memorizing a three-layer stack supplies a complete integration or evidence model | All mapped references within stated scope |
 
 Learner facts and worked answers stay in the lesson. Assessment intent, limitations, and official links stay in author records.
+
+## FND-005
+
+- Lesson: [FND-005](../lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md), revision 1.0.
+- Course placement: Module 2.5.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 25005, accounts dir-25005/exp-25005, ExpenseHub, Corporate-Directory, group meanings, profile/application names, sign-in mapping and operation requirements are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Configuring access applications](https://documentation.sailpoint.com/saas/help/access/app-config.html) | Business-facing access applications versus enterprise systems; grouping source access profiles; account-source configuration; multiple access applications for one source; enabling/visibility/request controls; password-management context; deletion retains assigned access profiles. The directory-backed expense design is a fictional realization of the documented pattern. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source, connector, enterprise application and access application meanings; representation/integration boundaries. An access application is not a new connector or proof of native application account collection. |
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Single-source entitlement bundle and example one-entitlement profiles. Main request concerns one existing directory account; no multiple-account selection algorithm is generalized. |
+| [Managing requests for roles and access profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Requestability, selected profile, configured review, independent profile request route, segmentation-related profile visibility, and already-held-access restrictions. Exact legacy tab labels are not taught as a universal current UI. |
+| [Working with access requests](https://documentation.sailpoint.com/saas/user-help/requests/request_center.html) | Requester/recipient context, offered roles/profiles/entitlements, selecting a profile under an application. The page includes legacy instructions; this lesson teaches the object and process relationships without repeating its click sequence. |
+| [Managing access request segments](https://documentation.sailpoint.com/saas/help/requests/segments.html) | Segment audience is based on requester visibility; visible items can be requested for other recipients the requester is authorized to request for. Items outside segments can remain broadly requestable; org-admin visibility is broader. Segmentation is not a substitute for recipient eligibility/approval rules or runtime authorization. No exact sync delay or segment-size limit is generalized. |
+| [Adding access applications to password management](https://documentation.sailpoint.com/saas/help/pwd/add_access_app.html) | Supporting source-account/password-management purpose. A business-facing app name does not establish a separate native application password, a group grant, or equivalence among account source, authentication source, and application sign-in configuration. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) and [monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Approval is separate from the supported directory membership change; request/account/source result evidence and current target observation are distinct. No guaranteed retry, post-write aggregation, or atomic cross-system fulfillment is asserted. |
+| [Authentication versus authorization, Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-vs-authorization) | Authentication, IdP, SSO, and application operation authorization are distinct. This is primary identity-platform guidance, not a requirement to use Microsoft or a claim that ISC access applications configure the IdP trust. |
+| [SAML single sign-on protocol, Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol) | Supporting separate application/IdP sign-in exchange and trusted information. The lesson does not teach protocol fields, mandate SAML, or imply every sign-in requires a new password prompt. |
+| [Revoke user access, Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/users/users-revoke-access) | Application-owned session and reevaluation boundaries. No Microsoft token lifetime, session-revocation behavior, or universal immediate refresh rule is generalized to the fictional ExpenseHub application. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Matching a source account to an ISC identity is distinct from the external application's separate sign-in-to-local-account mapping. Main directory association is explicitly correct. |
+
+### Conditions and reasoning boundaries
+
+- Devi already has a directory account and a separate ExpenseHub-native account. ISC collects/correlates the directory account only in this example. No ExpenseHub source, automatic native-account creation, or native-permission inventory is assumed.
+- Submit expenses contains EXP_SUBMIT; Approve expenses contains EXP_APPROVE. Both are directory entitlements with fictional business effects. Selecting one profile does not select every profile grouped under the access application.
+- The Expenses account source is Corporate-Directory because directory membership is the chosen access-control input. A separate Knowledge grouping can use another directory-backed profile without creating another directory.
+- Catalog means discoverable request offerings, not a mandatory new object named Catalog or an inventory of all existing enterprise access.
+- Main path: requester and recipient are both Devi, request visibility/configuration is valid, no EXP_SUBMIT is held initially, and exactly one directory account is intended. Required review succeeds and the supported write succeeds in the selected continuation.
+- Requester-based segmentation is explicitly distinguished from recipient eligibility. A Finance approval policy for recipient access must consider the actual recipient, rather than infer eligibility from the requester's catalog audience.
+- No assumption that creating a segment restricts all otherwise unsegmented items, or that an administrator sees the same catalog as an ordinary requester. Other request conditions still apply.
+- SSO trust and account matching are separately configured and already working for the main trace. The IdP receives the relevant current group membership and ExpenseHub receives/accepts current trusted sign-in information. These are supplied conditions, not live observations or automatic timing guarantees.
+- ExpenseHub's submit operation requires EXP_SUBMIT information, an enabled intended account, and its other requirements. Success is an explicit fictional outcome. No universal group-to-app permission behavior is claimed.
+- The wrong-account case changes the application's sign-in mapping, not the already correct ISC directory association. Recovery requires the relevant authorized owners and target outcome checks.
+- Existing sessions may not immediately use changed group information. Catalog deletion, access revocation, membership changes, and session termination are separate actions.
+- Local native privileges outside the directory groups are outside this source's observed data. An access application's business name does not fill that visibility gap.
+- Hiding a grouping is not proof of target revocation or absence of all independent profile-request routes. Deleting an access application retains assigned profiles; external software/accounts remain separate objects.
+- Current docs use Human Fabric / Identity Services branding. ISC remains the requested course name. Features, enabled request experience, and password-management support require the actual tenant/connector configuration.
+- Legacy single-sign-on app settings are deliberately not taught. The current ISC Launchpad documentation describes interactive processes and Just-In-Time activation; it is not used here as a generic SSO application-portal assumption. The example's sign-in portal belongs to the organization's IdP arrangement.
+- Detailed request, segment, password, SSO, token, and session configuration remain in primary lessons. This lesson explains the required meanings and connected boundaries without a UI-click or protocol-field inventory.
+
+### Diagram and review checks
+
+- [Application/source map](../assets/FND-005_application_source_map.txt): enterprise system, access application, configured account source, selected access profiles, and directory entitlement values. Branches are grouping relationships, not writes.
+- [Request and sign-in paths](../assets/FND-005_request_and_sign_in_paths.txt): recipient request, approved configured directory update, separate IdP/application sign-in, existing native account match, and runtime operation decision.
+- Both assets must match the corresponding inline blocks. Employee/account values, single-source profiles, and access meanings agree with the examples and worked answers.
+- Local and published checks separately verify complete text, headings, diagrams, tables, and navigation. Neither is a beginner comprehension test.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Directory-backed Expenses | Enterprise system versus technical integration and logical grouping | Names do not prove error; validate directory group control, intended account, and application use of group data; native visibility still separate | Every business app must use an identically named direct source | Access applications; sources |
+| One selected profile | Grouping versus requested item and delivered membership | Submit request concerns EXP_SUBMIT, not EXP_APPROVE or every offered package; inspect recipient and actual write | Approval for an application means all its grouped permissions were granted | Request configuration; request user help; monitoring |
+| Different requester/recipient | Catalog segmentation versus recipient-related authorization | Requester visibility can allow requests for authorized other recipients; design eligibility/review against recipient requirements | Recipient outside the requester's segment must automatically be blocked by segmentation | Access request segments |
+| Wrong application account | Separate matching relationships | Correct ISC directory association does not repair ExpenseHub's sign-in mapping; inspect authorized configuration and intended native-account/current access evidence | Repeating ISC correlation repairs every external sign-in identity mismatch | Correlation; identity-platform guidance |
+| Deleted application grouping | Presentation/object removal versus access revocation | Assigned profiles can remain; establish supported removal and target/session evidence separately if that is the requirement | Deleting a catalog grouping revokes its target access and ends sessions | Access-application deletion; provisioning; session guidance |
+| Business application transfer | Independent boundary and evidence reasoning | Identify external system/accounts, technical source/data scope, request grouping/item/recipient/change, independent sign-in and operation checks; name the fault boundary | A request card or app name identifies the entire technical path | All mapped references within stated scope |
+
+Questions and worked answers stay in the learner lesson. Source references, limits, and assessment metadata stay outside the reading site.

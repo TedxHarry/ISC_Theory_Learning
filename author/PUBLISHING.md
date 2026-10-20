@@ -29,3 +29,5 @@ As of the Module 2.2 authoring update, the working-edition manifest includes eig
 The Module 2.3 authoring update adds FND-003, bringing the working-edition manifest to nine lessons. FND-004, the introductory entitlement/access-profile/role relationship lesson, remains planned. Author review, deployment checks, and learner validation remain distinct.
 
 The Module 2.4 update adds FND-004, bringing the working-edition manifest to ten lessons. FND-005, covering sources, access applications, catalogs, and sign-in experiences, remains planned. Deployment does not establish learner validation or formal publication approval.
+
+The Module 2.5 update adds FND-005, bringing the working-edition manifest to eleven lessons. FND-006, on object IDs, account identifiers, display names, and references, remains planned. Request/catalog explanation does not add a glossary UI or change the site's publishing architecture.

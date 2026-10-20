@@ -1,0 +1,14 @@
+External business system: ExpenseHub
+  Recognized by employees as Expenses
+
+ISC access application: Expenses
+  Account source: Corporate-Directory
+  |
+  +-- Access profile: Submit expenses
+  |     Entitlement: EXP_SUBMIT
+  |
+  +-- Access profile: Approve expenses
+        Entitlement: EXP_APPROVE
+
+Both profiles contain directory entitlements.
+The access application groups choices; it is not ExpenseHub.

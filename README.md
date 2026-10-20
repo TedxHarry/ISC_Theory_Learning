@@ -10,7 +10,7 @@ The course is for beginners and freshers with some IAM knowledge. Its purpose is
 - [Read the available lessons](https://tedxharry.github.io/ISC_Theory_Learning/)
 - [Publishing and update instructions](author/PUBLISHING.md)
 
-The repository contains the complete working files. GitHub Pages presents the ten available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
+The repository contains the complete working files. GitHub Pages presents the eleven available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
 
 ## Start here
 
@@ -30,6 +30,7 @@ The repository contains the complete working files. GitHub Pages presents the te
 - [FND-002: Sources, connectors, and the systems they connect to](lessons/FND-002_Sources_Connectors_and_Connected_Systems.md)
 - [FND-003: Account, identity, and entitlement attributes](lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md)
 - [FND-004: Entitlements, access profiles, and roles](lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md)
+- [FND-005: Sources, access applications, catalogs, and sign-in](lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md)
 
 ## One lesson file at a time
 
@@ -56,6 +57,6 @@ Examples can use Devi, but every lesson supplies its own context. A learner must
 
 ## Current saved material
 
-The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, and Module 2 lessons FND-001, FND-002, FND-003, and FND-004 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
+The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, and Module 2 lessons FND-001 through FND-005 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
 
-FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002, FND-003, and FND-004. All six Module 1 lessons and the first four Module 2 lessons are authored; learner validation and formal publication review remain pending. FND-005 is the next planned lesson. The register distinguishes saved work, review work, and planned work.
+FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-005. All six Module 1 lessons and the first five Module 2 lessons are authored; learner validation and formal publication review remain pending. FND-006 is the next planned lesson. The register distinguishes saved work, review work, and planned work.

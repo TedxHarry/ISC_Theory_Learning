@@ -127,13 +127,13 @@ These short catch-up lessons are selected through a readiness check.
 - 2.2 [Sources, connectors, and the systems they connect to](lessons/FND-002_Sources_Connectors_and_Connected_Systems.md).
 - 2.3 [Account attributes, identity attributes, and entitlement attributes](lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md).
 - 2.4 [Entitlements, access profiles, and roles: an initial relationship map and example](lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md).
-- 2.5 Sources, access applications, catalogs, and sign-in experiences.
+- 2.5 [Sources, access applications, catalogs, and sign-in experiences](lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md).
 - 2.6 Object IDs, account identifiers, display names, and reference relationships.
 - 2.7 One identity with multiple accounts: reading the relationships correctly.
 
 **Outcome:** Draw and explain an object map without confusing records that represent different things.
 
-FND-001 is the existing foundation pilot for identities and accounts, now reviewed in course order. FND-002 is the authored source/connector lesson, and FND-003 covers attributes on the different objects. Their supporting explanations do not mark the remaining Module 2 lessons complete. FND-004 is the authored Module 2.4 access-object relationship lesson; detailed access-model mechanics follow in Modules 10-12.
+FND-001 is the existing foundation pilot for identities and accounts, now reviewed in course order. FND-002 is the authored source/connector lesson, and FND-003 covers attributes on the different objects. Their supporting explanations do not mark the remaining Module 2 lessons complete. FND-004 is the authored Module 2.4 access-object relationship lesson, and FND-005 explains application/source/catalog and sign-in boundaries. Detailed access-model mechanics follow in Modules 10-12.
 
 ### Module 3. Where does the work run?
 

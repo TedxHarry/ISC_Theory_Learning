@@ -1,0 +1,28 @@
+ACCESS REQUEST AND DIRECTORY CHANGE
+
+Devi requests Submit expenses for her ISC identity
+  Employee number 25005
+              |
+              | Required review completes
+              | Supported configured provisioning
+              v
+Corporate-Directory
+  Account dir-25005 receives EXP_SUBMIT
+
+
+SEPARATE EXPENSEHUB SIGN-IN AND OPERATION
+
+Devi opens ExpenseHub
+              |
+              | Configured IdP authenticates the user
+              | Relevant current group information is supplied
+              v
+ExpenseHub accepts the sign-in information
+  Matches existing account exp-25005
+              |
+              | Application checks claim-submission requirements
+              v
+Claim submission allowed in this successful example
+
+Human verification crosses both paths.
+Neither the catalog entry nor approval proves the final result.
