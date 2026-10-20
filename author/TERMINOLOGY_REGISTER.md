@@ -20,6 +20,14 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | API / endpoint | A software interface for exchanging information or operations / an address for a particular API service or operation | Access to one endpoint does not prove all read and write operations are available |
 | Source owner / entitlement owner | Assigned ownership of the source / of an access item | Ownership can route applicable work; it does not confer external administrative authority |
 | Attribute | A named value on a particular record | Identical names on different records do not make one shared value |
+| Account attribute | A named piece of information on one source account | Correlation does not turn every account attribute into an identity attribute |
+| Identity attribute | Information recorded/calculated on the person-level identity | Its selected input and calculation come from configuration, not merely matching field names |
+| Entitlement attribute | Information describing the represented access item | An account field marked Entitlement carries membership/access values; it remains an account field |
+| Entitlement type / schema | Kind of access item within a source / its attributes and designated ID/Name | Membership references require the correct source/type relationship and matching designated ID values |
+| Mapping | Configuration specifying how an output attribute obtains its input/value | Input selection/calculation does not by itself write back to the source |
+| Transform | Configured logic with inputs and outputs for attribute calculations | Calculating an identity value does not rewrite the collected input account value |
+| Attribute synchronization | Configured provisioning of selected account attributes from corresponding identity attributes | Eligibility and existing correlation are required; mapped nulls can propagate and target outcomes must be checked |
+| Multi-valued | An attribute can hold a collection of values | A list of identifiers is not one joined identifier; support depends on schema/feature |
 | Aggregation | Collecting source account or access data into ISC within the applicable scope | It is not itself a grant, and observation is not a perpetual live guarantee |
 | Account correlation | Associating a collected source account with the appropriate ISC identity | It does not authenticate a sign-in or create a missing target account |
 | Entitlement | An access item represented from a source, such as a permission or group membership | The external system determines its operational meaning |

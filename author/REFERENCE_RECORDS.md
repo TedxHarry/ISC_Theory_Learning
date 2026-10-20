@@ -479,3 +479,65 @@ Local validation checks source equality, IDs, headings, links, and complete work
 | Unfamiliar-system transfer | Independent boundary and flow reasoning | Identify external records, source scope, connector method, population, association, required change method, and outcome evidence; naming missing information is valid | A connection label alone establishes a complete integration | All mapped sources within their stated limits |
 
 Worked answers and supplied facts remain in the learner lesson. The metadata above stays outside the reading site.
+
+## FND-003
+
+- Lesson: [FND-003](../lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md), revision 1.0.
+- Course placement: Module 2.3.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Devi's employee number 23003, HR-Workers, Invoice-Service, directory/finance account names, group IDs and attributes, department conversion, and successful or unexpected outcomes are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment does not change those statuses.
+
+### Official sources by claim and section
+
+| Official reference | Section / claim and applicability |
+|---|---|
+| [Source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Account attributes, schema organization, designated Account ID/Name, multi-value/Entitlement settings, account-versus-entitlement data linkage, and risks of changing ID/Name settings after aggregation. The example aligns account-field name, entitlement type, and membership/Entitlement ID values. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Per-attribute mappings, authoritative population versus input selection, attributes from different sources, shared custom-attribute definitions and deletion across profiles, transform application, preview, saving and applying changes. The particular HR/directory selection is an example configuration, not a universal authority rule. |
+| [Transforms](https://developer.sailpoint.com/docs/extensibility/transforms/) | Transform input/output concept. FIN-to-Finance and OPS-to-Operations describe agreed teaching logic, not a tested or complete transform implementation. No transform API syntax, code, or rule-execution behavior is invented. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Applicable processing evaluates configured identity mappings and related access. Repeated evaluation of the wrong input selection does not repair the configuration. No fixed schedule, field-by-field UI trace, or proof of provisioning success is claimed. |
+| [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Separate identity-to-account write; existing correlated accounts; eligible direct identity mappings in Create Account definition; selected sync configuration; mapped null values propagate through sync. Required target values, supported writes, attempts, and outcomes remain separate conditions. |
+| [Entitlement types and schemas](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html) | Attributes of access items, Entitlement ID/Name, multi-value/type configuration, native type agreement, and account-field Type linked to the entitlement type. Not all sources expose the same fields or support separate entitlement management. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Collecting details about access items is distinct from collecting account membership values. Capability and configured scope matter; the lesson does not generalize separate entitlement aggregation to every connector. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Entitlement details, ISC display-name/description edits not sent to the source, and protection of manually updated names/descriptions from later aggregation overwrite. Description editing does not issue an account-membership grant/removal. No universal editing policy is inferred for every other metadata field. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Collected account values, relevant aggregation history, and separate current target observations. Missing field, null, empty text/list, and Boolean examples are representation distinctions, not promises of one connector's normalization or deletion behavior. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Matching source accounts to identities is separate from simply carrying an employee-number attribute. Main example assumes verified associations; the full correlation algorithm is not re-taught here. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Available activity, errors, and operation-result evidence for the optional finance update. No single universal history is promised to expose every attribute evaluation. |
+| [Identity control panels](https://documentation.sailpoint.com/saas/help/identities/control_panel.html) | Identity attributes and represented access context. UI values are linked to their producing records/calculations, not treated as current live target queries. |
+
+### Conditions and reasoning boundaries
+
+- The employee moved from Operations to Finance. The opening observations are collected HR orgCode FIN, ISC identity department Finance, and collected finance-account department Operations. These are observations of different objects, not a contradiction requiring all stored strings to match.
+- HR-Workers establishes the identity population through the Employees profile. The directory account is already associated and contains the work-email input. The lesson does not promise account-selection behavior when multiple accounts supply a mapped field.
+- The identity department mapping deliberately converts the source code; the input remains FIN. Its conversion table is not a full transform configuration. Missing-input handling must be inspected, not inferred from an incomplete description.
+- Optional attribute sync requires the supported existing-account write and eligible configured mappings. The diagram's final target value is a supplied successful continuation, not proof that an opening snapshot triggered or completed that update.
+- A department-field write is distinct from group membership changes. No rule that department changes automatically confer every Finance entitlement is assumed.
+- The group object has custom fields id/name/description/businessArea in this fictional integration. Account field groups and native entitlement type groups are deliberately aligned; the Entitlement setting and Type link are configured, and g-inv-read matches the designated Entitlement ID.
+- The membership-link arrow is a reference relationship, not a provisioning instruction. Visible name FIN_INV_READ is not substituted for ID g-inv-read.
+- Entitlement description and display-name behavior is limited to the documented ISC editing mechanism. No blanket guarantee is made about all metadata edits, source schema modifications, or external application changes.
+- JSON is a teaching record, not an exact connector response, API request, or runnable command. Text versus Boolean, leading-zero codes, absent/null/empty values, lists, and date meanings are explained conceptually. Feature-specific type support and normalization must be checked.
+- Null output from an identity-profile mapping can produce a null sync update under the applicable configuration. The actual target can have required-value restrictions, so the operation result still needs verification.
+- No post-write full aggregation, immediate UI refresh, per-field trace screen, target-session behavior, or unperformed tenant test is claimed.
+- Official documentation currently uses Human Fabric / Identity Services branding. The requested ISC course name remains; documentation navigation does not establish licensing or enabled features.
+- Full transforms, identity-profile selection, attribute sync mechanics, data processing, and complex entitlement modeling remain in their primary lessons. This lesson supplies the supporting meanings needed for value tracing.
+
+### Diagram and representation checks
+
+- [Attribute value flow](../assets/FND-003_attribute_value_flow.txt): HR read, mapped calculation, optional successful configured sync, and separate human verification. Source code FIN is preserved; identity/target Finance follows the stated conversion/write conditions.
+- [Membership-to-entitlement link](../assets/FND-003_membership_entitlement_link.txt): same source and configured groups type, matching reference value/Entitlement ID, and entitlement properties.
+- Both text sources must match their inline lesson blocks exactly. The first diagram's arrows are conditional data/operation progression; the second is a reference link. Neither describes private service topology.
+- Validate the JSON sample, record IDs, complete headings/paragraphs, table regions, and diagram blocks in local and published formats separately from beginner comprehension.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Different values, correct mapping | Account input, calculated identity output, separate target write | FIN-to-Finance is consistent with supplied mapping; determine expected finance behavior, sync eligibility, association, activity, and current target state before diagnosing failure | Different strings on separate objects prove identity or sync failure | Identity profiles; transforms; attribute sync; monitoring |
+| Name versus identifier | Membership references and entitlement details | Compare returned values, connector mapping, account/type configuration, and designated ID; name agreement alone is insufficient; assess reference impact before correcting a schema | A readable matching name is equivalent to the designated reference ID | Account schemas; entitlement types |
+| Missing code | Evidence limits and missing-input logic | Inspect actual transform/mapping and preview/processing evidence; incomplete description does not determine runtime result; investigate HR input | Blank means a particular default or guaranteed processing error | Identity profiles; transforms; processing |
+| Apparent Boolean | Value representation and supported comparison types | Supplied input is text; inspect schema, collected value, conversions and consuming feature; do not infer final comparison result | The text false is already a Boolean false | Schemas; supplied example |
+| Edited description | Descriptive metadata versus target changes | No source description write or membership removal follows from the documented edit; separate supported removal if needed | Rewording an entitlement changes who holds it or what the application enforces | Managing entitlements; provisioning monitoring |
+| Chosen-field transfer | Independent object/value tracing | Identify owning object, source record, type/shape, input and configured calculation/write; predict only what the changed condition supports | A field label or memorized definition establishes the complete value flow | Mapped sources within their stated conditions |
+
+Questions and worked answers remain in the learner lesson. Assessment metadata and official links remain outside the reading site.

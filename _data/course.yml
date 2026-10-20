@@ -61,3 +61,11 @@ lessons:
     source: "lessons/FND-002_Sources_Connectors_and_Connected_Systems.md"
     url: "/lessons/FND-002_Sources_Connectors_and_Connected_Systems.html"
     description: "Separate source records, connector behavior, collection, and supported changes."
+
+  - id: FND-003
+    module: foundations
+    placement: "Module 2.3"
+    title: "Account, identity, and entitlement attributes"
+    source: "lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md"
+    url: "/lessons/FND-003_Account_Identity_and_Entitlement_Attributes.html"
+    description: "Trace values through records, mappings, access references, and supported updates."

@@ -1,0 +1,23 @@
+HR worker record: employee 23003
+  orgCode = FIN
+          |
+          | Account aggregation collects the value
+          v
+ISC HR account under HR-Workers
+  orgCode = FIN
+          |
+          | Identity-profile mapping selects orgCode
+          | Transform converts FIN to Finance
+          v
+ISC identity: Devi, employee number 23003
+  department = Finance
+          |
+          | Only for the configured supported sync path
+          | Attribute sync provisions the department value
+          v
+Finance application: existing account fin-23003
+  department = Finance after the successful update
+
+Separate human checks:
+  Examine activity and the current finance record.
+  Examine later collected account data for what ISC records.

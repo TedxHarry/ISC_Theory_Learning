@@ -1,0 +1,14 @@
+Source context: Invoice-Service
+Configured entitlement type: groups
+
+Account fin-23003
+  groups includes g-inv-read
+                |
+                | Matching membership value and Entitlement ID
+                | Within the configured source/type relationship
+                v
+Entitlement record
+  id = g-inv-read
+  name = FIN_INV_READ
+  description = Allows invoice reading
+  businessArea = Finance
