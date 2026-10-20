@@ -121,7 +121,7 @@ An access token can carry **scopes**, meaning limits on the API access authorize
 
 A **refresh token**, where the selected method supports it, can be used to obtain another access token. It isn't interchangeable with an access token or a client secret. Not every connector uses refresh tokens, and not every token renews automatically.
 
-For ProjectBoard, keep the model simple: the example uses a configured API token. It doesn't silently switch to an OAuth refresh flow when that token becomes invalid.
+ProjectBoard's example uses a configured API token. It doesn't silently switch to an OAuth refresh flow when that token becomes invalid.
 
 ## Follow an account read into ISC
 
@@ -261,7 +261,7 @@ SailPoint offers SaaS-based read-only connector configurations as well as config
 
 Even a write-capable connector has an operation-specific feature list. Supporting account creation doesn't prove support for every account type, group association, disable operation, or password action.
 
-For example, current Salesforce SaaS documentation distinguishes supported account-management operations from exceptions for particular user types. The lesson here isn't to memorize its feature table. Before designing a change, check the precise operation, account type, target requirements, and applicable feature activation.
+For example, the Salesforce SaaS connector supports enabling and disabling accounts, but excludes those operations for portal and partner users. Before designing a change, check the precise operation, account type, target requirements, and applicable feature activation.
 
 A connector's advertised operation support is one prerequisite. Source configuration, external privileges, valid input, and applicable licensing or activation requirements still have to fit.
 
