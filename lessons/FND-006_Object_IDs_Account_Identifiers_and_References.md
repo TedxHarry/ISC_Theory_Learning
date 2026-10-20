@@ -150,26 +150,26 @@ These are access definitions. Their existence alone doesn't prove Devi has recei
 ```text
 Role R-26: Invoice checking
   |
-  +-- includes access profile --> P-26: Read invoices
-                                   |
-                                   +-- source reference --> S-26
-                                   |                        Ledger production
-                                   |
-                                   +-- entitlement -------> E-26
-                                                            display: Invoice reader
-                                                            type: group
-                                                            source value: g-41
-                                                            source: S-26
+  +-- profile --> P-26: Read invoices
+                    |
+                    +-- source --> S-26
+                    |              Ledger production
+                    |
+                    +-- item ----> E-26
+                                   display: Invoice reader
+                                   type: group
+                                   source value: g-41
+                                   source: S-26
 
 Account A-26, on source S-26
   |
   +-- collected group value g-41
         |
-        +-- links to E-26 when schema/type/ID conditions match
+        +-- links to E-26 if schema/type/ID conditions match
 
-Role/profile inclusion describes the access definition.
-Collected membership describes the account observation.
-Neither line alone proves the original grant or current usable access.
+Role/profile inclusion describes access definitions.
+Membership is the collected account observation.
+Neither proves original grant or current usable access.
 ```
 
 The inclusion arrows describe configuration. The membership branch describes collected data. These are not steps that run from top to bottom each time someone signs in.
