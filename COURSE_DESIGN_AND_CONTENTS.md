@@ -137,7 +137,7 @@ FND-001 is the existing foundation pilot for identities and accounts, now review
 
 ### Module 3. Where does the work run?
 
-- 3.1 The ISC tenant and the responsibilities retained by the customer.
+- 3.1 [The ISC tenant and the responsibilities retained by the customer](lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md).
 - 3.2 Virtual Appliances and clusters: their place in a connection.
 - 3.3 SaaS connectors and their connection path.
 - 3.4 Where IQService fits when a connector requires it.
@@ -147,6 +147,8 @@ FND-001 is the existing foundation pilot for identities and accounts, now review
 - 3.8 Requesting work, executing work, and observing completion.
 
 **Outcome:** Locate an operation's execution boundary and identify the dependencies needed for it to work.
+
+ARC-001 is the authored Module 3.1 lesson on tenant, service, customer, and connected-system responsibilities. Lessons 3.2-3.8 remain planned. Its supporting VA and SaaS-connector explanations do not replace their primary lessons.
 
 Connection diagrams follow the documented distinction between VA-based and SaaS connectivity. They must not imply that every connector uses a VA. [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html)
 

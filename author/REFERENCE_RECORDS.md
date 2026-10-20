@@ -799,3 +799,69 @@ Questions and worked reasoning remain in the learner file. Reference evidence, t
 | Payroll transfer and teach-back | Independent account tracing, repeat-profile limit and safe correction | Preserve approved support access; same-profile request is blocked; assess supported entitlement/role alternatives with authorization/target selection; verify both accounts | Multiple accounts are inherently duplicate, or a profile can be re-requested indefinitely per account | Request configuration; sources; provisioning monitoring |
 
 Questions and worked reasoning stay in the learner file. Source references, assessment intent, and review limitations stay outside it.
+
+## ARC-001
+
+- Lesson: [ARC-001](../lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md), revision 1.0.
+- Course placement: Module 3.1.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 31001, Supplier Register, supplier-31001, svc-supplier-isc, supplier.view, connection/privilege conditions, times, and document-service transfer are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: operational responsibility and environment boundaries, not a contractual interpretation, universal service-level commitment, private database topology, tenant-provisioning procedure, or feature-license inventory.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [SailPoint platform/ISC product description](https://www.sailpoint.com/en-au/products/identity-security-cloud) | Vendor's current description of ISC and its multi-tenant SaaS platform. Used for hosted-service context only, not marketing outcome, exact platform naming, package availability, or a guarantee of every advertised feature. |
+| [Multi-tenancy: vendor architecture explanation](https://www.sailpoint.com/blog/multi-tenancy-security-scale-innovation) | SailPoint's first-party description of logical tenant data/configuration separation and shared application/infrastructure. The article was available in indexed text and web opening; the basic HTTP main-content extractor returned navigation rather than article body. The lesson does not reproduce private partitioning, encryption, comparative-security, or zero-downtime claims. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source configuration versus external enterprise system; connector role; VA-based versus SaaS connectivity and operation-specific support. Diagrams do not place every source behind a VA or imply arbitrary external writes. |
+| [ISC connector documentation landing page](https://documentation.sailpoint.com/connectors/isc/landingpages/help/landingpages/isc_landing.html) | Customer maintenance of external API keys, credentials, and permissions. This supports integration dependency ownership, not an inference that every failure is customer-caused. A fictional source's supported write is an example assumption, not a claim that a named real connector exists for Supplier Register. |
+| [Managing VAs](https://documentation.sailpoint.com/saas/help/va/manage_va.html) | SailPoint manages VA updates; customer monitoring and documented operational action remain necessary; connectivity conditions can prevent updates; long-running work can be interrupted under update conditions. No universal uninterrupted-job guarantee, manual patch recipe, fixed update window, or right to defer updates is taught. |
+| [VA system and network requirements](https://documentation.sailpoint.com/saas/help/va/requirements_va.html) | Required customer deployment/hosting/network context. Cluster counts, sizing, URLs/ports, region lists, and rollout design are deliberately reserved for primary component lessons rather than copied into this overview. |
+| [User-level permissions](https://documentation.sailpoint.com/saas/help/common/users/user_levels.html) and [user levels](https://documentation.sailpoint.com/saas/help/common/users/index.html) | Tenant administrative authority, broad Org Admin meaning, combined/elevated privilege considerations. Administrative user levels are distinct from business access roles and external integration permissions. No assumption that an ISC administrator is a target-system administrator. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) and [account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Sources/populations/profiles within tenant configuration; input/mapping/matching responsibility and represented person/account relationships. Manager-data question supplies a wrong input that matches a wrong manager; it does not claim a failed manager match always clears an existing manager. |
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) and [request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Supporting single-source entitlement bundle and configured request review; decision versus fulfilled access. Main case uses one existing correctly associated recipient account, not a multiple-account selection algorithm or automatic account creation. |
+| [Automated role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Role criteria changes and identity processing/application of configuration. Configuration save/import is separate from applicable processing and resulting provisioning outcomes. No universal processing sequence or blanket immediate propagation claim. |
+| [SPConfig](https://developer.sailpoint.com/docs/tools/cli/spconfig/) | Supported import/export configuration capabilities as evidence for controlled promotion. The lesson names no specific deployment tool and promises no complete tenant cloning, automatic dependency remapping, data migration, universal object support, or restoration guarantee. |
+| [Instance badges](https://documentation.sailpoint.com/saas/help/common/customization.html#enabling-instance-badges) | Configurable environment labels for sandbox/production recognition. Badge text is not a target authorization boundary or a verification of source destinations. No claim that badges are enabled by default. |
+| [System notifications](https://documentation.sailpoint.com/saas/help/common/getting_notified_org_health.html) | Customer-configured notifications for source/VA conditions and selected recipients. Notification, monitoring response, and incident resolution are separate. No one health signal establishes end-to-end service correctness. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Source/account operation, reported results, manual work and operational evidence. The example distinguishes target authorization denial, customer prerequisite correction, supported recovery of affected work, and current target confirmation. No universal retry or automatic post-change aggregation is asserted. |
+
+### Conditions and limits
+
+- Tenant isolation and customer operating responsibilities are different subjects. Logical separation among ISC tenants does not prevent a customer-authorized sandbox integration from reaching a live external system.
+- The responsibility table is a practical operating model. Actual subscription capabilities, documented component behavior, and applicable support arrangements govern implementation. No SLA, legal allocation, data-residency guarantee, or universal tenant count is invented.
+- SailPoint-hosted platform operation does not imply customer installation/patching of core ISC application servers or direct editing of private service storage.
+- Customer responsibility includes validating data, matching/mapping, access meanings, recipient/account targeting, delegated administration, external integration privileges, and operational outcomes. Work can be delegated, but business accountability requires an explicit arrangement.
+- Supplier Register is fictional and uses an assumed supported VA-based write path. The source integration is not the enterprise application itself. The transfer uses a SaaS connector with no customer-deployed VA.
+- The integration identity svc-supplier-isc, recipient supplier-31001, and ISC administrator are separate actors. Read authentication/permission does not confer write authorization, and tenant administration does not automatically convey external privileges.
+- The timeline's customer privilege change, successful read, denied write, and absent target entitlement are supplied evidence, not actual tenant observations. Without that evidence, customer fault must not be presumed from a failure.
+- Successful grant, rejected grant, sandbox misdirection, wrong manager data, and dependency-restored-with-work-pending are separately stated scenarios. No cross-scenario state is silently combined.
+- Component availability, software updates, operation completion, and business correctness remain distinct. VA updates are vendor-managed; customer hosting/connectivity and documented actions remain necessary. No customer manual replacement of SailPoint-managed software is recommended.
+- Configuration changes, applicable processing, provisioning, observation, and external authorization are separate mechanisms. A valid source configuration/import can still be wrong for the intended business environment.
+- Source/tenant/operation identifiers, times with time zones, scope and sanitized evidence support handoffs. Do not publish credentials or assume identity logs/exports are non-sensitive.
+- Detailed tenant authentication, VA/clusters, SaaS execution, IQService, network operations, API authorization, release/promotion and lifecycle design remain in their planned primary lessons.
+- Current official docs use Human Fabric / Identity Services naming. ISC remains the user's requested course name. Expanded documentation navigation is not treated as evidence of core subscription entitlement.
+
+### Diagrams and review checks
+
+- [Tenant/system responsibility map](../assets/ARC-001_tenant_and_system_boundaries.txt): hosted tenant, customer-deployed VA/network context, and external application, with integration actor and recipient distinguished.
+- [Request/target permission](../assets/ARC-001_request_and_target_permission.txt): supported change reaches the target authorization boundary; allowed/rejected branches and an independent successful-read observation.
+- Both text assets match the inline blocks. Maximum line widths are 55 and 57 characters. The map is conceptual, not packet routing, a private worker/queue topology, or a universal synchronous pipeline.
+- Local and live checks verify complete teaching text, headings, diagrams, tables, module placement, and navigation separately from beginner validation.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Healthy page, failed write | Scope of interface/read/write evidence | Page load is not connector/target-write proof; trace the specific operation and external permission result | A working dashboard proves the entire access path is healthy | Sources; monitoring; notifications |
+| Wrong manager input | Customer data/configuration versus service hosting | Validate authoritative data and mapping/matching, verify corrected result and affected work; escalate contradictory product behavior if evidenced | SaaS hosting or a platform update fixes incorrect business data automatically | Identity profiles; correlation |
+| Org Admin versus integration privilege | Distinct administration, connecting actor, and recipient | Tenant authority does not substitute for scoped external write permission; use authorized application/security change | One administrator permission applies across all systems and identities | User levels; connector credential responsibility |
+| Sandbox writes to production | Logical tenant boundary versus actual integration destination | Valid authorized connection can write to its configured production target; inspect destination/credential/scope before testing | A sandbox label prevents external live effects | Source configuration; instance badges |
+| Managed VA update versus network | Shared component operation | Inspect customer network/hosting/health and documented vendor-managed update process; don't improvise patching or ignore connectivity | VA maintenance is wholly customer-patched or wholly independent of customer operations | VA management; requirements |
+| Privilege restored, work unresolved | Prerequisite repair versus completed business outcome | Recover affected work through supported process, verify target permission and wider impact; no assumed universal retry | Correcting a dependency retroactively completes prior failed work | Monitoring provisioning |
+| SaaS-connector transfer | End-to-end reasoning without VA dependency | Preserve service/customer/target boundaries; accepted token doesn't supply write privilege; validate design and scoped permission, recover/verify target access | No VA means no integration dependencies or customer operational responsibility | SaaS source definition; connector credentials; monitoring |
+
+Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent, and review limitations stay outside it.

@@ -74,6 +74,13 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Request account selection | Requester chooses the intended source account when the recipient has multiple accounts in the documented Request Center path | Recipient identity, selected account, approval, and delivery remain distinct; an existing profile cannot simply be re-requested for another account |
 | Uncorrelated versus incorrectly correlated | Not matched to an authoritative identity versus matched to the wrong identity | Neither is equivalent to an external account disable/delete; uncorrelated-account searches do not expose every wrong-person association |
 | Account removal versus external deletion | Removing ISC's representation versus deleting the external system's account | The source account can be re-collected if it still exists; continuing access assignments must also be examined |
+| ISC tenant | Particular organizational environment within the hosted service, containing configuration and represented information | Not an external application, identity profile, source, VA cluster, or customer-owned physical server |
+| Software as a service / SaaS | Vendor-operated hosted application service | Hosting does not decide business access, correct customer data, supply external credentials/privileges, or verify every target result |
+| Operational responsibility boundary | Distinction among service operation, customer configuration/governance, integration dependencies, and target-system enforcement | An investigation map, not a universal blame assignment or contractual SLA |
+| Integration identity / recipient account / ISC administrator | Actor connecting to the external system / account receiving the access / actor administering ISC | Different credentials and permissions; tenant Org Admin is not automatic external application authority |
+| Virtual Appliance / VA cluster | Customer-deployed integration component / grouping supporting applicable connector connectivity | Not the full tenant or a requirement for every connector; SailPoint manages VA updates while customer hosting/network/monitoring dependencies remain |
+| SaaS connector | Supported connection path without a customer-deployed VA cluster | External API credentials, privileges, target behavior, and applicable connectivity still matter |
+| Sandbox versus production destination | ISC testing environment versus live environment and the actual external system each integration reaches | A sandbox tenant/badge does not itself block writes to a production target or make production data appropriate for all testers |
 
 ## Source anchors
 

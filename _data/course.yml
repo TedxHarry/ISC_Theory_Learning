@@ -3,6 +3,8 @@ modules:
     title: "1. Where ISC fits"
   - id: foundations
     title: "2. Objects and relationships"
+  - id: architecture
+    title: "3. Where does the work run?"
 lessons:
   - id: SYS-001
     module: system
@@ -101,3 +103,11 @@ lessons:
     source: "lessons/FND-007_One_Identity_with_Multiple_Accounts.md"
     url: "/lessons/FND-007_One_Identity_with_Multiple_Accounts.html"
     description: "Read separate account relationships and trace which account receives or holds access."
+
+  - id: ARC-001
+    module: architecture
+    placement: "Module 3.1"
+    title: "The ISC tenant and customer responsibilities"
+    source: "lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md"
+    url: "/lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.html"
+    description: "Separate hosted-service responsibilities from customer decisions and integration dependencies."

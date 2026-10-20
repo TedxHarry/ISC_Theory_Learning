@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Thirteen complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; and **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0.
+The course design and teaching specification are saved. Fourteen complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; and **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. That pilot did not itself complete Module 1, Module 2, or the whole course.
 
-The current lesson is FND-007. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is ARC-001. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 2.7, FND-007. All seven Module 2 lessons are now authored, not learner-validated or formally approved for publication. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 3.1, ARC-001. All seven Module 2 lessons are now authored, not learner-validated or formally approved for publication. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -34,6 +34,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [FND-005: Sources, access applications, catalogs, and sign-in](lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md) | Complete learner-facing lesson for Module 2.5 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [FND-006: Object IDs, account identifiers, and names](lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md) | Complete learner-facing lesson for Module 2.6 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [FND-007: One identity with multiple accounts](lessons/FND-007_One_Identity_with_Multiple_Accounts.md) | Complete learner-facing lesson for Module 2.7 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [ARC-001: The ISC tenant and customer responsibilities](lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md) | Complete learner-facing lesson for Module 3.1 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -404,9 +405,29 @@ Technical IDs use explicit non-runnable teaching labels. Account object ID, nati
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read FND-007 and apply feedback to this same file; then author Module 3.1 |
+| Next action | Preserve FND-007 for feedback and learner validation; ARC-001 was opened following the user's instruction to continue |
 
 The lesson separates personal-account correlation from shared-account responsibility, account rows from person identities, value lookup from grant selection, and account selection from successful fulfillment. Multiple Account Options are not presented as universal filters for requests or single-account identities. All seven Module 2 lesson files are authored; that is an authoring milestone, not beginner validation.
+
+### ARC-001
+
+| Field | ARC-001 |
+|---|---|
+| Title | The ISC tenant: what SailPoint runs, and what your organization still owns |
+| File | [ARC-001_ISC_Tenant_and_Customer_Responsibilities.md](lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md) |
+| Course placement | Module 3.1 |
+| Revision | 1.0 |
+| Content status | Complete authored lesson with tenant/SaaS boundaries, operational responsibility table, represented versus external accounts, VA/SaaS connection distinctions, shared VA maintenance, an approved-but-denied update timeline, three-actor permissions, sandbox destination risk, configuration/application evidence, six cases, and SaaS-connector transfer/teach-back |
+| Author review | Revision 1.0 reviewed against teaching specification v2.6 on October 20, 2026; independent context, first-use meanings, documented boundaries, fictional operation conditions, evidence reasoning, diagrams, answers, and mentor narration checked |
+| Documentation check | October 20, 2026; official platform/tenant description, source/connector definitions, external credential responsibilities, VA operation/requirements, tenant user levels/badges/notifications, identity/role configuration, deployment and monitoring references mapped in author records |
+| Diagram sources | [Tenant/system boundaries](assets/ARC-001_tenant_and_system_boundaries.txt) and [request/target permission](assets/ARC-001_request_and_target_permission.txt); synchronized with inline blocks, maximum line widths 55 and 57 characters |
+| Tenant execution | Not performed; employee 31001, Supplier Register, supplier-31001, svc-supplier-isc, supplier.view, times, privileges, document-service transfer, and outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest under Module 3; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read ARC-001 and apply feedback to this same file; then author Module 3.2 |
+
+The responsibility map is an operational teaching model, not a contractual SLA, assurance of universal feature availability, private backend topology, or reason to presume the customer caused every failure. The VA example is explicitly scoped; the SaaS-connector transfer has no customer-deployed VA. Restoring a prerequisite, recovering failed work, and verifying target access remain distinct.
 
 ## Source-citation relocation
 
@@ -418,17 +439,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons and all seven Module 2 lessons are authored. FND-001 was reviewed in its course position, followed by FND-002 through FND-007. Learner validation and formal publication review remain separate pending stages.
+All six Module 1 lessons, all seven Module 2 lessons, and the opening Module 3 lesson ARC-001 are authored. Learner validation and formal publication review remain separate pending stages. The rest of Module 3 is planned, not completed.
 
-The next new lesson is Module 3.1:
+The next new lesson is Module 3.2:
 
-**The ISC tenant and the responsibilities retained by the customer.**
+**Virtual Appliances and clusters: their place in a connection.**
 
-- Reserved permanent ID: `ARC-001`.
-- Planned file: `lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md`.
+- Reserved permanent ID: `ARC-002`.
+- Planned file: `lessons/ARC-002_Virtual_Appliances_and_Clusters.md`.
 - Status: planned only; no lesson file created.
-- Scope: what an ISC tenant represents, SaaS platform responsibilities versus customer configuration/data/access responsibilities, environment boundaries, source/connector and customer-system relationships, and operational evidence. Introduce the required terms locally; do not imply that SaaS hosting removes customer governance duties or that every connector uses the same execution path.
-- Resolve known feedback on FND-007 before opening the next writing task.
+- Scope: VA purpose and connection boundaries, clusters versus individual appliances, hosted tenant versus customer deployment, supported connector execution and communication dependencies, availability and update conditions, and the evidence used to investigate a VA-related symptom. Do not imply that every connector uses a VA or that a healthy cluster proves every source operation succeeds.
+- Resolve known feedback on ARC-001 before opening the next writing task.
 
 ## Recording review status
 
@@ -473,3 +494,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored and reviewed FND-005 revision 1.0 with business/ISC application and source distinctions, catalog/requester rules, independent request/change and sign-in paths, source-visibility limits, five worked cases, and updated navigation; reserved FND-006 | Documentation-based author review; fictional account/sign-in integration; no tenant testing, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed FND-006 revision 1.0 with object/native/business identifier distinctions, source/type/environment references, rename and schema-change reasoning, two diagrams, five worked cases, and transfer/teach-back; updated navigation and reserved FND-007 | Documentation-based author review; fictional records and teaching-ID labels; no tenant testing, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed FND-007 revision 1.0 with multiple-account relationships, separate value-lookup and provisioning-selection behavior, automatic/request and single-account boundaries, account-state/removal reasoning, two diagrams, six cases, and payroll transfer; all seven Module 2 lessons now authored; reserved ARC-001 | Documentation-based author review; fictional accounts and outcomes; no tenant testing, beginner validation, or formal publication approval |
+| October 20, 2026 | Authored and reviewed ARC-001 revision 1.0 with tenant/service/customer boundaries, shared component maintenance, external read/write privilege incident, sandbox destination reasoning, two diagrams, six cases, and SaaS-connector transfer; opened Module 3 navigation and reserved ARC-002 | Documentation-based author review; operational teaching model and fictional evidence; no tenant testing, beginner validation, or formal publication approval |

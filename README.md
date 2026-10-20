@@ -10,7 +10,7 @@ The course is for beginners and freshers with some IAM knowledge. Its purpose is
 - [Read the available lessons](https://tedxharry.github.io/ISC_Theory_Learning/)
 - [Publishing and update instructions](author/PUBLISHING.md)
 
-The repository contains the complete working files. GitHub Pages presents the thirteen available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
+The repository contains the complete working files. GitHub Pages presents the fourteen available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
 
 ## Start here
 
@@ -33,6 +33,7 @@ The repository contains the complete working files. GitHub Pages presents the th
 - [FND-005: Sources, access applications, catalogs, and sign-in](lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md)
 - [FND-006: Object IDs, account identifiers, and names](lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md)
 - [FND-007: One identity with multiple accounts](lessons/FND-007_One_Identity_with_Multiple_Accounts.md)
+- [ARC-001: The ISC tenant and customer responsibilities](lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md)
 
 ## One lesson file at a time
 
@@ -59,6 +60,6 @@ Examples can use Devi, but every lesson supplies its own context. A learner must
 
 ## Current saved material
 
-The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, and Module 2 lessons FND-001 through FND-007 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
+The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, Module 2 lessons FND-001 through FND-007, and Module 3's ARC-001 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
 
-FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-007. All six Module 1 lessons and all seven Module 2 lessons are authored; learner validation and formal publication review remain pending. ARC-001, on the ISC tenant and customer responsibilities in Module 3.1, is the next planned lesson. The register distinguishes saved work, review work, and planned work.
+FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-007. All six Module 1 lessons and all seven Module 2 lessons are authored; learner validation and formal publication review remain pending. ARC-001 opens Module 3 with the ISC tenant and customer responsibilities. ARC-002, on Virtual Appliances and clusters in Module 3.2, is the next planned lesson. The register distinguishes saved work, review work, and planned work.

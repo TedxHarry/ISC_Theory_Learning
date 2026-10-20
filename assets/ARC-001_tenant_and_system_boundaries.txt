@@ -1,0 +1,17 @@
+SailPoint-hosted service
+  ISC production tenant
+    Identity and represented account information
+    Source and access configurations
+    Requests, processing, and recorded activity
+                  |
+                  | Supported integration
+                  v
+Customer-managed operating environment
+  VA cluster and required network dependencies
+                  |
+                  | External authentication/permissions
+                  v
+Supplier Register
+  Integration account: svc-supplier-isc
+  Devi's account: supplier-31001
+  Application accounts and enforced permissions

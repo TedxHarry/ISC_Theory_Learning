@@ -1,0 +1,18 @@
+Approved View suppliers request
+  |
+  v
+ISC initiates supported change
+  |
+  v
+Configured integration reaches Supplier Register
+  |
+  +-- Required write permitted?
+        |
+        +-- Yes --> Application applies supplier.view
+        |
+        +-- No ---> Application rejects the change
+                    Permission not delivered in this case
+
+Separate observation:
+  Account read can succeed with read permission.
+  Reading accounts does not grant write permission.
