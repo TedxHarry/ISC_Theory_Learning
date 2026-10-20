@@ -1,0 +1,16 @@
+[VA reaches intended IQService endpoint]
+                     |
+                     v
+[TLS: trusted server + protected channel]
+                     |
+                     v
+[Registered client authenticates in Windows]
+                     |
+                     v
+[Required IQService capability available]
+                     |
+                     v
+[Target permits the requested operation]
+                     |
+                     v
+[Target change and reported result examined]

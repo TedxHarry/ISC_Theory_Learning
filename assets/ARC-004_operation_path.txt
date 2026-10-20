@@ -1,0 +1,13 @@
+[ISC: approved, supported access change]
+                |
+                | work and returned results
+                v
+[VA: Active Directory connector work]
+                |
+                | request to configured IQService
+                v
+[Windows host: IQService]
+                |
+                | supported directory operation
+                v
+[Active Directory: account + group]

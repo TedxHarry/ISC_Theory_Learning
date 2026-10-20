@@ -10,7 +10,7 @@ The course is for beginners and freshers with some IAM knowledge. Its purpose is
 - [Read the available lessons](https://tedxharry.github.io/ISC_Theory_Learning/)
 - [Publishing and update instructions](author/PUBLISHING.md)
 
-The repository contains the complete working files. GitHub Pages presents the sixteen available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
+The repository contains the complete working files. GitHub Pages presents the seventeen available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
 
 ## Start here
 
@@ -38,6 +38,8 @@ The repository contains the complete working files. GitHub Pages presents the si
 
 - [ARC-003: SaaS connectors and their connection path](lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md)
 
+- [ARC-004: Where IQService fits](lessons/ARC-004_Where_IQService_Fits.md)
+
 ## One lesson file at a time
 
 1. Read the teaching specification and course register before starting work.
@@ -63,6 +65,6 @@ Examples can use Devi, but every lesson supplies its own context. A learner must
 
 ## Current saved material
 
-The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, Module 2 lessons FND-001 through FND-007, and Module 3 lessons ARC-001, ARC-002, and ARC-003 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
+The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, Module 2 lessons FND-001 through FND-007, and Module 3 lessons ARC-001, ARC-002, ARC-003, and ARC-004 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
 
-FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-007. All six Module 1 lessons and all seven Module 2 lessons are authored; learner validation and formal publication review remain pending. ARC-001 opens Module 3 with the ISC tenant and customer responsibilities. ARC-002 covers Virtual Appliances and clusters in Module 3.2. ARC-003 covers SaaS connectors and their connection path in Module 3.3. ARC-004, on where IQService fits when a connector requires it in Module 3.4, is the next planned lesson. The register distinguishes saved work, review work, and planned work.
+FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-007. All six Module 1 lessons and all seven Module 2 lessons are authored; learner validation and formal publication review remain pending. ARC-001 opens Module 3 with the ISC tenant and customer responsibilities. ARC-002 covers Virtual Appliances and clusters in Module 3.2. ARC-003 covers SaaS connectors and their connection path in Module 3.3. ARC-004 covers where IQService fits when a connector requires it in Module 3.4. ARC-005, on network reachability, authentication, permissions, and operation support in Module 3.5, is the next planned lesson. The register distinguishes saved work, review work, and planned work.

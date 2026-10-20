@@ -127,3 +127,11 @@ lessons:
     source: "lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md"
     url: "/lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.html"
     description: "Separate cloud hosting from connector runtime and trace API authority, reads, changes, and evidence."
+
+  - id: ARC-004
+    module: architecture
+    placement: "Module 3.4"
+    title: "Where IQService fits"
+    source: "lessons/ARC-004_Where_IQService_Fits.md"
+    url: "/lessons/ARC-004_Where_IQService_Fits.html"
+    description: "Trace Windows-side connector work, distinct credential roles, secured connections, and operation evidence."
