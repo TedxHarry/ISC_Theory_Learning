@@ -1,0 +1,15 @@
+[Devi using UI]       [Authorized API client]
+       |                       |
+       +-----------+-----------+
+                   |
+                   v
+[Applicable ISC request checks and processing]
+                   |
+                   v
+[Configured approval and delivery conditions]
+                   |
+                   v
+[Supported connector work, where required]
+                   |
+                   v
+[ReportHub: report-36006 receives report.read]

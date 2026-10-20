@@ -113,6 +113,16 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | HTTP response scope | Status plus origin, context and detail classify a response | 400/401/403 aren't unique root-cause diagnoses; 407 concerns proxy admission; 429 concerns rate limiting, not an immediate-repeat guarantee |
 | Idempotent operation | Repeating equivalent requests has the same intended target effect as one request | Not universal connector behavior, identical responses, no logging/side effects, or permission to blindly retry unknown outcomes |
 | Repair / reconciliation / target verification | Restore prerequisite / establish and recover actual work outcome / check intended target state | One doesn't establish the other; timeout and older collected state don't prove no change |
+| UI / frontend / backend | Human-facing controls / presentation and interaction / hosted processing of relevant operations | Roles in a conceptual explanation, not evidence of private architecture or identical public endpoints behind every button |
+| Platform capability / API contract | Supported operation / documented input, permissions, response and behavior for an API | Starting route doesn't define the operation's effect; public doesn't mean unauthenticated, and undocumented browser calls aren't a supported integration contract |
+| API client / SDK / CLI | Software making calls / supporting call libraries / text-command interface | Tooling doesn't create authority, supply missing inputs, add capabilities or bypass downstream connectors |
+| ISC user level and token scopes | Applicable platform permission boundary plus token-specific API permissions | Scope doesn't grant authority outside user context; user-associated and client-only credentials aren't interchangeable for every endpoint |
+| ISC PAT and access token | User-associated client credential mechanism / token presented to the resource API under its supported rules | Client ID identifies the credential, client secret obtains a token in the applicable flow; none is the target connector's credential or proof of every API permission |
+| Request reference versus object/account reference | Identifier for tracked request / identity or access object / external recipient account | Preserve their distinct roles; accepted asynchronous work isn't approval or target completion, and stopping the caller isn't cancellation |
+| Automation / ISC Workflow | Configured software-driven work / supported trigger-and-step definition managed within ISC | External schedulers and Workflows are different mechanisms; not every internal ISC process is a custom Workflow |
+| Workflow trigger/filter/action/operator/execution | Start/input condition / event narrowing / selected work / path/data control / one run | Filtered-out event isn't a failed run; successful path or notification doesn't prove an access grant; saved definition isn't a real execution |
+| Status query versus new command | Inspect a tracked object's state / submit additional work | Refreshing views or seeing older collected state isn't authority to duplicate writes |
+| API public/experimental/version boundary | Supported contract and stability conditions for a selected service | Don't freeze old version names, infer parity from browser calls or use an experimental contract as a universal production promise |
 
 ## Source anchors
 

@@ -866,6 +866,70 @@ Questions and worked reasoning stay in the learner file. Source references, asse
 
 Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent, and review limitations stay outside it.
 
+
+## ARC-006: UI, APIs, automation, and platform capabilities
+
+- Revision: 1.0. Course placement: Module 3.6.
+- Documentation checked: October 20, 2026. Current access-request submission contract, API authentication/authorization/version strategy, access-profile update behavior, Workflow concepts/triggers/actions/operators/history, and request/provisioning evidence reviewed.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. ReportHub, its connector and permissions, employee 36006, object/request references and all observed outcomes are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: conceptual UI/API/automation entry points, operation-specific meaning, authority, asynchronous evidence, connector continuity and Workflow logic. No executable integration recipe, real credential, private backend topology, or universal action/approval behavior is supplied.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Submit access request](https://developer.sailpoint.com/docs/api/create-access-request-v-1/) | Current per-service submission documentation: supported request follows ISC approval processes; caller user context and request conditions matter; asynchronous queued submission and 202 response are not delivery; duplicate/overlapping requests need not return immediate submission errors. Self/on-behalf-of rules vary with configuration. Machine identity, forms and sunrise/sunset details are outside this lesson. |
+| [API reference, v2025 documented bundle](https://developer.sailpoint.com/redoc/sailpoint-api-v2025-light.html) | Supplementary contract cross-check: createAccessRequest's 202 AccessRequestResponse contains tracking information for new/existing requests and access-request IDs; patchAccessProfile supports description updates. No legacy version is recommended, no schema field names are frozen in learner prose, and no executable endpoint/payload is supplied. |
+| [API authentication](https://developer.sailpoint.com/docs/api/authentication/) | PAT client ID/secret obtain an access token; user-associated and outside-user contexts are not interchangeable for endpoints requiring user levels; credential selection for unattended work must follow the selected operation. A client secret is not the resource API bearer token. No recommendation to use an engineer's unrestricted personal credential for production automation. |
+| [API authorization](https://developer.sailpoint.com/docs/api/authorization/) | User-level boundary and token scopes; a read-limited token does not inherit every UI permission, and broader scope does not elevate the user's level. Endpoint-specific caller/authorization requirements remain relevant. No scope-merging algorithm or universal role matrix is taught. |
+| [API versioning strategy](https://developer.sailpoint.com/docs/api/api-versioning-strategy/) | Current service-specific contracts and public versus Experimental stability; check operation/version documentation rather than freezing historical version names or copying undocumented browser calls. No migration deadline or current version inventory is asserted. |
+| [Workflow overview](https://documentation.sailpoint.com/saas/help/workflows/index.html) | Workflow trigger/input/steps, actions, operators and end conditions; UI-managed definition versus execution. Workflow is not every internal ISC process or a capability/permission bypass. |
+| [Workflow triggers](https://documentation.sailpoint.com/saas/help/workflows/workflow-triggers.html) | Relevant identity-change event and trigger filtering; nonmatching event need not create an execution. The example supplies an enabled Workflow and available event, not a claim that every change triggers every Workflow. |
+| [Workflow actions](https://documentation.sailpoint.com/saas/help/workflows/workflow-actions.html) | Action-specific behavior and inputs, including notifications and integration authentication. Built-in actions are not all equivalent to a personal-token public API call. No retired access-request action name or blanket bypass/preservation of every approval for every automation action is asserted. |
+| [Workflow operators](https://documentation.sailpoint.com/saas/help/workflows/workflow-operators.html) | Choice/data-flow behavior and successful end; success is scoped to the configured execution rather than proving a target permission. |
+| [Managing Workflows](https://documentation.sailpoint.com/saas/help/workflows/workflow-manage.html) | Saved definition, enabled state, sample-input tests and real event path are distinct; execution history provides inputs, outputs, path and configuration evidence. No fixed retention period or undocumented execution ordering is asserted. |
+| [Request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) and [access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Supporting requestability/review and one-source entitlement bundle. The description-only update is deliberately narrower than edits to membership/entitlements or enabled/requestability settings. No claim that all configuration edits have no access effects. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Request/operation evidence versus target-state confirmation. Accepted submission, approval, tracked delivery and actual external permission remain separate observations. No instant refresh, guaranteed retry, rollback or timeout-equals-no-effect promise. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [account loading](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html) and [SaaS connectivity](https://developer.sailpoint.com/docs/connectivity/saas-connectivity/) | Supporting definitions/path boundaries retain same-day checks recorded in earlier lessons: account/person association, collected information, source/connector roles, hosted SaaS connector execution versus VA-based work. No claim that all connectors support automatic delivery. |
+
+### Conditions and limits
+
+- Devi's identity I-36, profile AP-36 and request AR-36 are different non-runnable stand-ins. Employee 36006 and external username report-36006 are not interchangeable with those references. No credential value is supplied.
+- ReportHub Production has one intended, existing, correctly correlated eligible account. Read quality reports contains only report.read, which grants reading under the fictional target model. Requestability, applicable checks, configured approval and supported automatic delivery without account creation/custom scripts are explicit assumptions.
+- UI and API submissions are alternatives for the same intended request, not two required submissions. The comparison supplies Devi's user context and appropriate token authority; it is not a universal self-request or on-behalf-of permission promise.
+- The UI can combine interactions. No one-to-one public endpoint mapping, shared internal endpoint, private service topology or undocumented browser-call contract is invented.
+- A description-only supported update saves descriptive configuration. Other edits can have different effects. Reading objects, enabling requests, requesting access, aggregation and provisioning are not interchangeable operations.
+- Accepted asynchronous submission is not approval or delivery. Preserve the relevant request references, inspect existing work/status, and follow the chosen contract before repeating. Ending the client is not inferred cancellation.
+- The ISC API caller and external integration actor svc-report-isc are separate. A token accepted by ISC does not supply target credentials or cure target privilege failure. Changing entry point does not change the configured connector runtime.
+- The notification-only Workflow is enabled and receives an available relevant event. A nonmatching trigger filter produces no execution in this example; an internal false choice can end an execution successfully without sending notification. Neither case grants access.
+- Saved configuration, sample-input testing, actual event matching, execution path, action result and subsequent asynchronous outcome have different evidence scopes. No fake real-tenant execution is claimed.
+- Available actions, licensing, permissions and connector operations remain conditional. The lesson does not say every Workflow action uses the same credentials or follows the access-request endpoint's approval behavior.
+- UI/API comparisons require equivalent tenant, object, actor authority, operation, filters, pagination and observation time. A first page and an older account view cannot establish missing objects or failed delivery by themselves.
+- Credential ownership, rotation, least privilege and failure handling are design requirements, not an executable authentication/runbook recipe. No exact token lifetime, rate limit, API page size, retention period or duplicate-protection guarantee is asserted.
+- Current service documentation and supported versions govern real integrations; public does not mean anonymous. Product branding/packaging can change without making the course a license guarantee.
+
+### Diagrams and review checks
+
+- [Entry points and delivery](../assets/ARC-006_entry_points_and_delivery.txt): alternative UI/API request entry, applicable checks, configured approval/delivery, connector work and successful target effect.
+- [Workflow trigger and choice](../assets/ARC-006_workflow_trigger_and_choice.txt): trigger filter before execution versus internal notification decision after execution begins.
+- Both assets match the inline blocks exactly; maximum line widths are 46 and 46 characters. Nearby text explains conditions, arrow scope, omitted implementation detail and lack of guaranteed success.
+- Local/live checks separately verify complete content, diagram text, tables, placement and navigation; visual checks assess rendered readability, not learner comprehension or actual tenant outcomes.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| UI works, read-only token rejects update | UI authority versus token scope | Inspect supported operation and required justified scope; do not broaden blindly or use undocumented calls | A valid token inherits all its owner's UI capabilities, or denial proves missing API capability | Authentication; authorization |
+| Description-only profile update | Operation-specific success | Saved descriptive configuration is not an assignment; no account change was requested | Every successful profile save grants access | Access-profile update contract |
+| Accepted request, client exits | Asynchronous tracking and decision stage | Preserve reference; supplied pending approval means submitted work remains tracked; no inferred cancellation or duplicate submission | Caller lifetime controls downstream request completion | Submission contract; request configuration |
+| Successful no-notification Workflow | Definition/path versus misleading name | Inspect actual steps and false branch; successful configured end proves no grant in notification-only case | Workflow success or its name proves access delivery | Operators; execution history; supplied definition |
+| First API page versus UI list | Collection scope | Follow documented pagination and compare equivalent filters/object types | One successful page is the complete population or evidence of deletion | Selected list-operation contract; supplied pagination facts |
+| External training-application scheduler | Transfer of authority, tracking and outcome design | Token acquisition is not accepted request; preserve references, reconcile existing work, track decisions/delivery and define scoped unattended ownership/recovery | Automation success is merely obtaining a token and sending/repeating writes | Authentication/authorization; submission contract; provisioning evidence |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

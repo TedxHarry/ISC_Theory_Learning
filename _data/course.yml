@@ -143,3 +143,11 @@ lessons:
     source: "lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md"
     url: "/lessons/ARC-005_Connection_Dependencies_and_Operation_Support.html"
     description: "Distinguish reachability, trust, caller authority, capability, valid input, and evidence of the actual outcome."
+
+  - id: ARC-006
+    module: architecture
+    placement: "Module 3.6"
+    title: "UI, APIs, automation, and platform capabilities"
+    source: "lessons/ARC-006_UI_APIs_Automation_and_Platform_Capabilities.md"
+    url: "/lessons/ARC-006_UI_APIs_Automation_and_Platform_Capabilities.html"
+    description: "Follow entry points, caller authority, operation meaning, request tracking, and configured automation."

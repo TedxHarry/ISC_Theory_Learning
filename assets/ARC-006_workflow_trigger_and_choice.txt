@@ -1,0 +1,16 @@
+[Relevant identity-change event]
+                |
+                v
+[Trigger filter matches?]
+     | no                  | yes
+     v                     v
+[No execution]       [Workflow input]
+                           |
+                           v
+                    [Review needed?]
+                     | no       | yes
+                     v          v
+                   [End]   [Send notification]
+                                |
+                                v
+                              [End]
