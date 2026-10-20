@@ -1,0 +1,20 @@
+READ: observe the external account
+
+[ProjectBoard: project-33003]
+              |
+              | account data through SaaS connector
+              v
+[ISC: collected account representation]
+
+
+CHANGE: deliver an approved access assignment
+
+[ISC: supported provisioning work]
+              |
+              | SaaS connector calls production API
+              v
+[ProjectBoard: project-33003]
+              |
+              | target accepts and applies change
+              v
+[project.view held by external account]

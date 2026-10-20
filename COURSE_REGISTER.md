@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Fifteen complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; and **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0.
+The course design and teaching specification are saved. Sixteen complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; and **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. That pilot did not itself complete Module 1, Module 2, or the whole course.
 
-The current lesson is ARC-002. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is ARC-003. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 3.2, ARC-002. All seven Module 2 lessons are now authored, not learner-validated or formally approved for publication. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 3.3, ARC-003. All seven Module 2 lessons are now authored, not learner-validated or formally approved for publication. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -36,6 +36,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [FND-007: One identity with multiple accounts](lessons/FND-007_One_Identity_with_Multiple_Accounts.md) | Complete learner-facing lesson for Module 2.7 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [ARC-001: The ISC tenant and customer responsibilities](lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md) | Complete learner-facing lesson for Module 3.1 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [ARC-002: Virtual Appliances and clusters](lessons/ARC-002_Virtual_Appliances_and_Clusters.md) | Complete learner-facing lesson for Module 3.2 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [ARC-003: SaaS connectors and their connection path](lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md) | Complete learner-facing lesson for Module 3.3 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -446,9 +447,28 @@ The responsibility map is an operational teaching model, not a contractual SLA, 
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest under Module 3; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read ARC-002 and apply feedback to this same file; then author Module 3.3 |
+| Next action | Preserve ARC-002 for feedback and learner validation; ARC-003 was opened following the user's instruction to continue |
 
 The lesson uses the documented VA cluster queue/polling model, not an invented private backend. Work direction is distinguished from VA-initiated outbound communication. Appliance availability, per-member target connectivity, update continuity, DR source reassociation, and operation recovery remain separate. A supplied lost-response case is not combined with the main before-authentication DNS failure.
+
+### ARC-003
+
+| Field | ARC-003 |
+|---|---|
+| File | [ARC-003_SaaS_Connectors_and_Their_Connection_Path.md](lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md) |
+| Revision | 1.0 |
+| Course placement | Module 3.3 |
+| Content status | Complete lesson saved; cloud hosting versus connector runtime, configuration and external API authority, reads and supported changes, UI evidence, operational failures, and migration boundaries |
+| Author review | October 20, 2026; meaning-before-process, independent example context, causal flows, operation-specific evidence, diagrams, six worked cases, transfer, and mentor narration checked |
+| Documentation check | October 20, 2026; official SaaS connectivity, source definitions, connector-specific authentication/capability examples, migration, account/schema/provisioning references, and OAuth terminology mapped in author records |
+| Diagram sources | [SaaS and VA paths](assets/ARC-003_saas_and_va_paths.txt) and [read and change](assets/ARC-003_read_and_change.txt); synchronized with inline blocks, maximum line widths 39 and 51 characters |
+| Tenant execution | Not performed; employee 33003, ProjectBoard, project-33003, isc-project-prod, workspaces, project.view, API behavior and incident evidence are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest under Module 3; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read ARC-003 and apply feedback to this same file; then author Module 3.4 |
+
+The source's selected connector determines its supported execution path, not the business application's hosting location. Read capability, target authorization, business approval, external destination, reported operation result, and collected account state remain distinct. Migration is scoped to the documented eligible sources and irreversible apply process; retiring a shared cluster is a separate decision.
 
 ## Source-citation relocation
 
@@ -460,17 +480,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons, all seven Module 2 lessons, and Module 3 lessons ARC-001 and ARC-002 are authored. Learner validation and formal publication review remain separate pending stages. The rest of Module 3 is planned, not completed.
+All six Module 1 lessons, all seven Module 2 lessons, and Module 3 lessons ARC-001, ARC-002, and ARC-003 are authored. Learner validation and formal publication review remain separate pending stages. The rest of Module 3 is planned, not completed.
 
-The next new lesson is Module 3.3:
+The next new lesson is Module 3.4:
 
-**SaaS connectors and their connection path.**
+**Where IQService fits when a connector requires it.**
 
-- Reserved permanent ID: `ARC-003`.
-- Planned file: `lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md`.
+- Reserved permanent ID: `ARC-004`.
+- Planned file: `lessons/ARC-004_Where_IQService_Fits.md`.
 - Status: planned only; no lesson file created.
-- Scope: source and SaaS connector meanings, supported cloud connection/execution path versus VA-based connectivity, external API authentication/authorization, configuration and target dependencies, read/write capability and evidence, failure boundaries, and connector-specific conditions. Do not infer a SaaS execution path merely because the business application is cloud-hosted, or promise that every connector can be converted without qualification.
-- Resolve known feedback on ARC-002 before opening the next writing task.
+- Scope: IQService's role for documented connector operations, execution and communication boundaries, its relationship to ISC/VA/target systems, operation-specific requirements, service credentials and security dependencies, and evidence for distinguishing failures. Do not imply every connector or every operation needs IQService, or treat it as a replacement for ISC or a VA.
+- Resolve known feedback on ARC-003 before opening the next writing task.
 
 ## Recording review status
 
@@ -517,3 +537,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored and reviewed FND-007 revision 1.0 with multiple-account relationships, separate value-lookup and provisioning-selection behavior, automatic/request and single-account boundaries, account-state/removal reasoning, two diagrams, six cases, and payroll transfer; all seven Module 2 lessons now authored; reserved ARC-001 | Documentation-based author review; fictional accounts and outcomes; no tenant testing, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed ARC-001 revision 1.0 with tenant/service/customer boundaries, shared component maintenance, external read/write privilege incident, sandbox destination reasoning, two diagrams, six cases, and SaaS-connector transfer; opened Module 3 navigation and reserved ARC-002 | Documentation-based author review; operational teaching model and fictional evidence; no tenant testing, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed ARC-002 revision 1.0 with source/cluster/member relationships, documented outbound polling and work flow, pairing/CCG, per-member connectivity, HA/DR and update conditions, DNS failure and interrupted-outcome reasoning, two diagrams, six cases, and Payroll transfer; reserved ARC-003 | Documentation-based author review; fictional operations and evidence; no tenant testing, beginner validation, or formal publication approval |
+| October 20, 2026 | Authored and reviewed ARC-003 revision 1.0 with SaaS runtime versus application hosting, source configuration, target/API authority, read and change flows, UI/evidence boundaries, credential and collection failures, eligible-source migration conditions, two diagrams, six cases and payroll design transfer; reserved ARC-004 | Documentation-based author review; fictional operations and evidence; no tenant testing, beginner validation, or formal publication approval |

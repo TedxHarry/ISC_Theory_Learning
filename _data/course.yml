@@ -119,3 +119,11 @@ lessons:
     source: "lessons/ARC-002_Virtual_Appliances_and_Clusters.md"
     url: "/lessons/ARC-002_Virtual_Appliances_and_Clusters.html"
     description: "Trace VA-based work, cluster membership, outbound communication, and recovery evidence."
+
+  - id: ARC-003
+    module: architecture
+    placement: "Module 3.3"
+    title: "SaaS connectors and their connection path"
+    source: "lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md"
+    url: "/lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.html"
+    description: "Separate cloud hosting from connector runtime and trace API authority, reads, changes, and evidence."

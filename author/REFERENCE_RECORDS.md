@@ -866,6 +866,71 @@ Questions and worked reasoning stay in the learner file. Source references, asse
 
 Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent, and review limitations stay outside it.
 
+## ARC-003
+
+- Lesson: [ARC-003](../lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md), revision 1.0.
+- Course placement: Module 3.3.
+- Documentation checked: October 20, 2026; source definitions, SaaS runtime overview, migration, example connector authentication/capabilities, account loading/schema, provisioning/monitoring, and supporting OAuth definitions reviewed. Access-profile and correlation meanings also retain the documented checks recorded in earlier lessons on the same date.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. ProjectBoard is a fictional application and connector, not a verified connector offering. Employee 33003, accounts, integration client, workspaces, access value, target behavior and incident evidence are invented.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: conceptual and operational SaaS connector path, external API authority, read/change distinctions, evidence and supported migration boundaries. No custom connector coding, OAuth implementation recipe, private backend topology, full migration procedure, product entitlement promise, or universal retry/refresh behavior is taught.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source/connector distinctions; direct connections can use VA-based or SaaS connectors; SaaS needs no on-premise VA cluster; read-only SaaS configurations exist as well as deeper governance options. Execution location and operation capability are different questions. No claim that all SaaS connectors provision or that every application has both paths. |
+| [SaaS connectivity overview](https://developer.sailpoint.com/docs/connectivity/saas-connectivity/) | Hosted connector runtime rather than customer VA execution; cloud runtime cannot simply reach intranet-only services; VA and SaaS paths can coexist. The diagrams are logical boundaries, not copied private infrastructure architecture. The source's credential-encryption discussion isn't generalized to unsupported secret handling. |
+| [Virtual Appliances](https://documentation.sailpoint.com/saas/help/va/index.html) and [deployment](https://documentation.sailpoint.com/saas/help/va/deploy_va.html) | Supporting VA/cluster meanings, outbound-initiated cloud communication, source/cluster association, and shared cluster dependencies. Prior ARC-002 source verification is retained; ARC-003 doesn't reproduce an installation recipe or infer that every external interface is an API. |
+| [Migrating VA-based sources](https://documentation.sailpoint.com/saas/help/sources/migrate_sources.html) | Listed eligible sources only; prepare draft while live source operates; reenter encrypted values; permanent non-revertible apply; schema compatibility/dependencies; possible scheduling effects from time-zone differences. Source migration isn't permission to delete a cluster still used elsewhere. The source was reviewed, not an actual migration run. |
+| [Box SaaS connection settings](https://documentation.sailpoint.com/connectors/saas/box/help/saas_connectivity/box/connection_settings.html) | Concrete primary-source evidence that SaaS connection configuration can include external enterprise ID, client ID/secret and authentication-specific key values. These fields aren't a universal connector schema; the lesson doesn't claim ProjectBoard uses Box authentication or copy key-generation steps. |
+| [Google Workspace SaaS prerequisites](https://documentation.sailpoint.com/connectors/saas/googleworkspace/help/saas_connectivity/google_workspace/prerequisites.html) | External authorization context, supported OAuth methods, consent and user/impersonation roles can affect API authority. Token scope alone isn't a complete universal permission model. Google-specific roles, licensing and extra product setup aren't presented as ISC-wide prerequisites. |
+| [Salesforce SaaS supported features](https://documentation.sailpoint.com/connectors/saas/salesforce/help/saas_connectivity/salesforce/supported_features.html) | Operation/account-type-specific capability and activation conditions. Current documentation supports account operations but excludes enable/disable for portal/partner users. The learner text uses this only as evidence that feature exceptions exist, not a Salesforce configuration lesson or timeless feature table. |
+| [Salesforce VA-based prerequisites](https://documentation.sailpoint.com/connectors/salesforce/help/integrating_salesforce/prerequisites.html) | Concrete counterexample to cloud application implies no VA: this documented connector path requires a VA cluster. The SaaS path is a separate option. Authentication recommendations change, so no legacy Basic/OAuth setup recommendation is copied into the lesson. |
+| [SuccessFactors SaaS prerequisites](https://documentation.sailpoint.com/connectors/saas/successfactors/help/saas_connectivity/successfactors/prerequisites.html) | External API privileges and network-origin restrictions can still matter with SaaS connectivity. Diagnostic reasoning doesn't authorize removing all restrictions or invent a fixed IP allowlist. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) and [account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Aggregation collects account information; supported scheduled/on-demand entry points, collection activity and scope; schema fields and designated account identifiers. A first API page isn't a completed collection. No deletion behavior or correlation reevaluation is inferred from a partial failed example. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html), and [request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Supporting person/account association, one-source entitlement bundle and configured request review. Correct correlation, recipient/account choice and available provisioning are supplied assumptions; no full account-selection or eligibility algorithm is invented. |
+| [Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html) and [monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Changing access versus reading it; account/source/recipient/action/result/error evidence; tracked operation versus target state. Applicable automatic provisioning is assumed explicitly. No guaranteed immediate refresh, universal retry, rollback, session termination or timeout-equals-no-effect claim. |
+| [OAuth 2.0 framework, RFC 6749](https://www.rfc-editor.org/rfc/rfc6749.html), sections 1.4, 1.5, 2.2, 2.3 and 3.3 | Supporting access-token, refresh-token, client identifier/authentication and scope meanings only. This foundational definitions source isn't a recommendation to implement every historical OAuth flow. Current supported connector authentication requirements govern actual configuration. |
+
+### Conditions and limits
+
+- ProjectBoard Production is the ISC source label. Delivery-Prod is the intended external workspace; Delivery-Test is a separate external workspace. A duplicate account string in test doesn't establish production identity or correct destination.
+- Devi's existing project-33003 account is already correctly associated with her ISC identity. Employee number 33003 isn't silently treated as a source account key.
+- Integration client isc-project-prod uses the configured fictional API token. It is distinct from the recipient, an ISC administrator, and an API caller authenticated to ISC itself. No usable credential, endpoint, token payload or API command is supplied.
+- The main successful change explicitly assumes a supported write-capable SaaS connector, required source provisioning configuration, approved request, correct destination/account, and no creation dependency. It isn't a promise that every approval delivers access.
+- The View projects access profile contains only project.view on this source. ProjectBoard's fictional entitlement grants viewing, not editing. Addition/removal execution is separate from business justification.
+- The read/write diagram isn't a guaranteed cycle. It doesn't require every write to cause aggregation, immediate UI refresh, or a particular internal queue.
+- Browser reachability and a connection test have limited evidence scope. Source account pages represent collected information; activity records describe tracked work; target/audit observations establish the supplied external result at their observation time.
+- OAuth terminology supplies supporting context, not ProjectBoard's authentication mechanism. Effective authority can depend on scope plus external roles/context; automatic token renewal isn't assumed.
+- Pagination, 100-record first page, continuation marker, throttling, invalid token and timeout outcomes are explicitly supplied hypothetical API behavior. No product-wide page size, throttling threshold, retry interval, absent-account deletion behavior or exactly-once claim follows.
+- Correcting a prerequisite doesn't complete previously failed work. Target state and supported recovery must be reconciled. Least privilege isn't a recommendation to grant unrestricted target administration.
+- A private management API remains a connectivity constraint even when a human website is public. Network restrictions and endpoint reachability must be checked from the actual supported runtime path.
+- VA-to-SaaS migration is not universal or reversible after apply. Configuration/schema/authentication/time-zone review and other sources' cluster associations remain relevant. The lesson isn't a runbook or authority to change live infrastructure.
+- Current official pages use Identity Services / Human Fabric branding. ISC is retained as the requested course name. Feature visibility, activation and commercial packaging aren't promised by this theory lesson.
+
+### Diagrams and review checks
+
+- [SaaS and VA paths](../assets/ARC-003_saas_and_va_paths.txt): hosted runtime versus customer VA-based work, each interacting with the external API in an API-based example.
+- [Read and change](../assets/ARC-003_read_and_change.txt): external data into ISC versus a supported approved change delivered to the external account.
+- Assets match the inline blocks exactly. Maximum line widths are 39 and 51 characters. Nearby text explains responses, VA outbound initiation, conditional success, external enforcement, and omitted implementation detail.
+- Local and live publication checks separately verify complete text, headings, tables, diagrams, placement and navigation. They aren't learner validation or observed tenant execution.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Cloud-hosted application | Hosting versus connector execution mode | Inspect configured connector requirements; preserve VA until a supported alternative and change are validated | Every hosted business application uses SaaS connector execution | Sources; runtime overview; Salesforce VA prerequisites |
+| Read works, change denied | Authentication/read success versus write authorization | Supplied production audit context identifies correct caller and explicit write denial; validate scoped privilege, recover and verify | Approval, read access, recipient password or ISC admin level supplies target write authority | Connector prerequisites; provisioning/monitoring |
+| Wrong workspace | Destination and account context | Successful test write isn't a production grant; examine configuration and target context, review unintended change and intended outcome | Source display name or matching account string establishes production destination | Connector connection settings; supplied target facts |
+| Rotated token | Credential lifecycle versus runtime placement | Update revoked token through supported procedure, protect secrets, verify affected work | Another VA repairs SaaS credential rejection; external rotation automatically updates source | External authentication settings; supplied invalid-token evidence |
+| First page only | Collection completeness and failure reasoning | Continuation proves more records; investigate throttle/scope/recovery without assuming deletion | Missing from partial response proves removal or a completed aggregation | Account loading; supplied pagination/throttling facts |
+| Green migration draft | Test scope, irreversible transition, shared dependencies | Validate required behavior/schema/timing before permanent apply; retain cluster for remaining source | Green test validates everything; migrating one source retires shared infrastructure | Migration; VA source associations |
+| Private payroll API transfer | Independent path and evidence reasoning | Hosted runtime needs supported API reachability; public browser site isn't that path; validate exact operations and target outcomes separately | Cloud hosting supplies private route and one test proves every change | SaaS runtime constraints; connection/capability references |
+
+Questions and worked reasoning remain in the learner file. Documentation, assessment intent and review limitations stay outside it.
+
 ## ARC-002
 
 - Lesson: [ARC-002](../lessons/ARC-002_Virtual_Appliances_and_Clusters.md), revision 1.0.

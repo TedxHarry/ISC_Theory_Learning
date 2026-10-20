@@ -139,7 +139,7 @@ FND-001 is the existing foundation pilot for identities and accounts, now review
 
 - 3.1 [The ISC tenant and the responsibilities retained by the customer](lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md).
 - 3.2 [Virtual Appliances and clusters: their place in a connection](lessons/ARC-002_Virtual_Appliances_and_Clusters.md).
-- 3.3 SaaS connectors and their connection path.
+- 3.3 [SaaS connectors and their connection path](lessons/ARC-003_SaaS_Connectors_and_Their_Connection_Path.md).
 - 3.4 Where IQService fits when a connector requires it.
 - 3.5 Network reachability, authentication, permissions, and operation support.
 - 3.6 How UI actions, APIs, and automation interact with platform capabilities.
@@ -148,7 +148,7 @@ FND-001 is the existing foundation pilot for identities and accounts, now review
 
 **Outcome:** Locate an operation's execution boundary and identify the dependencies needed for it to work.
 
-ARC-001 is the authored Module 3.1 lesson on tenant, service, customer, and connected-system responsibilities. ARC-002 is the authored Module 3.2 lesson on VA/cluster execution, communication, health, and recovery boundaries. Lessons 3.3-3.8 remain planned. Supporting SaaS-connector explanations do not replace the primary Module 3.3 lesson.
+ARC-001 is the authored Module 3.1 lesson on tenant, service, customer, and connected-system responsibilities. ARC-002 is the authored Module 3.2 lesson on VA/cluster execution, communication, health, and recovery boundaries. ARC-003 is the authored Module 3.3 lesson on SaaS connector execution, external API authority, read/write flows, evidence, and migration boundaries. Lessons 3.4-3.8 remain planned.
 
 Connection diagrams follow the documented distinction between VA-based and SaaS connectivity. They must not imply that every connector uses a VA. [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html)
 
