@@ -111,3 +111,11 @@ lessons:
     source: "lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.md"
     url: "/lessons/ARC-001_ISC_Tenant_and_Customer_Responsibilities.html"
     description: "Separate hosted-service responsibilities from customer decisions and integration dependencies."
+
+  - id: ARC-002
+    module: architecture
+    placement: "Module 3.2"
+    title: "Virtual Appliances and clusters"
+    source: "lessons/ARC-002_Virtual_Appliances_and_Clusters.md"
+    url: "/lessons/ARC-002_Virtual_Appliances_and_Clusters.html"
+    description: "Trace VA-based work, cluster membership, outbound communication, and recovery evidence."

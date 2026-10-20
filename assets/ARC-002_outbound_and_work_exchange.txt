@@ -1,0 +1,10 @@
+Connection initiation
+  VA ----outbound----> Required cloud endpoints
+  VA ----target-----> Configured external system
+
+Example work exchange
+  VA asks cloud services for its cluster's work
+  Cloud returns work on VA-initiated communication
+  VA performs the connector operation on the target
+  Target returns data or an operation response
+  VA sends collected data/results to cloud services

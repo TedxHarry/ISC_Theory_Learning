@@ -1,0 +1,13 @@
+ISC production tenant
+  |
+  +-- AssetDesk source -----------+
+  |                               |
+  +-- Operations Directory -------+
+                                  |
+                         C-Asset-Prod cluster
+                           |
+                           +-- va-asset-01
+                           +-- va-asset-02
+
+Sources are assigned to a cluster.
+The cluster contains individual appliances.

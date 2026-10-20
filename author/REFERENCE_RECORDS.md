@@ -865,3 +865,67 @@ Questions and worked reasoning stay in the learner file. Source references, asse
 | SaaS-connector transfer | End-to-end reasoning without VA dependency | Preserve service/customer/target boundaries; accepted token doesn't supply write privilege; validate design and scoped permission, recover/verify target access | No VA means no integration dependencies or customer operational responsibility | SaaS source definition; connector credentials; monitoring |
 
 Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent, and review limitations stay outside it.
+
+## ARC-002
+
+- Lesson: [ARC-002](../lessons/ARC-002_Virtual_Appliances_and_Clusters.md), revision 1.0.
+- Course placement: Module 3.2.
+- Documentation checked: October 20, 2026; core VA sources read for this lesson. Supporting object and provisioning definitions retain the documented checks recorded earlier on the same date.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 32002, AssetDesk, account/entitlement/cluster/VA names, host and DNS failure, interrupted-response case, and Payroll transfer are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: core ISC VA-based source connectivity. No IdentityIQ-specific single-VA exception, complete installation recipe, real diagnostic run, private worker topology, guaranteed retry/deduplication semantics, or general-purpose hypervisor migration procedure is taught.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [SailPoint Virtual Appliances](https://documentation.sailpoint.com/saas/help/va/index.html) | Linux-based customer-deployed VM, hosted tenant versus integration role, vendor-managed software, customer hosting/connectivity/health, outbound-only cloud communication and polling. The lesson separates network initiation from logical work direction and response data. |
+| [Deploying VAs](https://documentation.sailpoint.com/saas/help/va/deploy_va.html) | Each source's specific cluster, cluster-directed requests/queue, running-member polling, either-member work in documented running-member arrangements, pairing and saved-but-unpaired record limitations, consistent cluster passphrase, default applicable CCG component, all-members-running and switch-clusters DR strategies, and source credential reentry when switching. No fixed first-created worker, idle-standby default, universal failover, or exactly-once guarantee. |
+| [Managing VAs](https://documentation.sailpoint.com/saas/help/va/manage_va.html) | Source-to-cluster association, member/component/cluster health views, Connected and Busy meanings, rolling updates and possible long-process interruption, update implications of an unconnected member, scoped operational actions, and documented replacement rather than moving/migrating existing VAs. Deleting/restarting/rebuilding is not prescribed as a first diagnostic action. |
+| [System and network requirements](https://documentation.sailpoint.com/saas/help/va/requirements_va.html) | Current standard ISC production/sandbox cluster requirement with at least two VAs per cluster; resource/hosting requirements; DNS, time synchronization, HTTPS/cloud destinations, target-specific ports, regional endpoints, and trust requirements. Resource sizes, endpoint/IP lists and port matrices are not copied as a timeless reference. The fictional AssetDesk HTTPS/443 target is not generalized to all sources. |
+| [Configuring VAs](https://documentation.sailpoint.com/saas/help/va/config_va.html) | Actual deployment mode affects the path; Standard versus HTTP proxy configuration, and source HTTP/HTTPS traffic through the documented proxy mode. Proxy and target trust are separate dependencies; no new inbound exposure, trust bypass, unrestricted firewall opening, or proxy-authentication recipe is recommended. |
+| [Customer-provided OS option](https://documentation.sailpoint.com/saas/help/va/cpos_va.html) | Additional customer OS patching, maintenance and reboot responsibilities while allowing applicable SailPoint software updates. This qualifies standard-image assumptions; the lesson does not reproduce current distribution/version lists, install scripts, commercial options, or legal terms. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Supporting source/connector and VA-based versus SaaS-connector meanings. A cloud-hosted business application is not sufficient evidence of SaaS execution mode. Connection tests, reads and supported writes have different scopes. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Operation/source/account evidence and reported result versus actual target confirmation. Core supporting behavior retains prior course verification; no actual VA log, task execution or connector transaction was performed. |
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html), [request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html), and [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Supporting one-source entitlement bundle, specified recipient/request review, and account/person association. Read assets is a fictional single-entitlement profile for one existing correctly associated account; no account-creation or multi-account algorithm is generalized. |
+
+### Conditions and limits
+
+- One production cluster C-Asset-Prod contains va-asset-01 and va-asset-02. AssetDesk and Operations Directory are separately configured sources associated with that cluster. Names are teaching labels, not live identifiers, host credentials, or commands.
+- Source association, cluster work queue, member execution, cloud communication and target interaction are separate relationships. Polling is documented, but packet order, scheduling fairness, acknowledgement, queue retention, retries and deduplication are not invented.
+- The main case supplies host failure of member 01, Connected/cloud polling on member 02, evidence that member 02 handled the operation, target DNS resolution failure from that member, and absent target permission. Without those supplied facts, the failure boundary cannot be presumed.
+- DNS failure occurs before target authentication in this case. It is not the credential/privilege-denial incident from ARC-001. Reapproving a request or resetting the recipient password is not inferred as a correction.
+- The integration actor svc-asset-isc, recipient asset-32002, and appliance configuration secrets are distinct. Target entitlement asset.read permits reading only under the fictional application model.
+- Pairing associates a machine with its tenant/cluster; a saved unpaired record does not establish an operational machine. Cluster passphrase consistency does not make OS logins, recipient passwords and external source credentials interchangeable.
+- CCG is the applicable core connector component, not the whole hosted service. Other licensed standalone components and their sizing must be checked separately; none is assumed in the example.
+- Outbound cloud connectivity is not a target-network test. Every relevant member must have the needed route, DNS, trust, target connectivity and operation privileges. A laptop test is not a VA-position test.
+- Standard ISC core VA requirements are distinguished from IdentityIQ-specific connectivity and feature-specific component sizing. The lesson does not imply that every tenant or source uses VAs.
+- HA is scoped to available capacity/member redundancy. Shared hosts, routes, proxies, target systems or other dependencies can defeat continuity. Two VAs are not a speed multiplier or proof of uninterrupted individual work.
+- Same-cluster running members and a separately associated DR cluster have different failover behavior. The switch-clusters case requires source reassociation and the documented credential preparation; it is not an automatic tenant-wide worker pool.
+- Standard-image vendor software updates coexist with customer hosting/network/monitoring duties. CPOS adds customer OS responsibilities. Update interruption and blocked-update conditions remain explicit; no unsupported manual replacement of managed software is proposed.
+- Replacement, restart and source reassociation affect different scopes and require approved procedures. The text is not authorization to mutate real customer infrastructure.
+- The lost-response case supplies a possible target-applied change separately from the main DNS failure. Recorded timeout, target state, audit evidence, and supported recovery need to be reconciled; neither universal rollback nor harmless retry is promised.
+- Previously collected data can remain visible during a connectivity issue; it is not current target proof, and failed reads alone do not establish employee departure or account deletion.
+- Current official documentation uses Identity Services / Human Fabric naming. ISC remains the requested course title; package and component visibility are not license guarantees.
+
+### Diagrams and review checks
+
+- [Source/cluster/member map](../assets/ARC-002_sources_cluster_members.txt): two sources associated with one cluster containing two appliance members; not packet routes or duplicated execution.
+- [Outbound communication and work exchange](../assets/ARC-002_outbound_and_work_exchange.txt): VA-initiated cloud/target communication and conceptual request/response work roles.
+- Both assets match the inline blocks. Maximum line widths are 45 and 51 characters. Captions/prose explain arrow meaning, different endpoints, response traffic, and omitted private processing details.
+- Local and live checks separately verify full text, headings, tables, diagrams, placement, and navigation. These are not observed beginner comprehension or tenant-execution tests.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| First-created appliance | Cluster association versus fixed worker | Running members poll the cluster; either can handle work in the documented arrangement; inspect actual operation/member evidence | A source is permanently bound to the first appliance | VA deployment; source association |
+| Inbound firewall proposal | Work direction versus connection initiation | VA initiates required outbound cloud communication and receives responses; follow supported network design | Cloud-originated work requires unsolicited inbound sessions per action | VA overview; requirements/configuration |
+| Connected but unresolved target | Health scope and failure stage | Verify target hostname/DNS/network from the actual member before credential changes; recover and verify operation separately | Connected validates every source dependency or an upstream DNS failure is a target-password failure | VA health; network requirements |
+| Healthy separate DR cluster | Deployment-strategy-specific failover | Switch-clusters strategy requires source reassociation and credential preparation plus target-path validation | Every healthy cluster is automatically available to every source | Deployment DR strategies |
+| Rolling update claim | Availability versus individual process outcome | Long work can be interrupted; inspect result and supported recovery instead of assuming uninterrupted completion | Two members guarantee every running aggregation survives updates | VA management |
+| Target changed, response lost | Actual outcome versus recorded completion | Compare target/audit evidence and reconcile supported recovery before retry; no timeout-equals-no-effect assumption | Every timeout proves no change or universal rollback | Monitoring; supplied fictional target/response facts |
+| Payroll shared-route transfer | Shared dependencies and stale observations | Both members can reach cloud while shared target route fails; inspect both member paths and affected work; recover network and verify relevant read/write outcomes | Appliance count removes common dependencies or old collected data is a live target test | Requirements; deployment HA; monitoring |
+
+Questions and worked reasoning remain in the learner file. Reference evidence, assessment intent, and review limitations stay outside it.
