@@ -736,3 +736,66 @@ Questions and worked answers stay in the learner lesson. Source references, limi
 | Warehouse transfer and teach-back | Independent tracing across objects and systems | Follow P-81/S-81/E-81 and intended A-81/native w-305; reject E-82 substitution; a label-only edit is not delivery evidence | Same label/value makes cross-source references interchangeable | All mapped references within stated scope |
 
 Questions and worked reasoning remain in the learner file. Reference evidence, test intent, and review limitations remain outside it.
+
+## FND-007
+
+- Lesson: [FND-007](../lessons/FND-007_One_Identity_with_Multiple_Accounts.md), revision 1.0.
+- Course placement: Module 2.7.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 27007, People HR/Corporate Directory/Stockroom, account logins and IDs, usage values, access meanings, operation outcomes, and payroll transfer are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is a separate check.
+- Authoring milestone: all seven Module 2 lessons exist as complete authored files; this does not establish beginner comprehension or completion of the whole course.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Multiple rows with one associated identity can represent multiple accounts on the same source, with different access. Removing an ISC account representation does not delete the external account; it can return during complete aggregation. No universal duplicate-account cleanup action is advised. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured attribute comparison and account association; uncorrelated accounts have not matched an authoritative identity. Two correct personal-account associations do not merge accounts, and an incorrect association is not the same as absent correlation. The employee-number match is a fictional valid-data condition, not a universal key or multi-identity tie-breaker. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative population, identity creation configuration, and person-level attribute mappings. Multiple non-authoritative Stockroom accounts are not treated as duplicate authoritative identities or a reason to apply an identity merge. |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Distinct value-lookup mechanism: specified source/attribute, default oldest-account order by created date, non-null fallback, and filter/sort/first-account controls. This default is explicitly not generalized to access-profile provisioning. No executable configuration or blanket claim about all identity mappings is supplied. |
+| [Managing access profiles: Multiple Account Options](https://documentation.sailpoint.com/saas/help/access/access-profiles.html#multiple-account-options) | Automatic role/lifecycle profile provisioning can use account criteria; single-account exclusion; no/multiple matches fail applicable provisioning; manual source-owner selection requires enablement and can need separate manual fulfillment. Daily/Admin values are fictional source data. No universal first/oldest/main-account selection or direct-role-entitlement algorithm is invented. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) and [lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Supporting person-qualification versus account-targeting distinction and automatic profile-assignment contexts. Role and lifecycle mechanisms are introduced only to explain where this account selection applies; full role/lifecycle configuration remains in primary lessons. |
+| [Managing requests for roles and access profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Requester selects intended account for recipients with multiple source accounts; profile association only once per identity prevents a repeat request for a second account. Entitlement requests or role bundling are documented alternatives, not bypasses of eligibility/review/account targeting. |
+| [Request Center user help](https://documentation.sailpoint.com/saas/user-help/requests/request_center.html) | Supporting requester/recipient and requested-item context; account selection does not equal approval or successful fulfillment. Legacy click sequences are not taught as universal current UI behavior. |
+| [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html) | Account-level enabled/disabled state and supported operations; external deletion is distinct from representation removal. Documented continuing-role account recreation is the reason to inspect assignments before deletion. No claim that a collected disabled flag terminates all application sessions. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Associated account/source, attempted changes and results, and manual task details. A successful operation on the selected wrong account can fail the business requirement; actual target and later collected observations remain distinct evidence. |
+| [Viewing identities](https://documentation.sailpoint.com/saas/help/identities/control_panel.html) | Person-level access/activity presentation and related account context. The example explains represented data rather than promising specific UI columns, a complete live target query, or licensed graph functionality. |
+
+### Conditions and limits
+
+- One identity I-71 is associated with four fictional account representations across three sources. Stockroom source S-73 supplies two accounts with deliberately separate approved daily/admin purposes.
+- Technical IDs are non-runnable teaching stand-ins. Account logins and employee number remain consistent within this independent lesson; no continuing biography from other lessons is assumed.
+- Shared/non-human-account responsibility is not represented as personal correlation to all users of the account. No Machine Identity Security or Identity Graph license is assumed.
+- Source data, correlation, identity attributes, account attributes, request selection, automatic selection, and target sign-in mapping are distinct mechanisms.
+- Account Attribute transform default ordering and null handling are scoped only to that value lookup. Multiple Account Options do not become a general account input selector.
+- Automatic profile criteria apply in the documented role/lifecycle context for multiple accounts on that source. They do not apply to Request Center request account selection or single-account identities. No/multiple-match failure is scoped to the applicable provisioning, not every operation in a wider batch.
+- Source-owner form selection requires manual selection enablement and does not prove delivered access or external administrator authority.
+- Main request assumes neither Stockroom account holds stock.export and the identity does not already hold the profile. Repeat-profile and payroll cases are explicitly separate variations with a prior association.
+- Request, approval, supported external operation, reported outcome, target observation, and later aggregation are not collapsed into one status. No automatic immediate reaggregation or fixed delivery time is promised.
+- Account-based Stockroom runtime authorization is fictional application behavior. Other application authorization and SSO/session designs require their own verification; ISC correlation does not merge credentials or runtime permissions.
+- External account disablement, identity lifecycle state, session termination, wrong-person correlation, uncorrelated status, ISC representation removal, and external deletion are kept distinct. No universal disable/delete cascade is asserted.
+- Full schema, transform, role, lifecycle, account-selection configuration, and connector rename mechanics remain in their primary course lessons. The current lesson supplies the supporting meanings and practical boundaries needed for independent reasoning.
+- Current official docs use Identity Services / Human Fabric naming. ISC remains the requested course title; navigation breadth is not treated as a core-course licensing guarantee.
+
+### Diagrams and review checks
+
+- [Identity/account map](../assets/FND-007_identity_account_map.txt): one person, three source contexts, four separate account representations.
+- [Account-selection contexts](../assets/FND-007_account_selection_contexts.txt): automatic role/lifecycle profile criteria versus Request Center account selection, with failure/manual-selection qualification.
+- Both editable files match the inline lesson blocks and use lines no longer than 50 characters for narrow-screen readability. Branches describe relationships or selection contexts, not private platform topology or a universal backend pipeline.
+- Local and live publishing checks separately verify complete text, headings, tables, diagrams, and navigation. Neither check replaces a beginner read-through.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Four rows | Relationship cardinality and source/account/identity counts | One identity, four accounts, three sources; inspect identity IDs before claiming person duplication | Every account row is another identity | Sources; correlation; identity profiles |
+| Right permission, wrong login | Account-specific access versus person-level presentation | Trace held permission to admin account, compare intended daily target, request/operation evidence and actual application context | Access associated with a person is usable through every correlated login | Sources; identity views; monitoring |
+| Two automatic matches | Criteria scope and failure behavior | Multiple matches fail that provisioning; inspect collected usage data/design and enabled manual-selection task; don't invent an oldest-account tie-breaker | Value-lookup ordering or list order determines automatic grant selection | Multiple Account Options; Account Attribute transform |
+| Request selects Admin | Request selection versus automatic profile filter | Request context uses selected account; review and inspect target rather than expecting redirection | The automatic Daily criterion corrects a wrong request choice | Request configuration; Multiple Account Options |
+| Only one account | Limits of a selection filter | Criteria not applied for one source account; reassess design/remaining account and actual behavior | Multiple Account Options are a universal preventive eligibility control | Multiple Account Options |
+| Removed representation | Visibility/association versus target access | External account still exists; removal can reappear on collection; inspect authorized target change and continuing assignments | Deleting a displayed ISC row deletes its external access | Sources; managing accounts |
+| Payroll transfer and teach-back | Independent account tracing, repeat-profile limit and safe correction | Preserve approved support access; same-profile request is blocked; assess supported entitlement/role alternatives with authorization/target selection; verify both accounts | Multiple accounts are inherently duplicate, or a profile can be re-requested indefinitely per account | Request configuration; sources; provisioning monitoring |
+
+Questions and worked reasoning stay in the learner file. Source references, assessment intent, and review limitations stay outside it.

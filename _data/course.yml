@@ -93,3 +93,11 @@ lessons:
     source: "lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md"
     url: "/lessons/FND-006_Object_IDs_Account_Identifiers_and_References.html"
     description: "Follow precise object references and distinguish labels, source keys, and rename effects."
+
+  - id: FND-007
+    module: foundations
+    placement: "Module 2.7"
+    title: "One identity with multiple accounts"
+    source: "lessons/FND-007_One_Identity_with_Multiple_Accounts.md"
+    url: "/lessons/FND-007_One_Identity_with_Multiple_Accounts.html"
+    description: "Read separate account relationships and trace which account receives or holds access."

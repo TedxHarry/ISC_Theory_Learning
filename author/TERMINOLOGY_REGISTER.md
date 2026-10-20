@@ -68,6 +68,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Entitlement object ID / source value | ISC entitlement-record identifier / access-item value in the source context | Membership linking uses configured type/schema and designated source ID values, not an arbitrary display label |
 | Search accountId | Search account-context field using source aiqAccountName when available, otherwise account display name | Do not equate it with account API object id or generalize one interface's field semantics to another |
 | Tenant / environment | Particular hosted ISC context / operating context such as production or test | Copied labels and native keys do not prove cross-context object equivalence |
+| One-to-many identity/account relationship | One identity can be associated with multiple account records, including multiple accounts on one source | Association does not merge accounts or duplicate person identities; shared-account responsibility is a different relationship |
+| Account Attribute transform input selection | Configured lookup of an account attribute; default oldest-first with non-null fallback, subject to filter/sort/first-account settings | This value-lookup default is not a universal provisioning account-selection rule |
+| Multiple Account Options | Access-profile account criteria for automatic profile provisioning through role/lifecycle assignment | Not applied to Request Center request selection or a single-account identity on that source; zero/multiple matches fail the applicable provisioning, with manual selection only if enabled |
+| Request account selection | Requester chooses the intended source account when the recipient has multiple accounts in the documented Request Center path | Recipient identity, selected account, approval, and delivery remain distinct; an existing profile cannot simply be re-requested for another account |
+| Uncorrelated versus incorrectly correlated | Not matched to an authoritative identity versus matched to the wrong identity | Neither is equivalent to an external account disable/delete; uncorrelated-account searches do not expose every wrong-person association |
+| Account removal versus external deletion | Removing ISC's representation versus deleting the external system's account | The source account can be re-collected if it still exists; continuing access assignments must also be examined |
 
 ## Source anchors
 

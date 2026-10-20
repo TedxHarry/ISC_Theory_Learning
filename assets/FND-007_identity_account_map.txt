@@ -1,0 +1,15 @@
+Identity I-71: Devi
+Employee number: 27007
+  |
+  +-- People HR / S-71
+  |     +-- A-71: hr-27007
+  |
+  +-- Corporate Directory / S-72
+  |     +-- A-72: dir-27007
+  |
+  +-- Stockroom production / S-73
+        +-- A-73: stock-27007
+        +-- A-74: stock-admin-27007
+
+One identity, three sources, four account records.
+Both Stockroom accounts remain separate.

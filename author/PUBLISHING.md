@@ -33,3 +33,5 @@ The Module 2.4 update adds FND-004, bringing the working-edition manifest to ten
 The Module 2.5 update adds FND-005, bringing the working-edition manifest to eleven lessons. FND-006, on object IDs, account identifiers, display names, and references, remains planned. Request/catalog explanation does not add a glossary UI or change the site's publishing architecture.
 
 The Module 2.6 update adds FND-006, bringing the working-edition manifest to twelve lessons. FND-007, on one identity with multiple accounts, remains planned. Identifier examples use fictional stand-ins, not runnable API payloads. Deployment does not establish beginner validation or formal publication approval.
+
+The Module 2.7 update adds FND-007, bringing the working-edition manifest to thirteen lessons. All seven Module 2 lessons are authored. ARC-001, the opening tenant/customer-responsibilities lesson in Module 3, remains planned. The site still has no interactive glossary; author review, deployment verification, beginner validation, and formal publication approval remain distinct.

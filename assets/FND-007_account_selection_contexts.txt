@@ -1,0 +1,17 @@
+Access profile: Export stock reports
+Source: Stockroom production / S-73
+Recipient: identity I-71
+  |
+  +-- Automatic role/lifecycle profile assignment
+  |     |
+  |     +-- Evaluate configured account criteria
+  |           +-- One match --> Selected account
+  |           +-- Zero/many --> Provisioning fails
+  |                 Manual selection if enabled
+  |
+  +-- Request Center access request
+        |
+        +-- Requester selects intended account
+
+Selecting an account is not proof of delivery.
+Inspect the actual operation and target result.
