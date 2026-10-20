@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Eleven complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; and **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0.
+The course design and teaching specification are saved. Twelve complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; and **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. It does not mean that Module 1, Module 2, or the whole course is complete.
 
-The current lesson is FND-005. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is FND-006. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 2.5, FND-005. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 2.6, FND-006. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -32,6 +32,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [FND-003: Account, identity, and entitlement attributes](lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md) | Complete learner-facing lesson for Module 2.3 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [FND-004: Entitlements, access profiles, and roles](lessons/FND-004_Entitlements_Access_Profiles_and_Roles.md) | Complete learner-facing lesson for Module 2.4 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [FND-005: Sources, access applications, catalogs, and sign-in](lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md) | Complete learner-facing lesson for Module 2.5 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [FND-006: Object IDs, account identifiers, and names](lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md) | Complete learner-facing lesson for Module 2.6 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -362,9 +363,29 @@ This introductory map does not require every role entitlement to pass through an
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read FND-005 and apply feedback to this same file; then author Module 2.6 |
+| Next action | Preserve FND-005 for feedback and learner validation; FND-006 was opened following the user's instruction to continue |
 
 The example manages expense access through directory memberships; no separate ExpenseHub source is assumed. Existing application accounts and a separately configured sign-in trust/mapping are explicit conditions. Requester segmentation is not treated as a recipient eligibility gate, catalog changes are not revocation, and access applications are not presented as SSO configuration or a universal application launcher.
+
+### FND-006
+
+| Field | FND-006 |
+|---|---|
+| Title | Object IDs, account identifiers, and names: which record are we talking about? |
+| File | [FND-006_Object_IDs_Account_Identifiers_and_References.md](lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md) |
+| Course placement | Module 2.6 |
+| Revision | 1.0 |
+| Content status | Complete authored lesson with business/ISC/native identifiers, source and identity references, entitlement IDs versus source values, access-definition and membership maps, environment/type context, rename and schema-change distinctions, five worked cases, and a transfer/teach-back exercise |
+| Author review | Revision 1.0 reviewed against teaching specification v2.6 on October 20, 2026; first-use meanings, fictional record consistency, reference relationships, rename conditions, evidence boundaries, diagrams, assessments, and mentor narration checked |
+| Documentation check | October 20, 2026; official account/entitlement/access-profile models, Search fields, account and entitlement schemas, correlation, entitlement editing, and Snowflake identifier warning mapped in author records |
+| Diagram sources | [Account/identity references](assets/FND-006_account_identity_references.txt) and [access-definition references](assets/FND-006_access_definition_references.txt); synchronized with inline blocks |
+| Tenant execution | Not performed; employee 26006, Ledger, accounts, native keys, technical-ID stand-ins, warehouse transfer, and outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read FND-006 and apply feedback to this same file; then author Module 2.7 |
+
+Technical IDs use explicit non-runnable teaching labels. Account object ID, native identity, schema-determined UUID, business identifier, and Search accountId are not treated as universal aliases. Changing an ISC entitlement label, changing schema designations, changing an external key, and recreating an object remain distinct. Diagrams describe documented relationships, not private backend storage or universal execution order.
 
 ## Source-citation relocation
 
@@ -376,17 +397,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-The first five Module 2 lessons are authored: FND-001 has been reviewed in its course position, followed by FND-002 through FND-005. Learner validation and formal publication review remain separate pending stages.
+The first six Module 2 lessons are authored: FND-001 has been reviewed in its course position, followed by FND-002 through FND-006. Learner validation and formal publication review remain separate pending stages.
 
-The next new lesson is Module 2.6:
+The next new lesson is Module 2.7:
 
-**Object IDs, account identifiers, display names, and reference relationships.**
+**One identity with multiple accounts: reading the relationships correctly.**
 
-- Reserved permanent ID: `FND-006`.
-- Planned file: `lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md`.
+- Reserved permanent ID: `FND-007`.
+- Planned file: `lessons/FND-007_One_Identity_with_Multiple_Accounts.md`.
 - Status: planned only; no lesson file created.
-- Scope: ISC object identifiers versus external account and business identifiers, display labels versus stable references, source/type context, how related objects refer to each other, and why renaming or changing an identifier can have different effects. Avoid an exhaustive API-field inventory.
-- Resolve known feedback on FND-005 before opening the next writing task.
+- Scope: reading one-to-many identity/account relationships within and across sources, legitimate separate accounts, correlation versus merging, account-level state and access, and the evidence needed before choosing an account for a task. Explain the supporting terms and context without assuming previous lessons; do not invent a universal account-selection algorithm.
+- Resolve known feedback on FND-006 before opening the next writing task.
 
 ## Recording review status
 
@@ -429,3 +450,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored and reviewed FND-003 revision 1.0 with account/identity/entitlement attribute distinctions, calculated-value and write paths, membership-reference diagrams, typed/missing input reasoning, and five worked cases; updated navigation and reserved FND-004 | Documentation-based author review; fictional records and outcomes; no tenant testing, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed FND-004 revision 1.0 with access-object relationships, direct role entitlements, criteria-to-delivery flow, preexisting-access detection, partial outcomes, overlapping role access and definition-deletion distinctions; added six worked cases and updated navigation; reserved FND-005 | Documentation-based author review; fictional records and outcomes; no tenant testing, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed FND-005 revision 1.0 with business/ISC application and source distinctions, catalog/requester rules, independent request/change and sign-in paths, source-visibility limits, five worked cases, and updated navigation; reserved FND-006 | Documentation-based author review; fictional account/sign-in integration; no tenant testing, beginner validation, or formal publication approval |
+| October 20, 2026 | Authored and reviewed FND-006 revision 1.0 with object/native/business identifier distinctions, source/type/environment references, rename and schema-change reasoning, two diagrams, five worked cases, and transfer/teach-back; updated navigation and reserved FND-007 | Documentation-based author review; fictional records and teaching-ID labels; no tenant testing, beginner validation, or formal publication approval |

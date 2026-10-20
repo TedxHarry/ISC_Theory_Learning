@@ -17,6 +17,7 @@ Each lesson establishes an independent fictional situation. Devi is a reusable t
 | FND-003 | Module 2.3 | 23003 | Moves from Operations to Finance; HR orgCode FIN maps to identity Finance, while collected finance department initially remains Operations | dir-23003 and fin-23003; source/type-scoped group g-inv-read and g-report-export values |
 | FND-004 | Module 2.4 | 24004 | Finance employee, job code AP_READER; main path has no listed grants, with separate preexisting-access, rejection, departure, and overlap variations | inv-24004 and dir-24004; source-specific InvoiceRead, SupplierRead, and FinanceWorkspace values |
 | FND-005 | Module 2.5 | 25005 | Finance employee requests Submit expenses, not Approve expenses; directory-based grant and separate existing ExpenseHub account/sign-in | dir-25005 in Corporate-Directory; exp-25005 in ExpenseHub; EXP_SUBMIT/EXP_APPROVE group values |
+| FND-006 | Module 2.6 | 26006 | Finance employee needs Ledger production invoice reading; independent label/key/schema-change variations and warehouse transfer | fin-26006, renamed finance.devi in one variation; native u-778 (u-991 only in the separate changed-key example); I-26/A-26/S-26/E-26/P-26/R-26 are fictional technical-ID stand-ins; test S-27/E-27 then E-28; warehouse S-81/S-82/A-81/I-81/E-81/E-82/P-81, native w-305 |
 
 Manager numbers, request IDs, and transfer-case account IDs represent different objects. They don't need to contain the employee number.
 

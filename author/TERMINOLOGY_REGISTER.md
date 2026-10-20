@@ -59,6 +59,15 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Authentication | Verification of a claimed identity under the applicable requirements | Successful authentication does not justify every permission |
 | Authorization | Deciding whether an actor may perform a particular operation on a resource | Business approval and runtime application enforcement are distinct contexts |
 | Front end / back end | User interface / trusted application processing | Hiding an interface control does not enforce the protected operation |
+| Object ID | Technical identifier of a particular ISC record | Establish object type and tenant context; it is not automatically an employee number or source-system key |
+| Native identity | Identifier of an account in its source-system context | Connector-specific meaning; do not assume a username, ISC account object ID, or schema-determined UUID is a universal alias |
+| Business identifier | Organization-managed identifier such as an employee number | Its uniqueness, stability, and reuse depend on business policy; correlation use does not make it the ISC identity ID |
+| Display name | Human-readable label for a represented record | A matching label does not prove identical objects, sources, access, or unchanged native identifiers |
+| Reference | Relationship pointing to a particular other record | Resolve the target and its context; reference existence is not proof of business correctness, grant, or target success |
+| Account ID / Account Name schema designations | Selected attributes identifying/naming accounts in a source schema | Changing designations after aggregation is different from editing a friendly label and carries documented duplicate/reference risks |
+| Entitlement object ID / source value | ISC entitlement-record identifier / access-item value in the source context | Membership linking uses configured type/schema and designated source ID values, not an arbitrary display label |
+| Search accountId | Search account-context field using source aiqAccountName when available, otherwise account display name | Do not equate it with account API object id or generalize one interface's field semantics to another |
+| Tenant / environment | Particular hosted ISC context / operating context such as production or test | Copied labels and native keys do not prove cross-context object equivalence |
 
 ## Source anchors
 

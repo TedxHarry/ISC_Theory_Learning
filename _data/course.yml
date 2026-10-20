@@ -85,3 +85,11 @@ lessons:
     source: "lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.md"
     url: "/lessons/FND-005_Sources_Access_Applications_Catalogs_and_Sign_In.html"
     description: "Separate business applications, catalog choices, access delivery, and sign-in."
+
+  - id: FND-006
+    module: foundations
+    placement: "Module 2.6"
+    title: "Object IDs, account identifiers, display names, and references"
+    source: "lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md"
+    url: "/lessons/FND-006_Object_IDs_Account_Identifiers_and_References.html"
+    description: "Follow precise object references and distinguish labels, source keys, and rename effects."

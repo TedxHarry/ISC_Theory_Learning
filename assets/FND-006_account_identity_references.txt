@@ -1,0 +1,14 @@
+ISC account object A-26
+  login shown: fin-26006
+  native identity: u-778
+  employee number attribute: 26006
+  |
+  +-- source reference --------> S-26
+  |                              Ledger production source
+  |
+  +-- correlated identity -----> I-26
+                                 Devi Rao
+                                 employee number: 26006
+
+External account represented by A-26:
+  Ledger production / native key u-778

@@ -674,3 +674,65 @@ Learner facts and worked answers stay in the lesson. Assessment intent, limitati
 | Business application transfer | Independent boundary and evidence reasoning | Identify external system/accounts, technical source/data scope, request grouping/item/recipient/change, independent sign-in and operation checks; name the fault boundary | A request card or app name identifies the entire technical path | All mapped references within stated scope |
 
 Questions and worked answers stay in the learner lesson. Source references, limits, and assessment metadata stay outside the reading site.
+
+## FND-006
+
+- Lesson: [FND-006](../lessons/FND-006_Object_IDs_Account_Identifiers_and_References.md), revision 1.0.
+- Course placement: Module 2.6.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 26006, Ledger, login/native keys, account and entitlement data, warehouse transfer, and all technical-ID stand-ins are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is a separate presentation check.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Account model, current SailPoint Python SDK](https://developer.sailpoint.com/docs/tools/sdk/python/accounts/models/account/) | Account object id, source_id, optional identity_id, source name, native_identity, attributes, and separate schema-determined uuid. SDK property spelling differs from JSON camelCase. This is a field-meaning comparison, not a runnable request or promise that all interfaces expose identical fields. |
+| [Get an account, current API documentation](https://developer.sailpoint.com/docs/api/get-account-v-1/) | Account field descriptions checked through indexed official API text and the rendered official SDK model; the fetched endpoint page itself is client-rendered and did not expose the property descriptions in its initial HTML. No tenant call or endpoint execution is claimed. |
+| [Searchable fields](https://documentation.sailpoint.com/saas/help/search/searchable-fields.html) | Identity/manager/owner technical IDs; account id/name/accountId distinctions; source IDs; role/profile/entitlement references. In the account context, accountId uses source aiqAccountName if available, otherwise account display name. Search semantics are not generalized to the account API. |
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Designated Account ID/Account Name versus technical object ID; documented warning about changing identification designations after aggregation; entitlement-marked account attribute, matching type name, and matching designated entitlement ID value for membership/detail linking. Exact source identifier mappings remain connector-specific. |
+| [Entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html) | Entitlement schemas and designated ID/Name; changing designated attributes after aggregation can create duplicate entitlements. The lesson distinguishes schema selection changes from external value changes and display-label editing. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured account/identity attribute comparisons and resulting account association. Employee number 26006 is an explicitly fictional successful one-identity match, not a universal matching rule or claim that business identifiers are automatically technical IDs. |
+| [Entitlement model](https://developer.sailpoint.com/docs/tools/sdk/python/entitlements/models/entitlement/) | Separate entitlement id, name, attribute, value, source schema object type, source reference, and source attributes. E-26 is a non-runnable teaching stand-in; g-41 is a fictional source value. |
+| [Access profile model](https://developer.sailpoint.com/docs/tools/sdk/python/access-profiles/models/access-profile/) | Profile id, name, source reference, and entitlement references. The lesson does not adopt endpoint-specific requestability defaults or give API payloads. |
+| [Access profile document model](https://developer.sailpoint.com/docs/tools/sdk/python/v2025/models/access-profile-document/) | Read/search representation also separates profile ID/name, source, and entitlements. Used as supporting object-model evidence, not as a current endpoint contract. |
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) and [roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Single-source profile and role/profile relationship. R-26 illustrates inclusion, not a requirement that all roles only use profiles, an assignment to Devi, or proof of fulfilled access. Detailed mechanics were checked for FND-004 and are not re-taught here. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Editing an ISC entitlement's display name/description does not send those edits to the source. Display refresh and object identity are distinct; no universal instant Search refresh is promised. |
+| [Snowflake account and entitlement IDs](https://documentation.sailpoint.com/connectors/snowflake/help/integrating_snowflake/identity_attributes.html) | Concrete connector-specific counterexample: source user/role name values are identifier values and the connector warns against changing them after aggregation. Not a universal rule for all connector renames. |
+| [Account workflow trigger examples](https://documentation.sailpoint.com/saas/help/workflows/workflow-triggers.html) | Official examples separate account id, name, nativeIdentity, uuid, and source information, including directory distinguished-name native identities. Used to validate the identifier distinction, not to introduce workflow execution or guarantee event ordering. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) and [monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Supporting distinction between identifying the intended account/access, attempting a supported change, reported result, collected observation, and current target access. Prior course verification retained; no new tenant execution or universal ID-to-write pipeline asserted. |
+
+### Conditions and limits
+
+- All short letter-number IDs explicitly stand in for real technical IDs. They are not valid-format examples to submit to an endpoint. Login, employee number, native key, and ISC record IDs have distinct meanings.
+- Ledger's native key u-778 and login fin-26006 are deliberately different. The example asserts that Ledger keeps its key during the login rename; this is not generalized to actual connectors or all schema identifier fields.
+- The lesson does not claim a universal one-to-one mapping between nativeIdentity, uuid, Account ID, Account Name, and account object id. Actual connector/schema data must establish the mapping. Account field spellings are interface-specific.
+- Correlation compares configured attributes. It is separate from identifying an account within the source, authentication, account creation, and target fulfillment.
+- Membership matching uses source/type/schema context and the designated source ID value, not the ISC entitlement object ID or an arbitrary display label.
+- Same labels and copied native values across test/production do not establish the same object. A valid reference can still select the wrong business environment.
+- Display-name editing in ISC is distinguished from changing a schema designation, changing an external identifier value, and deleting/recreating an object. No fixed duplicate, cleanup, retry, or automatic-reference-repair behavior is invented for all such changes.
+- E-27 deletion followed by a current record E-28 is a supplied fictional before/after fact, not a universal claim about every entitlement reset or collection cycle.
+- Relationship diagrams do not represent SailPoint private storage, an execution pipeline, assignment origin, live synchronization, or current usable access.
+- Owner and manager identity references identify person-level records; responsibility does not itself grant the represented access.
+- Source IDs, identity/account details, and access data are not credentials or authorization grants, but still require approved handling. No credential or live tenant evidence is included.
+
+### Diagrams and author checks
+
+- [Account/identity references](../assets/FND-006_account_identity_references.txt): account object to source and correlated identity, with external-account context shown separately.
+- [Access-definition references](../assets/FND-006_access_definition_references.txt): role/profile/source/entitlement configuration and the separate account-membership observation.
+- Both editable text files match the inline lesson blocks. IDs, native keys, membership values, source contexts, and arrow explanations agree with the prose and answers.
+- Local and live publication checks verify full text, headings, tables, diagrams, and navigation separately from learner validation.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Correct recipient ID | Object type/context versus business or account identifier | Use intended tenant's resolved identity ID I-26, not employee number or account IDs | Any value called Devi's ID is interchangeable | Account model; Search fields |
+| Matching labels, wrong environment | Reference resolution and business correctness | Resolve profile/source/entitlement, recognize test versus production, inspect actual operation; don't retry the wrong design | A matching label proves correct access | Profile model; entitlement model; profile source constraint |
+| Changed entitlement label | ISC label versus source permission | E-26 remains g-41 on S-26; label edit is not sent to Ledger and is not a new grant | Renaming an ISC display name renames or replaces the source group | Entitlement editing |
+| Friendly words in membership | Source ID matching and schema dependencies | Compare raw collected value with designated ID; locate export/mapping/data error before changing schema | Labels can substitute for configured membership IDs | Account schema linking; entitlement types |
+| External login rename | Native identifier stability is connector-specific | Distinguish retained key from identifier-value change; verify schema, returned records, association and operation evidence | Every rename either always preserves or always breaks all references | Account model; schema warning; Snowflake counterexample |
+| Warehouse transfer and teach-back | Independent tracing across objects and systems | Follow P-81/S-81/E-81 and intended A-81/native w-305; reject E-82 substitution; a label-only edit is not delivery evidence | Same label/value makes cross-source references interchangeable | All mapped references within stated scope |
+
+Questions and worked reasoning remain in the learner file. Reference evidence, test intent, and review limitations remain outside it.
