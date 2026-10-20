@@ -1,0 +1,35 @@
+READ: collect an existing finance account
+
+Production finance application
+  Account fin-20002, permission InvoiceRead
+            |
+            | Connector reads data within configured scope
+            v
+ISC source: Finance-Production
+  Collected account fin-20002, employee number 20002
+            |
+            | Correlation finds the intended unique match
+            v
+ISC identity: Devi, employee number 20002
+  Finance account associated with this identity
+
+
+WRITE: attempt a separately authorized permission change
+
+ISC has a valid instruction to add InvoiceExport
+  Selected source: Finance-Production
+  Selected existing account: fin-20002
+            |
+            | Supported, enabled, configured provisioning
+            | Connector submits the permitted operation
+            v
+Production finance application
+  Accepts or rejects the change under its own requirements
+            |
+            | Operation response / reported result
+            v
+ISC activity information
+
+Human follow-up:
+  Inspect the result and relevant current target evidence.
+  Check later collected data separately.

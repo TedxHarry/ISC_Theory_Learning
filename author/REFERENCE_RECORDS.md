@@ -69,7 +69,8 @@ The full questions and worked answers are in the learner lesson. These author fi
 - Current lesson: [FND-001](../lessons/FND-001_Identity_and_Account.md), revision 1.3.
 - Source-bearing revision before relocation: 1.2.
 - Documentation check recorded by the preceding authoring work: October 19, 2026.
-- Current change: citations moved outside the lesson; teaching body unchanged apart from citation removal and revision metadata.
+- Revision history: citations moved outside the lesson; teaching body unchanged apart from citation removal and revision metadata.
+- October 20, 2026 course-order review: revision 1.3 checked against teaching specification v2.6; no learner-body change needed. Selected official mechanisms rechecked: source and account representation, schema, identity-profile population and attribute mappings, configured and default correlation, multiple accounts on one source, provisioning distinction, attribute-sync eligibility, and identity-view evidence. The source links below identify the corresponding mechanisms. This does not renew unrelated claim dates or establish tenant execution or learner understanding.
 - Learner validation and publication approval: pending; see the course register for the review history.
 
 ### Sources by lesson section
@@ -421,3 +422,60 @@ Unique example number 16006 propagated through records, account names, map, and 
 | Sign-in response validation | [Microsoft SAML protocol](https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol) | SYS-002 preserves trusted origin, integrity, intended application, and validity while removing the introductory inventory of individual validation-field names. It is not an implementation checklist. |
 
 The feedback's proposed restoration of learner citations conflicts with the current user instruction and specification. Official references and dates remain here. The feedback's missing-register claim refers to an older set; the current register already contained all seven authored lessons before this pass.
+
+## FND-002
+
+- Lesson: [FND-002](../lessons/FND-002_Sources_Connectors_and_Connected_Systems.md), revision 1.0.
+- Course placement: Module 2.2.
+- Documentation checked: October 20, 2026.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Finance, HR-People, the supplier portal, account values, permissions, event times, credential rejection, and outcomes are fictional teaching conditions.
+- Learner validation and formal publication approval: pending.
+
+### Official sources by claim and section
+
+| Official reference | Supported claim and applicability |
+|---|---|
+| [Managing sources overview](https://documentation.sailpoint.com/saas/help/sources/index.html) | External-system/source/connector distinction; source accounts and associations; direct versus flat-file connections; VA-based versus SaaS arrangements; separate connectivity and provisioning checks. The text map is a conceptual data/operation trace, not deployed network topology. |
+| [Configuring sources](https://documentation.sailpoint.com/saas/help/sources/config_sources.html) | Distinct source configuration, environment-specific connection details, ownership, direct versus file representation, enabling supported provisioning, and collecting after setup. No universal write-enabled default is asserted. Quick Compliance and assisted onboarding are not primary lesson subjects. |
+| [Web Services SaaS supported features](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/supported_features.html) | One real connector example supports account aggregation and specified provisioning operations, including adding/removing entitlements. This does not establish the fictional finance API's implemented capability or a universal feature list across connectors. |
+| [Source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Account attributes, schema, Account ID/Name roles, multi-valued settings, and explicitly represented entitlement values. Full schema and attribute treatment remains in subsequent primary lessons. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | On-demand/scheduled direct-connect collection and manual file import; aggregation history. The file's export time and import time are separate observations. No universal schedule, post-write aggregation, deletion behavior, or refresh interval is invented. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative population and identity-attribute mappings; collecting another source is distinct from establishing another employee population. Authoritative role is not connector write permission or exclusive authority for every attribute. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Matching and associating accounts with identities. The successful trace assumes a unique intended employee-number match. The empty-value case limits its conclusion to that comparison and retains applicable configured/default matching behavior. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Separate change operation, enabled/configured support, applicable manual fulfillment, entitlement-owner task assignment with source-owner fallback. No universal task creation is inferred for every read-only connector or action. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Activity, recipient, source, status/stage, errors, and manual task evidence. Evidence selection does not promise that each desired fact has one universal UI field. |
+| [Identity control panels](https://documentation.sailpoint.com/saas/help/identities/control_panel.html) | Person-level attributes and represented access context. An ISC view is distinguished from independent current target-system evidence. |
+| [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Supporting caution that collected input changes can affect configured downstream behavior; importing a file must not be treated as a harmless simulation. No blanket claim that every file change initiates a write. |
+
+### Boundaries and assumptions retained in the teaching
+
+- The finance example has one existing intended production account, an existing HR-established identity, a unique intended correlation match, properly represented permission values, and supported configured read and permission-add operations.
+- Account identifier fin-20002 is a fictional target-account value, not an ISC source or identity object ID. Test and production can contain the same value without representing the same external record.
+- The connector type is reusable integration behavior; the source supplies the instance's configuration and record context. A customized web-service integration still requires correct per-operation configuration.
+- The finance success and credential-rejection variations are supplied outcomes, not results observed in a tenant. A successful read proves neither every write privilege nor target authorization for every user operation.
+- Supplier-Portal-File is explicitly a read-only flat-file input, not a claim about every technology that can process files. A supported manual fulfillment path is conditional. Task routing does not confer application administrative rights.
+- The 09:00/11:00/12:00 file case uses one fictional day and time zone; it illustrates data age, not a SailPoint timing guarantee.
+- Source names do not prove environment or scope. Independent current target evidence and subsequent collection answer different questions. No automatic full collection, indefinite retry, immediate UI refresh, or session-revocation claim is made.
+- VA/SaaS arrangements receive only enough explanation to avoid treating “direct” as a universal topology. VA clusters, network paths, IQService, and deployment mechanics remain in Module 3.
+- Access applications/catalogs remain in Module 2.5. No rarely used connector feature inventory is added to an introductory object lesson.
+- Current official documentation uses Human Fabric / Identity Services branding. The requested ISC course name is retained; navigation branding does not establish licensing or feature availability.
+
+### Diagram and presentation record
+
+Editable source: [FND-002 read/write boundaries](../assets/FND-002_read_and_write_boundaries.txt). Its text matches the lesson's inline text block. All diagram terms are explained before the diagram. READ is a successful selected account trace; WRITE is a separate conditional change path. Human follow-up is not represented as an automatic service dependency.
+
+Local validation checks source equality, IDs, headings, links, and complete worked cases. Rendered live-site checks must separately verify the published text block, table wrapping, and lesson placement. Neither check is learner validation.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Test account | Environment and source context | Test observation does not prove production permission; obtain production account, operation result, and current target evidence. Either confirming delivery first or establishing the production account first is acceptable if the scope remains clear | Same connector and username mean the same external account | Sources; configuration; monitoring |
+| Missing association | Collection versus correlation | Collection is established; missing employee number blocks that comparison, not every possible match. Examine association and all applicable matching behavior | Missing person-level association proves connector failure | Correlation; source account view |
+| Old file | Data age and read/write direction | Export contains old observation; editing input is not a portal write. Obtain current portal evidence and refreshed export/import. Explain a real change path if a change is still outstanding | Successful import makes old data current or writes it back | Loading account data; provisioning |
+| Rejected write | Operation-specific capability and privilege | Read/approval do not repair missing write authority. Investigate exact operation, configuration and permitted actions; authorize limited correction; use controlled retry/resubmission and verify result | Another aggregation or approval grants the integration write authority | Connector supported features; provisioning; monitoring |
+| Deletion requirement | Requirement versus documented operation | Disable is not delete. Agree another supported fulfillment method or explicitly approve a changed requirement | Broad “account management” support covers every operation | Connector supported features; supplied hypothetical restriction |
+| Unfamiliar-system transfer | Independent boundary and flow reasoning | Identify external records, source scope, connector method, population, association, required change method, and outcome evidence; naming missing information is valid | A connection label alone establishes a complete integration | All mapped sources within their stated limits |
+
+Worked answers and supplied facts remain in the learner lesson. The metadata above stays outside the reading site.

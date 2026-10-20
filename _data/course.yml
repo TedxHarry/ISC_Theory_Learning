@@ -53,3 +53,11 @@ lessons:
     source: "lessons/FND-001_Identity_and_Account.md"
     url: "/lessons/FND-001_Identity_and_Account.html"
     description: "Understand how one person is represented across systems."
+
+  - id: FND-002
+    module: foundations
+    placement: "Module 2.2"
+    title: "Sources, connectors, and the systems they connect to"
+    source: "lessons/FND-002_Sources_Connectors_and_Connected_Systems.md"
+    url: "/lessons/FND-002_Sources_Connectors_and_Connected_Systems.html"
+    description: "Separate source records, connector behavior, collection, and supported changes."

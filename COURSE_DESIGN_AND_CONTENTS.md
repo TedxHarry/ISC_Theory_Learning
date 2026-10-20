@@ -124,7 +124,7 @@ These short catch-up lessons are selected through a readiness check.
 ### Module 2. What are the objects, and how do they connect?
 
 - 2.1 [A person, an identity, and an account: what each represents](lessons/FND-001_Identity_and_Account.md).
-- 2.2 Sources, connectors, and the systems they connect to.
+- 2.2 [Sources, connectors, and the systems they connect to](lessons/FND-002_Sources_Connectors_and_Connected_Systems.md).
 - 2.3 Account attributes, identity attributes, and entitlement attributes.
 - 2.4 Entitlements, access profiles, and roles: an initial relationship map and example.
 - 2.5 Sources, access applications, catalogs, and sign-in experiences.
@@ -133,7 +133,7 @@ These short catch-up lessons are selected through a readiness check.
 
 **Outcome:** Draw and explain an object map without confusing records that represent different things.
 
-FND-001 is the existing foundation pilot for identities and accounts. Its supporting explanations do not mark the remaining Module 2 lessons complete. Module 2.4 introduces relationships; detailed access-model mechanics follow in Modules 10-12.
+FND-001 is the existing foundation pilot for identities and accounts, now reviewed in course order. FND-002 is the authored source/connector lesson. Their supporting explanations do not mark the remaining Module 2 lessons complete. Module 2.4 introduces relationships; detailed access-model mechanics follow in Modules 10-12.
 
 ### Module 3. Where does the work run?
 

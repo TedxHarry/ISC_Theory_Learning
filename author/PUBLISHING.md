@@ -23,3 +23,5 @@ Check the Pages build result and the live affected lesson after a push. Verify t
 ## Publishing scope
 
 Initial deployment covers seven existing lessons: SYS-001 through SYS-006 and the FND-001 foundation pilot. The rest of the curriculum remains planned. No glossary interaction, learner account system, progress tracking, or analytics is added.
+
+As of the Module 2.2 authoring update, the working-edition manifest includes eight lessons, adding FND-002. Module 2.3, FND-003, remains planned. Keep displayed availability separate from beginner validation and formal publication approval.

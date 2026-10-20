@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Seven complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; and **FND-001, Identity and account**, revision 1.3.
+The course design and teaching specification are saved. Eight complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; and **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. It does not mean that Module 1, Module 2, or the whole course is complete.
 
-The current lesson is SYS-006. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is FND-002. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot. New authoring now proceeds from Module 1 in course order while the pilot stays in its Module 2 position. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued with Module 2.2, FND-002. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -28,6 +28,7 @@ FND-001 established the teaching approach as a pilot. New authoring now proceeds
 | [SYS-005: Building access management is only the beginning](lessons/SYS-005_Implementation_Administration_Support_and_Governance.md) | Complete learner-facing lesson for Module 1.5 | Revision 1.1 saved; feedback revisions checked, author-reviewed, learner validation pending |
 | [SYS-006: Follow the access problem across the systems](lessons/SYS-006_Following_an_Access_Problem_Across_the_Enterprise.md) | Complete learner-facing lesson for Module 1.6 | Revision 1.1 saved; feedback revisions checked, author-reviewed, learner validation pending |
 | [FND-001: Identity and account](lessons/FND-001_Identity_and_Account.md) | Complete learner-facing foundation pilot | Revision 1.3 saved; review details below |
+| [FND-002: Sources, connectors, and the systems they connect to](lessons/FND-002_Sources_Connectors_and_Connected_Systems.md) | Complete learner-facing lesson for Module 2.2 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -227,7 +228,7 @@ Unique example number 15005 and consistent campaign/certification meanings. Supp
 | Learner validation | Pending; no beginner read-through or teach-back observed |
 | Publication status | Not approved for publication; learner and publication-format checks pending |
 | Known unresolved content issues | None identified in author review; each real implementation requires its own mapping authority, grant path, processing, connector, and enforcement evidence |
-| Next action | Read SYS-006 and apply feedback to this file; then review the existing Module 2.1 foundation pilot before authoring Module 2.2 |
+| Next action | Preserve SYS-006 for further feedback and learner validation; FND-001 has been reviewed and FND-002 authored following the user's instruction to continue |
 
 #### Author-review notes for SYS-006
 
@@ -258,15 +259,15 @@ Unique example number 16006 propagated through records, account names, map, and 
 | Revision | 1.3 |
 | Content status | Complete authored pilot with explanations, examples, reasoning questions, and worked answers; references saved separately in the author records |
 | Feedback status | Latest supplied feedback incorporated into the saved revision |
-| Author technical review | Documentation-based review completed during the preceding chat work; references now retained in the author records. Revision 1.3 is an editorial source-citation relocation, not a new technical review |
-| Documentation check preserved in author records | October 19, 2026 |
+| Author technical review | Revision 1.3 reviewed against teaching specification v2.6 on October 20, 2026; independent context, first-use meanings, conditional matching, separate operations, evidence, and worked reasoning checked. No learner-body change was needed |
+| Documentation check preserved in author records | Original check: October 19, 2026. Selected mechanisms rechecked October 20, 2026: source/account representation, schema, identity-profile population and mappings, correlation and default fallback, multiple accounts, provisioning, and attribute sync. Scope recorded in author references |
 | Learner validation | Not yet performed with a beginner learner |
 | Publication status | Not marked approved or publication-ready |
-| Next action | Read the saved lesson as a standalone unit; record and address any remaining clarity, depth, or accuracy concerns in this same file |
+| Next action | Preserve revision 1.3 for learner validation and further feedback; continue with the separate source/connector concept lesson FND-002 |
 
-FND-001's documentation-check date records its preceding authoring work. It was not technically reverified during the creation of SYS-001. Saving a file locally is not a new technical verification or proof of learner understanding.
+FND-001 was not technically reverified during the creation of SYS-001. The separate October 20 review above now records the selected mechanisms actually rechecked. Its lesson file remains revision 1.3 because no teaching content changed. Saving or reviewing a file is not proof of learner understanding.
 
-### Feedback preserved in revision 1.1
+#### Feedback preserved in revision 1.1
 
 - An authoritative source supplies the identity population but does not necessarily supply every identity attribute; identity-profile mappings determine where attribute values come from.
 - A failed comparison is distinguished from the outcome of the full applicable correlation behavior.
@@ -276,11 +277,31 @@ FND-001's documentation-check date records its preceding authoring work. It was 
 - Attribute synchronization is described in terms of configured attributes on existing correlated accounts.
 - The third checkpoint identifies concrete evidence rather than assuming a universal field or screen proves the outcome.
 
-### Narration changes in revision 1.2
+#### Narration changes in revision 1.2
 
 Removed the announcement that the lesson can be read independently and other unnecessary explanation preambles. Rephrased the employee-identity scope directly. Technical distinctions, example assumptions, reasoning exercises, worked answers, and references are retained. This was an editorial change, not a new technical verification or learner-validation pass.
 
 Teaching specification v2.2 now requires a personal, polite, friendly mentor voice and excludes commentary about the teaching method from learner lessons. Useful guidance through records, values, decisions, and evidence remains part of the explanation.
+
+### FND-002
+
+| Field | FND-002 |
+|---|---|
+| Title | Sources, connectors, and the systems they connect to |
+| File | [FND-002_Sources_Connectors_and_Connected_Systems.md](lessons/FND-002_Sources_Connectors_and_Connected_Systems.md) |
+| Course placement | Module 2.2 |
+| Revision | 1.0 |
+| Content status | Complete authored lesson with object distinctions, configured integration boundaries, read and write traces, file-age case, evidence comparison, five worked cases, and an unfamiliar-system transfer exercise |
+| Author review | Revision 1.0 reviewed against teaching specification v2.6 on October 20, 2026; scope, independent terminology, conditions, causal reasoning, diagram, examples, narration, and worked answers checked |
+| Documentation check | October 20, 2026; official SailPoint source, configuration, schema, identity-profile, correlation, aggregation, connector-feature, provisioning, and monitoring references mapped in author records |
+| Diagram source | [Editable read/write boundary map](assets/FND-002_read_and_write_boundaries.txt); checked against the inline text block |
+| Tenant execution | Not performed; records, applications, timings, and outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read FND-002 and apply feedback to this same file; then author Module 2.3 |
+
+The lesson introduces authoritative-source and identity-profile roles only as needed to distinguish population creation from collecting another system's accounts. It names supported VA-based and SaaS connection arrangements without inventing network topology. Full deployment mechanics remain in Module 3; access applications and catalogs remain in Module 2.5.
 
 ## Source-citation relocation
 
@@ -292,25 +313,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons are authored. Learner validation and publication review remain pending; authored coverage does not establish either result.
+Module 2.1, FND-001, has been reviewed without a learner-body change. Module 2.2, FND-002, is now authored. Learner validation and formal publication review remain separate pending stages.
 
-After resolving feedback on SYS-006, proceed to Module 2.1 using the existing foundation pilot:
+The next new lesson is Module 2.3:
 
-**Identity and account: how one person is represented across systems.**
+**Account attributes, identity attributes, and entitlement attributes.**
 
-- Permanent ID: `FND-001`.
-- Existing file: [FND-001_Identity_and_Account.md](lessons/FND-001_Identity_and_Account.md), revision 1.3.
-- Next action: review the pilot against the current teaching specification and Module 2.1 scope; revise this same file if needed. Its previous review date is not refreshed merely by linking it here.
-- Do not create a second identity/account lesson for the same course position.
-
-The next new lesson after that review is Module 2.2:
-
-**Sources, connectors, and the systems they connect to.**
-
-- Reserved permanent ID: `FND-002`.
-- Planned file: `lessons/FND-002_Sources_Connectors_and_Connected_Systems.md`.
-- Status: planned only; no lesson file has been created.
-- Scope: source representation, connector integration, external system and data boundaries, supported read/write behavior, and how the objects connect. Full deployment paths remain in Module 3.
+- Reserved permanent ID: `FND-003`.
+- Planned file: `lessons/FND-003_Account_Identity_and_Entitlement_Attributes.md`.
+- Status: planned only; no lesson file created.
+- Scope: attributes on different objects, values and data types, account access values versus entitlement details, where values originate, how mappings connect them, and how to trace a changed or missing value. Full transform mechanics remain in their primary lessons.
+- Resolve known feedback on FND-002 before opening the next writing task.
 
 ## Recording review status
 
@@ -349,3 +362,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored SYS-005 revision 1.0 with service design, operation, incident recovery, governance feedback, a handoff diagram, and worked exercises; updated navigation and next planned lesson | Documentation-based author review only; operating model and application incident are illustrative; no tenant testing, learner validation, or publication approval |
 | October 20, 2026 | Authored SYS-006 revision 1.0 with a record/decision map, mapping-defect investigation, corrected flow, changed-evidence variations, and transfer exercise; all six Module 1 lessons now authored | Documentation-based author review only; learner and publication stages remain pending; FND-001 is the existing next course-position lesson, not a newly verified file |
 | October 20, 2026 | Applied the supplied review selectively: independent example identifiers, SYS-001 text flow, clearer certification vocabulary and LCS shorthand, introductory sign-in scope, module placement, and teaching specification v2.6; current SYS revisions updated | Sources remain outside learner lessons by user instruction; only named technical claims were freshly checked; no tenant testing or learner validation |
+| October 20, 2026 | Reviewed FND-001 revision 1.3 in course order without changing its teaching body; authored and reviewed FND-002 revision 1.0 with read/write boundaries, source/connector distinctions, file-age reasoning, and five worked cases; updated working-edition navigation and reserved FND-003 | Documentation-based author review with selected FND-001 mechanisms rechecked; no tenant testing, learner validation, or formal publication approval |

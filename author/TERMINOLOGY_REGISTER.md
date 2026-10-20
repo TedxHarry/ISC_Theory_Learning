@@ -12,6 +12,13 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Account | A record used by a person or service in a particular system | The target record and ISC's representation are distinct |
 | Source | ISC's configured representation of a system or collection of account data | Creating it does not create or replace the external application |
 | Connector | The integration used to read data and perform supported configured operations | Read support does not prove write support, privileges, or success |
+| Direct connection | Configured connectivity to the external system rather than only an uploaded account export | It does not mean every operation is supported or that all connectors share one hosting path |
+| Flat file connection | Account data supplied through a configured file input | For the read-only file source taught here, importing a file is not writing a change into the external application |
+| Authoritative source | The source used through an identity profile to establish an identity population | It need not supply every identity attribute and does not imply unrestricted write access |
+| Identity profile | Configuration associated with an authoritative population, including identity-attribute mappings and applicable settings | Creating a connection alone does not supply the full population and mapping design |
+| Account schema | The source account attributes and their organization, including the designated Account ID and Name | A schema does not confer external read permission or create external fields |
+| API / endpoint | A software interface for exchanging information or operations / an address for a particular API service or operation | Access to one endpoint does not prove all read and write operations are available |
+| Source owner / entitlement owner | Assigned ownership of the source / of an access item | Ownership can route applicable work; it does not confer external administrative authority |
 | Attribute | A named value on a particular record | Identical names on different records do not make one shared value |
 | Aggregation | Collecting source account or access data into ISC within the applicable scope | It is not itself a grant, and observation is not a perpetual live guarantee |
 | Account correlation | Associating a collected source account with the appropriate ISC identity | It does not authenticate a sign-in or create a missing target account |

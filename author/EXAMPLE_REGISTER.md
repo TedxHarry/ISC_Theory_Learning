@@ -13,6 +13,7 @@ Each lesson establishes an independent fictional situation. Devi is a reusable t
 | SYS-005 | Module 1.5 | 15005 | Finance invoice checker; later moves to supplier coordination | inv-15005 |
 | SYS-006 | Module 1.6 | 16006 | Move from Operations to Finance | rpt-16006 |
 | FND-001 | Module 2.1 | 10482 | Starts in Finance; the changed-value example moves her to Operations | devi.r and dv10482 |
+| FND-002 | Module 2.2 | 20002 | Finance employee with an existing production account; separate test and file-fed portal comparisons | fin-20002 in separately identified production/test contexts; supplier-20002 in the portal |
 
 Manager numbers, request IDs, and transfer-case account IDs represent different objects. They don't need to contain the employee number.
 
