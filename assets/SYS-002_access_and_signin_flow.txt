@@ -11,7 +11,7 @@ ISC provisioning through the finance connector
     | failure -> investigate; approval is not delivery
     | target accepts and applies the change
     v
-Finance account fin-10482 now has INVOICE_VIEW
+Finance account fin-12002 now has INVOICE_VIEW
 
 
 USE ACCESS: a later visit to the finance application
@@ -25,7 +25,7 @@ Identity provider verifies identity and applies entry policies
     v
 Application validates the response and maps the user
     | invalid response or no usable account -> entry fails
-    | valid response and enabled account fin-10482
+    | valid response and enabled account fin-12002
     v
 Application establishes a session
     |

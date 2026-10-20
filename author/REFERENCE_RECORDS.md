@@ -10,10 +10,10 @@ On October 19, 2026, the existing citations were relocated from both lessons. Th
 
 ## SYS-001
 
-- Current lesson: [SYS-001](../lessons/SYS-001_Why_an_Organization_Needs_ISC.md), revision 1.2.
+- Current lesson: [SYS-001](../lessons/SYS-001_Why_an_Organization_Needs_ISC.md), revision 1.3.
 - Source-bearing revision before relocation: 1.1.
 - Documentation check recorded by the preceding authoring work: October 19, 2026.
-- Current change: citations moved outside the lesson; teaching body unchanged apart from citation removal and revision metadata.
+- Current revision 1.3: example identifiers, LCS shorthand, campaign/certification wording, and diagram presentation revised on October 20, 2026. The earlier citation relocation is preserved in the source-bearing history.
 - Learner validation and publication approval: pending; see the course register for the review history.
 
 ### Sources by lesson section
@@ -46,6 +46,24 @@ Use [Managing sources](https://documentation.sailpoint.com/saas/help/sources/ind
 
 Documentation checked: October 19, 2026. The scenarios were not executed in a tenant.
 
+### Feedback revision 1.3, October 20, 2026
+
+Unique example number 11001, informal LCS wording, campaign/certification distinction, and synchronized inline request diagram. The recorded source review above remains applicable to unchanged mechanisms. This feedback pass is not a blanket renewal of every documentation-check date. No tenant execution or learner validation occurred.
+
+Diagram source for revision 1.3: [editable inline request flow](../assets/SYS-001_request_flow.txt). It preserves the manager-decision, application-result, and human-verification boundaries. Prior image/vector/structured assets are retained; this revision does not claim they were newly rendered.
+
+### Assessment intent for the current SYS-001 checkpoints
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed |
+|---|---|---|---|
+| Case 1 | Appropriate access versus correct application execution | Verify the employee's continuing approved work and the removal requirement | A working application proves access remains justified |
+| Case 2 | Business decision versus delivery | Approval is established; inspect the rejected operation and current target state | Another approval repairs a failed target change |
+| Case 3 | Visibility versus a complete operating design | Collection is established; agree supported execution, ownership, and evidence | Importing accounts supplies a change mechanism |
+| Case 4 | Scope of evidence | Limit conclusions to included applications; obtain separate evidence before judging excluded access | A completed review proves uncollected access appropriate or inappropriate |
+| Support-application transfer | Connecting identity, permission meaning, decision, execution, and review | Explain supported automatic or owned manual delivery and continuing-access checks | Account creation alone fulfills identity governance |
+
+The full questions and worked answers are in the learner lesson. These author fields are assessment metadata, not required inline labels.
+
 ## FND-001
 
 - Current lesson: [FND-001](../lessons/FND-001_Identity_and_Account.md), revision 1.3.
@@ -77,9 +95,21 @@ For a closer check, compare the person-level description in [Identities Overview
 
 Documentation checked: October 19, 2026.
 
+### Assessment intent for the current FND-001 checkpoints
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed |
+|---|---|---|---|
+| Question 1 | Identity/account cardinality | One identity is associated with three source records | Each account creates another person-level identity |
+| Question 2 | Collection versus association | The account is collected; investigate its association and matching inputs | A missing identity relationship means the target account must be created |
+| Question 3 | Separate attribute records and update mechanisms | Inspect identity mapping, collected account data, expected attribute sync, and execution evidence | Differing department values alone prove identity processing failed |
+| Question 4 | Correlation versus account creation | Creation requires the supported provisioning operation and confirmed target outcome | Correlating an existing account creates an account elsewhere |
+| Teach-back | Independent object and operation reasoning | Explain a new application example with separate population, association, creation, and attribute updates | Memorized labels establish understanding of the relationships |
+
+Added as author assessment metadata on October 20, 2026. FND-001 remains revision 1.3; its teaching body and previous documentation-check date are unchanged.
+
 ## SYS-002
 
-- Current lesson: [SYS-002](../lessons/SYS-002_Authentication_Authorization_and_ISC.md), revision 1.0.
+- Current lesson: [SYS-002](../lessons/SYS-002_Authentication_Authorization_and_ISC.md), revision 1.1.
 - Documentation checked: October 20, 2026.
 - Review method: read official sources for the mechanisms taught; distinguish general identity standards and security guidance from ISC product behavior.
 - The finance and document applications, permission rules, account identifiers, event times, and outcomes are fictional teaching examples. No tenant or application test was performed.
@@ -93,7 +123,7 @@ Documentation checked: October 19, 2026.
 | [Authentication vs. authorization, Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-vs-authorization) | What did the successful sign-in actually establish? Identity verification versus permission decisions; MFA; identity providers can apply access policies. |
 | [Identity and access management fundamental concepts, Microsoft](https://learn.microsoft.com/en-us/entra/fundamentals/identity-fundamental-concepts) | What did the successful sign-in actually establish?; Now follow Devi into the application. Supporting meanings of authentication, authorization, identity provider, MFA, federation, and SSO. |
 | [What is single sign-on in Microsoft Entra ID?](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/what-is-single-sign-on) | Now follow Devi into the application. Participating applications and shared sign-in; SSO is not a blanket grant of application operations. |
-| [Single sign-on SAML protocol, Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol) | Now follow Devi into the application. Request/response and assertion concepts, signature, subject, audience, recipient, and validity conditions. The numbered example is conceptual, not an implementation or security-validation checklist. |
+| [Single sign-on SAML protocol, Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol) | Now follow Devi into the application. Request/response and assertion concepts; trusted origin, integrity, intended application, and validity are explained conceptually. Protocol-field details are outside this introductory step. |
 | [Identity governance and administration, SailPoint](https://www.sailpoint.com/identity-library/identity-governance) | Where does ISC enter the picture? Governance and administration purpose; ongoing appropriateness of access. |
 | [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Where does ISC enter the picture?; Follow the access change before following the sign-in. Configured account/access changes and automated versus manual fulfillment; operation support must be verified for the actual connector. |
 | [Access request overview](https://documentation.sailpoint.com/saas/help/requests/index.html) | Where does ISC enter the picture?; Follow the access change before following the sign-in. Requestable items, configured approval, fulfillment, and request history. The example deliberately excludes future start dates and additional activation requirements. |
@@ -134,9 +164,13 @@ The learner file contains the questions, supplied facts, and worked reasoning. T
 
 The editable [text flow](../assets/SYS-002_access_and_signin_flow.txt) is embedded verbatim in the lesson's text block. Its branches and account/permission labels were checked against the prose. Local link targets, source-link exclusion, and source/lesson synchronization are checked during the save review. No image renderer, tenant execution, or publication-format visual check is claimed.
 
+### Feedback revision 1.1, October 20, 2026
+
+Unique example number 12002 and a shorter conceptual sign-in validation step; delivery and authorization reasoning retained. The recorded source review above remains applicable to unchanged mechanisms. This feedback pass is not a blanket renewal of every documentation-check date. No tenant execution or learner validation occurred.
+
 ## SYS-003
 
-- Current lesson: [SYS-003](../lessons/SYS-003_Who_Owns_What_in_Identity_and_Access.md), revision 1.0.
+- Current lesson: [SYS-003](../lessons/SYS-003_Who_Owns_What_in_Identity_and_Access.md), revision 1.1.
 - Documentation checked: October 20, 2026.
 - Review method: official SailPoint documentation for product mechanisms and configured ownership behavior; separate author-developed operational guidance for team responsibilities and handoffs.
 - Organizational responsibilities are a practical model to agree with each organization, not requirements imposed by ISC. Fictional directory-group mappings do not establish a real connector's capabilities.
@@ -189,9 +223,13 @@ The full learner-facing questions, facts, and worked reasoning are in the lesson
 
 The [editable handoff map](../assets/SYS-003_responsibility_handoffs.txt) is embedded verbatim as a text diagram. Its paths, labels, identifiers, and human verification boundaries were checked against the prose. File review checks source synchronization, local links, source-link exclusion, and the current/next lesson register. Publication rendering and learner interpretation remain unvalidated.
 
+### Feedback revision 1.1, October 20, 2026
+
+Unique example number 13003 and consistent campaign/certification meanings; manual task and manager-correlation claims selectively rechecked. The recorded source review above remains applicable to unchanged mechanisms. This feedback pass is not a blanket renewal of every documentation-check date. No tenant execution or learner validation occurred.
+
 ## SYS-004
 
-- Current lesson: [SYS-004](../lessons/SYS-004_Intended_Known_and_Effective_Access.md), revision 1.0.
+- Current lesson: [SYS-004](../lessons/SYS-004_Intended_Known_and_Effective_Access.md), revision 1.1.
 - Documentation checked: October 20, 2026.
 - Review method: official product documentation for ISC records, collection, processing, and Search; Microsoft documentation for application-owned session boundaries; OWASP guidance for trusted authorization enforcement.
 - The intended/recorded/effective distinction and investigation method are author-developed teaching models, not named ISC states or mandatory workflows.
@@ -247,9 +285,13 @@ The complete questions, supplied facts, and worked answers remain in the learner
 
 The [editable change and observation flow](../assets/SYS-004_access_change_and_observation.txt) matches the lesson's embedded text diagram. The diagram separates attempted delivery from collection and labels the human comparison. File checks cover exact text synchronization, local-link targets, revision and register consistency, and absence of source links or draft markers in the learner file. No graphical rendering, tenant execution, learner interpretation test, or publication-format validation is claimed.
 
+### Feedback revision 1.1, October 20, 2026
+
+Unique example number 14004; Search date-query GMT/browser-display behavior selectively rechecked. The recorded source review above remains applicable to unchanged mechanisms. This feedback pass is not a blanket renewal of every documentation-check date. No tenant execution or learner validation occurred.
+
 ## SYS-005
 
-- Current lesson: [SYS-005](../lessons/SYS-005_Implementation_Administration_Support_and_Governance.md), revision 1.0.
+- Current lesson: [SYS-005](../lessons/SYS-005_Implementation_Administration_Support_and_Governance.md), revision 1.1.
 - Documentation checked: October 20, 2026.
 - Review method: official SailPoint documentation for product concepts and supported behavior; author-developed operational guidance for acceptance, handover, incident management, and change control.
 - The four work categories are a practical model, not named ISC execution stages, mandatory departments, or a claimed formal service-management certification.
@@ -301,9 +343,13 @@ The learner file contains the complete cases, supplied facts, and worked reasoni
 
 The [editable service-work map](../assets/SYS-005_service_work_handoffs.txt) is embedded verbatim in the lesson. Its arrows describe human work/evidence handoffs and feedback, not automatic backend stages. Save checks cover diagram synchronization, source-link exclusion, local links, revision consistency, and current/next lesson records. Graphical rendering, publication-format validation, and beginner interpretation testing remain pending.
 
+### Feedback revision 1.1, October 20, 2026
+
+Unique example number 15005 and consistent campaign/certification meanings. The recorded source review above remains applicable to unchanged mechanisms. This feedback pass is not a blanket renewal of every documentation-check date. No tenant execution or learner validation occurred.
+
 ## SYS-006
 
-- Current lesson: [SYS-006](../lessons/SYS-006_Following_an_Access_Problem_Across_the_Enterprise.md), revision 1.0.
+- Current lesson: [SYS-006](../lessons/SYS-006_Following_an_Access_Problem_Across_the_Enterprise.md), revision 1.1.
 - Documentation checked: October 20, 2026.
 - Review method: official SailPoint documentation for representations, mappings, criteria, processing, delivery, and observations; OWASP and Microsoft primary guidance for authorization and session boundaries.
 - All named employee records, values, times, configured conditions, and application behavior are fictional. No tenant operation, source aggregation, provisioning, or application test was performed.
@@ -333,7 +379,7 @@ The [editable service-work map](../assets/SYS-005_service_work_handoffs.txt) is 
 
 - Official SailPoint documentation currently uses Human Fabric / Identity Services branding. The course retains the requested ISC name; site navigation does not establish a license or service entitlement.
 - The example has an existing identity, verified source-account associations, an enabled correctly defined automatic role, supported provisioning, and one existing reporting account. The original role grant is absent and no alternate grant provides the permission.
-- Employee number 10482, account rpt-10482, department FIN/OPS, and employment-status ACTIVE are fictional values. Employment status is an example identity attribute, not an asserted lifecycle-state/account-status equivalence.
+- Employee number 16006, account rpt-16006, department FIN/OPS, and employment-status ACTIVE are fictional values. Employment status is an example identity attribute, not an asserted lifecycle-state/account-status equivalence.
 - AND evaluation is reasoned from supplied values. The lesson expressly does not claim that a UI or event stream exposes each individual comparison.
 - The diagram shows a currently selected directory input with HR also available. Mappings can select HR; both sources are not asserted to override the identity simultaneously.
 - The approved attribute authority is HR in this organization. Selecting directory data is not inherently incorrect across all implementations; it conflicts with this supplied design.
@@ -359,3 +405,19 @@ The complete supplied facts and worked reasoning are in the learner file. The ma
 ### Diagram and file checks
 
 The [editable enterprise access map](../assets/SYS-006_enterprise_access_map.txt) is synchronized with the lesson's larger text diagram; its shorter criteria block is a separate teaching example. Diagram review covers selected inputs, false/true branches, write outcome boundaries, observation direction, and human checking. Save verification checks synchronization, link exclusion, local targets, and the current/next register. No graphical rendering, publication-format inspection, or beginner interpretation test has been performed.
+
+### Feedback revision 1.1, October 20, 2026
+
+Unique example number 16006 propagated through records, account names, map, and worked reasoning. The recorded source review above remains applicable to unchanged mechanisms. This feedback pass is not a blanket renewal of every documentation-check date. No tenant execution or learner validation occurred.
+
+## Focused verification for the supplied feedback, October 20, 2026
+
+| Claim checked | Official reference | Result and scope |
+|---|---|---|
+| Manual entitlement-provisioning task assignment | [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | The page states entitlement owner with source owner fallback for manual tasks involving entitlements. Retained in SYS-003 with operation/actual-assignment qualifications. Do not substitute access-request approver fallback for fulfillment ownership. |
+| Search date query and displayed dates | [Search FAQs](https://documentation.sailpoint.com/saas/help/search/search_guide.html) | Date queries use GMT; displayed Search dates use the browser time zone. Retained in SYS-004. This is not a universal time-zone rule for every service. |
+| Changed manager value that cannot match | [Manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html) | A changed value that cannot correlate to a new manager retains the existing manager relationship; null behavior is separately documented. Retained in SYS-003. |
+| Campaign and reviewer assignment distinction | [Certification glossary](https://documentation.sailpoint.com/saas/help/common/glossary.html), [Understanding certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), [Campaign activation email](https://documentation.sailpoint.com/saas/help/common/emails/et_certs_activated.html) | Campaign organizes review work; certification is an assigned review within it. Wording tightened without assuming one certification per reviewer or universal revocability. Feature/engine availability still needs tenant-specific verification. |
+| Sign-in response validation | [Microsoft SAML protocol](https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol) | SYS-002 preserves trusted origin, integrity, intended application, and validity while removing the introductory inventory of individual validation-field names. It is not an implementation checklist. |
+
+The feedback's proposed restoration of learner citations conflicts with the current user instruction and specification. Official references and dates remain here. The feedback's missing-register claim refers to an older set; the current register already contained all seven authored lessons before this pass.

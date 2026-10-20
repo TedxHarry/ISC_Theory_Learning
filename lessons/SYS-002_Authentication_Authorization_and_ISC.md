@@ -1,6 +1,6 @@
 # Signing in, using a permission, and where ISC fits
 
-*Lesson SYS-002 · Revision 1.0*
+*Lesson SYS-002 · Revision 1.1*
 
 Devi checks supplier invoices for the Finance team. She already has an account in the finance application. When she opens it, her organization's sign-in service verifies her, and the application shows her name.
 
@@ -78,11 +78,11 @@ Look at the relationships before following the change:
 | Record or configuration | Relevant fact in this example |
 |---|---|
 | Devi's ISC identity | Represents Devi and is associated with her finance account |
-| Finance account `fin-10482` | Already exists and currently lacks `INVOICE_VIEW` |
+| Finance account `fin-12002` | Already exists and currently lacks `INVOICE_VIEW` |
 | Finance source and connector | Configured to read accounts and add this permission |
 | `INVOICE_VIEW` entitlement | Represents the finance application's invoice-reading permission |
 | Finance application's permission rule | Allows invoice reading when the account has `INVOICE_VIEW` |
-| Sign-in integration | Maps the verified sign-in identifier to `fin-10482` |
+| Sign-in integration | Maps the verified sign-in identifier to `fin-12002` |
 
 There are two distinct associations here. Account correlation connects records within ISC's identity model. The sign-in integration connects a verified sign-in identity to an application account. Correct correlation in ISC doesn't prove the sign-in integration selects the same account.
 
@@ -94,7 +94,7 @@ For this path, assume Devi has one relevant finance account, the request identif
 
 First, the submitted request identifies the recipient and the requested access. The manager reviews it against Devi's work and approves it.
 
-Next, ISC's provisioning process uses the configured integration to request the change on `fin-10482`. The business approval supplies permission to proceed; it doesn't itself edit the finance account.
+Next, ISC's provisioning process uses the configured integration to request the change on `fin-12002`. The business approval supplies permission to proceed; it doesn't itself edit the finance account.
 
 The finance system must accept and apply the operation. If the integration lacks permission to update accounts, or the target rejects the requested value, an approval can remain in the request history while the attempted change fails.
 
@@ -127,10 +127,10 @@ Here is the successful path in our configured example:
 1. **Devi opens the finance application.** With no usable application session, the application directs her browser to the identity provider.
 2. **The provider establishes her authenticated identity.** It checks the required evidence or uses an existing acceptable sign-in session. Its applicable access policies must also permit entry.
 3. **The provider issues a sign-in response for the finance application.** The browser carries it back. The trust configuration determines which provider and signing information the application accepts.
-4. **The application validates the response.** It checks the digital signature: evidence that the expected provider signed the information and that the signed information hasn't been changed. It also checks applicable recipient and audience conditions: where the response is meant to arrive and which application may use the assertion. Time conditions limit when it is valid. A response intended for another application isn't a valid substitute.
-5. **The application identifies the finance account.** In this example, a configured identifier mapping selects `fin-10482`. The account already exists and is enabled.
+4. **The application validates the response.** It checks that the sign-in information came from the trusted provider, hasn't been altered, is intended for this application, and is valid for use now. Information arriving through the browser is not sufficient proof by itself.
+5. **The application identifies the finance account.** In this example, a configured identifier mapping selects `fin-12002`. The account already exists and is enabled.
 6. **The application establishes a session.** Subsequent browser requests can now be associated with the signed-in user under the application's session rules.
-7. **Devi asks to read invoices.** The application checks the permission required for that operation and, because `fin-10482` now has `INVOICE_VIEW`, returns the permitted data.
+7. **Devi asks to read invoices.** The application checks the permission required for that operation and, because `fin-12002` now has `INVOICE_VIEW`, returns the permitted data.
 
 A session is not a permanent grant of every action. The application still needs to enforce authorization for protected operations.
 
@@ -156,7 +156,7 @@ ISC provisioning through the finance connector
     | failure -> investigate; approval is not delivery
     | target accepts and applies the change
     v
-Finance account fin-10482 now has INVOICE_VIEW
+Finance account fin-12002 now has INVOICE_VIEW
 
 
 USE ACCESS: a later visit to the finance application
@@ -170,7 +170,7 @@ Identity provider verifies identity and applies entry policies
     v
 Application validates the response and maps the user
     | invalid response or no usable account -> entry fails
-    | valid response and enabled account fin-10482
+    | valid response and enabled account fin-12002
     v
 Application establishes a session
     |
@@ -220,7 +220,7 @@ Let's change one condition at a time.
 
 **The request is approved, but the target operation failed.** The business decision succeeded; delivery didn't. Examine the operation and error for the relevant source and account. Repeating approval doesn't repair the target rejection.
 
-**The permission was added to `fin-10482`, but sign-in selects another account.** Investigate the identifier returned during sign-in and how the application maps it. Changing ISC correlation without establishing that it is wrong would address a different association.
+**The permission was added to `fin-12002`, but sign-in selects another account.** Investigate the identifier returned during sign-in and how the application maps it. Changing ISC correlation without establishing that it is wrong would address a different association.
 
 **The identity provider accepted the user, but the application rejected the response.** Authentication at the provider doesn't establish that the receiving application accepted the trust exchange. Check the application-side failure and the configured trust relationship.
 
@@ -276,8 +276,8 @@ The finance connector uses an **integration account**, an account authorized to 
 You receive these observations:
 
 - At 09:00, the manager approved Devi's request for `INVOICE_VIEW`.
-- At 09:02, the provisioning result reported that the finance integration account lacked permission to modify `fin-10482`.
-- At 09:05, the application owner checked `fin-10482`; `INVOICE_VIEW` was absent.
+- At 09:02, the provisioning result reported that the finance integration account lacked permission to modify `fin-12002`.
+- At 09:05, the application owner checked `fin-12002`; `INVOICE_VIEW` was absent.
 - At 09:06, Devi successfully signed in, but invoice reading was denied.
 
 What failed? Would resetting Devi's sign-in password address the supplied evidence?
@@ -292,10 +292,10 @@ The next step is to examine the integration's required privileges with the respo
 
 The finance application has two accounts associated with Devi:
 
-- `fin-10482` has `INVOICE_VIEW`.
-- `fin-archive-10482` does not.
+- `fin-12002` has `INVOICE_VIEW`.
+- `fin-archive-12002` does not.
 
-The current application session identifies the user as `fin-archive-10482`. The ISC provisioning record identifies `fin-10482`.
+The current application session identifies the user as `fin-archive-12002`. The ISC provisioning record identifies `fin-12002`.
 
 Is the successful provisioning result contradicted by the user's failure?
 
@@ -305,7 +305,7 @@ The evidence doesn't justify copying permissions to both accounts or deleting ei
 
 ### Case 3: a collected view differs from the application
 
-At 10:00, ISC collected `INVOICE_VIEW` on `fin-10482`. At 10:20, an application administrator removed it directly. At 10:25, the application denied invoice reading. You are told no later collection or other refresh of that account has reached ISC.
+At 10:00, ISC collected `INVOICE_VIEW` on `fin-12002`. At 10:20, an application administrator removed it directly. At 10:25, the application denied invoice reading. You are told no later collection or other refresh of that account has reached ISC.
 
 Does the 10:00 ISC view prove the application made the wrong decision?
 

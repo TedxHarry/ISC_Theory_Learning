@@ -18,6 +18,8 @@ The repository contains the complete working files. GitHub Pages presents the se
 - [Teaching specification](TEACHING_SPECIFICATION.md)
 - [Course register and next step](COURSE_REGISTER.md)
 - [Author-only source references](author/REFERENCE_RECORDS.md)
+- [Author example register](author/EXAMPLE_REGISTER.md)
+- [Author terminology register](author/TERMINOLOGY_REGISTER.md)
 - [SYS-001: Why does an organization need ISC?](lessons/SYS-001_Why_an_Organization_Needs_ISC.md)
 - [SYS-002: Signing in, using a permission, and where ISC fits](lessons/SYS-002_Authentication_Authorization_and_ISC.md)
 - [SYS-003: Who owns what when access needs to change?](lessons/SYS-003_Who_Owns_What_in_Identity_and_Access.md)

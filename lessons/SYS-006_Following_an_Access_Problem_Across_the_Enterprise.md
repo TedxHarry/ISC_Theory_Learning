@@ -1,7 +1,7 @@
 # Follow the access problem across the systems
 
 Lesson ID: SYS-006  
-Revision: 1.0
+Revision: 1.1
 
 Devi has moved from Operations into Finance. She can sign in to the reporting application, but the Finance reports are unavailable to her.
 
@@ -15,7 +15,7 @@ The useful question is where the information and decisions stopped producing the
 
 In this fictional example, the approved policy gives active Finance employees access to view Finance reports. It does not give them permission to edit financial data or export it.
 
-Devi already has one enabled reporting account, `rpt-10482`. She uses that account when she signs in. Her employee number is `10482`.
+Devi already has one enabled reporting account, `rpt-16006`. She uses that account when she signs in. Her employee number is `16006`.
 
 The reporting application requires a permission called `FINANCE_REPORT_VIEW` to view the Finance report collection. The application owner has confirmed that Devi has no other grant that provides this access.
 
@@ -23,7 +23,7 @@ An **account** is a record through which a person or service uses a particular s
 
 Those distinctions give us a specific problem:
 
-> Employee 10482 should be able to view the Finance report collection through account rpt-10482. That operation is currently denied.
+> Employee 16006 should be able to view the Finance report collection through account rpt-16006. That operation is currently denied.
 
 “Reporting doesn't work” would leave too much unspecified. A failed sign-in, a missing report-viewing permission, and an unavailable application need different investigations.
 
@@ -45,11 +45,11 @@ In our example, ISC has an HR source, a directory source, and a reporting source
 
 **Aggregation** collects account information into ISC. **Account correlation** associates a collected account with the appropriate identity using the applicable matching behavior.
 
-The engineer has already confirmed that the directory account and `rpt-10482` are associated with Devi's identity. That removes a wrong-person association from the main example. It does not remove it from every future investigation.
+The engineer has already confirmed that the directory account and `rpt-16006` are associated with Devi's identity. That removes a wrong-person association from the main example. It does not remove it from every future investigation.
 
 Use identifiers to follow these relationships. Display names help you read a screen, but two people can share a name, and account names can differ across systems.
 
-Employee number 10482 identifies the person in this example. The source and account identifier identify the particular system record. Those values do different jobs.
+Employee number 16006 identifies the person in this example. The source and account identifier identify the particular system record. Those values do different jobs.
 
 ## Which department value does ISC use?
 
@@ -71,8 +71,8 @@ Let's inspect the supplied records. These are fictional observations from the sa
 
 | Record or configuration | Value available during the investigation |
 |---|---|
-| Current HR employment record | Employee 10482, department FIN, employment status ACTIVE |
-| HR account data collected into ISC at 08:10 | Employee 10482, department FIN, employment status ACTIVE |
+| Current HR employment record | Employee 16006, department FIN, employment status ACTIVE |
+| HR account data collected into ISC at 08:10 | Employee 16006, department FIN, employment status ACTIVE |
 | Current directory account | Department OPS |
 | Directory account data collected into ISC at 08:15 | Department OPS |
 | Identity department mapping | Read department from the associated directory account |
@@ -113,7 +113,7 @@ The role states who qualifies. Its access contents state what that membership re
 
 **Identity processing** evaluates identity information and applicable access configuration. When the configured criteria qualify an identity for this role, the resulting assignment can initiate the required access changes.
 
-**Provisioning** performs account or access changes in another system. The **target system** is the system receiving the change. Here, a supported provisioning operation adds the permission to the existing account `rpt-10482` in the reporting application.
+**Provisioning** performs account or access changes in another system. The **target system** is the system receiving the change. Here, a supported provisioning operation adds the permission to the existing account `rpt-16006` in the reporting application.
 
 The example assumes the required ISC services are enabled, the role and its access contents are configured correctly, and the integration supports the required write. It also assumes that processing has run against the identity values shown above.
 
@@ -156,7 +156,7 @@ No new grant from this role       Role assignment
                              Required access profile
                                       |
                                       v
-                          Provisioning to rpt-10482
+                          Provisioning to rpt-16006
                                       |
                               applied or rejected
                                       v
@@ -196,7 +196,7 @@ The two directions meet at the configured assignment.
 
 Here is how the investigation narrows in this case.
 
-The application evidence establishes the denied viewing operation on `rpt-10482` and the missing permission. The account association confirms that the engineer is inspecting Devi's record.
+The application evidence establishes the denied viewing operation on `rpt-16006` and the missing permission. The account association confirms that the engineer is inspecting Devi's record.
 
 The access design identifies Finance Reports as the intended automatic grant path. The role is enabled, its contents are correct, and its criteria use identity department and employment status.
 
@@ -245,7 +245,7 @@ In this fictional successful continuation:
 | Role criteria | Both conditions are true |
 | Role assignment | Finance Reports is assigned |
 | Required access | Finance report viewing requires FINANCE_REPORT_VIEW |
-| Provisioning result | The supported addition to rpt-10482 reports success |
+| Provisioning result | The supported addition to rpt-16006 reports success |
 | Current target account | The application confirms FINANCE_REPORT_VIEW is present |
 | Controlled application check | Devi's account can view the approved Finance reports |
 | Boundary check | The change has not added edit or export permissions |
@@ -273,7 +273,7 @@ The **front end** is the page or interface the user sees. The **back end** is th
 
 An **identity provider** can perform sign-in checks for an application that trusts it. A **session** is the application's continuing context for a signed-in user. Sign-in account mapping and ISC account correlation are different relationships; verify which application account the session actually uses.
 
-For our main example, that account is already confirmed as `rpt-10482`. The reporting application evaluates its current permissions for the viewing operation.
+For our main example, that account is already confirmed as `rpt-16006`. The reporting application evaluates its current permissions for the viewing operation.
 
 If the corrected permission is present but a different account is in the session, the original account's successful provisioning won't solve that session's problem.
 

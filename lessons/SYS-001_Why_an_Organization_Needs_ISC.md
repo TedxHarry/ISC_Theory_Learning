@@ -1,6 +1,6 @@
 # Why does an organization need ISC?
 
-*Lesson SYS-001 · Revision 1.2*
+*Lesson SYS-001 · Revision 1.3*
 
 Devi works in Finance. She's just been assigned to check supplier invoices, and she already has an account in the finance application. Her password works. She can sign in.
 
@@ -87,7 +87,7 @@ Reading account information into ISC is called **aggregation**. It supplies info
 
 **Account correlation** is the matching and assignment of a source account to an identity. It answers, "Which identity does this account belong to?" It connects the records; it doesn't grant invoice access.
 
-Our example uses employee number `10482` on Devi's identity and the corresponding employee-number field on her finance account. The account-matching configuration uses those values to establish the intended, unique association.
+Our example uses employee number `11001` on Devi's identity and the corresponding employee-number field on her finance account. The account-matching configuration uses those values to establish the intended, unique association.
 
 Now we can ask about the permissions on Devi's account without guessing from its username.
 
@@ -149,9 +149,35 @@ If you only check that she can sign in, you haven't tested the requirement. She 
 
 ### Trace the decision and the change separately
 
-Follow the solid arrows through Devi's configured request. The manager decides whether the access is justified; the finance application processes the change. The dotted arrows lead to the engineer's checks, not an automatic application step.
+Follow the decision branches through Devi's configured request. The manager decides whether the access is justified; the finance application processes the attempted change. The engineer's checks are shown separately because they are human verification.
 
-![Devi submits a request in ISC. Manager rejection ends this request without a grant. Approval leads to a connector operation in the finance application. The application changes the account or rejects the operation in the illustrated cases. The engineer checks activity and current account state.](../assets/SYS-001_request_flow.png)
+```text
+Devi requests INVOICE_VIEW in ISC
+                   |
+                   v
+Manager reviews the business need
+       | rejects                   | approves
+       v                           v
+No grant from                ISC initiates the change
+this request                       |
+                                   v
+                         Connector sends the operation
+                                   |
+                                   v
+                         Finance application processes it
+                              /                  \
+                    accepts /                    \ rejects
+                           v                      v
+                  INVOICE_VIEW added       Account unchanged
+                  to existing account      in this failure case
+
+HUMAN CHECK after either application result:
+Engineer inspects activity and current target state.
+Check invoice reading and whether PAYMENT_RELEASE was added.
+
+Manager rejection is a decision about the request.
+Application rejection is a failure to apply the attempted change.
+```
 
 The two rejection paths mean different things. A manager can reject the business need before a grant is attempted. An application can reject an attempted change after the manager has approved it. In the failure case shown, the application rejects the operation without changing the account; other failures can require different checks.
 
@@ -200,7 +226,7 @@ No. A request is one way to start a change.
 
 An organization can configure a **role**, an access grouping associated with a business responsibility, to be assigned when an identity meets defined membership conditions. For example, an organization could define a role for a particular job population. The configured conditions and available identity data determine who qualifies.
 
-It can also configure **lifecycle states**, abbreviated **LCS**, which represent business stages such as active employment or departure, to drive specified access and account actions. The state describes the stage; the configured actions determine what ISC should do about access.
+It can also configure **lifecycle states**, which represent business stages such as active employment or departure, to drive specified access and account actions. You may hear **LCS** as informal shorthand for lifecycle state; it is not a separate ISC object or a label you need to find on a screen. The state describes the stage; the configured actions determine what ISC should do about access.
 
 The business still supplies the access requirement. Automation applies a configured decision; it does not make an undefined requirement correct.
 
@@ -216,7 +242,7 @@ The original grant was appropriate. Keeping it indefinitely is a new decision, w
 
 This is why access management must account for changes as well as joining. Ask what access the new work needs, what previous access is still justified, and what should be removed. Adding new access does not, by itself, explain the fate of old access.
 
-An organization also needs a way to review existing access. In ISC, a **certification** is an access review in which designated reviewers examine access and make the decisions supported for those items. The access model affects which items can be reviewed or revoked. A **campaign** organizes a set of these reviews.
+An organization also needs a way to review existing access. In ISC, a **certification campaign** organizes that review work. A **certification** is an assigned review within the campaign: a reviewer examines its access items and makes the decisions supported for them. The access model affects which items can be reviewed or revoked.
 
 For Devi's no-longer-needed invoice access, a removal decision still has to reach the application. **Remediation** is the work of carrying out the required correction. Its result needs checking; a recorded revoke decision alone doesn't establish that the permission has disappeared.
 

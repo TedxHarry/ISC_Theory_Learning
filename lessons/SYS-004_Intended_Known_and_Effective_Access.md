@@ -1,7 +1,7 @@
 # What should be allowed, what ISC records, and what actually works
 
 Lesson ID: SYS-004  
-Revision: 1.0
+Revision: 1.1
 
 Devi works in operations. She uses a reporting application to read daily reports. For a temporary assignment, she was also allowed to export those reports into a file.
 
@@ -32,7 +32,7 @@ Let's make the example precise. The names, times, records, and results here are 
 | Item | What it means in this example |
 |---|---|
 | Person | Devi, an operations employee |
-| Application account | `report-10482`, the account Devi uses in the reporting application |
+| Application account | `report-14004`, the account Devi uses in the reporting application |
 | `REPORT_READ` | Permission to read the daily operations reports |
 | `REPORT_EXPORT` | Permission to export those reports to a file |
 | Requirement from 09:00 | Keep reading available; stop exporting |
@@ -54,7 +54,7 @@ The first view is **intended access**: what the organization has decided should 
 
 For Devi, the requirement is:
 
-> From 09:00, account `report-10482` must retain `REPORT_READ` and must no longer be able to export the daily operations reports.
+> From 09:00, account `report-14004` must retain `REPORT_READ` and must no longer be able to export the daily operations reports.
 
 Notice that this states both what must stop and what must remain.
 
@@ -125,7 +125,7 @@ Even a genuine successful operation is historical evidence. A different administ
 
 **Aggregation** reads account data from a source into ISC. Depending on the integration and aggregation method, the collection can cover a full set of accounts or supported changes since an earlier collection.
 
-If ISC collected `REPORT_EXPORT` on `report-10482` at 08:45, that gives us an observation of the permission in the collected data. It doesn't establish that the permission is still present at 09:15.
+If ISC collected `REPORT_EXPORT` on `report-14004` at 08:45, that gives us an observation of the permission in the collected data. It doesn't establish that the permission is still present at 09:15.
 
 These are different meanings within “what ISC knows”: definitions, decisions, assignments, attempted operations, and collected observations. They aren't one universal current-state indicator.
 
@@ -208,7 +208,7 @@ Let's inspect the fictional events. All times below are on the same day in the s
 
 | Time | Event or observation | What it establishes |
 |---|---|---|
-| 08:45 | ISC collects both reporting permissions on `report-10482` | The collected account data includes read and export |
+| 08:45 | ISC collects both reporting permissions on `report-14004` | The collected account data includes read and export |
 | 09:00 | The approved temporary export period ends | Export is no longer intended; reading remains intended |
 | 09:02 | An authorized removal of `REPORT_EXPORT` is initiated through ISC | A change is being attempted |
 | 09:03 | The target rejects the removal because the integration lacks the required removal privilege | This removal attempt did not complete |
@@ -239,7 +239,7 @@ The administrator removes only `REPORT_EXPORT`. This is an approved target-side 
 
 | Time | Event or observation | What it establishes |
 |---|---|---|
-| 09:12 | Administrator removes `REPORT_EXPORT` from `report-10482` | A separate corrective action is performed in the target |
+| 09:12 | Administrator removes `REPORT_EXPORT` from `report-14004` | A separate corrective action is performed in the target |
 | 09:13 | Target account check finds `REPORT_READ` present and `REPORT_EXPORT` absent | The inspected account permissions match the requirement |
 | 09:14 | Controlled checks confirm reading succeeds and export is denied for a permission reason | The tested application behavior matches the requirement |
 | 09:15 | ISC's collected account information still reflects the 08:45 observation | This ISC view hasn't yet incorporated the manual correction |
@@ -335,7 +335,7 @@ Choose an action because its mechanism addresses the diagnosed gap, not because 
 
 For Devi's requirement, an adequate closure explanation needs to join the decision to the outcome.
 
-First, identify the authorized restriction and its effective time. Then identify `report-10482` and the reporting permissions in scope.
+First, identify the authorized restriction and its effective time. Then identify `report-14004` and the reporting permissions in scope.
 
 Explain that the initial ISC removal failed, that an authorized administrator performed a separate correction, and that current target evidence confirmed export absent while read remained present.
 
@@ -345,7 +345,7 @@ Finally, account for ISC's information. If collection is still pending, say so a
 
 A short operational update at 09:15 could say:
 
-> Export removal is confirmed for reporting account `report-10482`; reading remains available. The administrator performed the approved correction after the ISC operation failed. Target permissions and controlled application checks support the result. ISC's collected view still contains the earlier permission; collection follow-up remains open.
+> Export removal is confirmed for reporting account `report-14004`; reading remains available. The administrator performed the approved correction after the ISC operation failed. Target permissions and controlled application checks support the result. ISC's collected view still contains the earlier permission; collection follow-up remains open.
 
 This distinguishes a confirmed target result from unfinished record maintenance. Whether the overall ticket can close with that follow-up separate depends on the organization's process.
 

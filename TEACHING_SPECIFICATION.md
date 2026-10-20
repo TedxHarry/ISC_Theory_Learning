@@ -1,4 +1,4 @@
-# ISC course teaching specification, version 2.5
+# ISC course teaching specification, version 2.6
 
 ## What every lesson must accomplish
 
@@ -34,6 +34,12 @@ The opening must make any example understandable immediately: what already exist
 Use Devi when a named employee helps. Every lesson that uses her must re-establish the relevant facts, even if she appeared in an earlier lesson. Include her background only when it affects the explanation.
 
 Other scenarios can use unnamed employees, records, or applications.
+
+Give each independent lesson's named example its own employee number and account identifiers. Record them in the author example register and use them consistently within the lesson, its diagram sources, and worked answers. Reusing Devi's name does not establish a continuing biography across lessons. A deliberately continued scenario must preserve or explicitly explain changed facts.
+
+Preserve the meaning of recurring terms using the author terminology register. Reintroduce each required term in the current situation, with depth proportional to its role in the explanation. Do not replace essential explanation with a glossary link or repeat a long definition block when a short contextual explanation is enough.
+
+A primary concept lesson provides comprehensive treatment. An opening overview still explains the meanings and causal links needed to follow its example; it need not include protocol-validation fields or configuration mechanics that do not affect the current reasoning. Do not replace necessary understanding with links to unwritten lessons.
 
 ## How concepts and flows will be explained
 
@@ -121,6 +127,10 @@ Answers explain why the conclusion follows. When evidence is insufficient, ident
 Worked answers identify concrete evidence, such as an attribute mapping, source account record, configuration, activity event, or target-system observation. They explain what each item helps establish.
 
 Assess explanations for accurate object distinctions, causal reasoning, appropriate evidence, and recognition of uncertainty.
+
+Learner checkpoints contain the question, supplied facts, and worked reasoning. Assessment metadata, including the tested understanding, acceptable alternatives, misconception, and supporting documentation, belongs in the lesson's author reference record. It is not a required tag appended to each learner answer. Add missing assessment mappings there rather than announcing an unseen question bank in the lesson.
+
+The reading site's presentation may display the lesson's module placement outside the teaching body. Placement is navigation information; each lesson must still supply its needed context without prerequisite announcements.
 
 ## Changes to the course outline
 

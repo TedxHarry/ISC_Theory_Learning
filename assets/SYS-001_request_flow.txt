@@ -1,0 +1,25 @@
+Devi requests INVOICE_VIEW in ISC
+                   |
+                   v
+Manager reviews the business need
+       | rejects                   | approves
+       v                           v
+No grant from                ISC initiates the change
+this request                       |
+                                   v
+                         Connector sends the operation
+                                   |
+                                   v
+                         Finance application processes it
+                              /                  \
+                    accepts /                    \ rejects
+                           v                      v
+                  INVOICE_VIEW added       Account unchanged
+                  to existing account      in this failure case
+
+HUMAN CHECK after either application result:
+Engineer inspects activity and current target state.
+Check invoice reading and whether PAYMENT_RELEASE was added.
+
+Manager rejection is a decision about the request.
+Application rejection is a failure to apply the attempted change.

@@ -26,7 +26,7 @@ No new grant from this role       Role assignment
                              Required access profile
                                       |
                                       v
-                          Provisioning to rpt-10482
+                          Provisioning to rpt-16006
                                       |
                               applied or rejected
                                       v

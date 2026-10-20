@@ -1,6 +1,6 @@
 # Who owns what when access needs to change?
 
-*Lesson SYS-003 · Revision 1.0*
+*Lesson SYS-003 · Revision 1.1*
 
 Devi has moved from Customer Support to Finance. She already has workplace accounts, but she now needs permission to read supplier invoices.
 
@@ -183,7 +183,7 @@ Return to the request that reached Devi's former manager. An **identifier** is a
 
 These are the agreed facts for our investigation:
 
-- Devi's employee number is `10482`.
+- Devi's employee number is `13003`.
 - Her former manager's employee number is `8802`.
 - Her new manager's employee number is `9007`.
 - The move is effective today.
@@ -285,7 +285,7 @@ Compare two messages.
 
 "SailPoint is wrong. Please fix the manager."
 
-"For employee `10482`, the approved move is effective today and the current HR record identifies manager `9007`. The HR export consumed at 09:10 still contained `8802`, and ISC collected that value at 09:15. Please check why the export still contains the previous assignment. After the corrected record is available, the ISC team will verify collection and the resulting manager relationship. Request `REQ-318` also needs a separate assignment check."
+"For employee `13003`, the approved move is effective today and the current HR record identifies manager `9007`. The HR export consumed at 09:10 still contained `8802`, and ISC collected that value at 09:15. Please check why the export still contains the previous assignment. After the corrected record is available, the ISC team will verify collection and the resulting manager relationship. Request `REQ-318` also needs a separate assignment check."
 
 The second message supplies a boundary, evidence, and a next action. Its times are fictional and show order, not a promised processing interval.
 
@@ -301,7 +301,7 @@ The manager still needs to report when Devi's work changes. The application owne
 
 If the application team changes its mapping so membership in `FIN_INVOICE_READ` also allows payment release, the meaning of existing access changes even if ISC sends no new grant. Agree how permission changes are communicated and reviewed before they affect existing users.
 
-An **access certification** is a structured review of existing access in which designated reviewers decide whether it remains appropriate. A decision to revoke means the reviewer wants access removed. **Remediation** is the work of implementing that correction and verifying it.
+A **certification campaign** organizes reviews of existing access. A **certification** is a review assigned within that campaign, where a designated reviewer makes the supported decisions about the listed access. A decision to revoke means the reviewer wants access removed. **Remediation** is the work of implementing that correction and verifying it.
 
 The reviewer owns the decision within the assigned review. An administrator coordinates the review process, and the configured automated or manual path performs the resulting removal work. The responsible operational team must verify unresolved removals instead of treating the review decision as proof that the permission disappeared.
 
@@ -335,7 +335,7 @@ The acceptance test should include a failure handoff. For example, if a manual r
 
 ### Case 1: the input is correct, but the identity value is wrong
 
-For employee `10482`, HR and ISC's collected HR account both show department `Finance`. ISC's identity still shows `Customer Support`. Inspection finds that the identity's department mapping reads a different source account containing the old value. The approved design says this employee population's department should come from HR.
+For employee `13003`, HR and ISC's collected HR account both show department `Finance`. ISC's identity still shows `Customer Support`. Inspection finds that the identity's department mapping reads a different source account containing the old value. The approved design says this employee population's department should come from HR.
 
 Who should act, and should HR change its value?
 

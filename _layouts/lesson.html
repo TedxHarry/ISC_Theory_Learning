@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign current_lesson = site.data.course.lessons | where: "source", page.path | first %}
+{% if current_lesson %}<p class="lesson-placement">{{ current_lesson.placement | escape }}</p>{% endif %}
 <article class="lesson-content">
   {{ content | replace: '<table>', '<div class="table-scroll" role="region" aria-label="Lesson table" tabindex="0"><table>' | replace: '</table>', '</table></div>' | replace: '<pre', '<pre tabindex="0"' }}
 </article>

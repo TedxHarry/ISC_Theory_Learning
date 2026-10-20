@@ -1,7 +1,7 @@
 # Building access management is only the beginning
 
 Lesson ID: SYS-005  
-Revision: 1.0
+Revision: 1.1
 
 An invoice application has been connected to SailPoint Identity Security Cloud, or ISC. Its accounts are visible, a connection check succeeds, and the project team says the application is ready.
 
@@ -44,7 +44,7 @@ These connections matter more than finding one permanent label for every task.
 
 Consider a fictional invoice application. Devi is a finance employee assigned to check supplier invoices. She needs to read an invoice and mark it as reviewed. She must not be able to release a payment.
 
-The application already has an enabled account for her, `inv-10482`, but it does not yet have the invoice-review permissions.
+The application already has an enabled account for her, `inv-15005`, but it does not yet have the invoice-review permissions.
 
 An **account** is a record through which a person or service uses a particular system. An **identity** in ISC represents the person and brings together information about their accounts and access.
 
@@ -80,9 +80,9 @@ Those are separate questions. A connector's supported operation can still fail i
 
 **Aggregation** reads account information into ISC. **Account correlation** associates an account with the appropriate identity using the applicable matching configuration. An **attribute** is a named value on a record, such as an employee number.
 
-For this example, Devi's identity and application account both contain employee number `10482`. The implementation uses an agreed employee-number match, with checks that the values are present and identify the right person.
+For this example, Devi's identity and application account both contain employee number `15005`. The implementation uses an agreed employee-number match, with checks that the values are present and identify the right person.
 
-The purpose is not merely to make a record appear. It is to associate `inv-10482` with Devi, so subsequent decisions and changes refer to the intended person's account.
+The purpose is not merely to make a record appear. It is to associate `inv-15005` with Devi, so subsequent decisions and changes refer to the intended person's account.
 
 An **entitlement** is an access item represented from a source, such as one of the application's permissions. An **access profile** bundles related entitlements from a single source.
 
@@ -112,7 +112,7 @@ You know that a connection check succeeded and an approval was recorded. You sti
 
 For the invoice design, useful criteria include:
 
-- The request changes `inv-10482`, not another employee's account.
+- The request changes `inv-15005`, not another employee's account.
 - Approved invoice-review access permits the intended invoice operations.
 - `PAYMENT_RELEASE` is not granted.
 - A denied request doesn't grant the requested permissions.
@@ -201,7 +201,7 @@ In this case, the evidence is:
 | Evidence | What the investigation finds |
 |---|---|
 | Request | Invoice review for Devi, approved by the configured manager |
-| Target account | `inv-10482`, confirmed as the intended account |
+| Target account | `inv-15005`, confirmed as the intended account |
 | Provisioning activity | Attempts to add both permissions were rejected for insufficient integration privilege |
 | Current target permissions | Neither requested permission is present |
 | Recent maintenance | The integration was moved to a replacement technical account |
@@ -261,7 +261,7 @@ Later, Devi moves to supplier coordination. She remains employed and still needs
 
 Nothing about a healthy connection or successful past approval proves that Invoice review remains appropriate.
 
-An **access certification** is a review in which an authorized reviewer decides whether existing access should be retained or removed. A **certification campaign** organizes a set of those reviews.
+A **certification campaign** organizes the review of existing access. A **certification** is an assigned review within it. The designated reviewer examines its access items and makes the decisions supported for them, such as retaining or removing the requested access in this example.
 
 In this example, the review includes Devi's Invoice review access. The reviewer has her current responsibilities and the permission description, and decides it should be removed.
 
