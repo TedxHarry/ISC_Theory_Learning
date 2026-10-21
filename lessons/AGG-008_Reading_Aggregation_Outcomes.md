@@ -26,7 +26,7 @@ These facts, error details, counts and outcomes are fictional teaching evidence.
 
 Before interpreting a result in daily work, establish the source and environment, account versus entitlement collection, full versus changes-only scope, and the particular execution. “The latest aggregation” can point to the wrong source, object type, or later rerun.
 
-We will call the two executions Run A and Run B. Those are teaching labels, not real task identifiers. Their times use UTC, a common reference clock, on the same day.
+We will call the two executions Run A and Run B. Those are teaching labels, not real task identifiers. Their times use UTC, a common reference clock, on the same day. No other operation changes the ISC account values between Run A and its post-run checks.
 
 ## Follow Run A until the read stops
 
