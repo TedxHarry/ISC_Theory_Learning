@@ -211,6 +211,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Source/type/identifier agreement | Context and selected identifying value connecting account references to access objects | Matching labels, cross-environment values or same codes in different access types don't establish the same object |
 | Manual entitlement description / metadata | Descriptive value maintained in ISC | An aggregation can preserve it; editing Display Name/Description isn't sent to the source or a membership grant |
 | Flat-file entitlement import / direct-connect type selection | Manual supported object-file ingestion / configured inclusion of supported object types | The documented flat-file mechanism has no recurring entitlement schedule or multiple types; a groups-only run doesn't establish application-role coverage |
+| Full configured-population read / optimized processing | Scope of records retrieved / skipping further work for existing unchanged records | Full isn't necessarily unoptimized; optimization isn't changes-only querying or active-only filtering |
+| Unoptimized aggregation / reprocessing | Re-evaluates account and manager correlation on unchanged as well as changed source records | Doesn't fix bad values, create a universal refresh, guarantee a match or replace authorized manual-association handling |
+| disableOptimization request option | True disables the unchanged-record shortcut for the requested aggregation | Form-data request option, not account JSON or permanent source setting; no universal delta reset or scope expansion is implied |
+| Account correlation / manager correlation / identity processing | Whose application account / employee-to-manager relationship / evaluation under identity/access configuration | Different responsibilities and inputs; profile changes can require manual identity processing rather than forced reads of every application |
+| Scanned / processed / unchanged-skipped | Read population / records entering applicable work / records taking optimized skip path | Four scanned doesn't prove four ownership re-evaluations; example counts aren't universal task-counter labels |
+| Manual correlation / initially uncorrelated account | Explicit administrator ownership association / unresolved intended ownership | Main successful correction assumes no manual override; unoptimized reads aren't automatic mass reassignment |
 
 ## Source anchors
 

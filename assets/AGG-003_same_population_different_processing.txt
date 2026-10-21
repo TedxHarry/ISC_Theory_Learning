@@ -1,0 +1,2 @@
+Run A: 4 read / 2 processed / 2 skipped
+Run B: 4 read / 4 reprocessed / 0 skipped

@@ -251,3 +251,11 @@ lessons:
     source: "lessons/AGG-002_Account_and_Entitlement_Aggregation.md"
     url: "/lessons/AGG-002_Account_and_Entitlement_Aggregation.html"
     description: "Separate held access values from object inventory, connect their identifiers, and reconcile counts, scope, freshness, and evidence."
+
+  - id: AGG-003
+    module: aggregation
+    placement: "Module 5.3"
+    title: "Full aggregation, optimization, and reprocessing unchanged records"
+    source: "lessons/AGG-003_Full_Aggregation_Optimization_and_Reprocessing.md"
+    url: "/lessons/AGG-003_Full_Aggregation_Optimization_and_Reprocessing.html"
+    description: "Separate read coverage from unchanged-record processing, trace corrected matching logic, and choose evidence-based re-evaluation."

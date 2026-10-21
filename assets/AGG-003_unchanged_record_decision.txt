@@ -1,0 +1,7 @@
+[Read configured account population]
+                  |
+       [Existing and unchanged?]
+          no /             \ yes
+ [Process record]   [Optimization enabled?]
+                       yes /       \ no
+             [Skip unchanged]   [Reprocess]

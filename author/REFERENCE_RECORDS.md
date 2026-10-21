@@ -1554,6 +1554,56 @@ The timeline is independent of the main completed trace: account observation 09:
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
 
++## AGG-003: Full aggregation, optimization and reprocessing unchanged records
+
+- Revision: 1.0. Course placement: Module 5.3.
+- Documentation checked: October 21, 2026. Official account-loading modes, API initiation/request lifetime, history/Search and single-account boundaries; account correlation including manual associations; manager correlation; V2025 account-aggregation request; identity processing/profile mappings; and source/schema/provisioning responsibilities freshly checked.
+- Author review: completed against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant/API execution: not performed. Employee 53003, AssetDesk Production, all account/identity values, comparison correction, read counts and association outcomes are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: distinguish full configured-population reading from unchanged-record handling, then trace a changed comparison against unchanged input. Detailed delta mechanisms, single-account behavior, schedules, deletion handling and correlation/identity-processing design retain their primary lessons. No real account, source setting, identity, credential or access is changed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Optimized default reads records and skips further processing/correlation for existing unchanged data; unoptimized reads re-evaluate unchanged records. Documented disableOptimization=true is run-local and UI scheduled/manual runs remain optimized. History exposes execution/optimization context; Search freshness, single-account limits and deletion safeguards aren't replaced by a successful rerun. No checksum, runtime or private execution model is invented. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured account-to-identity attribute comparisons and documented disabled-optimization re-examination after configuration changes. Manual associations aren't automatically moved because attributes change. The successful case is initially uncorrelated with one supplied unique existing match and no manual override, not a universal reassignment mechanism. |
+| [Configuring manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html) | Links employee identity to manager identity, distinct from account ownership. No complete manager configuration, profile-priority algorithm or manager outcome is invented for AssetDesk. |
+| [V2025 account aggregation API](https://developer.sailpoint.com/docs/api/v2025/import-accounts/) | Current primary request specification: source-scoped aggregation, multipart/form-data disableOptimization string field, supported authentication/authorization and 202 task response. The documentation entry redirects to its generated reference; the selected operation was inspected there. The admin guide's beta-route example isn't copied into a runnable lesson. No API call, source patch, token generation or JSON account edit is performed. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Event-based processing when aggregation/provisioning modifies an identity; manual processing applies identity-profile/access-model changes even without identity data changes. Starting processing doesn't validate target provisioning success. Profile-change transfer asks for the appropriate scoped mechanism, not indiscriminate re-reading of all applications. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Profile-backed population and attribute mapping responsibilities. Office mapping in the transfer uses existing collected inputs; no new source data, authoritative feed or target-write result is assumed. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source/connector distinctions, source Accounts views and explicit uncorrelated shadow representation. Placeholder isn't proof of another HR-established employee. Correct source/account context and actual association are separate from a read-status label. |
+| [Managing account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Represented attribute structure and identification responsibilities. Stable valid account identification is supplied. A target-only comment outside the returned/represented data doesn't establish a changed collected record; no private comparison algorithm is inferred. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | External account/access changes require their supported change mechanism. Correct ownership isn't a successful target grant. Read/processing can feed configured downstream changes, so the whole workflow isn't characterized as universally harmless. |
+
+### Diagram, data and reasoning checks
+
+Two editable text assets match the inline blocks after trailing-whitespace normalization. Maximum line widths are 43 and 41 characters. The decision diagram covers new/changed records versus existing unchanged records and the optimization choice. It is a logical processing model, not a checksum, queue, host, transaction sequence or guarantee of successful ownership. The second is a comparison of two sequential teaching executions, not a task screenshot or universal counter-name mapping.
+
+Devi 53003 coordinates equipment requests. Existing AssetDesk account asset-53003 has mail devi.old@example.invalid, employeeRef text 53003 and department OPS. Existing identity work email is devi.current@example.invalid; employeeNumber text is 53003. The email mismatch already exists at initial collection, so no automatic removal of a previously correct association is implied. Old criterion compares mail with work email; corrected criterion compares employeeRef with employeeNumber. Input account values remain unchanged.
+
+Run A's configured population contains four fully delivered records: existing unchanged asset-53003 and asset-53005, changed asset-53004 department OPS-to-FIN, and externally existing asset-53006 first represented in ISC. Optimized handling reads 4, processes 2 and skips 2. Following Run A, no further external/mapped input changes occur; Run B disables optimization, reads 4 and reprocesses 4 without unchanged skips. These are supplied logical record counts. Corrected asset-53003 ownership is an explicit verified fictional outcome under unique-match/no-manual-override assumptions.
+
+The selected JSON is valid and isn't a full ISC API object or runnable request. example.invalid addresses aren't real contacts. Counterfactual 53030 mismatch, absent delta delivery, manual ownership and denied target-write cases are independent of the successful correction. HR/profile transfer uses a different configuration-change problem with current account inputs already present.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Four read, two skipped | Scanned population equals repeated processing | Trace the four supplied states: changed 53004 and new representation 53006 process; unchanged 53003/53005 skip; 4 = 2 + 2. |
+| Saved comparison, unchanged account | Correcting configuration makes an account value change or requires a fake edit | Compare approved criteria and actual matching values, then establish supported unchanged-record re-evaluation; don't alter correct source data to force a change. |
+| Target-only comment change | Any application-screen edit establishes changed data in ISC's processing decision | Compare delivered/represented fields and schema/mappings; supplied input hasn't changed. No hidden checksum behavior is asserted. |
+| Previous run's option | disableOptimization permanently changes the source or future UI schedules | Inspect each execution; option applies only to its requested aggregation, while documented UI behavior stays optimized. |
+| Delta omits the account | Reprocessing options establish delivery under any read scope | Establish a supported read including the record and the relevant processing choice separately; no universal delta-token reset is inferred. |
+| Mismatched value reprocessed | Re-evaluation repairs wrong inputs or guarantees a match | 53030 differs from 53003; investigate approved values/configuration and actual association, not silent identifier replacement. |
+| Manual ownership | Unoptimized reads automatically move every previously associated account | Main case has no manual override; verify the distinct association and documented authorized handling rather than promising mass reassignment or resetting a source. |
+| Correct association, denied write | Successful account processing proves target delivery | Ownership succeeded; separate provisioning failed. Inspect the actual operation/authority/target state without substituting aggregation success. |
+| Identity-profile transfer | Forced source aggregation is the universal response to every ISC configuration change | With current source inputs, establish affected profile/mapping and supported manual identity processing. Collect fresh data separately only if needed; verify identity output and any separate target consequences. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
