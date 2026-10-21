@@ -30,6 +30,8 @@ An **attribute** is a named value. An account attribute belongs to the collected
 
 An **identity attribute mapping** specifies how an identity attribute gets its value. A direct mapping selects a source and an account attribute. A mapping can also use a **transform**, which calculates or converts a value using configured operations, or supported **rule** logic for a requirement that needs code.
 
+A **lifecycle state**, or **LCS**, describes a person's business stage, such as pre-hire, active employment or termination. The Lifecycle State row below stores the value used to select that state.
+
 For Devi, these are selected fictional inputs and mappings. They aren't a complete account record or an upload template.
 
 | Identity attribute | Current selected input | Devi's current result |
@@ -91,7 +93,7 @@ Profile settings are not the whole security model, and changing them is not a tr
 
 ## Where lifecycle-driven access enters the picture
 
-A **lifecycle state**, or **LCS**, describes a person's business stage, such as pre-hire, active employment or termination. It can drive configured access changes.
+Lifecycle states can drive configured access changes.
 
 The identity profile defines the lifecycle states available to its population and their configured behavior. It also supplies the mapping for the Lifecycle State identity attribute, `cloudLifecycleState`, used for automatic assignment.
 
