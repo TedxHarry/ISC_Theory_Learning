@@ -291,3 +291,11 @@ lessons:
     source: "lessons/AGG-007_Missing_Records_Account_Deletion_and_Safeguards.md"
     url: "/lessons/AGG-007_Missing_Records_Account_Deletion_and_Safeguards.html"
     description: "Distinguish missing records from deletion and trace source safeguards, authoritative identity outcomes, hidden identities, and safe recovery."
+
+  - id: AGG-008
+    module: aggregation
+    placement: "Module 5.8"
+    title: "Reading aggregation outcomes: counts, warnings, failures, and incomplete collection"
+    source: "lessons/AGG-008_Reading_Aggregation_Outcomes.md"
+    url: "/lessons/AGG-008_Reading_Aggregation_Outcomes.html"
+    description: "Interpret execution status and count meanings, investigate partial results, and separate coverage, record updates, identity processing, and target evidence."

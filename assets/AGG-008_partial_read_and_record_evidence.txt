@@ -1,0 +1,14 @@
+[Expected population: 100 accounts]
+                 |
+                 v
+[Page 1: 30] + [Page 2: 30]
+                 |
+                 v
+[60 read: 50 same, 10 different]
+                 |
+                 v
+[Page 3 fails: task ends in error]
+[40 unread, including wf-58008]
+
+[Engineer checks actual ISC values]
+[wf-58009 new; wf-58008 still old]

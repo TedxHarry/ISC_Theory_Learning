@@ -1813,6 +1813,58 @@ Two learner tables separate objects/states and illustrate whole-account rounding
 
 No beginner read-through or transfer validation has been performed. Source and author checks do not establish learner comprehension or formal approval.
 
+## AGG-008: Reading aggregation outcomes
+
+- Revision: 1.0. Course placement: Module 5.8.
+- Documentation checked: October 21, 2026. Account activity/history/termination/modes/retries/Search/deletion-warning guidance, Web Services SaaS aggregation/paging, entitlement counts, correlation, identity-profile mappings and identity/provisioning boundaries freshly checked.
+- Author review: complete against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant execution: not performed. WarehouseFlow, account/site data, Run A/B, pagination, connection error, counts and all post-run/recovery evidence are fictional supplied facts.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: interpreting execution and output evidence, not defining a universal UI/API counter schema or production retry recipe. No actual source, credential, permission, retry setting, delta state, account/identity or target change is made.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), Aggregation Activity / history / cancellation | Cross-source activity and source-specific history; status, start/stop, scanned accounts, optimization and terminated-task duration/unchanged information; status badge details and terminating actor. These are evidence for a specific execution, not universal scope or output correctness. No retention limit or five-row display limit is taught as necessary course content. Terminated work has data/evidence to inspect; no rollback guarantee is inferred. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), methods / scheduling / errors / Search | Optimized unchanged-record skip includes account/manager correlation; unoptimized re-evaluation still needs delivered data. Queued scheduling is not completion. Supported retryable errors include connection reset; support/configuration and behavior are not universal. Deletion-volume safeguards can cancel with warning. Search is separately synchronized; no exact synchronization deadline is promised. |
+| [Web Services SaaS aggregation](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/json_aggregation.html) | Supported account operation, response extraction/mapping and paging context; operations can have endpoint dependencies. Main sequential 30/30/page-3-failure trace is a fictional configured design, not a universal connector execution architecture, pagination size, retry sequence or documented partial-write guarantee. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Per-run discovered entitlement count can differ from total inventory accumulated through account and entitlement aggregations. All/selected supported types and prior collections matter; count mismatch does not prove duplicate objects or account memberships. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Person/account association and unchanged-record re-evaluation after correcting criteria. Main existing correct association is supplied. A high unchanged count does not prove criteria were reevaluated, and force-processing cannot repair missing read pages. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html), mappings | Account input and mapped identity values are different objects. No identity-site mapping or required identity change is invented for the main account-site incident. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), event-based processing | Identity evaluation can initiate external provisioning but does not validate successful target delivery. Evidence for account, identity and target outcomes remains distinct; no every-read/every-identity processing guarantee. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supported external account/access changes are different from read-side representation. An account-update result is not automatically an external account modification; read membership is not a grant. |
+
+### Main example, diagrams and arithmetic
+
+Devi 58008 coordinates warehouse dispatches. WarehouseFlow Production uses a fictional supported Web Services SaaS read design; existing wf-58008 is correctly associated. Source site changes EAST to CENTRAL while the earlier ISC value is EAST. wf-58009 is a different received account whose new CENTRAL representation is independently checked.
+
+Expected population is 100 specific existing accounts, all already represented; no create/delete/key changes in the two-run example. Pages are 30/30/30/10 under this supplied stable population. Run A starts 09:00, successfully receives two pages, fails retrieving page 3 and ends with Error at 09:08. No universal automatic retry count or pause is given. 30 + 30 = 60 unique accounts read; received-input comparison 50 same + 10 different = 60; 60 + 40 unread = 100 expected. Devi is among the 40 unread accounts.
+
+The 50/10 comparison is teaching evidence, not a claim of exact UI/API counter labels, hash/comparison internals, or all ten verified account updates. Post-run inventory retains the same 100 expected identifiers. Post-run wf-58009 contains CENTRAL while wf-58008 remains EAST. These supplied observations refute universal no-change/rollback inference, not establish a general partial-write contract for every connector.
+
+After resolved connection issue and reviewed settings/consequences, approved Run B starts 10:00 and succeeds at 10:06. All expected 100 distinct keys are supplied as obtained; at 10:07 wf-58008 CENTRAL is independently confirmed. Run durations are eight/six minutes, not performance guarantees. All times are UTC on one day. Main success requirement is population/account evidence only, not identity site or application-access change.
+
+Independent variations include a successful 90-of-100 wrong scope; 95 unchanged of 100 optimized inputs after correlation change; one failure versus 40 unread; administrative termination; five discovered versus eight accumulated groups; 100 raw rows with 99 keys; and dashboard design. Main page size does not come from a universal default. No general duplicate overwrite/reject algorithm, retry resume, overlapping counter formula or transactional commit sequence is asserted.
+
+Two text assets exactly match inline blocks after trailing-whitespace normalization, maximum widths 35/35 characters. First shows the supplied connector page progression and separates human post-run record checks. Second is an engineer's conditional evidence-check path, not an automated backend pipeline. Two tables distinguish evidence facts and count meanings. Published visual rendering must also be inspected.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning / evidence boundary |
+|---|---|---|
+| Sixty scanned, hundred inventory | Stored inventory size proves fresh read coverage | Existing records can remain old; 40 required accounts were unread. Check identifiers and current values for the required population. |
+| Earlier update after error | Overall error proves every prior change was rolled back | Actual wf-58009 state is evidence of one represented update; neither universal rollback nor all-ten success follows. |
+| Success with ninety | Task success proves required business scope | Successful configured read can miss required accounts. Verify approved scope/keys/actor visibility and safe correction. |
+| Ninety-five unchanged | Unchanged inputs were not read or all used corrected matching | Optimization can skip further correlation. Choose supported unchanged-record re-evaluation only when required; it does not recover unread input. |
+| One failed page | Error event count equals affected-account count | Page evidence and expected set establish 40 unread records; preserve units and scope. |
+| Administrator terminated | Stopped task proves failed authentication or need for credential replacement | Supplied terminating actor identifies a stop. Investigate why and actual progress/consequences; no credential change or rollback inferred. |
+| Five discovered, eight inventory | Per-run versus inventory difference proves three duplicates | Review object IDs/types/scope/history and counter meaning; membership relationships are a separate quantity. |
+| Hundred rows, ninety-nine keys | Raw count equals complete distinct population | Compare key sets and inspect connector-specific duplicate handling; no generic overwrite/rejection assumed. |
+| Healthy dashboard transfer | Latest no-error task and familiar count prove every required outcome | Define source/object/mode/expected keys, freshness/cutoff, warning/status context, account values, required identity mapping/processing and actual external disablement. Retain unknown/incomplete states. Equivalent evidence-backed designs acceptable. |
+
+Questions and supplied reasoning remain in learner prose. No beginner validation or transfer test occurred; author/source review and working-edition deployment do not substitute for those stages.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

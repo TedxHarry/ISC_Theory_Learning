@@ -1,0 +1,15 @@
+[Engineer checks task outcome]
+               |
+               v
+[Checks required read coverage]
+               |
+               v
+[Checks selected account values]
+               |
+      if identity update required
+               v
+[Checks identity value and mapping]
+               |
+      if external change required
+               v
+[Checks actual target outcome]
