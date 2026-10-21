@@ -1,0 +1,7 @@
+[Dispatch-Prod]          [Dispatch-Test]
+       |                       |
+       v                       v
+[Source S-41P]          [Source S-41T]
+       |                       |
+       v                       v
+[Production records]   [Sandbox records]

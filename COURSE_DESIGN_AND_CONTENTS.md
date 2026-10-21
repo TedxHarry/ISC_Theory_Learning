@@ -156,7 +156,7 @@ Connection diagrams follow the documented distinction between VA-based and SaaS 
 
 ### Module 4. What must we understand before configuring a source?
 
-- 4.1 The purpose of a source and the population it represents.
+- 4.1 [The purpose of a source and the population it represents](lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.md).
 - 4.2 Authoritative and non-authoritative sources: deciding their responsibilities.
 - 4.3 Reading a connector capability matrix: supported reads and supported changes.
 - 4.4 Account schemas, account identifiers, and display attributes.
@@ -166,6 +166,8 @@ Connection diagrams follow the documented distinction between VA-based and SaaS 
 - 4.8 Data ownership agreements: identifiers, required fields, effective dates, and corrections.
 
 **Outcome:** Describe what a source must provide and what ISC can reasonably do with it.
+
+SRC-001 is the authored Module 4.1 lesson on source purpose, external context, population boundaries, coverage evidence and operation scope. Lessons 4.2-4.8 remain planned. Learner validation and formal publication approval remain pending.
 
 ### Module 5. How does aggregation change what ISC knows?
 

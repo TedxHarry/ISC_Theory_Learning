@@ -1067,6 +1067,72 @@ Questions and worked reasoning remain in the learner file. Source evidence, asse
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+
+## SRC-001: Source purpose and represented population
+
+- Revision: 1.0. Course placement: Module 4.1.
+- Documentation checked: October 20, 2026. Current source definition/configuration/connection/UI/ownership, account-schema, identity-profile and connector-specific filtering references reviewed. Supporting collection/correlation/provisioning checks retain the same-day verification in earlier lessons.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 41001, DispatchHub, its SaaS connector, source/account labels, region/classification logic, inventory and all outcomes are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: source purpose, external context, coverage agreement, evidence and operational boundaries. Detailed authoritative/profile-priority mechanics, capability matrices, schemas, filter syntax, aggregation modes and deletion rules remain their own planned primary lessons.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Configuring sources](https://documentation.sailpoint.com/saas/help/sources/config_sources.html) | Source definition versus external application; connector-specific connection/authentication settings; unique label/description, assigned owner, direct/file choices and source capability configuration. Current documentation distinguishes read-only and supported deep-governance modes. The lesson does not recommend enabling provisioning or imply that generic VA setup text overrides documented SaaS paths. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source/connector/connection distinctions; actual connectivity details vary; SaaS runtime can avoid a customer VA cluster; collected source account UI shows associations and multiple accounts, with Correlated/Uncorrelated view filters. Reset/delete operations affect data and dependencies and are not treated as incident diagnosis. |
+| [Source schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Attribute/schema and designated account-identifier meanings; actual account IDs must distinguish accounts, even when a person reference is shared; changing identifier definitions after aggregation is unsafe without appropriate design. No full schema recipe, fixed field list, or universal username-as-native-ID rule is taught. |
+| [PingOne SaaS filters](https://documentation.sailpoint.com/connectors/saas/pingone/help/saas_connectivity/pingone/configuring_filters.html) | Concrete primary-source evidence that supported filtering differs by object, field and operator. Used only to verify connector-specific filtering exists; its syntax, population endpoints and attribute matrix are not generalized to DispatchHub or every ISC connector. Population in learner prose is a project account set, not a required ISC object. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative source establishes identities through its profile; identity settings/mappings and source responsibilities differ from additional application-account collection. The DispatchHub case is explicitly non-authoritative and uses an existing personnel-established identity. No blanket trusted-source ranking or profile-priority algorithm is introduced here. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Supporting account-to-identity association using suitable source/identity values; missing collected record versus missing ownership association. The same-day check in prior lessons is retained. An employee-number comparison is an explicit fictional supported matching configuration, not an instruction to use that value as the unique external account key. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Supporting account collection, source/view/run scope, pagination/completeness reasoning, represented state and conditional handling of missing records. Detailed account-deletion safeguards and aggregation mechanics are not replaced with a universal rule. |
+| [Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html) and [SaaS connectivity](https://developer.sailpoint.com/docs/connectivity/saas-connectivity/) | Supported external changes differ from collecting data; hypothetical hosted connector and target authority do not imply every read filter constrains every write. Current enabled capabilities and actual destination/operation privileges must be checked separately. |
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) and [request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Supporting one-source entitlement bundle and separately configured requestability/review/delivery. A collected account or permission and an application/source label are not a complete access-control configuration. |
+
+### Conditions and limits
+
+- Devi is independently established as a West warehouse coordinator, employee 41001, with existing external standard depot-41001 and approved admin depot-admin-41001 accounts. Both are intended to be represented and linked to her existing ISC identity; neither is initially read by the East-only production collection.
+- Dispatch-Prod and Dispatch-Test are separate external organizations. S-41P and S-41T are non-runnable source-ID stand-ins. The diagram illustrates this project's choice of separate configurations, not a universal one-source-per-application/environment/partition rule.
+- The real source label is DispatchHub Production, but labels do not prove destination. A duplicate sandbox account string is not production identity evidence.
+- Inventory is stable for the supplied comparison: 100 standard human accounts, ten additional admin accounts belonging to ten of those same people, and ten integration service accounts. Total 120; agreed source coverage 110 human-operated accounts across 100 people.
+- The human set includes disabled accounts and both regions. Its supplied split is 70 East plus 40 West, including Devi's two accounts. Equal counts do not establish equal membership or correctness of access data.
+- The ten service accounts are deliberately outside this particular source and require separately accountable treatment. This is not a general recommendation to exclude non-human accounts or regard them as low-risk/ungoverned.
+- svc-dispatch-isc can read the full intended production set in the main incident. A saved supported region condition restricts selection to East; the complete selected pages are returned without processing failures. Thus filter cause is supplied evidence, not guessed from 70 alone.
+- The fictional connector supports the stated human-account selection and region condition. No actual DispatchHub connector offering, universal field/filter syntax, protocol, runtime implementation or hidden pipeline is asserted.
+- Corrected supported read preserves destination, credential context, account identifiers and matching configuration, then returns the agreed 110 accounts. Supplied matching values associate Devi's two records with her existing identity; no universal matching guarantee for every returned account follows.
+- Account identifiers are distinct in this external context, while employee number is a shared person reference. The schema example does not prescribe changing a live identifier or use employee number as a unique account key.
+- Uncorrelated means an acquired account has not been matched to the intended person identity; uncollected means the expected account was not acquired. The operational orphaned-account explanation concerns missing established responsibility, not a promise about a specific product flag or automatic deletion.
+- UI filters and pagination can hide represented accounts independently of read configuration. A valid connection, successful selected-set aggregation, visible correlated subset or expected row count is not full coverage proof.
+- Account-row coverage and access-information coverage are separate. Supported attributes, classification, membership information, observation time and expected-set comparison remain relevant.
+- Main onboarding is read-only with a hypothetical SaaS connector. Read scope is not asserted to be an enforcement boundary for all writes; a broad external credential is not project authorization to use its write permissions.
+- Authoritative/profile primer supplies enough local meaning but does not replace later source-role/priority mechanisms. Collected permissions are not automatically requestable, delivered or certified.
+- Scope corrections do not prove target deprovisioning. Handling of previously collected missing data depends on operation/configuration/safeguards. No automatic delete, always-retain, rollback or harmless reset assumption is made.
+- Source owner, integration operator, external administrator and account owner remain distinct responsibilities. A source assignment does not itself grant target privileges or settle all data-accountability questions.
+- Current documentation uses Identity Services / Human Fabric branding. ISC remains the course name. Actual connector features, licensing, permissions and supported configuration must be checked for a real project.
+
+### Diagrams and review checks
+
+- [Production and sandbox](../assets/SRC-001_production_and_sandbox.txt): external organization to its chosen source context and represented records.
+- [Intended and collected population](../assets/SRC-001_intended_and_collected_population.txt): required 110-account human set split into selected 70 East and wrongly excluded 40 West accounts.
+- Assets match inline blocks exactly. Maximum line widths are 40 and 46 characters. Captions state direction, assumed boundary and omitted implementation/operation detail.
+- Local/live publication checks separately verify full text, headings, tables, diagrams, new Module 4 placement and navigation. Rendered readability is not observed beginner understanding or tenant execution.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Working East-only source | Connection/run success versus agreed coverage | Saved supported condition and complete selected-set results establish West omission; correct approved read scope and verify later inclusive data | Successful test or aggregation equals full project coverage; missing account requires creation or correlation changes | Source configuration; connector-specific filters; supplied complete 70-set evidence |
+| Production label, test destination | Label versus external context | Compare actual organization/returned records with intended production set; renaming alone doesn't change destination | Familiar source/account name proves correct environment | Source connectivity context; supplied organizations |
+| 110 accounts for 100 people | Account and person cardinality | Preserve distinct legitimate standard/admin records and owner relationships; no forced equal totals | Every account needs a separate person, or unequal counts prove duplicate accounts to delete | Source account UI/multiple accounts; schemas; supplied inventory |
+| Collected account missing employee number | Read versus ownership association | Inspect missing matching value/configuration and supported correction; broader read doesn't invent ownership data | Every absent identity linkage is a filter issue | Correlation; schema fields; supplied record |
+| Read filter and broad write credential | Operation-specific authority | Verify supported write scope/target authority and approved least privilege; collection filter isn't undocumented write security | Selected read population enforces every external operation boundary | Source/connector capability distinctions; supplied credential facts |
+| Correct total, incorrect members | Set membership versus count | Preserve missing and unexpected members, investigate classification/selection and verify correct set | Equal totals prove coverage or out-of-scope service accounts can be ignored | Coverage agreement; supplied set comparison |
+| Monthly active payroll export proposal | Transfer of external context, source role, data and removal scope | Establish actual account inventory versus employees, identifiers/owners/status/export/time, authoritative role and separate supported authorized removal evidence | Successful employee-file import means full account coverage and absent rows justify deletion | Source/file/schema/profile definitions; conditional account-deletion/provisioning behavior |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

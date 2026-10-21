@@ -5,6 +5,8 @@ modules:
     title: "2. Objects and relationships"
   - id: architecture
     title: "3. Where does the work run?"
+  - id: sources
+    title: "4. Before configuring a source"
 lessons:
   - id: SYS-001
     module: system
@@ -167,3 +169,11 @@ lessons:
     source: "lessons/ARC-008_Requesting_Executing_and_Observing_Work.md"
     url: "/lessons/ARC-008_Requesting_Executing_and_Observing_Work.html"
     description: "Reconcile requests, decisions, execution, collection, partial outcomes, and evidence of actual completion."
+
+  - id: SRC-001
+    module: sources
+    placement: "Module 4.1"
+    title: "The purpose of a source and its population"
+    source: "lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.md"
+    url: "/lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.html"
+    description: "Define external context, account coverage, data needs, ownership, and supported operation boundaries."

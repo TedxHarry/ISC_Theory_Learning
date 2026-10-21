@@ -1,0 +1,11 @@
+[Agreed human-account coverage: 110]
+                 |
+         East and West required
+          /                 \
+         v                   v
+[East accounts: 70]    [West accounts: 40]
+         |                   |
+    selected             excluded
+         |                   |
+         v                   v
+[Collected: 70]       [Devi's accounts absent]
