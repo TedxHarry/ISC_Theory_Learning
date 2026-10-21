@@ -265,4 +265,3 @@ A sound explanation separates the authoritative account, the resulting identity 
 With a null mapped surname, investigate the required Last Name exception or incomplete identity and trace it back through the profile mapping and source account. Don't start by repairing application access when the person information itself isn't complete.
 
 When someone asks why an identity exists, you should be able to point to its authoritative account and governing profile. When they ask why it contains a value, point to the mapping and actual input. When they ask what access works, follow the separate path to the application. Those questions are connected, but they don't have the same evidence.
-
