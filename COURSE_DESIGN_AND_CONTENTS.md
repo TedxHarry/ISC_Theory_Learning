@@ -197,9 +197,10 @@ Aggregation modes and their limitations are explicit subjects because they do no
 
 - 6.4 [Choosing the source of each attribute.](lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.md) **Authored:** IDN-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-Lessons 6.5-6.8 remain planned.
+- 6.5 [Multiple identity profiles, population boundaries, and priority.](lessons/IDN-005_Multiple_Identity_Profiles_Populations_and_Priority.md) **Authored:** IDN-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-- 6.5 Multiple identity profiles, population boundaries, and priority.
+Lessons 6.6-6.8 remain planned.
+
 - 6.6 Required attributes, identity exceptions, and incomplete information.
 - 6.7 Changing mappings and understanding their downstream effects.
 - 6.8 Tracing an incorrect identity value back to its origin.

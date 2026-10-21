@@ -337,3 +337,10 @@ lessons:
     source: "lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.md"
     url: "/lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.html"
     description: "Choose approved field inputs using meaning, ownership, coverage, timing, fallback policy and verified downstream dependencies."
+  - id: IDN-005
+    module: identities
+    placement: "Module 6.5"
+    title: "Two worker records. Which identity profile governs the person?"
+    source: "lessons/IDN-005_Multiple_Identity_Profiles_Populations_and_Priority.md"
+    url: "/lessons/IDN-005_Multiple_Identity_Profiles_Populations_and_Priority.html"
+    description: "Trace authoritative-account eligibility, governing-profile priority and conversion continuity without confusing ownership, field inputs or access delivery."

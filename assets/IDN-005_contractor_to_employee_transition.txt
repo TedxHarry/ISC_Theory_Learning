@@ -1,0 +1,19 @@
+A. Observed before the employee record
+   I-65005 has c-65005 only
+     -> Contractors (20) governs
+     -> Department OPS
+
+B. HR account collected and associated
+   Same I-65005 has c-65005 and h-65005
+     -> Employees (10) has precedence
+
+C. Processing completes successfully
+   Employees mappings produce:
+     Department ENG
+     Worker Type EMPLOYEE
+     Email from Corporate Directory
+
+Human verification after processing:
+   Same identity and correct accounts?
+   Expected profile and mapped values?
+   Separate access changes confirmed?

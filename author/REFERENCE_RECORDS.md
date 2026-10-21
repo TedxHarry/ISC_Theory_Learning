@@ -2138,6 +2138,69 @@ Independent variations include contractor coverage gaps, first candidate empty t
 No beginner interview or uncoached transfer exercise has occurred. Formal approval remains pending. Module 6.5 IDN-005 is planned only.
 
 
+## IDN-005
+
+### Revision, checks and limits
+
+Revision 1.0, Module 6.5, **Two worker records. Which identity profile governs the person?** Documentation checked October 21, 2026. This is documentation-based author review, not tenant execution, observed beginner comprehension or formal publication approval. Existing lessons and the attribute tracing guide revision 1.0 are unchanged.
+
+The independent fictional example uses employee 65005; approved stable person reference P65005; teaching identity label I-65005, not an ISC object ID; PeopleCore Production h-65005, ContractRegister Production c-65005 and Corporate Directory d-65005. Both worker accounts are already correctly associated through the supplied person-reference correlation. No account association, source, priority, profile, identity, lifecycle state, deletion or target is changed in a tenant.
+
+Main profile configuration is Employees 10, Contractors 20, Subsidiary Staff 5. The last profile has no authoritative account on this identity and does not compete. Employees maps Department from PeopleCore departmentCode ENG and custom Worker Type from workerCategory EMPLOYEE; Contractors uses assignmentDepartment OPS and workerCategory CONTRACTOR. Both map email from directory mail devi65005@example.com and produce unique uid person65005. Required values are assumed available. Successful processing is supplied fictional evidence, not a measured platform execution.
+
+The reversed creation-order case is an independent configuration: Contractors 10, Employees 20; proposed Employees 5 illustrates a shared change, not a per-person API command. Case 4 deliberately separates the accounts across identities A and B. Case 7 explicitly supplies confirmed authoritative-account deletion through the approved aggregation path, a remaining associated contractor account and successful required mappings. The acquisition transfer is a new design problem, not Devi's continuing biography.
+
+### Official sources and claim mapping
+
+| Source | Sections or claims checked | Limit applied in the lesson |
+|---|---|---|
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Prioritizing Authoritative Sources, mappings, global custom attributes, required values, Preview, viewing profile priority/status, resolving identity exceptions | Exactly one associated profile; highest-priority profile where the identity has an authoritative account. Earlier-created defaults 10 then 20. Per-profile mappings can read other sources; lower profile is not an implicit field fallback. Duplicate uid generates an exception, not a merge instruction. |
+| [Official Identity Profile schema](https://github.com/sailpoint-oss/api-specs/blob/main/idn/apis/identity-profiles/schemas/identityprofile.yaml) | priority numeric field, authoritativeSource reference, identityAttributeConfig, identityCount and identityRefreshRequired | Configuration object roles corroborated directly from maintained vendor API specification; no runnable request, historical endpoint guarantee or automatic reassignment timing asserted. |
+| [Official Update Identity Profile operation](https://github.com/sailpoint-oss/api-specs/blob/main/idn/apis/identity-profiles/paths/identity-profiles-v1-by-identity-profile-id.yaml) | PATCH update operation, JSON Patch body, authorization and updated-profile response | Lesson names the supported update capability without hard-coding a version/path or changing real settings. Admin guide's beta link and v2025 entry now redirect toward reference pages; raw maintained official specification used to verify operation instead of relying on redirect text alone. |
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Matching account attributes with related identity attributes; configured criteria; uncorrelated accounts and corrective investigation | Supplied correct account relationships are prerequisites to profile reasoning; no invented name matching, authoritative deduplication algorithm, forced merge or destructive correction recipe. |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Identity/source-scoped lookup, filters, created ascending default, first-non-null default and optional overrides | Defaults belong to accountAttribute, not all mappings/operations. Lookup filtering does not itself remove an authoritative-account relationship, change connector scope or rank profiles. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Event-based identity processing, profile mappings/access reevaluation, manual processing and profile Apply Changes scope | Saved configuration, sample preview, initiated processing and completed identity results are distinct. No fixed delay or claim that one profile's current membership covers every priority-change impact. Processing does not validate successful provisioning delivery. |
+| [Setting Up Lifecycle States](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Per-profile state configuration, technical name, enabled setting, access/account actions and processing | Same displayed Active label is not proof of equivalent configuration or access. No assertion that a priority change removes every old permission or changes every session/login. |
+| [Loading Account Data: Deleting Authoritative Accounts and Identities](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html#deleting-authoritative-accounts-and-identities) | Confirmed governing authoritative-account removal, lower-priority reassignment and attribute recalculation, no alternative authoritative account, blocked deletion/hidden identity | Deletion conditions are explicit. Missing row, inactive status, transform filter and actual removal remain different. Documented behavior is not a recommendation to delete records to force conversion. |
+
+The current documentation uses Identity Services / Human Fabric naming in places. The course retains the requested ISC name; this does not establish a licensing entitlement or feature availability in every tenant.
+
+### Engineering interpretation and excluded claims
+
+- Eligible profile and governing profile are teaching shorthand explained in the learner body. They are not additional product fields or a claim about private implementation.
+- Population boundaries are an approved integration design. Profile names and job-title strings do not automatically implement those boundaries.
+- Priority is shared precedence, not data-quality scoring, most-recent-record selection, arbitrary per-identity exceptions or a global source ranking for every attribute.
+- No tied-priority outcome is taught. Distinct intended priorities are used; a production change must follow the currently supported specification and approved scope.
+- A static ordering cannot encode contradictory outcomes for two identities with the same eligible-profile pattern. This is reasoning from the documented condition, not a separate product limitation inferred from a forum.
+- The lesson does not claim that merely saving priority immediately reassigns all identities, that one specific manual-processing action is a universal reassignment recipe, or that lower-priority inactive accounts automatically disappear.
+- Supported account-deletion reassignment is described only under its documented conditions. If more than one account exists on the governing source, do not infer that deleting one necessarily removes every qualifying association; the supplied case has only h-65005 on that source.
+- An unexpected access result is investigated through assignment/removal and fulfillment evidence. No universal removal, rollback, session termination or mailbox/username change is promised.
+- All examples describe supplied facts or conditional design reasoning; none is advertised as lab/production observation.
+
+### Diagrams and presentation checks
+
+- [Profile eligibility and priority](../assets/IDN-005_profile_eligibility_and_priority.txt), maximum 43 characters: two attached authoritative accounts, one absent higher-ranked profile, then ranking among eligible profiles.
+- [Contractor-to-employee transition](../assets/IDN-005_contractor_to_employee_transition.txt), maximum 39 characters: same identity before/after new associated authoritative account, supplied successful Employees mapping results and separate human verification.
+- Both editable assets match their inline text blocks. Nearby prose explains conditions, arrows, unshown association mechanics and the difference between logical dependency and an internal job timeline.
+- Two two-column tables compare configured populations/priorities and selected per-profile mappings. Full source text, diagrams, tables, all forty-three routes, navigation and the unchanged downloadable tracing aid are publication checks; visual rendering is checked separately on the live page.
+- No external links, course navigation links or source-citation labels are added to the learner article. Author metadata stays here.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. Highest-priority profile absent | Eligibility precedes rank | Only Contractors has an authoritative account on this identity, so it governs despite a lower-priority number elsewhere | Lowest number anywhere governs everyone | Profile priority |
+| 2. Lower-ranked record read later | Observation time versus configured precedence | Employees 10 governs the supplied same identity with both accounts; inspect its mappings for disputed values | Last aggregation wins | Profile priority; processing |
+| 3. Correct profile, wrong input | Profile selection versus per-field source | Repair approved Department mapping and verify applied result; changing already-winning priority cannot change its input | Governing profile forces every value from its authoritative source | Profile mappings; Preview/Apply |
+| 4. Same name, separate identities | Ownership and continuity versus selection | Inspect stable references, history and correlation; priority doesn't merge A/B or authorize deletion | Display-name match or priority combines identities | Correlation; profile association |
+| 5. Defaults contradict policy | Shared precedence and population risk | Correct ordering through supported approved change; assess all overlaps, old/new mappings/settings, processing and observed results | Creation order is business policy or one sample proves all | Profiles; update specification; processing |
+| 6. Inactive status, attached account | Account data versus relationship | No evidence that account presence/order changed; inspect actual profile and lifecycle logic | Inactive always transfers to lower profile | Profile condition; lifecycle; deletion |
+| 7. Confirmed authoritative removal | Conditional fallback/recalculation | Contractors governs the remaining associated authoritative account under supplied successful mapping assumptions; inspect identity and access separately | Missing export equals confirmed deletion or reassignment proves delivery | Authoritative-account deletion; processing |
+| 8. Profile changed, group remains | Identity decision versus target outcome | Inspect assignment basis, removal requirements, initiated work and target result; group alone does not locate defect | Profile selection proves all old access removed | Lifecycle; processing delivery boundary |
+| Acquisition transfer / teach-back | Apply complete reasoning to new population | Establish same-identity associations, stable references, intended overlap policy and effective date handling, profiles/consumers, processing and separate outcome evidence; question static priority if migration timing requires a distinction it cannot encode alone | HR label or acquisition date automatically determines profile and access | Profile condition/mappings; correlation; processing |
+
+Questions and worked reasoning remain in the learner file. The observed learner-validation result remains pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -1,0 +1,12 @@
+Already attached to identity I-65005:
+  PeopleCore h-65005
+    -> Employees (10): eligible
+  ContractRegister c-65005
+    -> Contractors (20): eligible
+
+No SubsidiaryHR account on I-65005:
+    -> Subsidiary Staff (5): not eligible
+
+ISC profile choice among eligible profiles:
+  Employees (10) before Contractors (20)
+    -> one governing profile: Employees
