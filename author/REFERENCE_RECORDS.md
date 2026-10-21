@@ -2079,6 +2079,65 @@ Two tables distinguish selected mappings from stage-specific evidence. Author re
 Source support for cases 1/8: processing/profiles; 2: profiles/schema; 3: Lower; 4/transfer: Account Attribute; 5: profiles/Account Attribute; 6: profiles/Upper; 7: supplied text/number semantics and exact-match requirement. No beginner interview or uncoached transfer exercise has occurred. IDN-004 remains planned only.
 
 
+## IDN-004
+
+- Current lesson: [IDN-004](../lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.md), revision 1.0, Module 6.4.
+- Author review and fresh documentation check: October 21, 2026.
+- Learner validation and formal publication approval: pending. No tenant operation or actual source/profile/credential/account/identity/target, contract extension, invitation, fallback or synchronization change performed.
+- Scope: engineering decisions behind field-level input choice, availability and accepted evidence. Source ownership policies, dates and sample outcomes are fictional project agreements, not automatic ISC data-quality or authority-ranking features.
+- Reference aid: existing [attribute tracing guide](../assets/ATTRIBUTE_TRACING_GUIDE.txt), revision 1.0, unchanged. Relevant source-choice criteria and filled examples are explained inline; no prerequisite link replaces the teaching.
+- Publication verification: exact deployed revision, complete lesson text and both diagrams/tables, all forty-two routes/native navigation and unchanged served reference aid must be checked separately. These checks do not constitute learner validation.
+
+### Sources mapped to claims
+
+| Official reference | Supported claim or section | Boundary retained |
+|---|---|---|
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative population/profile relationship; identity mappings can use any source and differ by profile; required non-null uid/email/lastname, uid uniqueness and no email-format validation; Preview/Apply Changes | Field ownership and fit-for-use criteria are supplied business agreements, not enforced automatically by ISC; no change to population authority merely to select a field |
+| [First Valid](https://developer.sailpoint.com/docs/extensibility/transforms/operations/first-valid/) | Ordered first-non-null selection; static none Work Email example; ignoreErrors default false; errors differ from null | Does not test business approval, freshness, email syntax or coverage; actual input values supplied in cases; supported technical placeholder is not presented as a universal recommendation or mailbox |
+| [Account Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Associated-account input selection, filtering and sorting | Account selection filters differ from connector collection; no newest/first-non-null account automatically equals approved ordinary account |
+| [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Configured identity-to-existing-correlated-account writes; mismatch enforcement; conflicting logic/cyclical synchronization caution and safeguards | Primary outcome has no directory sync; receiving-copy example is directional reasoning, not a claimed universal endless loop or tested target write |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Applying changed mappings to associated identities, role/lifecycle reevaluation and no verification of successful provisioning by identity processing | Shared impact reviewed; no exact duration, private execution topology or all-target success guaranteed |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Account reads and retained observations are separate from selected identity outputs | Supplied times establish specific fictional reads; no automatic latest-timestamp source election or implicit refresh from Preview |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source Owner responsibilities and source/account representations | Source ownership assignment is not a complete business field-ownership agreement |
+| [Inviting users](https://documentation.sailpoint.com/saas/help/common/users/inviting_users.html) | Work Email registration invitations, profile/manual/lifecycle and certification-related triggers | Ordinary manual invitation setting is not represented as blocking every email path; no emails sent or protection configuration tested |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Configured role membership can consume identity values | Selecting ENG does not itself prove a particular role or external permission is assigned |
+
+Review emphasized profile mapping/required-field sections, First Valid overview/properties/examples, Account Attribute selection, attribute sync direction and safeguards, processing's manual/event-based sections and invitation trigger descriptions. Official sites currently use Human Fabric/Identity Services/Identity Security branding; the ISC course terminology is retained without mixing IdentityIQ behavior.
+
+### Fictional policy and example consistency
+
+Devi is independently introduced as an employee transferring Operations to Engineering, number 64004. PersonnelHub Production is authoritative and Employees governs the one correctly associated identity. PersonnelHub ph-64004 homeDepartment ENG is HR-approved effective October 21, 2026 at 09:00 UTC and collected 09:05. Corporate Directory cd-64004 department OPS is an older downstream copy; its record was modified for a phone correction 09:08 and collected 09:10. ProjectFlow Production pf-64004 department PRJ-17 is a project resource group, collected 09:11, not employment Department.
+
+CostLedger Production fc-64004 allocationCostCenter text 0042, collected 08:45, is Finance's approved current allocation. Additional agreed inputs are PersonnelHub workerNumber 64004, iscUserName employee64004, familyName Rao, and Corporate Directory mail devi64004@example.com. These are selected fictional mappings; systems and teams do not imply universal SailPoint ownership rules. Initial identity Department OPS selects the directory; supplied approved/applied mapping correction selects PersonnelHub and yields ENG, with directory OPS unchanged and no synchronization write configured.
+
+The required-email cycle expressly assumes this project's account-creation path needs an established identity and the required email mapping depends on that future account, with no initial alternative. It is not universal ISC architecture. Supported solutions are discussed as design options requiring actual requirements and acceptance checks, including a deliberate technical placeholder versus usable contact data and controlled consumers.
+
+Independent variations include contractor coverage gaps, first candidate empty text, first input calculation error/default ignoreErrors false, none with unspecified safeguards, receiving-copy feedback and current OPS/next ENG effective November 1. Transfer has sponsor-approved November 30 versus unapproved proposed December 31 application expiry, with no authority for an extension. No access or business date is changed.
+
+### Diagram and narration review
+
+- [Approved department input](../assets/IDN-004_approved_department_input.txt): synchronized with inline source, maximum width 45 characters. Arrow is configured data dependency, not source voting, transaction sequence or target synchronization.
+- [Required email dependency](../assets/IDN-004_required_email_dependency.txt): synchronized, maximum width 44. Arrows mean depends on under the supplied project constraints; not a retry loop or mandatory ISC backend design.
+- Two two-column tables retain full candidate evidence and field-level selected inputs/reasons for narrow-screen readability. Supporting source/owner/producer/time/mapping/transform/processing/provisioning/sync/fallback/invitation/role/lifecycle terms are introduced before process dependence.
+- Narration and humanizer pass checks independent context, causal reasoning, useful qualifications and no teaching-method announcements, external learner citations, false tenant-test claims or confidence promises. Visual publication checks remain separate.
+
+### Assessment reasoning map
+
+| Entry | Understanding / supplied facts | Expected reasoning and acceptable evidence | Misconception / reference |
+|---|---|---|---|
+| Case 1 | HR ENG effective/read before later directory OPS; HR owns field | Distinguish approved field fact from collection recency; inspect mapping and receiving-copy correction separately | Most recent read automatically wins; profiles/loading |
+| Case 2 | Project resource grouping PRJ-17 versus employment Department | Establish business meaning and separate needed attributes; label match insufficient | Same label means same field semantics; supplied agreement/profiles |
+| Case 3 | Complete employees but no contractor CostLedger accounts, no alternate policy | Coverage and approved alternate/exception design; one preview insufficient | Employee sample certifies all populations; profiles/account lookup |
+| Case 4 | First candidate actual empty string, later real address, no rejection/normalization | Empty text non-null under documented condition; business validation still required | firstValid proves usable email; First Valid/profiles |
+| Case 5 | First calculation errors, default ignoreErrors false, later non-null | Error is not ignored merely because later input exists; investigate defect and explicit policy | All errors automatically trigger safe fallback; First Valid |
+| Case 6 | Deliberate none satisfies non-null, no consumer/address/delivery evidence | Required-value success is not registration-mail readiness; identify missing safeguards/transition evidence | Placeholder is a usable mailbox or manual setting controls all triggers; profiles/First Valid/invitations |
+| Case 7 | Upstream ENG, identity from downstream OPS, proposed write-back to same account | Receiving copy cannot supply missing approved fact; review origin and independently verify writes | Sync configuration establishes business authority; attr sync |
+| Case 8 | Current OPS, next ENG effective November 1, observation October 21 | Respect current meaning/date/time-zone and approved selection; publication not effectivity | Future published record applies immediately; supplied policy/profile mapping |
+| Sponsor-date transfer | Approved November 30, unapproved proposed December 31 application copy, newer read | Sponsor approval governs intended identity fact; investigate unapproved application value and authorized corrections; verify consumer boundary semantics separately | Later date/newer observation approves extension or matching screens justify expanded access; supplied authority/sync/processing |
+
+No beginner interview or uncoached transfer exercise has occurred. Formal approval remains pending. Module 6.5 IDN-005 is planned only.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

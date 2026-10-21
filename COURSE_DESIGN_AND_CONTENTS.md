@@ -195,9 +195,10 @@ Aggregation modes and their limitations are explicit subjects because they do no
 
 - 6.3 [Mapping account information into identity attributes.](lessons/IDN-003_Mapping_Account_Information_into_Identity_Attributes.md) **Authored:** IDN-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending. Includes the inline attribute tracing questions and [complete reference aid](assets/ATTRIBUTE_TRACING_GUIDE.txt), revision 1.0.
 
-Lessons 6.4-6.8 remain planned.
+- 6.4 [Choosing the source of each attribute.](lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.md) **Authored:** IDN-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-- 6.4 Choosing the source of each attribute.
+Lessons 6.5-6.8 remain planned.
+
 - 6.5 Multiple identity profiles, population boundaries, and priority.
 - 6.6 Required attributes, identity exceptions, and incomplete information.
 - 6.7 Changing mappings and understanding their downstream effects.

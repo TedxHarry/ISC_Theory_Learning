@@ -1,0 +1,10 @@
+Identity needs required Work Email
+              |
+              | selected input requires
+              v
+Directory account with mail
+              |
+              | this project's creation path
+              | requires the identity first
+              v
+Identity needs required Work Email

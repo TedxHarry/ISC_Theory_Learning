@@ -330,3 +330,10 @@ lessons:
     source: "lessons/IDN-003_Mapping_Account_Information_into_Identity_Attributes.md"
     url: "/lessons/IDN-003_Mapping_Account_Information_into_Identity_Attributes.html"
     description: "Trace selected account inputs through direct mappings and calculations to identity values, processing and separately verified consumers."
+  - id: IDN-004
+    module: identities
+    placement: "Module 6.4"
+    title: "Which source should supply this identity attribute?"
+    source: "lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.md"
+    url: "/lessons/IDN-004_Choosing_the_Source_of_Each_Attribute.html"
+    description: "Choose approved field inputs using meaning, ownership, coverage, timing, fallback policy and verified downstream dependencies."

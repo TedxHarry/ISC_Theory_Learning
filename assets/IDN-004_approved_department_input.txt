@@ -1,0 +1,13 @@
+HR-approved current department
+PersonnelHub homeDepartment: ENG
+               |
+               | Employees Department mapping
+               | selects this agreed input
+               v
+ISC identity Department: ENG
+
+Other collected values:
+Directory department: OPS
+ProjectFlow department: PRJ-17
+
+They do not vote on Department.
