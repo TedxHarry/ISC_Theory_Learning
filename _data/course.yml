@@ -259,3 +259,11 @@ lessons:
     source: "lessons/AGG-003_Full_Aggregation_Optimization_and_Reprocessing.md"
     url: "/lessons/AGG-003_Full_Aggregation_Optimization_and_Reprocessing.html"
     description: "Separate read coverage from unchanged-record processing, trace corrected matching logic, and choose evidence-based re-evaluation."
+
+  - id: AGG-004
+    module: aggregation
+    placement: "Module 5.4"
+    title: "Delta aggregation: supported behavior and connector-specific limitations"
+    source: "lessons/AGG-004_Delta_Aggregation_and_Connector_Limitations.md"
+    url: "/lessons/AGG-004_Delta_Aggregation_and_Connector_Limitations.html"
+    description: "Trace baseline and change capture, distinguish omissions from deletions, and verify connector-specific coverage and recovery."

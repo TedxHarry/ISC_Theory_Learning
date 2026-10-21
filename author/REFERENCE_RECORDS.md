@@ -1604,6 +1604,59 @@ The selected JSON is valid and isn't a full ISC API object or runnable request. 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
 
++## AGG-004: Delta aggregation and connector-specific limitations
+
+- Revision: 1.0. Course placement: Module 5.4.
+- Documentation checked: October 21, 2026. ISC account loading/modes/history/Search/OU-move guidance; JDBC SaaS change-table design; Active Directory DirSync/baseline and additional permissions; Okta SaaS account/profile/log/retention behavior; and source/schema/correlation/identity-processing/provisioning responsibilities freshly checked.
+- Author review: completed against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant/database execution: not performed. Employee 54004, WorkQueue Production, all tables, keys, capture entries and account/deletion outcomes are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: changes-only collection and the dependencies behind coverage. Detailed deletion safeguards, schedules, single-account operations and source reprocessing retain their primary lessons. No SQL, API, credential, permission, tracking-state or real account change is executed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Supported delta versus full/optimized/unoptimized responsibilities, source-level selection and execution/history/Search evidence. Explicit OU-move limitation calls for full aggregation. A delta result isn't a complete current inventory; a processing option doesn't establish delivery of an account omitted from a changes-only read. No universal timing, scope reset or retry behavior is invented. |
+| [JDBC SaaS delta aggregation tables](https://documentation.sailpoint.com/connectors/saas/jdbc/help/saas_connectivity/jdbc/delta_agg.html) | Initial full aggregation, account table plus delta table, identifying value/action columns, Insert/Update/Delete actions, triggers and tracking read/write/cleanup requirements; tracking re-initialization described after aggregation. Group delta isn't supported by this mechanism. Main case follows this SaaS table model, not an IdentityIQ recipe; its exact table/column names and completed deletion result are fictional supplied conditions. No private cleanup commit timing is claimed. |
+| [Active Directory delta aggregation](https://documentation.sailpoint.com/connectors/active_directory/help/integrating_active_directory/delta_aggregation.html) | Default DirSync change mechanism, supported added/updated/deleted changes and initial full-reference establishment. This is one connector context, not proof that all connectors use one token or one baseline procedure. |
+| [Active Directory delta permissions](https://documentation.sailpoint.com/connectors/active_directory/help/integrating_active_directory/delta_aggregation_permissions.html) | Additional Replicating Directory Changes and Deleted Objects container read access. Ordinary account visibility/connection success doesn't establish these permissions. No permission commands or security changes are performed or reproduced as a project recipe. |
+| [Okta SaaS delta aggregation](https://documentation.sailpoint.com/connectors/saas/okta/help/saas_connectivity/okta/delta_aggregation.html) | Accounts-only delta; users API handles user-profile changes, logs API supplies entitlement/deleted-user changes, with documented 90-day log-retention boundary and required full-read recovery for unavailable older changes. Current-state recovery isn't reconstruction of expired historical events. No IdentityIQ parameters or universal cookie lifetime are imported. |
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Represented account attributes and identification. Native wq-54004 differs from employeeRef 54004; stable valid account identification is supplied. A change row and final account representation aren't interchangeable data shapes; no generic omission-means-clear behavior is invented. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source/connector responsibilities and source Accounts views/associations. The lesson connects those records to delivered data and supplied outcomes, not an employee-name search or a schema definition alone. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Ownership association uses configured attribute comparisons; changed criteria need appropriate re-evaluation. Devi's existing correct association is explicit. Equal digits, successful collection or delta configuration don't establish a new unique owner. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Aggregation/provisioning changes to an identity initiate processing; mapped identity values and configured access consequences remain distinct from source account data. No every-delta-row/every-identity-calculation or completed-target-write guarantee is made. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | External account/access changes use their supported change mechanism. Delta observes already-performed WorkQueue changes; it doesn't repeat external create/delete actions. Tracking-table bookkeeping isn't unrestricted business-data provisioning, and downstream consequences require separate verification. |
+
+### Diagram, data and reasoning checks
+
+Two editable text assets match their inline blocks after trailing-whitespace normalization. Maximum line widths are 38 and 40 characters. The first shows database capture, connector read and ISC handling as logical collection dependencies. The separated engineer line is human verification, not an automatic success stage or private transaction guarantee. The second displays supplied before/observed/after account representations, not commands sent to WorkQueue.
+
+Devi 54004 coordinates service work. Existing account wq-54004 has employeeRef text 54004 and a supplied verified identity association. Its department changes OPS to FIN. WorkQueue Production uses a fictional supported JDBC SaaS account-table/delta-table design: WORKQUEUE_ACCOUNTS and WORKQUEUE_DELTA. accountKey is the external account identifier; action values are Update, Insert and Delete, not universal column defaults.
+
+Completed baseline contains wq-54004, wq-54005 and wq-54006. Continuous correct capture records Update wq-54004, Insert externally created wq-54007 and Delete externally removed wq-54006. Supplied supported handling represents FIN on Devi's account, preserves omitted unchanged wq-54005, represents wq-54007 and removes the ISC representation of wq-54006. Current inventory contains wq-54004, wq-54005 and wq-54007: 3 + 1 - 1 = 3. The 3 change rows aren't 3 live account objects or a full population.
+
+Selected JSON is valid teaching data, not a full ISC API object. No change-table deletion/reset command is supplied. Failed trigger, partial-page/progress, filter expansion, joined-membership-table, expired Okta logs and corrected ISC comparison are counterfactual cases, not simultaneous defects in the completed main trace. STAFF/STAFF_GROUPS is an independent project transfer.
+
+A baseline/capture transition gap, missing change entry, unknown checkpoint state or partial response is treated as insufficient evidence rather than a universal product failure algorithm. No exactly-once replay, global rollback, atomic update/cleanup, universal timestamp boundary or token lifetime is asserted.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Unchanged account omitted | Absence from delta means account deletion | wq-54005 remains in the established representation; explicit supported deletion information and context differ from omission. |
+| Empty result after failed capture | Successful collection proves no application changes | Inspect the supplied trigger/capture gap and actual row/query; repeated incomplete change reads don't reconstruct missing evidence. |
+| Three change rows | Delta count equals live population or new accounts | One Update, one Insert and one Delete change the inventory contents; retain 54004/54005, add 54007, remove 54006 representation, with 3 remaining. |
+| Interrupted paged read | Advancing a timestamp is a safe universal recovery or all work rolls back | Inspect execution, change evidence and actual outcomes; follow connector-specific recovery without inventing atomic completion or exactly-once replay. |
+| Expanded account filter | A broader configuration automatically delivers unchanged newly included accounts | Establish supported population refresh/reinitialization and scope consequences; changed filter isn't delivery evidence. |
+| Membership table changes | Correct joined account query implies complete change capture | Capture must select affected account keys for the supported relationship; group inventory doesn't substitute for a missing account-membership observation. |
+| Logs outside retention | Repeated delta reads recover expired events | Follow documented Okta SaaS full-read recovery for current state with scope review; don't claim restored historical events. |
+| ISC-only comparison change | Disabling optimization makes an undelivered delta record arrive | Establish both supported record coverage and appropriate re-evaluation; input/configuration and read/processing boundaries remain separate. |
+| Database-design transfer | Connection success establishes all capture and missing means deleted; tracking can be cleared after failure | Inspect account keys, baseline, query, deletion/membership capture and least necessary supported permissions. Reject absence-based deletion and loss of unread evidence; verify documented recovery/current results separately from lost history and target writes. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

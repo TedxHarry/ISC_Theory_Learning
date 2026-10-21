@@ -174,7 +174,7 @@ SRC-001 is the authored Module 4.1 lesson on source purpose, external context, p
 - 5.1 [Following an account record from a source into ISC](lessons/AGG-001_Following_an_Account_Record_into_ISC.md).
 - 5.2 [Account aggregation and entitlement aggregation: their different responsibilities](lessons/AGG-002_Account_and_Entitlement_Aggregation.md).
 - 5.3 [Full aggregation, optimization, and reprocessing unchanged records](lessons/AGG-003_Full_Aggregation_Optimization_and_Reprocessing.md).
-- 5.4 Delta aggregation: supported behavior and connector-specific limitations.
+- 5.4 [Delta aggregation: supported behavior and connector-specific limitations](lessons/AGG-004_Delta_Aggregation_and_Connector_Limitations.md).
 - 5.5 Single-account aggregation: its purpose and boundaries.
 - 5.6 Schedules, collection scope, dependencies, and data freshness.
 - 5.7 Missing records, account deletion settings, and deletion safeguards.
@@ -183,7 +183,7 @@ SRC-001 is the authored Module 4.1 lesson on source purpose, external context, p
 
 **Outcome:** Explain what an aggregation established, what it did not establish, and which next check is useful.
 
-AGG-001 is the authored Module 5.1 lesson on trigger/read scope, response extraction and schema representation, existing-account identification and ownership, identity-value sourcing, processing/provisioning boundaries and evidence. AGG-002 is the authored Module 5.2 lesson on the two collection responsibilities, held values versus object inventory, supported linking, count reconciliation, independent read scopes/times, file boundaries and evidence. AGG-003 is the authored Module 5.3 lesson on full configured-population coverage versus unchanged-record handling, corrected correlation inputs/configuration, run-local request semantics, related-operation boundaries and safe evidence-based reruns. Lessons 5.4-5.9 remain planned. Learner validation and formal publication approval remain pending.
+AGG-001 is the authored Module 5.1 lesson on trigger/read scope, response extraction and schema representation, existing-account identification and ownership, identity-value sourcing, processing/provisioning boundaries and evidence. AGG-002 is the authored Module 5.2 lesson on the two collection responsibilities, held values versus object inventory, supported linking, count reconciliation, independent read scopes/times, file boundaries and evidence. AGG-003 is the authored Module 5.3 lesson on full configured-population coverage versus unchanged-record handling, corrected correlation inputs/configuration, run-local request semantics, related-operation boundaries and safe evidence-based reruns. AGG-004 is the authored Module 5.4 lesson on baseline/capture/read/result dependencies, changes versus current population, connector-specific tracking and authority, deletion/omission/retention boundaries, membership coverage and safe recovery evidence. Lessons 5.5-5.9 remain planned. Learner validation and formal publication approval remain pending.
 
 Aggregation modes and their limitations are explicit subjects because they do not all perform equivalent work. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html)
 

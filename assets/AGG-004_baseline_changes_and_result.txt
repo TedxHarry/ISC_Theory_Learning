@@ -1,0 +1,5 @@
+ISC before: wq-54004, wq-54005, wq-54006
+Observed:   Update wq-54004
+            Insert wq-54007
+            Delete wq-54006
+ISC after:  wq-54004, wq-54005, wq-54007
