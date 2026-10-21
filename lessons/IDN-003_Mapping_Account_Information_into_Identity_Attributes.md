@@ -55,12 +55,12 @@ The source field and destination field have different names. A mapping connects 
 
 Here are selected mappings for Devi. Assume the required account data is available, each source has only the intended eligible account for this primary example, and no other configured input overrides these selections.
 
-| Identity attribute | Source input | Mapping operation | Expected result |
-|---|---|---|---|
-| Identification Number, `identificationNumber` | WorkerLedger `workerNumber`: `63003` | Direct | `63003` |
-| User Name, `uid` | WorkerLedger `iscUserName`: `employee63003` | Direct | `employee63003` |
-| Last Name, `lastname` | WorkerLedger `familyName`: `Rao` | Direct | `Rao` |
-| Work Email, `email` | Corporate Directory `mail`: `Devi63003@Example.com` | Convert to lowercase | `devi63003@example.com` |
+| Identity attribute | Selected input, operation and expected result |
+|---|---|
+| Identification Number, `identificationNumber` | WorkerLedger `workerNumber`: `63003`. Direct mapping produces `63003`. |
+| User Name, `uid` | WorkerLedger `iscUserName`: `employee63003`. Direct mapping produces `employee63003`. |
+| Last Name, `lastname` | WorkerLedger `familyName`: `Rao`. Direct mapping produces `Rao`. |
+| Work Email, `email` | Corporate Directory `mail`: `Devi63003@Example.com`. Converting to lowercase produces `devi63003@example.com`. |
 
 The table's WorkerLedger label refers to WorkerLedger Production. These are selected fields, not the complete profile configuration.
 
