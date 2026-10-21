@@ -1001,6 +1001,72 @@ Questions and worked reasoning remain in the learner file. Source evidence, asse
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+
+## ARC-008: Requesting, executing, and observing work
+
+- Revision: 1.0. Course placement: Module 3.8.
+- Documentation checked: October 20, 2026. Current request submission/status/tracking, provisioning/account-activity/manual fulfillment, collection scope/indexing and service-desk mapping reviewed; idempotency terminology checked against RFC 9110.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 38008, StockRoom, its SaaS connector, target entitlements, integration actor, record labels, UTC times and all observed results are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: architectural and evidential completion boundaries, not a full access-request configuration, provisioning engine implementation, private queue model, retry runbook, incident remediation authority or universal status-enum mapping.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Submit access request](https://developer.sailpoint.com/docs/api/create-access-request-v-1/) | Current documented 202 submission, asynchronous queued processing, applicable ISC approvals, duplicate/overlap behavior and existing-work checks. No executable payload, frozen legacy version, user-context bypass or guarantee that every client error means no submission. |
+| [Access request status](https://developer.sailpoint.com/docs/api/list-access-request-status-v-1/) | Supported status inspection, caller/population restrictions, and ignored already-held requests not appearing as ordinary new status entries. Query completeness and selected contract matter. No claim that every absence proves no work or that every canceled request is hidden. |
+| [Tracking requests](https://documentation.sailpoint.com/saas/user-help/requests/tracking_access.html) | Request reference, review-step/error details and pending-stage cancellation; request status is not target verification. No universal cancel-at-any-stage, cancel-as-rollback or precise UI-navigation runbook is taught. |
+| [Request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Required requestability/approval settings and independent requested-item provisioning/cancellation. Main access profile has explicit configured checks/review; no claim that approval grants target integration privileges or every request follows identical stages. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Account/access changes, supported automatic/manual arrangements, operation configuration and documented recognized retry errors. Exact retry intervals/counts are intentionally not copied as a universal operation guarantee. Existing account and no creation dependency are supplied assumptions. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Manual task completion assertion; provisioning-event details; Account Activity action/requester/recipient/source/status/stage/modified fields and errors. Component evidence must be scoped; no universal record/cardinality, every-entitlement network call or live target measurement is inferred. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Read/collection versus external change, aggregation history and scope, Search update timing, supported single-account refresh without identity-attribute synchronization or provisioning effects. No requirement for a full aggregation after each write, exact indexing SLA, deletion inference from incomplete data, or production reprocessing command is taught. |
+| [ServiceNow service desk integration](https://documentation.sailpoint.com/connectors/servicenow/sdim/help/integrating_servicenow_sdim/intro.html) | Concrete documented example of ISC provisioning actions converted to service-management tickets; additional availability/licensing/configuration conditions remain applicable. Learner prose names the supported pattern rather than promising this integration in every tenant. |
+| [Generic service desk completion mapping](https://documentation.sailpoint.com/connectors/generic_sd/help/integrating_generic_service_desk/best_practices.html) | Target ticket status mapping can determine when the related ISC provisioning task is treated as complete. Mapped completion is not independent target-account verification, and no specific ticket-state vocabulary or mapping is prescribed. |
+| [RFC 9110, section 9.2.2](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2) | Supporting idempotency definition: repeated equivalent intended effect rather than identical responses/no logging or universal safe retry. Applied as a reasoning distinction, not a claim that every ISC POST/connector action is idempotent. |
+| [Sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [SaaS runtime](https://developer.sailpoint.com/docs/connectivity/saas-connectivity/), [VAs](https://documentation.sailpoint.com/saas/help/va/index.html), [access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) and [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Supporting definitions retain same-day checks recorded in preceding lessons. Hypothetical hosted StockRoom connector, one-source bundle, account association and target authority are supplied conditions. IQService is conditional supported Windows-side work, as verified in ARC-004, not an assumed part of this SaaS path. |
+
+### Conditions and limits
+
+- Devi is independently established as a warehouse stock planner, employee 38008. Her existing stock-38008 account is correctly associated and eligible for the main request. No account creation, future date, custom script or manual fulfillment dependency is assumed in that case.
+- StockRoom Production is the ISC source label; the intended external production destination and account must also match. svc-stock-isc is the external integration actor, not the recipient, reviewer or API caller.
+- Stock planning access contains stock.read and stock.export from this source. The fictional target model requires both for the full planning requirement. Neither is initially present.
+- AP-38, AR-38 and ACT-38 are separate non-runnable stand-ins. Their suffix isn't an ISC identifier-derivation rule or a guarantee of one-to-one record relationships.
+- The main trace supplies separate permission effects: read added, export refused for target authority. No guarantee of one call/activity per entitlement, universal ordering, atomic execution or rollback is asserted.
+- All times use one fictional UTC day: 09:00 collected baseline, 10:00 acceptance, 10:05 approval, 10:06 mixed delivery, 10:08 old view, 10:20 inclusive collection, 11:00 prerequisite repair, 11:10 supported recovery, 11:12 target confirmation and 11:15 business test. These are not measured performance, scheduled intervals or a product SLA.
+- The older account view is a supplied observation. The later collection explicitly includes the intended account and relevant memberships. Neither observation implies that every ISC account update requires source-wide aggregation or that aggregation grants access.
+- Successful single-account refresh doesn't establish identity-attribute recalculation. Browser refresh is a view interaction, not automatic aggregation, reprocessing or provisioning.
+- Request status, review decision, account activity, component effect, collection outcome and actual target state retain separate scope. A historical failure can coexist with successful later recovery without rewriting the earlier event.
+- Missing results require checking caller/view/tenant/filter/time/history/pagination context. The on-behalf-of exercise supplies another authorized requester, so filtering submissions by Devi is not equivalent to filtering requests for Devi.
+- Timeout and lost initiating responses leave uncertainty until evidence resolves it. No universal no-effect, duplicate protection, rollback, automatic retry or exactly-once result is promised.
+- Recovery requires current authorization, actual-state reconciliation and operation-specific supported procedure. Repairing privileges alone isn't execution. Canceling pending work isn't evidence that applied target changes were undone.
+- Manual/ticket fulfillment cases are alternative arrangements, not extra stages for the automatic SaaS example. Completed task/ticket assertions need appropriate target evidence under the agreed process.
+- Authorized target inspection and business testing are fictional supplied evidence, not actions performed by the author. No real request, access change, source repair, aggregation, ticket creation, client execution or credential handling occurred.
+- Current official documentation uses Identity Services / Human Fabric naming. ISC remains the requested course title. Licensing, feature visibility, connector capability and supported versions must still be checked for a real project.
+
+### Diagrams and review checks
+
+- [Request to verification](../assets/ARC-008_request_to_verification.txt): request/check/review/delivery/target relationship ending in explicitly human outcome inspection.
+- [Partial target outcome](../assets/ARC-008_partial_target_outcome.txt): two required permission effects and supplied partial result, not simultaneous calls or separate approvals.
+- [Change versus collection](../assets/ARC-008_change_and_collection.txt): outbound supported change versus inbound later read, not a guaranteed cycle.
+- All three assets match inline blocks exactly. Maximum line widths are 38, 43 and 41 characters. Captions identify assumptions, actor/direction, omitted internals and non-guaranteed success.
+- Local and live checks separately verify complete text, headings, tables, diagrams, placement and navigation. Rendered readability is not beginner comprehension or observed tenant execution.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Approved, work in progress | Decision versus execution outcome | Follow relevant activity/dependencies; supplied evidence proves neither completion nor target rejection | Approval is delivery, or delay proves failure and justifies repeat | Submission/tracking; request configuration |
+| Read delivered, export refused | Partial outcome and target evidence | Preserve successful read, investigate missing export authority and recover supported unresolved work | Overall error means no effect or universal rollback | Provisioning evidence; supplied target facts |
+| Successful collection, export absent | Observation versus mutation | Collection correctly represented missing permission; delivery remains unresolved | Aggregation grants or repairs requested access | Loading accounts; provisioning |
+| Timeout, target confirms change | Recorded response versus actual effect | Reconcile the successful target change through supported process without blindly repeating | Timeout proves no effect | Supplied target/audit facts; scoped monitoring; RFC retry distinction |
+| Manual completion on test account | Completion assertion versus correct target | Confirm intended production source/account/permission and preserve mismatch | Task badge or any same-name account proves fulfillment | Manual task tracking; source/account context |
+| First status page filtered by recipient-as-requester | Query semantics and incomplete evidence | On-behalf requester differs; inspect known references, correct supported population, caller rights and pagination | Missing first-page entry means never submitted | Status API contract; supplied query context |
+| Payroll completion design | Transfer of scope, asynchronous stages and recovery | Define decision/execution/target evidence, actual fulfillment arrangement, reference tracking and partial/uncertain recovery; reads aren't grants | Submission success is business completion and repeat-plus-aggregation repairs every failure | Submission/status/tracking; provisioning/manual/service desk; account loading |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

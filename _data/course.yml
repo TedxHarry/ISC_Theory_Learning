@@ -159,3 +159,11 @@ lessons:
     source: "lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.md"
     url: "/lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.html"
     description: "Separate authentication routes, trust and matching, source-password changes, recovery, and session evidence."
+
+  - id: ARC-008
+    module: architecture
+    placement: "Module 3.8"
+    title: "Requesting work, executing work, and observing completion"
+    source: "lessons/ARC-008_Requesting_Executing_and_Observing_Work.md"
+    url: "/lessons/ARC-008_Requesting_Executing_and_Observing_Work.html"
+    description: "Reconcile requests, decisions, execution, collection, partial outcomes, and evidence of actual completion."

@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Twenty complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; and **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0.
+The course design and teaching specification are saved. Twenty-one complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; and **ARC-008, The request was accepted. What actually finished?**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. That pilot did not itself complete Module 1, Module 2, or the whole course.
 
-The current lesson is ARC-007. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is ARC-008. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 3.7, ARC-007. All seven Module 2 lessons are now authored, not learner-validated or formally approved for publication. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 3.8, ARC-008. All eight Module 3 lessons are now authored, not learner-validated or formally approved for publication. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -41,6 +41,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [ARC-005: Connection dependencies and operation support](lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md) | Complete learner-facing lesson for Module 3.5 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [ARC-006: UI, APIs, automation, and platform capabilities](lessons/ARC-006_UI_APIs_Automation_and_Platform_Capabilities.md) | Complete learner-facing lesson for Module 3.6 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [ARC-007: ISC sign-in, identity providers, and source passwords](lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.md) | Complete learner-facing lesson for Module 3.7 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [ARC-008: Requesting, executing, and observing work](lessons/ARC-008_Requesting_Executing_and_Observing_Work.md) | Complete learner-facing lesson for Module 3.8 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -546,9 +547,28 @@ UI/API alternatives don't imply identical public endpoints, permission parity, a
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest under Module 3; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read ARC-007 and apply feedback to this same file; then author Module 3.8 |
+| Next action | Preserve ARC-007 for feedback and learner validation; ARC-008 was opened following the user's instruction to continue |
 
 SSO into ISC is not a trust for every managed application, password copying, account correlation, universal session termination or an administrative permission grant. PTA and source-password operations have their own configured dependencies. Password policies, verification, target authority and per-source outcomes remain distinct; approved emergency access and recovery are not reasons to bypass controls.
+
+### ARC-008
+
+| Field | ARC-008 |
+|---|---|
+| File | [ARC-008_Requesting_Executing_and_Observing_Work.md](lessons/ARC-008_Requesting_Executing_and_Observing_Work.md) |
+| Revision | 1.0 |
+| Course placement | Module 3.8 |
+| Content status | Complete lesson saved; accepted request, configured decision, execution, per-effect result, collection and target/business evidence; record references and UTC trace; partial/uncertain outcomes, human/ticket fulfillment and supported recovery |
+| Author review | October 20, 2026; first-use explanations, independent Devi example, supplied partial delivery and stale view, actor/account distinctions, three diagrams, two tables, six worked cases, payroll-design transfer and mentor narration checked |
+| Documentation check | October 20, 2026; current request submission/status/tracking, provisioning/manual/account-activity evidence, aggregation scope/indexing, service-desk completion mapping and supporting idempotency concepts mapped in author records |
+| Diagram sources | [Request to verification](assets/ARC-008_request_to_verification.txt), [Partial target outcome](assets/ARC-008_partial_target_outcome.txt) and [Change versus collection](assets/ARC-008_change_and_collection.txt); synchronized with inline blocks, maximum line widths 38, 43 and 41 characters |
+| Tenant execution | Not performed; employee 38008, StockRoom, stock-38008, svc-stock-isc, stock.read and stock.export, AP-38/AR-38/ACT-38, UTC timeline and all case outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest under Module 3; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read ARC-008 and apply feedback to this same file; then author Module 4.1 |
+
+The supplied timeline isn't a latency promise or private queue diagram. Request, review, activity, collection and target evidence have different scope and times. Partial delivery is not no change, collection is not a grant, repaired authority is not retried work, and a missing result or timeout is not proof of no effect. All eight Module 3 lessons are authored; learner validation and formal approval remain pending.
 
 ## Source-citation relocation
 
@@ -560,17 +580,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons, all seven Module 2 lessons, and Module 3 lessons ARC-001 through ARC-007 are authored. Learner validation and formal publication review remain separate pending stages. Module 3.8 is planned, not completed.
+All six Module 1 lessons, all seven Module 2 lessons, and all eight Module 3 lessons are authored. Learner validation and formal publication review remain separate pending stages. Module 4 starts Part II, bringing data into ISC; it is planned, not completed.
 
-The next new lesson is Module 3.8:
+The next new lesson is Module 4.1:
 
-**Requesting work, executing work, and observing completion.**
+**The purpose of a source and the population it represents.**
 
-- Reserved permanent ID: `ARC-008`.
-- Planned file: `lessons/ARC-008_Requesting_Executing_and_Observing_Work.md`.
+- Reserved permanent ID: `SRC-001`.
+- Planned file: `lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.md`.
 - Status: planned only; no lesson file created.
-- Scope: trace a supported operation from initiation through applicable decisions and execution to recorded and externally verified outcomes; distinguish accepted work, asynchronous stages, activity/status evidence, collected views and actual target state. Explain waits, partial outcomes, missing evidence and safe recovery without inventing private queues, guaranteed timing, universal retries or rollback.
-- Resolve known feedback on ARC-007 before opening the next writing task.
+- Scope: establish the system, environment, account population and data/operation boundary represented by a source; distinguish the external system, source configuration, connector, account records and collection scope. Explain discovery questions, ownership, population inclusion/exclusion and consequences of a wrong boundary without duplicating the later full schema, filter or aggregation mechanisms.
+- Resolve known feedback on ARC-008 before opening the next writing task.
 
 ## Recording review status
 
@@ -622,3 +642,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored and reviewed ARC-005 revision 1.0 with source/runtime/destination context, connectivity/trust/authentication/authorization distinctions, capability/input dependency map, error origin, denied-write trace, partial outcomes and supported recovery, two diagrams, five investigations and read-only project transfer; reserved ARC-006 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed ARC-006 revision 1.0 with UI/API/capability distinctions, configuration versus access-changing operations, caller/token authority, accepted request tracking, connector continuity, external scripts versus Workflow event/filter/choice/execution, two diagrams, five cases and unattended-automation transfer; reserved ARC-007 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed ARC-007 revision 1.0 with federated/directory/native sign-in distinctions, SAML trust/matching, MFA/recovery scope, supported source-password changes, sync-group partial outcomes, session boundaries, three diagrams, seven worked cases and purchasing-design transfer; reserved ARC-008 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
+| October 20, 2026 | Authored and reviewed ARC-008 revision 1.0 with request/decision/execution/collection/target boundaries, partial-delivery UTC trace, scoped status and evidence, manual/ticket fulfillment, missing results, timeout/recovery reasoning, three diagrams, six cases and payroll-design transfer; all eight Module 3 lessons authored; reserved SRC-001 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |

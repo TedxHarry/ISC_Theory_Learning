@@ -1,0 +1,13 @@
+[Request AR-38 for profile AP-38]
+                 |
+                 v
+[ISC: applicable checks and approval]
+                 |
+                 v
+[Configured connector delivery work]
+                 |
+                 v
+[StockRoom: intended account changes]
+                 |
+                 v
+[Engineer checks outcome and evidence]

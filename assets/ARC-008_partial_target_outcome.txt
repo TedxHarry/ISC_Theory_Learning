@@ -1,0 +1,11 @@
+[Approved Stock planning access]
+                |
+        required target changes
+          /                \
+         v                  v
+[stock.read added]   [stock.export refused]
+         |                  |
+         +---------+--------+
+                   |
+                   v
+[Partial target result: read only]

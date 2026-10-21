@@ -1,0 +1,3 @@
+[ISC] -- supported change --> [StockRoom]
+
+[ISC] <-- later collection -- [StockRoom]
