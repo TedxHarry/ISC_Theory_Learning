@@ -49,7 +49,7 @@ Authority establishes the population. It doesn't mean every attribute from that 
 
 The Work Email row also shows why a non-authoritative source can still matter. Corporate Directory is not the origin of these employee identities, but it supplies their email values. A profile can map identity attributes from accounts on different sources.
 
-User Name, Work Email and Last Name must be mapped and non-null. User Name must be unique across identities from all profiles. Missing required values or duplicate usernames can produce **identity exceptions**, which report problems with identity information. A profile's existence doesn't remove these requirements.
+User Name, Work Email and Last Name must be mapped and have a value. They cannot be null, meaning no value is present. User Name must be unique across identities from all profiles. Missing required values or duplicate usernames can produce **identity exceptions**, which report problems with identity information. A profile's existence doesn't remove these requirements.
 
 The mapping belongs to the profile, but the identity attribute's definition is shared across the tenant, meaning the organization's ISC environment. If you add a custom identity attribute while editing Employees, it also appears in other profiles. Those profiles don't all have to map it.
 
@@ -87,7 +87,7 @@ Nor does selecting it copy the network password into an identity attribute. Depa
 
 Other profile settings include **multifactor authentication (MFA)**, which requires more than one authentication factor, password-reset and unlock verification methods, and network or geographic restrictions. These are security requirements, not account-creation rules. Administrator MFA requirements still apply even if the profile's MFA checkbox is disabled.
 
-Take the **Off Network** restriction. It relies on the tenant's configured network definition. Enabling it without a network definition blocks all users associated with the profile from accessing ISC. Don't interpret a population-wide sign-in failure after a security change as proof that their HR records disappeared.
+Take the **Off Network** restriction. It relies on the tenant's configured network definition, which specifies the organization's network address ranges. Enabling it without a network definition blocks all users associated with the profile from accessing ISC. Don't interpret a population-wide sign-in failure after a security change as proof that their HR records disappeared.
 
 Profile settings are not the whole security model, and changing them is not a troubleshooting shortcut. In particular, changing a production pass-through authentication source can prevent users from authenticating; SailPoint directs organizations to consult Support before that change.
 
