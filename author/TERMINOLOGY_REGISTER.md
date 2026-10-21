@@ -229,6 +229,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Locked / disabled / unlocked | Applied external lock / separate disabled condition / absent lock condition | Read status is not an unlock; unlocked does not establish enabled state, valid credentials or application authorization |
 | Single-account not found / Remove Account | Lookup absence that leaves the UI action's existing ISC record unchanged / separate removal of the ISC representation | Neither establishes approved external deletion; supported explicit delta deletion is a different mechanism |
 | Stored account details / asynchronous connector reload | Read represented account data / request a new supported source read and one-time aggregation | Acceptance or a task reference is not completion; UI behavior limits are not a universal contract for every API/version/workflow |
+| Scheduled submission / actual start / completion | Work becomes due and queued / execution begins / run reaches its reported outcome | Source schedule time is not completion time or evidence that a named record's latest value was read |
+| Business change / publication / observation / confirmation time | Producer event / information made available / value returned by a read / result separately checked | A recent consumer update does not make an older batch current; publication time alone does not establish a snapshot's effective cutoff |
+| Daily recurrence window / continuous interval | Recurrences from selected start until midnight / uninterrupted repeating interval | Daily 14:00 plus eight hours gives 14:00 and 22:00, then next-day 14:00; the overnight gap is 16 hours |
+| VA cluster offset / tenant time zone / browser display zone | Fixed standard-time scheduling basis for VA connections / SaaS scheduling basis / local display context for relevant views | Cluster offset does not observe daylight saving; tenant-zone tasks can follow it; connector migration can change real-world due times |
+| Calendar ordering / successful dependency | Intended separation of scheduled times / required prior information or outcome confirmed | Scheduling B after A is not proof A completed or produced the value B requires; independent reads do not need an invented serial order |
+| Freshness commitment / frequency | Defined input event to required verified result / recurring read opportunity | Producer delay, true calendar gaps, execution, processing and target delivery matter; neither a measured duration nor an hourly setting is a universal upper bound |
 
 ## Source anchors
 

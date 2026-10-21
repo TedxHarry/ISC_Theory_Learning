@@ -275,3 +275,11 @@ lessons:
     source: "lessons/AGG-005_Single_Account_Aggregation.md"
     url: "/lessons/AGG-005_Single_Account_Aggregation.html"
     description: "Trace a selected-account read and distinguish account data, identity values, external changes, not-found handling, and completion evidence."
+
+  - id: AGG-006
+    module: aggregation
+    placement: "Module 5.6"
+    title: "Schedules, collection scope, dependencies, and data freshness"
+    source: "lessons/AGG-006_Schedules_Scope_Dependencies_and_Data_Freshness.md"
+    url: "/lessons/AGG-006_Schedules_Scope_Dependencies_and_Data_Freshness.html"
+    description: "Distinguish due times, completed reads, published data, scope, processing dependencies, and verified end-to-end freshness."

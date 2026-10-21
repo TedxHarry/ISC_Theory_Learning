@@ -1,0 +1,18 @@
+[Producer publishes required data]
+                |
+                v
+[Supported source read in ISC]
+                |
+                v
+[Required identity values available]
+                |
+                v
+[Configured access decision]
+                |
+      if a change is required
+                v
+[Separate supported provisioning]
+                |
+      if target change succeeds
+                v
+[Later read can observe target state]

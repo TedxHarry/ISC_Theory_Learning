@@ -1707,6 +1707,60 @@ Selected JSON parses and contains four stated fields. Two learner tables keep id
 
 Questions, supplied facts and worked reasoning remain in the learner file. No beginner read-through or transfer test has been performed; author/source review does not establish learner comprehension.
 
+## AGG-006: Schedules, scope, dependencies and data freshness
+
+- Revision: 1.0. Course placement: Module 5.6.
+- Documentation checked: October 21, 2026. Account-loading scheduling/modes/history/Search, feature-specific time zones, entitlement schedules/files, identity processing, profile mappings, account schemas, connector runtime distinctions and migration time-basis guidance freshly checked.
+- Author review: completed against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant execution: not performed. PeopleRoster, worker data, published batches, all schedules/times, clock offsets and supplied identity/target outcomes are teaching examples.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: scheduling and evidence of freshness. No source schedule, tenant time zone, VA setting, credential, API, source or target record is changed. Detailed account-deletion settings retain their primary lesson.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), scheduling, methods and history sections | Scheduled time adds work to processing queue; other work can delay actual start. Direct-connect enable/frequency/time settings; daily recurrences end at midnight, weekly day/time, monthly date 1-28; documented 14:00/eight-hour pattern. Full/optimized/unoptimized/delta distinctions and source/history counts/status/start/stop/optimization evidence. Flat-file account loading requires upload or latest uploaded file, not a live producer read. No universal run-overlap, merge, skip or retry rule is inferred. |
+| [Time Zone Settings](https://documentation.sailpoint.com/saas/help/common/time-zones.html) | Feature-specific time basis: VA-based account/entitlement aggregation uses cluster fixed standard-time GMT offset without daylight-saving shifts; SaaS uses tenant time zone; relevant browser/activity displays can use local settings. Tenant-zone tasks can follow their zone's daylight-saving changes. This specific runtime distinction qualifies the broader VA notes in account/entitlement scheduling pages; no all-connectors-share-one-clock claim. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Supported direct-connect manual or recurring entitlement collection, all/selected types, separate controls and queued execution. Flat-file entitlement imports are manual and do not provide recurring schedule or multiple entitlement types. Independent account/object collection establishes different facts and observation times. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Event-based processing after identity changes from aggregation/provisioning, separate scheduled/time-based/manual mechanisms and configuration evaluation. Identity processing does not validate successful external provisioning. The lesson deliberately avoids a universal fixed completion duration or a full schedule/nextProcessing configuration recipe. No claim that every source read initiates every identity or access action. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html), mapping values | Source and source-attribute mapping drives identity values. Existing correct PeopleRoster association and department mapping are supplied. A late producer publication is not evidence of a faulty mapping; identity confirmation is separate evidence from source execution status. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Represented fields and account identification. pr-56006 is the fictional workerKey, employeeNumber text 56006 identifies employee information. HR account representation need not mean a login; it remains separate from the identity and downstream application accounts. |
+| [Connector documentation overview](https://documentation.sailpoint.com/connectors/isc/landingpages/help/landingpages/isc_landing.html) | Runtime families and supported collection/change responsibilities. VA-based versus SaaS-based connection path is material to time-zone selection. PeopleRoster's SaaS interface and publication contract are fictional supported-design assumptions, not a claim that this named connector exists. |
+| [Migrating VA-based sources](https://documentation.sailpoint.com/saas/help/sources/migrate_sources.html), time-zone warning before schema handling | VA cluster time basis can differ from SaaS and affect aggregation due times. The lesson asks for a review before migration; no migration is performed or irreversible migration instruction supplied. |
+
+### Example, arithmetic and diagram review
+
+Devi 56006 plans warehouse work. HR changes recorded department from Warehouse Planning WH to Distribution Planning DIST at 03:00. PeopleRoster Production reads the producer's published worker interface through a supplied supported SaaS design, not by uploading a CSV or reading the HR screen. Main record pr-56006 has workerKey pr-56006 and employeeNumber text 56006, a correct existing identity association and identity-profile department mapping. Tenant UTC and daily 00:10/hourly schedule are explicit.
+
+First due/start/read/end: 03:10/03:15/03:17/03:22, with WH returned and WH represented. HR publishes DIST batch at 03:40. Second due/start/read/end: 04:10/04:15/04:18/04:24; returned account DIST is confirmed at 04:24 and mapped identity DIST separately confirmed at 04:26. Confirmation time is not asserted to be exact persistence/processing completion time. The illustration does not require all identities to wait for the source task to finish.
+
+Change-to-confirmation = 86 minutes = 40 before publication + 30 to next scheduled submission + 5 waiting to start + 9 execution + 2 to confirmation. At 04:30, business event/publication/read/confirmation ages are 90/50/12/4 minutes. Publication age does not prove snapshot cutoff or per-field modification age. Intervals explain this trace, not a universal serial latency formula or maximum.
+
+Independent daily 14:00 plus eight-hour recurrence gives 14:00/22:00 then next-day 14:00, a 16-hour scheduled gap. After a record has been passed at 22:00 and is changed at 22:01, wait to next due time is 15 hours 59 minutes. GMT-06 cluster 02:00 = 08:00 UTC = 03:00 at business GMT-05; the example is a fixed-offset arithmetic illustration, not a changed tenant setting.
+
+Independent population 100 versus collected 90, G-56 membership at 09:20 between account 09:00 and group 09:30 reads, application read 05:05 before confirmed provisioning 05:12, stale Search and old export are variations, not simultaneous problems in the PeopleRoster trace. Contractor transfer uses its own hourly publication/collection design and 30-minute target-disable requirement.
+
+Two editable text assets match inline blocks after trailing-whitespace normalization: publication/two-read trace has maximum line width 30; conditional dependency chain has 37. First arrows show chronology of the example, not private commit order or atomic snapshots. Value confirmations are human evidence checks. Second arrows indicate required input/outcome and explicit conditions before target observation; no automatic every-read provisioning promise or universal source serialization. Visual rendering must be separately checked in the published format.
+
+Two learner tables retain all events and identify which age is being measured. No invented universal queue algorithm, retry limit, concurrency policy, source performance figure or live tenant evidence is supplied.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning / evidence boundary |
+|---|---|---|
+| Successful run before publication | Old represented department proves mapping failure | Correct collection cannot retrieve an unpublished batch. Inspect producer revision/cutoff and later supported read; don't change a correct consumer mapping. |
+| Daily eight-hour window | Daily recurrence is an uninterrupted eight-hour interval | Daily window resets; next 14:00 and 15h59 wait follow from supplied times. Execution and processing remain additional uncertainty. |
+| VA/business daylight-saving clocks | All aggregation schedules shift with the browser/local zone | Fixed cluster offset gives 08:00 UTC and business 03:00 after offset changes. Verify actual runtime/clock basis. |
+| Successful 90-of-100 scope | Higher frequency corrects an excluded population | Inspect approved scope/filter/actor visibility and deletion consequences before correction. Repeating a read doesn't expand its permitted/configured population. |
+| New group details, older membership | Group-object freshness proves current account membership | Preserve separate observation times and obtain account-to-group evidence; group description alone proves no new membership observation. |
+| Application read before provisioning | Calendar separation guarantees successful downstream delivery | 05:05 read correctly predates 05:12 target change. Required handoffs and later evidence, not merely clock ordering, establish outcome. |
+| Current account, old Search | Stale indexed view necessarily means failed collection | Identify account/identity object, mapping output and synchronization evidence. No exact Search completion time is promised. |
+| New upload, old export | Ingestion time equals live source verification | Export content/cutoff limits the evidence. Current input/import or a supported redesigned integration is required. |
+| Thirty-minute contractor disable transfer | Hourly publication/collection and identity action meet target-disable deadline | Existing gaps already fail to support 30 minutes; define effective-time start, timely publication/collection, identity evaluation, authorized target action, completion confirmation, capacity/exceptions/escalation. Equivalent supported designs accepted only with those boundaries evidenced. |
+
+Supplied facts, questions and worked reasoning remain in learner prose. No beginner comprehension or transfer test has occurred. Source checks and author review do not establish learner validation.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
