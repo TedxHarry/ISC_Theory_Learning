@@ -1970,6 +1970,62 @@ Selected JSON, two diagrams and both tables were traced against prose and answer
 Author review includes independent entry context, first-use terminology, actor and arrow meanings, causal transitions, success/failure assumptions, UI evidence limits, consistency and a narration/humanizer pass. It is not learner validation, proof of tenant behavior from execution, or formal approval. Attribute tracing reference aid remains planned for development within Module 6 with the detailed mapping lessons.
 
 
+## IDN-002
+
+- Current lesson: [IDN-002](../lessons/IDN-002_What_an_Identity_Profile_Controls.md), revision 1.0, Module 6.2.
+- Author review and fresh official-documentation check: October 21, 2026.
+- Learner validation and formal publication approval: pending. No live tenant/security/authentication/profile/attribute/source/account/identity/target operation performed.
+- Scope: what a governing shared profile controls, applicable dependencies and what its settings do not prove. Full mapping design, profile priority, lifecycle policy/removal, authentication and provisioning mechanics retain their primary course lessons.
+- Publication verification: separately check exact deployed revision, complete new lesson text, both diagrams/tables and all forty lesson routes with native panel/module defaults.
+
+### Sources mapped to claims
+
+| Official reference | Lesson claim or section supported | Limit retained |
+|---|---|---|
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative association and shared governing profile; eligible priority; security/invitation settings; multi-source identity mappings and required values; profile-local mappings versus tenant-wide custom attribute definitions/deletion; preview/save/apply; profile deletion consequences | Profile priority is not identity merger; metadata is not execution evidence; no deletion instructions executed; no claim that all identity values universally follow mappings |
+| [Setting up lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Per-profile state configuration, mapped cloudLifecycleState, exact case-sensitive technical name, enabled prerequisite, configured access/profile/account actions/notifications, identity-state distinction, lifecycle access-profile enforcement and departure behavior | Qualified existing-account example; no universal disable/delete/removal or persistent account-state monitoring claim; supported retry behavior not replaced by an invented loop |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Event-driven evaluation after identity changes, manual processing after configuration edits, profile Apply Changes scope, downstream access evaluation and no validation of completed provisioning | No fixed finish time, internal service sequence or guarantee all targets change; scheduled processing is not a generic repair prescription |
+| [Pass-through authentication](https://documentation.sailpoint.com/saas/help/common/pta.html) | Profile Directory Connection and supported selected authentication source; prior source/account aggregation; production authentication-source change requires Support consultation | Authentication source differs from personnel authority and mapped-value sources; no password copying or actual auth-source change |
+| [Inviting users](https://documentation.sailpoint.com/saas/help/common/users/inviting_users.html) | Registration/invitation distinction, manual/automatic profile invitations and enabled lifecycle invitation option, Work Email dependency | No identity existence implies registration, invitation delivery or sign-in success; no emails sent |
+| [ISC as a service provider](https://documentation.sailpoint.com/saas/help/common/config_isc_service_provider.html) | Tenant SSO identity-provider authentication path differs from local/profile password assumptions | No SAML configuration, certificate, bypass or security mutation; full SSO mechanics remain outside this lesson |
+| [Synchronizing attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Separately configured identity-to-account attribute writes, supported provisioning and source-account evidence | Mapping correction alone is not directory update; no sync configured in primary case and no automatic account creation implied |
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | One-source entitlement bundle and use in lifecycle/roles/requests | Benefits Self-Service is a fictional standing-access bundle; no broad administration or Just-In-Time activation inferred |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Separate role object and configured membership criteria consuming identity values | No department automatically grants an unnamed role; impact review follows actual consumers |
+| [Access requests](https://documentation.sailpoint.com/saas/help/requests/index.html) | Access request meaning and distinct policy/fulfillment path | Not an identity profile or automatic grant |
+| [Identity states](https://documentation.sailpoint.com/saas/help/provisioning/identity_states.html) | ISC service/processing classification separate from business lifecycle and application account state | No blanket assertion that an Active identity has enabled accounts or every inactive identity is deleted |
+| [Manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html) | Profile Manager Name input plus source manager matching configuration | A manager-looking string does not prove the reporting relationship; full manager matching taught later |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supported external account/access operations distinct from reading, calculating and sign-in | No real BenefitsDesk connector capability, permission or operation tested |
+
+Current official documentation uses SailPoint Human Fabric/Identity Services branding; the lesson retains ISC course terminology without mixing IdentityIQ behavior. Sources are author-only and not appended to learner prose.
+
+### Example and diagram review
+
+Devi is independently reintroduced as a benefits coordinator, employee 62002, governed by Employees. PeopleCore Production is authoritative; hr-62002 supplies workerNumber 62002, iscUserName employee62002, familyName Rao, workDepartment HR and workerState active. Corporate Directory is non-authoritative with correctly associated cd-62002, department FIN and mail devi62002@example.com; it is also the configured supported authentication source. These roles are deliberately different.
+
+Current identity Department mapping selects directory FIN. Approved changed mapping selects HR workDepartment; supplied applied result is identity HR with directory FIN unchanged and no attribute synchronization configured. No ownership/profile/credential change is implied.
+
+Independent lifecycle variation assumes enabled provisioning and active state, valid saved/applied configuration, automatic assignment, one existing correctly associated bd-62002, supported entitlement operation/permissions and no competing assignments/removals. BenefitsDesk Production Benefits Self-Service access profile contains standing entitlement benefits-selfservice for employee self-service, not HR administration. Reported success and target membership are supplied fictional evidence, not tenant observations.
+
+Editable diagram sources: [lifecycle requirement to target](../assets/IDN-002_lifecycle_requirement_to_target.txt), maximum width 43 characters; [profile responsibility map](../assets/IDN-002_profile_responsibility_map.txt), maximum width 39. First diagram separates inputs, enabled-state requirements, evaluation, supported execution and final human verification; second is a responsibility hierarchy, not an execution sequence. Both match inline blocks. Visual publication rendering is a separate check.
+
+The two inline tables contain selected fictional mappings and the distinct claims supported by identity/configuration/preview/state/target observations. No upload/API template is supplied. Read-through, first-use meanings, example consistency, qualifications, questions, humanizer/narration pass and technical source checks constitute author review only.
+
+### Assessment reasoning map
+
+| Entry | Understanding / supplied evidence | Expected reasoning and acceptable checks | Misconception / reference |
+|---|---|---|---|
+| Case 1 | HR HR, directory FIN and selected directory mapping | Follow actual selected input and approved field ownership; another read of unselected HR input does not switch mapping | Authoritative source wins every value; identity profiles |
+| Case 2 | Preview HR, Needs Processing, stored value unverified | Review population scope then approved application and actual identity/downstream checks | Preview equals applied change; profiles/processing |
+| Case 3 | Enabled state technical name active, mapped Active, no manual alternative | Case-sensitive mismatch; inspect mapping/normalization and verify actual assignment | Matching display wording ignores technical-name case; lifecycle |
+| Case 4 | Contractors governs identity, grant configured only in Employees, no other path | Per-profile state requirements; inspect governing configuration rather than same display label | State labels share access across profiles; lifecycle/profiles |
+| Case 5 | Correct active assignment, target insufficient-permissions failure | Execution boundary investigation and authorized recovery/target confirmation; no unjustified broadening | Correct mapped state guarantees write or repeated processing fixes permission; provisioning/processing |
+| Case 6 | Off Network enabled, absent network definition, identities still present | Documented security restriction and approved security review, not identity recreation | Sign-in failure proves missing person; profile security |
+| Case 7 | Custom attribute unmapped in Employees but used in Contractors and role | Tenant-wide definition/dependency review, not profile-local deletion | Local editing screen implies local schema scope; profiles/roles |
+| Contractor email transfer | Proposed emailAddress-to-mail change, directory coverage incomplete, required email and invitations, no fallback | Population/account association/input availability, initial-value dependency, representative cases and actual results; identifying missing evidence is valid | One good preview proves coverage or downstream account supplies absent initial value; profiles/invitations/sync |
+
+No learner interview or uncoached transfer test has occurred. Formal approval remains pending. IDN-003 and its attribute tracing reference aid are planned, not authored in this update.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

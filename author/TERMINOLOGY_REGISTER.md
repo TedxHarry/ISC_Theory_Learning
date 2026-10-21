@@ -257,6 +257,10 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Required identity input / username uniqueness | Non-null mapped uid, email and lastname / uid unique across identities from all profiles | Missing required values and duplicate uid generate identity exceptions; email presence does not establish valid format, mailbox or delivery |
 | Initial-value dependency / downstream-generated value | Information needed for initial identity establishment / information arriving from a later account process | A mapping cannot supply an account that does not yet exist; review onboarding dependencies rather than fabricate email or assume provisioning |
 | Existing-person association / profile eligibility | Proven account ownership / candidate governing profile from associated authoritative accounts | Highest-priority eligible profile governs one identity; changing priority is not a general merge operation for separately created people |
+| Shared identity profile / person record | Population configuration / one represented identity governed by it | Investigating one person does not make a profile edit person-only; verify actual governing profile and associated authoritative accounts |
+| Profile mapping / tenant attribute definition | Per-profile value selection or calculation / shared identity field definition | Adding or deleting custom identity attributes affects all profiles; an unmapped field in one profile is not proof it is unused globally |
+| Profile lifecycle requirement / access profile / connector operation | State-linked access intent / bundle of entitlements on one source / supported execution | State name or identity profile presence does not prove entitlement delivery; identity state is separate from lifecycle state and target enabled flag |
+| Preview / saved configuration / applied identity processing | Proposed selected-person values / persisted intended settings / evaluation of affected identities and access | One successful preview does not certify population coverage; Apply Changes can affect access and is not merely a screen refresh |
 
 ## Source anchors
 

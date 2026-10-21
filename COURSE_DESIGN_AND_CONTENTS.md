@@ -191,9 +191,10 @@ Aggregation modes and their limitations are explicit subjects because they do no
 
 - 6.1 [How an authoritative source and an identity profile participate in identity creation.](lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.md) **Authored:** IDN-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-Lessons 6.2-6.8 remain planned.
+- 6.2 [What an identity profile controls.](lessons/IDN-002_What_an_Identity_Profile_Controls.md) **Authored:** IDN-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-- 6.2 What an identity profile controls.
+Lessons 6.3-6.8 remain planned.
+
 - 6.3 Mapping account information into identity attributes.
 - 6.4 Choosing the source of each attribute.
 - 6.5 Multiple identity profiles, population boundaries, and priority.

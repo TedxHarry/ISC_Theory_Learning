@@ -1,0 +1,14 @@
+Employees identity profile
+  |
+  +-- Authoritative source
+  |   PeopleCore employee population
+  |
+  +-- Identity attribute mappings
+  |   Department input and other values
+  |
+  +-- ISC sign-in/security settings
+  |   Supported authentication path
+  |
+  +-- Lifecycle configuration
+      State mapping and enabled states
+      Access requirements and actions

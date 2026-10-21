@@ -1,0 +1,20 @@
+PeopleCore workerState: active
+              |
+              | Employees profile mapping
+              v
+Lifecycle State value: active
+              |
+              | matches enabled state
+              v
+Active state's configured access
+Benefits Self-Service access profile
+              |
+              | identity processing
+              | evaluates required access
+              v
+Supported provisioning operation
+BenefitsDesk account bd-62002
+              |
+              | verify operation and target
+              v
+Does benefits-selfservice exist?

@@ -316,3 +316,10 @@ lessons:
     source: "lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.md"
     url: "/lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.html"
     description: "Trace authoritative worker records, identity profiles, required values and separate account-ownership and access outcomes."
+  - id: IDN-002
+    module: identities
+    placement: "Module 6.2"
+    title: "What does an identity profile actually control?"
+    source: "lessons/IDN-002_What_an_Identity_Profile_Controls.md"
+    url: "/lessons/IDN-002_What_an_Identity_Profile_Controls.html"
+    description: "Separate shared identity mappings, tenant sign-in settings and lifecycle access requirements from supported execution and verified outcomes."
