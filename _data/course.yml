@@ -351,3 +351,10 @@ lessons:
     source: "lessons/IDN-006_Required_Attributes_Identity_Exceptions_and_Incomplete_Information.md"
     url: "/lessons/IDN-006_Required_Attributes_Identity_Exceptions_and_Incomplete_Information.html"
     description: "Trace required-value failures and username collisions, distinguish incomplete identities from other errors, and verify cause-based corrections."
+  - id: IDN-007
+    module: identities
+    placement: "Module 6.7"
+    title: "The mapping is correct. What else will change?"
+    source: "lessons/IDN-007_Changing_Mappings_and_Understanding_Downstream_Effects.md"
+    url: "/lessons/IDN-007_Changing_Mappings_and_Understanding_Downstream_Effects.html"
+    description: "Trace shared mapping dependencies, processing and downstream decisions, then verify target outcomes and plan recovery beyond restoring configuration."

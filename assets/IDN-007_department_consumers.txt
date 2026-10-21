@@ -1,0 +1,14 @@
+Proposed identity Department = ENG
+  |
+  +-> Engineering Worker role condition
+  |     still expects Engineering
+  |       -> criterion no longer matches
+  |       -> reassess role/access assignment
+  |
+  +-> configured directory attribute sync
+        identity Department -> department
+          -> attempt target value ENG
+
+Human checks:
+  intended role membership and access?
+  approved directory format and result?

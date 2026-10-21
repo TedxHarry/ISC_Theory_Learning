@@ -2261,6 +2261,70 @@ Current official documents use Identity Services / Human Fabric naming in places
 
 Learner questions and worked answers remain in the lesson. No beginner read-through or transfer-test result is claimed.
 
+## IDN-007
+
+### Revision, review and limits
+
+Revision 1.0, Module 6.7, **The mapping is correct. What else will change?** Documentation checked October 21, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. All earlier lessons, navigation behavior and the complete attribute tracing aid revision 1.0 are unchanged.
+
+Independent fictional example: employee Devi 67007, WorkforceHub Production authoritative for Employees, worker account wf-67007 departmentCode ENG, Corporate Directory cd-67007 department Engineering. Account associations and required identity values are assumed correct. The original identity Department mapping reads the directory label; the proposal reads HR's code. The business department has not changed, only representation. Engineering Worker initially compares Department with Engineering. Directory attribute sync is explicitly enabled for department with an eligible direct identity Department mapping in its Create Account definition.
+
+The dependency diagram illustrates the uncoordinated risk while the old role criterion remains. The coordinated example supplies approved ENG consumer logic and approved target code format, identity ENG and correct role, unchanged manager/lifecycle active, but a denied directory write and actual directory Engineering. The rollback diagram is explicitly a different variation: the directory write succeeds, ENG is read into ISC, and restoring the old directory-based mapping now reads ENG rather than Engineering. Administration account cd-admin-67007 appears only in the changed multi-account case; OPS supplies a negative role test. No source/profile/transform/role/manager/lifecycle/sync/account/permission/deletion/target mutation is performed.
+
+### Official sources and claim mapping
+
+| Source | Sections or behavior checked | Lesson boundary |
+|---|---|---|
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Per-profile mappings from multiple sources, Preview, shared custom attribute definitions, required fields, impact of deleting attributes | Mapping edit, mapping removal and global definition deletion are distinct. One selected preview is a calculation, not population/consumer delivery validation. Required inputs and global uid uniqueness remain relevant. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Mapped values, manager/lifecycle/role evaluation, manual profile Apply Changes scope versus role/application list scope, selected-identity processing, event/scheduled paths, monitoring and view synchronization | No fixed private execution order, isolated staging mode, atomic multi-configuration transaction or guarantee that all saved configuration waits safely behind one button. Selected processing scopes one request, not all activity. Processing does not validate successful provisioning delivery. |
+| [Automating Role Assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Identity-attribute criteria, Equals behavior, role reevaluation after configuration/identity changes, automatic role/access-profile removal when criteria no longer match | Engineering versus ENG are different strings, not a case-only comparison. An unchanged criterion no longer matches; actual removal/provisioning and overlapping access reasons require separate evidence. Coordinated example updates the criterion rather than claiming the code automatically retains the role. |
+| [Managing Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Standard roles grouping access profiles and standing entitlements; direct role access relationships | Supports the introductory role definition. Membership-condition changes in this lesson are not conflated with removing items from a role definition and its separate propagation controls. |
+| [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Eligible direct identity mappings in Create Account definition; existing correlated accounts; all correlated accounts per source; mapped null propagation; ongoing enforcement | Main example explicitly supplies eligible mapping and active identity. Sync is not a missing-account creation path, read aggregation, per-normal-account-only write or proof of target acceptance. Mapped null is distinguished from omission/unmapping. |
+| [Configuring Manager Correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html) | Profile/source configuration, matching manager reference, recalculation, changed non-null unmatched input retaining current manager versus null outcome | Actual relationship must be checked, not just a mapped label. The lesson does not replace the documented manager-specific source/priority resolution with a single generic profile assumption. Main Department example supplies unchanged manager. |
+| [Setting Up Lifecycle States](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Profile-specific state technical names and enabled state, date/calculation effects, account/access actions, identity-state participation, deletion warning | Main lifecycle remains active; Department does not automatically change every lifecycle. Source account enabled status differs from identity state. No universal action replay, undo or account restoration is promised. |
+| [Reference transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/reference/) | Reusing an existing transform within another transform, maintained logic propagating to referencing implementations | Inspect actual references and saved definitions. Identical display names do not prove sharing; updating one local mapping is not assumed to update independent copies. Reevaluate affected consumers with the appropriate processing scope. |
+| [Monitoring Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Provisioning Activity report, individual event details, account activity and errors | Execution records describe attempted work/results. Supplied direct target observation establishes actual receiving value. A denied write is not cured by editing correct HR data or blindly rerunning all identities. |
+
+The initially attempted monitoring.html URL is not current (404); the official navigation led to tracking.html, which was read and is the reference retained here. Current documentation uses Identity Services / Human Fabric naming in places; the course keeps the requested ISC title without implying licensing/feature availability for every tenant.
+
+### Engineering reasoning and excluded guarantees
+
+- Main department change is a representation migration, not a job transfer. Identical business meaning does not make old/new text comparisons equivalent or approve the receiving format in every project.
+- Dependency review follows actual inputs, referenced calculations, consumers and writers. It does not claim every mapping change triggers every manager/lifecycle/role/integration branch.
+- Profile mappings are shared. Preview and selected-person processing are not a private canary deployment. A limited real rollout needs supported approved scope and coordination with other event/scheduled processing.
+- A transition can temporarily contain old values with new criteria or the converse. Dual-value acceptance is only a conditional design option requiring population approval, not a default product feature or blanket safe rollout recipe.
+- Required field presence is not full business validity. Missing/future inputs and multiple-account cases test assumptions; the sample table is not a record of tenant validation.
+- The null write and all-correlated-account behavior are specifically attributed to configured attribute sync. They are not borrowed from provisioning account selection or applied to sources with no eligible sync path.
+- A correct identity value can coexist with target failure. Repair permission/delivery at the failing boundary rather than altering authoritative business facts to make a stale receiving copy appear consistent.
+- The successful-sync rollback variation requires both target change and collection of changed data. That condition is separate from the supplied denied-write outcome.
+- Configuration restoration is not reversal of changed input, completed provisioning, notifications or intervening legitimate business updates. Compensating recovery is new approved action; no universal rollback, cancellation, harmless retry or deleted-account/history restoration is asserted.
+- User Name, Work Email and Last Name remain required; additional manager/lifecycle/consumer correctness and actual target state need their own evidence.
+- No live changes, connector permission grants, rollback commands, deletions or production rollout are executed.
+
+### Diagrams and presentation checks
+
+- [Department consumers](../assets/IDN-007_department_consumers.txt), maximum 44 characters: changed identity code branches to an unchanged role comparison and separately configured directory sync, followed by human checks.
+- [Restoring a mapping](../assets/IDN-007_restoring_a_mapping.txt), maximum 41 characters: old directory label path; a separate successful new-code sync and collection; restored old mapping now reading changed input; human recovery.
+- Both editable assets match the inline blocks. Nearby prose identifies actor, arrow meaning, conditions, independent branches and omitted private execution timing.
+- Two two-column tables hold selected configuration and sample test conditions. Complete live text, diagrams, tables, all forty-five routes/navigation and unchanged downloadable guide are publication checks; diagrams/table readability is checked separately on the live page.
+- Learner body contains no external citations, course links or source lists. Assessment metadata remains here.
+
+### Assessment intent and acceptable reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. Correct code, old comparison | Representation and consumers | ENG differs from Engineering, so update/test the approved condition and negative case; don't approve solely from calculated output | Correct field output means all access decisions remain correct | Role assignment; mappings |
+| 2. One preview | Shared scope and assumption coverage | Check missing codes/account selection and actual affected population before broad processing; preview isn't a scoped deployment | One sample certifies whole profile or isolates mapping | Profiles; processing |
+| 3. Administration account | Sync scope differs from other selection | Sync updates both correlated directory accounts; assess intended account-class behavior and configuration | Only the account visible in preview is affected | Attribute sync |
+| 4. Optional mapped null | Null-write dependency | Configured sync propagates mapped null; inspect target attempt/result and approved design | Optional identity field is protected from account writes | Attribute sync |
+| 5. Denied write | Calculation versus delivery | Inspect permission/target response and supported recovery; correct HR/input needn't be rewritten | Repeated mapping edits cure external denied operation | Tracking; processing delivery limit |
+| 6. Old manager retained | Relationship evidence and mismatch behavior | Retained manager can coexist with evaluated non-null unmatched input; inspect exact input/configuration/relationship | Retained display proves no processing or a successful new match | Manager correlation |
+| 7. Reused calculation | Real reference versus isolated copy | Find all Reference consumers, expected values and processing scopes; verify definitions | Change to employee-needed logic is automatically employee-only | Reference transform |
+| 8. Old mapping reads new input | Configuration versus state restoration | Successful sync plus collection changed the old input; reconcile writers/consumers and approved compensating actions | Restoring definition universally reverses external effects | Mappings; attribute sync; lifecycle cautions |
+| End-date transfer / teach-back | Apply dependency review to a different risk | Establish approved versus proposed date meaning, timing/format, actual lifecycle/access consumers, population/test cases and action-specific recovery; separate preview/applied/target evidence | Correct-looking preview date proves approved safe lifecycle rollout | Profiles; processing; lifecycle; tracking |
+
+Questions and worked reasoning remain in the learner file. Beginner comprehension and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -1,0 +1,19 @@
+Before the change:
+  Directory department Engineering
+    -> old mapping
+      -> identity Department Engineering
+
+Variation: new mapping and sync succeed
+  HR departmentCode ENG
+    -> identity Department ENG
+      -> directory department ENG
+        -> changed account read into ISC
+
+Restore the old mapping:
+  Directory department now ENG
+    -> old mapping
+      -> identity Department ENG
+
+Human recovery:
+  reconcile inputs, consumers and targets
+  verify approved state after correction

@@ -201,9 +201,10 @@ Aggregation modes and their limitations are explicit subjects because they do no
 
 - 6.6 [Required attributes, identity exceptions, and incomplete information.](lessons/IDN-006_Required_Attributes_Identity_Exceptions_and_Incomplete_Information.md) **Authored:** IDN-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-Lessons 6.7-6.8 remain planned.
+- 6.7 [Changing mappings and understanding their downstream effects.](lessons/IDN-007_Changing_Mappings_and_Understanding_Downstream_Effects.md) **Authored:** IDN-007 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-- 6.7 Changing mappings and understanding their downstream effects.
+Lesson 6.8 remains planned.
+
 - 6.8 Tracing an incorrect identity value back to its origin.
 
 **Outcome:** Explain why an identity exists, which profile governs it, and where its attributes come from.
