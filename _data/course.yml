@@ -193,3 +193,11 @@ lessons:
     source: "lessons/SRC-003_Reading_a_Connector_Capability_Matrix.md"
     url: "/lessons/SRC-003_Reading_a_Connector_Capability_Matrix.html"
     description: "Distinguish supported operations, object types, target dependencies, permissions, configuration, and verified outcomes."
+
+  - id: SRC-004
+    module: sources
+    placement: "Module 4.4"
+    title: "Account schemas, identifiers, and display attributes"
+    source: "lessons/SRC-004_Account_Schemas_Identifiers_and_Display_Attributes.md"
+    url: "/lessons/SRC-004_Account_Schemas_Identifiers_and_Display_Attributes.html"
+    description: "Trace account fields, selected identification and naming attributes, ownership matching, and safe schema changes."

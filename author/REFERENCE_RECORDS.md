@@ -1225,6 +1225,49 @@ Employee number 43003 belongs to this independent purchasing example. fulfill-43
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## SRC-004: Account schemas, identifiers and display attributes
+
+- Revision: 1.0. Course placement: Module 4.4.
+- Documentation checked: October 21, 2026. Official account-schema definitions/designations, discovery, subsequent collection, audit events and post-aggregation change warnings; Delimited File schema/account attributes; source-schema model properties; correlation and identity-profile mappings were freshly checked.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 44004, InvoiceTrack, both account records, integration contract, I-44, office mapping defect/correction and every outcome are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: account-schema meaning, field/value relationships, designated ID/Name, ownership matching and safe changes. Complete type/format rules, entitlement-schema linking, aggregation modes, correlation criteria/order and provisioning remain their primary lessons. No API request, schema edit or migration is performed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Primary account-schema definition and designated Account ID/Account Name attributes; support-dependent discovery/manual definition, subsequent aggregation following saved schema, and schema-change audit events. The lesson preserves the explicit warning that Account Name is immutable and post-aggregation designation changes can create duplicate accounts/identities, while Account ID changes can break references. It does not call displayAttribute purely cosmetic or promise identifier changes are harmless. No fixed missing-key rejection, duplicate-winner, automatic reprocessing or universal rename algorithm is invented. |
+| [Schema model](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/schema/) | Technical property meanings: schema id identifies the schema; identityAttribute and displayAttribute select named attributes for object identification/display. The selected two-property JSON fragment is explanatory, not a complete request, endpoint tutorial, identity-profile mapping or account-correlation configuration. Native identity/UUID equivalence and internal storage algorithms aren't asserted. |
+| [Delimited File account attributes](https://documentation.sailpoint.com/connectors/delimited_file/help/integrating_delimited_file/account_attributes.html) | Concrete connector fields and designated id/name defaults; schema replacement preserves settings for retained attributes and conditionally removes attributes absent from a newly discovered/uploaded schema when not used elsewhere. This supports dependency review, not universal schema-discovery or replacement behavior. Field names in InvoiceTrack are fictional, not Delimited File defaults. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Separate matching/assignment of account and identity attribute values under configured correlation. Both example accounts share a supplied employee reference and associate to one unambiguous existing identity; they don't merge into one account or receive missing account keys from correlation. Full criterion ordering, case behavior and reaggregation settings aren't taught here. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Identity-profile responsibilities and identity-value mappings differ from source-account schemas; identity attributes can map from source account attributes with supported transforms/rules. Adding an account field isn't an instruction to overwrite identity department or confer authoritative source responsibility. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supporting established distinction between representing collected data and performing supported external account/access changes. Schema definition and audit evidence don't prove target writes. The core account-changing definition was rechecked on October 21; no new provisioning operation or tenant test is claimed. |
+
+### Diagram, data and reasoning checks
+
+The two editable text diagrams match their inline counterparts after trailing-whitespace normalization. Maximum line widths are 37 and 38 characters. The first is a read/mapping/representation relationship, not a private pipeline. The second depicts two supplied account-to-person associations, not merging or an invented matching score.
+
+Employee number 44004 is shared by inv-acct-44004 and inv-admin-acct-44004. Their selected Account Name values are inv-44004 and inv-admin-44004; fullName = Devi Rao is non-designated descriptive data. I-44 is a non-runnable identity-ID stand-in. BLR is the supplied officeCode, 044 the textual costCentre and invoice-read/invoice-support the respective groups. The office schema definition exists while a wrong mapping reads missing siteCode; a fictional approved correction maps officeCode to office and subsequent supported collection supplies BLR. These facts are conditional teaching inputs, not observed tenant behavior.
+
+The payroll transfer's duplicate local u17 keys belong to different people in two regional exports. Correlating them to different identities doesn't resolve conflicting account identification inside the proposed combined source. Separate supported contexts or deliberately designed stable keys can be acceptable design alternatives, not automatic repair/migration instructions.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| One employee, two accounts | A person key is automatically an account key | Preserve distinct supported account identifiers; use the separately configured employee-reference comparison for ownership. The supplied two accounts need not become two people. |
+| Repeated descriptive full name | A duplicate friendly label proves duplicate account identification | Inspect actual selected Account ID/Name fields and values; fullName is non-designated in this example. It isn't permission to use repeated fullName as Account Name. |
+| Office field defined but empty | Defining/re-adding a field supplies a missing or wrongly mapped value | Trace external officeCode, wrong siteCode input, represented office and subsequent collection. The supplied defect concerns mapping, not absent schema or unavailable external data. |
+| Person reference without account key | Correlation manufactures identifiers | Investigate source data, read output and selected schema mapping under connector requirements. No universal reject/skip/overwrite result is asserted. |
+| Account Name redesignation | displayAttribute means harmless cosmetic editing | Preserve documented post-aggregation risks; assess naming/ID dependencies and supported change handling rather than relabeling the designation casually. Primary schema reference above. |
+| New schema field | Schema edit creates an external field and refreshes every existing account | Establish external value, read exposure, mapping and appropriate collection; external creation/update is a separate capability. No save-equals-reaggregate assumption. |
+| Account department collected | Account and identity fields with the same English name are one value | Inspect identity-profile mapping and processing separately; account representation isn't automatic identity override or target provisioning. |
+| Payroll-feed transfer | Regional key overlap can be fixed later by person correlation; surname is safe naming | Establish source boundaries and stable supported identification/naming with representative data; separate ownership matching; compare schema/mapping/read/dependency evidence and post-aggregation change risks. Accept supported separate contexts or a deliberately validated key design when applicable, not a universal concatenate/reset recipe. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 
 ## ARC-005
 

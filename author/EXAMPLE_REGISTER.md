@@ -1,6 +1,6 @@
 # Example register
 
-Updated: October 20, 2026.
+Updated: October 21, 2026.
 
 Each lesson establishes an independent fictional situation. Devi is a reusable teaching name, not a continuing biography across the course. An employee number is stable within its lesson and any deliberately linked continuation. New independent lessons receive new identifiers.
 
@@ -30,6 +30,7 @@ Each lesson establishes an independent fictional situation. Devi is a reusable t
 | SRC-001 | Module 4.1 | 41001 | West warehouse coordinator has standard and approved admin accounts; DispatchHub production has 120 accounts, with 110 human accounts in agreed scope across 100 people; wrong East-only selection collects 70 and omits 40 West accounts; approved correction includes both Devi records | depot-41001 and depot-admin-41001 are distinct production account identifiers, both carrying employee number 41001; svc-dispatch-isc integration actor; Dispatch-Prod versus Dispatch-Test; S-41P/S-41T are non-runnable source-ID stand-ins; ten service accounts outside this source require separate accountable treatment; payroll-export transfer is independent |
 | SRC-002 | Module 4.2 | 42002 | Contractor-to-employee overlap; one correctly associated identity initially uses Contractors priority 10 over Employees 20, then approved order selects Employees; department changes from Vendor Services to Finance while corporate email remains directory-sourced | emp-42002, ctr-42002, corp-42002 and expense-42002 are distinct source accounts; I-42 is a non-runnable identity-ID stand-in; devi42002@corp.example is fictional; all four account associations are supplied, not inferred from equal employee numbers; authentication and write authority stay separate; acquisition transfer is independent |
 | SRC-003 | Module 4.3 | 43003 | Purchasing joiner needs a new FulfillHub account plus existing buyers membership; creation/add/department update are supplied verified examples, membership-removal API absent, disable endpoint denied and delete unconfigured; later move needs membership removal without losing the whole account | fulfill-43003 recipient; svc-fulfill-isc integration actor; FulfillHub Production source; buyers is an existing group, not a newly created object; 403 with explicit target permission message and enabled account is fictional; payroll-proposal transfer is independent |
+| SRC-004 | Module 4.4 | 44004 | Billing-operations employee has legitimate standard/admin InvoiceTrack accounts sharing an employee reference but retaining distinct accountKey/loginName values; office input incorrectly mapped from missing siteCode, then approved officeCode-to-office correction represented after collection | inv-acct-44004 and inv-admin-acct-44004 account keys; inv-44004 and inv-admin-44004 designated account names; I-44 non-runnable identity-ID stand-in; fullName Devi Rao is descriptive, not designated Account Name; BLR officeCode, 044 costCentre, invoice-read/invoice-support groups; payroll-feed u17 overlap transfer is independent |
 
 Manager numbers, request IDs, and transfer-case account IDs represent different objects. They don't need to contain the employee number.
 

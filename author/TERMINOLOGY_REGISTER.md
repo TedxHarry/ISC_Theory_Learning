@@ -1,6 +1,6 @@
 # Terminology register
 
-Updated: October 20, 2026.
+Updated: October 21, 2026.
 
 This is an author maintenance aid for the meanings used in the current lessons. It is the seed for the later learner glossary, not an implemented glossary or tooltip system. Existing claim verification dates and applicability limits remain in REFERENCE_RECORDS.md.
 
@@ -164,6 +164,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Disable / enable / delete / unlock / password change | Distinct supported account effects with target-specific conditions | Deprovisioning isn't a universal delete operation; disabling needn't erase memberships or end every session; imported status isn't the external change |
 | Operation-readiness review | Human review of target effect, support, API/runtime, configuration/input, authority and outcome evidence | Dependency arrows aren't a private ISC execution sequence; test-connection success isn't an operation-by-operation acceptance test |
 | Explicit fulfillment route | Approved automatic, manual or supported ticket-coordinated route to the intended target effect | Failed direct writes don't guarantee automatic task fallback; certification decisions and completed tasks aren't independent target-state measurements |
+| Schema definition / collected account value | Field and designated-use configuration versus information on a particular represented account | Defining office doesn't populate it, create an external field or prove new collection; schema-change audit evidence isn't target-change evidence |
+| Schema identityAttribute / displayAttribute | Attribute names used for account identification / designated naming-display input | Values select fields, not a particular employee or account; identityAttribute isn't person-correlation configuration or an identity-profile selection |
+| Designated Account Name / descriptive fullName | Schema-selected account-naming attribute versus an ordinary descriptive value in the example | Account Name isn't an unrestricted cosmetic label; post-aggregation designation changes have documented duplicate/reference consequences |
+| Account key / person reference | Distinguishes represented accounts in intended source context / connects accounts to their owner under configured matching | Two legitimate accounts can share employeeNumber; correlation doesn't supply missing keys or resolve conflicting account identification |
+| Schema discovery / downstream refresh | Supported import of external field definitions versus subsequent collection/processing | Discovery isn't universally supported or a business identifier decision; saving a schema isn't every account refreshed; connector-specific replacement/removal behavior matters |
+| Composite account key / source boundary | Deliberately agreed combination of identifying components / configured system and environment scope | Neither concatenation nor changing source boundaries is an automatic safe migration for overlapping identifiers on an existing source |
 
 ## Source anchors
 

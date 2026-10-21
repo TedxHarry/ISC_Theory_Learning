@@ -1,0 +1,7 @@
+[Account inv-acct-44004]
+     employeeNumber: 44004
+                \
+                 > [ISC identity I-44]
+                /
+[Account inv-admin-acct-44004]
+     employeeNumber: 44004

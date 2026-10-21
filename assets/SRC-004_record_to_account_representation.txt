@@ -1,0 +1,11 @@
+[InvoiceTrack account record]
+              |
+   supported read and field mapping
+              |
+              v
+[Values in source account attributes]
+              |
+   interpreted under account schema
+              |
+              v
+[ISC representation of that account]
