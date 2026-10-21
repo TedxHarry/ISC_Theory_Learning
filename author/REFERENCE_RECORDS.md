@@ -1179,6 +1179,52 @@ Employee number 42002 is a shared person reference, while emp-42002, ctr-42002, 
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## SRC-003: Reading a connector capability matrix
+
+- Revision: 1.0. Course placement: Module 4.3.
+- Documentation checked: October 20, 2026. Current ISC Active Directory, Delimited File and Web Services SaaS feature documentation; Web Services SaaS operation configuration and test connection; AD IQService prerequisites; source setup modes; provisioning and activity evidence were freshly checked. Supporting source-runtime, correlation, access-object and certification meanings retain the same-day checks mapped in earlier records.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 43003, FulfillHub, source/account/integration labels, buyers, target API limitations, operation configuration and every result are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: interpret support at operation/object level and establish project-readiness dependencies. This isn't a target API implementation guide, an exhaustive connector catalog, permission-grant recipe or source-mode conversion procedure. Detailed schemas, read modes, provisioning design and fulfillment configuration remain their own primary lessons.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Active Directory supported features](https://documentation.sailpoint.com/connectors/active_directory/help/integrating_active_directory/supported_features.html) | Real matrix-reading example: User Features distinguishes user accounts, contacts and service accounts; Enable/Disable is marked for user accounts and N/A for contacts. Notes and activation conditions qualify features. No claim that a user-account capability applies to contacts, groups or another connector family; no account-deletion claim is inferred from the page's differing object-specific entries. |
+| [Delimited File supported features](https://documentation.sailpoint.com/connectors/delimited_file/help/integrating_delimited_file/supported_features.html) | Custom account schema, loading accounts and loading entitlements establish representation/read responsibilities. The lesson doesn't convert file ingestion into automatic external account or membership writes. |
+| [Delimited File account attributes](https://documentation.sailpoint.com/connectors/delimited_file/help/integrating_delimited_file/account_attributes.html) | Optional represented enabled/disabled status can come from file data/configuration. The learner explanation separates represented status from an operation that disabled the original target account; no Build Map rule or schema-edit recipe is given. |
+| [Web Services SaaS supported features](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/supported_features.html) | Selected connector family offers account/entitlement reads, Get Object, delta and provisioning operation types including create/update, entitlement add/remove, enable/disable, delete, unlock and password change. These framework capabilities are not claims about the fictional FulfillHub API or automatic configuration. |
+| [Web Services SaaS Add Operations](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/add_operations.html) and [General Information](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/general_information.html) | Operation-specific target/destination/method/input and response configuration is required; selecting a supported operation type isn't implementation of an unavailable target API. Detailed HTTP syntax, cURL, GraphQL, endpoint chaining and customizers are outside this lesson. |
+| [Web Services SaaS Test Connection](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/test_connection.html) | Test Connection has its own operation configuration and expected result. Its success establishes the exercised test, not a verification of every proposed create/update/remove/disable/delete behavior. |
+| [Active Directory IQService prerequisite](https://documentation.sailpoint.com/connectors/active_directory/help/integrating_active_directory/iqservice_as_a_prerequisite.html) and [AD prerequisites](https://documentation.sailpoint.com/connectors/active_directory/help/integrating_active_directory/prerequisites.html) | Product feature support does not provide required components, secure connectivity or target privileges. IQService requirements are identified for AD provisioning/password work; the lesson doesn't add IQService to Web Services SaaS or repeat installation/permission instructions. |
+| [Configuring sources](https://documentation.sailpoint.com/saas/help/sources/config_sources.html) | Read-only versus supported deep-governance setup; Quick Compliance read-only restriction; enabling the documented deep-governance conversion cannot be undone. No source mode is changed and it isn't described as a harmless troubleshooting toggle. Source authority is separately tied to identity profiles, not a write upgrade. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Source creation inputs, supported access-triggered account creation, configuration features versus actual behavior, direct versus disconnected/manual fulfillment. A missing location is a conditional input example, not a universal required ISC account field. No universal retry, rollback or automatic failure-to-task conversion is asserted. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Account Activity/provisioning details and manual tasks have different evidentiary scopes. A recorded decision or completed task is not independent measurement of target membership; target and later collection must be interpreted in context. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) and [understanding certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html) | Supporting same-day checks retained from earlier authored lessons: selected runtime/source representation, configured account ownership association and reviewer decisions. These don't fill target API gaps or prove completed external changes. |
+
+### Diagram and example checks
+
+The two inline text diagrams match their editable assets after trailing-whitespace normalization, with maximum line widths 41 and 39 characters. The readiness diagram is a human dependency review, not undocumented backend order. The change/collection diagram separates coordinated create/add effects from later observation; it doesn't imply an all-or-nothing transaction or automatic reversal.
+
+Employee number 43003 belongs to this independent purchasing example. fulfill-43003 is the target account; svc-fulfill-isc is the integration actor; buyers is an already-existing target group and Buyer its teaching label. The eight-row matrix separates framework support from fictional project evidence. Reads/create/department update/add have supplied positive evidence. Remove lacks a supported target API; disable has an explicit target 403 permission message and an enabled account; delete is unconfigured and untested. No real operation, source mode, endpoint, permission or fulfillment configuration was changed.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Existing groups appear in ISC | Reading groups or assigning membership implies group creation | Verify the operation on the intended group object; read/account-membership support doesn't establish group creation. Operation/object matrix references above. |
+| Accounts created but disable denied | One write's success proves all permissions, or a denied action proves unsupported | Distinguish documented capability and configured operation from the specific target authority failure; the explicit message and unchanged account support the supplied conclusion, not any bare 403 globally. |
+| Removal operation but no target API | Selecting an operation type invents target behavior or automatic manual fallback | Establish a supported target path or explicit approved alternative; otherwise the requirement remains open. Web Services configuration and fulfillment references above. |
+| File reports disabled | Represented status means the import performed a target disable | Inspect target state and actual change activity separately; file data is an observation/assertion. Delimited File references above. |
+| Department updated | Update Account proves every field can be changed | Check field-specific target/connector constraints, input, authority and identifier-change impact. No untested identifier rename is declared supported. |
+| Supported but untested enable | Documented capability alone means ready, or no test means unsupported | Keep product support separate from configuration and verification; identify missing controlled evidence. Feature/configuration references above. |
+| Reviewer revoked but Buyer remains | Approval/revoke decision equals completed external removal | Follow the designed fulfillment route and owner, reconcile target membership and delivery evidence; don't infer deletion or session termination. Certification and tracking references above. |
+| Payroll-proposal transfer | Account load and connection test prove every proposed write | Split requirements by object/operation/field; check correct ISC connector and conditions, target paths, components, configuration, input and authority, then appropriate outcome evidence. Salary/deletion/password requirements need explicit scope and responsible-system checks; missing implementation stays unresolved or receives an approved alternative. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 
 ## ARC-005
 

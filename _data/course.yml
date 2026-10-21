@@ -185,3 +185,11 @@ lessons:
     source: "lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.md"
     url: "/lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.html"
     description: "Separate identity origin, overlapping profile priority, attribute inputs, authentication, and external change authority."
+
+  - id: SRC-003
+    module: sources
+    placement: "Module 4.3"
+    title: "Reading a connector capability matrix"
+    source: "lessons/SRC-003_Reading_a_Connector_Capability_Matrix.md"
+    url: "/lessons/SRC-003_Reading_a_Connector_Capability_Matrix.html"
+    description: "Distinguish supported operations, object types, target dependencies, permissions, configuration, and verified outcomes."

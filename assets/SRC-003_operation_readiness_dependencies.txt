@@ -1,0 +1,11 @@
+[Required effect on the intended object]
+                  |
+[Correct connector and operation support]
+                  |
+[Target API and required runtime path]
+                  |
+[Source configuration and usable inputs]
+                  |
+[Appropriate target authority and scope]
+                  |
+[Controlled result and outcome evidence]

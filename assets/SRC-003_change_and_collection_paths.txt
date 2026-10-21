@@ -1,0 +1,11 @@
+[ISC: approved Buyer assignment]
+                |
+[Configured create and add operations]
+                |
+                v
+[FulfillHub: fulfill-43003 + buyers]
+                |
+      later supported account read
+                |
+                v
+[ISC: collected account and membership]
