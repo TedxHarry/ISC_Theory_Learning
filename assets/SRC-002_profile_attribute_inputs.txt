@@ -1,0 +1,9 @@
+[Employees profile mappings for I-42]
+                  |
+        +---------+----------+
+        |                    |
+        v                    v
+   [department]           [email]
+        |                    |
+        v                    v
+ [HR: Finance]    [Directory: corporate mail]

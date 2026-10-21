@@ -1133,6 +1133,53 @@ Questions and worked reasoning remain in the learner file. Source evidence, asse
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## SRC-002: Authoritative and non-authoritative source responsibilities
+
+- Revision: 1.0. Course placement: Module 4.2.
+- Documentation checked: October 20, 2026. Identity-profile selection, creation-order defaults, mapped inputs, required attributes and exceptions, profile deletion, correlation, identity processing, PTA and authoritative-account removal were freshly checked against official ISC documentation.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 42002, all four accounts, I-42, profile priorities, configured mappings, the corrected association and resulting values are supplied fictional facts.
+- Learner validation and formal publication approval: pending. Working-edition deployment is a separate check.
+- Scope: source responsibility and the causal distinction between identity origin, account ownership, applicable profile, attribute inputs, authentication and external changes. Detailed profile implementation, manager correlation, transforms, aggregation/deletion settings, lifecycle design and provisioning remain their own primary lessons.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Primary authority for one profile per identity; highest-priority applicable profile among authoritative sources holding its accounts; lower numerical values mean higher precedence; creation-order default; mappings can select other source/account attributes and supported calculation logic. Required uid/email/lastname and unique uid across profiles; email non-null check does not validate email format. Mapping preview, exceptions, Needs Processing and supported application of changes distinguish configuration from observed outcomes. Profile deletion does not delete the source or external accounts, can make the source non-authoritative and remove identities unless reassignment is possible, and can leave accounts uncorrelated. No deletion recipe or fixed processing latency is taught. |
+| [Configuring sources](https://documentation.sailpoint.com/saas/help/sources/config_sources.html) | Authoritative source designation requires the profile/mapping arrangement to complete identity-onboarding configuration. Source capability and read-only/provisioning configuration are separate from authority. No real setting is changed. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured matching associates source accounts with existing identities; unmatched records can remain uncorrelated. The four example associations are supplied facts, not a claim that equal names or employee references automatically merge records. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Collected account relationships and uncorrelated-account shadow identity representation. A shadow placeholder is distinguished from successful authoritative personnel onboarding; no one-shadow-per-account count or private storage model is invented. |
+| [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html) | Supported account reassignment and duplicate-identity correction have their own prerequisites and consequences. Profile priority is not presented as an identity-merging operation or a correction recipe. |
+| [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Processing evaluates mapped attributes and relevant lifecycle/role/access behavior under documented event/scheduled/manual paths. Starting provisioning does not validate its successful completion. No universal schedule, internal queue, retry order or atomic migration is claimed. |
+| [Configuring pass-through authentication](https://documentation.sailpoint.com/saas/help/common/pta.html) | Directory Connection/PTA selects a supported credential-check source and uses relevant aggregated accounts. It need not be the authoritative identity-origin source. The fictional example assumes a supported configured connection and one intended directory account, not automatic SSO or credential fallback to HR. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Authoritative-account removal under supported full-aggregation/account-deletion conditions can lead to reassignment and recalculation when another authoritative account remains; otherwise deletion/hidden handling has conditions and blockers. Status-value changes and temporary outages are not account removal or guaranteed immediate deprovisioning. |
+| [Manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html) | Manager relationships use separately documented matching and profile/source evaluation behavior. The department/email example is deliberately not generalized into a universal rule for manager relationships. Full manager logic is deferred to its dedicated lesson. |
+| [Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html) and [tracking provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Supporting definitions and evidence boundaries: authoritative designation is not connector operation support or target authorization; identity-side calculated values and initiated work do not prove external delivery. |
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Supporting access-profile meaning: a bundle of entitlements from one source, distinct from the identity profile controlling identity attributes/settings. Detailed assignment mechanics are not introduced as part of source authority. |
+
+### Diagram and example checks
+
+The two inline text diagrams match their editable assets exactly after trailing-whitespace normalization. Maximum line widths are 43 and 45 characters. The first represents identity origin versus account association, not execution order; the second follows two configured attribute inputs, not a cross-source priority algorithm.
+
+Employee number 42002 is a shared person reference, while emp-42002, ctr-42002, corp-42002 and expense-42002 are source-specific account identifiers. I-42 is a fictional non-runnable identity-ID stand-in. Both authoritative accounts already belong to I-42. Initial Contractors 10 / Employees 20 selects Contractors; approved Employees 10 / Contractors 20 selects Employees after appropriate processing in the supplied result. Department moves from Vendor Services to Finance; the correct directory-sourced email remains devi42002@corp.example. This is not a universal population-migration guarantee or tenant test.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| HR Finance but Contractors applies | Every authoritative source overrides the identity, or last aggregation wins | Existing same-identity account associations, priority and the applicable department mapping explain Vendor Services; inspect approved order and processing, not rewrite correct HR data. Primary profile and processing references above. |
+| Non-authoritative directory email | Every identity attribute must come from the authoritative source | Supported profile mappings can use the correct directory account without changing its identity-origin role. Primary profile reference above. |
+| Required email missing | Collection success or a lower-priority address implies automatic fallback | Inspect the selected mapping, input and explicitly configured alternatives; resolve the reported required-value exception. No invented automatic per-field cross-profile fallback. |
+| Separate identities | Profile priority merges person records | Priority operates on authoritative accounts already associated with an identity; investigate matching/associations and supported correction separately. Profile and account-management references above. |
+| PTA directory unavailable | HR authority provides alternative credential checking | Check the separately configured authentication dependency and reported result; identity establishment does not bypass it. PTA reference above. |
+| Read-only connector made authoritative | Authority upgrades operation support | Establish supported provisioning/configuration/target privileges; source identity origin doesn't grant writes and can affect unintended populations. Source/provisioning references above. |
+| Employment status changes, account remains | Status changes or outages equal authoritative-account deletion | Check the actual relationship, lifecycle/processing behavior and profile association; no supplied removal means no demonstrated fallback or completed access removal. Profile/loading references above. |
+| Acquisition-design transfer | Aggregation order can define populations, identity ownership and every value | Establish population/overlap/account associations, applicable priority, attribute inputs and required values, explicit fallback where needed, authentication and write paths, change impact and separate identity/target verification. Combines the named documented responsibilities without inventing a migration recipe. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

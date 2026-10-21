@@ -1,0 +1,10 @@
+[Authoritative account + identity profile]
+                    |
+     identity establishment and mappings
+                    |
+                    v
+[ISC person identity]
+                    ^
+     ownership association where matched
+                    |
+[Additional collected application accounts]

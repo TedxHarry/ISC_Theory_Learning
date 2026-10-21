@@ -177,3 +177,11 @@ lessons:
     source: "lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.md"
     url: "/lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.html"
     description: "Define external context, account coverage, data needs, ownership, and supported operation boundaries."
+
+  - id: SRC-002
+    module: sources
+    placement: "Module 4.2"
+    title: "Authoritative and non-authoritative source responsibilities"
+    source: "lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.md"
+    url: "/lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.html"
+    description: "Separate identity origin, overlapping profile priority, attribute inputs, authentication, and external change authority."

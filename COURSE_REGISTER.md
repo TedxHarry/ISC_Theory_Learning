@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Twenty-two complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; **ARC-008, The request was accepted. What actually finished?**, revision 1.0; and **SRC-001, What will this source actually represent?**, revision 1.0.
+The course design and teaching specification are saved. Twenty-three complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; **ARC-008, The request was accepted. What actually finished?**, revision 1.0; **SRC-001, What will this source actually represent?**, revision 1.0; and **SRC-002, Authoritative for what: the person, a value, a login, or a change?**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. That pilot did not itself complete Module 1, Module 2, or the whole course.
 
-The current lesson is SRC-001. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is SRC-002. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 4.1, SRC-001. All eight Module 3 lessons are authored and Module 4 has begun; learner validation and formal publication approval remain pending. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 4.2, SRC-002. All eight Module 3 lessons are authored and Module 4 has begun; learner validation and formal publication approval remain pending. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -43,6 +43,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [ARC-007: ISC sign-in, identity providers, and source passwords](lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.md) | Complete learner-facing lesson for Module 3.7 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [ARC-008: Requesting, executing, and observing work](lessons/ARC-008_Requesting_Executing_and_Observing_Work.md) | Complete learner-facing lesson for Module 3.8 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [SRC-001: Source purpose and represented population](lessons/SRC-001_The_Purpose_of_a_Source_and_Its_Population.md) | Complete learner-facing lesson for Module 4.1 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [SRC-002: Authoritative and non-authoritative source responsibilities](lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.md) | Complete learner-facing lesson for Module 4.2 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -586,9 +587,28 @@ The supplied timeline isn't a latency promise or private queue diagram. Request,
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest under new Module 4; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read SRC-001 and apply feedback to this same file; then author Module 4.2 |
+| Next action | Preserve SRC-001 for feedback and learner validation; SRC-002 was opened following the user's instruction to continue |
 
 Population is a design set, not a newly required ISC object. Read success is not full coverage; matched totals need membership/context checks. Service accounts deliberately outside this source still need accountable treatment. Correcting read scope does not create accounts, supply missing correlation values, authorize writes or establish deletion semantics.
+
+### SRC-002
+
+| Field | SRC-002 |
+|---|---|
+| File | [SRC-002_Authoritative_and_Non_Authoritative_Sources.md](lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.md) |
+| Revision | 1.0 |
+| Course placement | Module 4.2 |
+| Content status | Complete lesson saved; authoritative/profile-backed identity establishment, non-authoritative accounts and shadow placeholders, overlapping account associations and profile priority, cross-source attribute mappings, required values, authentication, provisioning and removal boundaries |
+| Author review | October 20, 2026; first-use explanations, independent Devi transition, priority 10/20 before-and-after trace, two diagrams, two tables, seven worked cases, acquisition-design transfer and mentor narration checked |
+| Documentation check | October 20, 2026; official identity-profile selection/default ordering/mappings/exceptions, correlation, identity processing, PTA, authoritative-account removal and supporting source/provisioning documentation mapped in author records |
+| Diagram sources | [Identity origin and account association](assets/SRC-002_identity_origin_and_account_association.txt) and [Profile attribute inputs](assets/SRC-002_profile_attribute_inputs.txt); synchronized with inline blocks, maximum line widths 43 and 45 characters |
+| Tenant execution | Not performed; employee 42002, emp-42002, ctr-42002, corp-42002, expense-42002, I-42, profile order, account associations, values and all outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest under Module 4; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read SRC-002 and apply feedback to this same file; then author Module 4.3 |
+
+Profile priority selects among authoritative accounts already associated with one identity; it doesn't merge identities or define automatic per-attribute fallback. Mapping inputs, authentication paths and external write authority remain separate. Status changes, outages and account removal aren't interchangeable conditions; profile deletion is not a troubleshooting shortcut.
 
 ## Source-citation relocation
 
@@ -600,17 +620,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons, all seven Module 2 lessons, all eight Module 3 lessons, and Module 4.1 are authored. Learner validation and formal publication review remain separate pending stages. Lessons 4.2-4.8 remain planned.
+All six Module 1 lessons, all seven Module 2 lessons, all eight Module 3 lessons, and Modules 4.1-4.2 are authored. Learner validation and formal publication review remain separate pending stages. Lessons 4.3-4.8 remain planned.
 
-The next new lesson is Module 4.2:
+The next new lesson is Module 4.3:
 
-**Authoritative and non-authoritative sources: deciding their responsibilities.**
+**Reading a connector capability matrix: supported reads and supported changes.**
 
-- Reserved permanent ID: `SRC-002`.
-- Planned file: `lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.md`.
+- Reserved permanent ID: `SRC-003`.
+- Planned file: `lessons/SRC-003_Reading_a_Connector_Capability_Matrix.md`.
 - Status: planned only; no lesson file created.
-- Scope: explain which sources establish identities through identity profiles and which supply additional account/access relationships; distinguish source authority, per-attribute data responsibility, authentication source, account correlation and external change authority. Explain overlapping populations and profile-priority implications with documented conditions, without treating authoritative as a trust rating or claiming every source account becomes a new employee.
-- Resolve known feedback on SRC-001 before opening the next writing task.
+- Scope: interpret connector-specific account/entitlement reads and create/update/disable/delete or access-change support; distinguish product capability, source configuration, required components and effective target authority. Trace what each supported operation does and does not establish without inventing universal connector behavior.
+- Resolve known feedback on SRC-002 before opening the next writing task.
 
 ## Recording review status
 
@@ -664,3 +684,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored and reviewed ARC-007 revision 1.0 with federated/directory/native sign-in distinctions, SAML trust/matching, MFA/recovery scope, supported source-password changes, sync-group partial outcomes, session boundaries, three diagrams, seven worked cases and purchasing-design transfer; reserved ARC-008 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed ARC-008 revision 1.0 with request/decision/execution/collection/target boundaries, partial-delivery UTC trace, scoped status and evidence, manual/ticket fulfillment, missing results, timeout/recovery reasoning, three diagrams, six cases and payroll-design transfer; all eight Module 3 lessons authored; reserved SRC-001 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 20, 2026 | Authored and reviewed SRC-001 revision 1.0 with source/environment/population boundaries, intended versus actual read sets, account/person counts, missing versus uncorrelated records, read/write authority, source-purpose design record, two diagrams, six cases and payroll-export transfer; opened Module 4 navigation; reserved SRC-002 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
+| October 20, 2026 | Authored and reviewed SRC-002 revision 1.0 with profile-backed identity establishment, overlapping authoritative accounts and priority, cross-source mappings, required attributes and exceptions, authentication/provisioning/removal boundaries, two diagrams, seven cases and acquisition-design transfer; reserved SRC-003 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
