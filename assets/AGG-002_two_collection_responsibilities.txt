@@ -1,0 +1,9 @@
+[InvoiceDesk accounts]  [InvoiceDesk groups]
+          |                     |
+[Account aggregation]  [Entitlement aggregation]
+          |                     |
+[Held group IDs]        [Group definitions]
+          |                     |
+          +----------+----------+
+                     |
+        [Linked access information]

@@ -1,0 +1,3 @@
+09:00  Account read: G-520, G-521
+09:20  Target removes G-520 from Devi
+09:30  Group read: G-520 still exists

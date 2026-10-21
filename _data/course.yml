@@ -243,3 +243,11 @@ lessons:
     source: "lessons/AGG-001_Following_an_Account_Record_into_ISC.md"
     url: "/lessons/AGG-001_Following_an_Account_Record_into_ISC.html"
     description: "Trace a delivered account through extraction, representation, ownership, identity-value sourcing, and evidence of the actual outcome."
+
+  - id: AGG-002
+    module: aggregation
+    placement: "Module 5.2"
+    title: "Account aggregation and entitlement aggregation: their different responsibilities"
+    source: "lessons/AGG-002_Account_and_Entitlement_Aggregation.md"
+    url: "/lessons/AGG-002_Account_and_Entitlement_Aggregation.html"
+    description: "Separate held access values from object inventory, connect their identifiers, and reconcile counts, scope, freshness, and evidence."

@@ -1504,6 +1504,56 @@ Counterfactual first-collection, wrong branchCode path, employeeRef 51010, incom
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
++## AGG-002: Account aggregation and entitlement aggregation
+
+- Revision: 1.0. Course placement: Module 5.2.
+- Documentation checked: October 21, 2026. Official account/entitlement loading, entitlement types and account-schema linking, entitlement management, source/connector definitions, account correlation, provisioning and Web Services SaaS operation/multi-call examples freshly checked.
+- Author review: completed against teaching specification v2.6 for this comparative scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 52002, InvoiceDesk Production, all account/group data, association, read outcomes and timing variation are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: compare held account access values with access-object inventory and details, then reason about linking, counts, coverage and freshness. Detailed aggregation modes and runtime handling retain their primary lessons. No source schema, credential, schedule, manual metadata state or actual membership is changed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Direct-connect manual/scheduled and all/specific-type collection; account-only connector boundary; flat-file manual-only/single-type mechanism and source-specific template ID matching. A run's discovered count can differ from total catalog records created by multiple collection runs. No run-time guarantee or unsupported schedule is invented. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Account attributes, supported collection triggers, execution/history evidence and independent Search freshness. Account result coverage and object-type coverage are separate questions; no new fixed duration, mode equivalence or full-population inference is made. |
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Account entitlement marking, multi-valued shape and linking conditions: in this example groups attribute/type names agree and account G-520 matches designated groupKey G-520. Matching readable labels alone isn't the stated link. |
+| [Creating and managing entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html) | Supported type/schema representation, selected ID/Name and connected account attributes. Changing ID/Name designations after aggregation can create duplicate entitlements. Supported object relationships can describe indirect access; no complete effective-access calculation is promised from two direct memberships. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Recorded inventory/details and account-created entitlement representations; account aggregations don't delete entitlement records. Display Name/Description edits aren't sent to the source, and manual values can be preserved against aggregation. Request configuration and review decisions aren't automatic consequences of descriptive collection. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source/connector/direct-connect/file distinctions and source account views. The correct source, account and association matter; a schema definition isn't evidence of delivered records or target membership changes. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Account ownership uses configured comparisons rather than equal-looking account-name digits. Devi's existing correct association is an explicit supplied condition; group inventory alone doesn't establish it. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | External account/access changes are separate supported operations. Observed membership isn't a newly issued grant. Collected data can feed subsequent configured change decisions, so complete workflows aren't declared universally consequence-free. |
+| [Web Services SaaS HTTP operations](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/http_operations.html) and [aggregation examples](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/json_aggregation.html) | Account aggregation, group aggregation and entitlement-add/remove are distinct supported operations. Account collection can use multiple external calls. Endpoint names alone don't establish the completed ISC responsibility. These are connector-specific supporting examples, not a complete InvoiceDesk configuration or a claim every connector uses the same calls. |
+
+### Diagram, data and reasoning checks
+
+Two editable text assets match their inline blocks after trailing-whitespace normalization. Maximum line widths are 48 and 37 characters. The first separates account-held IDs from object definitions and shows their logical information relationship. It doesn't claim a private storage implementation, simultaneous execution, universal run order or external grant. The second is a separate UTC observation/change timeline, not internal aggregation stages.
+
+Devi 52002 reviews invoices. Existing account inv-52002 has employeeRef 52002 and a supplied verified identity association. It holds G-520 and G-521. inv-52003 holds G-520; inv-52004 holds G-521. In the stated complete selected population, 3 accounts produce 4 membership occurrences and 2 distinct held values. The group read returns 3 definitions: G-520 Invoice Reviewers, G-521 Archive Readers and unused G-599 Exception Reviewers.
+
+The selected JSON account object and three-element group array are valid teaching data, not complete ISC API responses/configuration. The account's groups attribute is entitlement-marked and connected to groups; groupKey supplies Entitlement ID, label supplies Entitlement Name. Two account-created representations gain descriptions and the group read adds knowledge of G-599, under the supplied no-manual-description-block assumption. These aren't 3 new grants.
+
+The timeline is independent of the main completed trace: account observation 09:00 UTC, target removal of Devi's G-520 membership 09:20, group existence observation 09:30. The later object read doesn't establish refreshed account membership. Counterfactual mapping, denied group read, manual description and selected-type cases aren't simultaneous main defects. T-22/T-90 is an independent project-file transfer.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Three accounts, four memberships | Account, relationship, distinct-value and object totals must agree | Trace the stated rows: 3 accounts, 4 occurrences, 2 held group IDs, 3 definitions. These count different things. |
+| New inventory object | Discovering a group assigns it to the account | G-599 is an object without a supplied Devi membership; no grant operation is given. |
+| Membership before description | Missing rich details invalidate an account-held value | Establish supported object collection, input, scope and mappings; don't substitute repeated account jobs for descriptive-data investigation. |
+| Label versus ID | Another object read repairs an account-side mapping mismatch | Compare Invoice Reviewers with designated G-520; preserve intended identifiers and review existing references before schema redesign. |
+| Account read succeeds, group read denied | Read permission or success applies to every operation | Investigate the supplied group-read authorization with the authorized owner; don't change memberships to repair inventory. |
+| Later group read | Most recent job refreshes all related facts | Preserve independent observations; group existence at 09:30 doesn't refresh 09:00 account membership or reverse the 09:20 target removal. |
+| Manual description retained | Old visible wording proves a failed account read | Check delivered object, mapping, manual-update state and responsibility; preservation can be intended, not a read failure. |
+| One type finishes | Groups-only success establishes all supported access types | Verify separately included type, schema, actor visibility, scope and results; no unselected application-role completion is inferred. |
+| Project-file transfer | Object inventory assigns every row and supplies a native recurring flat-file schedule | Preserve T-22 membership and distinguish inventory-only T-90. Establish account owner, template, scopes/times and actual imports. Reject unsupported schedule; a new membership requires a separate authorized change mechanism and target evidence. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

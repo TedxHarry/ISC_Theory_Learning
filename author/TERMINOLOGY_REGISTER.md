@@ -205,6 +205,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Uncorrelated / shadow identity | Unresolved association to an intended established identity / technical placeholder | Collection can succeed without intended ownership; placeholder isn't evidence that HR established another employee |
 | Account read / processing / provisioning | Observation and representation / evaluation under identity/access configuration / external change operation | Collected data can have separate downstream consequences; reading membership isn't adding it; one successful operation doesn't establish all outcomes |
 | Source aggregation / single-account action | Configured source read versus specified-account read with documented limits | Single-account collection doesn't prove identity attribute synchronization or provisioning; optimization can skip unchanged-account correlation |
+| Account aggregation / entitlement aggregation | Collects account attributes and supported held values / collects supported access-object information | Account values can establish ISC entitlements before richer object details; inventory doesn't assign every object to every account |
+| Membership occurrence / distinct held value / object inventory | One account-to-object relationship / unique held identifier in stated scope / collected access objects | Three accounts, four membership occurrences, two held identifiers and three group definitions can all be correct |
+| Observation time / freshness / scope | When a fact was read / relevance of its age / intended coverage | A later group read doesn't refresh older account memberships or establish a complete synchronized snapshot |
+| Source/type/identifier agreement | Context and selected identifying value connecting account references to access objects | Matching labels, cross-environment values or same codes in different access types don't establish the same object |
+| Manual entitlement description / metadata | Descriptive value maintained in ISC | An aggregation can preserve it; editing Display Name/Description isn't sent to the source or a membership grant |
+| Flat-file entitlement import / direct-connect type selection | Manual supported object-file ingestion / configured inclusion of supported object types | The documented flat-file mechanism has no recurring entitlement schedule or multiple types; a groups-only run doesn't establish application-role coverage |
 
 ## Source anchors
 
