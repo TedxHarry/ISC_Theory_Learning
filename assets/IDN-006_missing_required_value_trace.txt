@@ -1,0 +1,14 @@
+WorkforceBook account wb-66006 in ISC
+  familyName = Rao
+  surname = null
+          |
+          v
+Employees Last Name mapping
+  reads surname, not familyName
+          |
+          v
+Required identity lastname has no value
+          |
+          v
+Observed: Incomplete Identities
+Evidence: missing required Last Name

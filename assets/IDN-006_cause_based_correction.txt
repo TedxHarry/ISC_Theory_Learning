@@ -1,0 +1,18 @@
+Human investigation: locate the defect
+  |
+  +-- Producer data is wrong
+  |     Owner corrects approved source data
+  |       -> collect corrected account data
+  |
+  +-- Collection/extraction is wrong
+  |     Repair approved integration path
+  |       -> collect and inspect the result
+  |
+  +-- Mapping/calculation is wrong
+        Repair approved profile mapping
+          -> preview and apply processing
+
+Then verify the affected identity:
+  expected required values and uniqueness?
+  current exception/status evidence?
+  separate downstream outcomes?

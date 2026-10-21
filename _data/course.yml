@@ -344,3 +344,10 @@ lessons:
     source: "lessons/IDN-005_Multiple_Identity_Profiles_Populations_and_Priority.md"
     url: "/lessons/IDN-005_Multiple_Identity_Profiles_Populations_and_Priority.html"
     description: "Trace authoritative-account eligibility, governing-profile priority and conversion continuity without confusing ownership, field inputs or access delivery."
+  - id: IDN-006
+    module: identities
+    placement: "Module 6.6"
+    title: "The account arrived. Why is the identity incomplete?"
+    source: "lessons/IDN-006_Required_Attributes_Identity_Exceptions_and_Incomplete_Information.md"
+    url: "/lessons/IDN-006_Required_Attributes_Identity_Exceptions_and_Incomplete_Information.html"
+    description: "Trace required-value failures and username collisions, distinguish incomplete identities from other errors, and verify cause-based corrections."

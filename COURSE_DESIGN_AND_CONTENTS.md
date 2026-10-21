@@ -199,9 +199,10 @@ Aggregation modes and their limitations are explicit subjects because they do no
 
 - 6.5 [Multiple identity profiles, population boundaries, and priority.](lessons/IDN-005_Multiple_Identity_Profiles_Populations_and_Priority.md) **Authored:** IDN-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-Lessons 6.6-6.8 remain planned.
+- 6.6 [Required attributes, identity exceptions, and incomplete information.](lessons/IDN-006_Required_Attributes_Identity_Exceptions_and_Incomplete_Information.md) **Authored:** IDN-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-- 6.6 Required attributes, identity exceptions, and incomplete information.
+Lessons 6.7-6.8 remain planned.
+
 - 6.7 Changing mappings and understanding their downstream effects.
 - 6.8 Tracing an incorrect identity value back to its origin.
 

@@ -2201,6 +2201,66 @@ The current documentation uses Identity Services / Human Fabric naming in places
 
 Questions and worked reasoning remain in the learner file. The observed learner-validation result remains pending.
 
+## IDN-006
+
+### Revision, review and limits
+
+Revision 1.0, Module 6.6, **The account arrived. Why is the identity incomplete?** Documentation checked October 21, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. Prior lessons, presentation behavior and the complete attribute tracing aid revision 1.0 are unchanged.
+
+Independent fictional example: joining employee Devi 66006; WorkforceBook Production authoritative source; Employees governing profile; account wb-66006. The selected JSON extract contains workerNumber text 66006, loginName person66006, workMail devi66006@example.com, familyName Rao and surname null. Both surname and familyName remain defined in the supplied account schema; surname is retired. The initial Last Name mapping reads surname. The supplied incomplete identity has the approved uid/email but no lastname; profile exception evidence identifies that missing required value. Account ownership and uid uniqueness are assumed verified.
+
+The approved correction selects familyName, and successful processing produces lastname Rao on the same intended identity while uid/email remain correct. Current exception evidence clears and the identity no longer appears in Incomplete Identities. These are fictional supplied observations, not executed UI/API/account/profile changes or exact replicas of report fields. The source surname is already correct; no real HR data, naming rule, profile, authentication, identity, correlation, deletion, provisioning or external target operation occurs.
+
+### Official references and claim mapping
+
+| Source | Sections and behavior checked | Lesson boundary |
+|---|---|---|
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Required uid/email/lastname mappings and non-null outputs, cross-profile username uniqueness, Work Email not format-validated, cross-source mappings, Preview, Identity Exceptions download and source-data correction | Configured mapping is different from successful per-person output. Duplicate uid is an exception, not an automatic merge. Main mapping correction is engineering reasoning over supplied inputs, not a claim that every exception originates in HR. |
+| [Working with Identities](https://documentation.sailpoint.com/saas/help/identities/identity_mgmt.html) | All/Incomplete/Errors filters, incomplete sign-in/request/certification restrictions, statuses and error-detail examples for alternate email and authentication-source mismatch | Incomplete is not all errors. An available required email does not establish that a separately configured alternate invitation address exists. The lesson does not equate account/identity/lifecycle states or teach destructive reset/deletion as repair. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Event-based updates, manual application of profile configuration, Preview/Apply scope, applied identity evidence, Search synchronization and independent provisioning verification | Processing existing data does not itself reread the external producer. Preview/save/initiation are distinct from applied results. No fixed completion/index delay, universal automatic retry or proof of provisioning success is promised. |
+| [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Source aggregation, activity/history, source read scope and view freshness | Correction needs the actual account read and changed represented data, not green aggregate status alone. Omitted input is not assumed to universally clear existing data; no target change follows merely from a successful read. |
+| [First Valid transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/first-valid/) | Ordered first non-null result, static strings/nested results, ignoreErrors default false, documented email placeholder example | Empty text differs from null; a literal none/unknown is not business approval or a usable mailbox. Explicit error handling differs from null fallback. Transform evaluation is separated from connector normalization and required-field validation. |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Lookup uses associated identity accounts for a selected source and account field | Supports selected-account input inspection, not a universal person-name lookup, arbitrary read of another identity's account or every-operation account-selection algorithm. |
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured comparisons establish account-to-identity associations; unmatched accounts remain uncorrelated | Ownership investigation for a repeated-person collision is separate from naming uniqueness for different people. No forced merge or destructive correction recipe is inferred. |
+
+Current official documents use Identity Services / Human Fabric naming in places. The course retains the requested ISC title; source terminology does not assert a licensing entitlement or availability in every tenant.
+
+### Reasoning and deliberately excluded claims
+
+- The two required-value checks are shared configured mappings and actual per-identity results. A valid schema field, a saved mapping, a successful read or a sample preview does not alone prove that a particular required output exists.
+- The main selected account explicitly contains null in the retired field. Empty, whitespace, omitted and literal-null examples are changed conditions; the lesson does not assert undocumented acceptance/trim/clearing behavior across all connectors, transforms and platform validation stages.
+- Incomplete Identities and Identity Exceptions share relevant missing-required evidence but are not a universal one-to-one categorization of every duplicate or processing error. Read the specific affected record and error detail.
+- A required non-null email check does not validate address syntax, mailbox existence, ownership, delivery or all invitation settings. The contractor transfer requires an approved dependency/consumer-control design rather than recommending placeholders by default.
+- Different source account IDs can feed the same calculated uid. Cross-profile uniqueness is applied to the output, not assumed from distinct raw records.
+- Collision investigation distinguishes same-person continuity from different-person naming; matching usernames do not authorize merging, changing an unrelated person's identifier or deleting an identity.
+- Missing manager/department/end date may break a project dependency without meeting the missing-required-attribute definition. No universal fail-closed access behavior, blanket provisioning freeze or external account deletion is inferred from incompleteness.
+- Applied identity repair and current exception/status evidence must be checked for the specific identity and other affected records. Historical reports/counts and stale Search observations do not independently prove present correctness or failure.
+- Source collection, identity processing and external provisioning remain separate operations. Source-data correction, integration correction and mapping correction require different approved actions; the map is human engineering reasoning, not an automated repair feature.
+
+### Diagrams and publication checks
+
+- [Missing required value trace](../assets/IDN-006_missing_required_value_trace.txt), maximum 39 characters: collected familyName Rao/surname null, wrong profile input, missing identity lastname and supplied incomplete/exception evidence.
+- [Cause-based correction](../assets/IDN-006_cause_based_correction.txt), maximum 43 characters: human diagnosis branches to producer, collection/extraction or mapping fixes; collection/processing dependencies converge on specific-identity and separate downstream checks.
+- Both editable assets match the inline blocks. Prose explains actor, conditions, arrow meaning, omitted implementation and that evidence displays need not update synchronously.
+- One selected JSON extract is syntactically valid. Two two-column tables explain required values and input-state distinctions. Full source text, JSON, diagrams, tables, all forty-four routes, navigation and unchanged aid text are publication checks; live visual rendering is checked separately.
+- Learner article contains no external source links, course links or reference labels. Assessment metadata stays outside the teaching body.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. Correct source, wrong input | Locate the defective boundary | familyName Rao is already collected; mapping surname null explains missing output; correct approved profile mapping and validate scope | Every missing identity value requires HR correction | Profiles/mappings; supplied JSON |
+| 2. Correction not collected | Aggregation versus processing | Existing account is stale; publish/read the corrected record, inspect represented result and reevaluated identity | Process Identity rereads HR | Aggregation; processing |
+| 3. Empty first result | Exact null semantics | First successful empty result is non-null; inspect actual output and approved normalization, not assumed fallback | First Valid means first usable or non-empty value | First Valid |
+| 4. Failed calculation | Error versus null | Default ignoreErrors false does not silently skip failed evaluation; fix cause or justify explicit handling | All errors behave like missing values | First Valid |
+| 5. Collision across profiles | Global uniqueness and person distinction | Confirmed different people need distinct approved uid outputs; profile naming does not isolate usernames | Each profile has its own username namespace | Required attributes; exceptions |
+| 6. Complete values, authentication error | Specific error interpretation | Missing account relationship/authentication configuration is separate from Last Name; investigate supported association/configuration | Every identity error is incomplete required data | Identity error details; correlation |
+| 7. Missing manager | Technical completeness versus consumer dependency | Inspect manager input/relationship and approval policy; no inferred universal fail-safe or invented manager | No Incomplete flag means every workflow can operate correctly | Profiles/manager dependency; supplied scenario |
+| 8. Cleared exception, retained group | Identity repair versus external outcome | Required values and current evidence support repair; inspect separate removal policy/process/target state | Cleared exception proves all downstream delivery | Processing delivery boundary |
+| Contractor intake transfer / teach-back | Apply full trace to changed dependency | Establish approved initial/final email inputs, consumer controls and verified transition; distinguish null, empty, error, collision and uncollected repair; identify owner and evidence | Populated placeholder and green count establish a complete safe onboarding | Profiles; First Valid; aggregation; processing |
+
+Learner questions and worked answers remain in the lesson. No beginner read-through or transfer-test result is claimed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
