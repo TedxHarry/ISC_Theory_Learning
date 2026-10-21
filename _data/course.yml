@@ -9,6 +9,8 @@ modules:
     title: "4. Before configuring a source"
   - id: aggregation
     title: "5. How aggregation changes what ISC knows"
+  - id: identities
+    title: "6. How are identities created and populated?"
 lessons:
   - id: SYS-001
     module: system
@@ -307,3 +309,10 @@ lessons:
     source: "lessons/AGG-009_Investigating_a_Missing_or_Stale_Account.md"
     url: "/lessons/AGG-009_Investigating_a_Missing_or_Stale_Account.html"
     description: "Test competing explanations across producer data, reads, extraction, ownership and views, then verify a safe correction at the evidenced boundary."
+  - id: IDN-001
+    module: identities
+    placement: "Module 6.1"
+    title: "Where does an ISC identity come from?"
+    source: "lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.md"
+    url: "/lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.html"
+    description: "Trace authoritative worker records, identity profiles, required values and separate account-ownership and access outcomes."

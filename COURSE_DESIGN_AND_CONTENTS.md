@@ -189,7 +189,10 @@ Aggregation modes and their limitations are explicit subjects because they do no
 
 ### Module 6. How are identities created and populated?
 
-- 6.1 How an authoritative source and an identity profile participate in identity creation.
+- 6.1 [How an authoritative source and an identity profile participate in identity creation.](lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.md) **Authored:** IDN-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
+
+Lessons 6.2-6.8 remain planned.
+
 - 6.2 What an identity profile controls.
 - 6.3 Mapping account information into identity attributes.
 - 6.4 Choosing the source of each attribute.

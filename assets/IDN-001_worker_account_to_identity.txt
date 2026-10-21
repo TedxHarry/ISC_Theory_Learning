@@ -1,0 +1,19 @@
+HR worker record
+hr-61001
+       |
+       | connector account aggregation
+       v
+ISC HR source account
+PeopleLedger Production
+       |
+       | authoritative source +
+       | Employees identity profile
+       | mapped inputs meet requirements
+       v
+ISC identity for Devi
+uid: worker61001
+identificationNumber: 61001
+       |
+       | does not itself prove
+       v
+DispatchDesk account or access

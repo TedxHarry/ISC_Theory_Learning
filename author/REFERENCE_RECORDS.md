@@ -1923,6 +1923,53 @@ Two learner tables map observations to bounded conclusions and current/intended 
 
 No beginner read-through or independent transfer validation occurred. Source review, author review and deployment do not substitute for those stages.
 
+## IDN-001
+
+- Current lesson: [IDN-001](../lessons/IDN-001_Authoritative_Sources_Identity_Profiles_and_Identity_Creation.md), revision 1.0, Module 6.1.
+- Author review and fresh official-documentation check: October 21, 2026.
+- Learner validation and formal publication approval: pending. No tenant, connector, profile, account, identity, permission or target operation performed.
+- Scope: approved authoritative worker accounts and identity profiles in identity establishment; direct mapped values and separate source-account, person, ownership and access evidence. Full mapping mechanics, priority design, exception remediation and profile responsibilities continue in their planned primary lessons.
+- Publication verification: verify exact deployed revision, complete lesson text, both diagrams, both accessible tables, new Module 6 and all thirty-nine lesson routes. Deployment is not a beginner learning test.
+
+### Sources mapped to claims
+
+| Official reference | Supported section or claim | Boundary retained |
+|---|---|---|
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative source/profile relationship; mappings; required non-null uid/email/lastname; cross-profile uid uniqueness; email not format-validated; exceptions/incomplete identities; one governing profile and eligible priority; profile creation blocked during aggregation; Needs Processing and Apply Changes; initial sign-in requirements | Single-new-person example assumes no pre-existing identity, one eligible profile and valid required values; priority does not prove merger of separately created identities; no claim about undocumented creation transaction order |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Supported account collection, input visibility/scope and optimized versus re-evaluated account processing | No single-account UI refresh identity-creation promise; no universal scheduled/retry repair; connector/read-mode conditions apply |
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Account field representation and configured Account ID distinction | workerKey/workerNumber/iscUserName are fictional account fields; identificationNumber is the selected identity attribute, not an assertion that every tenant has a custom employeeNumber |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Correlation compares account/identity values; existing identity prerequisite; uncorrelated outcome; unoptimized aggregation after configuration change; manual links not automatically moved | Only one supplied eligible matching identity and one criterion; no invented fuzzy matching, confidence score or automatic merge |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source Accounts view; represented ownership; uncorrelated/shadow identity distinction | Shadow representation is not successful authoritative employee onboarding |
+| [Identities overview](https://documentation.sailpoint.com/saas/help/identities/index.html) | Person-level identity as distinct from collected accounts | No identity presence implies external account or authentication success |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Identity changes in aggregation initiate processing; profile mappings and configured access evaluation; processing not validation of successful provisioning | No private service topology, atomicity, queue order, exact timing or universal downstream grant asserted |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supported account/access changes distinct from collection, correlation and identity representation | No DispatchDesk connector support or live creation/permission result claimed |
+
+Current official pages use SailPoint Human Fabric/Identity Services branding in their navigation. The lesson retains the user's ISC course terminology and verifies the described identity-service behavior; it does not introduce a new product or imply an IdentityIQ mechanism.
+
+### Fictional inputs and consistency review
+
+The primary case uses Devi, logistics coordinator, employee 61001, PeopleLedger Production, authoritative Employees profile, workerKey hr-61001 and ISC uid worker61001. The JSON account maps workerNumber text 61001 to identificationNumber, familyName Rao to lastname, givenName Devi to firstname, workEmail devi61001@example.com to email and departmentCode LOG to department. HR provides the approved initial usable email. Profile/mappings are saved and appropriately applied; no existing person, conflicting username or other eligible profile. Successful person/association values are supplied fictional outcomes, not results observed in a tenant.
+
+DispatchDesk variation uses existing independently created dd-61001 with employeeRef text 61001; non-authoritative source, sole comparison to identificationNumber, unique eligible person and no manual override. The highest-priority Employees example expressly assumes both authoritative accounts already belong to one identity. Independent contractor transfer uses ctr-C804, C804, contractorC804 and Sen, valid approved email and mappings, no existing identity or competing profile. These do not continue another lesson's biography.
+
+Selected JSON, two diagrams and both tables were traced against prose and answers. Editable sources: [worker account to identity](../assets/IDN-001_worker_account_to_identity.txt), maximum width 40 characters; [existing identity and application account](../assets/IDN-001_existing_identity_and_application_account.txt), maximum width 41. First diagram describes data/configuration dependencies and a non-guarantee boundary, not a private execution sequence; second describes ISC ownership association, not a target write. Visual live rendering verification remains a separate publication check.
+
+### Assessment reasoning map
+
+| Entry | Understanding and supplied facts | Expected reasoning / acceptable evidence | Misconception exposed / source anchor |
+|---|---|---|---|
+| Case 1 | HR worker exists, approved integration view excludes pre-start workers, account not returned | Inspect intended timing/read scope and authorized owner before changes; identity mapping does not expand collection | Mapping repairs absent read input; loading data |
+| Case 2 | Account present, familyName absent, direct lastname mapping and missing-value exception | Separate account representation from complete identity; source-owner correction, appropriate collection/processing and observed exception/value checks | Account presence proves complete onboarding; identity profiles |
+| Case 3 | Two distinct workers, different account/person keys, same uid and duplicate exception | Naming/input defect, not proof of same person; maintain cross-profile uid uniqueness without changing valid account keys | Username collision requires merger; profiles/schema |
+| Case 4 | Non-authoritative application account, no eligible identity with matching number | Investigate missing authoritative person/value; uncorrelated/shadow not profile-backed person creation | Every imported application account creates a personnel identity; correlation/sources |
+| Case 5 | Same identity owns employee/contractor authoritative accounts, Employees higher priority and HR department mapping | Governing profile selects applicable mappings; no automatic department combination | Priority votes across fields or automatically merges separate people; profiles |
+| Case 6 | Complete identity, absent application account, no supplied access/provisioning evidence | Investigate decision, support, request, attempt and result without assuming failed aggregation | Identity existence implies account/access creation; provisioning/processing |
+| Case 7 | Work Email copies non-null not-an-email | Non-null requirement is not email-format validation, mailbox existence or delivery; inspect owning data and real address | No missing-value exception proves usable mail; profiles |
+| Contractor transfer | Valid new-person account/profile with no existing identity/competition, no target outcome; changed null surname | Separate authoritative account, profile-backed identity, decision/fulfillment and target evidence; null surname redirects to required identity value path | Visible identity proves end-to-end onboarding or target fix resolves incomplete person; profiles/correlation/provisioning |
+
+Author review includes independent entry context, first-use terminology, actor and arrow meanings, causal transitions, success/failure assumptions, UI evidence limits, consistency and a narration/humanizer pass. It is not learner validation, proof of tenant behavior from execution, or formal approval. Attribute tracing reference aid remains planned for development within Module 6 with the detailed mapping lessons.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
