@@ -1,0 +1,15 @@
+Collected account value
+          |
+          | profile input and calculation
+          v
+Identity attribute value
+          |
+          +-- Configured role/state decisions
+          |
+          +-- Configured account synchronization
+                  |
+                  | supported provisioning
+                  v
+              Target account value
+
+Each required outcome needs evidence.

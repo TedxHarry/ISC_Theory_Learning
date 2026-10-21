@@ -1,0 +1,16 @@
+Corporate Directory account cd-63003
+mail: Devi63003@Example.com
+                 |
+                 | Employees Work Email mapping
+                 | selects collected mail input
+                 v
+ToLower conversion
+devi63003@example.com
+                 |
+                 | mapping result used in
+                 | identity processing
+                 v
+ISC identity Work Email
+email: devi63003@example.com
+
+Directory mail is not rewritten here.

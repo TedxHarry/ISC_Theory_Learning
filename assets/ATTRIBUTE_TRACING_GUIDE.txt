@@ -1,0 +1,26 @@
+ISC attribute tracing guide
+Revision: 1.0
+Documentation verification date: October 21, 2026
+
+An account attribute belongs to a collected source account. An identity attribute belongs to ISC's representation of a person or another entity. An identity profile supplies the mapping that selects or calculates the identity value. A source names the configured account-data collection; a connector supplies supported integration behavior. Account correlation associates accounts with their intended identities.
+
+Use these questions to record the actual input, calculation and output. They describe evidence to gather, not a universal execution sequence or a tenant-change procedure.
+
+Normalization means converting information into an agreed representation, such as lowercase text. An explicit input is supplied by a calculation's definition instead of relying on the interface's selected source and field.
+
+1. Name the identity and output. Record the identity reference, governing profile, identity attribute's technical name, expected value and actual value. A matching display name alone does not identify the person or field.
+2. Identify the configured input. Record the source and account attribute, plus any calculation or explicit input that changes where the value comes from. Inspect the saved definition, not just a familiar label.
+3. Establish the account selection. Record the eligible associated account or accounts, their identifiers and any filter, sorting or null-selection behavior. One source can contain more than one account for a person.
+4. Inspect the represented input. Record the actual collected value, whether it is text or another type, whether it is one value or a list, and when it was observed. Compare live producer data separately if freshness is in question.
+5. Work through the calculation. Show the selected input and each relevant conversion or decision. Distinguish approved normalization from an incorrect field, missing data or an unjustified fallback.
+6. Check the proposed result. Compare Preview with the expected value for this identity and representative population variations. A successful sample does not prove coverage, persistence or target delivery.
+7. Verify the applied identity value. Record the relevant processing evidence and the value now shown on the identity. Separate a saved mapping, completed processing and the observed result.
+8. Follow the consumers when required. Identify any matching, lifecycle, role, synchronization or provisioning behavior that uses this value. Verify each required downstream outcome with its own evidence; a correct identity value does not prove a successful target change.
+
+Worked fictional trace
+Employees governs Devi's identity, employee 63003. Work Email (email) selects Corporate Directory account cd-63003, attribute mail, input Devi63003@Example.com. ToLower produces devi63003@example.com; the applied identity value matches. No directory email synchronization write is configured. The selected account is correctly associated and is the only eligible directory account in this example.
+
+Meaning of the downstream checks
+Identity processing evaluates identity information and applicable access requirements. A role can use identity attributes as membership conditions; a lifecycle state describes a business stage and can drive configured access. Attribute synchronization can write selected identity values to existing correlated accounts through supported provisioning, which performs account or access changes. Preview shows proposed mapping results for selected data, not completed identity or target updates.
+
+Keep null (no value), an empty string, an absent field and a list of values distinct. For multiple accounts, inspect the specific supported selection behavior; do not assume the newest or a populated value must be the approved one. Record missing evidence instead of inventing a result.

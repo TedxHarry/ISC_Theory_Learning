@@ -2026,6 +2026,59 @@ The two inline tables contain selected fictional mappings and the distinct claim
 No learner interview or uncoached transfer test has occurred. Formal approval remains pending. IDN-003 and its attribute tracing reference aid are planned, not authored in this update.
 
 
+## IDN-003
+
+- Current lesson: [IDN-003](../lessons/IDN-003_Mapping_Account_Information_into_Identity_Attributes.md), revision 1.0, Module 6.3.
+- Author review and fresh official-documentation check: October 21, 2026.
+- Learner validation and formal publication approval: pending. No actual source/schema/mapping/transform/rule/account/identity/target change or tenant execution performed.
+- Scope: account-to-identity mapping mechanics and traceable evidence. Attribute ownership decisions, multi-profile design, complex transforms, lifecycle governance and provisioning implementation retain their dedicated primary lessons.
+- Reference aid: [ISC attribute tracing guide](../assets/ATTRIBUTE_TRACING_GUIDE.txt), revision 1.0, documentation checked October 21, 2026; complete editable/downloadable text with introductory meanings, all eight inline evidence questions, the same filled fictional trace and downstream definitions.
+- Publication verification: independently verify exact deployed revision, all forty-one lesson routes and native navigation defaults, full lesson text/headings/JSON/diagrams/tables and exact served reference-aid text. Deployment is not learner validation.
+
+### Sources mapped to claims
+
+| Official reference | Claims or lesson sections supported | Conditions and limits |
+|---|---|---|
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Multi-source identity mappings; Source/Attribute selections, direct/transform/rule calculations; ToLower/ToUpper; required uid/email/lastname and exceptions; documented mapping-transform first-value reduction; Preview and Apply Changes | Primary mapping already applied and inputs available; selected fictional account fields are not universal defaults; list reduction scoped to this documented UI mapping behavior, not every transform/API; no email syntax/mailbox validation inferred |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Associated-source account lookup, attributeName, created ascending default, first non-null default, filtering/sorting and accountReturnFirstLink; explicit input | Defaults apply to accountAttribute, not all ISC account selection; filter stays within source/identity lookup; no assumption created means hire date or newest account is business primary; no accountFilter/accountPropertyFilter syntax executed |
+| [Lower transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/lower/) | Lowercase conversion and explicit input overrides reliance on UI source/attribute combination | UI ToLower and technical lower names distinguished; uppercase email transformed under supplied approved convention, not universal mailbox case equivalence |
+| [Upper transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/upper/) | Uppercase conversion used in the qualified officeCodes example | Does not decide which office is primary; no generic assertion that every transform reduces all lists |
+| [Managing account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Field representation, multi-valued designation and separate account identifiers | Account schema does not define identity mapping; no Account ID/Name change recommended or executed |
+| [Assigning accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Account ownership association before use as the intended person's data | Correct association and single eligible account per source are supplied in primary case; mapping conversion does not repair wrong ownership |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Identity changes during aggregation initiate processing; configuration edits require manual application; profile scope; roles/lifecycle evaluation and provisioning-success limitation | No fresh connector call inferred from mapping evaluation; no invented transaction order, exact duration or all-target guarantee |
+| [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Separate configured identity-to-existing-correlated-account writes | No email synchronization configured in primary example; identity output difference does not imply source account change or creation |
+
+Technical source sections reviewed include identity profile mappings/required attributes/multi-value transform caution/preview, Account Attribute overview/required and optional properties, Lower explicit-input definition and processing's event/manual sections. Official pages currently use Human Fabric/Identity Services terminology; this ISC course does not import IdentityIQ behavior.
+
+### Example, diagram and reference-aid consistency
+
+Devi is independently introduced as payroll analyst, employee 63003. Employees governs her identity through authoritative WorkerLedger Production; hr-63003 supplies workerNumber text 63003, iscUserName employee63003 and familyName Rao. Corporate Directory is non-authoritative and correctly associated cd-63003 supplies accountKey cd-63003, login devi63003, mail Devi63003@Example.com and multi-valued officeCodes [blr, hyd]. JSON is a selected fictional teaching record, not an API/upload template. Primary case has only the intended eligible account on each source and no explicit input override; ToLower yields observed identity email devi63003@example.com with source mail unchanged and no sync write.
+
+The adm-63003 account is a separately introduced multiple-account variation. Other independent supplied cases cover old collected data, selected login instead of mail, explicit EXAMPLE input yielding example, oldest-null/next-non-null behavior versus accountReturnFirstLink true, absent eligible directory account with required-email exception, first office blr converted to BLR, identifier text 0042 versus numeric 42, and Preview/Needs Processing without verified application. ContractorHub Production transfer assumes correctly associated historical inactive/non-null and current active/null accounts; filtering leaves only the active account and no approved fallback.
+
+Editable diagram sources: [collected mail to identity email](../assets/IDN-003_collected_mail_to_identity_email.txt), maximum width 47 characters; [identity value and consumers](../assets/IDN-003_identity_value_and_consumers.txt), maximum width 48. They match inline text blocks. First shows selected input/calculation/applied identity and explicitly no source rewrite; second shows optional configured consumers and a separate target result. No private backend sequence or universal grant is asserted.
+
+Reference aid's eight numbered questions are synchronized with the inline sequence after whitespace normalization. Introductory/downstream definitions make the standalone text usable without the lesson. Main filled example values are checked in both. The reference aid contains no external citations or course links; official claim mapping remains here.
+
+Two tables distinguish selected mappings from stage-specific evidence. Author review includes first-use meanings before process dependence, scope/actors/input/output, supplied-success and changed-condition reasoning, diagram labels, independent entry context and narration/humanizer pass. Visual rendering remains a separate publication check.
+
+### Assessment reasoning map
+
+| Entry | Supplied facts and tested understanding | Expected reasoning / acceptable evidence | Misconception exposed |
+|---|---|---|---|
+| Case 1 | Live email changed, ISC collected input old, correct lowercase calculation | Verify relevant account read/freshness and processing before actual output | Preview makes a fresh external account read |
+| Case 2 | Correct mail present, profile selects login, no other input logic | Inspect approved selection and impact; do not rename correct schema field | Schema naming automatically connects identity attributes |
+| Case 3 | UI shows mail, saved transform uses explicit EXAMPLE | Calculate example from actual input and inspect definition | Visible Source/Attribute label always proves consumed input |
+| Case 4 | Two ordered eligible accounts, oldest null, second non-null, defaults unchanged | First non-null under default; true accountReturnFirstLink retains first null | Oldest-first universally means stop on null or populated means approved |
+| Case 5 | No eligible directory account, no fallback, missing required-email exception | Resolve actual account/input dependency or approved initial-value design | Changing case conversion creates a missing account or mailbox |
+| Case 6 | Ordered [blr, hyd], specified mapping-transform first-value/uppercase behavior | BLR reflects selection/conversion, not proof of primary-office meaning | First list item inherently identifies the primary location |
+| Case 7 | Identifier text 0042, conversion 42, exact consumer expects 0042 | Preserve approved identifier representation; arithmetic equivalence insufficient | Identifier zeros can be dropped without consequence |
+| Case 8 | Good Preview, Needs Processing, applied/stored results unverified | Approved processing and actual output/consumer evidence still needed | Proposed output proves completed change |
+| Contractor transfer | Filtered active current account null, historical inactive email non-null, no fallback | Preserve approved eligibility; source ownership/availability/validation and update evidence; identifying missing evidence is valid | Remove a filter merely to obtain any non-null old value |
+
+Source support for cases 1/8: processing/profiles; 2: profiles/schema; 3: Lower; 4/transfer: Account Attribute; 5: profiles/Account Attribute; 6: profiles/Upper; 7: supplied text/number semantics and exact-match requirement. No beginner interview or uncoached transfer exercise has occurred. IDN-004 remains planned only.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
