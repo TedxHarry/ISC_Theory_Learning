@@ -1604,7 +1604,7 @@ The selected JSON is valid and isn't a full ISC API object or runnable request. 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
 
-+## AGG-004: Delta aggregation and connector-specific limitations
+## AGG-004: Delta aggregation and connector-specific limitations
 
 - Revision: 1.0. Course placement: Module 5.4.
 - Documentation checked: October 21, 2026. ISC account loading/modes/history/Search/OU-move guidance; JDBC SaaS change-table design; Active Directory DirSync/baseline and additional permissions; Okta SaaS account/profile/log/retention behavior; and source/schema/correlation/identity-processing/provisioning responsibilities freshly checked.
@@ -1656,6 +1656,56 @@ A baseline/capture transition gap, missing change entry, unknown checkpoint stat
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+
+## AGG-005: Single-account aggregation and its boundaries
+
+- Revision: 1.0. Course placement: Module 5.5.
+- Documentation checked: October 21, 2026. Account-loading single-account UI section, account unlock/remove guidance, Web Services SaaS Get Object/HTTP operations, account schema, identity profiles/processing, correlation and current Accounts SDK operation definitions freshly checked.
+- Author review: complete against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant/API execution: not performed. CaseHub Production, employee 55005, account keys, field/status mappings, identity-profile input and all operation results are fictional.
+- Learner validation and formal publication approval: pending; working-edition deployment is separate.
+- Scope: documented UI Aggregate Account for an existing represented account. API names/versions, custom workflows and connector hooks need separate effect verification. No runnable API, unlock or deletion procedure is supplied.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), Aggregating Data for a Single Account | Primary UI contract: admin/helpdesk can refresh one account's data/status; documented Identities > Accounts > Aggregate Account context. It does not sync new data into identity attributes or affect provisioning. Not found leaves the ISC record unchanged; section directs deletions to full source aggregation. This is not generalized to every API or used to deny connector-specific explicit delta deletion support. |
+| [Managing user accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html), Unlocking Accounts and Removing Accounts | Unlock is a separate supported source action; account status can need collection first. Remove Account removes the ISC representation, not the external account; a later full aggregation can add it back. No destructive operation or broad-rights recipe is performed. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Account views, associations and separate aggregation/disable/remove actions. A record's source/owner context does not imply a read refreshed every account of that person. |
+| [Web Services SaaS Get Object](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/get_object.html) | Supported specified-account request, nativeIdentity as external AccountID, request/response mapping and POST example. Supports the external-key trace and warning against classifying business reads from HTTP verbs alone. This operation may also appear in other flows; no universal one-call architecture or native-schema/status default is invented. |
+| [Web Services SaaS HTTP operations](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/http_operations.html) | Distinct Test Connection, Account Aggregation, Get Object, Group Aggregation and account-change operations. Support/configuration/authority must be established per operation, rather than inferred from a successful list or connection test. CaseHub support and permissions are supplied assumptions. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Configured account fields and selected account identification. accountKey, employeeRef, locked and office are illustrative project fields, not complete API objects or universal mapping conventions. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html), Mapping Identity Attribute Values | Identity mappings choose a source and source attribute. In this example office explicitly uses the CaseHub account input, making the UI no-sync boundary meaningful; no intentional HR-office override explains the unchanged main value. The existing identity/association is supplied. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), manual processing | Profile/access configuration changes can require manual identity processing even when source data is unchanged; selected-identity processing is separate. Its scope and possible consequences must be reviewed. Generic processing descriptions are not used to override the explicit single-account UI limits. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Ownership matching is a distinct responsibility with required input/comparison context. A successful specified-account refresh is not a documented promise of universal ownership or manual-association repair. |
+| [Official Accounts TypeScript SDK reference](https://developer.sailpoint.com/docs/tools/sdk/typescript/accounts/methods/accounts/) | Fresh current operations distinguish stored account-details retrieval, asynchronous connector reload/one-time aggregation returning AccountsAsyncResult, and separate unlock. Account id parameter is not the external native key or employee number. Exact routes, scope lists and API versions deliberately omitted from learner prose because they are not needed for this theory distinction and older v3/beta pages differ. No API executed or API/UI side-effect equivalence asserted. |
+
+### Example and diagram consistency
+
+Devi 55005 coordinates support cases. Main case has one existing correctly associated CaseHub Production account ch-55005. A supported Web Services SaaS lookup returns selected JSON accountKey ch-55005, employeeRef text 55005, locked Boolean true and office HYD. Before the UI action, external data is locked/HYD and ISC account data is unlocked/BLR; identity office is BLR with an existing profile mapping from this account. After the supplied successful action, ISC account data is locked/HYD, identity office remains BLR and external lock remains true. Neither an unlock nor identity-attribute synchronization is inferred.
+
+The ISC account object ID is explained but its actual generated value is not invented. Account key and employee number identify different objects. ch-55005-admin appears only in a separate two-account variation. Later unlock, not-found, acceptance, lookup-denial, file-age and permission cases are independent supplied outcomes, not simultaneous defects in the main trace. The transfer manager input is explicitly HR, not CaseHub.
+
+Two editable assets exactly match the inline text blocks after trailing-whitespace normalization: selected-account-to-representation (maximum 31 characters) and account/identity/target boundaries (34). The first shows logical read dependencies with a separated human verification line; the second connects the UI action only to account representation and separately states unchanged identity/target outcomes. No queue, transaction, retry, network call count, universal order or automatic follow-on process is asserted. Visual rendering must also be checked in the published format.
+
+Selected JSON parses and contains four stated fields. Two learner tables keep identity, account, external state and identifier roles separate. No real credentials, URLs, tenant output, access grant or deletion instruction is embedded in learner prose.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Locked after refresh | Read failure inferred from continued sign-in failure | Account evidence updated correctly; unlock is a separately authorized external change. Inspect operation and target evidence, not sign-in alone. |
+| Account office HYD, identity BLR | Correct mapping means every operation must sync the identity | This UI action has no identity-attribute synchronization. Check actual input/mapping and choose the supported identity-update process; do not edit a correct mapping as a workaround. |
+| Not found, representation retained | Existing ISC record proves external existence or implies deletion | Retention is this action's documented behavior. Establish source/key/lookup/actor facts and use supported deletion handling with safeguards if needed. |
+| Administrative account selected | One person's account action refreshes every related account | Confirm the selected source and external key; ordinary account was not selected. |
+| Async acceptance then old stored data | Acceptance proves completed collection, or stored GET forces a source read | Obtain completion/outcome evidence. A task reference and stored-account retrieval are different from completed connector reload. |
+| Listing succeeds, lookup denied | List authority proves lookup authority, or field mapping causes an explicit permission denial | Supplied denied lookup lacks required permission. Resolve approved operation-specific authority before diagnosing field extraction. Least-privilege alternatives are acceptable. |
+| New import of old export | Load time establishes source freshness | Export time/content bound the imported data. Fresh supported input or a separately designed live integration is needed. |
+| Unlocked but missing case-closing permission | Unlocked means authorized, and reading grants missing access | Successful sign-in and denied function distinguish authentication from authorization. Use approved access/provisioning and verify delivery and application state. |
+| Combined support button transfer | One refresh safely performs identity sync, HR manager update, unlock and deletion | Separate operation contracts, source-of-value relationships, authorities, completion checks and deletion policy. Equivalent supported designs are acceptable only with these distinct effects/evidence established. |
+
+Questions, supplied facts and worked reasoning remain in the learner file. No beginner read-through or transfer test has been performed; author/source review does not establish learner comprehension.
 
 ## ARC-005
 

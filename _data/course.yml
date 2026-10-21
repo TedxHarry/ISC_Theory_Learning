@@ -267,3 +267,11 @@ lessons:
     source: "lessons/AGG-004_Delta_Aggregation_and_Connector_Limitations.md"
     url: "/lessons/AGG-004_Delta_Aggregation_and_Connector_Limitations.html"
     description: "Trace baseline and change capture, distinguish omissions from deletions, and verify connector-specific coverage and recovery."
+
+  - id: AGG-005
+    module: aggregation
+    placement: "Module 5.5"
+    title: "Single-account aggregation: its purpose and boundaries"
+    source: "lessons/AGG-005_Single_Account_Aggregation.md"
+    url: "/lessons/AGG-005_Single_Account_Aggregation.html"
+    description: "Trace a selected-account read and distinguish account data, identity values, external changes, not-found handling, and completion evidence."

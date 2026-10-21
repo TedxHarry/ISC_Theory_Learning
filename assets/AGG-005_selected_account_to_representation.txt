@@ -1,0 +1,17 @@
+[Helpdesk selects ISC account]
+              |
+              v
+[CaseHub Production connector]
+[Lookup native key ch-55005]
+              |
+              v
+[CaseHub returns account data]
+[locked true, office HYD]
+              |
+              v
+[Extract and represent values]
+              |
+              v
+[ISC account data is refreshed]
+
+[Engineer verifies the record]
