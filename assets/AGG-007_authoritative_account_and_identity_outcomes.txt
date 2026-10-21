@@ -1,0 +1,13 @@
+[Authoritative account removed in ISC]
+                 |
+                 v
+[Another authoritative account exists?]
+                 |
+ +-- Yes -> [Reassign profile]
+ |          [Recalculate identity values]
+ |
+ +-- No --> [Nightly deletion attempt]
+             |
+             +-- Blocked -> [Hidden identity]
+             |
+             +-- Eligible -> [Delete allowed]

@@ -283,3 +283,11 @@ lessons:
     source: "lessons/AGG-006_Schedules_Scope_Dependencies_and_Data_Freshness.md"
     url: "/lessons/AGG-006_Schedules_Scope_Dependencies_and_Data_Freshness.html"
     description: "Distinguish due times, completed reads, published data, scope, processing dependencies, and verified end-to-end freshness."
+
+  - id: AGG-007
+    module: aggregation
+    placement: "Module 5.7"
+    title: "Missing records, account deletion settings, and deletion safeguards"
+    source: "lessons/AGG-007_Missing_Records_Account_Deletion_and_Safeguards.md"
+    url: "/lessons/AGG-007_Missing_Records_Account_Deletion_and_Safeguards.html"
+    description: "Distinguish missing records from deletion and trace source safeguards, authoritative identity outcomes, hidden identities, and safe recovery."

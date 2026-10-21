@@ -1,0 +1,15 @@
+[1,000 external accounts still exist]
+                 |
+                 v
+[Wrong active-only read returns 850]
+                 |
+                 v
+[150 accounts missing from result]
+                 |
+                 v
+[15% missing versus 10% limit]
+                 |
+                 v
+[Run canceled; warning reported]
+
+[Engineer checks qd-57007 separately]

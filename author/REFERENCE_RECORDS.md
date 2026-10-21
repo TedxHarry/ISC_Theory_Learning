@@ -1761,6 +1761,58 @@ Two learner tables retain all events and identify which age is being measured. N
 
 Supplied facts, questions and worked reasoning remain in learner prose. No beginner comprehension or transfer test has occurred. Source checks and author review do not establish learner validation.
 
+## AGG-007: Missing records, account deletion and safeguards
+
+- Revision: 1.0. Course placement: Module 5.7.
+- Documentation checked: October 21, 2026. Account loading/deletion settings/rounding/authoritative outcomes/hidden identities, Remove Account, profile priorities/mappings, correlation, JDBC SaaS delta actions and provisioning/lifecycle boundaries freshly checked.
+- Author review: complete against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant execution: not performed. QueueDesk/WorkerRegistry, employee/account identifiers, populations, settings, canceled/corrected reads and all supplied target/identity results are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: source account-absence handling and identity consequences. No external or ISC account/identity is deleted. No threshold, deletion flag, source filter, permission, protected flag, elevated level, ownership or manager relationship is changed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), source settings and Account Deletion Limitations | Enable Account Deletion permits removal of undetected ISC account representations; percentage setting cancels an aggregation with a warning at its documented limit behavior. Manual/scheduled runs share configured deletion settings; flat-file loading has deletion controls. Small-population rounding: less than one rounded account means cancellation only at 100%; ten-account 5% example rounds to one and cancels at one or more. No universal strict-greater-than comparison, internal denominator algorithm, atomic rollback or safe destructive preview is asserted. Main 150/1,000 is a supplied simple existing-population comparison clearly above 10%, not an inferred edge-boundary test. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), Deleting Authoritative Accounts and Identities / Blocking Deletion | Authoritative-account removal with deletion enabled leads to reassignment to another lower-priority authoritative profile with remapped values, or a nightly identity-deletion attempt if none remains. All listed blockers retained: other correlated accounts, access-definition/source ownership, active work-item owner/requester, manager references, elevated user level, protected flag, active campaign/certification. Hidden identities have no profile, no mapped lastname/email/uid and no normal Identities listing; previous attached accounts are treated as uncorrelated and grouped in relevant uncorrelated certifications. No immediate delete or target-access revocation guarantee. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), single-account section and history | UI Aggregate Account not-found retains the account. Source-level absence handling is not projected onto omitted delta records or every API. History status/start/stop/scanned/warning evidence supports investigation, not automatic approval or rollback assumptions. |
+| [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html), Removing Accounts | Remove Account removes ISC representation, not the external record; later full aggregation can represent an external account again. Authoritative removal can change profile or Identities visibility. Recollection is not claimed to restore identical ISC IDs, history or all relationships. No procedural removal/reset recipe is supplied. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html), Prioritizing Authoritative Sources and mappings | One identity profile per identity; highest-priority eligible authoritative profile used. Fallback can change mapped values. Main QueueDesk is non-authoritative; separate WorkerRegistry account remains. No priority API or hidden-identity restoration command is executed. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Correlation is person/account matching and association. Existing correct qd-57007/wr-57007 associations are supplied, not inferred from identical employee digits. Recovery must review actual ownership rather than assume every new read restores all previous relationships. |
+| [JDBC SaaS delta tables](https://documentation.sailpoint.com/connectors/saas/jdbc/help/saas_connectivity/jdbc/delta_agg.html) | Supported account-key Delete action is an explicit connector-specific delta deletion signal, unlike omission of an unchanged account. Full-population absence and source UI safeguards are not declared universal for all connector/API paths. No SQL, tracking reset or database deletion is performed. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) and [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | External account/access changes use configured supported provisioning and employment-state/access rules. A hidden identity is not a normal terminated lifecycle state. A source or identity representation disappearing does not establish external disablement, membership removal or session termination. Offboarding retention/status/end-date contract is a project decision, not a universal product retention mandate. |
+
+### Example, arithmetic and diagram review
+
+Devi 57007 coordinates delivery support. QueueDesk Production is a fictional non-authoritative source with 1,000 existing expected accounts, including 150 disabled ones; no new records or key changes in the comparison. qd-57007 is disabled but externally present and already correctly associated. Her identity remains established by separate WorkerRegistry account wr-57007.
+
+An unintended active-only filter returns 850; all 150 omitted disabled accounts still exist. Candidate absence share is 150/1,000 = 15%, above the supplied 10% guard. Canceled warning and separately verified retained qd-57007 are supplied outcomes, not evidence of universal transactional rollback. An approved scope correction and supported full read include all 1,000 without target account enable/create/delete. Raising 10% to 20% is discussed as an inappropriate bypass, not executed.
+
+Independent five-of-1,000 variation gives 0.5%, showing volume does not establish correctness. Ten-account 1% = 0.1 rounds to zero under the documented limitation; documented 5% = 0.5 rounds to one (10%), cancellation at one or more. Ordinary mathematical Python round(0.5) is not used to substitute banker's rounding for the explicit product example. Main comparison stays away from an ambiguous exact limit and does not infer undocumented general threshold arithmetic.
+
+Other variations independently examine delta omission without Delete, remaining lower-priority authoritative account, no-authoritative/remaining-application hidden identity, protected emergency identity and Remove Account. Active-workers-only HR-file project is a transfer, not another defect in QueueDesk. Full-population file semantics and actual supported import behavior must be established before using absence.
+
+Two text assets match inline blocks after trailing-whitespace normalization. Missing-population/guard diagram maximum width 37 characters; authoritative-account/identity diagram 45. First arrows are logical collection/guard progression with a separated human record check. Second branches summarize supported reassignment/nightly attempt/blocker outcomes; Delete allowed means eligibility, not completed deletion. Neither invents job internals, rollback, exact nightly completion or external target effects. Published rendering must be separately checked.
+
+Two learner tables separate objects/states and illustrate whole-account rounding. All source citations, dates and assessment metadata stay outside learner prose.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning / evidence boundary |
+|---|---|---|
+| Fifteen percent missing | Raising the guard repairs the integration | External existence and active-only exclusion establish a read-scope problem. Review actual state, approved correction and supported rerun; canceled status is not universal rollback evidence. |
+| Five missing accounts | Below-limit removal must be correct | 0.5% quantity says nothing about external existence or approved scope. Identify records/actor/filter/completeness; small harmful omissions can pass a volume check. |
+| Ten-account rounding | Lower percentage always gives stronger practical protection | 1% rounds to zero under the documented limitation; ten-account 5% case gives one and cancels at one or more. Do not generalize exact-edge rules or copy settings without source review. |
+| Delta omission | Every absent account is a deletion candidate | Unchanged accounts can be omitted by design; supported explicit Delete evidence is distinct. |
+| Another authoritative profile | Losing current HR account always deletes the person | Reassignment and recalculated profile values are documented; verify resulting profile/attributes and any separate access changes. |
+| Other application account remains | Nightly deletion attempt confirms external removal | Remaining correlated account is a blocker; hidden identity and uncorrelated-account treatment do not remove target access. |
+| Protected emergency identity | Protection is a defect to bypass for cleanup | Review approved protection/retention/emergency ownership decision; no safeguard removal merely to make a list clean. |
+| Remove Account with live external record | Successful ISC removal should delete the external account | Represented account and external record are different targets. Recollection and separately authorized target change require distinct evidence. |
+| Active-workers-only HR transfer | Feed omission and low threshold prove offboarding | Establish explicit status/end-date/retention and full/change semantics, profile/hidden/blocker consequences, identifiers, access rules, supported target operation/authority, safeguards and verification. Equivalent approved designs acceptable only with these distinctions. |
+
+No beginner read-through or transfer validation has been performed. Source and author checks do not establish learner comprehension or formal approval.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
