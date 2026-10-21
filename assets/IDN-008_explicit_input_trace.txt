@@ -1,0 +1,13 @@
+Approved field, but not the active input:
+  StaffLedger sl-68008 costCenter 0042
+
+Saved explicit transform input:
+  Corporate Directory cd-68008
+    -> costCenter " 0900 "
+      -> Trim removes surrounding spaces
+        -> current Preview "0900"
+          -> matches identity observation
+
+Human conclusion:
+  current calculation uses wrong supplier
+  historical execution needs its own evidence

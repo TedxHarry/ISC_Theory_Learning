@@ -358,3 +358,10 @@ lessons:
     source: "lessons/IDN-007_Changing_Mappings_and_Understanding_Downstream_Effects.md"
     url: "/lessons/IDN-007_Changing_Mappings_and_Understanding_Downstream_Effects.html"
     description: "Trace shared mapping dependencies, processing and downstream decisions, then verify target outcomes and plan recovery beyond restoring configuration."
+  - id: IDN-008
+    module: identities
+    placement: "Module 6.8"
+    title: "Where did this identity value come from?"
+    source: "lessons/IDN-008_Tracing_an_Incorrect_Identity_Value_to_Its_Origin.md"
+    url: "/lessons/IDN-008_Tracing_an_Incorrect_Identity_Value_to_Its_Origin.html"
+    description: "Investigate a disputed identity value through its actual profile, account and calculation inputs, then verify safe correction and separate consumer outcomes."

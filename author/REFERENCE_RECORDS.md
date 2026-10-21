@@ -2325,6 +2325,71 @@ The initially attempted monitoring.html URL is not current (404); the official n
 
 Questions and worked reasoning remain in the learner file. Beginner comprehension and formal approval remain pending.
 
+## IDN-008
+
+### Revision, review and limits
+
+Revision 1.0, Module 6.8, **Where did this identity value come from?** Documentation checked October 21, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. Earlier lessons, site behavior and tracing guide revision 1.0 are unchanged. All eight Module 6 lessons are now authored, which does not establish completion of learner validation or the whole course.
+
+Independent fictional example: employee Devi 68008, teaching identity label I-68008 (not a real object ID), StaffLedger Production authoritative for Employees, account sl-68008 approved costCenter text 0042 effective 09:00 and collected 09:05. Corporate Directory cd-68008 has text with surrounding spaces 0900, collected 09:08. Current identity costCenter 0900 is observed 09:10, mapping selections 09:12, current Preview 0900 at 09:13. All times are October 21, 2026 UTC. Finance approves the StaffLedger field as current cost-centre input; no future proposal is used.
+
+Both supplied accounts belong to the same intended identity, with exactly one relevant account per source. UI selections name StaffLedger/costCenter, but Trim Cost Center explicitly nests accountAttribute with sourceName Corporate Directory and attributeName costCenter. The selected directory text trims to 0900. Correcting the actual explicit source to StaffLedger Production yields Preview and supplied post-processing identity text 0042, preserving zeros. No directory cost-centre synchronization is configured, so no directory write is expected. All configuration, observations and successful correction are supplied fictional evidence, not real system executions or screenshots of tenant records.
+
+### Official sources and claim mapping
+
+| Source | Sections or behavior checked | Lesson qualification |
+|---|---|---|
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Single associated profile, authoritative-account priority, multi-source mappings, Preview/Apply, required fields | Exact governing profile must be established. Priority is not field fallback or a way to merge identities. One calculated preview differs from applied identity/target outcomes. |
+| [Trim transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/trim/) | Leading/trailing whitespace removal, optional explicit input overriding reliance on UI source/attribute selection, nested input structure | Saved JSON uses type trim with attributes.input containing accountAttribute. Trim receives directory text, not HR 0042; no numerical conversion or arbitrary replacement is inferred. |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Identity/source-scoped lookup, sourceName/attributeName, account filters, created ascending and first-non-null defaults | Main example has one associated account per source. Changed two-account case uses documented oldest-created default with a non-null first value. No universal newest/oldest ISC selection rule or ownership repair is implied. |
+| [Reference transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/reference/) | Reusing a previously defined transform and following the referenced logic/input | Nested or referenced calculations require inspection of the actual definitions. Source labels/display names alone do not establish the input path. No claim of tenant-tested reference resolution. |
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured account-to-identity association and unmatched account distinction | Ownership precedes lookup evidence. Wrong identity/profile/account questions are separate from field transformation; supplied correct ownership is not inferred from display name. |
+| [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Account aggregation, per-record representation and activity evidence, observation freshness and Search delay | Green read does not establish mapping use or exact-record correctness. Producer, extraction, represented account and identity are distinct boundaries. No universal omission-clearing behavior or fixed view delay is taught. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Event/manual processing, profile Apply Changes scope, execution monitoring, synchronization with views and external provisioning verification boundary | Current Preview reproduces current logic, not an earlier execution or automatic application. Saved correction, initiated/completed processing, current identity and consumer outcomes need distinct evidence. |
+| [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Configured identity-to-existing-correlated-account writes and distinction from source reads | Main scenario explicitly has no cost-centre sync; correct identity does not imply a directory write. Work-email transfer requires proving the actual consumer/write path before classifying an application discrepancy. |
+
+Documentation uses Identity Services / Human Fabric naming in places; the requested ISC course title is retained without implying every licensed feature or connector is present.
+
+### Trace assumptions, engineering reasoning and excluded claims
+
+- HR expected value is an approved current business fact in the supplied example. The integration is not choosing authority from recency or the familiar HR label.
+- The selected JSON is a valid reading example, not an API request or command to upload into a tenant. Corrected explicit input is described in prose, preserving the intended operation and field.
+- Current source values plus current saved definition explain current Preview 0900 and are consistent with the observed identity value. They do not prove the exact earlier execution that created it.
+- Historical causality requires the earlier revision, inputs and execution context. The lesson explicitly permits an incomplete historical conclusion rather than fabricating backend timing or private queue behavior.
+- Source field absent/wrong/type-changed, wrong account/profile, unexpected explicit input, unapplied correction and stale view are separate hypotheses. Correcting one does not repair every other boundary.
+- Leading-zero cost-centre values remain strings. Numeric 42 does not prove an original identifier of 0042; the correct width/meaning requires the business contract.
+- AccountAttribute defaults apply to that lookup. Filtering that lookup does not remove an account or redefine connector collection scope.
+- The main correction changes an explicit supplier, not HR data, account ownership or profile priority. Shared transform references and affected consumers must be reviewed before applying it.
+- Preview is not persistence and Apply Changes is not source aggregation. A correct identity can coexist with missing/failed external writes. No universal retry, atomic rollout, target rollback or automatic email update is promised.
+- Inline eight-question trace applies the same evidence dimensions as the unchanged complete guide revision 1.0. It is a human investigation order, not a backend execution sequence.
+- All records, times, calculations and before/after outcomes are illustrative. No source/profile/transform/account/correlation/identity/sync or target change is performed.
+
+### Diagrams, reference aid and presentation checks
+
+- [Explicit input trace](../assets/IDN-008_explicit_input_trace.txt), maximum 45 characters: unused approved HR value versus actual directory input, Trim, current Preview/output comparison and historical-evidence caution.
+- [Correction and verification](../assets/IDN-008_correction_and_verification.txt), maximum 41 characters: current wrong input, approved input correction and selected Preview, separately supplied post-processing identity, unchanged directory and human checks.
+- Both editable assets match the inline blocks. Prose identifies arrow meaning, conditions, actor, current-versus-historical limits and that preview does not automatically apply output.
+- The selected nested JSON parses; a local illustrative model checks space trimming, preserved 0042, selected source and the approved source change. This is source-example validation, not execution of ISC transforms.
+- Two two-column tables contain evidence/times and competing hypotheses. Full source text, JSON, diagrams, tables, all forty-six lesson routes/navigation and exact unchanged downloadable aid text are publication checks. Visual rendering is checked separately on the live page.
+- All six navigation modules remain; do not create a seventh module until COR-001 exists. The next reserved lesson is Module 7.1, not authored in this change.
+- No external links, course links or source-reference labels are in the learner article.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. UI selection versus explicit input | Actual calculation provenance | Inspect nested directory lookup; unchanged explicit source ignores reliance on selected HR input | Selected source label alone proves supplier | Trim; Account Attribute |
+| 2. Other governing profile | Inspect the effective profile | Check Contractors and actual associations; Employees mapping is not the supplied identity's evidence | Preferred profile automatically governs or supplies fallback | Profile association/mappings |
+| 3. Two source accounts | Lookup account selection | Oldest-created non-null 0900 wins under supplied defaults; compare approved selection | Newest or desired-looking account always wins | Account Attribute defaults |
+| 4. Producer right, account wrong | Locate first mismatching boundary | Check publication/read/record/extraction/schema/type/time before changing direct mapping | Every identity mismatch originates in the transform | Aggregation; profiles |
+| 5. Correct preview, old applied value | Evaluation versus application | Establish saved revision and affected processing/outcome; lack of application evidence doesn't prove ignored calculation | Preview persists automatically | Profiles; processing |
+| 6. Correct identity, old Search | Current record versus view | Compare exact identity/scope/time and synchronization evidence; don't rewrite good mapping prematurely | One old view disproves current identity record or all discrepancies are automatically delay | Processing; aggregation view notes |
+| 7. Present value reproduces past output | Historical causality | Missing historical revision/input prevents proving exact prior execution; state limit | Same output proves identical historical path | Supplied evidence limits; current definition behavior |
+| 8. Identity fixed, app old | Consumer/write-path boundary | Establish configured update, execution and actual target state; no write and failed write are distinct possible explanations | Identity correction always writes every application | Attribute sync; processing delivery boundary |
+| Work-email transfer / teach-back | Apply evidence trace to changed object | Identify identity/account/message/application observation, exact owner and mapping, preview/applied/write evidence; test same-name/absent-input/reference/report variations | All email complaints are one identity-mapping defect | Profiles; Account Attribute; Reference; correlation; processing; sync |
+
+Questions and worked reasoning stay in the learner file. Beginner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

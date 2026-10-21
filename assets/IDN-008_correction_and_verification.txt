@@ -1,0 +1,17 @@
+Before correction:
+  explicit input -> directory " 0900 "
+    -> Trim -> Preview "0900"
+    -> observed identity "0900"
+
+Approved definition correction:
+  explicit input -> StaffLedger "0042"
+    -> Trim -> Preview "0042"
+
+After appropriate processing completes:
+  same I-68008 identity costCenter "0042"
+  directory unchanged; no sync configured
+
+Human verification:
+  correct person, profile and input?
+  expected consumers and other fields?
+  required external outcomes checked?
