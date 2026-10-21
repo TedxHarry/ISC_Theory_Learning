@@ -1455,6 +1455,55 @@ The agreement treats contractEnd as last authorized calendar day in UTC: 2026-11
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## AGG-001: Following an account record from a source into ISC
+
+- Revision: 1.0. Course placement: Module 5.1.
+- Documentation checked: October 21, 2026. Account collection modes/triggers/history/single-account and Search boundaries, Web Services SaaS response paths, schema identification/naming, account correlation, source views including shadow identity representation, profile mappings, identity processing, entitlement aggregation and provisioning freshly checked.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 51001, ReviewBoard Production, all account/identity/group identifiers, office inputs, source mappings, collection and association results are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: trace the logical account-read and evidence relationships, not a private execution pipeline. Detailed full/delta/optimization/single-account operation mechanics, correlation criterion ordering, entitlement inventory and provisioning have primary lessons. No source, mapping, correlation or target configuration is changed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Supported manual/scheduled/API initiation, source account collection, optimized unchanged-account skipping including correlation, supported delta distinction, single-account action limitations, execution history and Search freshness. A trigger or count doesn't establish rb-51001's updated field or downstream completion. No universal run duration, automatic retry, deletion conclusion or equivalence of read modes is invented. |
+| [Web Services SaaS response mapping](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/response_mapping.html) | Root/attribute response paths select supplied account values for schema attributes. The illustrative items envelope and profile.siteCode-to-office relationship show supported mapping concepts, not a complete connector configuration or exact syntax recipe for every Web Services runtime. The wrong profile.branchCode variation doesn't invent a universal reject/skip/clear result. |
+| [Managing account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Account attributes and designated Account ID/Account Name differ from data values and person ownership. accountKey/login are fictional selected attributes, not universal defaults. Stable supplied designations and the stated outcome support an existing-account update; no private persistence key or universal rename/duplicate algorithm is claimed. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured account-to-identity attribute comparisons establish account ownership; no match is uncorrelated. Re-evaluation after changed correlation configuration needs supported handling, including documented disabled optimization rather than assuming unchanged-account reads always re-evaluate. employeeRef-to-employeeNumber and unique existing I-51 association are supplied facts, not a universal match based on equal digits. |
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Source Accounts view, associations, account details, and the explicit uncorrelated/shadow-identity presentation. A shadow identity is a technical placeholder rather than proof of another HR-established employee. Source record/view evidence differs from external application state or a newly provisioned account. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Profile-backed authoritative identity establishment, cross-source attribute mappings and supported transforms. ReviewBoard is explicitly non-authoritative, the HR-backed identity already exists, and identity office is supplied by HR as CHN. Account office HYD doesn't automatically overwrite that mapping. The HR transfer changes the authority assumptions and requires its own profile/required-value evidence. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | An aggregation/provisioning modification to an identity initiates event-based processing under relevant identity/access configuration; other processing mechanisms exist. It does not validate successful external provisioning after starting it. No every-returned-account/every-calculation/every-write assertion or guaranteed internal ordering is made. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Access-object inventory/descriptive collection differs from account membership values. G-51 is supplied existing membership, not a group creation or a grant caused by the read. Complete inventory and linking receive deeper treatment in AGG-002. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | External account/access changes use provisioning capabilities/configurations, distinct from observed collection. A read can supply data to later configured decision/change work, so the full workflow must not be described as universally consequence-free. No new account, membership or target field is changed in the main supplied result. |
+
+### Diagram, data and reasoning checks
+
+Two editable text assets match their inline diagrams after trailing-whitespace normalization. Maximum line widths are 33 and 44 characters. The first depicts logical read dependencies, not separate private jobs, storage commits or a universal runtime host. The second separates the ReviewBoard-to-account HYD path from the HR-to-identity CHN path; it is not a write/synchronization instruction.
+
+Devi 51001 is an operational case reviewer. ReviewBoard Production is non-authoritative. rb-51001 and devi51001 are the selected account key/name. employeeRef 51001 matches the configured identity employeeNumber under a supplied unique existing association; I-51 is a non-runnable teaching label. The account's operating-office representation changes BLR to HYD, while HR home-office CHN remains the configured identity value. G-51 identifies an existing case-reviewers group, unchanged by collection.
+
+The selected raw JSON envelope contains one illustrative items entry with nested profile.siteCode HYD. The selected represented-attribute JSON has office HYD and preserves accountKey/login/employeeRef/groups. Both are valid, and neither is a full-population response or complete ISC accounts API object. Main-case paging/actor scope/identification and association outcomes are supplied, not real test observations.
+
+Counterfactual first-collection, wrong branchCode path, employeeRef 51010, incomplete pages, unchanged-record optimization, downstream access and stale-file cases are explicitly variations, not simultaneous defects in the successful trace. The HR-record transfer uses an independent authoritative scenario. Formal learner testing has not occurred.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Different account/identity offices | Equal labels require equal values | Compare configured inputs and business meanings; ReviewBoard HYD and HR CHN can both be correct. |
+| First collected representation | New ISC representation means a newly created external account | Supplied first collection creates the representation of an already existing external account; external creation requires its separate capability. |
+| Wrong delivered path | Valid upstream value should be changed to fix a bad mapping | Compare profile.siteCode with wrong profile.branchCode, actual record and errors; no universal failure/clearing behavior is inferred. |
+| Person-reference mismatch | Successful read proves correct ownership | Compare configured account/identity values and actual association; do not silently correct 51010 or match by office. |
+| Unchecked continuation | First response success proves complete collection | Establish intended scope and supported page continuation to completion. |
+| Changed criteria with unchanged data | Any new optimized run re-evaluates every account | Follow supported correlation re-evaluation and scope review; optimization can skip unchanged-account correlation. |
+| Read followed by access change | Observation and membership-add operation are one action, or the whole workflow is harmless | Separate read input, configured decision and provisioning outcome; verify target state and acknowledge workflow consequences. |
+| Newly delivered stale file | Calculation reconstructs current values missing from delivered input | Check producer source state and export selection; file time isn't row freshness. |
+| HR-record transfer | One read guarantees identity establishment and downstream account creation | Verify source record/schema/scope/required values, authoritative profile and resulting identity, then separately configured creation/change capability and target result. Don't carry the non-authoritative ReviewBoard assumption into HR. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -1,0 +1,7 @@
+[ISC requests account collection]
+               |
+[Connector reads ReviewBoard]
+               |
+[Response selected and mapped]
+               |
+[ISC account representation]

@@ -7,6 +7,8 @@ modules:
     title: "3. Where does the work run?"
   - id: sources
     title: "4. Before configuring a source"
+  - id: aggregation
+    title: "5. How aggregation changes what ISC knows"
 lessons:
   - id: SYS-001
     module: system
@@ -233,3 +235,11 @@ lessons:
     source: "lessons/SRC-008_Data_Ownership_Agreements.md"
     url: "/lessons/SRC-008_Data_Ownership_Agreements.html"
     description: "Agree field authority, identifiers, required values, effective times, correction responsibility, and evidence across data handoffs."
+
+  - id: AGG-001
+    module: aggregation
+    placement: "Module 5.1"
+    title: "Following an account record from a source into ISC"
+    source: "lessons/AGG-001_Following_an_Account_Record_into_ISC.md"
+    url: "/lessons/AGG-001_Following_an_Account_Record_into_ISC.html"
+    description: "Trace a delivered account through extraction, representation, ownership, identity-value sourcing, and evidence of the actual outcome."

@@ -171,7 +171,7 @@ SRC-001 is the authored Module 4.1 lesson on source purpose, external context, p
 
 ### Module 5. How does aggregation change what ISC knows?
 
-- 5.1 Following an account record from a source into ISC.
+- 5.1 [Following an account record from a source into ISC](lessons/AGG-001_Following_an_Account_Record_into_ISC.md).
 - 5.2 Account aggregation and entitlement aggregation: their different responsibilities.
 - 5.3 Full aggregation, optimization, and reprocessing unchanged records.
 - 5.4 Delta aggregation: supported behavior and connector-specific limitations.
@@ -182,6 +182,8 @@ SRC-001 is the authored Module 4.1 lesson on source purpose, external context, p
 - 5.9 Investigating a missing or stale account without assuming the cause.
 
 **Outcome:** Explain what an aggregation established, what it did not establish, and which next check is useful.
+
+AGG-001 is the authored Module 5.1 lesson on trigger/read scope, response extraction and schema representation, existing-account identification and ownership, identity-value sourcing, processing/provisioning boundaries and evidence. Lessons 5.2-5.9 remain planned. Learner validation and formal publication approval remain pending.
 
 Aggregation modes and their limitations are explicit subjects because they do not all perform equivalent work. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html)
 

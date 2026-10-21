@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Twenty-nine complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; **ARC-008, The request was accepted. What actually finished?**, revision 1.0; **SRC-001, What will this source actually represent?**, revision 1.0; **SRC-002, Authoritative for what: the person, a value, a login, or a change?**, revision 1.0; **SRC-003, The connector supports it. What can this source actually do?**, revision 1.0; **SRC-004, An account schema: which fields describe the account, and which ones identify it?**, revision 1.0; **SRC-005, The value looks right. Is it the right kind of value?**, revision 1.0; **SRC-006, The group exists. Why doesn't the account's access connect to it?**, revision 1.0; **SRC-007, The read finished. Did it include the right accounts?**, revision 1.0; and **SRC-008, HR approved the extension. Who makes sure the new date reaches the right place?**, revision 1.0.
+The course design and teaching specification are saved. Thirty complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; **ARC-008, The request was accepted. What actually finished?**, revision 1.0; **SRC-001, What will this source actually represent?**, revision 1.0; **SRC-002, Authoritative for what: the person, a value, a login, or a change?**, revision 1.0; **SRC-003, The connector supports it. What can this source actually do?**, revision 1.0; **SRC-004, An account schema: which fields describe the account, and which ones identify it?**, revision 1.0; **SRC-005, The value looks right. Is it the right kind of value?**, revision 1.0; **SRC-006, The group exists. Why doesn't the account's access connect to it?**, revision 1.0; **SRC-007, The read finished. Did it include the right accounts?**, revision 1.0; **SRC-008, HR approved the extension. Who makes sure the new date reaches the right place?**, revision 1.0; and **AGG-001, The account changed. What should change in ISC?**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. That pilot did not itself complete Module 1, Module 2, or the whole course.
 
-The current lesson is SRC-008. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is AGG-001. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 4.8, SRC-008. All eight Module 3 lessons and all eight Module 4 lessons are authored; learner validation and formal publication approval remain pending. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 5.1, AGG-001. All eight Module 3 lessons and all eight Module 4 lessons are authored, and Module 5 has begun; learner validation and formal publication approval remain pending. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -50,6 +50,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [SRC-006: Entitlement membership attributes and schemas](lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md) | Complete learner-facing lesson for Module 4.6 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [SRC-007: Filters and collection scope](lessons/SRC-007_Filters_and_Collection_Scope.md) | Complete learner-facing lesson for Module 4.7 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [SRC-008: Data ownership agreements](lessons/SRC-008_Data_Ownership_Agreements.md) | Complete learner-facing lesson for Module 4.8 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [AGG-001: Following an account record into ISC](lessons/AGG-001_Following_an_Account_Record_into_ISC.md) | Complete learner-facing lesson for Module 5.1 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -726,9 +727,28 @@ A successful read can faithfully implement the wrong business population. Inclus
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest under Module 4; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read SRC-008 and apply feedback to this same file; then author Module 5.1 |
+| Next action | Preserve SRC-008 for feedback and learner validation; AGG-001 was opened following the user's instruction to continue |
 
 Data agreements are an illustrative engineering/operating practice, not a universal ISC contract-validation engine. Business approval, producer delivery, account collection, identity calculation and target update require separate evidence. Null and target-side overrides can have documented synchronization effects. Revisions and timestamps don't create automatic ordering protection; exact expiry boundaries are agreed business meanings, not default schedules or delivery guarantees.
+
+### AGG-001
+
+| Field | AGG-001 |
+|---|---|
+| File | [AGG-001_Following_an_Account_Record_into_ISC.md](lessons/AGG-001_Following_an_Account_Record_into_ISC.md) |
+| Revision | 1.0 |
+| Course placement | Module 5.1 |
+| Content status | Complete lesson saved; trigger/read scope and actor, delivered response and extraction, field mappings/schema, existing-account representation, ownership correlation, account/identity value paths, processing/provisioning boundaries and operational evidence |
+| Author review | October 21, 2026; first-use meanings, independent Devi ReviewBoard example, nested/raw versus represented JSON, HYD/CHN source distinctions, two diagrams, two tables, eight worked cases and HR-record transfer checked |
+| Documentation check | October 21, 2026; account loading/modes/history/Search freshness, Web Services SaaS response mapping, schema designations, correlation and uncorrelated/shadow representation, profile mappings, identity processing and provisioning boundaries freshly checked |
+| Diagram sources | [Account read to representation](assets/AGG-001_account_read_to_representation.txt) and [Account/identity value paths](assets/AGG-001_account_and_identity_value_paths.txt); synchronized with inline blocks, maximum line widths 33 and 44 characters |
+| Tenant execution | Not performed; employee 51001, ReviewBoard Production, rb-51001/devi51001, I-51 teaching label, BLR/HYD/CHN values, G-51 and supplied read/association/outcomes are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest under new Module 5; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read AGG-001 and apply feedback to this same file; then author Module 5.2 |
+
+The read represents an existing external account; account identification, ownership association, identity value calculation and external changes are distinct. Account office HYD and HR-mapped identity office CHN can both be correct. Trigger acceptance, record collection and target change need separate evidence. Diagrams show logical dependencies/value paths, not private transactions, fixed runtime hosts or universal failure/processing order.
 
 ## Source-citation relocation
 
@@ -740,17 +760,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons, all seven Module 2 lessons, all eight Module 3 lessons, and all eight Module 4 lessons are authored. Learner validation and formal publication review remain separate pending stages. Module 5 remains planned.
+All six Module 1 lessons, all seven Module 2 lessons, all eight Module 3 lessons, all eight Module 4 lessons, and Module 5.1 are authored. Learner validation and formal publication review remain separate pending stages. Lessons 5.2-5.9 remain planned.
 
-The next new lesson is Module 5.1:
+The next new lesson is Module 5.2:
 
-**Following an account record from a source into ISC.**
+**Account aggregation and entitlement aggregation: their different responsibilities.**
 
-- Reserved permanent ID: `AGG-001`.
-- Planned file: `lessons/AGG-001_Following_an_Account_Record_into_ISC.md`.
+- Reserved permanent ID: `AGG-002`.
+- Planned file: `lessons/AGG-002_Account_and_Entitlement_Aggregation.md`.
 - Status: planned only; no lesson file created.
-- Scope: trace a supported account read from source data through connector response/extraction and schema representation into the collected account and relevant identity relationships; distinguish collection evidence, ownership association, identity-value processing and external writes without inventing private execution stages. Full/delta/optimization/single-account mechanics retain their primary lessons.
-- Resolve known feedback on SRC-008 before opening the next writing task.
+- Scope: distinguish account/attribute/membership collection from entitlement-object inventory and descriptive enrichment; trace supported source/type/ID linking, unused objects, separate read scopes/triggers and incomplete results without equating observed access with grants or promising universal aggregation order.
+- Resolve known feedback on AGG-001 before opening the next writing task.
 
 ## Recording review status
 
@@ -811,3 +831,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 21, 2026 | Authored and reviewed SRC-006 revision 1.0 with membership/object distinctions, source/type/ID linking, selected ID/Name, two collection responsibilities, multiple access types and indirect relationships, safe schema-change and UI/metadata reasoning; two diagrams, two tables, seven cases and application-design transfer; reserved SRC-007 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 21, 2026 | Authored and reviewed SRC-007 revision 1.0 with intended/read/view scope, inclusion/exclusion logic, actor visibility, native/resource filtering, membership/object scope, pagination and extraction, aggregation-mode and deletion-safeguard boundaries; two diagrams, two tables, eight cases and payroll-export transfer; reserved SRC-008 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 21, 2026 | Authored and reviewed SRC-008 revision 1.0 with field-level authority, producer/integration/consumer handoffs, identifiers, requiredness/null semantics, effective and delivery times, stale export correction, synchronization boundaries and acceptance/change handling; two diagrams, two tables, JSON, eight cases and laboratory-project transfer; all eight Module 4 lessons now authored; reserved AGG-001 | Documentation-based author review; illustrative operating agreement and fictional results; no tenant execution, beginner validation, or formal publication approval |
+| October 21, 2026 | Authored and reviewed AGG-001 revision 1.0 with supported account-read tracing, nested response/extraction/schema mappings, existing-account recognition, person correlation and shadow boundary, independent account/identity office paths, processing/provisioning and evidence distinctions; two diagrams, two tables, two JSON blocks, eight cases and HR-record transfer; opened Module 5 navigation and reserved AGG-002 | Documentation-based author review; fictional operations and supplied outcomes; no tenant execution, beginner validation, or formal publication approval |

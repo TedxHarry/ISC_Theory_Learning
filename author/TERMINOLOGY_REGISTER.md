@@ -199,6 +199,12 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Effective / recorded / delivery time / revision | When a fact applies / when recorded / when delivered / producer's record version | New file time and later arrival don't prove current approved data; recordRevision doesn't give ISC automatic version precedence |
 | Attribute synchronization / target exception | Configured alignment of eligible existing correlated account attributes with identity values / approved temporary deviation | Create Account direct-mapping eligibility matters; null can propagate and manual target edits can be overwritten; not account creation |
 | Business change / correction / recovery | New approved fact / repair of wrong fact or representation / authorized handling of completed effects | Extension approval differs from stale-export repair; corrected data doesn't automatically undo all earlier access actions |
+| Account aggregation / represented account | Collects source accounts and attributes / ISC's collected record of an external account | Discovering an existing account isn't external account creation; a trigger or count isn't proof of the specific updated record |
+| Response / extraction / source mapping | Delivered information / selection of records or values / input supplying a represented attribute | An envelope isn't one account; nested profile.siteCode can map to office; schema definition alone doesn't supply absent input |
+| Account recognition / correlation / identity mapping | Which source account / whose account / which source supplies an identity value | Separate keys and person references; HYD account office and HR-supplied CHN identity office can both be correct |
+| Uncorrelated / shadow identity | Unresolved association to an intended established identity / technical placeholder | Collection can succeed without intended ownership; placeholder isn't evidence that HR established another employee |
+| Account read / processing / provisioning | Observation and representation / evaluation under identity/access configuration / external change operation | Collected data can have separate downstream consequences; reading membership isn't adding it; one successful operation doesn't establish all outcomes |
+| Source aggregation / single-account action | Configured source read versus specified-account read with documented limits | Single-account collection doesn't prove identity attribute synchronization or provisioning; optimization can skip unchanged-account correlation |
 
 ## Source anchors
 
