@@ -1407,6 +1407,54 @@ The simple predicates and counts are checked against the table. OR variations de
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## SRC-008: Data ownership agreements
+
+- Revision: 1.0. Course placement: Module 4.8.
+- Documentation checked: October 21, 2026. Source ownership/account views, identity-profile mappings/required values/preview, account-schema change warnings, collection and identity processing, lifecycle-state boundaries, dateFormat, and attribute synchronization eligibility/direction/null handling freshly checked.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Worker 48008, PeopleLedger Production, GrantDesk Production, records, job times, stale view, correction and resulting target values are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: field authority, producer/integration/consumer responsibility, identifiers, requiredness, temporal and missing-value contracts, correction/acceptance/change evidence. These operating practices are an illustrative engineering model, not documented universal ISC roles, a contract-validation engine, automatic quarantine or automatic version arbitration. The sources below support product boundaries, not a mandate for the fictional team's job assignments.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html) | Configured Source Owner, connection context and account views are real ISC concepts. Assigning an owner does not itself constitute the field-by-field business/producer/consumer agreement illustrated here. Source account views represent collected records, not proof that HR approved a value or a target changed. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative source/profile responsibility, cross-source identity mappings, supported transforms, required non-null User Name/Work Email/Last Name and unique User Name, plus the explicit distinction that Work Email is not validated as an email address. Preview inspects mappings with selected data; it is not external-delivery evidence. Project-required contractEnd is expressly not a universal ISC required identity attribute. |
+| [Managing account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Schema definitions/designated uses versus record values; post-aggregation Account ID/Name changes are strongly discouraged, can break references or create duplicates, and Account Name is documented as immutable. Worker/person/target keys remain deliberately separate. No key migration, universal reconciliation winner or safe-rename recipe is invented. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Account collection and execution evidence are separate from producer correctness, identity calculation and external writes. A selected JSON fragment is not a complete authoritative import, and the fictional correction does not prescribe an unsafe reaggregation or deletion-setting change. Scope/completeness and existing-record consequences belong in the operating agreement. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Identity data is evaluated under configured profiles/access logic, with event/scheduled/time/manual mechanisms. Processing does not validate successful external provisioning after starting it. Modified time is evidence of an update, not proof of which field now meets the business requirement. No exact internal ordering, guaranteed cutoff delivery or schedule recipe is supplied. |
+| [Synchronizing attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Eligible account fields are included in Create Account definitions and directly mapped from identity attributes; synchronization applies to existing correlated accounts, does not create accounts, and enforces configured identity-to-account alignment. Null identity values from profile mappings can propagate; manual target deviations can be overwritten. GrantDesk expiryDate capability and configured mapping are explicit fictional assumptions, not claims about a real connector. |
+| [Setting up lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Organizational state and enabled/configured actions differ from raw HR codes or date strings. The lesson establishes only this dependency; full state mappings, enabling states, account actions and removal behavior have primary lessons. No date text alone schedules an exact external action. |
+| [dateFormat transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/date-format/) | Supported representation conversion is separate from approving a new fact or selecting business cutoff/time-zone semantics. No full transform payload or default-UTC claim is made. The next-day UTC boundaries are expressly supplied agreement choices and checked arithmetically. |
+
+### Diagram, data and reasoning checks
+
+Two editable text assets match the inline diagrams after trailing-whitespace normalization. Maximum line widths are 30 and 37 characters. The first compares approved revision 18 (2026-12-31) with stale exported revision 17 (2026-11-30). The second is a responsibility/dependency handoff: business approval, producer correction, ISC values and verified target update. Neither is an undocumented ISC transaction or guaranteed execution schedule.
+
+Devi is fixed-term project coordinator 48008. PeopleLedger workerKey PL-W-48008 identifies this worker record; personNumber 48008 is the separately agreed person reference. GrantDesk account grant-48008 is already associated to the same identity by supplied facts. managerNumber 48001 is a fictional manager reference, not a derived matching result. The selected corrected JSON fragment is valid; all other required identity inputs and account designations are explicitly assumed configured.
+
+HR approves the extension on 20 November 2026 at 08:45 UTC. The export is generated at 09:20 and read at 09:30 the same day, but carries revision 17 because its view is stale. The producer's corrected publication supplies revision 18; the stated verified outcome is 2026-12-31 on source account, identity and target expiryDate. The existing target expiry feature and eligible configured synchronization are fictional supported-design assumptions. No future expiry execution or continuous sign-in was tested.
+
+The agreement treats contractEnd as last authorized calendar day in UTC: 2026-11-30 maps to required boundary 2026-12-01T00:00:00Z, and 2026-12-31 to 2027-01-01T00:00:00Z. These are not product default meanings or proven delivery instants. Producer revisions do not give ISC automatic stale-row rejection, latest-arrival precedence, exactly-once processing or rollback. Business extension approval differs from correcting the stale export representation.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Later job, stale row | Delivery after approval proves delivery of current approved data | Compare identified row/revision/value, not just file time; producer correction is required in the supplied case. |
+| Conflicting end dates | Choosing the later or last-read value is business authority | Establish field authority and direction, then trace the failed handoff; do not invent extra authorized time. |
+| Missing usable email | Non-null placeholder satisfies a usable-address requirement | Distinguish ISC's required mapped value from business usability; follow approved missing-data handling without fabricated inputs. |
+| Manual target exception | A target edit persists regardless of configured synchronization | Identity-to-account alignment can overwrite it; correct upstream cause and document authorized exception/reconciliation. |
+| Null synchronized value | Blank always preserves target value | The documented configured sync mechanism can propagate identity null; agree operation-specific meanings and supported handling. |
+| Older revision arrives later | Arrival time wins or revision field enables automatic ISC precedence | Apply expressly designed producer/integration ordering and recovery; no automatic protection is inferred. |
+| Correct identity, denied target write | HR should change correct business data to fix permissions | Investigate supported target operation/input/authority, preserve approved value and verify resulting state after authorized correction. |
+| Date formatted, boundary unknown | Correct representation defines expiry timing | Agree business day/hour/zone meaning, target representation and processing/delivery evidence; fictional UTC cutoffs are not defaults. |
+| Laboratory-project transfer | One source owner, null/no-change, latest-arrival and green job replace a data agreement | Assign field-specific authority and handoffs, stable/manager identifiers, requiredness/status/missing semantics, scope/time/freshness/order, safe correction evidence and per-consumer acceptance. Preserve unresolved target outcomes. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -225,3 +225,11 @@ lessons:
     source: "lessons/SRC-007_Filters_and_Collection_Scope.md"
     url: "/lessons/SRC-007_Filters_and_Collection_Scope.html"
     description: "Distinguish intended coverage, filter decisions, actor visibility, incomplete reads, and the consequences of missing records."
+
+  - id: SRC-008
+    module: sources
+    placement: "Module 4.8"
+    title: "Data ownership agreements"
+    source: "lessons/SRC-008_Data_Ownership_Agreements.md"
+    url: "/lessons/SRC-008_Data_Ownership_Agreements.html"
+    description: "Agree field authority, identifiers, required values, effective times, correction responsibility, and evidence across data handoffs."

@@ -1,0 +1,7 @@
+[HR approves the business change]
+                 |
+[Producer publishes corrected data]
+                 |
+[ISC collects and calculates values]
+                 |
+[Supported target update is verified]
