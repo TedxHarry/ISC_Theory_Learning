@@ -1,0 +1,7 @@
+[Two group values from RouteBoard]
+                |
+        +-------+--------+
+        |                |
+   [Keep list]     [Join with ;]
+        |                |
+ [Two entries]     [One text value]

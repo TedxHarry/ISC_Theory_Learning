@@ -1,0 +1,7 @@
+[External response: value and shape]
+                 |
+[Extraction and configured conversions]
+                 |
+[Source schema and collected attributes]
+                 |
+[Configured consumers and their results]

@@ -201,3 +201,11 @@ lessons:
     source: "lessons/SRC-004_Account_Schemas_Identifiers_and_Display_Attributes.md"
     url: "/lessons/SRC-004_Account_Schemas_Identifiers_and_Display_Attributes.html"
     description: "Trace account fields, selected identification and naming attributes, ownership matching, and safe schema changes."
+
+  - id: SRC-005
+    module: sources
+    placement: "Module 4.5"
+    title: "Attribute types, multiple values, and data formats"
+    source: "lessons/SRC-005_Attribute_Types_Multiple_Values_and_Data_Formats.md"
+    url: "/lessons/SRC-005_Attribute_Types_Multiple_Values_and_Data_Formats.html"
+    description: "Preserve value meaning, types, list structure, missing-value semantics, dates, and evidence across an integration."

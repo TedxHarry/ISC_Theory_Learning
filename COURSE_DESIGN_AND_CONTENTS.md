@@ -160,14 +160,14 @@ Connection diagrams follow the documented distinction between VA-based and SaaS 
 - 4.2 [Authoritative and non-authoritative sources: deciding their responsibilities](lessons/SRC-002_Authoritative_and_Non_Authoritative_Sources.md).
 - 4.3 [Reading a connector capability matrix: supported reads and supported changes](lessons/SRC-003_Reading_a_Connector_Capability_Matrix.md).
 - 4.4 [Account schemas, account identifiers, and display attributes](lessons/SRC-004_Account_Schemas_Identifiers_and_Display_Attributes.md).
-- 4.5 Attribute types, multivalued attributes, and data-format expectations.
+- 4.5 [Attribute types, multivalued attributes, and data-format expectations](lessons/SRC-005_Attribute_Types_Multiple_Values_and_Data_Formats.md).
 - 4.6 Entitlement membership attributes and entitlement schemas.
 - 4.7 Filters and collection scope: which records are included or excluded.
 - 4.8 Data ownership agreements: identifiers, required fields, effective dates, and corrections.
 
 **Outcome:** Describe what a source must provide and what ISC can reasonably do with it.
 
-SRC-001 is the authored Module 4.1 lesson on source purpose, external context, population boundaries, coverage evidence and operation scope. SRC-002 is the authored Module 4.2 lesson on identity establishment, overlapping authoritative accounts and profile priority, attribute sourcing, authentication and external-change boundaries. SRC-003 is the authored Module 4.3 lesson on operation/object scope, reading versus changing accounts/access, connector support versus target/configuration/authority, and operation-level readiness evidence. SRC-004 is the authored Module 4.4 lesson on account-schema definitions, selected identification/naming attributes, external read/mapping/value tracing, ownership correlation, discovery and post-aggregation change risks. Lessons 4.5-4.8 remain planned. Learner validation and formal publication approval remain pending.
+SRC-001 is the authored Module 4.1 lesson on source purpose, external context, population boundaries, coverage evidence and operation scope. SRC-002 is the authored Module 4.2 lesson on identity establishment, overlapping authoritative accounts and profile priority, attribute sourcing, authentication and external-change boundaries. SRC-003 is the authored Module 4.3 lesson on operation/object scope, reading versus changing accounts/access, connector support versus target/configuration/authority, and operation-level readiness evidence. SRC-004 is the authored Module 4.4 lesson on account-schema definitions, selected identification/naming attributes, external read/mapping/value tracing, ownership correlation, discovery and post-aggregation change risks. SRC-005 is the authored Module 4.5 lesson on value meaning/type/cardinality, JSON and CSV structure, conversion and missing/empty semantics, dates and downstream evidence. Lessons 4.6-4.8 remain planned. Learner validation and formal publication approval remain pending.
 
 ### Module 5. How does aggregation change what ISC knows?
 

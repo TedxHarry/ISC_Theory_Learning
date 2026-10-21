@@ -1268,6 +1268,55 @@ The payroll transfer's duplicate local u17 keys belong to different people in tw
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## SRC-005: Attribute types, multiple values and data formats
+
+- Revision: 1.0. Course placement: Module 4.5.
+- Documentation checked: October 21, 2026. Source attribute-definition/type models, account-schema multi-value/entitlement settings, Web Services SaaS response mapping and response examples, dateFormat, and the primary JSON/CSV/timestamp specifications were freshly checked.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 45005, RouteBoard, route-45005, the API/file contract, faulty converter, approved correction and supplied reread are fictional. They do not describe ISC default conversion behavior.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: preserve value meaning, type, collection shape and transport format; distinguish missing states and date interpretation; trace configured conversions and consumers. No tenant configuration, provisioning request, complete transform payload, universal connector parser or private execution sequence is supplied.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Source attribute definition](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/attribute-definition/) | Attribute name/type and separate isMulti, isEntitlement and related properties support the distinction between type, cardinality and access designation. A multi-value flag does not invent a string-splitting contract or make every collection an entitlement. |
+| [Source attribute types](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/attribute-definition-type/) | STRING, LONG, INT, BOOLEAN and DATE are model values. Whole-number representation differs from textual business codes. The lesson does not promise that every connector accepts arbitrary input formats or perform numeric-boundary configuration. |
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Schema/multi-value settings and the explicit constraint that Boolean attributes cannot be marked as entitlements. Schema definitions differ from collected record values; membership linking requires appropriate source/type/schema/identifier relationships. No universal null-clearing, deduplication or parser failure algorithm is inferred. |
+| [Web Services SaaS response mapping](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/response_mapping.html) | Schema attributes map to response paths under the configured response/root. Wrong extraction can change selected value or shape. RouteBoard extraction is deliberately supplied as correct, with a later project-added faulty conversion. No exact reject/skip behavior for a wrong path is invented. |
+| [Web Services SaaS response configuration](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/configuration_for_response.html) | Nested response and collection extraction examples support checking scalar/list and object/identifier selection. Selecting one array element does not collect the whole array. This is not a complete connector configuration or arbitrary JSON-object serialization recipe. |
+| [dateFormat transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/date-format/) | Documented input/output patterns and datetime conversion. The selected dd/MM/yyyy to yyyy-MM-dd example preserves the agreed 4 November 2026 meaning. Patterns are transform conventions, not universal connector field settings; formatting does not define termination time, scheduling or delivery. |
+| [RFC 8259: JSON](https://www.rfc-editor.org/rfc/rfc8259) | Object, array, string, number, true/false/null, lowercase literals and transport representation. JSON has no native date type. Absent property, null, empty array, singleton empty string and literal text are structurally different; the standard does not define ISC operation semantics. |
+| [RFC 4180: Common CSV format](https://www.rfc-editor.org/rfc/rfc4180) | Informational description of comma-separated fields, quoting and escaping, not a claim that all CSV dialects are identical. The quoted Rao, Devi field remains one column. The inner semicolon membership convention is a fictional producer/import agreement, not an RFC rule, ISC default or asserted Delimited File configuration option. |
+| [RFC 3339: Internet timestamps](https://www.rfc-editor.org/rfc/rfc3339) | Numeric offset and UTC instant interpretation. 18:00 at +05:30 equals 12:30Z. A date-only value or one numeric offset does not supply every business cutoff or regional timezone rule. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Supporting identity mappings/transforms and processing boundary, retained from same-day course verification. A corrected collected account value does not prove a corrected identity value or resulting access delivery without checking consumers. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supporting established distinction between reading/representing attributes and performing supported external account/access changes, retained from same-day course verification. No real target writes or tenant tests occurred. |
+
+### Diagram, data and reasoning checks
+
+Two editable text diagrams match their inline counterparts after trailing-whitespace normalization. Maximum line widths are 35 and 40 characters. The first compares preserving a list with joining its elements, not changing external membership. The second is a human evidence/dependency trace, not an ISC private execution pipeline.
+
+Employee 45005 uses account route-45005. costCentre is the significant textual code 007. groups contains route.read and route.dispatch as separate identifiers. The supplied bad project converter yields textual 7 and one combined membership item; the supported approved correction and reread restore the intended read-side representation without changing the external account or memberships. These are fictional facts, not connector defaults or observed test results.
+
+The selected JSON block is valid and preserves strings, numeric quantity, Boolean true, a two-item array, date text and explicit null. The limited CSV alternative has four columns and one data row, preserves the quoted name and textual 007, and requires a separate field-specific membership interpretation. It is not a complete source snapshot/upload instruction. The date contract is day/month/year: 04/11/2026 means 2026-11-04. Offset arithmetic and the seven distinct missing/null/empty representations are checked independently. Invalid input must not silently become an assertion of no memberships; operation-specific error handling needs its own evidence.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Code 007 becomes 7 | A later text definition restores earlier lost information | Recover the original or use an expressly agreed formatting rule; do not invent padding from one record. |
+| Text false | Every non-empty string means Boolean true | Establish supported parsing of the producer's convention and unexpected inputs. The faulty conversion is not ISC's default parser. |
+| One joined membership item | Multi-valued means automatically splitting joined text | Inspect actual elements and preserve/extract/parse identifiers under the supported contract; brackets do not split strings. |
+| Quoted comma in a name | All separators have the same scope | Parse quoted CSV columns separately from the fictional inner membership delimiter. |
+| Omitted groups | Missing data proves no external access | Establish read scope, completeness, extraction and omission semantics; absence is not a successful removal operation. |
+| Reformatted wrong date | Consistent output proves correct meaning | Honor agreed day/month order before formatting, and establish separate time/zone requirements. |
+| Blank UI cell | Every blank-looking value should default to false | Inspect raw state, field type, business meaning and supported fallback conditions; false is a real value, not absence. |
+| HR-feed transfer | One global conversion or null-clearing rule safely handles all fields | Establish field-level type/cardinality/format, preserve identifiers, define Y/N and inner-list parsing, check scope and missing-state semantics, specify date meaning/cutoff and verify raw-to-consumer evidence. No universal removal behavior is inferred. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
+
 
 ## ARC-005
 
