@@ -7,14 +7,14 @@ description: "A practical theory course for understanding SailPoint Identity Sec
   <h1>Understand the system.<br>Follow the access.</h1>
   <p class="lead">SailPoint ISC theory, explained through the records, decisions, and flows behind everyday identity work.</p>
   <p>For learners with basic identity and access knowledge who want to understand what happens, where it happens, and why.</p>
-  <p class="course-status">Nineteen lessons are available in this working edition. Further lessons, learner validation, and publication review are still in progress.</p>
+  <p class="course-status">Twenty lessons are available in this working edition. Further lessons, learner validation, and publication review are still in progress.</p>
   <a class="start-link" href="{{ site.data.course.lessons.first.url | relative_url }}">Begin with why ISC is needed</a>
 </section>
 {% for module in site.data.course.modules %}
 <section class="course-module" aria-labelledby="module-{{ module.id }}">
   <h2 id="module-{{ module.id }}">{{ module.title | escape }}</h2>
   {% if module.id == 'foundations' %}<p class="module-context">Identity and account relationships, integration boundaries, access objects, application/request/sign-in distinctions, precise references, and multiple-account reasoning.</p>{% endif %}
-  {% if module.id == 'architecture' %}<p class="module-context">Hosted-service boundaries, customer responsibilities, Virtual Appliances and clusters, SaaS connectors, IQService, connection dependencies, UI/API entry points, automation, and operation evidence. Further lessons in this module will follow.</p>{% endif %}
+  {% if module.id == 'architecture' %}<p class="module-context">Hosted-service boundaries, customer responsibilities, Virtual Appliances and clusters, SaaS connectors, IQService, connection dependencies, UI/API entry points, automation, sign-in and password-operation boundaries, and operation evidence. Further lessons in this module will follow.</p>{% endif %}
   <ol class="course-lessons">
     {% for lesson in site.data.course.lessons %}
       {% if lesson.module == module.id %}

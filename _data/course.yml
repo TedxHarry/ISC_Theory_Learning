@@ -151,3 +151,11 @@ lessons:
     source: "lessons/ARC-006_UI_APIs_Automation_and_Platform_Capabilities.md"
     url: "/lessons/ARC-006_UI_APIs_Automation_and_Platform_Capabilities.html"
     description: "Follow entry points, caller authority, operation meaning, request tracking, and configured automation."
+
+  - id: ARC-007
+    module: architecture
+    placement: "Module 3.7"
+    title: "ISC sign-in, identity providers, and source passwords"
+    source: "lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.md"
+    url: "/lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.html"
+    description: "Separate authentication routes, trust and matching, source-password changes, recovery, and session evidence."

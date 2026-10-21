@@ -10,7 +10,7 @@ The course is for beginners and freshers with some IAM knowledge. Its purpose is
 - [Read the available lessons](https://tedxharry.github.io/ISC_Theory_Learning/)
 - [Publishing and update instructions](author/PUBLISHING.md)
 
-The repository contains the complete working files. GitHub Pages presents the nineteen available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
+The repository contains the complete working files. GitHub Pages presents the twenty available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
 
 ## Start here
 
@@ -44,6 +44,8 @@ The repository contains the complete working files. GitHub Pages presents the ni
 
 - [ARC-006: UI, APIs, automation, and platform capabilities](lessons/ARC-006_UI_APIs_Automation_and_Platform_Capabilities.md)
 
+- [ARC-007: ISC sign-in, identity providers, and source passwords](lessons/ARC-007_Signing_Into_ISC_Identity_Providers_and_Source_Passwords.md)
+
 ## One lesson file at a time
 
 1. Read the teaching specification and course register before starting work.
@@ -69,6 +71,6 @@ Examples can use Devi, but every lesson supplies its own context. A learner must
 
 ## Current saved material
 
-The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, Module 2 lessons FND-001 through FND-007, and Module 3 lessons ARC-001, ARC-002, ARC-003, ARC-004, ARC-005, and ARC-006 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
+The course design, teaching specification, Module 1 lessons SYS-001, SYS-002, SYS-003, SYS-004, SYS-005, and SYS-006, Module 2 lessons FND-001 through FND-007, and Module 3 lessons ARC-001, ARC-002, ARC-003, ARC-004, ARC-005, ARC-006, and ARC-007 are saved here. Current revisions and review results are recorded in the course register and the documents themselves. The specification requires a personal, patient mentor voice without unnecessary commentary about the teaching method.
 
-FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-007. All six Module 1 lessons and all seven Module 2 lessons are authored; learner validation and formal publication review remain pending. ARC-001 opens Module 3 with the ISC tenant and customer responsibilities. ARC-002 covers Virtual Appliances and clusters in Module 3.2. ARC-003 covers SaaS connectors and their connection path in Module 3.3. ARC-004 covers where IQService fits when a connector requires it in Module 3.4. ARC-005 covers network reachability, authentication, permissions, and operation support in Module 3.5. ARC-006 covers how UI actions, APIs, and automation interact with platform capabilities in Module 3.6. ARC-007, on signing into ISC, external identity providers, and source password operations in Module 3.7, is the next planned lesson. The register distinguishes saved work, review work, and planned work.
+FND-001 belongs in Module 2 and was authored first to establish the teaching approach. It has now been reviewed in course order, followed by FND-002 through FND-007. All six Module 1 lessons and all seven Module 2 lessons are authored; learner validation and formal publication review remain pending. ARC-001 opens Module 3 with the ISC tenant and customer responsibilities. ARC-002 covers Virtual Appliances and clusters in Module 3.2. ARC-003 covers SaaS connectors and their connection path in Module 3.3. ARC-004 covers where IQService fits when a connector requires it in Module 3.4. ARC-005 covers network reachability, authentication, permissions, and operation support in Module 3.5. ARC-006 covers how UI actions, APIs, and automation interact with platform capabilities in Module 3.6. ARC-007 covers signing into ISC, external identity providers, and source password operations in Module 3.7. ARC-008, on requesting work, executing work, and observing completion in Module 3.8, is the next planned lesson. The register distinguishes saved work, review work, and planned work.

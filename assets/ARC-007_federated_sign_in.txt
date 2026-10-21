@@ -1,0 +1,14 @@
+[Devi opens ISC in her browser]
+                |
+                v
+[AccessGate authenticates Devi]
+                |
+     SAML response via browser
+                |
+                v
+[ISC checks trust and identity mapping]
+                |
+       accepted for this user
+                |
+                v
+[Devi uses ISC in an ISC session]

@@ -930,6 +930,77 @@ Questions and worked reasoning remain in the learner file. Reference evidence, a
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+
+## ARC-007: ISC sign-in, identity providers, and source passwords
+
+- Revision: 1.0. Course placement: Module 3.7.
+- Documentation checked: October 20, 2026. Current official identity-profile sign-in settings, PTA, SAML SP/JIT, MFA, password policy/reset/application/sync behavior and session/lockout boundaries reviewed.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 37007, AccessGate, CaseDesk, their records, integration actor, reported errors and all successful/failed outcomes are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: authentication and credential-change execution boundaries, not a SAML implementation/security runbook, advanced password-management deployment, IdP product tutorial, authenticator-reset procedure or authority to change real credentials.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative-source identity establishment versus profile configuration; site username/password and Directory Connection meanings; MFA and reset/unlock settings. HR is the fictional authoritative source, not automatically the authentication system. No complete identity-profile or lifecycle mechanism is inferred. |
+| [Configuring PTA](https://documentation.sailpoint.com/saas/help/common/pta.html) | Supported authentication-source credential checks, profile-level Directory Connection, prior account aggregation, account-selection dependencies, source-password linkage and risk of changing production authentication sources without support. Main alternate case supplies one source account; no provisioning selector is substituted for documented PTA selection. |
+| [ISC as a service provider](https://documentation.sailpoint.com/saas/help/common/config_isc_service_provider.html) | External IdP/ISC SP relationship, password not shared with ISC through SAML federation, matching-user requirement, participant/login/mapping/signing-certificate configuration, failed-authentication path, controlled elevated-user direct sign-in and lack of SAML Single Logout. No universal employee bypass, fixed session lifetime or private validation sequence is taught. |
+| [JIT account creation](https://documentation.sailpoint.com/saas/help/common/jit-accounts.html) | Separately configured JIT source/profile/SP account-and-identity creation; not implicit in SSO and not JIT access activation or universal business-app account creation. Main example explicitly excludes this option. Services guidance and full configuration mechanics remain out of scope. |
+| [MFA configuration](https://documentation.sailpoint.com/saas/help/common/strong_auth.html) | ISC authenticator and reset context versus IdP sign-in, elevated-user registration/direct-sign-in conditions, TOTP and distinction from password-update verification. Learner prose does not assert that every IdP sign-in prompts for an additional ISC code or that SSO removes all registration responsibilities. |
+| [Password Management overview](https://documentation.sailpoint.com/saas/help/pwd/index.html) and [Password Manager user help](https://documentation.sailpoint.com/saas/user-help/password_manager.html) | Supported configured source-password management and user-facing applications/groups versus site-password management. Standalone, shared-source and sync-group presentations are different relationships; no feature/license or universal connector guarantee. |
+| [Access applications for passwords](https://documentation.sailpoint.com/saas/help/pwd/add_access_app.html) | Required application/source configuration, user visibility, passwords managed per source, multiple applications sharing source password, PTA linkage and sync-group effects. Application tiles are not independent password stores or SSO trusts. No claim that merely creating an application enables every operation. |
+| [Password policies](https://documentation.sailpoint.com/saas/help/pwd/pwd_policies/pwd_policies.html) | Compatible source/ISC policy requirements; configured verification enforcement; support limited to applicable direct connections, not flat files. Does not recommend disabling verification, choosing a universal policy value or copying target restrictions without checking the actual connector/system. |
+| [Reset and unlock authentication](https://documentation.sailpoint.com/saas/help/pwd/pwd_reset.html) | Profile-configured recovery methods versus policy enforcement; verification needs usable configured information; disabled-account reset restriction. No exact method order, phone-country list, code lifetime or unsupported recovery shortcut is taught. |
+| [Admin password reset](https://documentation.sailpoint.com/saas/help/common/users/reset_pwd_auth.html) | Sending reset instructions versus user completion and PTA/sync interactions. No actual email, MFA reset, identity deregistration or password change was performed. |
+| [Password sync groups](https://documentation.sailpoint.com/saas/help/pwd/sync_grps.html) | Supported multi-source propagation and policy compatibility; normal SSO precedence over Directory Connection; source-based history validation; PTA failure gating versus non-PTA partial outcomes; source failures visible in audit evidence. No universal transaction/rollback, exact retry schedule, readable password history or reverse synchronization from every external website is asserted. |
+| [Session settings](https://documentation.sailpoint.com/saas/help/common/session_lengths.html) | ISC maximum/idle session controls and browser session-cookie retention caveat. Exact limits/defaults are omitted; closing a browser or changing a password is not generalized to all external session/token termination. |
+| [Lockout settings](https://documentation.sailpoint.com/saas/help/setup/lockout.html) | Supporting sign-in failure/lockout distinctions and interaction with authentication/recovery settings. No lockout threshold or advice to repeat guesses is supplied. |
+| [Sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [loading accounts](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html), [user levels](https://documentation.sailpoint.com/saas/help/common/users/user_levels.html) and [provisioning evidence](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Supporting concepts retain same-day verification in earlier lessons. Correlation is ownership association, not sign-in mapping or shared credentials; collection is not live password proof; sign-in does not grant administration; integration result must be scoped to the intended account/operation. |
+
+### Conditions and limits
+
+- Devi is independently established as a support-operations employee, number 37007. Workforce HR account hr-37007, directory account corp-37007, AccessGate user devi37007, ISC username devi37007 and CaseDesk account cases-37007 are distinct records even where labels coincide.
+- Main setup supplies existing correctly associated accounts, configured trusted SAML sign-in through AccessGate and a matching ISC user. JIT creation is disabled. CaseDesk uses its own password and is outside shared-password/sync relationships.
+- Fictional email devi37007@corp.example is the intended mapped identity value; old.example is a supplied mismatch. No real assertion, password, signing key, certificate or recovery code is included.
+- SAML trust acceptance and user mapping are different checks; the diagram is not a complete cryptographic validation algorithm or private backend topology. Passwords are not copied to managed apps by this sign-in relationship.
+- The PTA example is an alternate route, not a second step required after external SSO. Corporate Directory is assumed supported/configured and has one relevant pre-aggregated account; no universal account-choice algorithm or connector protocol is invented.
+- Authentication dependencies vary by supported source/runtime. A VA is introduced only conditionally; it is not inserted into native or every federated/SaaS sign-in path.
+- Native site credentials, source credentials, IdP authority, ISC user level and application permissions are separate. A shared user label or HR identity does not create credential synchronization or admin authority.
+- MFA at the IdP, ISC authenticator settings and verification for password changes have distinct configuration/ownership. Reset, unlock, reenable and MFA reset are not interchangeable operations or permission to bypass security.
+- CaseDesk is a hypothetical password-capable direct connection with configured policy/access application/recovery and intended eligible account. svc-case-isc is the target integration actor, not the recipient or browser user. There is no claim that a real CaseDesk connector exists.
+- Password validation is conceptual: required verification and applicable policy/target checks matter, but exact internal validation order, account-selection behavior and synchronous response timing are not prescribed.
+- Password Manager is not a readable secret inventory. Imported account data and flat-file collection do not enable external password operations.
+- Same-source application groupings and multi-source password sync groups are distinct. PTA source-change gating is not generalized to all arrangements; the separate non-PTA exercise explicitly supplies mixed outcomes.
+- Relevant audit/target/authentication evidence is needed for the particular operation. An emailed link, successful verification, old account view or existing application session is not proof of completed external password delivery.
+- No guaranteed retries, atomic group transaction, rollback, reverse synchronization, password history implementation or immediate session/token revocation is asserted.
+- ISC's lack of SAML SLO is not a claim about every IdP or application's logout implementation. Session settings and browser retention remain service-specific. Emergency access is approved, controlled elevated-user access, not a universal employee bypass.
+- Official documentation currently uses Identity Services / Human Fabric branding. ISC is retained as the requested course name; feature availability and packaging must still be verified for a real tenant.
+
+### Diagrams and review checks
+
+- [Federated sign-in](../assets/ARC-007_federated_sign_in.txt): browser/IdP response, ISC trust/mapping acceptance and resulting ISC session; not target-password delivery.
+- [Directory sign-in](../assets/ARC-007_directory_sign_in.txt): supplied source credentials checked through the configured integration, source result and remaining applicable checks; not SAML federation.
+- [Source password change](../assets/ARC-007_source_password_change.txt): required verification/policy, supported connector operation, target change and account-specific result inspection. The final inspection is human verification, not a guaranteed automatic fresh login.
+- Assets match inline blocks exactly; maximum line widths are 39, 44 and 43 characters. Captions explain successful-example conditions, omitted processing detail and failure scope.
+- Local and live publication checks separately verify full text, headings, tables, diagrams, placement and navigation. Rendered readability is not observed learner comprehension or tenant execution.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| Successful IdP, mismatched email | Authentication versus ISC identity mapping | Compare supplied values and approved mapping; correct responsible data/configuration without duplicate identity or credential reset | IdP success always means ISC success, or matching errors mean wrong password | SAML SP settings; JIT conditions |
+| PTA source unreachable | Dependency versus rejected proof | Investigate actual configured source/integration; no accepted/rejected credential decision is supplied | Every login failure proves wrong password or justifies switching authentication source | PTA; source connection dependencies |
+| Missing Admin menu after sign-in | Authentication versus platform authorization | Inspect intended user level; wider authority requires approved justification | Certificate repair or successful login should grant administration | User levels; SAML authentication |
+| Standalone CaseDesk reset | Operation/account scope | Only supplied standalone target changes; correlation/user naming creates no sync | One credential reset changes all accounts | Password Manager; access applications |
+| Non-PTA sync group mixed results | Per-source outcome and policy compatibility | Reconcile changed versus rejected targets, correct actual restriction and recover through supported process | Group work is universally all-or-nothing or first success proves all succeeded | Sync groups; password policies |
+| Verification succeeds, connector denied | Recovery proof versus target-operation authority | Inspect integration actor's required justified privilege and verify target outcome; do not reset unrelated authenticator | User verification supplies the connector's password-change authority | Password-management source support; fictional denial evidence |
+| Existing session after confirmed change | Credential result versus session state | Use approved fresh authentication/session checks; no failed-reset or containment conclusion follows from old tab | Password change immediately ends every session, or continuing session proves reset failure | Session settings; lack of SAML SLO; supplied application facts |
+| Purchasing application proposal | Transfer across identity data, sign-in trust, password management and permissions | Establish actual authentication, account mapping, supported password configuration/authority and distinct access design; SSO needs its own supported integration | Aggregation reveals passwords, ISC SSO federates every managed app, or all users can reset every collected account | Aggregation/correlation; SAML SP; password application/policy/sync documentation |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

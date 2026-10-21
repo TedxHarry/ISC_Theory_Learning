@@ -1,0 +1,12 @@
+[Devi supplies directory credentials to ISC]
+                    |
+                    v
+[Configured source integration checks them]
+                    |
+                    v
+[Corporate Directory returns a result]
+                    |
+        accepted plus other required checks
+                    |
+                    v
+[Devi uses ISC in an ISC session]
