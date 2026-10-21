@@ -2390,6 +2390,68 @@ Documentation uses Identity Services / Human Fabric naming in places; the reques
 
 Questions and worked reasoning stay in the learner file. Beginner validation and formal approval remain pending.
 
+## COR-001
+
+### Revision, review and limits
+
+Revision 1.0, Module 7.1, **The account was imported. Why isn't it on the person's identity?** Documentation checked October 21, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. All previous lessons, the tracing guide revision 1.0 and presentation code are unchanged. A seventh navigation module is added using existing manifest-driven behavior.
+
+Independent fictional example: employee Devi 71001; PeopleBook Production authoritative for Employees, worker account p-71001 already attached to teaching identity I-71001 (not an actual object ID). Identity identificationNumber is text 71001, identity name worker71001, display name Devi Rao. LedgerPay Production is non-authoritative for employee establishment. Account ID designation accountKey contains lp-87; Account Name designation loginName contains drao; friendly displayName is Devi Rao; employeeRef is initially null.
+
+Only configured pairing is LedgerPay employeeRef to identity identificationNumber. No other configured comparison matches, and no identity has the name drao, so the documented default also provides no match. Initial uncorrelated result is supplied. Owner-approved feed correction supplies employeeRef text 71001; collection and reevaluation are supplied, the target reference is unique, and the same account becomes associated with the same intended identity. Login/account key remain unchanged. No sync or access-changing operation is configured as part of the correction. No actual source/profile/correlation/account/identity/reset/deletion/sync or target change occurs.
+
+### Official references and claim mapping
+
+| Source | Sections or claims checked | Lesson boundary |
+|---|---|---|
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Configured account/identity comparisons, prerequisites, preset and default logic, default Account Name to identity name case-insensitive comparison, uncorrelated reports, unchanged account reexamination, manual correlation permanence and ISC-created account treatment | Missing configured reference alone is not universal proof of uncorrelated status. Main case explicitly excludes a default match. Display name differs from schema-designated Account Name and identity name. No destructive reset/removal or automatic manual-link reassignment recipe is taught. |
+| [Managing Accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html) | Human/machine/uncorrelated classifications, account status/attributes, source account correlation management and governance requirement | Uncorrelated means missing authoritative identity relationship, not external deletion or absence of business ownership. Shared/machine accountability must use appropriate classification; no license entitlement or personal correlation for every service account is implied. |
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative source/profile identity establishment, identity attributes and cross-source mappings | Existing employee identity is already established. Making LedgerPay authoritative would change population establishment rather than prove ownership. Correlation, profile selection and identity field mappings are distinct responsibilities. |
+| [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Account reads/representation, aggregation evidence and optimization context, view freshness | Account existence in the target, source representation and owner association are separate observations. Logical teaching stages are not separate mandatory jobs. Correcting feed data must reach ISC and be evaluated; success of one read is not full outcome proof. |
+| [Viewing Identity Control Panels](https://documentation.sailpoint.com/saas/help/identities/control_panel.html) | Identity profile/details and access/account relationships, represented access evidence | Person-level view describes associated data; source inventory and current matching evidence are needed when account is absent from that person's view. Matching UI names or a correlation flag do not establish business ownership. |
+| [Managing Sources: Assigning a Source Owner](https://documentation.sailpoint.com/saas/help/sources/index.html#assigning-a-source-owner) | Source Owner manual fulfillment and certification responsibilities | Operational owner of a source is not automatically the personal owner/user of all its accounts. The 120-account bulk-assignment proposal is rejected on that distinction, not a blanket prohibition of supported manual correlation. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Identity evaluation and role/lifecycle/manager/access requirements; provisioning delivery limit | Correct association can affect data available to configured consumers, but does not prove every role/lifecycle change or successful external delivery. Main example supplies no access-changing work. |
+| [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Existing correlated accounts and association changes as possible triggers for configured sync | Moving/correlating an account can matter beyond a display label when sync exists. Main correction explicitly has no sync write; no universal automatic field update or access grant is inferred. |
+
+The initially attempted account_mgmt.html path was not current; official navigation identifies accounts/index.html as Managing Accounts, which was read and retained. Current documents use Identity Services / Human Fabric naming in places; the course retains the requested ISC title without claiming feature licensing in every tenant.
+
+### Engineering assumptions and excluded claims
+
+- Account recognition within a source and assigning the account to a person are different relationships. The account's key lp-87, login drao and employee reference 71001 need not be identical.
+- Default correlation is not ignored. Its documented comparison uses schema-selected Account Name and identity name, not every friendly/full-name field. The case-insensitive rule is named but no unverified tie-breaking or ambiguous-candidate algorithm is invented.
+- A successful comparison and recorded association must be checked against approved ownership evidence. Wrong data can produce a correlated account with the wrong person.
+- Uncorrelated is a technical relationship state. Orphan is presented as an organization-defined business-risk description, not an official universal ISC state or automatic synonym.
+- No disable/delete/removal is supplied by a failed match. Existing external login/permissions can coexist with uncorrelated status; actual source access requires its own evidence.
+- The main correction is a changed matching input, not a configuration or manual-link change. The figure explicitly assumes supported reevaluation and unique approved target; no fixed processing or screen-update delay is promised.
+- Unoptimized aggregation after changed correlation configuration is distinct from clearing manual association. The explanation preserves documented persistent manual and ISC-created-account treatment.
+- Machine/service/shared examples introduce account-type and responsible-person distinctions only. The lesson does not teach machine-product configuration, license promises or personal-user assignment for all service accounts.
+- Manual correlation can be an approved exception, but broad defects require cause-based correction. Source reset, account removal, manual move and identity deletion are not executed or recommended as count cleanup.
+- Main association correction does not change login, account ID, employee identity or permissions. Any real downstream dependency needs separate reviewed execution and target evidence.
+
+### Diagrams and presentation checks
+
+- [Collection and relationship](../assets/COR-001_collection_and_relationship.txt), maximum 45 characters: established PeopleBook relationship, collected LedgerPay record, separate configured/default no-match evidence and human ownership check.
+- [Verified relationship correction](../assets/COR-001_verified_relationship_correction.txt), maximum 47 characters: same account before/after approved employeeRef data correction, reevaluation and association to the same identity.
+- Both editable assets match inline blocks. Prose identifies conditions, arrows, actor, that aggregation can include collection/correlation in one run, and that diagrams do not describe private internal services.
+- Two two-column tables hold supplied records/configuration and five observation boundaries. Eight worked cases plus the project transfer address the principal distinctions. Complete live text, diagrams, tables, all forty-seven routes and seven-module native defaults/current-page links are publication checks; visual rendering is checked separately.
+- Attribute tracing aid revision 1.0 is unchanged. COR-002 is reserved but not authored. Source links and assessment metadata remain outside the learner article.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. Imported but no reference | Collection versus association | Supplied no configured/default match means no person relationship despite successful import; inspect owner/matching input | Successful read identifies owner | Correlation; account collection |
+| 2. Same display names | Schema designation and actual comparison | drao versus worker71001 is not friendly-name equality; check real fields and paths | Default always matches any visible full name | Correlation defaults |
+| 3. Default path matches | Complete applicable logic | Configured no-match need not mean uncorrelated because documented default can match; validate owner | Only preferred configured pairing matters | Preset/default logic |
+| 4. Wrong employee reference | Existing association versus correctness | Owner evidence contradicts matched value; correct actual input/relationship and assess downstream effects | Correlated flag or 100 percent proves legitimacy | Correlation; account management |
+| 5. Missing intended identity | Population establishment versus app ownership | Investigate authoritative intake; do not make the app authoritative merely to reduce count | Every imported app account should create an employee identity | Identity profiles |
+| 6. Criteria changed, data unchanged | Optimization and reevaluation | Verify documented unoptimized reexamination and affected records; read success isn't all-record evaluation | Optimized collection reruns every comparison | Correlation configuration; aggregation |
+| 7. Manual link persists | Association history | Explicit manual link remains despite field change/unoptimized read; approved evidence-based correction required | Every current attribute change overrides manual link | Manual correlation |
+| 8. Uncorrelated but enabled | Relationship versus target state | No contradiction; no access-removal operation supplied; verify legitimate use and approved action | Failed match automatically disables/deletes account | Account statuses; provisioning boundary |
+| Project transfer / teach-back | Apply cause-based ownership reasoning to scale | Split missing identities/fields/configuration/shared/unused accounts, examine default/manual paths, verify sample owners/IDs/candidates and downstream effects | Assigning everything to administrator is legitimate because it clears count | Correlation; account types; Source Owner; processing/sync |
+
+Learner questions and worked reasoning remain in the article. Beginner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

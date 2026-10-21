@@ -11,6 +11,8 @@ modules:
     title: "5. How aggregation changes what ISC knows"
   - id: identities
     title: "6. How are identities created and populated?"
+  - id: correlation
+    title: "7. How do accounts and managers become associated with identities?"
 lessons:
   - id: SYS-001
     module: system
@@ -365,3 +367,10 @@ lessons:
     source: "lessons/IDN-008_Tracing_an_Incorrect_Identity_Value_to_Its_Origin.md"
     url: "/lessons/IDN-008_Tracing_an_Incorrect_Identity_Value_to_Its_Origin.html"
     description: "Investigate a disputed identity value through its actual profile, account and calculation inputs, then verify safe correction and separate consumer outcomes."
+  - id: COR-001
+    module: correlation
+    placement: "Module 7.1"
+    title: "The account was imported. Why isn't it on the person's identity?"
+    source: "lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.md"
+    url: "/lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.html"
+    description: "Separate account collection from correct identity association, trace configured and default matching, and verify ownership before trusting correlated counts."

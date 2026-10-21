@@ -1,0 +1,16 @@
+Before correction:
+  same LedgerPay account lp-87
+  employeeRef = null
+    -> no applicable match
+    -> uncorrelated
+
+Approved data correction and collection:
+  same LedgerPay account lp-87
+  employeeRef = "71001"
+    -> configured match to identificationNumber
+    -> associated with same identity I-71001
+
+Human verification:
+  owner evidence supports the relationship?
+  intended identity shows exact source/account?
+  other dependent outcomes checked separately?

@@ -1,0 +1,17 @@
+Already established:
+  PeopleBook p-71001 -> identity I-71001
+  identificationNumber = "71001"
+  identity name = worker71001
+
+Collected LedgerPay account lp-87:
+  selected Account Name = drao
+  friendly displayName = Devi Rao
+  employeeRef = null
+
+Applicable correlation checks:
+  configured employee reference: no match
+  default drao versus identity name: no match
+    -> supplied result: uncorrelated
+
+Human check:
+  correct account, person and matching data?

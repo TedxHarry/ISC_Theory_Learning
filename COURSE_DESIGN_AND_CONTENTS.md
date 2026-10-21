@@ -213,7 +213,10 @@ Identity mappings can use account attributes from different sources; the authori
 
 ### Module 7. How do accounts and managers become associated with identities?
 
-- 7.1 Why importing an account leaves a relationship to establish.
+- 7.1 [Why importing an account leaves a relationship to establish.](lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.md) **Authored:** COR-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
+
+Lessons 7.2-7.9 remain planned.
+
 - 7.2 The account and identity attributes used in correlation.
 - 7.3 Choosing identifiers based on uniqueness, availability, consistency, and stability.
 - 7.4 Following configured matching conditions through concrete records.
