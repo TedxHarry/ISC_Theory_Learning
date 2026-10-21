@@ -299,3 +299,11 @@ lessons:
     source: "lessons/AGG-008_Reading_Aggregation_Outcomes.md"
     url: "/lessons/AGG-008_Reading_Aggregation_Outcomes.html"
     description: "Interpret execution status and count meanings, investigate partial results, and separate coverage, record updates, identity processing, and target evidence."
+
+  - id: AGG-009
+    module: aggregation
+    placement: "Module 5.9"
+    title: "Investigating a missing or stale account without assuming the cause"
+    source: "lessons/AGG-009_Investigating_a_Missing_or_Stale_Account.md"
+    url: "/lessons/AGG-009_Investigating_a_Missing_or_Stale_Account.html"
+    description: "Test competing explanations across producer data, reads, extraction, ownership and views, then verify a safe correction at the evidenced boundary."

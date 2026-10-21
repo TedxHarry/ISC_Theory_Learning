@@ -1,0 +1,14 @@
+[Application: person.number = 59009]
+                 |
+                 v
+[Production response reaches connector]
+                 |
+       wrong extraction selects login
+                 v
+[ISC employeeRef = devi59009]
+                 |
+                 v
+[Compare to employeeNumber = 59009]
+                 |
+                 v
+[No match: account is uncorrelated]

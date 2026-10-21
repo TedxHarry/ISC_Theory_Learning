@@ -1865,6 +1865,64 @@ Two text assets exactly match inline blocks after trailing-whitespace normalizat
 
 Questions and supplied reasoning remain in learner prose. No beginner validation or transfer test occurred; author/source review and working-edition deployment do not substitute for those stages.
 
+## AGG-009: Investigating a missing or stale account
+
+- Revision: 1.0. Course placement: Module 5.9.
+- Documentation checked: October 21, 2026. Source account/uncorrelated views, schema/Account ID cautions, Web Services SaaS root/response mapping/Get Object, correlation/re-evaluation, loading/history/single-account/Search and identity/provisioning boundaries freshly checked.
+- Author review: complete against teaching specification v2.6 for this scope; no unresolved author content issue identified.
+- Tenant execution: not performed. PurchaseDesk, identifiers, captured response, mapping defect, eligible identity and verified correction are fictional supplied evidence.
+- Learner validation and formal publication approval: pending. This completes authoring of Module 5, not learner validation, overall course completion or formal approval.
+- Scope: evidence-driven missing/stale-account investigation. No real source, credential, permission, correlation, account identifier, API, person/account or external-access operation is changed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing sources](https://documentation.sailpoint.com/saas/help/sources/index.html), Accounts and Uncorrelated | Source Accounts view can contain a represented account absent from the intended person's list; Uncorrelated filter and technical shadow identity are not proof of authoritative person ownership. Account aggregation, disable and remove actions have different meanings. The main incident uses source/key evidence, not only an employee-name search. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Represented attributes, configured identification/naming and serious risk of editing Account ID/Name after aggregation. accountKey/login/employeeRef have distinct supplied roles. Correcting employeeRef extraction does not require changing the external login or identification attribute. No schema-ID mutation is performed. |
+| [Web Services SaaS response mapping](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/response_mapping.html) | Schema attribute maps to a response path relative to/prefixed by configured root. Main current employeeRef <- login versus intended person.number is a valid-value selection defect, not an assertion that every bad path yields null or clears a record. |
+| [Web Services SaaS response information](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/response_information.html) | Root selects the common response portion; example uses $.data for the account list and nested person.number within an account. No private extraction algorithm or runnable endpoint is supplied. |
+| [Web Services SaaS Get Object](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/get_object.html) | Specified-account lookup uses the supported operation/native identity; successful bulk listing does not prove that lookup's configuration/authority or every API/workflow effect. No live Get Object request executed. |
+| [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Matching account/identity attributes, unresolved accounts and supported unchanged-record re-evaluation after criteria changes. Main has one employeeRef-to-employeeNumber comparison, one eligible identity and no manual override. A correction's expected association is supplied/verified in fiction, not a universal automatic repair guarantee. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Full/optimized/unoptimized/delta distinctions; source-history execution evidence, Search synchronization, single-account UI no identity-attribute/provisioning effect and not-found retention, source deletion-risk context. No full/force rerun, threshold bypass or delta-state reset is prescribed for every symptom. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html), attribute mappings | Identity values can come from a different source than application account values. Independent HYD account/BLR HR-mapped identity can be correct. Main case concerns account ownership, not a requirement to change identity office or profile. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Person-value evaluation uses profile/access configuration and is distinct from mere account read. Main correction requires reviewed supported collection/re-evaluation, not an invented private scheduling sequence. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | External account/access change differs from representation and ownership correction. Main needs no create/enable/delete or permission grant; read-side status repair is not external unlock/removal evidence. |
+
+### Main trace, data and diagram review
+
+Devi 59009 coordinates purchasing and already has an established ISC identity with employeeNumber text 59009. PurchaseDesk Production uses a fictional supported Web Services SaaS design. Existing external and represented account pd-59009 has login devi59009 and is uncorrelated. The required result is association with the existing person, not new identity/account creation.
+
+Captured payload is explicitly the connector's actual production response for the compared read, not an external administrator's separate lookup. JSON contains data array with one selected record: accountKey pd-59009, login devi59009, nested person.number text 59009. Root $.data selects the account list. Schema accountKey identifies the account, login names it, employeeRef supplies the person-related input. Wrong mapping employeeRef <- login produces devi59009; required person.number produces text 59009.
+
+One configured comparison is account employeeRef equals identity employeeNumber. Only one eligible identity has 59009, no identity has employee number devi59009, and no manual override applies. Thus wrong input fails the configured match despite valid read and account representation. No other operation changes compared records during diagnosis or correction checks.
+
+Approved extraction correction preserves source, account key, login, criterion and existing identity. After reviewed supported collection/re-evaluation, supplied result represents employeeRef 59009, associates pd-59009 with Devi and is independently checked under her account view. No exact job order, optimizer hash behavior, universal mapping-triggered repair or particular mandatory force-refresh procedure is asserted. Shared mapping impact and source deletion settings require review.
+
+Independent variations cover corrected criteria on unchanged input, unpublished batch, different actor visibility, missing page, HYD account versus BLR HR identity, stale Search and sandbox/production confusion. WorkOrders is an independent transfer: contract requires text code 0042; producer supplies text, project conversion emits numeric 42. Correct the evidenced conversion/type representation under review, not the producer's valid code or account ownership.
+
+Selected JSON parses and uses quoted person number. Both mapping-table unchanged fields and the before/after comparison agree with the JSON and criterion. No credentials, live URLs or complete tenant API objects are embedded in learner prose.
+
+Two editable text assets match inline blocks after trailing-whitespace normalization. Response-to-unresolved-ownership maximum line width 39; corrected-input/association maximum 38. First arrows are logical application/connector-input/correlation dependencies, not private transaction order. Second is a supplied before/after result with explicit eligibility assumptions, not a universal automatic action chain. Published visual rendering must be separately verified.
+
+Two learner tables map observations to bounded conclusions and current/intended extraction. Technical qualifications and fictional assumptions remain in learner prose; official references, dates and assessment metadata stay here.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning / evidence boundary |
+|---|---|---|
+| Source present, person absent | Missing under the person requires new application account | Record is represented and uncorrelated; inspect intended identity and actual match input/criteria instead of duplicating it. |
+| Corrected criteria, unchanged input | New configuration means the unchanged record was evaluated | Optimized skip is distinct from executed comparison; use supported re-evaluation and review identity data/manual association. |
+| Old published batch | Current business value proves consumer mapping failure | Connector receives old input; establish producer publication and later read before altering correct mappings. |
+| Administrator sees, actor cannot | Administrator visibility proves connector visibility | Verify approved scope and least-privilege actor access, then actual response. An unavailable input is not extraction failure. |
+| Required page missing | Force-processing can fix data never read | Resolve read coverage safely, preserve deletion safeguards and verify the delivered/represented record. |
+| HYD account, BLR identity | All related location fields must match | Supplied meanings and HR identity mapping make both values correct. Do not rewrite authoritative input to match another business field. |
+| Current records, old Search | Indexed discrepancy justifies source tracking reset | Inspect object/synchronization context; no exact Search deadline or arbitrary state reset. |
+| Same name in sandbox | Another environment's match closes production issue | Establish production source and native key. A shared name is not object identity or read/association proof. |
+| WorkOrders cost-centre transfer | Losing zeros requires producer edit or account recreation | Conversion is the evidenced divergence; preserve text 0042 under schema/contract, supported recollection, stable key/owner and reviewed affected dependencies. Equivalent evidence-backed correction accepted. |
+
+No beginner read-through or independent transfer validation occurred. Source review, author review and deployment do not substitute for those stages.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

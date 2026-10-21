@@ -1,0 +1,12 @@
+[Same source and account key]
+[PurchaseDesk Production: pd-59009]
+
+Before: employeeRef = devi59009
+Compare: employeeNumber = 59009
+Result: uncorrelated
+
+Approved extraction: person.number
+
+After: employeeRef = 59009
+Compare: employeeNumber = 59009
+Verified: account associated with Devi
