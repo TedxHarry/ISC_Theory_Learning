@@ -199,6 +199,8 @@ In our supplied corrected outcome, the approved change is applied and Devi's ide
 
 That result answers the reported identity-value problem. It doesn't establish a sign-in repair, directory update or BenefitsDesk access change.
 
+**Authorization** is the application's decision about what the signed-in account may do. Observing a membership, authenticating and successfully performing an allowed action are related evidence, not interchangeable observations.
+
 Use each observation for the question it can actually answer:
 
 | Observation | What it establishes | What still needs checking |
@@ -209,8 +211,6 @@ Use each observation for the question it can actually answer:
 | Identity Department becomes `HR` | The represented person-level value changed | Any required account synchronization or access changes |
 | Lifecycle State shows `active` | The represented state assignment | Enabled-state configuration, applicable access and provisioning results |
 | BenefitsDesk account has the entitlement | The observed target membership | Separate authentication, authorization and other account requirements |
-
-**Authorization** is the application's decision about what the signed-in account may do. Observing a membership, authenticating and successfully performing an allowed action are related evidence, not interchangeable observations.
 
 Don't delete and recreate a profile to clear a stale value. Deleting it makes its source non-authoritative and can delete identities unless they can be reassigned to other profiles. It does not itself delete or deprovision external source accounts. A population-defining configuration change is far larger than the Department repair.
 
