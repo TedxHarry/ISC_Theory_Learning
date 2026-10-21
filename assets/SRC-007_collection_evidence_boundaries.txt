@@ -1,0 +1,9 @@
+[Correct target and read actor]
+               |
+[Native scope and returned records]
+               |
+[Supported filtering and extraction]
+               |
+[Collected records and access values]
+               |
+[Screen or query used to inspect them]

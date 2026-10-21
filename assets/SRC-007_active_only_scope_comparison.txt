@@ -1,0 +1,7 @@
+[WEST human accounts: 120]
+             |
+   [Add ACTIVE condition?]
+       /             \
+     Yes              No
+      |                |
+[110 included]   [120 included]

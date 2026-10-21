@@ -217,3 +217,11 @@ lessons:
     source: "lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md"
     url: "/lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.html"
     description: "Connect account membership values with the right access objects through source, type, schema, and identifier agreement."
+
+  - id: SRC-007
+    module: sources
+    placement: "Module 4.7"
+    title: "Filters and collection scope"
+    source: "lessons/SRC-007_Filters_and_Collection_Scope.md"
+    url: "/lessons/SRC-007_Filters_and_Collection_Scope.html"
+    description: "Distinguish intended coverage, filter decisions, actor visibility, incomplete reads, and the consequences of missing records."

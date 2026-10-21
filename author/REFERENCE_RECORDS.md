@@ -1361,6 +1361,52 @@ A conditional supported extension uses appRoles R-51, Audit Exporter. Separate s
 
 Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
 
+## SRC-007: Filters and collection scope
+
+- Revision: 1.0. Course placement: Module 4.7.
+- Documentation checked: October 21, 2026. Account collection modes, deletion safeguards/single-account limitations/history/Search freshness; connector SDK filtering; Okta SaaS inclusion filters; Entra ID account/group/membership scopes; entitlement aggregation, response mapping and API collection parameters freshly checked.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. Employee 47007, ServiceDeskFlow Production, all sample records, counts, read-actor visibility, query/paging evidence, defect/correction and subsequent results are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: decide intended coverage and interpret filter location/direction, read permissions, access scopes and completeness. Full aggregation execution, delta state, deletion threshold calculations, identity deletion analysis and connector syntax recipes have their primary lessons. No live filter, deletion setting or credential is changed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Full/optimized versus supported delta reads, single-account operation boundaries, account deletion during full source reads, Enable Account Deletion and Percentage of Deleted Accounts Allowed safeguards, authoritative-account consequences, execution history and Search freshness. A full read remains bounded by configured source selection and visibility. The lesson does not prescribe threshold values, replay/delta tokens, private retry algorithms or production experiments. Full/partial and record/target changes remain distinct. |
+| [Filtering using the connector SDK](https://developer.sailpoint.com/docs/tools/sdk/typescript/filter/) | Native source filtering and resource-object-side filtering are distinct facilities; SDK evaluator/property types, comparisons and composite logic have a particular supported language. The lesson explains match direction as something to establish for the actual mechanism, not as a universal filterString inclusion/exclusion rule. No SDK recipe is asserted to work on every standard connector, and post-retrieval filtering is not claimed to reduce target read exposure. |
+| [Okta SaaS supported aggregation filters](https://documentation.sailpoint.com/connectors/saas/okta/help/saas_connectivity/okta/supported_agg_filters.html) | Concrete inclusion example status eq "ACTIVE" and combined AND/OR expressions. Its syntax and matching behavior belong to that supported setting. ServiceDeskFlow conditions are explicitly conceptual, not copied Okta defaults or a runnable ISC expression; case/null/invalid-input behavior requires the real mechanism's evidence. |
+| [Microsoft Entra ID aggregation, filter and partitioning settings](https://documentation.sailpoint.com/connectors/microsoft/entra_id/help/integrating_entra_id/aggregation_settings.html) | Separate user, group and group-membership filters, and documented account-filter priority over group filters, including groups related to included accounts. This is a scoped connector example, not universal independence or precedence. No advanced-query flags, partitioning values, feature changes or syntax recipe is provided. Membership exclusion reduces read visibility rather than proving target revocation. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Access-object collection and type-specific scope differ from account and membership reads. Access-object inventory is not per-account assignment. The lesson does not promise all entitlement types or permissions from a completed account count. |
+| [Web Services SaaS response mapping](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/response_mapping.html) | Root and response paths select represented input. Incorrect extraction/mapping must be separated from intentional population filtering. The lesson does not invent a universal skip/reject behavior or claim a schema definition supplies absent response data. |
+| [Web Services SaaS aggregation](https://documentation.sailpoint.com/connectors/saas/web_services/help/saas_connectivity/web_services/json_aggregation.html) | Concrete supported response/paging configuration and cursor-based GraphQL pagination illustrate that completeness depends on the read's supported continuation. The 100-account/cursor scenario is fictional and not this connector's default page size. HTTP request success is not a completeness proof. |
+| [Standard API collection parameters](https://developer.sailpoint.com/docs/api/standard-collection-parameters/) | API result filtering and pagination select the results of a read query, not the source aggregation configuration. The lesson does not copy endpoint defaults, maximums or query syntax into target/connector collection, or assume every API uses offset pagination. |
+
+### Diagram, data and reasoning checks
+
+Two editable text assets match the inline diagrams after trailing-whitespace normalization. Maximum line widths are 31 and 38 characters. The first compares adding or omitting an ACTIVE inclusion condition while retaining WEST and HUMAN. The second is a human evidence-boundary trace, not a private ISC execution pipeline or a claim that every connector offers each separate filter.
+
+The comparable supplied inventory contains 500 application accounts: 120 intended WEST human accounts plus 380 outside that agreement. Of the intended 120, 110 are ACTIVE and ten DISABLED. desk-47007 belongs to employee 47007, is WEST/HUMAN/DISABLED, and retains target memberships. desk-47008 is WEST/HUMAN/ACTIVE; desk-47009 EAST/HUMAN/ACTIVE; desk-svc-47010 WEST/SERVICE/ACTIVE. Initial onboarding assumes no prior ISC account record for Devi. The verified hypothetical actor visibility, completed pages, active-only selection, approved correction and 120-account reread are supplied teaching facts, not observed tests.
+
+The simple predicates and counts are checked against the table. OR variations deliberately alter the boundary; a missing/unknown field's parser result is not invented. A separate first-page example contains 100 accounts and a continuation cursor. The payroll export is an independent transfer, with intended starters/recent leavers/unchanged workers missing from active-and-changed-today input. No real import, filter change, account deletion, access revocation or guardrail change occurred.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Equal total, wrong members | Matching counts establish coverage | Compare account identifiers and population categories; one omission and one unintended inclusion can cancel numerically. |
+| WEST OR ACTIVE | OR retains the same region/human boundary as the agreement | ACTIVE admits the supplied EAST service account; re-establish all intended conditions and test representative cases under supported semantics. |
+| Integration actor sees less | Administrator visibility proves integration visibility or bad business data | Compare destination, operation and actor authorization before editing region; no filter defect is inferred without evidence. |
+| First page succeeds | One HTTP success establishes a complete population | Check continuation/terminal-page evidence, extraction and errors; the next page has not been shown as consumed. |
+| Delta omits unchanged account | Missing change-set entry proves source deletion | Establish mode/change state and independent account evidence; a delta result isn't a replacement snapshot. |
+| Viewing filter hides disabled account | Display absence proves collection absence | Clearing a read/view condition can reveal an existing record without changing collection settings. |
+| Production filter drops half | Disabling safeguards validates an unexplained smaller read | Review intended exclusions, existing records, mode, completeness and deletion consequences safely; the guardrail isn't the cause of missing data. |
+| Membership filter omits a target group | Collecting an account proves complete access visibility, or filtering revokes access | Separate account/membership scope and supplied target state; filtering changed represented information, not the external membership. Access removal needs its own supported operation/evidence. |
+| Payroll-export transfer | Successful import makes a partial active/change file a complete replacement inventory | Establish intended status/effective-date coverage, export time and full/change contract, representative stable IDs and completeness. Review authoritative/existing-record effects; no automatic target-removal inference. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
