@@ -6,13 +6,13 @@ This is the working record of what exists, what has been reviewed, and what come
 
 ## Current position
 
-The course design and teaching specification are saved. Twenty-six complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; **ARC-008, The request was accepted. What actually finished?**, revision 1.0; **SRC-001, What will this source actually represent?**, revision 1.0; **SRC-002, Authoritative for what: the person, a value, a login, or a change?**, revision 1.0; **SRC-003, The connector supports it. What can this source actually do?**, revision 1.0; **SRC-004, An account schema: which fields describe the account, and which ones identify it?**, revision 1.0; and **SRC-005, The value looks right. Is it the right kind of value?**, revision 1.0.
+The course design and teaching specification are saved. Twenty-seven complete learner lessons have been authored: **SYS-001, Why does an organization need ISC?**, revision 1.3; **SYS-002, Signing in, using a permission, and where ISC fits**, revision 1.1; **SYS-003, Who owns what when access needs to change?**, revision 1.1; **SYS-004, What should be allowed, what ISC records, and what actually works**, revision 1.1; **SYS-005, Building access management is only the beginning**, revision 1.1; **SYS-006, Follow the access problem across the systems**, revision 1.1; **FND-001, Identity and account**, revision 1.3; **FND-002, Sources, connectors, and the systems they connect to**, revision 1.0; **FND-003, Account, identity, and entitlement attributes**, revision 1.0; **FND-004, Entitlements, access profiles, and roles**, revision 1.0; **FND-005, Sources, access applications, catalogs, and sign-in**, revision 1.0; **FND-006, Object IDs, account identifiers, and names: which record are we talking about?**, revision 1.0; **FND-007, One identity, multiple accounts: which account are we talking about?**, revision 1.0; **ARC-001, The ISC tenant: what SailPoint runs, and what your organization still owns**, revision 1.0; **ARC-002, Virtual Appliances and clusters: where does the connection work happen?**, revision 1.0; **ARC-003, SaaS connectors: where does the connection work happen?**, revision 1.0; **ARC-004, Where does IQService fit?**, revision 1.0; **ARC-005, The connection works. Why does the change still fail?**, revision 1.0; **ARC-006, A button, an API call, or automation: what is ISC actually doing?**, revision 1.0; **ARC-007, Signing into ISC and changing a password: which system is doing the work?**, revision 1.0; **ARC-008, The request was accepted. What actually finished?**, revision 1.0; **SRC-001, What will this source actually represent?**, revision 1.0; **SRC-002, Authoritative for what: the person, a value, a login, or a change?**, revision 1.0; **SRC-003, The connector supports it. What can this source actually do?**, revision 1.0; **SRC-004, An account schema: which fields describe the account, and which ones identify it?**, revision 1.0; **SRC-005, The value looks right. Is it the right kind of value?**, revision 1.0; and **SRC-006, The group exists. Why doesn't the account's access connect to it?**, revision 1.0.
 
 FND-001 was written as a foundation pilot before the course was developed in sequence. It belongs with Module 2's object relationships. That pilot did not itself complete Module 1, Module 2, or the whole course.
 
-The current lesson is SRC-005. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
+The current lesson is SRC-006. It has received documentation-based author review and is ready for the user's read-through and further feedback, not marked learner-validated or publication-ready. Keep revisions in the same lesson file. Do not open several lesson drafts in parallel.
 
-FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 4.5, SRC-005. All eight Module 3 lessons are authored and Module 4 has begun; learner validation and formal publication approval remain pending. Resolve known content issues before opening the next writing task and track learner validation separately.
+FND-001 established the teaching approach as a pilot and has now been reviewed in its Module 2.1 position. Authoring has continued through Module 4.6, SRC-006. All eight Module 3 lessons are authored and Module 4 has begun; learner validation and formal publication approval remain pending. Resolve known content issues before opening the next writing task and track learner validation separately.
 
 ## Saved documents
 
@@ -47,6 +47,7 @@ FND-001 established the teaching approach as a pilot and has now been reviewed i
 | [SRC-003: Reading a connector capability matrix](lessons/SRC-003_Reading_a_Connector_Capability_Matrix.md) | Complete learner-facing lesson for Module 4.3 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [SRC-004: Account schemas, identifiers and display attributes](lessons/SRC-004_Account_Schemas_Identifiers_and_Display_Attributes.md) | Complete learner-facing lesson for Module 4.4 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [SRC-005: Attribute types, multiple values and data formats](lessons/SRC-005_Attribute_Types_Multiple_Values_and_Data_Formats.md) | Complete learner-facing lesson for Module 4.5 | Revision 1.0 saved; author-reviewed, learner validation pending |
+| [SRC-006: Entitlement membership attributes and schemas](lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md) | Complete learner-facing lesson for Module 4.6 | Revision 1.0 saved; author-reviewed, learner validation pending |
 | [Author reference records](author/REFERENCE_RECORDS.md) | Official sources mapped to lessons, prior verification dates, and limitations | Preserved outside learner lessons; no fresh technical verification implied |
 | Course register | Progress, current lesson, next action, and review history | This file |
 
@@ -666,9 +667,28 @@ Account identification and person correlation answer different questions. Design
 | Learner validation | Pending; no beginner read-through or transfer test performed |
 | Publication status | Added to working-edition site manifest under Module 4; formal publication review and approval remain pending |
 | Unresolved author content issues | None identified in this review; learner comprehension remains untested |
-| Next action | Read SRC-005 and apply feedback to this same file; then author Module 4.6 |
+| Next action | Preserve SRC-005 for feedback and learner validation; SRC-006 was opened following the user's instruction to continue |
 
 A field's meaning, type, cardinality and transport format are separate. False/zero aren't absence; null/omission/empty collections don't imply universal clearing or deprovisioning. Joined membership text isn't two list elements. The bad conversion is explicitly project-added, not a default ISC parser claim. Date formatting doesn't select a business termination boundary or prove delivered access changes.
+
+### SRC-006
+
+| Field | SRC-006 |
+|---|---|
+| File | [SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md](lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md) |
+| Revision | 1.0 |
+| Course placement | Module 4.6 |
+| Content status | Complete lesson saved; account membership references versus entitlement objects, source/type/ID agreement, ID/Name designations, collection responsibilities, multiple types and indirect relationships, UI/metadata evidence and safe schema changes |
+| Author review | October 21, 2026; first-use meanings, independent Devi SpendLedger example, two selected JSON responses, two diagrams, two tables, seven worked cases and application-design transfer checked |
+| Documentation check | October 21, 2026; account-schema linking conditions, entitlement type/schema management, entitlement aggregation, entitlement viewing/metadata/permissions/deletion boundaries and source schema/attribute models freshly checked |
+| Diagram sources | [Account membership to entitlement](assets/SRC-006_account_membership_to_entitlement.txt) and [Two read responsibilities](assets/SRC-006_two_read_responsibilities.txt); synchronized with inline blocks, maximum line widths 33 and 44 characters |
+| Tenant execution | Not performed; employee 46006, SpendLedger Production, spend-46006, G-206, expense.approvers, labels, mapping defect/correction, collection results and all transfer data are fictional |
+| Learner validation | Pending; no beginner read-through or transfer test performed |
+| Publication status | Added to working-edition site manifest under Module 4; formal publication review and approval remain pending |
+| Unresolved author content issues | None identified in this review; learner comprehension remains untested |
+| Next action | Read SRC-006 and apply feedback to this same file; then author Module 4.7 |
+
+A membership value identifies an access object within the supported source/type relationship; its friendly or technical name isn't automatically its selected ID. Account correlation, entitlement inventory, membership linking and target access changes are different responsibilities. Entitlement ID/Name redesignation carries duplicate risks; type deletion is not revocation. Multiple entitlement types, hierarchies and permissions require connector support rather than invented schemas.
 
 ## Source-citation relocation
 
@@ -680,17 +700,17 @@ This cleanup does not constitute fresh technical verification, tenant testing, l
 
 ## Next lesson in course order
 
-All six Module 1 lessons, all seven Module 2 lessons, all eight Module 3 lessons, and Modules 4.1-4.5 are authored. Learner validation and formal publication review remain separate pending stages. Lessons 4.6-4.8 remain planned.
+All six Module 1 lessons, all seven Module 2 lessons, all eight Module 3 lessons, and Modules 4.1-4.6 are authored. Learner validation and formal publication review remain separate pending stages. Lessons 4.7-4.8 remain planned.
 
-The next new lesson is Module 4.6:
+The next new lesson is Module 4.7:
 
-**Entitlement membership attributes and entitlement schemas.**
+**Filters and collection scope: which records are included or excluded.**
 
-- Reserved permanent ID: `SRC-006`.
-- Planned file: `lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md`.
+- Reserved permanent ID: `SRC-007`.
+- Planned file: `lessons/SRC-007_Filters_and_Collection_Scope.md`.
 - Status: planned only; no lesson file created.
-- Scope: distinguish account membership references from entitlement-object details, source/type/schema relationships and designated entitlement ID/Name; trace supported linking and missing/mismatched references, flags and multiple entitlement types without treating readable labels as IDs or collection as provisioning.
-- Resolve known feedback on SRC-005 before opening the next writing task.
+- Scope: establish the intended account/entitlement population, connector-side versus ISC collection filtering where supported, extraction and completeness evidence, partial versus full reads and exclusion consequences without equating an absent record with deletion or revoked access.
+- Resolve known feedback on SRC-006 before opening the next writing task.
 
 ## Recording review status
 
@@ -748,3 +768,4 @@ The complete topic backlog remains in [Course design and contents](COURSE_DESIGN
 | October 20, 2026 | Authored and reviewed SRC-003 revision 1.0 with operation/object matrix reading, read/write and group/membership distinctions, target API/runtime/configuration/input/authority dependencies, fictional FulfillHub capability gaps and 403 evidence, two diagrams, seven cases and payroll-design transfer; reserved SRC-004 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 21, 2026 | Authored and reviewed SRC-004 revision 1.0 with field definition/value distinctions, Account ID/Name and schema-property meanings, two-account person-matching example, input mapping defect/correction, discovery, UI/audit evidence and safe designation-change reasoning; two diagrams, two tables, seven cases and payroll-feed transfer; reserved SRC-005 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
 | October 21, 2026 | Authored and reviewed SRC-005 revision 1.0 with types/cardinality, leading-zero preservation, Boolean meaning, JSON arrays and CSV quoting, null/empty/omitted states, dates/offsets/units, read-side conversion defect/correction and downstream evidence; two diagrams, two tables, seven cases and HR-feed transfer; reserved SRC-006 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |
+| October 21, 2026 | Authored and reviewed SRC-006 revision 1.0 with membership/object distinctions, source/type/ID linking, selected ID/Name, two collection responsibilities, multiple access types and indirect relationships, safe schema-change and UI/metadata reasoning; two diagrams, two tables, seven cases and application-design transfer; reserved SRC-007 | Documentation-based author review; fictional operations and evidence; no tenant execution, beginner validation, or formal publication approval |

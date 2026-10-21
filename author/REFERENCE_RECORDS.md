@@ -1318,6 +1318,49 @@ Questions and worked reasoning remain in the learner file. Source evidence, asse
 
 
 
+## SRC-006: Entitlement membership attributes and entitlement schemas
+
+- Revision: 1.0. Course placement: Module 4.6.
+- Documentation checked: October 21, 2026. Official account-schema linking conditions, entitlement type/schema management, entitlement aggregation, entitlement metadata/permissions/deletion behavior and schema/attribute models freshly checked.
+- Author review: completed against teaching specification v2.6 for the stated scope; no unresolved author content issue identified.
+- Tenant execution: not performed. SpendLedger Production, employee 46006, spend-46006, G-206, the mapping defect/correction, subsequent collection and every verification result in the scenario are fictional.
+- Learner validation and formal publication approval: pending. Working-edition deployment is separate.
+- Scope: account membership values, access-object details, source/type/identifier relationships, selected ID/Name, supported multi-type relationships, collection and UI evidence, safe schema changes. Complete aggregation execution, access catalog governance, requests/certifications and provisioning have their primary lessons. No configuration edit or target operation is performed.
+
+### Official sources by claim and section
+
+| Official reference | Claim / section and applicability |
+|---|---|
+| [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Linking Aggregated Entitlements requires an entitlement-marked account attribute, attribute name identical to the entitlement type name, and collected value identical to the designated entitlement ID value. Entitlement and multi-value settings have separate purposes; multiple account attributes cannot use the same entitlement type. Schema changes have audit events. Fictional groups matches groups deliberately; the lesson does not prescribe renaming an existing connector's production schema or infer that a UI save reprocesses data. |
+| [Creating and managing entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html) | Supported sources/types and schemas, native-object-type naming, account attribute Type association, selected Entitlement ID/Name, initial first-attribute designation, post-aggregation duplicate risk, and supported entitlement-to-entitlement references. permission is specially handled and must not be invented as an ordinary type. Deleting a type does not delete associated entitlements; objects of that type cease aggregation/update until another type is created. SpendLedger groups/appRoles are fictional supported-native-type assumptions, not universal defaults or names to create on real connectors. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Separate access-object collection, direct-connect manual/scheduled reads, type selection and scope, manual flat-file imports and lack of multiple entitlement types through that flat-file mechanism. Catalog totals can include entitlements originating from account aggregation; inventory can exceed a single read's count. The lesson omits operational limits, schedule recipes and private queue details; no universal execution order or instant completion is promised. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Catalog versus assignment, useful names/descriptions and owner/request/review context; supported direct/indirect permissions and nested relationships; schema-selected display attribute, mapping and manual-update evidence. Ordinary Display Name/Description edits do not write to the source and manually updated fields can be preserved against aggregation. Account aggregation does not delete entitlements simply because no account holds them. The lesson does not equate schema deletion, catalog editing or absent data with target revocation, nor promise all inherited/effective access is computed from names. |
+| [Source schema model](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/schema/) | Schema id is distinct from identityAttribute/displayAttribute, which name attributes selected for object identification/display. nativeObjectType identifies the external category; supported hierarchy representation is connector/schema-specific. G-206 is the fictional selected external identifier, not a runnable ISC record ID. No API payload, feature-flag modification or storage-key algorithm is taught. |
+| [Source attribute definition](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/attribute-definition/) | Separate type/schema association, isMulti and isEntitlement properties support distinguishing value shape, access designation and schema relationship. A collection alone is not access, and a flag alone does not establish correct collection/mapping/linking or external provisioning support. No universal coercion or arbitrary isGroup configuration is invented. |
+
+### Diagram, data and reasoning checks
+
+The two editable text assets match their inline diagrams after trailing-whitespace normalization. Maximum line widths are 33 and 44 characters. The first maps an account's groups G-206 reference through the same source/type to an access object and its details. The second compares the separate information supplied by account and entitlement reads and its linking agreement. Neither diagram asserts a private execution sequence, scheduling order, queue or guaranteed target write.
+
+Employee 46006 is an expense reviewer. spend-46006 belongs to Expense Approvers in SpendLedger Production under supplied target facts. The raw selected account response has groups = [G-206]. The selected group record has groupKey = G-206, technicalName = expense.approvers, label = Expense Approvers and a meaningful description. groupKey/label are the selected ID/Name attributes. The deliberately faulty project mapping substitutes technicalName for the account reference. The supplied approved correction preserves G-206 and the subsequent verified result links the intended representation without changing target access. No product-default mapping failure or universal orphan/deduplication appearance is asserted.
+
+A conditional supported extension uses appRoles R-51, Audit Exporter. Separate sources/types can reuse short code 51 without becoming one object. G-999 is an inventory-only case. The independent transfer uses teams T-8, teamCode and displayLabel Regional Reviewers; it rejects invented types or silent field merging to bypass the one-account-attribute-per-type constraint. Both selected JSON objects are valid explanatory fragments, not complete source payloads or change requests.
+
+### Assessment intent and accepted reasoning
+
+| Case | Misconception tested | Accepted reasoning and evidence boundary |
+|---|---|---|
+| Matching label, different ID | Human-readable equality substitutes for selected identifier equality | Compare membership value and designated ID under the supported relationship; fix wrong mapping rather than casually redesigning existing identification. |
+| Two phone numbers | Multi-valued means entitlement | Establish field meaning and supported access model; cardinality doesn't imply access. |
+| Catalog-only group | Access-object inventory proves Devi holds it | Inspect account membership, identity association and any relevant indirect paths separately; do not invent a direct assignment. |
+| Membership without description | Limited metadata proves invalid group or failed membership | Account aggregation can originate entitlements; check supported entitlement read, scope, mapping and upstream details rather than inferring target invalidity. |
+| Reused short code across types | Equal text means one access object | Preserve source/type/value context and separate schema relationships. |
+| Manual description update | ISC metadata edits provision source descriptions or must always be overwritten | No source write is implied; investigate manual-update preservation, mapping and collection evidence. |
+| Deleted type | Schema deletion revokes everyone's access | It removes type/schema configuration and interrupts that type's collection/update; entitlement records and target membership are not thereby deleted. |
+| Application-design transfer | Labels are keys, inventory equals membership, and two fields can share one type | Preserve T-8, connect supported teams/type/ID, separate label and membership evidence, and challenge the duplicate account-attribute/type association. Inspect native model instead of inventing a type or unverified merge. Establish access-changing support separately. |
+
+Questions and worked reasoning remain in the learner file. Source evidence, assessment intent and review limitations stay outside it.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -1,0 +1,7 @@
+[Account read]       [Entitlement read]
+      |                      |
+[Membership values]  [Access-object details]
+      |                      |
+      +----------+-----------+
+                 |
+     [Link under schema agreement]

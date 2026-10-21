@@ -1,0 +1,9 @@
+[Account spend-46006]
+          |
+[groups contains G-206]
+          |
+[Same source + type groups]
+          |
+[Entitlement ID G-206]
+          |
+[Expense Approvers + description]

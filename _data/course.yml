@@ -209,3 +209,11 @@ lessons:
     source: "lessons/SRC-005_Attribute_Types_Multiple_Values_and_Data_Formats.md"
     url: "/lessons/SRC-005_Attribute_Types_Multiple_Values_and_Data_Formats.html"
     description: "Preserve value meaning, types, list structure, missing-value semantics, dates, and evidence across an integration."
+
+  - id: SRC-006
+    module: sources
+    placement: "Module 4.6"
+    title: "Entitlement membership attributes and entitlement schemas"
+    source: "lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.md"
+    url: "/lessons/SRC-006_Entitlement_Membership_Attributes_and_Entitlement_Schemas.html"
+    description: "Connect account membership values with the right access objects through source, type, schema, and identifier agreement."
