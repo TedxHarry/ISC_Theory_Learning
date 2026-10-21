@@ -17,7 +17,11 @@ Segoe UI and system sans-serif fallbacks handle navigation and headings. Georgia
 
 Desktop: lesson navigation beside one reading column, maximum 53rem. Small screens: navigation above content with native disclosure. A shared layout owns the header, navigation, reading region, footer, and keyboard skip link.
 
-Native links navigate. Native details/summary controls the lesson list. Tables and preformatted diagrams scroll within their own regions. The document remains the vertical scrolling surface. Print removes navigation and retains the lesson.
+Native links navigate. The outer native details/summary control shows or hides the lesson panel with explicit Show lessons / Hide lessons labels. On desktop, hiding it removes the sidebar column and centers the reading column; the show control remains above the lesson. Narrow screens initially hide the panel using the existing small-screen initialization.
+
+Each module uses its own independent native details/summary disclosure. The current lesson's module starts open; unrelated modules start closed. On the home page, the first module starts open. Opening one module doesn't close another. The current lesson keeps its aria-current marker. Controls support native keyboard and touch activation without custom event handlers or stored preferences.
+
+On desktop, only the module-list region scrolls inside the sidebar, leaving the outer show/hide control reachable. On small screens, the opened navigation uses document scrolling. Tables and preformatted diagrams scroll within their own regions. The document remains the main vertical scrolling surface. Print removes navigation and retains the lesson.
 
 ## Content contract
 

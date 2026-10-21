@@ -17,8 +17,13 @@
     <div class="site-shell">
       <aside class="course-sidebar" aria-label="Course navigation">
         <details class="course-navigation" open>
-          <summary>Lessons</summary>
-          {% include lesson-list.html %}
+          <summary>
+            <span class="navigation-label-open">Hide lessons</span>
+            <span class="navigation-label-closed">Show lessons</span>
+          </summary>
+          <div class="navigation-scroll">
+            {% include lesson-list.html %}
+          </div>
         </details>
         <script>
           if (window.matchMedia("(max-width: 56rem)").matches) {

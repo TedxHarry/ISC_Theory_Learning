@@ -12,6 +12,10 @@ The course is for beginners and freshers with some IAM knowledge. Its purpose is
 
 The repository contains the complete working files. GitHub Pages presents the twenty-four available lessons; planning documents and author references remain outside the reading site. Deployment does not change learner-validation or publication-review status.
 
+Use **Hide lessons** / **Show lessons** to collapse or expand the navigation panel. Each module heading independently opens or closes its lesson list. The current lesson's module starts open; on the home page, the first module starts open.
+
+Navigation regression checks use Node.js: run `npm ci`, then `npm test`. These development-only dependencies and tests are excluded from the reading site.
+
 ## Start here
 
 - [Course design and full table of contents](COURSE_DESIGN_AND_CONTENTS.md)
