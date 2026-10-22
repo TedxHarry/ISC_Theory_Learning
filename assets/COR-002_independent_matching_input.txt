@@ -1,0 +1,18 @@
+Proposed first-account design:
+
+Correlate WorkTrack account
+  needs identity workTrackWorkerRef
+    needs an associated WorkTrack account
+      needs correlation already established
+
+No associated account or other input supplied:
+  the proposed input path is unavailable
+
+Independent reference design:
+
+Already linked HR account
+  -> approved identity person reference
+WorkTrack account
+  -> its person reference
+Compare those available values
+  -> evaluate intended relationship

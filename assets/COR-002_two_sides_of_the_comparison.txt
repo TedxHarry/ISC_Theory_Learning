@@ -1,0 +1,17 @@
+Already linked HarborHR account h-72002:
+  personNumber = "0072002"
+    -> Employees identity attribute mapping
+    -> identity I-72002
+       identificationNumber = "0072002"
+
+Collected WorkTrack account wt-391:
+  workerRef = "0072002"
+    -> account side of saved criterion
+
+ISC compares the selected values:
+  workerRef Equals identificationNumber
+  "0072002" matches "0072002"
+    -> supplied association with I-72002
+
+Human check:
+  correct source, account, person and evidence?

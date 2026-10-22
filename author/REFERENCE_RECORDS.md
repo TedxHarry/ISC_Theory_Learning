@@ -2452,6 +2452,67 @@ The initially attempted account_mgmt.html path was not current; official navigat
 
 Learner questions and worked reasoning remain in the article. Beginner validation and formal approval remain pending.
 
+## COR-002
+
+### Revision, review and limits
+
+Revision 1.0, Module 7.2, **Which account field is ISC comparing with which identity field?** Documentation checked October 22, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. Existing lessons, tracing aid revision 1.0 and presentation/navigation code remain unchanged.
+
+Independent fictional example: Devi's approved employee reference is text 0072002, including its leading zeros. HarborHR Production is authoritative for Employees; h-72002 is already attached to teaching identity I-72002 (not an actual object ID). HarborHR personNumber is text 0072002 and payrollRef is PAY-884. Applied Employees mapping supplies identity identificationNumber from personNumber, producing text 0072002. Identity name is worker72002 and displayName is Devi Rao.
+
+WorkTrack Production is non-authoritative for employee establishment. Its accountKey/Account ID is wt-391, loginName/Account Name drao.wt, workerRef text 0072002 and displayName Devi Rao. The saved pairing is workerRef Equals identificationNumber. Identification Number is supplied as already eligible for correlation; intended reference uniquely identifies Devi, no other configured criterion supplies a different relationship, no identity name drao.wt supplies a default match, and no manual association overrides the case. Successful supported evaluation and association with I-72002 are fictional supplied results, not observations from a real tenant. No sync write or access-changing request is supplied.
+
+### Official references and claim mapping
+
+| Source | Sections or claims checked | Lesson boundary |
+|---|---|---|
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Account/identity field pairing, standard Equals, configured case-insensitive default and ignoreCase setting, eligible searchable identity attributes and all-identity manual processing before aggregation, presets/default Account Name to identity name, persistent manual association and unoptimized reexamination | Same-named fields are neither required nor sufficient. Search query capability differs from correlation-searchable eligibility. Actual applied inputs, settings and ownership evidence matter. No ambiguous-match winner, confidence score or unsupported cleanup behavior is invented. |
+| [Managing Source Account Schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Source account field definitions, selected Account ID/Name and risks of changing designations after aggregation | WorkTrack technical key, naming field, person reference and friendly label are distinct. Renaming valid schema fields or changing account keys is not taught as a mismatch repair. |
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative profile establishment, mappings from account attributes on different sources, custom attribute definitions across profiles, profile-specific mappings, transforms, Preview and Apply Changes | Correlation uses the identity field, whose input can originate from independently associated HR account data. A new custom definition is not automatically populated across all profiles; Preview is not applied identity or relationship evidence. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Mapping evaluation, manual processing scopes, downstream requirements and independent provisioning validation, view synchronization | Eligibility preparation requires documented all-identity processing, not one Preview. Current values and views need timestamps; identity processing alone does not confirm successful target provisioning. |
+| [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Account collection, optimized unchanged-account skipping, unoptimized reevaluation and independent operation evidence | Source read success does not establish identity-side mapping freshness or universal relationship evaluation. No destructive source reset, per-run API execution or universal delay is prescribed. |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Lookup of an account on an identity and return of a selected attribute | Circular first-account example assumes no associated WorkTrack account, no independent input/fallback and no other matching path. Lookup does not discover an arbitrary uncorrelated account's owner. No infinite-loop or automatic fallback claim. |
+| [Trim transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/trim/) | Removal of leading/trailing whitespace from input strings | Identity mapping calculation does not rewrite the incoming application account field. No implicit correlation numeric conversion, prefix stripping or whitespace trimming is assumed. |
+| [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Configured identity-to-existing-correlated-account writes and downstream impact | Main example has no sync/access change. Real mapping/association corrections need dependency review and independent target evidence; an established association is not proof of delivered changes. |
+
+The initially opened generic Update Source API was not used to infer correlation behavior. The admin correlation documentation explicitly names the configuration's ignoreCase option and links its supported correlation API; this lesson does not provide an API payload, version-migration procedure or executable tenant-changing request. Identity-attribute API leads were checked for availability; searchable eligibility and preparation claims are anchored in the admin guide. Current official pages use Identity Services / Human Fabric naming in places; the course retains the requested ISC title without asserting every feature is licensed in every tenant.
+
+### Example and reasoning checks
+
+- JSON is a compact teaching grouping, not an API request or complete response. String 0072002 is preserved; integer conversion would produce 72002. Neither account key wt-391 nor payrollRef PAY-884 is the selected approved person reference.
+- The first diagram shows HR-account-to-identity value provenance and a separate WorkTrack account-side input, then a configured comparison and supplied intended association. It does not draw a direct account-to-HR correlation join or undocumented private pipeline.
+- WorkTrack accountKey selection is a left-side defect. Identity mapping to payrollRef is a right-side origin/meaning defect. A schema label, account inventory value, current identity value and saved criterion are separate evidence.
+- Identity attributes searchable for correlation are distinct from Search filters. The guide documents a limited number of extra searchable attributes; no unnecessary capacity claim is put into this introductory field-selection explanation. Availability, mapping, populated value and required all-identity manual processing are not conflated.
+- Case-insensitive configured behavior and per-configuration ignoreCase support do not establish whitespace or number normalization. Legacy abc7/ABC7 variation deliberately stops at ambiguous/unfit policy rather than inventing ISC tie-breaking.
+- The circular workTrackWorkerRef variation is a dependency diagnosis under explicit unavailable-input assumptions, not a claim that every account-derived mapping fails or that all first accounts require manual correlation.
+- Identity name worker72002 differs from designated Account Name drao.wt; friendly labels agree but do not establish the default path. Existing manual/ISC-created-account treatment is retained.
+- Existing mapping Preview does not prove applied state, source reevaluation or association history. No automatic disable, permission grant or target result follows from the correlation statement.
+- Contractor transfer distinguishes sponsor workerId from contractor externalPersonRef and independently mapped contractorRef; eligibility and preparation remain unresolved, so no completed association is claimed.
+
+### Diagram and publication checks
+
+- [Two sides of the comparison](../assets/COR-002_two_sides_of_the_comparison.txt), maximum 47 characters per line.
+- [Independent matching input](../assets/COR-002_independent_matching_input.txt), maximum 46 characters per line.
+- Editable sources match inline blocks. Prose identifies arrow meaning, supplied conditions and human checks, and rejects private-service sequencing or guaranteed outputs.
+- One JSON block, two two-column tables, eight worked cases and contractor transfer remain in the learner article. Full live article/JSON/diagrams/tables, all forty-eight routes, seven-module native defaults/current-page links and unchanged tracing aid are publication checks; visual rendering is checked separately.
+- COR-003 is reserved but not authored. Source links and assessment metadata remain author-only.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. Different field names | Meaning and explicit pairing | Differently named fields are valid if selected and carrying the approved same person reference; no rename needed | Equal names required for correlation | Correlation; schemas |
+| 2. Unselected matching value | Actual left-side input | accountKey wt-391 enters current comparison; repair proven criterion and verify supported reevaluation rather than changing valid key | ISC picks any equal-looking field | Correlation; schema designations |
+| 3. Payroll reference mapped | Identity provenance | Correct app data can face wrong identity-side input; trace profile mapping and applied value | Correlation defect always means wrong application input | Profile mapping; processing |
+| 4. Search finds field | Eligibility and preparation | Search visibility is separate; establish correlation-searchable setting and documented all-identity processing | Search query proves correlation readiness | Custom identity correlation |
+| 5. Zeros lost | Approved representation | Repair number conversion in producer and confirm collected value; broad identity overwrite hides cause | Numeric-looking identifiers are interchangeable | Schemas; profile transforms; selected-value comparison |
+| 6. Case-sensitive business references | Configured comparison policy | Inspect ignoreCase and population under approved design; no candidate winner can be inferred | Case-insensitive equality always proves correct person | Correlation case setting |
+| 7. First account circularity | Input availability | Associated-account lookup cannot supply missing independent reference under stated facts; independent input/approved exception needed | Repeating reads creates missing ownership evidence | Account Attribute lookup; correlation |
+| 8. Preview but unchanged association | Applied and evaluation evidence | Inspect current identity, relevant reevaluation and manual history; missing evidence prevents defect conclusion | Preview proves deployed correlation input | Preview; processing; optimization; manual persistence |
+| Contractor transfer / teach-back | Apply pairing and evidence to new objects | externalPersonRef/contractorRef is candidate; sponsor workerId is wrong meaning; verify ownership, input availability/representation/uniqueness, eligibility/preparation, paths/history and actual result | Friendly field name or sponsor match identifies account user | Correlation; custom eligibility; profiles |
+
+Learner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

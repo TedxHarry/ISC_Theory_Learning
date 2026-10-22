@@ -374,3 +374,10 @@ lessons:
     source: "lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.md"
     url: "/lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.html"
     description: "Separate account collection from correct identity association, trace configured and default matching, and verify ownership before trusting correlated counts."
+  - id: COR-002
+    module: correlation
+    placement: "Module 7.2"
+    title: "Which account field is ISC comparing with which identity field?"
+    source: "lessons/COR-002_Account_and_Identity_Attributes_Used_in_Correlation.md"
+    url: "/lessons/COR-002_Account_and_Identity_Attributes_Used_in_Correlation.html"
+    description: "Trace the selected account and identity values, their origins and correlation eligibility, then investigate mismatches without confusing mappings with associations."
