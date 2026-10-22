@@ -1,0 +1,15 @@
+TeamPlan account tp-206:
+  ownerPersonRef = P-73003
+    -> identity I-73003
+
+TeamPlan account tp-admin-206:
+  ownerPersonRef = P-73003
+    -> same identity I-73003
+       identificationNumber = P-73003
+
+Different identities sharing P-73003:
+  not proof of one intended candidate
+  -> investigate duplicate person references
+
+Human verification:
+  legitimate accounts, intended owner and scope?

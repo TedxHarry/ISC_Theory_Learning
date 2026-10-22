@@ -2513,6 +2513,70 @@ The initially opened generic Update Source API was not used to infer correlation
 
 Learner validation and formal approval remain pending.
 
+## COR-003
+
+### Revision, review and limits
+
+Revision 1.0, Module 7.3, **Which identifier will still point to the right person tomorrow?** Documentation checked October 22, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. Prior lessons, tracing aid revision 1.0 and presentation/navigation code are unchanged.
+
+Independent fictional example: Devi employee 73003, AnchorHR Production authoritative Employees, worker account hr-73003 already attached to teaching identity I-73003 (not an actual object ID). Employees maps AnchorHR personRef to identity identificationNumber; applied value is text P-73003. Identity name worker73003 and email drao@learn.example. TeamPlan Production is non-authoritative for employee establishment. Its tp-206 account key is Account ID, drao.tp login is Account Name, ownerPersonRef is P-73003 and mail is drao@learn.example. Owner verifies Devi. The reference is supplied under a fictional approved organizational policy as independently available, persistent across employment changes and not reassigned; those are not universal HR or ISC guarantees.
+
+Identification Number is supplied as already eligible, intended identity reference is unique, no manual override is supplied, and no identity has the name drao.tp. Supported evaluation supplies the intended association tp-206 to I-73003. No sync write or access-changing request is configured as part of that result. A second-account variation uses tp-admin-206 with the same legitimate owner reference. Email-reassignment variation supplies stale old account mail and a different current holder, without claiming automatic movement of existing associations.
+
+### Official references and claim mapping
+
+| Source | Sections or claims checked | Lesson boundary |
+|---|---|---|
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Paired account/identity values, fixed Equals, uniqueness guidance, ordered alternatives/one satisfied criterion, case/ignoreCase, sample Test, licensed recommendations, searchable identity eligibility and processing, preset/default paths and persistent manual associations | Identifier selection is an engineering decision based on documented comparison behavior plus supplied organizational guarantees. Separate rows do not declare a composite AND match. No duplicate-candidate winner, confidence score, automatic stale-link move or percentage-to-ownership guarantee is invented. |
+| [Managing Source Account Schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Represented field definitions, Account ID/Name designations and post-aggregation change hazards | Distinguish source-account key and naming field from cross-system person reference. Do not change valid account keys or schema designations to imitate a better person identifier. |
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative establishment, mappings from different sources, profile-specific values and shared custom definitions, transforms, Preview and Apply Changes | Applied identity reference has its own origin; an approved persistent business reference does not guarantee retained ISC object continuity, automatic rehire recovery or restored access. Preview is not applied-state proof. |
+| [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Collection and optimization; unoptimized reevaluation of unchanged accounts | Data availability on both sides must be established, and new configuration does not prove every account reevaluated. No broad rerun, destructive reset or universal timing recipe. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Identity mapping evaluation, processing scope and manual preparation, requirements versus successful provisioning | Raw HR, current identity and collected app values are separate evidence. Better matching design does not prove delivered access or safe recovery. |
+| [Managing Accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html) | Human, machine and uncorrelated account classifications, represented account view, wrong associations and supported correction contexts | Shared/service responsibility is not automatically personal ownership. No account reset, deletion or manual reassignment procedure is executed or taught as count cleanup. |
+| [Account Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) | Lookups of accounts already on an identity and support for multiple associated accounts | First-account dependency assumes only missing application relationship supplies input. Repeat reads do not create independent ownership evidence; legitimate multiple accounts are not duplicate-person proof. |
+| [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Configured identity-to-existing-correlated-account writes and multi-account scope | Association/identity changes need consumer review. A guessed value copied into an account is not independent proof of owner; main example supplies no sync or access-changing work. |
+
+Current official pages use Identity Services / Human Fabric naming in places. The course keeps the requested ISC title without implying every feature is available or licensed in every tenant. No API operation or payload is needed to understand identifier selection.
+
+### Engineering reasoning, assumptions and limits
+
+- Uniqueness, availability/coverage, consistency and stability are design evaluation dimensions, not four product status flags or guaranteed ISC identifier validation stages.
+- Candidate scope and business identity matter. Local company uniqueness is not proof for a shared matching population. A profile label alone is not a documented restriction on the source's candidate identities; inspect the actual supported configuration.
+- Account keys tp-206 and tp-admin-206 distinguish accounts. Shared P-73003 can legitimately identify one owner across them. Duplicate reference values on different identity records require investigation; the lesson does not predict ambiguous-candidate handling.
+- Persistent personRef, employee number and employment/contract/payroll identifiers have distinct semantics. No blanket rule that employee number is always stable or email is never acceptable is asserted.
+- Availability is temporal and dependency-based: independently linked HR can supply the identity reference before first app association. A proposed lookup needing that app relationship cannot bootstrap itself under the stated no-other-input assumptions.
+- Qualified NORTH:73003 and SOUTH:73003 represent different fictional people. Removing the namespace creates collision. Both sides need the same approved qualification; no executable transform or composite-correlation implementation is supplied.
+- Default case-insensitive behavior and configured ignoreCase support are documented. No implicit prefix stripping, whitespace cleanup, numeric conversion or type repair is assumed.
+- Email reassignment is an explicit fictional business policy, not a SailPoint feature claim. Current uniqueness of the reused address does not prove correct owner of an old account. Existing manual associations are not assumed to move after value changes.
+- The 1,000-account comparison supplies 1,000 email equalities and one confirmed wrong owner, versus 970 independently verified reference values and 30 missing. These give 100 percent value-match coverage and 97 percent reference availability. They are not interchangeable metrics, no 30-account overall uncorrelated result is asserted, and the other 999 email relationships are not declared verified.
+- Rehire example explicitly supplies a deleted prior identity and unreviewed old access. Stable person meaning is not automatic object recovery, account recreation or authorization.
+- The data contract and illustrative producer/application/integration/ISC responsibilities are an operating model to agree, not official mandatory job titles. No new sensitive personal data is collected or encouraged merely for matching.
+- Main supplied match selects ownerPersonRef Equals identificationNumber. Default Account Name drao.tp has no identity-name match. No sync, permission grant, target field change or real tenant execution follows from the teaching result.
+
+### Diagram and publication checks
+
+- [Account keys and person references](../assets/COR-003_account_keys_and_person_references.txt), maximum 48 characters per line: two distinct accounts to one intended identity, separate duplicate-identity concern and human ownership check.
+- [Reused address and stable reference](../assets/COR-003_reused_address_and_stable_reference.txt), maximum 49 characters per line: supplied earlier/later email ownership facts and separate persistent-reference path without promising automatic reassignment.
+- Editable assets match inline blocks. Prose identifies arrows, conditions and excluded outcomes. The first is a relationship map, the second a temporal comparison, not private backend execution.
+- Two two-column tables, eight worked cases and acquisition transfer stay in the learner file. Full published article, diagrams/tables, all forty-nine routes, seven-module native defaults/current-page links and unchanged tracing aid are publication checks; visual rendering is checked separately.
+- No JSON/API payload is needed in this lesson. COR-004 remains planned. References and assessment metadata stay author-only.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. Unique account key | Object and population meaning | Source record key has no supplied approved identity counterpart; uniqueness alone doesn't establish person | Any unique field is a person key | Correlation; schemas |
+| 2. Two accounts, one owner | Many-account relationship | Distinct keys with one approved reference can identify one person; verify both uses/access | Repeated owner reference always duplicates people | Account Attribute; accounts |
+| 3. Company-local numbers | Scope and qualification | Shared population has overlap; global/qualified reference must preserve meaning; two rows are not implicit AND | Local uniqueness or extra company row solves collision automatically | Correlation criteria; profile mappings |
+| 4. Reused email | Stability and historical ownership | Current unique equality can identify new holder, not legitimate old account owner; inspect history | Unique current email proves continuity | Correlation; supplied reuse policy |
+| 5. First-account input | Availability and dependency | No independent value under stated facts; provide approved input/exception, not another identical read | Field definition or repeat aggregation supplies unavailable data | Account Attribute lookup; profiles |
+| 6. 100 versus 97 percent | Coverage versus correctness | Known wrong owner is defect; dependable reference plus remediation is candidate, not blanket go-live approval | Highest percentage certifies safest design | Sample Test/recommendations; engineering evidence |
+| 7. Prefix collision | Meaning-preserving normalization | Preserve namespace; both producing/mapped values must retain distinction | Easier equality always improves matching | Correlation comparisons; transforms/mappings |
+| 8. Returning employee | Reference versus object/access continuity | Deleted identity and old access need approved identity/account/access handling independently | Stable business reference restores old ISC object/access | Profiles; accounts; processing |
+| Acquisition transfer / teach-back | Apply full decision framework | Resolve overlapping scopes, missing contractor coverage and downstream-email dependency; verify qualified/global supplier, eligibility, criteria/default/history, actual owner outcomes and deliberate non-matches | Temporary email fallback and removing prefixes bypass design gaps | Correlation; mappings; input dependencies |
+
+Learner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -1,0 +1,18 @@
+Earlier:
+  Devi identity email = drao@learn.example
+  TeamPlan mail       = drao@learn.example
+  approved person reference = P-73003
+
+Later supplied business facts:
+  Devi's identity has a new email
+  old address is reassigned to another person
+  Devi's TeamPlan account keeps the old address
+
+If evaluated using that stale email:
+  account value equals the new holder's email
+    -> equality no longer proves Devi's ownership
+
+Person-reference path:
+  account ownerPersonRef = P-73003
+  Devi identificationNumber = P-73003
+    -> same intended person reference

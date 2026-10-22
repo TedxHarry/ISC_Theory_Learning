@@ -215,10 +215,10 @@ Identity mappings can use account attributes from different sources; the authori
 
 - 7.1 [Why importing an account leaves a relationship to establish.](lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.md) **Authored:** COR-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-Lessons 7.3-7.9 remain planned.
+Lessons 7.4-7.9 remain planned.
 
 - 7.2 [The account and identity attributes used in correlation.](lessons/COR-002_Account_and_Identity_Attributes_Used_in_Correlation.md) **Authored:** COR-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 7.3 Choosing identifiers based on uniqueness, availability, consistency, and stability.
+- 7.3 [Choosing identifiers based on uniqueness, availability, consistency, and stability.](lessons/COR-003_Choosing_Identifiers_for_Reliable_Account_Correlation.md) **Authored:** COR-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 7.4 Following configured matching conditions through concrete records.
 - 7.5 Missing values, unmatched accounts, and ambiguous data.
 - 7.6 Existing associations and changes to source data or correlation configuration.

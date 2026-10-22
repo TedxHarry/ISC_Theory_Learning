@@ -381,3 +381,10 @@ lessons:
     source: "lessons/COR-002_Account_and_Identity_Attributes_Used_in_Correlation.md"
     url: "/lessons/COR-002_Account_and_Identity_Attributes_Used_in_Correlation.html"
     description: "Trace the selected account and identity values, their origins and correlation eligibility, then investigate mismatches without confusing mappings with associations."
+  - id: COR-003
+    module: correlation
+    placement: "Module 7.3"
+    title: "Which identifier will still point to the right person tomorrow?"
+    source: "lessons/COR-003_Choosing_Identifiers_for_Reliable_Account_Correlation.md"
+    url: "/lessons/COR-003_Choosing_Identifiers_for_Reliable_Account_Correlation.html"
+    description: "Choose person references by their meaning, uniqueness, availability, consistency and stability, and distinguish matching coverage from correct ownership."
