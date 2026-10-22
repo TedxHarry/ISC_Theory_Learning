@@ -1,0 +1,22 @@
+Trim only after combining:
+" Devi " + " " + " Rao "
+              |
+       " Devi   Rao "
+              |
+          trim outside
+              |
+        "Devi   Rao"
+    Three spaces remain inside.
+
+Trim each component first:
+" Devi "              " Rao "
+    |                     |
+   trim                  trim
+    |                     |
+ "Devi"                 "Rao"
+    +------ " " ----------+
+              |
+            concat
+              |
+         "Devi Rao"
+      One separator inserted.

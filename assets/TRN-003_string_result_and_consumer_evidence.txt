@@ -1,0 +1,22 @@
+Human checks for this display value
+               |
+Correct identity, source and account?
+               |
+Exact givenName and familyName inputs?
+               |
+Each trim result preserves meaning?
+               |
+Array order and separator correct?
+               |
+Preview returns "Devi Rao"?
+               |
+Authorized processing applied it?
+               |
+Current identity displayName correct?
+               |
+External change actually required?
+        /                  \
+       no                  yes
+       |                    |
+No write inferred    Check configured path,
+                     operation and target

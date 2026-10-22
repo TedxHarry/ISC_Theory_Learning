@@ -3027,6 +3027,53 @@ Cloud sources may display Human Fabric/Identity Security naming; the course reta
 - Review includes independent context, first-use terms, causal trace, changed conditions, supported mechanism/source checks, consistent values, worked reasoning, no learner citations or methodology promises, and personal mentor narration. Beginner read-through and unfamiliar-case validation remain pending.
 
 
+## TRN-003
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi 83003 has teaching identity I-83003 (not actual ISC ID), Employees profile and one correctly associated WorkforceBook Production account wb-83003. Account aggregation already collected givenName/familyName single strings, each with one surrounding ordinary space on each side of Devi/Rao. Other required identity attributes valid.
+- Approved displayName preserves letters/case/meaningful punctuation/interior spaces, removes surrounding spaces per component, and inserts one separator space. Main root concat values contain trim(explicit WorkforceBook/givenName accountAttribute), literal space, trim(explicit WorkforceBook/familyName accountAttribute). Final Devi Rao.
+- Raw concat yields one outside space each end and three interior spaces. Final-only trim leaves three interior spaces; component trim plus separator yields one. Diagram plus signs are explanatory notation, not executable syntax.
+- Separate fixed values join JSON with explicit separator space yields Devi Rao; omitting separator yields Devi,Rao by documented default. This illustrates join, not a dynamic mapping replacement.
+- Independent illustrations: Finance with spaces, us uppercase, De la Cruz interior spaces and O'Neil apostrophe preservation, PLANT-0073 code text, A-B/AB collapse, whitespace-only family and duplicate-name login collisions. No unapproved null/error-to-empty output assumed.
+- Supplied authorized shared review/Preview/processing continuation establishes current I-83003.displayName Devi Rao only. HR fields remain raw. No target update, login/mailbox creation or account-ownership change supplied.
+- Family-first transfer supplies Ana/O'Neil surrounded by spaces, requires O'Neil, Ana with literal comma-and-space, preserves punctuation. No further person/account identifiers needed for these isolated supplied components.
+- No actual tenant/API/source/profile/mapping/transform/aggregation/processing/provisioning or target operation performed; local JSON/string checks are not ISC engine validation.
+
+### Official sources and claim mapping
+
+1. [Transforms](https://developer.sailpoint.com/docs/extensibility/transforms/) supports configurable operations, nested value dependencies and explicit versus implicit input. Mapped to main composition and mapping-selector/input distinction. No undocumented execution-service order, intermediate stored field or automatic writeback inferred.
+2. [Trim](https://developer.sailpoint.com/docs/extensibility/transforms/operations/trim/) supports beginning/ending whitespace removal and explicit input. Mapped to component versus final-only trace; interior spaces/punctuation/case retained. Worked character counts use ordinary ASCII spaces, not every Unicode-whitespace classification.
+3. [Lower](https://developer.sailpoint.com/docs/extensibility/transforms/operations/lower/) supports lowercase conversion with explicit/implicit input. Mapped to independent department example, retained spaces and unacceptable lowercase-display case.
+4. [Upper](https://developer.sailpoint.com/docs/extensibility/transforms/operations/upper/) supports uppercase conversion. Mapped to us/US case; no business-code validation or translation asserted.
+5. [Concatenation](https://developer.sailpoint.com/docs/extensibility/transforms/operations/concatenation/) supports type concat and ordered values from strings/nested transform results, including explicit separator literal. Mapped to full dynamic display definition, no inferred space, reversed-order examples and exact raw/normalized text.
+6. [Join](https://developer.sailpoint.com/docs/extensibility/transforms/operations/join/) supports type join, configured values and separator, default comma. Mapped to fixed demonstration and case 5; not assumed to iterate arbitrary multi-valued account input automatically.
+7. [Account Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) supports per-identity associated-account sourceName/attributeName retrieval and selection controls. Mapped to main explicit reads and one-account assumptions. Name formatting does not prove account ownership.
+8. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) supports displayName, mappings, selected Preview/application and first-value/single-result boundary for multi-valued mapping-transform input. Mapped to main field, list qualification and evidence. Display output is not claimed unique or an email/mailbox.
+9. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) supports mapped identity updates through relevant events/manual application and separate provisioning-result verification. Mapped to supplied current identity versus external effects.
+10. [RFC 8259: JSON](https://www.rfc-editor.org/rfc/rfc8259.txt), sections 5 and 7, supports ordered arrays and string-character boundaries. Mapped to values order, spaces inside literals and distinction from file indentation; not a general JSON course.
+
+Cloud pages can display Human Fabric/Identity Security branding; this course retains ISC. No IdentityIQ behavior included. Main input names/spelling, display format and population agreement are fictional. Null/error handling, multilingual case edge cases, code validity and target character/length/uniqueness requirements need their own validated design; they are not inferred from these examples. No recipe strips accents, interior spaces or punctuation indiscriminately.
+
+### Diagrams, JSON and assessment mapping
+
+- Editable sources: ../assets/TRN-003_component_trim_and_separator_comparison.txt and ../assets/TRN-003_string_result_and_consumer_evidence.txt. Inline blocks match exactly, maximum widths 31 and 43 characters. First traces selected string operations and exact spaces; second labels human evidence checks. Neither is a private backend architecture or guaranteed target write.
+- Main illustrative JSON parses with concat root and three values: two explicit accountAttribute/trim branches surrounding a literal space. Fixed join JSON parses with two strings and explicit separator. Local ordinary-string assertions verify character counts and outputs only, not the ISC engine.
+- Two two-column tables retain supplied requirements and operation boundaries. Exact source checks are distinct from full live rendering, code/diagram/table reachability and publication approval.
+- Case 1: tests operation placement and spaces. Raw components plus literal supplied; outer trim leaves three interior spaces. Sources 2, 5.
+- Case 2: tests explicit separator. Trimmed components/no separator supplied; DeviRao follows. Concat literal or join explicit space are acceptable corrections under same input contract. Sources 5-6.
+- Case 3: tests meaningful interior spaces. De la Cruz input supplied; Devi De la Cruz retained. Misconception: trim removes all whitespace. Source 2 and approved rule.
+- Case 4: tests correct operation versus wrong design. Lower around complete result yields devi rao but violates preserved-case requirement. Sources 1, 3.
+- Case 5: tests documented join default. Two fixed strings/no separator supplied; comma output, not inferred space. Source 6.
+- Case 6: tests blank versus valid single-name/missing policy. Three ordinary spaces supplied; trim empty, composition trailing separator; final trim cannot resolve business meaning. Sources 2, 5 and explicit contract. No universal null handling needed.
+- Case 7: tests uniqueness versus display composition. Two distinct people/same components supplied; identical output is valid display but not unique login. Sources 5, 8 and target's stipulated uniqueness requirement. No target-specific identifier recipe supplied.
+- Case 8: tests current identity versus target delivery. Applied identity correct/no configured write or result evidence supplied; investigate independent consumer. Sources 8-9.
+- Transfer: tests family-first order, literal comma-space and apostrophe retention with supplied Ana/O'Neil. Expected O'Neil, Ana after component trim; inspect inputs, exact output, absent-input policy, application and dependent use. Sources 2, 5-9. Approved different source field or format could be a design alternative only if the changed requirement is stated, not silently substituted.
+- Author review covers independent context/first-use terms, supported mechanism, causal traces, changed conditions, consistent identifiers/characters, worked reasoning, source verification and mentor narration with no learner citations or methodology promises. Beginner validation and formal publication approval remain pending.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -446,3 +446,10 @@ lessons:
     source: "lessons/TRN-002_Reading_a_Transforms_Inputs_Operation_Configuration_and_Output.md"
     url: "/lessons/TRN-002_Reading_a_Transforms_Inputs_Operation_Configuration_and_Output.html"
     description: "Read transform instructions, trace nested and mapped inputs to exact results, and distinguish syntax, configuration, application and consumer evidence."
+  - id: TRN-003
+    module: transforms
+    placement: "Module 8.3"
+    title: "Which characters should this calculation keep?"
+    source: "lessons/TRN-003_Normalizing_and_Combining_Strings.md"
+    url: "/lessons/TRN-003_Normalizing_and_Combining_Strings.html"
+    description: "Normalize and combine approved text through exact characters, component values and separators without hiding missing data or inventing uniqueness."
