@@ -1,0 +1,15 @@
+Saved criteria corrected
+  -> configuration is now different
+
+Existing account data unchanged
+  -> optimized read can skip it
+  -> new comparison not established
+
+Supported unoptimized reevaluation
+  -> unchanged account can be examined
+
+Persistent manual association?
+  -> not cleared by that reread
+
+Human verification:
+  current inputs, history and link

@@ -388,3 +388,10 @@ lessons:
     source: "lessons/COR-003_Choosing_Identifiers_for_Reliable_Account_Correlation.md"
     url: "/lessons/COR-003_Choosing_Identifiers_for_Reliable_Account_Correlation.html"
     description: "Choose person references by their meaning, uniqueness, availability, consistency and stability, and distinguish matching coverage from correct ownership."
+  - id: COR-004
+    module: correlation
+    placement: "Module 7.4"
+    title: "The first comparison found no match. What happens next?"
+    source: "lessons/COR-004_Following_Configured_Correlation_Conditions_Through_Records.md"
+    url: "/lessons/COR-004_Following_Configured_Correlation_Conditions_Through_Records.html"
+    description: "Trace ordered configured comparisons and the separate default path, then distinguish individual no-matches from recorded associations and unevaluated accounts."

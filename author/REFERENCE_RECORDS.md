@@ -2577,6 +2577,71 @@ Current official pages use Identity Services / Human Fabric naming in places. Th
 
 Learner validation and formal approval remain pending.
 
+## COR-004
+
+### Revision, review and limits
+
+Revision 1.0, Module 7.4, **The first comparison found no match. What happens next?** Documentation checked October 22, 2026. Documentation-based author review only; no tenant execution, observed beginner validation or formal publication approval. All prior lessons, tracing aid revision 1.0 and presentation/navigation code are unchanged.
+
+Independent fictional example: Devi 74004; PeopleLedger Production authoritative Employees; pl-74004 already associated with teaching identity I-74004 (not an actual object ID). Applied identificationNumber is text 74004, email devi.rao@learn.example, identity name worker74004. Other identity I-74005 has identificationNumber 74005, email other.worker@learn.example and name worker74005. Candidate evidence excludes any identity with identificationNumber OLD-74004 or name drao.cp; email comparison uniquely matches Devi.
+
+CasePort Production is non-authoritative for employee establishment. cp-419 account key is Account ID; loginName drao.cp is Account Name; employeeRef OLD-74004; mail DEVI.RAO@learn.example; friendly display Devi Rao. Complete saved configured list is employeeRef Equals identificationNumber, then mail Equals email. Both identity attributes are eligible and applied, configured case-insensitive comparison is supplied, account is evaluated and no existing manual override applies. First configured criterion supplies no match, second supplies the intended association cp-419 to I-74004. The successful link does not repair the old employee-reference input; its origin still needs investigation. No sync write or access-changing request is supplied.
+
+Independent cp-420 variation has neither configured match, designated Account Name WORKER74004, unique intended identity name worker74004 and approved Devi ownership, with supplied default association. cp-421 has neither configured match nor a default name match for unmatched421, no manual/other supplied match and an uncorrelated result. These are teaching facts, not tenant observations or a real schema/naming change.
+
+### Official references and claim mapping
+
+| Source | Sections or claims checked | Lesson boundary |
+|---|---|---|
+| [Assigning Source Accounts to Identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Paired attributes, fixed Equals, ordered one-pair-at-a-time criteria with a criterion able to establish association, case/ignoreCase, sample Test, searchable eligibility/preparation, presets, default Account Name to identity name, manual persistence and ISC-created-account treatment | Main trace uses first no-match then one unique intended second match. Standard rows do not imply AND, weighted voting or later mandatory confirmation. Default applies if configured correlation cannot associate; no unverified winner/continuation algorithm for ambiguous or error conditions is asserted. |
+| [Managing Source Account Schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Fields and Account ID/Name designations, post-aggregation change risks | Default checks designated loginName, not friendly displayName. cp-420 is a different account value, not a changed schema designation. No rename/key reset procedure is supplied. |
+| [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Authoritative establishment, profile identity attribute mappings, custom fields, Preview and Apply Changes | Candidate values are supplied as applied, eligible current values. A proposed mapping preview is not applied identity state or an account-correlation execution. |
+| [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Collection, optimized unchanged-account skipping, unoptimized reevaluation, activity/history scope/status/optimization evidence | Successful collection differs from each criterion's evaluation. Configuration changes do not prove unchanged accounts reevaluated; no broad destructive rerun or universal timing recipe. |
+| [Managing Accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html) | Collected account view, attributes, uncorrelated state, wrong correlations and correction context | Missing relationship is distinct from external account removal/disable. Correct ownership needs approved evidence; no account deletion/reset/manual move is performed. |
+| [Viewing Identity Control Panels](https://documentation.sailpoint.com/saas/help/identities/control_panel.html) | Identity profile/current attributes, represented access and associated-account evidence, events | Record current source/account/identity and observation context. No nonexistent criterion-by-criterion UI log or complete historical reconstruction is invented. |
+| [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Applied mappings, manual processing and requirements-versus-provisioning boundary | Searchable preparation and identity value evidence are separate from source comparison/evaluation and successful target delivery. |
+| [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) | Configured identity-to-existing-correlated-account writes | A real identity/relationship correction can affect consumers; main supplied correlation has no sync/access write and does not prove target state. |
+
+Only primary ISC admin documentation supports product claims. Search results about IdentityIQ rules, multi-host/resource-specific correlation and unrelated products are not used to define this standard account-correlation lesson. Current official pages use Identity Services / Human Fabric naming in places; the course keeps the requested ISC title without universal licensing claims.
+
+### Reasoning boundaries and checks
+
+- The distinction is criterion no-match versus configured no-association versus overall uncorrelated result, not a claim that the product exposes these as three official status flags.
+- Main selected strings are OLD-74004 versus 74004/74005 and DEVI.RAO@learn.example versus devi.rao@learn.example. Case-insensitive equality supplies only the second unique intended match. No prefix stripping, whitespace cleanup or numeric conversion is invented.
+- The standard form uses fixed Equals and ordered alternatives. AND requires conditions together; OR needs an alternative. There is no majority score or requirement that later rows confirm an already supported configured match.
+- Order is actual saved configuration evidence, not an ownership guarantee. Conflicting rows and duplicate candidates are investigated; the lesson does not claim source collection order, identity recency, profile priority or hidden confidence selects the right person.
+- Configured ignoreCase behavior is distinct from the non-configurable case-insensitive default naming path. A case-sensitive configured email example changes that criterion's result, not automatically the whole process.
+- cp-420 and cp-421 explicitly supply all configured/default no-match or unique-match conditions. The current friendly name does not establish the default, and a configured match is not followed by a default replacement.
+- Null/empty/unavailable input and an evaluation error are distinct evidence. The simple diagram does not imply every abnormal state falls through identically.
+- Optimization and manual correlation are independent boundaries: optimized unchanged records can be skipped; unoptimized aggregation is not an automatic unlink/move command for persistent manual associations.
+- Current reproducible comparison is not historical execution proof. Where actual per-criterion evidence isn't available, absence is stated rather than inventing a log or private pipeline.
+- Contractor transfer has wrong-person sponsor reference, unavailable future contractor email and an independent reference not yet implemented on both sides. No safe completed association is inferred.
+- Main example has no source/schema/criteria/account/identity/correlation/reset/deletion/sync/target operation. No tenant/API execution or learner result is claimed.
+
+### Diagrams and publication checks
+
+- [Configured comparisons and default](../assets/COR-004_configured_comparisons_and_default.txt), maximum 37 characters per line: first configured no-match, second unique intended match, default only if configured matching cannot establish relationship, and independent human verification.
+- [Configuration and reevaluation](../assets/COR-004_configuration_and_reevaluation.txt), maximum 38 characters per line: saved configuration, unchanged-account skip, supported reevaluation and persistent-manual boundary; no guaranteed movement.
+- Assets match inline blocks. Prose explains arrows, explicit conditions and omitted ambiguous/error behavior, rather than drawing private backend services.
+- Two two-column tables, eight worked cases and contractor-source transfer remain in the article. Complete live text/diagrams/tables, all fifty routes, seven-module native defaults/current-page links and unchanged tracing aid are publication checks; visual rendering is checked separately.
+- No JSON or executable API example is necessary here. COR-005 remains planned. Source citations and assessment metadata remain author-only.
+
+### Assessment intent and accepted reasoning
+
+| Exercise | Understanding tested | Expected reasoning / acceptable alternatives | Misconception exposed | Source anchor |
+|---|---|---|---|---|
+| 1. First criterion no-match | Criterion versus overall result | Unique intended second configured match can supply association; verify recorded result and owner | First no-match means uncorrelated overall | Ordered configured correlation |
+| 2. One match, one no-match | Alternatives versus conjunction | Standard second row isn't an automatic veto or all-fields confirmation | Multiple rows mean AND | Configured criterion semantics |
+| 3. Configured no-match, naming match | Separate default path | WORKER74004 matches worker74004 case-insensitively under supplied unique candidate/evaluation; friendly name irrelevant | Configured no-match eliminates default | Default correlation; schema designations |
+| 4. Changed case setting | Actual comparison settings | Don't reuse default case-insensitive conclusion; inspect configured row then other paths separately | One familiar value comparison establishes every configured/default outcome | ignoreCase versus default |
+| 5. Duplicate identity email | Insufficient candidate evidence | Investigate duplicates/owner and actual supported result; no first-display winner | Candidate display or collection order is known tie-breaker | Uniqueness guidance; accounts |
+| 6. Contradictory fields | Order versus ownership correctness | Preserve order/result and repair proven input cause; preferred ordering doesn't repair wrong data | Ordering a preferred identifier legitimizes conflicting values | Ordered alternatives; wrong correlation context |
+| 7. Manual link persists | Association history | Persistent explicit association isn't cleared by unoptimized reread; approved correction requires evidence | Every current field match overrides existing manual link | Manual/ISC-created-account treatment |
+| 8. New criteria, unchanged input | Actual evaluation | Optimized read may skip unchanged record; establish supported reevaluation and record result | Read success proves all new criteria ran | Aggregation optimization |
+| Contractor-source transfer / teach-back | Full configured/default/input/result trace | Sponsor comparison can point to wrong person, future email unavailable, rows aren't AND; establish independent reference/mapping/eligibility and default/manual/evaluation evidence then actual owner outcome | More rows or later email promise safe contractor ownership | Correlation; profiles; optimization; accounts |
+
+Learner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

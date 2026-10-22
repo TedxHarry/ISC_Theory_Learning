@@ -1,0 +1,18 @@
+Supplied cp-419 evaluation:
+
+1. employeeRef = OLD-74004
+   compare with identificationNumber
+   -> no candidate matches
+   -> consider configured criterion 2
+
+2. mail = DEVI.RAO@learn.example
+   compare with email
+   -> unique intended match
+   -> supplied link to I-74004
+
+Only if configured matching
+cannot establish the relationship:
+   -> consider the default path
+
+Human verification:
+   intended owner and recorded link?
