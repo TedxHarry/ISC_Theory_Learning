@@ -2700,6 +2700,66 @@ The two inline text diagrams exactly match assets/COR-005_separating_matching_pr
 
 The transfer queue combines uncorrelated records and disputed existing links, not a single report claiming wrong links are uncorrelated. Its five cause groups total 100. Each needs owner/source/ISC evidence and cause-specific acceptance; arbitrary mass association hides unresolved work. No beginner teach-back or transfer performance has been observed.
 
+## COR-006
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi is employee 76006. PeopleBridge Production is authoritative for Employees; pb-76006 already belongs to teaching I-76006, not an actual ISC ID.
+- Applied eligible identificationNumber P-76006, email devi.rao@learn.example and name worker76006 identify Devi. Other I-76007 has P-76007/email other.worker@learn.example/name worker76007. No other candidate has P-76006.
+- FlowRoom Production is non-authoritative for employee establishment. Account ID uses account key, Account Name uses login. fr-306/drao.fr/mail devi.rao@learn.example/personRef P-76006 is already automatically associated with Devi under the old criterion, according to supplied investigation evidence.
+- fr-307/drao.review/mail obsolete.devi@learn.example/personRef P-76006 was evaluated under the old criterion and is supplied uncorrelated. Both accounts are approved for Devi; neither login matches an identity name and neither main account has manual treatment.
+- Complete old list: mail Equals email. Complete replacement: personRef Equals identificationNumber, no email alternative. Both collected account records already contain the new reference and remain unchanged throughout the configuration comparison.
+- Supplied optimized read skips both unchanged records. Supplied included unoptimized evaluation preserves fr-306-to-I-76006 and establishes fr-307-to-I-76006. Account keys/logins and identity are unchanged.
+- Separate fr-309 is wrongly manually linked to I-76007 despite current P-76006; unoptimized aggregation does not clear the explicit link. Separate fr-310 was created through ISC and has manuallyCorrelated=true without a manual file import.
+- Separate moved-account sync variation uses Operations on the wrong identity and Engineering on Devi, with department sync configured. The main example supplies no target write or access change.
+- Project transfer population totals 400: 360 existing automatic links, 25 uncorrelated, 10 manual and 5 ISC-created persistent links. Fifteen persistent cases need separate review, not automatic release.
+
+### Primary references
+
+1. [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): saved pairings/Equals/order/case, sample Test, searchable preparation, separate default naming path, persistent manual links, ISC-created manuallyCorrelated=true, unoptimized aggregation does not remove manual correlation, and supported correction contexts.
+2. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): optimized unchanged-record skip without account/manager correlation, unoptimized recalculation, aggregation timing/status/scanned/mode history, manual-import filtering and Search freshness boundaries.
+3. [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): selected mappings, required identity attributes, Preview versus applied changes, profile processing status.
+4. [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): mapped attributes and configured access requirements, manual application, consumer effects and provisioning-success boundary.
+5. [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): Account ID/Account Name roles, immutable naming and serious reference/duplicate risks from changes after aggregation.
+6. [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html): supported Update Correlation for uncorrelated or incorrectly associated accounts, including manual and aggregation-origin errors; account detail views.
+7. [Viewing identities](https://documentation.sailpoint.com/saas/help/identities/control_panel.html): current profile/attributes/access and available events, not proof of historical criterion evaluation or independent business ownership.
+8. [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): configured existing-correlated-account writes, mapped attribute conditions and moved/correlated-account trigger when associated identity values differ; activity evidence versus external state.
+
+All eight primary pages were fetched successfully during review. Correlation, identity processing, identity control panels and attribute-sync articles were read for their relevant full explanations; aggregation methods/activity and profile/schema/account-correction sections were read for the specific claims.
+
+### Claim and scope checks
+
+- Source criteria, account fields, identity mapping values and recorded relationships are separate objects/states. Saving criteria or seeing a sample estimate does not prove every existing link was updated.
+- Account ID/key and Account Name/login designations stay fixed; criterion replacement is not a schema migration, account rename, identity creation or deletion.
+- Main reference values predate the criterion replacement, isolating a configuration change. The old uncorrelated outcome is supplied with actual prior-evaluation evidence; no universal outcome is inferred from one comparison alone.
+- Optimized unchanged-account reads skip account/manager correlation. Unoptimized evaluation is documented after correlation-config changes but is not guaranteed ownership repair, automatic unlinking/reassignment for every established automatic link, or manual override removal.
+- Identity-side changes and application account-data changes are distinct. Preview, applied identity data and supported source-account evaluation require separate evidence.
+- New custom fields require correlation-searchable preparation and manual processing for all identities before aggregation; Search queryability is a different capability.
+- Manual relationships persist after account-data changes. ISC-created accounts may have manual-correlation treatment without file upload. A flag is not proof of human upload, ownership or approval.
+- Current data/configuration compatibility is not a historical trace. Available history and events must not be enlarged into an undocumented candidate-by-candidate UI record.
+- Removing configured email does not disable the non-configurable case-insensitive Account Name-to-identity-name default. No ambiguous-candidate tie-breaker is invented.
+- An association move can trigger configured attribute synchronization; correlation is not access approval, target delivery proof or automatic reversal. Restoring old criteria does not demonstrate prior effects were undone.
+- Scope includes source-wide reevaluation and consumer review, not destructive reset/delete/filter recipes or real configuration/flag edits. No actual tenant, API, schema, source, identity, aggregation, processing, correlation, provisioning or target operation was performed.
+
+### Diagram and assessment review
+
+Two inline text diagrams exactly match assets/COR-006_configuration_and_existing_relationships.txt and assets/COR-006_relationship_change_and_dependent_effects.txt; maximum line widths 40 and 39 characters. The first follows supplied criterion-save/optimized-skip/unoptimized-result evidence. The second is a human change-review map with conditional target effects, not a fixed private execution pipeline. Two two-column tables remain in the article.
+
+| Case and tested distinction | Expected reasoning, acceptable evidence and misconception |
+|---|---|
+| 1. Save versus evaluation | Saved criteria establish the instruction only. Require relevant operation and actual account result; sample/current state cannot substitute. References 1-2. |
+| 2. Applied identity versus source-account evaluation | Unchanged application account is skipped in supplied optimized run. Require suitable reevaluation/result; identity processing is not universal source reassignment. References 1-4. |
+| 3. External versus collected input | Trace publication/integration/actual represented value before changing correct identity data. Accept missing delivery evidence as unresolved. References 2-3, 5. |
+| 4. Persistent wrong manual link | Unoptimized aggregation does not clear fr-309's explicit link; approved supported correction and actual resulting association are required. References 1, 6. |
+| 5. ISC-created flag versus file history | fr-310 creation explains manuallyCorrelated=true without CSV upload. Neither flag nor missing import proves ownership or ordinary automatic treatment. Reference 1. |
+| 6. Configured rows versus default | Default naming path remains; inspect supported actual association and approved owner, not a claim that removing email disables all alternatives. References 1, 5. |
+| 7. Restored instruction versus reversal | Current link/external value/activity and separately approved corrections are needed after successful sync; no automatic rollback is demonstrated. References 1, 6, 8. |
+| 8. Correct preserved link versus failure | fr-306 remaining on Devi is compatible with successful reevaluation. Verify included evaluation, inputs and relationship rather than requiring every account to move or inventing historical origin. References 1-2, 7. |
+
+Transfer assessment tests population segmentation, reference preparation, representative non-production evidence, supported production scope, persistent exceptions and independent target verification. Accept equivalent approved operating plans; reject one successful badge, automatic release of 15 persistent links, reset/filter shortcuts or a requirement that all 400 links move. No beginner teach-back or transfer performance has been observed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

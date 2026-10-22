@@ -1,0 +1,13 @@
+Saved replacement criterion:
+  personRef Equals identificationNumber
+    -> instruction changed
+
+Optimized read, records unchanged:
+  fr-306 -> correlation skipped
+  fr-307 -> correlation skipped
+    -> old relationship states remain
+
+Unoptimized read and evaluation:
+  fr-306 -> same intended I-76006
+  fr-307 -> now linked to I-76006
+    -> verify each recorded relationship

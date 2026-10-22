@@ -1,0 +1,15 @@
+Human-approved change:
+  record values and existing links
+  check identity-dependent operations
+    -> choose supported change scope
+
+ISC evaluation or link correction:
+  verify actual account association
+    -> inspect resulting operations
+
+If a target write occurred:
+  verify actual external state
+    -> approve any corrective write
+
+Restoring an old criterion alone:
+  does not prove these effects reversed

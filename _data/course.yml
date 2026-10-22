@@ -402,3 +402,10 @@ lessons:
     source: "lessons/COR-005_Missing_Values_Unmatched_Accounts_and_Ambiguous_Data.md"
     url: "/lessons/COR-005_Missing_Values_Unmatched_Accounts_and_Ambiguous_Data.html"
     description: "Separate missing input, unmatched or ambiguous candidate evidence and wrong existing links, then verify corrections by their cause rather than exception counts."
+  - id: COR-006
+    module: correlation
+    placement: "Module 7.6"
+    title: "The matching rule changed. What happens to accounts that are already linked?"
+    source: "lessons/COR-006_Existing_Associations_and_Changes_to_Correlation_Data_or_Configuration.md"
+    url: "/lessons/COR-006_Existing_Associations_and_Changes_to_Correlation_Data_or_Configuration.html"
+    description: "Trace configuration and data changes through reevaluation, distinguish persistent links, and verify actual associations and dependent effects."
