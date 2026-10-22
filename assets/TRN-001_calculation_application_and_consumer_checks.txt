@@ -1,0 +1,24 @@
+Human verification for this change
+                |
+  Approved meaning and input selected?
+                |
+  Preview: "0042" and "finance"?
+                |
+  Authorized processing completed?
+                |
+  Applied identity has both values?
+                |
+      Consumer needs a change?
+          /             \
+        no              yes
+        |                |
+  No write inferred   Check its decision
+                         |
+                   Write configured?
+                     /         \
+                    no         yes
+                    |           |
+                No delivery  Check operation
+                inferred     and target state
+
+A preview is not target confirmation.

@@ -2939,6 +2939,49 @@ Two inline text diagrams exactly match assets/COR-009_investigation_branches.txt
 
 Transfer assessment tests cause segmentation across 90 investigation records and distinct collection/intake/input/persistent-link/manager/ambiguity/classification evidence. Accept equivalent approved plans preserving exact identifiers, supported correction scope and individual acceptance. Reject one-rule/one-run universal closure, destructive cleanup, guessed owners and completion based only on job status or count. No beginner teach-back or transfer performance has been observed.
 
+## TRN-001
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; actual tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi 81001 already has teaching identity I-81001 (not an actual ISC object ID), governed by Employees. PeopleLedger Production is authoritative for that population; pl-81001 is already collected and correctly associated. Exactly one account on this source supplies both single-valued text fields.
+- Approved costCentreCode string 0042 maps directly to costCenter unchanged. Approved departmentLabel Finance supplies implicit input to ToLower, yielding department finance. No explicit input override, missing field, competing account or other required-field defect is part of the main design.
+- Supplied continuation includes approved shared change, reviewed population/consumers, relevant completed processing and current identity values 0042/finance. The collected HR values remain 0042/Finance. No external write or use test is supplied.
+- Independent variations: explicit associated directory input Legal returns legal despite a PeopleLedger selector; FIN lowercases to fin without an approved translation; Finance with one trailing space retains that space after lower; null input has no approved finance fallback; custom accountAttribute default oldest Legal versus newer Finance needs active-worker selection design.
+- Transfer categories sum to 100 proposed mappings: 40 already exact, 25 lowercase, 15 translation agreement, 10 missing policy, 10 multiple-account selection. Counts do not describe failed identities.
+- No actual tenant/API/source/profile/mapping/transform/collection/processing/role/sync or target operation was performed. Illustrative string checks are not a simulation or validation of the ISC engine.
+
+### Official sources and claim mapping
+
+1. [Transforms](https://developer.sailpoint.com/docs/extensibility/transforms/) supports configurable input/output objects, operations and nesting; implicit versus explicit input and override; separately configured account-create use. Mapped to transform meaning, actual input and execution-context boundaries. JSON and private implementation mechanics are not taught in this lesson.
+2. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) supports population mappings from source account attributes, transform calculations, simple ToLower, selected-identity Preview, Save versus Apply Changes, and first-value/single-result mapping-transform boundary for multi-valued input. Mapped to direct design, main example, list qualification and evidence table.
+3. [Lower](https://developer.sailpoint.com/docs/extensibility/transforms/operations/lower/) supports lowercase conversion and optional explicit input versus mapped source/attribute input. Mapped to Finance/FINANCE/finance, FIN to fin, Legal to legal and whitespace-preservation reasoning. No universal null/error outcome is asserted.
+4. [Account Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) supports account-associated value retrieval, default oldest-created selection, first-non-null behavior and optional sorting/filtering. Mapped to actual provenance, selection discussion and case 8; case supplies both non-null values and default selection. Does not establish every direct mapping's multi-account behavior.
+5. [Trim](https://developer.sailpoint.com/docs/extensibility/transforms/operations/trim/) supports separate removal of beginning/ending whitespace. Mapped to case 5's distinction: lower alone is not trim. No combined transform is implemented.
+6. [Lookup](https://developer.sailpoint.com/docs/extensibility/transforms/operations/lookup/) supports key/value translation and optional default/unknown-key behavior. Mapped to why FIN needs an approved translation, not just case conversion; no unapproved lookup table is supplied.
+7. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) supports relevant event/manual processing, mapped identity updates, profile-associated Apply Changes scope and separate delivery validation. Mapped to application and shared-change reasoning; no universal instant update or private stage sequence is asserted.
+8. [Synchronizing attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html) supports separately configured identity-to-account propagation for eligible existing correlated accounts. Mapped only to consumer/write boundaries. No custom-transform field eligibility or actual sync result is assumed.
+9. [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) supports role access bundles, assignment configuration and identity-processing application. Mapped to dependent-use review. No particular role assignment, comparison engine setting or target grant is supplied.
+
+All sources are official SailPoint cloud documentation, not IdentityIQ. Pages may display SailPoint Human Fabric/Identity Security branding; this course retains ISC terminology. Source availability does not prove every tenant supports a particular connector operation. Account selection, population authority, lowercase requirement, code meaning and exact results are explicit fictional assumptions, not product defaults.
+
+### Diagrams, limits and assessment mapping
+
+- Editable sources: ../assets/TRN-001_direct_and_calculated_value_paths.txt and ../assets/TRN-001_calculation_application_and_consumer_checks.txt. Inline blocks match exactly, maximum widths 38 and 45 characters. First arrows carry selected values; second diagram is a human evidence sequence. Neither invents backend services, unconditional target writes or successful delivery.
+- Two two-column tables retain requirements and evidence limitations. Source-level checks are separate from actual live rendering and horizontal-overflow review.
+- Case 1: tests direct mapping choice and leading-zero meaning. Exact string/authority/consumer agreement are supplied; unnecessary conversion is the misconception. Sources 2 and approved example contract.
+- Case 2: tests supported lowercase result and calculation/application distinction. FINANCE and implicit input supplied; expected finance without delivery inference. Sources 2, 3, 7.
+- Case 3: tests representation versus translation. FIN and full-label requirement supplied; approval/unknown-code policy remain missing. Sources 3 and 6.
+- Case 4: tests explicit-input provenance. Directory Legal and explicit read supplied; legal is a correct operation on wrong approved input. Sources 1, 3, 4.
+- Case 5: tests operation boundary. One trailing space and only lower supplied; finance retains space. Correcting producer data or approved trim are acceptable design paths after agreement. Sources 3 and 5.
+- Case 6: tests missing-data policy and access-sensitive defaults. Null/no authorization supplied; reject unsupported finance. No universal lower-null behavior is required. Approved example contract; sources 2, 7, 9 for dependent context.
+- Case 7: tests evidence ordering without inventing an execution pipeline. Preview only, missing processing/sync evidence supplied; failed provisioning is not established. Sources 2, 7, 8.
+- Case 8: tests actual account selection rather than repeat normalization. Default accountAttribute oldest selection and two non-null values supplied; retrieve correct active record before lower. Sources 3 and 4.
+- Transfer: tests 40/25/15/10/10 design segmentation, authority/type/input requirements, representative Preview/application evidence and independent consumer verification. Valid alternatives include an approved producer correction or authoritative field that removes the need for calculation, provided the stated requirement is met. Misconceptions: universal transforms, generic non-null fallback and Preview as delivery proof.
+- Author review includes independent reading, first-use context, causal/changed-input reasoning, value/identifier consistency, technical source checks and narration pass. Beginner read-through and unfamiliar-case transfer remain pending; no competence guarantee follows from author review or deployment.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

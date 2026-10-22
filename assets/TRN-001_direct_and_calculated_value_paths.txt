@@ -1,0 +1,17 @@
+Employees mapping for I-81001
+PeopleLedger Production / pl-81001
+                |
+       selected account fields
+                |
+      +---------+---------+
+      |                   |
+ costCentreCode     departmentLabel
+     "0042"              "Finance"
+      |                   |
+ direct mapping       lower operation
+      |                   |
+ costCenter           department
+     "0042"              "finance"
+
+Calculated values require application.
+No HR or target write is shown here.

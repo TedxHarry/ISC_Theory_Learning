@@ -13,6 +13,8 @@ modules:
     title: "6. How are identities created and populated?"
   - id: correlation
     title: "7. How do accounts and managers become associated with identities?"
+  - id: transforms
+    title: "8. How do transforms calculate values?"
 lessons:
   - id: SYS-001
     module: system
@@ -430,3 +432,10 @@ lessons:
     source: "lessons/COR-009_Investigating_Incorrect_Account_Links_Unmatched_Accounts_and_Missing_Managers.md"
     url: "/lessons/COR-009_Investigating_Incorrect_Account_Links_Unmatched_Accounts_and_Missing_Managers.html"
     description: "Investigate wrong account links, unmatched records and manager gaps through exact objects, competing causes, supported correction and separate outcome evidence."
+  - id: TRN-001
+    module: transforms
+    placement: "Module 8.1"
+    title: "The source already has a value. Do we need a transform?"
+    source: "lessons/TRN-001_Choosing_Between_Direct_Mapping_and_Calculated_Values.md"
+    url: "/lessons/TRN-001_Choosing_Between_Direct_Mapping_and_Calculated_Values.html"
+    description: "Choose direct or calculated values from approved meaning and actual inputs, then separate calculation, application and downstream results."
