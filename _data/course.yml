@@ -395,3 +395,10 @@ lessons:
     source: "lessons/COR-004_Following_Configured_Correlation_Conditions_Through_Records.md"
     url: "/lessons/COR-004_Following_Configured_Correlation_Conditions_Through_Records.html"
     description: "Trace ordered configured comparisons and the separate default path, then distinguish individual no-matches from recorded associations and unevaluated accounts."
+  - id: COR-005
+    module: correlation
+    placement: "Module 7.5"
+    title: "The account has no clear owner in ISC. What is actually missing?"
+    source: "lessons/COR-005_Missing_Values_Unmatched_Accounts_and_Ambiguous_Data.md"
+    url: "/lessons/COR-005_Missing_Values_Unmatched_Accounts_and_Ambiguous_Data.html"
+    description: "Separate missing input, unmatched or ambiguous candidate evidence and wrong existing links, then verify corrections by their cause rather than exception counts."

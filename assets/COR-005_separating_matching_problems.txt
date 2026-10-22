@@ -1,0 +1,19 @@
+Human investigation of an account:
+
+Not collected?
+  -> investigate the source read
+
+Collected, reference unusable?
+  -> trace missing input and origin
+
+Usable reference, no candidate?
+  -> verify value and intended identity
+
+More than one possible person?
+  -> resolve ownership and data evidence
+
+Already linked to the wrong person?
+  -> inspect link history and correction
+
+After any approved correction:
+  -> verify the actual relationship

@@ -2642,6 +2642,64 @@ Only primary ISC admin documentation supports product claims. Search results abo
 
 Learner validation and formal approval remain pending.
 
+## COR-005
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi is employee 75005. BridgeHR Production is authoritative for Employees; bhr-75005 is already associated with teaching identity I-75005, not an actual ISC ID.
+- Applied eligible identificationNumber is text P-75005; identity name worker75005; email review.team@learn.example. Other I-75006 has P-75006/name worker75006 and the same shared email.
+- ReviewDesk Production does not establish employee identities. Account rd-608 uses its account key as Account ID and userLogin drao.rd as Account Name; ownerRef is null and contactMail is review.team@learn.example.
+- The complete saved configured list has only account ownerRef Equals identity identificationNumber. No other configured match, identity name drao.rd or manual association applies. Evaluation and uncorrelated result are supplied facts.
+- Proposed contactMail-to-email comparison is not configured. Its two possible candidates demonstrate an unsuitable shared contact, not the cause of the current missing account-side reference.
+- Application records and worker registry independently establish Devi and unique P-75005. Approved feed correction supplies that reference, collection/evaluation occurs, and supplied association reaches the same I-75005 with the same rd-608 and drao.rd. Shared email remains unchanged and is not added as a criterion.
+- Independent variations: P-99999 without a candidate, wrong rd-608-to-I-75006 association, absent/null/empty/three spaces/UNKNOWN/string null, multi-valued P-75005/P-75006 input, and a combined queue of 100 uncorrelated or disputed-link records (40/25/20/10/5). These are teaching observations, not tenant output.
+
+### Primary references
+
+1. [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): configured pairings, Equals and ordering/case; unique-value recommendations; correlation-searchable preparation; separate default naming comparison; persistent manual and ISC-created account treatment; reports and supported correction; unoptimized reevaluation.
+2. [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html): account records, human/machine classification, uncorrelated relationships and supported investigation/correction contexts.
+3. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): collection, optimized unchanged-account behavior, unoptimized evaluation, aggregation activity/status and scope.
+4. [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): authoritative profiles, required identity attributes, identity mappings and Preview versus current applied values.
+5. [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): represented fields, types, Account ID and Account Name designations.
+6. [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): mapping and identity requirement evaluation, processing versus independent external change results.
+7. [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): configured identity-to-existing-correlated-account writes and why association changes require consumer review.
+8. [Viewing identities](https://documentation.sailpoint.com/saas/help/identities/control_panel.html): current identity attributes/profile/accounts/access and available events, not independent business ownership or a complete historical criterion trace.
+
+All eight primary pages were fetched successfully during review. The correlation article was read in full; the other pages were read for the sections supporting the mappings above.
+
+### Claim boundaries
+
+- The main identity-side reference is already applied and eligible. Missing input is on the account side. Preview is not applied-state or correlation-result proof.
+- A newly defined custom identity field must receive documented correlation-searchable configuration, population and manual processing for all identities before source aggregation; separate Search queryability is not equivalent.
+- JSON fragments illustrate representations, not complete API requests or connector guarantees. Omission, null, empty strings, spaces, placeholders and calculation errors are not interchangeable. No universal clearing, normalization, cardinality conversion or error continuation is asserted.
+- No-candidate evidence does not establish whether the reference is wrong or a legitimate identity is missing. Verify approved population and reference meaning before creating identities or changing authority.
+- The shared-email comparison is proposed, not current. The docs do not establish a universal winner, first/newest candidate selection, duplicate error code or identical continuation behavior for every ambiguous case. The lesson makes none of those claims.
+- Standard configured rows are alternatives, not automatically AND or weighted votes. Contradictory independent fields and a multi-valued field are distinct from duplicate identity candidates.
+- A recorded association can be wrong and absent from an uncorrelated report. Current data/configuration does not prove what historically established the relationship.
+- Persistent manual correlation is not automatically cleared by source-data changes or unoptimized aggregation. Corrected data and corrected relationship require separate evidence.
+- Optimized collection can skip unchanged accounts for relevant processing; configuration saves are not record evaluation. Choose supported operation/scope from the defect and check actual resulting relationship.
+- Machine/shared accounts require supported classification and responsibility. Source administration is not proof of personal ownership.
+- Correlation is not external account disablement, access approval, provisioning success or automatic reversal of prior writes. No actual tenant/API/configuration/correlation/deletion/reset/synchronization/target operation occurred.
+
+### Diagram and assessment review
+
+The two inline text diagrams exactly match assets/COR-005_separating_matching_problems.txt and assets/COR-005_verified_reference_correction.txt. Maximum line widths are 40 and 40 characters. The first is a human investigation map, not backend matching order; the second distinguishes supplied before-state, approved feed correction, collection/evaluation and ownership/consumer verification. One valid illustrative JSON block and two two-column tables remain in the article.
+
+| Case | Checked reasoning |
+|---|---|
+| 1. Omitted field | No universal clearing inferred without current record and connector behavior. |
+| 2. UNKNOWN | Non-null placeholder count does not prove person identification. |
+| 3. Empty identity side | Preview does not justify overwriting correct account data; verify applied mapping and eligibility. |
+| 4. P-99999 | Reconcile reference meaning and approved identity population before creating a person. |
+| 5. Shared email | Neither arbitrary selection nor universal unmatched outcome follows; proposed criterion does not explain current defect. |
+| 6. Reduced count | Wrong link remains wrong even when absent from an uncorrelated report. |
+| 7. Persistent manual link | Corrected input and unoptimized aggregation do not prove explicit association moved. |
+| 8. Shared automation | Appropriate classification/responsibility is not assigning every account to an administrator as personal user. |
+
+The transfer queue combines uncorrelated records and disputed existing links, not a single report claiming wrong links are uncorrelated. Its five cause groups total 100. Each needs owner/source/ISC evidence and cause-specific acceptance; arbitrary mass association hides unresolved work. No beginner teach-back or transfer performance has been observed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

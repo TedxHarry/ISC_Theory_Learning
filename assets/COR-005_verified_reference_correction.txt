@@ -1,0 +1,15 @@
+Before:
+  ReviewDesk rd-608 ownerRef = null
+  no configured or default match
+    -> supplied result: uncorrelated
+
+Approved owner and feed correction:
+  same rd-608 ownerRef = P-75005
+  collected and evaluated
+    -> matches identificationNumber
+    -> same identity I-75005
+
+Human verification:
+  correct source and account key?
+  approved person reference and owner?
+  resulting link and affected consumers?
