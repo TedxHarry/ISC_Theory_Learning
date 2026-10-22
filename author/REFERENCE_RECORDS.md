@@ -2818,6 +2818,66 @@ Two inline text diagrams exactly match assets/COR-007_manual_relationship_correc
 
 Transfer assessment tests separating approved personal assignments, wrong links, unverified owners, automation and duplicate/contradictory instructions. Accept equivalent approved plans preserving exact identifiers, persistence/consumer checks, supported import contract and individual reconciliation. Reject last-row-wins assumptions, 80-unique-account claims, mass administrator assignment or completion from a falling count. No beginner teach-back or transfer performance has been observed.
 
+## COR-008
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi is employee 78008. RosterHR Production is authoritative for Employees; rh-78008 already belongs to teaching I-78008, not an actual ISC object ID. Devi's own applied identificationNumber is P-78008.
+- Her account managerRef is P-89008. Approved reporting-line evidence identifies existing manager I-89008, established through rh-89008 with applied identificationNumber P-89008. Existing I-89009/rh-89009/P-89009 is a later approved-change variation.
+- Employees Manager Name maps to RosterHR managerRef. The source Manager Correlation compares that employee account field with identificationNumber on candidate manager identities. Values are eligible, applied and unique; no competing source/custom rule applies in the main case.
+- Relevant collection and processing precede the supplied I-78008-to-I-89008 manager relationship. Employee account ownership remains rh-78008-to-I-78008; no manager identity is created from the reference.
+- Separate source-selection variation: Employees priority 10 maps RosterHR P-99999; Contractors priority 20 maps available PartnerHR Production P-89009. First non-null input selects the former, not the first successful lookup. Higher-priority null permits the lower non-null source.
+- Separate changed-input variations start with I-89008 as existing manager and have actual selected/collected/evaluated input, no competing source or custom rule. Null clears; unmatched non-null P-99999 retains the old relationship; approved unique P-89009 can resolve I-89009.
+- Requests/campaigns/target writes are separate illustrations. Main case supplies none of those executions. The 120-employee transfer is 70 prepared/20 wrong non-null references/10 missing inputs/10 missing legitimate manager identities/5 source conflicts/5 duplicate or invalid hierarchy references.
+
+### Primary references
+
+1. [Configuring manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html): employee-to-manager identity relation; both configurations; profile-priority first-non-null source; account-field to manager's own identity field across identities; custom searchable fields; aggregation/processing; changed null versus non-null no-match retention; separate complex-rule extension.
+2. [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): Manager Name mapping, identity attributes and applied configuration versus Preview, shared profile context.
+3. [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): manager recalculation alongside identity evaluation, manual application/monitoring and separate provisioning-success evidence.
+4. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): optimized unchanged-record skip of account/manager correlation, unoptimized recalculation, history timing/status/mode and differing view freshness.
+5. [Requests for roles and access profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html): configured Manager reviewer is the access recipient's manager, item-specific review context, standard missing-reviewer reassignment sequence and actual task verification.
+6. [Manager or source owner campaigns](https://documentation.sailpoint.com/saas/help/certs/starting_campaign.html): standard Manager Campaign excludes identities without managers; Identities Without Managers report; campaign generation snapshot and later-added manager limitation.
+7. [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): existing-correlated-account identity-to-account writes, built-in Manager usable in Create Account but not direct attribute sync, custom managerToSync attribute/mapping approach and delivery evidence.
+8. [Viewing identities](https://documentation.sailpoint.com/saas/help/identities/control_panel.html): current profile/attribute information and successful/failed events, not complete historical manager-candidate execution traces.
+9. [Active Directory provisioning attributes](https://documentation.sailpoint.com/connectors/active_directory/help/integrating_active_directory/provisioning_reference.html): manager's default Get Manager LDAP DN generator supports the distinction between manager identity relationship and target-specific account representation; no connector implementation/payload is taught.
+
+All nine primary pages were fetched successfully. The manager-correlation article was read in full, including first-non-null priority behavior and retained-manager note. Profile/processing/aggregation, request reviewer/missing-reviewer, campaign prerequisites, sync Manager restrictions, identity evidence and directory manager provisioning sections were read for their specific claims.
+
+### Claim and scope checks
+
+- Employee account ownership and employee-to-manager relationships are different. Comparing the manager reference in account-owner criteria can select the wrong account owner; no such configuration change is performed.
+- Manager Name is a mapping label, not a requirement to match friendly names. The account input is the employee's manager reference; the candidate field is the manager's own identificationNumber, not the employee's number or manager's manager reference.
+- Both Manager Name mappings and source manager configuration are required. Matching can search identities established through other profiles; a manager reference does not create an identity.
+- Profiles are considered by configured priority (lower number is higher); first non-null source is selected, not first successful candidate match. Main case has no competing mapped source.
+- Null clearing is qualified by actual selected input, relevant evaluation and no competing non-null source. Changed unmatched non-null retains an existing manager under the documented behavior; the lesson does not infer a correct manager for an identity with none previously.
+- Custom manager-matching identity fields require searchable eligibility unrelated to Search queries. Applied values, current inputs, configuration saves, Preview and actual relationship results are separate evidence.
+- No duplicate-candidate winner, automatic cycle repair, fixed internal pipeline or guaranteed historical candidate UI trace is invented. Custom-rule behavior is a separate extension not present in the main case.
+- Standard role/access-profile Manager review follows the access recipient, not automatically the submitter. Missing-reviewer handling belongs to request review and does not synthesize a manager. The lesson does not claim a universal fallback for every approval engine or automatic reassignment of existing tasks.
+- The current standard missing-reviewer sequence was checked: missing reviewer's manager, next new escalation identity, fallback approver, requested object's owner, then eligible org admin, skipping already assigned approvers. Detailed approval-engine implementation remains in its own course topic.
+- Manager Campaign exclusion/snapshot claims are scoped to that campaign type. A current corrected relationship is not proof of retroactive inclusion or reassignment; other certification modes need their own configuration evidence.
+- Built-in Manager is not a direct sync input. A custom field alone does not establish correct manager-account selection, target representation, eligible sync or successful write. Main supplies no target operation.
+- No actual tenant/API/source/profile/priority/mapping/correlation/processing/approval/campaign/synchronization/provisioning or target operation occurred. No destructive correction is recommended.
+
+### Diagram and assessment review
+
+Two inline text diagrams exactly match assets/COR-008_manager_reference_and_identity_relationship.txt and assets/COR-008_manager_relationship_and_consumers.txt; maximum line widths 40 and 38 characters. The first separates account ownership, manager input/configuration, candidate's own field and supplied manager relationship. The second separates request review, Manager Campaign snapshot and external write, not a fixed or universally triggered sequence. Two two-column tables remain in the learner article.
+
+| Case and tested distinction | Expected reasoning, acceptable evidence and misconception |
+|---|---|
+| 1. Reference direction | Employee managerRef P-89008 matches manager's own identificationNumber P-89008, not P-78008 or the next reporting level. Accept equivalent object/value trace. Reference 1. |
+| 2. Dual setup | Correct profile mapping without source manager configuration is incomplete; require selected fields and actual evaluated relationship, not a populated label. References 1-3. |
+| 3. Missing candidate | Verify approved identity population/establishment and applied manager field; reference text cannot create the manager. References 1-2. |
+| 4. Null versus unmatched | With stated single-source/evaluation conditions, null clears while P-99999 retains existing I-89008; check actual input/result rather than assuming both mean no manager. Reference 1. |
+| 5. First non-null versus successful | Priority-10 P-99999 selects that source despite priority-20 valid P-89009; failed lookup is not promised lower-source fallback. Reference 1. |
+| 6. Recipient versus submitter | Configured Manager review uses Devi's manager for her access, not colleague's manager; inspect actual task and distinguish routing from delivery. Reference 5. |
+| 7. Current relationship versus campaign | Yesterday's standard Manager Campaign excluded managerless Devi and is a snapshot; today's correction does not prove retrospective inclusion. Reference 6. |
+| 8. Relationship versus target sync | Built-in Manager cannot be directly synced; require custom mapped representation/eligible configuration and target delivery evidence. References 7, 9. |
+
+Transfer assessment tests cause segmentation, source choice, actual manager presence/correctness and processing before Manager Campaign generation. Accept equivalent approved plans preserving 120-case groups and separate existing-request/campaign/target evidence. Reject arbitrary candidate selection, source fallback after any non-null failure, automatic creation of missing managers, campaign inclusion from a successful aggregation badge or direct built-in Manager sync. No beginner teach-back or transfer performance has been observed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

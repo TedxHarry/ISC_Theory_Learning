@@ -1,0 +1,14 @@
+Verified ISC manager relationship
+    -> check each dependent process
+
+Request review:
+  configured reviewer and actual task
+    -> not proof of access delivery
+
+Manager Campaign:
+  generation snapshot and assignments
+    -> not a live identity lookup
+
+External manager update:
+  separate mapping and supported write
+    -> verify actual target value

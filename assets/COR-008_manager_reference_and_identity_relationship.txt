@@ -1,0 +1,15 @@
+Existing account ownership:
+  rh-78008 -> Devi I-78008
+    -> this relationship stays separate
+
+Manager reference on employee account:
+  rh-78008 managerRef = P-89008
+    -> Manager Name mapping source
+    -> manager comparison configuration
+
+Candidate manager's own identity field:
+  I-89008 identificationNumber = P-89008
+    -> matching manager identity
+
+Supplied manager relationship:
+  Devi I-78008 -> manager I-89008

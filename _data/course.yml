@@ -416,3 +416,10 @@ lessons:
     source: "lessons/COR-007_Manual_Correction_and_What_the_Relationship_Change_Does_Not_Resolve.md"
     url: "/lessons/COR-007_Manual_Correction_and_What_the_Relationship_Change_Does_Not_Resolve.html"
     description: "Verify approved manual account associations while separating persistent links, source-data repair, import outcomes and dependent external changes."
+  - id: COR-008
+    module: correlation
+    placement: "Module 7.8"
+    title: "HR names a manager. How does ISC know which identity that means?"
+    source: "lessons/COR-008_Manager_Correlation_and_Dependencies_of_Manager_Based_Processes.md"
+    url: "/lessons/COR-008_Manager_Correlation_and_Dependencies_of_Manager_Based_Processes.html"
+    description: "Trace manager references, source selection and identity matching, then distinguish the resolved relationship from approval, campaign and external-manager outcomes."
