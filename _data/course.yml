@@ -409,3 +409,10 @@ lessons:
     source: "lessons/COR-006_Existing_Associations_and_Changes_to_Correlation_Data_or_Configuration.md"
     url: "/lessons/COR-006_Existing_Associations_and_Changes_to_Correlation_Data_or_Configuration.html"
     description: "Trace configuration and data changes through reevaluation, distinguish persistent links, and verify actual associations and dependent effects."
+  - id: COR-007
+    module: correlation
+    placement: "Module 7.7"
+    title: "The account is on the right identity now. What did the manual correction actually fix?"
+    source: "lessons/COR-007_Manual_Correction_and_What_the_Relationship_Change_Does_Not_Resolve.md"
+    url: "/lessons/COR-007_Manual_Correction_and_What_the_Relationship_Change_Does_Not_Resolve.html"
+    description: "Verify approved manual account associations while separating persistent links, source-data repair, import outcomes and dependent external changes."

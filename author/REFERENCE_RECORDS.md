@@ -2760,6 +2760,64 @@ Two inline text diagrams exactly match assets/COR-006_configuration_and_existing
 
 Transfer assessment tests population segmentation, reference preparation, representative non-production evidence, supported production scope, persistent exceptions and independent target verification. Accept equivalent approved operating plans; reject one successful badge, automatic release of 15 persistent links, reset/filter shortcuts or a requirement that all 400 links move. No beginner teach-back or transfer performance has been observed.
 
+## COR-007
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi is employee 77007. StaffPath Production is authoritative for Employees; sp-77007 is already associated with teaching I-77007, not an actual ISC object ID.
+- Applied eligible identificationNumber P-77007/name worker77007/email devi.rao@learn.example identify the intended person. Different I-77008 has P-77008/name worker77008/email another.devi@learn.example. Both display Devi Rao.
+- ProjectSpace Production is non-authoritative for employee establishment. ps-512 is the account key/Account ID; userLogin drao.ps is Account Name; collected personRef is null. The sole criterion is personRef Equals identificationNumber, with no default identity-name match. Prior evaluation and uncorrelated result are supplied.
+- Independent application and worker-registry evidence approve ps-512 for Devi. The approved manual relationship correction succeeds to existing I-77007 without changing the key, login, null reference or shared criterion. The integration feed's omitted-reference defect remains open.
+- Main attribute synchronization is not enabled and no access-change operation is supplied. The relationship outcome does not establish input repair, access approval, external permissions or sign-in.
+- Separate variations: later corrected P-77007 input, conflicting P-77008 input under persistent treatment, wrong manual ps-513-to-I-77008 with correct P-77007 input and approved explicit move, ISC-created manuallyCorrelated=true without file upload, 12-row import issues and conditional Support-to-Engineering department synchronization.
+- The 80-row transfer contains 40 verified uncorrelated, 10 known wrong, 15 unknown-owner, 5 automation and 10 duplicate/contradictory proposals. Rows are not asserted to be distinct accounts or all completed changes.
+
+### Primary references
+
+1. [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): configured pairings, explicit manual permanence/source-change persistence, manual-file workflow/status/history, ISC-created manuallyCorrelated=true, unoptimized non-release, supported correction contexts and separate non-configurable default naming comparison.
+2. [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html): Update Correlation/classification/intended human selection for uncorrelated or wrong links, machine licensing context, current account details, Remove Account versus Delete Account and authoritative-removal consequences.
+3. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): optimized skipping versus unoptimized recalculation, aggregation history/manual file imports and view freshness limits.
+4. [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): represented field definitions and Account ID/Account Name designations, separate from person references and criterion selection.
+5. [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): identity population/mapping, applied values versus mapping Preview, appropriate identity-side investigation.
+6. [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): mapped identity and configured requirement evaluation, separate provisioning-success boundary.
+7. [Viewing identities](https://documentation.sailpoint.com/saas/help/identities/control_panel.html): current identity profile/attributes/access and successful/failed events, not complete historical candidate traces or owner proof.
+8. [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): configured existing-correlated-account identity-to-account writes, moved/correlated-account trigger with changed identity values and activity versus delivery verification.
+
+All eight primary pages were fetched successfully during review. Correlation and account-management articles were read in full; relevant schema/mapping/Preview/processing/aggregation/history/events and synchronization-trigger sections were read for the claims above.
+
+### Claim and scope checks
+
+- Main manual association is approved by independent ownership evidence, not by a guessed display name, email equality or source-administrator responsibility.
+- Supported account-update and manual-file paths are described conceptually. No real interface actions, CSV template, identifier substitution recipe or API payload is supplied. A teaching label is explicitly not a real file identifier.
+- Human versus machine classification is not a shortcut for closing uncorrelated counts; use available features and supported account-type/responsibility design.
+- Manual association, collected field and shared correlation configuration remain separate. The supplied null value and omitted feed input do not claim universal connector omission-clearing behavior.
+- Persistence survives source-data changes and unoptimized aggregation. Later agreeing input is not automatic conversion to non-manual treatment; conflicting input does not authorize an automatic move. Supported explicit correction remains possible.
+- ISC-created manual treatment does not require a file import. File-only Latest Manual Correlation/history evidence must not be demanded for every account-level correction or treated as a complete origin record.
+- Wrong links can be absent from uncorrelated reports. Verify the exact resulting association in old/new identity contexts, retained cause evidence and observation times; do not invent per-candidate historical UI traces.
+- Correction may change represented account/access ownership without approving entitlements or fulfilling access requests. Configured sync can trigger external writes; relationship success is not delivery success or automatic rollback.
+- Root-cause repair and explicit-link review remain open when acceptance conditions are not met. Large recurring exceptions warrant shared data/configuration investigation rather than arbitrary mass manual assignment.
+- Remove Account removes represented data from ISC, not the external account; later full aggregation can reload it. Delete Account is a separate supported external operation with applicable request/approval conditions. Source reset is broader. These are safety distinctions, not recommended cleanup instructions.
+- No actual tenant/API/account update/file import/schema/correlation/processing/reset/deletion/synchronization/provisioning or target operation occurred.
+
+### Diagram and assessment review
+
+Two inline text diagrams exactly match assets/COR-007_manual_relationship_correction.txt and assets/COR-007_separate_follow_up_tracks.txt; maximum line widths 33 and 39 characters. The first separates human owner verification, approved correction and supplied link with unchanged null input. The second separates follow-up tracks, not a fixed backend order or automatic repair. Two two-column tables remain in the learner article.
+
+| Case and tested distinction | Expected reasoning, acceptable evidence and misconception |
+|---|---|
+| 1. Duplicate labels versus identity | Use approved person reference, actual identity/source/account context; first displayed name is not owner proof. References 1-2, 4-5. |
+| 2. Relationship versus input | ps-512-to-I-77007 is verified while personRef remains null; keep feed repair open. Current association is acceptable evidence only for its stated outcome. References 1-2, 4. |
+| 3. Changed data versus persistent link | P-77008 does not automatically move a manual account; investigate reference and approved ownership. Do not assert unoptimized release. References 1, 3. |
+| 4. Persistence versus correction impossibility | Approved explicit ps-513 move is supported; verify old/new association and consequences rather than treating permanence as unchangeability. References 1-2, 7-8. |
+| 5. Import summary versus row outcomes | Review issues and reconcile all 12 intended records individually. Accept unresolved status where evidence is missing; no arbitrary partial-count or atomicity claim. References 1-3. |
+| 6. Relationship change versus record removal | Remove is not just a link move and is not external deletion; choose the approved supported correction, not a broader substitution. Reference 2. |
+| 7. Association versus write success | Link can be correct while configured sync delivery failed; retain delivery investigation and actual target verification. References 6-8. |
+| 8. Missing owner versus guessed administrator | Keep ownership unresolved and establish use/classification; administration is not proof of personal ownership. References 1-2. |
+
+Transfer assessment tests separating approved personal assignments, wrong links, unverified owners, automation and duplicate/contradictory instructions. Accept equivalent approved plans preserving exact identifiers, persistence/consumer checks, supported import contract and individual reconciliation. Reject last-row-wins assumptions, 80-unique-account claims, mass administrator assignment or completion from a falling count. No beginner teach-back or transfer performance has been observed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

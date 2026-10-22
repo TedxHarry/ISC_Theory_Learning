@@ -1,0 +1,15 @@
+Before:
+  ProjectSpace ps-512
+  personRef = null
+    -> no identity association
+
+Human verifies approved owner:
+  Devi, reference P-77007
+    -> approved manual correction
+
+Supplied result:
+  same ps-512 -> existing I-77007
+  same login drao.ps
+  personRef still null
+    -> relationship fixed
+    -> feed defect remains open

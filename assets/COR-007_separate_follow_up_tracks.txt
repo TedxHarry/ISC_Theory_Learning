@@ -1,0 +1,17 @@
+Verified ps-512 -> I-77007
+    -> association outcome established
+
+Separate follow-up tracks:
+
+Input repair:
+  approve reference in the feed
+  collect and verify account value
+    -> check matching design
+
+Persistent-link review:
+  confirm why explicit link remains
+  approve any later relationship change
+
+Other effects:
+  check operations using the link
+  verify any external account changes

@@ -215,14 +215,14 @@ Identity mappings can use account attributes from different sources; the authori
 
 - 7.1 [Why importing an account leaves a relationship to establish.](lessons/COR-001_Why_Importing_an_Account_Leaves_a_Relationship_to_Establish.md) **Authored:** COR-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
-Lessons 7.7-7.9 remain planned.
+Lessons 7.8-7.9 remain planned.
 
 - 7.2 [The account and identity attributes used in correlation.](lessons/COR-002_Account_and_Identity_Attributes_Used_in_Correlation.md) **Authored:** COR-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 7.3 [Choosing identifiers based on uniqueness, availability, consistency, and stability.](lessons/COR-003_Choosing_Identifiers_for_Reliable_Account_Correlation.md) **Authored:** COR-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 7.4 [Following configured matching conditions through concrete records.](lessons/COR-004_Following_Configured_Correlation_Conditions_Through_Records.md) **Authored:** COR-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 7.5 [Missing values, unmatched accounts, and ambiguous data.](lessons/COR-005_Missing_Values_Unmatched_Accounts_and_Ambiguous_Data.md) **Authored:** COR-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 7.6 [Existing associations and changes to source data or correlation configuration.](lessons/COR-006_Existing_Associations_and_Changes_to_Correlation_Data_or_Configuration.md) **Authored:** COR-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 7.7 Manual correction: what relationship changes and what still needs investigation.
+- 7.7 [Manual correction: what relationship changes and what still needs investigation.](lessons/COR-007_Manual_Correction_and_What_the_Relationship_Change_Does_Not_Resolve.md) **Authored:** COR-007 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 7.8 Manager correlation and the dependencies of manager-based processes.
 - 7.9 Investigating an account linked incorrectly, an unmatched account, or a missing manager.
 
