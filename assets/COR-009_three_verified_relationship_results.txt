@@ -1,0 +1,17 @@
+Wrong account relationship:
+  wd-601 -> I-79010 before correction
+  wd-601 -> I-79009 after correction
+    -> old and new contexts checked
+
+Missing account input:
+  wd-602 personRef null -> P-79009
+  collected and evaluated
+    -> wd-602 linked to I-79009
+
+Missing manager mapping:
+  Manager Name selects managerRef
+  relevant processing completed
+    -> I-79009 manager is I-89909
+
+Same account keys and logins
+No external write result supplied

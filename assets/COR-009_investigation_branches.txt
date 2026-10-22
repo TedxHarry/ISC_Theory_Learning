@@ -1,0 +1,21 @@
+Human investigation:
+
+Exact source account exists in ISC?
+  no -> investigate collection
+  yes -> inspect actual association
+
+Intended identity exists and is usable?
+  no -> investigate identity intake
+  yes -> inspect selected matching data
+
+Existing link is wrong?
+  -> check link origin and persistence
+
+Account is uncorrelated?
+  -> check inputs, criteria, evaluation
+
+Manager relationship is missing?
+  -> check manager mapping, comparison
+
+After approved correction:
+  -> verify each actual relationship

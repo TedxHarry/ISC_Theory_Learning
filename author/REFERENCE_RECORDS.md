@@ -2878,6 +2878,67 @@ Two inline text diagrams exactly match assets/COR-008_manager_reference_and_iden
 
 Transfer assessment tests cause segmentation, source choice, actual manager presence/correctness and processing before Manager Campaign generation. Accept equivalent approved plans preserving 120-case groups and separate existing-request/campaign/target evidence. Reject arbitrary candidate selection, source fallback after any non-null failure, automatic creation of missing managers, campaign inclusion from a successful aggregation badge or direct built-in Manager sync. No beginner teach-back or transfer performance has been observed.
 
+## COR-009
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi is employee 79009. TeamLedger Production is authoritative for Employees; tl-79009 already belongs to teaching I-79009, not an actual ISC object ID. Applied eligible identificationNumber P-79009/name worker79009 identify the intended person.
+- Different I-79010 has P-79010/name worker79010. Approved manager I-89909 already exists with applied eligible identificationNumber P-89909.
+- WorkspaceDesk Production does not establish employee identities. wd-601/login drao.wd has correct collected personRef P-79009 but retained evidence establishes wrong manual association to I-79010.
+- wd-602/login drao.review has collected personRef null, prior evaluation and recorded uncorrelated result, with no manual association. Application/worker-registry records approve both accounts for Devi. Feed omission is the supplied source-data defect.
+- Complete configured list is personRef Equals identificationNumber. Account keys are Account IDs; logins are Account Names. No configured alternative/default identity-name match applies and intended P-79009 is unique.
+- TeamLedger tl-79009.managerRef P-89909 and source managerRef-to-manager-identificationNumber configuration exist, but Employees Manager Name mapping is missing. No competing manager source/custom rule applies; supplied current manager is unresolved.
+- Distinct approved supported work supplies wd-601 relationship correction, wd-602 feed repair/collection/evaluation, and Manager Name mapping to managerRef plus relevant identity processing. Actual supplied results are both accounts on I-79009 and that identity's manager I-89909, with fixed account keys/logins.
+- No external write, request or campaign result is supplied. Alternate wrong-field, optimized-skip, P-99999 retained-manager and failed-sync cases are separate. The 90-record queue splits 20 absent/20 unusable input/15 wrong persistent/10 missing identities/10 manager/10 ambiguous or contradictory/5 non-person cases.
+
+### Primary references
+
+1. [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): configured pairings/order/Equals, default naming path, eligibility/manual preparation, persistent manual and ISC-created treatment, file history and supported correction; unoptimized aggregation does not remove manual correlation.
+2. [Manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html): dual mapping/source setup, employee reference against manager's own identity attribute, first-non-null profile-priority source selection, searchable preparation, processing, null clearing versus changed non-null no-match retention and separate rule extension.
+3. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): record collection, optimized skip versus unoptimized recalculation, single-account data-only limits, run history/manual imports and different view freshness.
+4. [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): authoritative population/mappings, required data and identity exceptions, Manager Name mapping and Preview versus applied identity values.
+5. [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): relevant manager/mapping evaluation and manual application, configured consumer effects without provisioning-success validation.
+6. [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): represented fields and Account ID/Account Name designations, not interchangeable with person-reference values.
+7. [Managing accounts](https://documentation.sailpoint.com/saas/help/accounts/index.html): account details and supported Update Correlation for wrong/unmatched associations, classification context and Remove Account versus external-source effects.
+8. [Viewing identities](https://documentation.sailpoint.com/saas/help/identities/control_panel.html): current profile/attribute information and available successful/failed events, not guaranteed full historical candidate execution records.
+9. [Attribute synchronization](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): configured identity-to-existing-correlated-account writes and moved-account triggers, built-in Manager restriction/custom mapped field approach and independent delivery verification.
+10. [Manager or source owner campaigns](https://documentation.sailpoint.com/saas/help/certs/starting_campaign.html): standard Manager Campaign missing-manager exclusion and generation snapshot; later current manager correction is not retroactive campaign inclusion evidence.
+
+All ten primary pages were fetched successfully. Account and manager correlation were read in full. Relevant aggregation/history/single-account, mapping/Preview/exceptions, identity processing, schema, account correction/removal, identity evidence, sync and campaign prerequisite sections were read for the claims above.
+
+### Claim and scope checks
+
+- Three main faults are distinct: existing wrong persistent link, collected unmatched record with missing input, and incomplete manager setup. Absence from an identity page does not imply the account was never collected.
+- Source/environment/stable account key, approved person identity and actual current association are checked before correction. Missing legitimate identities require intake/mapping investigation, not arbitrary application authority changes.
+- Source values, applied identity fields, complete configured/default behavior and eligibility are separate evidence. Omitted feed input plus supplied current null does not assert universal connector clearing semantics.
+- Present equal values do not release wd-601's explicit link or reconstruct how it was created. Supported explicit correction is distinct from unoptimized reevaluation. ISC-created manuallyCorrelated=true does not require a manual CSV upload.
+- Configured criteria are not silently replaced by whatever value looks correct elsewhere. No arbitrary duplicate winner, automatic identity creation or global reassignment guarantee is invented.
+- Optimized unchanged records can skip relevant correlation. Saving settings, a source-level success badge or single-account reload does not demonstrate all mapping/relationship/provisioning outcomes.
+- Missing Manager Name mapping is a supplied main defect, not a claim that all unresolved manager cases share it. Manager-source selection, null/non-null behavior and custom-rule variants are separate conditions requiring their own evidence.
+- Changed unmatched non-null input can retain a previous manager; selected null clears under actual source-selection conditions. No manager-source fallback after every failed lookup is promised.
+- Corrected account ownership changes representation, not business approval. Dependent writes/tasks and Manager Campaign snapshots require separate evidence; no target rollback or historical task reassignment is guaranteed.
+- Main successful results preserve object keys/logins and identity. No removal/reset/deletion is used as routine cleanup, and no simulated source-level badge is invented as per-account execution proof.
+- No actual tenant/API/source/profile/mapping/correlation/processing/import/reset/deletion/synchronization/provisioning, approval/campaign or target operation occurred.
+
+### Diagram and assessment review
+
+Two inline text diagrams exactly match assets/COR-009_investigation_branches.txt and assets/COR-009_three_verified_relationship_results.txt; maximum line widths 39 and 37 characters. The first is a human investigation map, not backend execution order. The second separates three supplied before/after outcomes and explicitly supplies no external write result. Two two-column tables remain in the article.
+
+| Case and tested distinction | Expected reasoning, acceptable evidence and misconception |
+|---|---|
+| 1. Missing page entry versus missing record | Existing wd-601 on I-79010 proves collection, not correct association; investigate origin and approved owner rather than treating it as never imported. References 1, 3, 7-8. |
+| 2. Correct value versus selected field | Account key is not a person reference; repair proven criterion selection rather than rewriting correct identity data. References 1, 4, 6. |
+| 3. Saved instruction versus evaluation | Optimized skip does not demonstrate reevaluation; require supported scope and actual relationship while preserving manual-treatment distinctions. References 1, 3. |
+| 4. Read versus manual-link release | Unoptimized aggregation does not move wd-601 automatically; require approved supported relationship correction and old/new context/effect evidence. References 1, 7, 9. |
+| 5. Input/candidate versus complete manager setup | Correct P-89909 and existing I-89909 do not replace missing Manager Name mapping; both configurations and actual evaluation/result are needed. References 2, 4-5. |
+| 6. Displayed manager versus fresh valid match | Changed unmatched non-null P-99999 can retain old manager under stated conditions; inspect input and approved reporting line. Reference 2. |
+| 7. Lower count versus legitimate ownership | Mass source-administrator assignment is not owner proof; verify individual business ownership and supported classification. References 1, 7. |
+| 8. Relationship versus delivery result | Link can be verified while configured sync failed; preserve separate delivery investigation and target acceptance, not repeated correlation as automatic repair. References 5, 9. |
+
+Transfer assessment tests cause segmentation across 90 investigation records and distinct collection/intake/input/persistent-link/manager/ambiguity/classification evidence. Accept equivalent approved plans preserving exact identifiers, supported correction scope and individual acceptance. Reject one-rule/one-run universal closure, destructive cleanup, guessed owners and completion based only on job status or count. No beginner teach-back or transfer performance has been observed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

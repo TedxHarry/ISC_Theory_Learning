@@ -423,3 +423,10 @@ lessons:
     source: "lessons/COR-008_Manager_Correlation_and_Dependencies_of_Manager_Based_Processes.md"
     url: "/lessons/COR-008_Manager_Correlation_and_Dependencies_of_Manager_Based_Processes.html"
     description: "Trace manager references, source selection and identity matching, then distinguish the resolved relationship from approval, campaign and external-manager outcomes."
+  - id: COR-009
+    module: correlation
+    placement: "Module 7.9"
+    title: "The account or manager looks wrong. Where would you start the investigation?"
+    source: "lessons/COR-009_Investigating_Incorrect_Account_Links_Unmatched_Accounts_and_Missing_Managers.md"
+    url: "/lessons/COR-009_Investigating_Incorrect_Account_Links_Unmatched_Accounts_and_Missing_Managers.html"
+    description: "Investigate wrong account links, unmatched records and manager gaps through exact objects, competing causes, supported correction and separate outcome evidence."
