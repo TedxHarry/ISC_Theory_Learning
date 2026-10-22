@@ -3074,6 +3074,52 @@ Cloud pages can display Human Fabric/Identity Security branding; this course ret
 - Author review covers independent context/first-use terms, supported mechanism, causal traces, changed conditions, consistent identifiers/characters, worked reasoning, source verification and mentor narration with no learner citations or methodology promises. Beginner validation and formal publication approval remain pending.
 
 
+## TRN-004
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi 84004 has teaching identity I-84004 (not actual ISC ID), Employees profile and one correctly associated StaffBase Production account sb-84004. Already collected preferredName evaluates successfully to null, givenName to Devi. Other required identity attributes valid; custom displayGivenName is not an access/status/ownership driver.
+- Owner's input contract supplies null for unrecorded preference, otherwise usable name; approved priority preferredName then givenName, not arbitrary failure suppression or invented name. Main firstValid explicitly sets ignoreErrors false; two explicit accountAttribute reads set accountReturnFirstLink true to return first selected account's field even when null. No alternative account competes.
+- Main null then Devi returns Devi. Supplied reviewed/authorized Preview/processing establishes current displayGivenName Devi, collected HR unchanged and no external write/access/status/relationship result.
+- Separate fixed firstValid JSON values empty string then Devi selects empty. Changed preferred Dee selects Dee; spaces and UNKNOWN remain non-null; trimming three ordinary spaces returns empty rather than null.
+- Supplied first-option error with explicit false stops continuation; explicit true allows next successful Devi. No broad claim that errors outside option evaluation are ignored.
+- Both options successfully null provide no non-null name; no exact runtime error class/text, old-value retention, clearing or write outcome is asserted. Later collected preferred Dee plus Preview supports calculation only, not new application/consumer result.
+- Transfer: unapproved null-to-Finance department default can fabricate access-relevant facts; UNKNOWN is selected rather than rejected by bare firstValid. Approved alternative requires matching authority/meaning/person/account/freshness/priority.
+- No actual tenant/API/source/profile/mapping/transform/aggregation/processing/provisioning or target operation performed. Local JSON and non-null/space reasoning checks are illustrative, not ISC engine validation.
+
+### Official sources, applicability and claim mapping
+
+1. [First Valid](https://developer.sailpoint.com/docs/extensibility/transforms/operations/first-valid/) defines first non-null result in ordered values, strings/nested results and ignoreErrors continuation. Its empty-string fallback example establishes empty is selectable. Mapped to main priority, literal-first issue, empty/placeholder distinctions and explicit false/true error cases. The page currently lists default false, but this lesson does not rely on an omitted default.
+2. [Account Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) supports associated-account sourceName/attributeName retrieval and accountReturnFirstLink true returning first account value even if null. Mapped to main explicit reads and two levels of selection. Source absence/failed reads are not universally equated with successful null.
+3. [Trim](https://developer.sailpoint.com/docs/extensibility/transforms/operations/trim/) supports surrounding-whitespace removal. Mapped to ordinary-space input becoming empty text, not null; no universal Unicode/null handling asserted.
+4. [Transforms](https://developer.sailpoint.com/docs/extensibility/transforms/) supports configurable/nested operations, root type/configuration and explicit input provenance. Mapped to definition/use distinction; no private service pipeline or branch-log guarantee.
+5. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) supports custom identity attributes, mapping source/calculations, selected Preview and application. Mapped to displayGivenName and selected versus applied evidence; name of custom field does not create special behavior.
+6. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) supports relevant reevaluation, mapped identity updates and separate delivery verification. Mapped to shared change, supplied continuation and later Dee Preview-only case.
+7. [RFC 8259: JSON](https://www.rfc-editor.org/rfc/rfc8259.txt), sections 3-5 and 7, distinguishes null, boolean values, strings and ordered arrays. Mapped to explicit false/true flags, empty strings and values order; not a general JSON course.
+8. [Historical firstValid ignoreErrors default feedback](https://developer.sailpoint.com/discuss/t/transform-firstvalid-ignoreerrors-default-value/22665), December 14, 2023, contains a firsthand reply reporting default true and accepted string/boolean forms, unlike the current operation reference listing false. Author-only discrepancy record, not authority for current runtime default. All learner definitions/cases set the boolean explicitly; no tenant verification or resolution of that historical discrepancy is claimed.
+
+Core technical claims use current official cloud references. The dated firsthand default report only explains why no omitted-default behavior is assumed. Pages can display Human Fabric/Identity Security naming; course retains ISC. No IdentityIQ behavior imported.
+
+### Scope limits, diagrams and assessment mapping
+
+- Main firstValid is intentionally null-based under an explicit producer contract, not a comprehensive blank/placeholder validator. Additional suitability logic is described as a required implemented decision, not silently attributed to firstValid. No unsupported blank-to-null recipe or untested Velocity code is supplied.
+- All-null outcome is bounded to no selectable non-null candidate and unresolved business requirement; exact engine/error/state effects require the actual evaluation context. This is not a tenant-tested reproduction.
+- Sources: ../assets/TRN-004_null_selection_and_priority.txt and ../assets/TRN-004_fallback_cause_and_evidence_checks.txt; exact inline synchronization, maximum widths 40 and 48 characters. First traces supplied null/value selection; second is human investigation and explicitly labels rejected-text branch as requiring a separate suitability rule.
+- Two JSON definitions parse: main firstValid/ignoreErrors false/two explicit accountAttribute reads with true return-first-link flags; fixed example empty string then Devi. Two two-column tables retain representation and error-policy differences. Source checks are distinct from live rendering/accessibility/overflow inspection.
+- Case 1: tests null versus error. Successful null/Devi/explicit false supplied; fallback still occurs. Sources 1-2.
+- Case 2: tests order. Dee then Devi approved strings supplied; Dee wins, reversed order changes preference. Source 1.
+- Case 3: tests empty versus error. Empty/Devi/explicit true supplied; empty selected, true does not validate text. Source 1 and JSON types.
+- Case 4: tests preparation representation. Three ordinary spaces trim to empty before firstValid; still non-null. Separate approved rejection/selection required. Sources 1, 3.
+- Case 5: tests presence versus meaning. UNKNOWN rejected by contract but not bare firstValid; producer/suitability correction needed. Source 1 and explicit business agreement.
+- Case 6: tests explicit error continuation. Failed first option and successful second supplied; false stops, true continues; defect remains. Source 1. No invented specific error class/log.
+- Case 7: tests exhausted choices and evidence limits. Both successful null/no constant supplied; no acceptable result, inspect actual evaluation and define correction/policy. No automatic clearing/retention/delivery assertion. Sources 1, 5-6.
+- Case 8: tests reevaluation and application evidence. Later collected Dee/Preview supplied; new calculation established only. Sources 1, 5-6.
+- Transfer: tests authority and security-sensitive defaults. Null and UNKNOWN department cases/no Finance authorization supplied; both unsafe designs for different reasons. Accept approved equivalent authoritative alternative only with selection/freshness/priority checks, not an invented default. Misconception: non-null output closes data-quality work.
+- Author review covers independent context, first-use terms, supported mechanism and source limits, supplied values, causal variants/worked reasoning, narration and no learner citations/methodology promises. Real beginner read-through and formal publication approval remain pending.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

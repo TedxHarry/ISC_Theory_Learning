@@ -1,0 +1,19 @@
+Fallback result is visible
+             |
+Which option supplied that result?
+             |
+Why was the preferred option not used?
+       /           |            \
+     null      rejected text     error
+      |             |             |
+Approved       Suitability     Explicit
+absence?       rule applied?   error policy?
+      |             |             |
+Check data      Check rule      Investigate
+contract        and producer    failed operation
+       \            |            /
+        Is the alternative approved?
+                    |
+        Verify applied value and uses
+
+Non-null output does not close a defect.

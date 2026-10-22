@@ -453,3 +453,10 @@ lessons:
     source: "lessons/TRN-003_Normalizing_and_Combining_Strings.md"
     url: "/lessons/TRN-003_Normalizing_and_Combining_Strings.html"
     description: "Normalize and combine approved text through exact characters, component values and separators without hiding missing data or inventing uniqueness."
+  - id: TRN-004
+    module: transforms
+    placement: "Module 8.4"
+    title: "A fallback returned a value. Is it the right value?"
+    source: "lessons/TRN-004_Handling_Missing_Values_with_Fallbacks.md"
+    url: "/lessons/TRN-004_Handling_Missing_Values_with_Fallbacks.html"
+    description: "Trace null-based fallback priority and explicit error handling without mistaking empty or misleading text for approved business data."

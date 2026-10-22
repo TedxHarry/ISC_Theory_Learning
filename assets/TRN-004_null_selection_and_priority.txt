@@ -1,0 +1,15 @@
+Evaluating for identity I-84004
+StaffBase Production / sb-84004
+                |
+Option 1: preferredName returns null
+                |
+         No value to select
+                |
+Option 2: givenName returns "Devi"
+                |
+           Non-null result
+                |
+         Return "Devi"
+
+Order expresses approved preference.
+Returned text still needs valid meaning.
