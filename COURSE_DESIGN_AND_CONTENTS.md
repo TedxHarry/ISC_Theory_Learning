@@ -235,7 +235,7 @@ Existing associations, default behavior, and re-evaluation must follow documente
 ### Module 8. How do transforms calculate values?
 
 - 8.1 [Choosing between direct mapping and calculated values.](lessons/TRN-001_Choosing_Between_Direct_Mapping_and_Calculated_Values.md) **Authored:** TRN-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 8.2 Reading a transform's inputs, operation, configuration, and output.
+- 8.2 [Reading a transform's inputs, operation, configuration, and output.](lessons/TRN-002_Reading_a_Transforms_Inputs_Operation_Configuration_and_Output.md) **Authored:** TRN-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.3 Normalizing and combining strings.
 - 8.4 Handling missing values with fallbacks.
 - 8.5 Lookups and conditional decisions.

@@ -2982,6 +2982,51 @@ All sources are official SailPoint cloud documentation, not IdentityIQ. Pages ma
 - Author review includes independent reading, first-use context, causal/changed-input reasoning, value/identifier consistency, technical source checks and narration pass. Beginner read-through and unfamiliar-case transfer remain pending; no competence guarantee follows from author review or deployment.
 
 
+## TRN-002
+
+Revision 1.0. Documentation checked October 22, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi 82002 has teaching identity I-82002 (not actual ISC ID), governed by Employees; StaffRoster Production authoritative worker account sr-82002 is already collected and correctly associated. One account supplies departmentLabel as a single string with one leading and one trailing space around Finance.
+- Approved identity department representation is finance without surrounding spaces. Other required fields are valid. Main definition Department text for Employees has root lower, explicit input trim, its explicit input accountAttribute with sourceName StaffRoster Production/attributeName departmentLabel. Input retrieval returns raw spaces, trim returns Finance, lower returns finance.
+- Separate Lowercase mapped department definition has root lower and empty attributes: implicit mapped StaffRoster input returns finance with both spaces. Changed mapping selector to separate associated DirectoryBridge Production db-82002/Legal returns legal for the implicit example but finance for unchanged explicit main definition.
+- Other independent facts: Operations with surrounding spaces returns operations; multiple non-null accounts require selection review; source display-name change to StaffRoster Live leaves stale literal reference unless corrected; moving sourceName to root can preserve JSON parsing without valid documented accountAttribute configuration.
+- Misleading-name and Department Code FIN transfer cases compare proposed definitions, not actual tenant-object rename/update operations. Neither name nor mapping destination translates Finance into FIN.
+- Supplied approved review/Preview/processing continuation establishes current I-82002.department finance, collected HR input unchanged. No target write, access assignment or application-use result supplied.
+- No actual tenant/API/source/profile/mapping/transform/collection/aggregation/processing/provisioning or target operation performed. Local JSON and string checks are illustrative, not ISC engine validation.
+
+### Official sources and claim mapping
+
+1. [Transforms](https://developer.sailpoint.com/docs/extensibility/transforms/) supports root name/type/attributes, unnamed nested objects, input/output composition, explicit-input override and separate identity-mapping versus account-create contexts. Mapped to definition reading, value dependencies, diagrams and input comparison; no private service order or per-operation log is invented.
+2. [Lower](https://developer.sailpoint.com/docs/extensibility/transforms/operations/lower/) supports lowercase conversion with optional explicit input and implicit mapped source/attribute. Mapped to main final result and implicit retained-space comparison; no universal null/error outcome asserted.
+3. [Trim](https://developer.sailpoint.com/docs/extensibility/transforms/operations/trim/) supports removal of leading/trailing whitespace and explicit/implicit input. Mapped to intermediate Finance and raw versus normalized string distinction; no arbitrary interior-space removal is claimed.
+4. [Account Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/) supports source accounts associated with evaluated identity, sourceName display-name reference/change dependency, attributeName field retrieval and optional sorting/filtering/first-non-null behavior. Mapped to exact input provenance, single-account assumptions, multiple-account qualification and stale-reference case.
+5. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) supports source/field/transform mappings, destination identity attributes, selected Preview, saving and applying to profile identities. Mapped to actual use and Preview/application evidence.
+6. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) supports mapped-attribute updates on relevant events/manual processing and separate provisioning success validation. Mapped to current identity versus calculation/consumer boundary; no unconditional evaluation on every account read or guaranteed delivery.
+7. [RFC 8259: JSON](https://www.rfc-editor.org/rfc/rfc8259.txt), sections 1, 2, 4 and 7, supports named-property objects, nested values, punctuation, string whitespace and unordered object-member semantics. Mapped to minimal JSON explanation and syntax-versus-meaning distinction, not a general JSON course.
+8. [Your first transform](https://developer.sailpoint.com/docs/extensibility/transforms/guides/your-first-transform/) supports standalone definition shape versus API response metadata, selecting an existing transform for a mapping and update restrictions. Used to qualify hypothetical definition comparisons; no API procedure included.
+9. [Update a transform](https://developer.sailpoint.com/docs/api/update-transform-v-1/) explicitly limits mutable fields to attributes and rejects name/type changes. Author-only guardrail: case 1 and transfer compare proposed definitions, not live rename/type changes. No endpoint/version procedure is taught.
+
+Cloud sources may display Human Fabric/Identity Security naming; the course retains ISC. No IdentityIQ behavior is imported. Default accountAttribute sorting is not generalized to every source-field mapping. Missing or unusable input breaks the supplied successful trace; no fabricated fixed output/error/UI message is supplied. Existing-object mutability and API operations remain distinct from reasoning about alternative definitions.
+
+### Diagrams, JSON and assessment mapping
+
+- Sources: ../assets/TRN-002_nested_input_value_trace.txt and ../assets/TRN-002_implicit_and_explicit_input_comparison.txt. Inline blocks match exactly, widths 38 and 41 characters. First arrows trace returned values and final mapping result, not HR writes; second compares dependencies after the mapping selector changes. Neither guarantees application or downstream execution.
+- Both JSON blocks parse; main has root name/type/attributes and nested lower -> trim -> accountAttribute; only root named. Separate implicit definition contains empty attributes/no input. Exact raw spaces and quote distinctions are retained; no tenant upload performed.
+- Two two-column tables distinguish properties/objects and evidence/questions. Code/diagram/table source checks are separate from live rendering and horizontal-overflow review.
+- Case 1: tests name versus type. A separate proposed Uppercase Department definition otherwise unchanged yields finance. Misconception: human label changes operation; not a live rename. Sources 1-3, 8-9.
+- Case 2: tests instruction object versus evaluated string and dependency order. Explicit nesting supplied; retrieval raw spaces, trim Finance, lower finance. Misconception: lower receives/stores the nested account object. Sources 1-4.
+- Case 3: tests same configuration with changed data. Supplied Operations input yields Operations then operations. Misconception: changed result necessarily means changed transform. Sources 2-4.
+- Case 4: tests explicit override. Changed DirectoryBridge selector, unchanged StaffRoster retrieval and values supplied; finance remains. Misconception: visible selector proves actual input. Sources 1, 2, 4.
+- Case 5: tests empty settings versus empty input and operation scope. Implicit input with spaces supplied; lower retains spaces. Sources 1-3.
+- Case 6: tests parseability versus supported property position. JSON accepted but no source reference in accountAttribute settings; no successful retrieval or exact error proven. Sources 4, 7.
+- Case 7: tests display-name dependency. Rename plus unchanged literal supplied; correction/reverification required. Do not invent successful resolution or exact failure. Source 4.
+- Case 8: tests calculation versus applied state. Preview finance/current Finance/no processing evidence supplied; check mapping/definition, processing and current value before changing working logic. Sources 5-6.
+- Transfer: tests name/destination versus actual label-to-code requirement. Main input/operations unchanged, new Department Code FIN requirement supplied; output finance fails. Approved code source or approved translation with unknown handling are valid design paths. No specific lookup implementation assumed. Sources 1-7 and example contract.
+- Review includes independent context, first-use terms, causal trace, changed conditions, supported mechanism/source checks, consistent values, worked reasoning, no learner citations or methodology promises, and personal mentor narration. Beginner read-through and unfamiliar-case validation remain pending.
+
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

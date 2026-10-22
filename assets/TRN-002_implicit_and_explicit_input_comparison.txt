@@ -1,0 +1,19 @@
+Mapping selector: DirectoryBridge
+departmentLabel = "Legal"
+              |
+      Which input is defined?
+         /               \
+     implicit          explicit
+        |                 |
+mapped "Legal"     main nested definition
+        |                 |
+      lower         StaffRoster read
+        |            " Finance "
+     "legal"              |
+                         trim
+                      "Finance"
+                          |
+                         lower
+                      "finance"
+
+Explicit input replaces mapped input.

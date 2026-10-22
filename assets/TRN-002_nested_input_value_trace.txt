@@ -1,0 +1,17 @@
+Evaluating for identity I-82002
+              |
+StaffRoster Production / sr-82002
+              |
+Read departmentLabel
+         " Finance "
+              |
+trim receives " Finance "
+trim returns "Finance"
+              |
+lower receives "Finance"
+lower returns "finance"
+              |
+Result for the department mapping
+
+HR input is not rewritten.
+Returned result is not delivery proof.

@@ -439,3 +439,10 @@ lessons:
     source: "lessons/TRN-001_Choosing_Between_Direct_Mapping_and_Calculated_Values.md"
     url: "/lessons/TRN-001_Choosing_Between_Direct_Mapping_and_Calculated_Values.html"
     description: "Choose direct or calculated values from approved meaning and actual inputs, then separate calculation, application and downstream results."
+  - id: TRN-002
+    module: transforms
+    placement: "Module 8.2"
+    title: "What is this transform actually going to return?"
+    source: "lessons/TRN-002_Reading_a_Transforms_Inputs_Operation_Configuration_and_Output.md"
+    url: "/lessons/TRN-002_Reading_a_Transforms_Inputs_Operation_Configuration_and_Output.html"
+    description: "Read transform instructions, trace nested and mapped inputs to exact results, and distinguish syntax, configuration, application and consumer evidence."
