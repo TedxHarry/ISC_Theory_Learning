@@ -1,0 +1,16 @@
+PeopleCore Production / pc-87007
+departmentCode = " fin "
+                |
+         trim returns "fin"
+                |
+         upper returns "FIN"
+                |
+       lookup returns "Finance"
+                |
+"Department: " + returned "Finance"
+                |
+        "Department: Finance"
+                |
+Mapping -> departmentReviewLabel
+
+Each arrow carries a returned value.

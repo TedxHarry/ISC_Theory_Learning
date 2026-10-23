@@ -1,0 +1,10 @@
+Review label            Proposed code mapping
+     |                            |
+     +----- references name ------+
+                    |
+       Workforce department code
+                    |
+      PeopleCore read -> trim -> upper
+
+Shared definition, not a saved code.
+Each use needs its own evaluation context.
