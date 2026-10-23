@@ -1,0 +1,23 @@
+Preserve the observed evidence
+              |
+              v
+Identify actual context and input
+              |
+              v
+Explain the failing or wrong step
+              |
+              v
+Approve a cause-based correction
+              |
+              v
+Test intended and exception cases
+              |
+              v
+Check relevant application
+and current identity value
+              |
+              v
+Verify each required consumer
+
+Do not skip from a good Preview
+to a confirmed external outcome.

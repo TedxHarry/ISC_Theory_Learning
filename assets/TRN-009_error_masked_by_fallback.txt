@@ -1,0 +1,20 @@
+I-89009 / account wl-89009
+departmentCode = " ENG "
+            |
+            v
+lookup keys: ENG / FIN
+no match; no table default
+            |
+            v
+candidate reports an error
+            |
+firstValid / ignoreErrors: true
+            |
+            v
+next candidate: "Finance"
+            |
+            v
+returned department: Finance
+
+Returned text is not proof
+of a correct department.

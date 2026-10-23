@@ -488,3 +488,10 @@ lessons:
     source: "lessons/TRN-008_Calculation_Context_Dependencies_and_Reevaluation.md"
     url: "/lessons/TRN-008_Calculation_Context_Dependencies_and_Reevaluation.html"
     description: "Identify calculation context and changing dependencies, then distinguish reevaluation, applied identity values and separately configured account outcomes."
+  - id: TRN-009
+    module: transforms
+    placement: "Module 8.9"
+    title: "The calculation returned a value. What actually went wrong?"
+    source: "lessons/TRN-009_Investigating_Failed_Calculations_and_Misleading_Fallback_Values.md"
+    url: "/lessons/TRN-009_Investigating_Failed_Calculations_and_Misleading_Fallback_Values.html"
+    description: "Investigate failed or misleading calculations through exact inputs, saved definitions and error paths, then verify cause-based corrections and separate applied outcomes."
