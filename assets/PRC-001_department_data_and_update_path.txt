@@ -1,0 +1,22 @@
+WorkerHub / wh-91001
+approved department: Engineering
+                |
+        account aggregation
+                v
+ISC's WorkerHub account data
+department: Engineering
+                |
+Employees identity mapping
+during relevant identity processing
+                v
+Identity I-91001
+department: Engineering
+                |
+configured ProjectDirectory
+department attribute sync
+                |
+       supported provisioning
+                v
+ProjectDirectory / pd-91001
+department: Engineering
+IF the update succeeds

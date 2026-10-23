@@ -1,0 +1,20 @@
+Identity department: Engineering
+                |
+role condition matches
+Engineering Starter requires access
+                |
+Engineering Base access profile
+contains ENG-BASE entitlement
+                |
+provisioning: add group membership
+to ProjectDirectory pd-91001
+                |
+       +--------+--------+
+       |                 |
+   succeeds           fails
+       |                 |
+verify ENG-BASE    inspect the error
+on the account    and actual state
+
+Department sync is a separate change.
+Neither result proves the other.

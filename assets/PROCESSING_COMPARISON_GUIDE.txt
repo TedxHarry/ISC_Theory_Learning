@@ -1,0 +1,38 @@
+ISC processing comparison guide
+Revision: 1.0
+Documentation verification date: October 23, 2026
+
+Account aggregation
+Reads configured account data into ISC. Check collection scope and the exact collected account/field. An operation summary is not proof of identity or target outcomes.
+
+Identity processing
+Uses available identity/account information and applicable configuration to reevaluate identity data and decisions. Check the current identity and relevant requirements; completion does not prove delivered access.
+
+Provisioning
+Carries out a required account or access change through a supported automatic or manual path. Check the precise operation, result and actual target state.
+
+Attribute synchronization
+Uses configured identity-to-account field mappings to require alignment, then provisions eligible account-field updates. Check the mapping, account association, changed value and update result. It is not account creation or general access assignment.
+
+Relationship
+Aggregation gathers information. Identity processing evaluates identity information and applicable requirements. Provisioning implements required changes. Attribute sync specifies one kind of required field alignment that provisioning delivers. These responsibilities can interact; they are not four mutually exclusive incident categories or a guaranteed universal job sequence.
+
+Important boundaries
+- Available source-account data and current identity data are different records.
+- Relevant aggregation changes can initiate identity processing. The UI Aggregate Account action has narrower documented scope: account-data reload without synchronizing identity attributes or affecting provisioning.
+- Saved configuration and selected Preview do not establish population-wide application.
+- Identity processing does not validate successful provisioning after initiating it.
+- Attribute sync requires eligible configured fields, identity mappings and correlated existing accounts. It does not create accounts; multiple correlated accounts on the source are all in scope.
+- A mapped identity null can propagate through configured sync. Approve missing-data behavior before allowing writes.
+- Reading a native account edit can reveal drift and lead to separately configured corrective provisioning.
+- Create Account field mappings alone do not establish ongoing updates for existing accounts.
+- A source schema or read capability does not establish write support or authorization.
+- Platform service-data synchronization into Search is not account attribute synchronization.
+
+Worked fictional result
+Employee91001 / teaching I-91001 has one associated WorkerHub wh-91001, ProjectDirectory pd-91001 and ArchiveDirectory ad-91001. WorkerHub's collected department Engineering supplies identity department Engineering. Engineering Starter requires Engineering Base / ENG-BASE. Established department sync updates pd-91001 to Engineering, while the separate ENG-BASE add fails for insufficient permission and fresh target evidence confirms no membership. ArchiveDirectory remains Finance with no ongoing department update configured. No actual tenant operation performed.
+
+Investigation questions
+Which exact record and field changed? What approved input is available in ISC? Which mapping and relevant processing establish the current identity value? Which configured field alignment or access decision requires a target change? What supported automatic or manual delivery path applies? What result and fresh target observation establish each required outcome? What remains unverified?
+
+This reference supports the complete inline comparison in PRC-001. Documentation review does not establish tenant execution, beginner validation or formal publication approval.

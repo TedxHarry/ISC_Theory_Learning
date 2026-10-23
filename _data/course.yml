@@ -15,6 +15,8 @@ modules:
     title: "7. How do accounts and managers become associated with identities?"
   - id: transforms
     title: "8. How do transforms calculate values?"
+  - id: processing
+    title: "9. When does ISC reevaluate an identity?"
 lessons:
   - id: SYS-001
     module: system
@@ -495,3 +497,10 @@ lessons:
     source: "lessons/TRN-009_Investigating_Failed_Calculations_and_Misleading_Fallback_Values.md"
     url: "/lessons/TRN-009_Investigating_Failed_Calculations_and_Misleading_Fallback_Values.html"
     description: "Investigate failed or misleading calculations through exact inputs, saved definitions and error paths, then verify cause-based corrections and separate applied outcomes."
+  - id: PRC-001
+    module: processing
+    placement: "Module 9.1"
+    title: "The data changed. Which process needs to act?"
+    source: "lessons/PRC-001_Aggregation_Identity_Processing_Provisioning_and_Attribute_Synchronization.md"
+    url: "/lessons/PRC-001_Aggregation_Identity_Processing_Provisioning_and_Attribute_Synchronization.html"
+    description: "Distinguish collection, identity reevaluation, provisioning and field synchronization through conditional paths, partial outcomes and evidence for each required change."

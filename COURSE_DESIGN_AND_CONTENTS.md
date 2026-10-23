@@ -250,7 +250,7 @@ Teach input-to-output reasoning before configuration syntax. [Transforms](https:
 
 ### Module 9. When does ISC reevaluate an identity?
 
-- 9.1 Aggregation, identity processing, provisioning, and attribute synchronization.
+- 9.1 [Aggregation, identity processing, provisioning, and attribute synchronization.](lessons/PRC-001_Aggregation_Identity_Processing_Provisioning_and_Attribute_Synchronization.md) **Authored:** PRC-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending. Includes inline comparison and [complete reference aid](assets/PROCESSING_COMPARISON_GUIDE.txt), revision 1.0.
 - 9.2 Event-based processing and the changes that initiate it.
 - 9.3 Scheduled and time-based processing.
 - 9.4 Manual processing and applying configuration changes.
