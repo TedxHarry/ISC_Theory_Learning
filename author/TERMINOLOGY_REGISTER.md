@@ -1,6 +1,6 @@
 # Terminology register
 
-Updated: October 21, 2026.
+Updated: October 23, 2026.
 
 This is an author maintenance aid for the meanings used in the current lessons. It is the seed for the later learner glossary, not an implemented glossary or tooltip system. Existing claim verification dates and applicability limits remain in REFERENCE_RECORDS.md.
 
@@ -353,6 +353,11 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Successful null / absent field / evaluation error | Option returns no value / data element not present in evidence / operation fails | Absent field does not prove successful null; ignoreErrors false still permits a successful-null fallback but does not skip a failed option |
 | Explicit ignoreErrors / candidate preparation / nested account selection | Chosen continuation policy on option errors / implemented suitability handling before selection / accountAttribute's own retrieval behavior | True does not reject bad text or fix source faults; trim-to-empty is not null, firstValid priority does not choose the correct account, and examples rely on explicit flags rather than a disputed default |
 | Exhausted candidates / applied fallback / unresolved defect | No option supplies a non-null acceptable value / currently applied alternative / missing-data or operation problem still requiring resolution | Do not invent exact all-null error, clearing/retention or target writes; Preview and a plausible result do not automatically reveal or close every fallback cause |
+| Lookup key / paired value / default | Recognized input string / configured translation / result for an unmatched string | FIN translates to Finance; unknown ZZZ can return approved review marker UNMAPPED, but no-default miss errors and null/failed retrieval are not assumed ordinary misses |
+| Conditional operand / eq expression / selected branch | Compared value / equality test / output chosen by true or false | Case-sensitive Employee equals Employee; Intern or lowercase employee takes Manual review, null errors rather than becoming ordinary false |
+| False comparison / evaluation error / successful wrong result | Available values differ / operation cannot return its normal result / calculation returns a business-incorrect value | Not Employee does not establish Contractor; correct ENG translation can be wrong for Devi when source data is wrong |
+| Dynamic variable / literal output / mapped destination | Named transform result referenced with $variableName / configured returned string / identity field supplied by mapping | workerType variable is not automatically a saved identity field; Standard review is text, not boolean true, an access grant or a created task |
+| Review marker / authoritative business fact / maintained table | Display treatment for unresolved data / approved real classification / configured translation needing controlled updates | UNMAPPED is not a department; HR approval of RND does not edit saved JSON, and changing output labels needs consumer review |
 
 ## Source anchors
 

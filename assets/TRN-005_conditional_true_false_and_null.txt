@@ -1,0 +1,15 @@
+Read workerType for identity I-85005
+                 |
+       Are operands non-null?
+          /              \
+         no              yes
+          |               |
+        Error     Compare with Employee
+                    /           \
+                  equal       unequal
+                    |            |
+             Standard review  Manual review
+
+Employee -> Standard review
+Intern   -> Manual review
+null     -> Error, not the false branch

@@ -1,0 +1,17 @@
+Identity I-85005 / account pm-85005
+Read departmentCode from PeopleMap
+                 |
+      Supplied non-null string
+                 |
+       Match a configured key?
+          /              \
+        yes               no
+         |                 |
+Return paired value    Default present?
+                         /       \
+                       yes        no
+                        |          |
+                 Return default   Error
+
+FIN -> Finance
+ZZZ -> UNMAPPED with this default

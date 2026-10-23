@@ -460,3 +460,10 @@ lessons:
     source: "lessons/TRN-004_Handling_Missing_Values_with_Fallbacks.md"
     url: "/lessons/TRN-004_Handling_Missing_Values_with_Fallbacks.html"
     description: "Trace null-based fallback priority and explicit error handling without mistaking empty or misleading text for approved business data."
+  - id: TRN-005
+    module: transforms
+    placement: "Module 8.5"
+    title: "Are we translating a code or choosing an outcome?"
+    source: "lessons/TRN-005_Lookups_and_Conditional_Decisions.md"
+    url: "/lessons/TRN-005_Lookups_and_Conditional_Decisions.html"
+    description: "Distinguish approved code translation from an equality decision, trace defaults, false branches and errors, and verify applied values without inventing business facts."
