@@ -1,0 +1,13 @@
+Collected assignmentStart + current time
+  -> supportWindow calculation
+  -> verify applied identity value
+       |
+       +-> Night Support role condition
+       |     -> NIGHT-BASE requirement
+       |     -> provisioning
+       |     -> verify target membership
+       |
+       +-> updated identity view in Search
+
+Later account collection
+  -> fresh collected membership evidence

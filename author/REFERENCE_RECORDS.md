@@ -3724,6 +3724,63 @@ Current official cloud documentation governs claims, even where pages use Human 
 - Contractor transfer: tests correctPreview versus appliedemail, broadAPexclusion versus profile/selectedinclusion, and laterlong-termmanualsync delivery onexistingassociatedaccount. Accept coordinatedauthorizedscope and fresh email/targetevidence; reject making contractActive or broadAP/automaticdeliveryassumption. Sources1-5,7.
 - Author review checks independentexample, first-use meanings, supported processmatrix, final/manual exceptions, no invented timebasedstate rule, exact diagram/timeline/table/case agreement and mentor narration. No actual beginnerreadthrough or formalpublication test performed.
 
+## PRC-007
+
+Revision 1.0. Documentation checked October 23, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi97007, teaching I-97007 (not actual ISC object ID), valid Active Employees identity with correctly associated StaffingRegister Production sr-97007 and existing OperationsDirectory od-97007. Worker source authoritative for population; selected assignmentStart2026-10-23T20:00:00.000Z already collected before the timeline.
+- Approved supportWindow calculation independently retrieves accountassignmentStart and compares evaluationtime; Scheduled before start, On duty at/after. Periodic reevaluation configured. TenantUTC/rolesimplemented/Active establishes evening recurring population. No peer-field dependence, per-identity nextProcessing, actual JSON or runtime supplied.
+- Enabled automatic Night Support role tests exactidentitysupportWindowOn duty; enabled Night Tools profile requires ordinarystandingNIGHT-BASE on one existing intended OperationsDirectory account. Group-add supported/provisioning enabled; initial group absent. No JITactivation, accountcreate, accessremove, fieldsync or competingdata/configchanges in main observations.
+- Configuration applied/reviewed before evening. 19:58currentScheduled/norole. October23 UTC20:00recurringqueue;20:04jobrunning;20:06relevant processing/currentOn duty/role verified, not proofwholetenantcomplete;20:07SearchScheduled;20:08overallaccountactivityStatusPending/notattempted;20:09specificgroupaddconfirmed/freshtargetNIGHT-BASE;20:12SearchOn duty;20:21freshcollectedaccountgroup.
+- Historical report captured19:50/opened20:10 lacks group, which does not contradict20:09target. Later collection observes membership, not source of original grant. No universal connector write-back/refresh rule or order between Search and delivery inferred.
+- Eight independent cases: queue versuscompletion; currentidentity versusSearch; reportobservation versusopentime; Pendingoverall versusPendingaccountrequest; Finishedwithpermissionfailure; unsupportedpeerfield; uncollectedtomorrowstart; terminatedaggregationwithpartialcollecteddata.
+- Transfer has departing employee/currentTerminated lifecycle assignment, reviewed existing-account disable requirement, oldSearchstage, specificpermissionfailure andfreshenabledtarget. Approvedurgent recovery/escalation requires independent outcome, not waitingforSearch or guessedretry.
+- No actual tenant/API/source/profile/mapping/aggregation/processing/provisioning/Search update/cancellation or target operation performed. Local source/timestamp checks validate fictional consistency, not an ISC runtime test.
+
+### Official sources and claim mapping
+
+1. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): recurring tenant-zone queue times and possible delayed start; eligible evening roles/Active population; running-work monitoring; application boundaries and cross-service identity/Search synchronization; identity processing does not verify provisioningsuccess. Mapped to queue/current/visibility distinctions and safe monitoring. Enumerated responsibilities are not universal internal service-order guarantees.
+2. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): collection and account observation, aggregation start/stop/details, Search visibility delays and termination retaining evidence of data aggregated before termination. Mapped to historicalreport/freshcollection, missinginput and case8. No promise all updates visible within a fixed minute limit or blanket claim account representation always waits for aggregation.
+3. [Search overview](https://documentation.sailpoint.com/saas/help/search/index.html), Account Activity Statuses: overall StatusPending/notattempted versus individualaccountPending/inprogress, Committed/sentconnector, Finished/sourceconfirmedresults successorfailure; Complete badge can include rejectedrequest/noaccountaction. Mapped to exact field table,20:08observation, cases4-5 and completion-context paragraph. These scopes are not interchangeable or universal APIenum contracts.
+4. [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): exactaccount/source/action/status/stage/error inspection. Mapped to waitingoperation versusfailedoperation and separate fresh target checks; no genericjobfinish or noactivity inference substituted for particular result.
+5. [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html): enabled role criteria evaluated in identity processing and access-profile entitlement delivery. Mapped to independent supportWindow criterion and Night Support; no actual role operation or removal.
+6. [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html): source-specific access bundles and standing versus JIT delivery. Mapped to Night Tools/NIGHT-BASE/existing-account/noactivation assumptions.
+7. [Identity Attribute transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/identity-attribute/): not intended inside another identity-profile attribute calculation because peer current/existing values are not guaranteed. Mapped to dependency-versus-order/case6; no invented private worker topology.
+8. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): mapped/custom identity attributes, selected Preview versus application and periodic requirement. Mapped to independent calculation/context and savedconfig/Preview not proofcurrent.
+9. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): supported externaloperations and conditionalretryableerrors, retries subject to queues. Mapped to actualtarget boundary and recovery-not-fixedsleep; no all-errors retry promise.
+10. [Date Compare transform](https://developer.sailpoint.com/docs/extensibility/transforms/operations/date-compare/): ISOinstants, evaluationtimenow, explicit comparison/operator and branchreturn values, periodic option. Mapped to fictional Scheduled-before/On duty-at-after logic only; no complete implementation or tenant execution claimed.
+11. [Setting up lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html): configured business-stage account actions and separate provisioning behavior. Mapped to urgentdisabletransfer, not a promise labelchanges prove targetdisable or sessionsended.
+
+Current official cloud documentation governs claims; some pages use Human Fabric/Identity Services naming, course retains ISC. No IdentityIQ implementation imported. An attempted unrelated generic Search API documentation URL returned404 and is not used as evidence; no API response/schema claim relies on it. Source availability does not establish tenant testing.
+
+### Scope and rendering boundaries
+
+- Main subject is dependency, asynchronous execution and evidence freshness, not all scheduling rules, connector configuration, complete errorcatalogue or hands-on polling/API implementation.
+- Clock boundary changes correct calculation without newHRedit. Main rolesimplemented/Active/UTC/periodic assumptions explicit; no exactdeadline guarantee from recurringqueue. All depicted times are observations, not performance measurements or SLAs.
+- Dependency diagram connects selected inputs, applied identity, role/target consumer and separate Search view. Latercollection is evidence path, not asserted onlyrepresentation update mechanism. Diagram does not imply independent private services or universal order.
+- Status word requires field/record context. Finished confirms result availability, not success; Committed notdelivery; overallPending differs fromindividualPending. Learner status table preserves exact documented semantic distinctions.
+- Currentvalue verified independently before saying Searchbehind; missingcurrentresult remains unprovenvisibilitydiagnosis. Query/filters/identity/account/time checks precede discrepancy claims.
+- Fixedwait cannot repair missinginput/unsupportedpeerfield or failedpermission. Additionalsubmission may creatework; no blanket operation-idempotency or repeatedprocessing recovery guarantee. Cancellation does not reverse established prior effects.
+- Editable diagrams ../assets/PRC-007_dependencies_and_evidence_boundaries.txt and ../assets/PRC-007_queued_applied_delivered_and_visible.txt exactly match inline blocks; maximum widths42 and41. Full intended publication rendering must be verified separately from local source checks.
+- Two two-column tables, eight worked cases and urgentdisabletransfer retained. Definitions supplied in context; no learnerbody source/course links, em dash, greetings/slang or teaching-method announcements.
+- Preserve all prior70lessons, all assets/templates/tests/specs and both reference aids. PRC-008 reserved planned only. Verify71live routes/native9module/current defaults, complete orderedarticle and exact accessible diagrams/tables.
+- Documentation-based author review and working-edition deployment are not beginner validation or formal publication approval.
+
+### Assessment mapping
+
+- Case1: tests queue versuscompletion. Queued20:00/noexecution/currentresult20:02 needs jobstate/inclusion/current evidence. Accept explicitunknown, reject failedtransform or timingguarantee. Source1.
+- Case2: tests verifiedcurrent versusSearch. CurrentOn duty20:06/SearchScheduled20:07 supports exactview/query/propagation investigation. Accept evidencebounded explanation; reject asserting viewdelay without independentcurrent. Sources1-3.
+- Case3: tests observationtime versusopen time. Reportcaptured19:50/opened20:10 cannot contradictfresh20:09targetgroup. Accept newerreadifneeded; reject openingtimeasfreshness. Sources2,4.
+- Case4: tests field-level semantics. OverallStatusPending/notattempted versusindividualPending/inprogress are distinct. Accept exactfield/operation inspection; reject eitherasdeliveryorfailure. Source3.
+- Case5: tests resultavailability versusresultsuccess. Finishedwithpermissionfailure needs approvedcause/recovery and targetevidence. Accept failedattempt, reject completionwordasgrant or Searchwaitasrepair. Sources3-4,9.
+- Case6: tests dependency versusassumedorder. PeeridentityassignmentStart read inanothermapping lacks current/orderguarantee. Accept supported independentaccountinput design; reject repeatrunorPreviewonceasvalidation. Sources7-8,10.
+- Case7: tests availableinput. Producer20:00butselectedcollectedtomorrow makesScheduled compatiblewithwrongdata; inspectcollection/selection beforeviewdelay. Accept correctedinput+relevantapplication+deliverychecks; reject wait/manualgrant as datarepair. Sources1-2,8,10.
+- Case8: tests cancellation versusrollback/completeness. Suppliedterminatedaggregationalreadycollectedrecord requires actualrecord/current/delivery review; neither nochange nor allpopulationcompletion follows. Accept scope-evidence audit, reject atomicreversal. Sources1-2,4.
+- Transfer: tests simultaneous oldview and realfailedoperation. VerifiedTerminated plusoldSearch doesnot negate permissionfailed/freshenabledtarget; approvedurgenthandling required with separate recoveryevidence. Accept processspecificescalation/unknownrepairoutcome; reject waitingforSearchasdisable. Sources1,3-4,9,11.
+- Author review checks independentDevi facts, first-use meanings, configuredlogic/inputs, UTC/timeline consistency, scope/status distinctions, diagrams/exercises and mentor narration. No beginner learner or formalpublication test performed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

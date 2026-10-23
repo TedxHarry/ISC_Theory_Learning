@@ -1,0 +1,11 @@
+All times UTC; October 23, 2026
+
+20:00 recurring processing job queued
+20:04 job observed running
+20:06 current supportWindow: On duty
+      Night Support assignment verified
+20:07 Search still shows Scheduled
+20:08 group-add activity Status: Pending
+20:09 add confirmed; target group seen
+20:12 Search shows On duty
+20:21 fresh collected account shows group

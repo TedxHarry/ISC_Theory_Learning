@@ -539,3 +539,10 @@ lessons:
     source: "lessons/PRC-006_Identity_States_and_Participation_in_Processing.md"
     url: "/lessons/PRC-006_Identity_States_and_Participation_in_Processing.html"
     description: "Distinguish lifecycle, identity and account states; trace process-specific participation, long-term processing and sync exceptions, and actual target evidence."
+  - id: PRC-007
+    module: processing
+    placement: "Module 9.7"
+    title: "The job started. Why do the screens still disagree?"
+    source: "lessons/PRC-007_Ordering_Dependencies_Queued_Work_and_Visibility_Delays.md"
+    url: "/lessons/PRC-007_Ordering_Dependencies_Queued_Work_and_Visibility_Delays.html"
+    description: "Trace dependencies, queued work, applied identity results, target delivery and view freshness; read status fields in context and choose evidence-based next checks."
