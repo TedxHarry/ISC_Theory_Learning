@@ -12,7 +12,9 @@ Compare now >= that end instant
         true            false
          |                |
  Boundary reached    Before boundary
-              |
+         \              /
+           Selected result
+                 |
 Mapping supplies assignmentBoundaryReview
 
 Errors are not ordinary false results.
