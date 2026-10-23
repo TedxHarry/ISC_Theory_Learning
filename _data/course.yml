@@ -467,3 +467,10 @@ lessons:
     source: "lessons/TRN-005_Lookups_and_Conditional_Decisions.md"
     url: "/lessons/TRN-005_Lookups_and_Conditional_Decisions.html"
     description: "Distinguish approved code translation from an equality decision, trace defaults, false branches and errors, and verify applied values without inventing business facts."
+  - id: TRN-006
+    module: transforms
+    placement: "Module 8.6"
+    title: "Which moment does this date actually mean?"
+    source: "lessons/TRN-006_Formatting_and_Comparing_Dates_and_Time_Zones.md"
+    url: "/lessons/TRN-006_Formatting_and_Comparing_Dates_and_Time_Zones.html"
+    description: "Interpret dates and time zones, trace formatting, comparison and arithmetic, and distinguish a crossed boundary from an applied or delivered result."

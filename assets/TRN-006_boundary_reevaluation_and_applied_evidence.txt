@@ -1,0 +1,16 @@
+October 23, 2026 / UTC
+
+16:59  Relevant evaluation
+       now < 17:00
+       Result: Before boundary
+         |
+17:00  Business boundary passes
+       No exact-time run is established
+         |
+17:03  Supplied authorized processing
+       now >= 17:00
+       Result: Boundary reached
+         |
+       Current identity value verified
+
+A crossed boundary is not a completed write.

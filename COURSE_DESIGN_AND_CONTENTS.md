@@ -239,7 +239,7 @@ Existing associations, default behavior, and re-evaluation must follow documente
 - 8.3 [Normalizing and combining strings.](lessons/TRN-003_Normalizing_and_Combining_Strings.md) **Authored:** TRN-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.4 [Handling missing values with fallbacks.](lessons/TRN-004_Handling_Missing_Values_with_Fallbacks.md) **Authored:** TRN-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.5 [Lookups and conditional decisions.](lessons/TRN-005_Lookups_and_Conditional_Decisions.md) **Authored:** TRN-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 8.6 Formatting and comparing dates, including time-zone considerations.
+- 8.6 [Formatting and comparing dates, including time-zone considerations.](lessons/TRN-006_Formatting_and_Comparing_Dates_and_Time_Zones.md) **Authored:** TRN-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.7 Composing operations and following intermediate values.
 - 8.8 Calculation context, dependencies, and reevaluation.
 - 8.9 Investigating failed calculations and misleading fallback values.
