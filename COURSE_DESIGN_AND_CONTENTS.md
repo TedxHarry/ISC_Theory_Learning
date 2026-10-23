@@ -254,7 +254,7 @@ Teach input-to-output reasoning before configuration syntax. [Transforms](https:
 - 9.2 [Event-based processing and the changes that initiate it.](lessons/PRC-002_Event_Based_Identity_Processing_and_Its_Triggers.md) **Authored:** PRC-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 9.3 [Scheduled and time-based processing.](lessons/PRC-003_Scheduled_and_Time_Based_Identity_Processing.md) **Authored:** PRC-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 9.4 [Manual processing and applying configuration changes.](lessons/PRC-004_Manual_Identity_Processing_and_Applying_Configuration_Changes.md) **Authored:** PRC-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 9.5 Reevaluating identity values, manager relationships, lifecycle access, and role assignments.
+- 9.5 [Reevaluating identity values, manager relationships, lifecycle access, and role assignments.](lessons/PRC-005_Reevaluating_Identity_Values_Manager_Relationships_Lifecycle_Access_and_Role_Assignments.md) **Authored:** PRC-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 9.6 Identity states and participation in processing.
 - 9.7 Ordering, dependencies, queued work, and visibility delays.
 - 9.8 Investigating "the data changed, but the expected result did not."

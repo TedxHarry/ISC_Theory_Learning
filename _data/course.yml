@@ -525,3 +525,10 @@ lessons:
     source: "lessons/PRC-004_Manual_Identity_Processing_and_Applying_Configuration_Changes.md"
     url: "/lessons/PRC-004_Manual_Identity_Processing_and_Applying_Configuration_Changes.html"
     description: "Distinguish saved instructions, Preview and manual application, review selected versus shared scope, and verify population results separately from access delivery."
+  - id: PRC-005
+    module: processing
+    placement: "Module 9.5"
+    title: "The identity changed. Which results should change with it?"
+    source: "lessons/PRC-005_Reevaluating_Identity_Values_Manager_Relationships_Lifecycle_Access_and_Role_Assignments.md"
+    url: "/lessons/PRC-005_Reevaluating_Identity_Values_Manager_Relationships_Lifecycle_Access_and_Role_Assignments.html"
+    description: "Connect mapped values, resolved managers, lifecycle access and role criteria; distinguish retained requirements, applied results and actual target delivery."

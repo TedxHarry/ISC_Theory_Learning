@@ -1,0 +1,15 @@
+Before: observed WorkDirectory memberships
+  PORTAL + COMMON + SUPPORT-BASE
+
+After: intended memberships
+  PORTAL + COMMON + STAFF-BASE + ENG-BASE
+
+Retain: PORTAL and COMMON
+Remove requirement: SUPPORT-BASE
+Add requirements: STAFF-BASE and ENG-BASE
+
+Provisioning and target evidence
+  STAFF-BASE add: confirmed
+  SUPPORT-BASE removal: confirmed
+  ENG-BASE add: failed; still absent
+  PORTAL and COMMON: confirmed retained

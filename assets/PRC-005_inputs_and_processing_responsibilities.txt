@@ -1,0 +1,14 @@
+WorkforceLedger account wl-95005
+  workerNumber: 95005  (unchanged)
+  department: Engineering
+  managerNumber: 95091
+  workerStage: EMP
+
+Employees profile instructions
+  department -> identity department
+  managerNumber -> manager lookup
+  EMP -> lifecycle state active
+
+Relevant identity processing
+  -> verify each applicable result
+  -> verify required delivery separately
