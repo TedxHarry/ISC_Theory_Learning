@@ -1,0 +1,15 @@
+15:00 employed / Active
+      wd-96006 enabled; workerCode EMP
+
+15:12 leave / Inactive (short-term)
+      workerCode LEAVE sync confirmed
+      account enabled; no disable action
+
+16:03 retained / Inactive (long-term)
+      identity employmentCode EXIT
+
+16:04 workerCode EXIT sync confirmed
+      account-disable attempt failed
+
+16:05 fresh WorkDirectory check
+      wd-96006 enabled; workerCode EXIT

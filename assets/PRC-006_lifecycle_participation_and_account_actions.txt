@@ -1,0 +1,13 @@
+PeopleRegister workerStage
+  EMP   -> lifecycle employed -> Active
+  LEAVE -> lifecycle leave
+           -> Inactive (short-term)
+  EXIT  -> lifecycle retained
+           -> Inactive (long-term)
+
+Lifecycle configuration also defines
+  account actions and access requirements
+
+Identity state -> participation rules
+Account action -> provisioning outcome
+Check the actual account separately

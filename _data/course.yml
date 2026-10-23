@@ -532,3 +532,10 @@ lessons:
     source: "lessons/PRC-005_Reevaluating_Identity_Values_Manager_Relationships_Lifecycle_Access_and_Role_Assignments.md"
     url: "/lessons/PRC-005_Reevaluating_Identity_Values_Manager_Relationships_Lifecycle_Access_and_Role_Assignments.html"
     description: "Connect mapped values, resolved managers, lifecycle access and role criteria; distinguish retained requirements, applied results and actual target delivery."
+  - id: PRC-006
+    module: processing
+    placement: "Module 9.6"
+    title: "Inactive in ISC. Inactive for which process?"
+    source: "lessons/PRC-006_Identity_States_and_Participation_in_Processing.md"
+    url: "/lessons/PRC-006_Identity_States_and_Participation_in_Processing.html"
+    description: "Distinguish lifecycle, identity and account states; trace process-specific participation, long-term processing and sync exceptions, and actual target evidence."
