@@ -1,0 +1,18 @@
+Already collected sl-94004
+costCenter 0042 / legacy 0088
+                 |
+saved mapping now selects costCenter
+                 |
+      +----------+----------+
+      |                     |
+selected Preview     relevant processing
+      |                     |
+proposed 0042        verify current 0042
+                            |
+                    verify role assignment
+                            |
+                    group-add provisioning
+                            |
+                    verify target FT-BASE
+
+Preview does not perform the target write.

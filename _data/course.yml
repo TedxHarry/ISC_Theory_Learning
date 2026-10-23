@@ -518,3 +518,10 @@ lessons:
     source: "lessons/PRC-003_Scheduled_and_Time_Based_Identity_Processing.md"
     url: "/lessons/PRC-003_Scheduled_and_Time_Based_Identity_Processing.html"
     description: "Explain recurring eligibility and time zones, periodic refresh and nextProcessing requirements, then separate intended times, applied results and required delivery."
+  - id: PRC-004
+    module: processing
+    placement: "Module 9.4"
+    title: "The mapping is saved. What still needs to happen?"
+    source: "lessons/PRC-004_Manual_Identity_Processing_and_Applying_Configuration_Changes.md"
+    url: "/lessons/PRC-004_Manual_Identity_Processing_and_Applying_Configuration_Changes.html"
+    description: "Distinguish saved instructions, Preview and manual application, review selected versus shared scope, and verify population results separately from access delivery."
