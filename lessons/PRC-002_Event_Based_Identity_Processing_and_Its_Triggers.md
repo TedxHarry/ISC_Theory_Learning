@@ -1,6 +1,6 @@
 # What change actually starts identity processing?
 
-Devi moves from the Austin office to the Dallas office. HR saves the move, but her ISC identity still shows Austin.
+Devi moves from the Austin office to the Dallas office. HR saves the move, but SailPoint Identity Security Cloud (ISC) still shows Austin for her location.
 
 Someone asks, “Why didn't the event update her?”
 
