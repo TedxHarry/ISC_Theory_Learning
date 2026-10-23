@@ -1,0 +1,12 @@
+Same definition: Trim HR cost center
+
+I-88008 / wr-88008     I-88009 / wr-88009
+         |                     |
+     " 0042 "              " 0088 "
+         |                     |
+       trim                  trim
+         |                     |
+      "0042"                "0088"
+
+Each result belongs to its own evaluation.
+Mapping/application still need evidence.

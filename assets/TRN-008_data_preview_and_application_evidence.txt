@@ -1,0 +1,17 @@
+October 23, 2026 / UTC
+
+09:00  HR publishes 0090
+          |
+09:02  Available account still has 0042
+       Preview -> 0042
+          |
+09:05  Account data verified as 0090
+          |
+09:06  Preview -> 0090
+       Applied evidence not rechecked yet
+          |
+09:10  Relevant processing verified
+       Current identity -> 0090
+
+New input, new result and applied value
+are distinct claims.

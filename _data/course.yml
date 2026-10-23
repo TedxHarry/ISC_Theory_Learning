@@ -481,3 +481,10 @@ lessons:
     source: "lessons/TRN-007_Composing_Operations_and_Following_Intermediate_Values.md"
     url: "/lessons/TRN-007_Composing_Operations_and_Following_Intermediate_Values.html"
     description: "Trace exact intermediate values, operation order and reference dependencies without confusing reusable instructions with stored identity results."
+  - id: TRN-008
+    module: transforms
+    placement: "Module 8.8"
+    title: "What has to change before this value is calculated again?"
+    source: "lessons/TRN-008_Calculation_Context_Dependencies_and_Reevaluation.md"
+    url: "/lessons/TRN-008_Calculation_Context_Dependencies_and_Reevaluation.html"
+    description: "Identify calculation context and changing dependencies, then distinguish reevaluation, applied identity values and separately configured account outcomes."

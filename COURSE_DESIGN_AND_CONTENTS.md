@@ -241,7 +241,7 @@ Existing associations, default behavior, and re-evaluation must follow documente
 - 8.5 [Lookups and conditional decisions.](lessons/TRN-005_Lookups_and_Conditional_Decisions.md) **Authored:** TRN-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.6 [Formatting and comparing dates, including time-zone considerations.](lessons/TRN-006_Formatting_and_Comparing_Dates_and_Time_Zones.md) **Authored:** TRN-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.7 [Composing operations and following intermediate values.](lessons/TRN-007_Composing_Operations_and_Following_Intermediate_Values.md) **Authored:** TRN-007 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 8.8 Calculation context, dependencies, and reevaluation.
+- 8.8 [Calculation context, dependencies, and reevaluation.](lessons/TRN-008_Calculation_Context_Dependencies_and_Reevaluation.md) **Authored:** TRN-008 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 8.9 Investigating failed calculations and misleading fallback values.
 
 **Outcome:** Explain a transform's result, test its assumptions with sample data, and recognize when its output can be wrong.
