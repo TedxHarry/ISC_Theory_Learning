@@ -504,3 +504,10 @@ lessons:
     source: "lessons/PRC-001_Aggregation_Identity_Processing_Provisioning_and_Attribute_Synchronization.md"
     url: "/lessons/PRC-001_Aggregation_Identity_Processing_Provisioning_and_Attribute_Synchronization.html"
     description: "Distinguish collection, identity reevaluation, provisioning and field synchronization through conditional paths, partial outcomes and evidence for each required change."
+  - id: PRC-002
+    module: processing
+    placement: "Module 9.2"
+    title: "What change actually starts identity processing?"
+    source: "lessons/PRC-002_Event_Based_Identity_Processing_and_Its_Triggers.md"
+    url: "/lessons/PRC-002_Event_Based_Identity_Processing_and_Its_Triggers.html"
+    description: "Trace qualifying identity changes from aggregation or provisioning, distinguish unchanged and skipped outcomes, and separate initiation, current decisions and delivered access."

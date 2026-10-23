@@ -1,0 +1,16 @@
+Aggregation path        Provisioning path
+        |                       |
+        v                       v
+process modifies        process modifies
+an identity             an identity
+        |                       |
+        +-----------+-----------+
+                    |
+                    v
+event-based identity processing
+                    |
+                    v
+reevaluate applicable information
+and configured access requirements
+
+Submission alone is not this condition.

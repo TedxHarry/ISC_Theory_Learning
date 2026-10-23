@@ -1,0 +1,16 @@
+HR publishes Dallas
+        |
+new input not yet collected
+        |
+aggregation changes I-92002
+        |
+processing and current results verified
+location Dallas / Dallas Starter
+        |
+group addition still pending
+        |
+add result + fresh target observation
+DL-TOOLS on wd-92002 verified
+
+Each observation supports its own claim.
+This is not a timing guarantee.

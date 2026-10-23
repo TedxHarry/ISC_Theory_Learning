@@ -3444,6 +3444,62 @@ Current official cloud documentation governs claims. Product pages may say Human
 - Transfer tests existing field update with unfamiliar workPhone. Supplied correct collected/identity values and create-only contact mapping require ongoing authorized supported delivery mechanism and target evidence, not repeated HR aggregation. Accept approved alternate update mechanism rather than sync if justified. Misconception: new-account template maintains existing fields. Sources1-6,10.
 - Author review checks independent scenario, first-use terms, actual-operation distinctions, configuration/record/time consistency, exact diagrams/reference summaries, reasoning and mentor voice. No actual beginner read-through or formal publication approval occurs.
 
+## PRC-002
+
+Revision 1.0. Documentation checked October 23, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi92002 has valid Employees identity and one correctly associated authoritative PeopleLedger Production pl-92002 account; I-92002 is a teaching label, not an actual ISC object ID. Location maps directly from the associated source account. No transform/default, ownership correction or identity-creation issue.
+- HR location changes Austin-to-Dallas. Existing WorkDirectory wd-92002 is correctly associated and lacks DL-TOOLS. Group-add supported/provisioning enabled; no location sync is configured. Enabled Dallas Starter role tests identity location equals Dallas and contains enabled Dallas Tools access profile/ordinary standing DL-TOOLS entitlement with no separate activation.
+- Manager/employment stage unchanged; no Austin-based access removal or new-account creation in scope. These boundaries avoid pretending all mover cleanup is covered by a new-role grant.
+- October23 UTC11:00 HR publishes Dallas;11:03 available pl-92002 Austin;11:05 relevant source aggregation collects Dallas and modifies I-92002;11:06 relevant processing/current location Dallas/Dallas Starter verified;11:07 group add pending;11:12 add completion and fresh WorkDirectory DL-TOOLS membership verified. Initiating modification is supplied evidence for this case, not inferred from a generic badge or asserted universal intermediate UI.
+- Times are fictional observations, not runtime measurements, latency promises, universal job ordering or one event/one job counts. No unsupported claim every internal stage exposes a unique event record.
+- Separate costCenter string0088-to0090 variation supplies mapped identity modification and relevant current0090, with location Dallas/role/group already correct. No duplicate membership change required merely to demonstrate processing.
+- Provisioning case4 explicitly supplies confirmation that an approved provisioning process modifies the corresponding identity; it does not claim every submitted/accepted/failed connector operation does so or that WorkDirectory takes over PeopleLedger's location authority.
+- Workflow notification case7 is a separate configured automation hypothetical; no workflow in main scenario. Notification does not carry a group-delivery result.
+- Phone transfer supplies collected/qualifying identity modification and verified processed workPhone, but old external phone; must inspect approved ongoing update mechanism and delivery rather than manufacturing another HR event.
+- All records, requirements, configurations, activity and results are fictional. No actual tenant/API/source/profile/mapping/aggregation/processing/provisioning/workflow or target operation performed. Local source/value checks are not runtime execution.
+
+### Official sources, applicability and claim mapping
+
+1. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): event-based initiation when aggregation/provisioning modifies identity; mapped information and manager/lifecycle/role responsibilities; separate manual/configuration, scheduled/time paths and provisioning-completion limit. Mapped to initiation condition, unchanged outcome reasoning and separate current/target evidence. No invented internal event names, subscription or universal timing/job count.
+2. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): configured account collection/file input, optimization and unoptimized reexamination, exact UI Aggregate Account scope. Mapped to producer/collection distinction, completed run versus changed record, skipped-record qualification and case5. No generic claim that all single-account APIs have this UI action's limitations or unchanged record prevents all other processing.
+3. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): shared mappings, selected inputs, Preview and separate application of saved configuration. Mapped to Employees/location/costCenter and no population/application conclusion from one Preview.
+4. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): account/access changes, supported direct/manual paths, multiple initiators and source provisioning configuration. Mapped to provisioning can be downstream and can provide identity modification; operation submission/acceptance is not proof of the documented condition or target state.
+5. [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html): enabled attribute-driven role criteria and access-profile entitlement delivery. Mapped to Dallas condition, supplied assignment and different data change leaving correct access unchanged; not a full removal/retry design.
+6. [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html): source-specific entitlement bundles and ordinary standing versus activation-dependent access. Mapped to enabled Dallas Tools/DL-TOOLS and stated exclusion of separate activation.
+7. [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): specific account activity, status/stage/result/errors. Mapped to pending versus completion and actual target membership, not fixed completion delay or universal per-stage trace.
+8. [Workflow triggers](https://documentation.sailpoint.com/saas/help/workflows/workflow-triggers.html), Identity Attributes Changed: configurable automation for matching changed identity attributes. Mapped to workflow versus platform processing distinction and notification not access-delivery proof. No workflow is created.
+9. [Synchronizing attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): configured identity-to-account alignment and eligible existing correlated-account updates through provisioning. Mapped only to phone-transfer supporting explanation, not claim that current workPhone configures/enforces sync automatically.
+10. [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html): collection of access objects, not granting membership. Mapped to narrow-operation distinction for DL-TOOLS collection.
+
+Current official cloud documentation governs technical claims. Pages may use Human Fabric/Identity Services names; course retains ISC. No IdentityIQ behavior imported. Availability checks do not substitute for source review or real tenant tests.
+
+### Scope and rendering boundaries
+
+- The lesson teaches documented initiation and its evidence, not a private event-bus implementation or a complete taxonomy of every field/connector operation. It does not claim every account change, source-save or write request modifies an identity.
+- Supplied11:05 modification and11:06 current results are explanatory observations, not required separate engine jobs. HR11:00 publication alone is not proof of either.
+- Existing unchanged optimized account can be skipped. That fact cannot establish that no other processing reason occurred. Unoptimized reexamination does not guarantee changed fields/access or repair arbitrary missing dependencies.
+- Workflow notification, saved configuration and clock-only changes are not interchangeable evidence for this data-change initiation. No unsupported dummy data/access change is recommended to stimulate processing.
+- No claimed immediate population-wide application, hardcoded schedule, lack-of-evidence equals proven failure, or pending equals failed operation.
+- Editable diagrams ../assets/PRC-002_documented_event_based_initiation_paths.txt and ../assets/PRC-002_location_change_evidence_progression.txt exactly match inline text; maximum widths41 and40characters. First is conditional causal initiation, second supplied evidence progression, neither private job scheduling.
+- Two two-column tables, eight worked cases and phone-change transfer retained. Verify complete live text, exact accessible diagram/table rendering and existing native navigation separately from local source checks.
+- Existing processing comparison guide revision1.0 and attribute tracing guide revision1.0 unchanged. PRC-003 reserved/planned only, with no lesson file or additional navigation module. Learner validation and formal publication approval remain pending.
+
+### Assessment mapping
+
+- Case1 tests producer versus qualifying collected modification. Supplied external Dallas/available Austin establishes no new input or identity event. Need correct-account collection/modification evidence. Accept narrow uncertainty, not a proven processing failure. Sources1-3.
+- Case2 tests source-run status versus per-record modification. Supplied successful optimized run/skipped unchanged record cannot prove fresh processing and cannot exclude other paths. Accept explicit need for record/processing evidence. Misconception: completed run means one event for every identity. Sources1-2.
+- Case3 tests reevaluation versus changed access. Supplied qualifying cost-centre modification/current0090 with unchanged Dallas/role/presentgroup does not require another group addition just to prove processing. Accept correct unchanged access; reject mandatory new write. Sources1,3,5-6.
+- Case4 tests second documented initiation path. Supplied approved provisioning explicitly modifies identity, so aggregation is not required as the sole initiating process. Accept condition-based answer, not every request/failed write triggers the same behavior. Sources1,4.
+- Case5 tests UI action scope. Supplied Aggregate Account completion only reloads account data; does not establish identity attribute sync/provisioning. Need actual current results and suitable supported processing. Accept distinguishing API/source paths. Sources1-2.
+- Case6 tests configuration application. Supplied saved condition/unchanged data/no application evidence cannot establish updated population. Need approved scoped application/current assignments/delivery. Reject artificial worker edits or added access as a trigger tactic. Sources1,3,5.
+- Case7 tests automation notification boundary. Supplied Identity Attributes Changed message does not prove DL-TOOLS delivery; need operation result/fresh target membership. Accept separate custom workflow and platform roles. Sources4,7-8.
+- Case8 tests clock dependency. Supplied unchanged stored date/no source/provisioning identity modification does not establish event-based initiation. Need scheduled/time-based design and execution; no exact timing recipe requested here. Sources1,3.
+- Transfer tests proven identity update versus external field delivery. Supplied collection/identity modification/currentworkPhone establishes identity path; old contact phone requires configured mechanism/eligibility/result investigation, not another producer edit. Accept discovering missing design or separate delivery failure without assuming either. Sources1-4,7,9.
+- Author review checks independent context, first-use meanings, conditional documented behavior, exact records/values/times/diagrams, causal exercises and mentor voice. Actual beginner read-through and formal publication approval not performed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
