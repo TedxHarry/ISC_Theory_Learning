@@ -1,6 +1,6 @@
 # Inactive in ISC. Inactive for which process?
 
-Devi is on leave. An administrator cannot select her in the Request Center and concludes that ISC has stopped processing her identity.
+Devi is on leave. An administrator cannot select her in the Request Center, where access can be requested for a person, and concludes that ISC has stopped processing her identity.
 
 Another administrator sees that her directory account is still enabled and concludes that her ISC identity must still be Active.
 
@@ -46,6 +46,8 @@ We will also use **attribute synchronization**, or attribute sync: a configured 
 Identity employmentCode reads PeopleRegister employmentCode directly. On WorkDirectory, the existing workerCode account field is directly mapped from identity employmentCode in the Create Account definition and selected for ongoing attribute sync. The Create Account definition supplies account-creation instructions, but its direct mappings also determine which fields are eligible for this sync configuration. Attribute sync itself updates existing accounts; it does not create a missing account.
 
 The source supports the required field update and account-disable operations, with provisioning enabled. **Provisioning** performs changes in connected systems. Supported operation capability is not a guarantee that the connection has permission to complete every attempt.
+
+An **access profile** bundles related access items from one source. A **role** groups access requirements and can assign them through configured criteria.
 
 No account deletion, new account creation, access removal or new role assignment is part of Devi's example. Remove all access is not configured for these states, and retained grants no WorkDirectory access profile that would prevent its account-disable action. The tenant has roles implemented for other identities; that matters when we discuss its evening recurring population.
 
@@ -103,7 +105,7 @@ Here is the participation comparison relevant to everyday investigation.
 | Ordinary automatic attribute sync | Active and Inactive (short-term) participate. Long-term has the transition and manual exceptions explained below. |
 | Identity-attribute promotion after updated accounts arrive through aggregation | All three states are included. Long-term does not mean mapped identity information is permanently frozen. |
 
-An **access profile** bundles related access items from one source. A **role** groups access requirements and can assign them through configured criteria. Their list-page Apply Changes actions initiate broad reevaluation, not a change to one target account.
+Role and access-profile list-page Apply Changes actions initiate broad reevaluation, not a change to one target account.
 
 The identity-profile action has a different scope: identities associated with that profile. The selected-identity action explicitly chooses the identity or set.
 
