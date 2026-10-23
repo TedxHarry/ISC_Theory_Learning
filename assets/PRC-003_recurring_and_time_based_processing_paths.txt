@@ -1,0 +1,18 @@
+Recurring scheduled path
+eligible population + tenant time zone
+                  |
+        scheduled job is queued
+                  |
+        observed execution/results
+
+Additional time-based path
+profile mapping -> identity nextProcessing
+                  |
+future ISO time + one-hour lead
+                  |
+        relevant processing
+                  |
+        observed current result
+
+Both evaluate applicable configuration.
+Neither is proof of external delivery.

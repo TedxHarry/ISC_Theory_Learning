@@ -511,3 +511,10 @@ lessons:
     source: "lessons/PRC-002_Event_Based_Identity_Processing_and_Its_Triggers.md"
     url: "/lessons/PRC-002_Event_Based_Identity_Processing_and_Its_Triggers.html"
     description: "Trace qualifying identity changes from aggregation or provisioning, distinguish unchanged and skipped outcomes, and separate initiation, current decisions and delivered access."
+  - id: PRC-003
+    module: processing
+    placement: "Module 9.3"
+    title: "The date arrived. When will ISC process the identity?"
+    source: "lessons/PRC-003_Scheduled_and_Time_Based_Identity_Processing.md"
+    url: "/lessons/PRC-003_Scheduled_and_Time_Based_Identity_Processing.html"
+    description: "Explain recurring eligibility and time zones, periodic refresh and nextProcessing requirements, then separate intended times, applied results and required delivery."

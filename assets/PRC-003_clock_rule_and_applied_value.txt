@@ -1,0 +1,12 @@
+Source input: reviewAt = 16:00 UTC
+                  |
+                  v
+Rule compares evaluation time
+with the supplied review moment
+                  |
+   BEFORE -> Before review
+   AT/AFTER -> Review due
+
+A processing mechanism runs the rule.
+Application establishes the stored result.
+A clock boundary alone proves neither.

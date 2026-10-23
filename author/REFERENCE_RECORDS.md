@@ -3500,6 +3500,61 @@ Current official cloud documentation governs technical claims. Pages may use Hum
 - Transfer tests proven identity update versus external field delivery. Supplied collection/identity modification/currentworkPhone establishes identity path; old contact phone requires configured mechanism/eligibility/result investigation, not another producer edit. Accept discovering missing design or separate delivery failure without assuming either. Sources1-4,7,9.
 - Author review checks independent context, first-use meanings, conditional documented behavior, exact records/values/times/diagrams, causal exercises and mentor voice. Actual beginner read-through and formal publication approval not performed.
 
+## PRC-003
+
+Revision 1.0. Documentation checked October 23, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi93003 has valid Active identity, Employees profile and one correctly associated AssignmentRegister Production ar-93003 account. I-93003 is a teaching label, not an actual ISC object ID. Already collected reviewAt2026-10-23T16:00:00.000Z is an exact UTC moment.
+- Custom assignmentReviewStatus independently reads associated account reviewAt and compares evaluation time with it: before returns Before review, equality/after returns Review due. Review-only metadata has no employment, account-disable, access-removal, email or notification action.
+- Recurring-only design: explicitly UTC tenant, no roles implemented, no account for Devi on a sync-configured source; Active identity; periodic requirement marked true; no nextProcessing. Therefore morning sync-account selection absent, evening no-role/periodic-profile selection present.
+- October23 recurring-only observations: initial configuration application/currentBefore13:00, selectedPreviewDue/currentBefore both checked16:01, eligible evening queued20:00/start20:04/currentDue after relevantprocessing20:06. Initial application is not claimed to be morning scheduled processing. Source timestamp unchanged.
+- Alternative design, not the same execution history: per-profile nextProcessing mapping receives approved available source timestamp independently from review calculation. Applied identity nextProcessing16:00 verified after13:30update gives2h30lead; relevant processing/currentDue verified16:02. Fictional, not an exact-time/two-minute SLA.
+- Too-close first identity update15:30 for16:00 gives30min, even if HR approval09:00. Lead is from nextProcessing identity attribute update in ISC, not HR's producer time, a proposed Preview or just the date text.
+- Explicit offset11:00-05:00 equals16:00Z; no inferred local named-zone offset. ReviewAt postponement18:00 with an earlier16:00 evaluation correctly Before, but needs a verified revised next-event plan. No automatic recurring reset, past-date recovery or clearing/retention behavior asserted.
+- Case8 supplies separate offboarding identity stage verified but target disable error; target account state unverified/unsatisfied, not hidden by processing success.
+- Transfer: business wants09:00 per employee's location from date-only input and periodic option; need approved local zone/instant, recurrence versus per-identity plan, lead/application and separate email mechanism if required.
+- No actual tenant/API/source/profile/mapping/aggregation/processing/provisioning/notification or target operation performed. Local date/offset/lead calculations are illustrative arithmetic, not ISC runtime/tenant scheduling tests.
+
+### Official sources, applicability and claim mapping
+
+1. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): scheduled08:00/20:00 tenant-zone population rules, defaultCST/CDT, queued scheduled start, per-profile nextProcessing/future ISO/one-hour lead from identity update, additional versus recurring processing, configuration application and provisioning completion limit. Mapped to both designs and timing investigation. No unverified time-based internal queue architecture, universal identity eligibility or exact-second target-delivery promise.
+2. [Date Compare](https://developer.sailpoint.com/docs/extensibility/transforms/operations/date-compare/): now at evaluation, ISO input, directed inclusive comparison and periodic-refresh option. Mapped to independent Before/Due rule and time-dependent truth versus stored result. No operation JSON or flag-placement recipe supplied; periodic marking is not a minute timer.
+3. [Account Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/account-attribute/): selected associated-account field input. Mapped to independent account reviewAt input with one account, not a fresh live producer read or implicit peer-identity calculation.
+4. [Identity Attribute](https://developer.sailpoint.com/docs/extensibility/transforms/operations/identity-attribute/): explicit restriction on using peer identity-field reads during concurrent identity-profile calculation. Mapped to independent nextProcessing/review inputs and no list-order readiness assumption; no such unsafe JSON prescribed.
+5. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): shared mappings, selected Preview and separate application/current results. Mapped to proposed versus applied nextProcessing, initial configuration application and current review-label evidence.
+6. [Setting up lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html): lifecycle-state business actions, identity-state participation and Active/Inactive short/long distinctions. Mapped to required first-use state context, recurring population qualification and separate offboarding example. No universal time-based eligibility restriction inferred from scheduled eligibility alone.
+7. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): supported automatic/manual account and access delivery, role and sync concepts. Mapped to first-use role/sync meanings, external cutoff requirements and lack of actions in review-only scenario.
+8. [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): operation-level activity/result/errors and manual tasks. Mapped to independent target verification and case8; no particular runtime error wording or actual disable operation claimed.
+9. [RFC3339](https://www.rfc-editor.org/rfc/rfc3339), sections4-5: numeric offsets/UTC correspondence, full date-time notation, ambiguity/limitations of local times. Mapped to explicit11:00-05:00/16:00Z arithmetic and date-only versus exact-moment contract. Not a claim that every syntactically valid RFC3339 variant is accepted by every transform.
+
+Current official cloud documentation governs technical claims. Some pages use Human Fabric/Identity Services names; course retains ISC. No IdentityIQ behavior imported. Source availability is checked separately from correctness and learner validation.
+
+### Scope and rendering boundaries
+
+- Documented recurring population table is necessary to explain selection, not an exhaustive identity-state lesson. Main Active/no-roles/periodic/no-sync/UTC assumptions are explicit before relying on them.
+- Scheduled jobs are queued at configured times and can start later. Per-identity16:00 is a requested processing time with supplied16:02 observed result, not an asserted identical queue implementation or delay bound. Diagrams are conceptual responsibilities.
+- NextProcessing requires applied identity evidence and sufficient lead. Profile-level mapping save and Preview are not equivalent. Earliest-next-milestone planning is design reasoning, not a copied fixed expression or promise ISC automatically advances/resets dates.
+- Revised reviewAt and scheduled nextProcessing have different meanings. An earlier run can legitimately return Before against postponed boundary, leaving a later evaluation requirement.
+- DateCompare/equality reasoning is independent from scheduling. The review label has no configured external consumers; the security cutoff discussion deliberately requires separate target state and authorized delivery design.
+- Editable diagrams ../assets/PRC-003_clock_rule_and_applied_value.txt and ../assets/PRC-003_recurring_and_time_based_processing_paths.txt exactly match inline text; maximum widths42 and42characters. First separates clock rule/stored result; second compares recurring and additional per-identity responsibilities.
+- Two two-column tables, eight worked cases and local09:00 reminder transfer retained. Verify complete live body, exact accessible diagrams/tables and native navigation separately from local time/source checks.
+- Existing processing comparison guide and attribute tracing guide remain revision1.0 unchanged. PRC-004 reserved/planned only, no file or new navigation module. Beginner validation and formal publication approval remain pending.
+
+### Assessment mapping
+
+- Case1 tests rule versus recurring timing. Supplied UTC/no-role/no-sync/Active/periodic design, correctPreview/currentBefore16:01 means evening path not yet due, not necessarily comparison failure. Accept need for actual execution and approved latency. Sources1-2,5-6.
+- Case2 tests evening no-role profile eligibility. Supplied Active/no-role/no periodic field does not establish inclusion in that documented population. Accept identifying missing selection condition and appropriate timing need, not inventing another trigger. Sources1-2,6.
+- Case3 tests representation versus lead requirement. Supplied validISO16:00 firstupdated15:30 gives30min, not requiredhour. Need supported recovery/future plan. Reject formatting as override of lead. Sources1,9.
+- Case4 tests producer versus identity application time. Supplied HR09:00/ISC15:30 means one-hour lead measured from identity update. Accept tracing collection/mapping/application to diagnose delay. Misconception: early HR approval establishes ISC scheduling readiness. Sources1,5.
+- Case5 tests instant/representation distinction. Supplied explicit11:00-05:00 and16:00Z same date identify same instant. Accept arithmetic normalization and refusal to freeze offset for future local dates. Sources2,9.
+- Case6 tests queued/start/applied evidence. Supplied20:00/20:04/20:06 is consistent with delayed scheduled execution, not transform arithmetic failure; business acceptability still independent. Accept timing-gap investigation without target outcome inference. Sources1-2.
+- Case7 tests corrected business boundary versus prior plan. Supplied reviewAt18:00/run16:00 returns Before correctly. Need applied revised plan for later evaluation; unchanged answer is not skipped-calculation proof. Sources1-2,5.
+- Case8 tests identity stage versus failed delivery. Supplied current stage/target disable error cannot close cutoff; authorized correction and actual target verification needed. Accept identifying missing actual disable evidence; reject date or processing status as target-state proof. Sources1,6-8.
+- Transfer tests per-location business timing versus tenant recurrence. Supplied date-only/local09:00/periodic option needs approved zones/instants and accepted delay or valid applied nextProcessing with lead, plus updated future plan and independent email delivery if required. Accept supported alternative design meeting explicit business timing; reject one tenant job as every person's local timer. Sources1-2,5,7-9.
+- Author review checks independent context, first-use terms, population/lead/time conditions, exact values and alternative histories, diagrams/answers, missing-evidence discipline and mentor voice. Actual beginner read-through and formal publication approval not performed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
