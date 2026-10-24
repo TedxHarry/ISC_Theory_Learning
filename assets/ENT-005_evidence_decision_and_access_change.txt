@@ -1,0 +1,21 @@
+Current application evidence
+             |
+             v
+Owner confirms action and scope
+             |
+             v
+Description and classification
+             |
+             v
+Configured review + work need
+             |
+             v
+       Access decision
+             |
+    if a change is required
+             |
+             v
+Separate delivery and checks
+             |
+             v
+Account + permission evidence

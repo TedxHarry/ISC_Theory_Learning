@@ -271,7 +271,7 @@ Identity processing can start provisioning without validating that provisioning 
 - 10.2 [Entitlement identifiers, display values, types, and metadata.](lessons/ENT-002_Entitlement_Identifiers_Display_Values_Types_and_Metadata.md) **Authored:** ENT-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 10.3 [Account membership information versus the entitlement catalog.](lessons/ENT-003_Account_Membership_Information_and_the_Entitlement_Catalog.md) **Authored:** ENT-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 10.4 [Direct membership, inherited access, and the target application's interpretation.](lessons/ENT-004_Direct_Membership_Inherited_Access_and_Application_Interpretation.md) **Authored:** ENT-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 10.5 Ownership, descriptions, and identifying sensitive access.
+- 10.5 [Ownership, descriptions, and identifying sensitive access.](lessons/ENT-005_Entitlement_Ownership_Descriptions_and_Sensitive_Access.md) **Authored:** ENT-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 10.6 Investigating unknown, stale, or poorly described entitlements.
 
 **Outcome:** Explain what a governed access item represents and what additional application context is needed.

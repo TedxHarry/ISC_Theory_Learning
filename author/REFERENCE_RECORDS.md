@@ -4061,6 +4061,61 @@ Real Entra limitation is current official documentation; ReportDesk expansion, p
 
 Author review checked first-use meanings, independent context, direction/policy/OR-AND consistency, target and resource specificity, supplied freshchecks, selective/sharedchange consequences, conditional representation and exact readable diagrams. Real beginner read-through, teach-back and unfamiliar-example validation remain pending.
 
+## ENT-005
+
+- Current lesson: [ENT-005](../lessons/ENT-005_Entitlement_Ownership_Descriptions_and_Sensitive_Access.md), revision 1.0, Module 10.5.
+- Documentation checked: October 24, 2026. Current official content consulted for the mechanisms below; earlier lessons' verification dates are not renewed.
+- Documentation-based author review: complete within stated scope. Learner validation and formal publication review/approval: pending. Working-edition deployment is not beginner testing.
+- No tenant, API, source, schema, aggregation, provisioning, owner, metadata, native permission or target operation was executed. Records and observations are fictional teaching evidence.
+
+### Example contract and scope
+
+Devi100505/pay-100505 holds PayLedger Production G-9501; ISC display PayrollReports/Basicreportingaccess. Confirmed fictional native permission grants allregion employee salary/bankdetail view/export, notedit/release. Devi's only supplied workneed isheadcounttotals; separatenarrowersummarypermissionexists. PrimaryOwner payroll-owner-505 is expressly a teaching identity label, not literalISCID orgrantholder. Organization accepted ownerresponsibility is distinctfromfieldpresence. CustomDataSensitivity/Restrictedpayroll is fictionalorganizationalmetadata, notdefaultISCpolicy/value orlegalclassification. No universal native permission policy, automatic metadata-driven denial, owner fallback or pendingworkreroute asserted.
+
+Independent cases cover ownernotmember, description-onlyedit, Low-but-sensitivedata, effectiveManager-onlyrouting, manualoverrideHigh retainedagainstcriteriaMedium, AllOwners-anyoneapproval, protectedmanualdescription and pendingcertificationdelivery. DirectLow/inheritedHigh is a separately stated classification example under supported represented hierarchy, not a claim about G-9501's hierarchy or native capability. Currentclassification capabilities/fields remain tenant/integrationconditional; nolegacyBoolean=currentlevel assertion.
+
+Transfer R-605/ExternalReviewers/doc-605: confirmedsharednativepermissionchange expands assignedread/noexport toallprojectexport withoutmembershipchange; manualISCdescriptionstale/newcustomSensitiveDocumentsmetadata/noaccesschangeoperation; holderworkneednotprovided. Differentpossiblecorrectiontargets require scopeddecisions.
+
+### Primary source claim map
+
+| Official reference | Claims and boundaries checked |
+|---|---|
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Primary identity and optional identity/governance-group additional owners; editable readable descriptions/display names are not sent to source; protected manually updated name/description and successful aggregation disagreement. Lesson avoids UI click lab, owner-count limits and timing guarantees. |
+| [Entitlement model](https://developer.sailpoint.com/docs/tools/sdk/angular/entitlements/models/entitlement/) | Source/attribute/value and owner/additional-owner references are separate model information; requestability and manually updated fields are not account memberships. No SDK representation claimed as an executed API payload; no literal manual-field spelling required. |
+| [Privilege classification](https://documentation.sailpoint.com/saas/help/privilege/privilege_classification.html) | Current High/Medium/Low and unset None; source-wide/recommendation/custom criteria configuration and enabled automatic assignment; manual direct overrides retained until removed. Definitions do not justify Low-as-harmless or universal automatic classification. Advanced AI discovery/configuration limits outside scope. |
+| [Effective privilege](https://documentation.sailpoint.com/saas/help/privilege/effective_privilege.html) | Direct versus inherited privilege; supported represented parent-to-child entitlement inheritance and higher direct/inherited calculation. No native group creation, guaranteed hierarchy completeness or application enforcement inferred. Full access-profile/role composition treatment deferred. |
+| [Access model metadata](https://documentation.sailpoint.com/saas/help/access/metadata.html) | Custom entitlement metadata adds organizational context. Fictional sensitivity attribute/value is not a built-in standard; no default blocking, review initiation or native permission update asserted. |
+| [Configuring entitlement requests](https://documentation.sailpoint.com/saas/help/requests/config_entitlements.html) | Reviewer selection and individual/source/global configuration significance; Manager-only does not add owner; Primary Owner option; All Owners any one primary/additional owner may approve. No unanimous rule, universal fallback or retroactive existing-item reroute asserted. |
+| [User level permissions](https://documentation.sailpoint.com/saas/help/common/users/user_levels.html) | Administrative authorization is a separate model; entitlement owner assignment is not taught as granting Org Admin or native payroll rights. No comprehensive administrator matrix presented. |
+| [Certifications overview](https://documentation.sailpoint.com/saas/help/certs/index.html) | Existing-access review and decision, designated reviewer/campaign scope and separate remediation. Not all collected access is universally certifiable; no instruction to certify every membership or assumption of phased-engine availability. |
+| [Understanding certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html) | Applicable sign-off and separate automated/manual remediation; campaign/manual-task routing must not be inferred from entitlement request reviewer options. Pending delivery does not establish failure or successful removal. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Provisioning changes accounts/access separately from descriptive metadata; supported automatic/manual responsibilities depend on connection and configuration. General manual entitlement tasks versus certification-specific routing not collapsed into one universal owner rule. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Scoped operation/source/account results, activity/task evidence and supported work reassignment. Work-item completion and native capability confirmation are distinct; new owner field alone not proof of changed existing assignee. |
+
+### Diagrams and publication checks
+
+- [Ownership and membership relationships](../assets/ENT-005_ownership_and_membership_relationships.txt): exact inline source, maximum32columns. Relationship arrows distinguish ownerreference, explanatorymetadata and nativeaccountmembership; explicitly notanexecutionsequence.
+- [Evidence, decision and access change](../assets/ENT-005_evidence_decision_and_access_change.txt): exact inline source, maximum31columns. Human investigation/responsibility flow, conditional change branch and separate delivery/checks; notdocumentedbackendorder or metadata-triggeredautomation.
+- Two two-column learner tables compare responsibilities and evidence limits. Verify accessible scroll wrappers and complete text in intended publication format.
+- Preserve prior76learnerlessons/allpriorassets/templates/CSS/tests/specifications, including both reference guides. Only this complete lesson is authored; ENT-006 stays planned withoutstub.
+- Check all77routes, ten-module current/default states, exact fullarticle, diagramassets and adjacentENT004/005navigation. Record source/content checks separately from live visual checks; do not infer learner understanding from either.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Responsibility versus access holding | Separate owneridentity/accountmembership; check accepted accountability, not grant unnecessary payroll access | Owner must hold owned access | Entitlements; model; user levels |
+| Case 2 | Explanation versus permission enforcement | Description changed only; native membership/policy or separate operation needed for reduction | Better wording narrows access | Entitlements; provisioning |
+| Case 3 | Non-administration versus sensitivity and need | Detailed exports exceed supplied headcountneed; considerapprovednarroweralternative, changedworkneedmustbeevidenced | Low or read-only means safe/justified | Privilege classification; metadata; fictional capability/work contract |
+| Case 4 | Effective reviewer configuration | Manager-only explains recipient; controlled reviewdesign correction if policyrequiresowner too | Owner presence automatically generates owner task | Configuring entitlement requests |
+| Case 5 | Classification precedence | Confirm/manualoverrideHigh explains resultagainstcriteriaMedium; justifycontrolledretain/remove, notnativepermissionedit | Newcriteria overwrite manualoverride | Privilege classification |
+| Case 6 | All Owners logic | Anyone primary/additionalownerapproval; separateconfiguredstages needed ifrequireseparatedecisions | All names means unanimousapproval | Configuring entitlement requests |
+| Case 7 | Collection and maintained-field provenance | Successful relevant read plus manualprotection explains mismatch; agreeauthority/update exactexplanation | Staledescription provesfailedconnection/retryfixes | Entitlements |
+| Case 8 | Decision, sign-off, delivery and target evidence | Notremovedconfirmed; inspectrequiredsignoff/activity/task/currentmembership/capability; no guessedfailurestage | Revoke decision proves completedremoval | Certifications overview/understanding; monitoring provisioning |
+| Document permission transfer | Changed capability with stable membership; missing business need and change scope | Confirmnewnativeaction/scope, maintain manualdescription/reassessclassification, obtainholderneed beforedecision; selectaccountversusshareddefinitiontarget andverify | Stablemembership/validowner/newtag means safe or alreadycorrected | Fictional nativechange contract; entitlements; metadata; provisioning |
+
+Narration reviewed for contextual first-use meanings, independent Devi context, simple personal explanation, connected evidence and no learner-facing source links or course-method commentary. No unresolved author content issue identified within scope. No actual beginner test or formal approval occurred.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

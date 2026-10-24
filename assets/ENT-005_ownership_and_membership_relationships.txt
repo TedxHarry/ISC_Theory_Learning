@@ -1,0 +1,14 @@
+PayLedger Production
+|
++-- G-9501: access object
+|   |
+|   +-- owner reference
+|   |   -> payroll-owner-505
+|   |
+|   +-- description and metadata
+|       -> explain and classify
+|
++-- pay-100505: Devi's account
+    |
+    +-- member of G-9501
+        -> native access policy

@@ -473,6 +473,19 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Access-model requirement versus native relationship: ISC role/access profile requirements are not source group nesting. A native edge edit does not prove every ISC requirement removed.
 - Fresh enforcement evidence: verify account/action/resource and relationship/policy state consumed by application; old sessions or missing hierarchy data cannot be silently treated as newgrant proof or native absence. Main checks expresslyfresh.
 
+### ENT-005 ownership, description and sensitivity boundaries
+
+- Primary owner: selected ISC identity responsible for an entitlement; distinct from account membership, native permissions, ISC administrator privileges and proof of accepted/competent responsibility.
+- Additional owners: identity or governance-group references; a SailPoint governance group is not a source access group. Request participation and approval rules depend on selected configuration.
+- Description: explain actions, data/resources, actual scope and verified exclusions. Intended use guides a business decision; wording does not implement the restriction or update native source permissions.
+- Sensitive access: evidence-led organizational concern about exposed data or permitted actions, including read/export; not a universal built-in Boolean or synonymous with administration.
+- Direct/effective privilege: assigned level versus calculation including represented inherited privilege; Low does not mean harmless, None can be unassigned, manual overrides take precedence until removed. Hierarchy representation/calculation does not create native nesting or permission enforcement.
+- Custom sensitivity metadata: contextual organizational classification, here Data sensitivity/Restricted payroll; not predefined ISC defaults or automatic request denial/revocation.
+- Reviewer configuration: owner presence does not require owner review. Manager-only and All Owners-any-one rules are different; request selection must not be generalized to campaigns/tasks or outstanding-work reassignment.
+- Manual description provenance: protected ISC enrichment can remain after successful collection of a changed source description; inspect maintenance authority rather than assuming failed aggregation.
+- Decision versus result: certification revoke requires applicable sign-off/delivery and current native evidence; label, requestability or owner changes are not proof of removing existing capability.
+- Shared capability change: R-605 membership unchanged while action/scope expands. Reassess meaning/classification and holder need; account access and shared permission-definition correction have different targets.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

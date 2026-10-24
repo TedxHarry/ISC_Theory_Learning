@@ -583,3 +583,10 @@ lessons:
     source: "lessons/ENT-004_Direct_Membership_Inherited_Access_and_Application_Interpretation.md"
     url: "/lessons/ENT-004_Direct_Membership_Inherited_Access_and_Application_Interpretation.html"
     description: "Trace direct and nested grant paths, application-specific permission rules and represented hierarchy; distinguish selected membership removal from eliminating a capability."
+  - id: ENT-005
+    module: entitlements
+    placement: "Module 10.5"
+    title: "The entitlement has an owner. Do we know what it allows?"
+    source: "lessons/ENT-005_Entitlement_Ownership_Descriptions_and_Sensitive_Access.md"
+    url: "/lessons/ENT-005_Entitlement_Ownership_Descriptions_and_Sensitive_Access.html"
+    description: "Distinguish responsible owners from access holders; build evidence-based descriptions and sensitivity assessments, understand privilege labels and review routing, and verify separate access changes."
