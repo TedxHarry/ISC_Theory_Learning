@@ -1,0 +1,15 @@
+Saved profile: Readers + Entry + Notes
+                  |
+         relevant evaluation
+                  |
+       inspect current origin
+          /               \
+   role / lifecycle    request / detection
+          |                    |
+ enforce new Notes       no new Notes
+          |                    |
+ check source result    full revised set?
+          |              /           \
+ verify native use     yes           no
+                    retain    lose profile
+                               keep groups

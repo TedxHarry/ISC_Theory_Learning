@@ -1,0 +1,16 @@
+Original profile: Readers + Entry
+                  |
+           add Notes reference
+                  |
+        Notes delivered to account
+                  |
+      restore original definition
+                  |
+      propagation OFF in this example
+                  |
+Profile: Readers + Entry
+Account: Readers + Entry + Notes
+                  |
+     assess authorized Notes removal
+                  |
+       verify actual native result

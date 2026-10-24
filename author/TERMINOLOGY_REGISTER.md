@@ -570,6 +570,18 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Assignment origin and definition additions: detection-only holders do not automatically receive newly added profile entitlements; revised full set is needed to retain the profile after relevant evaluation. No universal propagation/repair rule inferred.
 - Governance and removal: detected profile can support an applicable existing-access review; recognition is not approval or cleanup. Revocation can remove native entitlements, not merely an ISC label; inspect specific origin/overlap behavior.
 
+### APF-006 shared definition changes and existing-user impact
+
+- Exact change: entitlement-reference differences separate from names/descriptions/owners/request settings and from native permission changes under unchanged keys.
+- Consumer versus holder: configurations referring to a profile versus identities associated with it. Both current origins and future qualifying populations matter.
+- Addition origin: current role/lifecycle requirements enforce added standing access; previous direct requests for the profile itself and detection do not automatically grant additions. The revised full set is required to retain the latter associations.
+- Requested role versus requested profile: a role containing the profile remains a role-origin requirement; a request somewhere in history does not classify every holder as a direct-profile-request origin.
+- Shared application: saved definition, identity evaluation, specific account operations and native action evidence differ. List-page Apply Changes covers all identities and role/profile/application configurations together.
+- Definition removal: main example explicitly has role access removal propagation off, so deleted references can leave independent native entitlements. Not a universal promise that profile edits never remove access.
+- Enabled-role removal path: with Enable Role Access Removal Propagation on, removal from a profile associated with an enabled role is a documented removal path; disabled-role edits are not replayed merely by enabling later. Setting does not control additions.
+- Restoration versus compensating action: replacing the definition does not automatically reverse completed grants under the off-setting example. Successful/failed/unselected/preexisting populations and other valid requirements remain separate.
+- Evidence limits: no transaction-wide atomicity, exact completion time, automatic approval reconstruction, generic overlap/reference-count algorithm or live application guarantee inferred.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

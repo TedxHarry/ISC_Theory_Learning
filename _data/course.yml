@@ -634,3 +634,10 @@ lessons:
     source: "lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.md"
     url: "/lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.html"
     description: "Distinguish detection of existing entitlement holdings from new provisioning; trace catalog and account evidence, partial sets, assignment origin, freshness and actual native capability."
+  - id: APF-006
+    module: access-profiles
+    placement: "Module 11.6"
+    title: "The profile changed. What happens to people who already have it?"
+    source: "lessons/APF-006_Changing_Access_Profiles_and_Assessing_Existing_User_Impact.md"
+    url: "/lessons/APF-006_Changing_Access_Profiles_and_Assessing_Existing_User_Impact.html"
+    description: "Assess shared definition changes by current assignment origin; distinguish required additions, full-set retention, conditional role-removal propagation, native delivery and compensating correction."

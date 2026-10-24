@@ -4460,6 +4460,37 @@ Independent partial-access variation has reader only and no grant route; detecti
 
 Reviewed for independent Devi context, first-use meanings, exact object/record distinctions, clearly separated alternate scenarios, supplied timestamp consistency, editable diagram synchronization, cause/effect questions, current-state versus historical uncertainty and warm precise narration. No learner-body references, teaching-method announcements or unsupported backend internals. No unresolved author content issue identified within scope. APF-006 owns comprehensive definition-change impact; APF-007 owns overlap/removal detail. Necessary limits are explained here. Real learner validation and formal approval remain pending.
 
+## APF-006
+
+- Current lesson: [APF-006](../lessons/APF-006_Changing_Access_Profiles_and_Assessing_Existing_User_Impact.md), revision 1.0.
+- Documentation check: October 24, 2026.
+- Review type: documentation-based author review only. No actual tenant actions or beginner validation performed. Formal publication review and approval remain pending.
+
+### Sources and boundaries
+
+| Official reference | Supported claims and lesson use |
+|---|---|
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Changing Access Profile Entitlements: current role/lifecycle additions versus detection/previous requests for the profile itself; full revised set retention; evaluation; general profile-edit removal summary. Applying Changes supports shared access-model application. Scope standing access; acknowledge JIT activation differs. |
+| [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Removing Access with Role Changes: entitlement removal from a profile associated with an enabled role can propagate when Enable Role Access Removal Propagation is on; disabled-role edits do not propagate merely on reenablement; setting does not affect additions. Assignment removal and other-role requirements are different considerations. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Saved versus evaluated configuration; list-page application combines roles/profiles/applications and covers Active/Inactive (short-term), not Inactive (long-term), identity statuses. Review other recent changes and avoid treating shared application as a selected-person pilot. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Per-account activity, source/recipient/action/stage/status and report/manual-task evidence; processing or another account's success does not establish all native outcomes. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Source/account fulfillment and supported integration, including manual versus connected fulfillment distinction; no guarantee from model alone. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Access profiles configured for states and enforced while current; distinguish state/profile requirements from native account state and a previous direct request. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Current criteria or identity-list assignment and required role access; exact eligibility and role requirement, not request history alone. |
+| [AccessProfile model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | Distinct object identifier, descriptive/configuration fields and entitlement references. Teaching labels are not API IDs/payload. |
+
+The access-profile page summarizes removed entitlements as retained independent entitlements. The roles page documents a more specific enabled-role removal-propagation path, including removal of entitlements from a role-associated profile. This lesson explicitly sets propagation OFF for its retention/restoration examples and teaches the enabled-role/ON variation separately. Neither summary is generalized to every tenant or origin. No live reconciliation test was run, and no unsupported all-path overlap algorithm is invented.
+
+All account/group/permission/site/license examples and observations are supplied fictional conditions. StockLedger source writes are assumed supported, and the credential rejection is scoped to Devi's account so the independent lifecycle-account success is not contradictory. Current records and one correctly correlated account per identity are stated. Main addition has no concurrent changes or other grants.
+
+### Explanation and assessment review
+
+- Two inline editable text diagrams match [addition/origin](../assets/APF-006_definition_addition_and_assignment_origin.txt) and [definition restoration](../assets/APF-006_restoring_definition_and_retained_access.txt), no wider than 42 columns. Arrows express dependencies, not private scheduling.
+- Two two-column tables distinguish native meanings and current-origin effects. Eight Facts/Reasoning cases test wording/reference mismatch, required-but-failed delivery, old direct request, complete revised detected set, removal with propagation off/on, unchanged-key native expansion and partial-delivery restoration.
+- License transfer changes entitlement type and adds unknown capacity: 20 role requirements versus 10 previous direct-profile-request holders; no guaranteed delivery or reclaimed capacity.
+- First-use terms and independent Devi context reviewed; learner body has no source/course links or teaching-method commentary.
+- No actual source/tenant/API/aggregation/processing/provisioning/profile/role/lifecycle/request/approval/credential/license/native membership or target action. Learner validation remains pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
