@@ -1,0 +1,21 @@
+BEFORE: automatic match
+RecordsOps + ARCHIVE-REVIEW + working
+                |
+        Archive reviewer role
+                |
+       Readers + Annotations
+
+AFTER: no automatic match
+Quality + QUALITY-PLAN + working
+                |
+     Role assignment withdrawn
+                |
+      Source removals attempted
+           /            \
+Annotations removed   Readers rejected
+           \            /
+     Native account: Readers remains
+                |
+     Can read; cannot annotate
+
+Role gone does not prove rights gone.

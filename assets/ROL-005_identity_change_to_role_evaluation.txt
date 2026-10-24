@@ -1,0 +1,20 @@
+HR: approved current work changes
+                |
+Aggregation reads employee record
+                |
+ISC stores collected account data
+                |
+Identity processing uses mapping
+                |
+Current identity values
+                |
+Evaluate enabled role's selector
+                |
+Match gained / retained / lost
+                |
+Compare access requirements
+                |
+Source operations if required
+
+These are dependencies, not a promise
+that every stage succeeds immediately.

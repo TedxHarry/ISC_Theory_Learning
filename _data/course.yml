@@ -678,3 +678,10 @@ lessons:
     source: "lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.md"
     url: "/lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.html"
     description: "Compare automatic membership policy with requested role authorization; follow applicable review, access dates, account delivery and assignment-specific withdrawal."
+  - id: ROL-005
+    module: roles
+    placement: "Module 12.5"
+    title: "Her department changed. Why does she still have the role?"
+    source: "lessons/ROL-005_How_Identity_Data_Changes_Affect_Role_Membership.md"
+    url: "/lessons/ROL-005_How_Identity_Data_Changes_Affect_Role_Membership.html"
+    description: "Trace changed work data through collection, identity mapping and role evaluation; distinguish membership withdrawal, retained requirements and actual per-account removal."

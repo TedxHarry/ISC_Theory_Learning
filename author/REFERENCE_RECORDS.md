@@ -4685,6 +4685,34 @@ Editable diagrams: [assignment routes and delivery](../assets/ROL-004_assignment
 
 No actual tenant/API/source/account/role/list/request/review/provisioning/revocation/expiry/credential/license/native task operation performed. No private engine schedule, instant session cutoff, generic last-reference cleanup, account deletion or unconditional revocation of requested roles after identity-data changes claimed. Documentation-based author review only; beginner read-through, transfer validation and formal publication review/approval pending.
 
+## ROL-005
+
+Lesson: [Her department changed. Why does she still have the role?](../lessons/ROL-005_How_Identity_Data_Changes_Affect_Role_Membership.md). Revision 1.0. Documentation checked October 24, 2026.
+
+Primary sources and claim boundaries:
+
+- [Automating Role Assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html): standard criteria/identity-list assignment, supported input categories, complete AND/OR expression, technical lifecycle value and identity-data changes ending an automatic match. Relevant processing applies role configuration; entitlement removal is not account deletion.
+- [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): collection/provisioning identity modifications trigger relevant event-based calculation; mapped attributes and role membership/access requirements recalculated; scheduled/manual routes and participation differ. Processing initiates provisioning rather than validating native completion. No fixed-delay promise.
+- [Creating Identity Profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): selected source/field mappings and transforms determine identity values; Preview checks selected data, Save and Apply differ. Main department/job mappings are direct HR references; directory-selected variation is independent.
+- [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): collection into source-account records and aggregation history/scope/outcomes; collection is not all-target provisioning completion. No universal push from HR or actual connector-specific delta behavior claimed.
+- [Managing Roles](https://documentation.sailpoint.com/saas/help/access/roles.html): assignment changes versus shared access-content edits and the scope of role removal propagation; retained entitlement requirement in another role; requested-assignment revocation and account-retention boundary.
+- [Monitoring Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): per-source account operation evidence in provisioning/account activity and disconnected tasks; investigate particular removal errors, not role labels alone.
+- [Provisioning Overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): source changes and recognized retryable errors. No universal retry or guaranteed repair by later identity processing asserted.
+- [Synchronizing Attributes](https://documentation.sailpoint.com/saas/help/provisioning/attr_sync.html): configured identity-to-account-field enforcement differs from role entitlement withdrawal. Main lesson does not prescribe department synchronization.
+- [Identity States Overview](https://documentation.sailpoint.com/saas/help/provisioning/identity_states.html): scheduled and role/profile/application list-page processing excludes long-term inactive identities; profile/selected-identity routes differ. No exclusion from all identity processing inferred.
+- [Setting Up Lifecycle States](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html): lifecycle technical values, configured identity state and separately configured account actions. Main working state maps to Active; failing a role criterion is not a disable/delete instruction.
+- [Requesting Access Removal](https://documentation.sailpoint.com/saas/user-help/requests/requesting_access_removal.html): inspect requested assignment/account targets and supported removal; ordinary revocation does not override criteria assignment. No job-change-driven unconditional expiry of requested assignments asserted.
+
+Reasoning and assessment coverage:
+
+ArchiveGate Production, Devi120505/ag-120505, R-1205, AG-8501Readers/AG-8502Annotations, permissions/dependencies, input records, mapped values, transition times and outcomes are fictional supplied facts, not tenant tests. Main no-other-grant case distinguishes stale collected input from later partial removal failure; preserved Readers at09:50 is not a second-role retention result. Native enablement/sign-in/North scope and working/Active are explicitly established. Separate retained-role variation makes the other explanation clear.
+
+Cases 1-2 test collection versus mapping provenance; 3-4 test irrelevant changes and complete OR expressions; 5 tests unused future-effective dates; 6 tests explicit-list maintenance; 7 tests source failure after assignment withdrawal; 8 tests corrected-data requalification without erasure of earlier actions. Acceptable responses identify exact input/assignment/source evidence and missing observations rather than inventing internal ordering, null outcomes or unconditional retries. Laboratory location transfer tests two-source outcomes and explicitly rejects atomic source order/no-gap/no-overlap guarantees.
+
+Editable diagrams: [identity change to role evaluation](../assets/ROL-005_identity_change_to_role_evaluation.txt) and [membership loss and partial removal](../assets/ROL-005_membership_loss_and_partial_removal.txt); 38 columns each, exact synchronized inline copies. Two two-column tables, eight cases and transfer reasoning checked. Dependencies in first diagram are not private backend architecture or SLA. Second diagram is supplied partial outcome, not a prescribed source operation order.
+
+No actual tenant/API/source/account/mapping/aggregation/processing/provisioning/role/list/request/review/revocation/credential/native task operation performed. Official documentation reviewed; no beginner read-through, independent transfer validation or formal publication approval. Sources remain author-only.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

@@ -647,6 +647,21 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Retained requirements: another assigned role can retain shared entitlements; no universal all-origin reference-count/removal algorithm inferred.
 - Scope: standard role, standing access, one main account; independent histories and explicit variations avoid assuming duplicate automatic/request grants on the same identity.
 
+### ROL-005 changed identity data and role membership
+
+- Data provenance: current producer record, collected source account, applied identity attribute, role assignment and native rights are distinct evidence layers.
+- Selected criterion category: Identity Attribute reads its mapped identity value, not any same-named account field. Account/entitlement criteria require their own source inputs.
+- Complete selector: AND/OR decisions use all relevant current conditions. Unrelated changed field need not change membership; one failed OR branch need not end a match.
+- Processing dependency: collection supplies input; identity processing applies mappings and evaluates roles; initiated provisioning is not verified target completion. No fixed timing or private engine architecture inferred.
+- Configuration/input difference: changed work data needs no edit to a correct role definition. Saved mapping/Preview differs from applied identity; routine unchanged collection is not configuration-application evidence.
+- Processing inclusion: Active main identity; scheduled/list-page processing exclude Inactive(long-term), while selected/profile routes differ. No all-processing exclusion claim.
+- Assignment versus access content: losing membership leaves role contents intact for remaining members; role access-removal propagation for definition edits is not a universal mover toggle.
+- Residual access: failed removal versus retained requirement must be distinguished using actual source and assignment evidence. Main no-other-grant Reader retention is a supplied failure.
+- State/account boundaries: working criterion is a configured lifecycle technical value; failing it is not account deletion/disablement. Attribute synchronization of department is not entitlement withdrawal.
+- Origin: identity list and requested assignment do not inherit a hidden department selector or automatic requested-role expiry on job change.
+- Effective dates/corrections: unused date fields create no time gate; partial records follow actual configured logic. Corrected data can support renewed automatic assignment, not erase prior operations or restore all native state.
+- Transfer: separate source removal/addition outcomes, no atomic no-gap/no-overlap promise or universal source execution order.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).
