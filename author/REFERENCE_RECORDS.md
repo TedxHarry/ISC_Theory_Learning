@@ -3839,6 +3839,62 @@ Current official cloud documentation governs claims, including pages using Human
 - Transfer tests managercandidateavailability and unmatchedretention. Correctnonnull71002reference/no candidate/current71001 afterprocessing is documentedretention; verifyapprovedreference/candidatepreparation thenactualrelationship andseparateexistingwork. Accept actualdata/candidate correction basedonevidence; reject guessedmanager creation, clearingonunmatchednonnull or automaticapprovalreroute. Sources1-2,10-11.
 - Authorreview checks independentfacts, first-useconcepts, currentversuslegacyselection, authorizedscope, twoaccountidentifiers/criteria, allUTCobservations, evidencegap distinctions, exactdiagrams/exercises and mentorvoice. No beginnerreadthrough or formalpublication test performed.
 
+## ENT-001
+
+Revision 1.0. Documentation checked October 24, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi employee100101, InvoiceDesk Production/accountiv-100101, businessUnitWest, enabled account and successful sign-in. Correct account-to-identity association is supplied, except case7 explicitly varies it. No actual ISC object ID is invented.
+- Supported account/group reads and correct schema linkage are supplied. Account membership attribute groups is Entitlement/Multi-Valued with Typegroups; native entitlement type groups. Entitlement schema selects id for Entitlement ID and displayName for Entitlement Name. Account groups[G-4101] matches the group idG-4101/InvoiceReaders. These selected teaching records are not a required connector payload, API shape or default configuration.
+- Owner-supplied application policy: G-4101 permits invoice reading within accountbusinessUnit only, no editing/approval. G-4102/InvoiceApprovers permits approval within businessUnit but does not itself release payment. No claim G-4102 membership alone permits every action or that Readers/Approvers are universal SailPoint permissions.
+- Initial actual application results are supplied: West readallowed, East readdenied, approvaldenied. They illustrate expected authorization boundaries, not a live authorization engine simulation. No unsupported app permission discovery or ISC per-invoice decision implied.
+- Cases are independent alternatives: emptygroups/no otherreadgrant; existingnativegrant/noISCrequest; ownerconfirmedaccidentalediting; Testcatalog/Productionaccount; Readers-onlyapprovaldenial; twentyholders/oneshareddefinition; wrongidentitycorrelation; verifiedG-4101removal with G-4199independentWestreadinggrant retained.
+- Transfer ProjectReviewernativerole/R-82/proj-501, correctlycorrelated supportedroleentitlement, assignedprojectreportread only/noedit, requestabilitynotconfigured. No specific real connector or same-system ISC role assumed.
+- No actual tenant/API/source/schema/aggregation/provisioning/application policy change, grant, revoke, sign-in or target operation performed.
+
+### Official sources and claim mapping
+
+1. [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html): source access rights, supported entitlement types/permissions, display and owner metadata, direct requests, profiles/roles and certification use. Mapped to the initial entitlement meaning, metadata/evidence table and supporting governance connections. No entitlement represents a universal single atomic permission, no arbitrary permission type created and no catalog-to-holder inference.
+2. [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html): account membership representation versus separate object-detail collection; supported full catalog can include unheld access items. Mapped to collection explanation, diagram1 and cases1/6. No claim entitlement aggregation alone changes account membership or creates target groups.
+3. [Creating and managing entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html): supported native object type, schemas, selected ID/name and account entitlement-attribute Type linkage. Mapped to groups/groups fictional contract, id versus displayName and identifying-value match. Not all connectors support these capabilities; exact native type is not an arbitrary label.
+4. [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): schema roles, Entitlement/Multi-Valued designations and linking collected membership values with entitlement ID. Mapped to schema explanation and diagram1. Both account attribute and native type are groups here, satisfying the account-schema page's same-name condition as well as the entitlement-type page's explicit Type configuration. No contradictory general assertion that any differently named field automatically links.
+5. [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): account-to-identity relationship. Mapped to the independent identity/account distinction and case7. Account correlation does not change native group membership or prove approval.
+6. [Authentication versus authorization, Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-vs-authorization): supporting general distinction between establishing identity and deciding permitted actions. Mapped to diagram2 and invoice behavior. InvoiceDesk's group/businessUnit policy is wholly fictional, not a claim that Microsoft or SailPoint enforces it.
+7. [Configuring entitlement access requests](https://documentation.sailpoint.com/saas/help/requests/config_entitlements.html): requestability and applicable approval configuration are separate from collecting entitlement data. Mapped to existing native grants, requestability and transfer. No blanket approval requirement or claim all catalog items are requestable.
+8. [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html): same-source entitlement bundle and standing versus JIT activation distinction. Mapped to brief profile explanation and limited JIT caveat. No detailed detection/removal algorithm, automatic grant from creating a definition or unactivated-access usability implied.
+9. [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html): access profiles/direct entitlements, configured assignment and standing/JIT behavior. Mapped to ISC access-model role versus a source-native role. Dynamic dimensions and full role design deliberately deferred.
+10. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): external access changes, automatic/manual fulfillment and configuration dependence. Mapped to approved requirement versus actual delivery, read/write capability boundary and verified selected membership removal. No configured write assumed from read support, no unconditional retry or literal internal queue.
+11. [Certifications overview](https://documentation.sailpoint.com/saas/help/certs/index.html): assigned reviewers assess selected access for appropriateness and retention/removal. Mapped to the short governance explanation. No claim all represented access is certifiable or decision automatically proves completed revocation.
+
+Official cloud documentation may use Identity Services or Human Fabric names; the course retains ISC. No IdentityIQ mechanics imported. Source references are author-only, absent from the learner body.
+
+### Scope and rendering boundaries
+
+- This lesson teaches what an entitlement represents and how to reason about its holder and native permission effect. Detailed identifier management is reserved for10.2, catalog freshness10.3/10.6, inheritance10.4 and sensitivity/ownership10.5. Necessary supporting meanings are still explained in place.
+- Two editable text diagrams exactly match assets/ENT-001_account_membership_and_entitlement.txt and assets/ENT-001_application_authorization_boundary.txt, each maximum40columns. Diagram1 is relational, not a claimed execution schedule. Diagram2 is an expressly supplied fictional application decision path, not ISC backend internals.
+- Two two-column tables cover policy meaning and evidence limits. Eight cases have explicit Facts and Reasoning; one different-system transfer supplies its own object, membership, scope and requestability conditions.
+- businessUnit is an authorization scope input here, not automatically an ISC entitlement. A group may carry several actions, and an account may retain a capability through a separate supplied grant.
+- Removal of a shared definition is not prescribed as account revocation. No actual delete behavior, nested membership traversal, runtime timings or broad access-removal guarantee claimed.
+- Keep learner source links/course links absent. Preserve prior72lessons, all previous assets including both reference aids, templates/CSS/tests/specifications. Module10 is added only with this complete lesson. ENT-002 is planned without a stub.
+- Verification covers authored consistency, preservation, source URLs, navigation and exact deployed article/diagrams/tables, not tenant execution or beginner learning outcomes.
+
+### Assessment and alternative reasoning
+
+| Item | Understanding tested | Misconception or unsupported alternative rejected |
+|---|---|---|
+| Case1 | Shared object versus account membership, with fresh empty collection and no other grant supplied | Catalog existence grants access to Devi |
+| Case2 | Native grant provenance versus represented holder and policy judgment | No ISC request means no real entitlement or automatically inappropriate access |
+| Case3 | Confirmed native policy governs editing; controlled application correction needed | Display name/description can remove editing or outweigh current evidence |
+| Case4 | Source/environment context identifies the relevant access object | Matching display names prove production membership |
+| Case5 | Expected permission boundary versus missing delivery/new requirement | Repeat Readers provisioning to obtain approval |
+| Case6 | One access definition with many holder relationships | One catalog item per member is required |
+| Case7 | Account correlation versus membership and access meaning | Rename/describe group to repair wrong identity association |
+| Case8 | Confirmed selected removal versus broader remaining capability | Any surviving read proves that removal failed, or all other access may be removed without review |
+| Transfer | Native role/ISC role, supported reference/holder, resource scope and separate requestability | Every source role is an ISC role; denial always means broken delivery; every catalog item is requestable |
+
+Author review checked first-use meanings, person/account/group identifiers, correct conditional scope, source/type/ID/name linkage, exact diagram equality and narrow width, case independence, cause-based correction and source placement. Real beginner read-through, teach-back and transfer validation remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

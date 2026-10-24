@@ -17,6 +17,8 @@ modules:
     title: "8. How do transforms calculate values?"
   - id: processing
     title: "9. When does ISC reevaluate an identity?"
+  - id: entitlements
+    title: "10. What does an entitlement mean?"
 lessons:
   - id: SYS-001
     module: system
@@ -553,3 +555,10 @@ lessons:
     source: "lessons/PRC-008_Investigating_Changed_Data_Without_the_Expected_Result.md"
     url: "/lessons/PRC-008_Investigating_Changed_Data_Without_the_Expected_Result.html"
     description: "Investigate exact input, mapping, processing scope, role conditions and selected-account delivery; separate confirmed failures, missing evidence and delayed views."
+  - id: ENT-001
+    module: entitlements
+    placement: "Module 10.1"
+    title: "A group appears in ISC. What access does it actually represent?"
+    source: "lessons/ENT-001_Translating_Source_Permissions_and_Groups_into_Entitlements.md"
+    url: "/lessons/ENT-001_Translating_Source_Permissions_and_Groups_into_Entitlements.html"
+    description: "Connect source access objects, account memberships and ISC representation to the permissions an application actually enforces."

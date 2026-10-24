@@ -1,0 +1,19 @@
+Devi signs into InvoiceDesk
+  |
+  v
+Account iv-100101
+  enabled; sign-in succeeds
+  groups: G-4101
+  businessUnit: West
+  |
+  v
+InvoiceDesk evaluates its own policy
+  |
+  +-- Read West invoice --> Allowed
+  |
+  +-- Read East invoice --> Denied
+  |
+  +-- Approve invoice ---> Denied
+
+ISC represents the group and membership.
+InvoiceDesk enforces these actions.

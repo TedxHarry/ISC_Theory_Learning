@@ -1,0 +1,17 @@
+InvoiceDesk Production
+
+Devi's ISC identity
+  |
+  | associated account
+  v
+Account: iv-100101
+  businessUnit: West
+  groups: [G-4101]
+              |
+              | matching group reference
+              v
+Entitlement type: groups
+  id: G-4101
+  displayName: Invoice Readers
+
+Group definition != account membership

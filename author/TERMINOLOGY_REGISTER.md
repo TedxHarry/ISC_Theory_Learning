@@ -1,6 +1,6 @@
 # Terminology register
 
-Updated: October 23, 2026.
+Updated: October 24, 2026.
 
 This is an author maintenance aid for the meanings used in the current lessons. It is the seed for the later learner glossary, not an implemented glossary or tooltip system. Existing claim verification dates and applicability limits remain in REFERENCE_RECORDS.md.
 
@@ -430,6 +430,16 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 | Scoped investigation / shared configuration / population validation | Named issue/outcome / instructions used by other associated identities / separately checked wider effects | Selected Devi processing is not private mapping isolation or proof all Employees inputs/results are correct |
 | Failed attempt / unmet requirement / evidence gap | Specific unsuccessful operation / current result not yet as required / insufficient observations to conclude | Permissionerror proves that attemptfailed; freshabsence alone does not distinguish waiting, neverinitiated or failure; emptysearch is not causeproof |
 | Cause-based correction / unrelated workaround / acceptance evidence | Repair verified defect / alter data/access to hide symptom / confirm exact intended current outcome | MapcurrentOffice, repairapprovedpermission, verifyprimaryBR-WORK; do not changeBristolbacktoLeeds or grantAdmininstead |
+
+### ENT-001 interpretation boundaries
+
+- Native permission meaning: action, resource and supplied scope in the application's authorization policy. An entitlement can represent a group carrying several permissions; it is not universally one atomic action.
+- Access object, membership and account correlation: the shared group definition, the account-to-group relationship and the account-to-identity relationship are separate. Catalog presence does not establish a holder.
+- Entitlement schema linkage: in the fictional InvoiceDesk contract, both account membership attribute and native entitlement type are groups; the account attribute is marked Entitlement/Multi-Valued and its Type points to groups. Values reference the selected entitlement ID id, not the friendly displayName.
+- Scope attribute versus entitlement: businessUnitWest constrains the fictional application's permission but is not automatically modeled as an entitlement. Representation follows supported configuration, not every field that influences authorization.
+- Recorded holder versus appropriateness/requestability: an existing native grant can be represented without an ISC request. Request configuration and approval evidence are separate from membership.
+- Native application role versus ISC role: the former can be represented as an entitlement; the latter organizes access-model requirements. A shared word does not make them the same object.
+- Membership removal versus loss of capability: removing one account relationship does not necessarily remove a capability supplied by another confirmed grant. An approved decision or a metadata edit is not a verified native permission change.
 
 ## Source anchors
 
