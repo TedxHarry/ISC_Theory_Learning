@@ -286,7 +286,7 @@ Separate entitlement aggregation can collect access items that no account curren
 - 11.4 [Enabled access, requestable access, and automatic assignment.](lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.md) **Authored:** APF-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 11.5 [Detecting existing access and provisioning new access.](lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.md) **Authored:** APF-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 11.6 [Changing an access profile and assessing the effect on existing users.](lessons/APF-006_Changing_Access_Profiles_and_Assessing_Existing_User_Impact.md) **Authored:** APF-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 11.7 Overlapping profiles and access-removal behavior.
+- 11.7 [Overlapping profiles and access-removal behavior.](lessons/APF-007_Overlapping_Profiles_and_Access_Removal_Behavior.md) **Authored:** APF-007 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
 **Outcome:** Design a useful access profile and explain how its assignment history and configuration affect behavior.
 

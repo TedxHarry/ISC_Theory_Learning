@@ -582,6 +582,18 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Restoration versus compensating action: replacing the definition does not automatically reverse completed grants under the off-setting example. Successful/failed/unselected/preexisting populations and other valid requirements remain separate.
 - Evidence limits: no transaction-wide atomicity, exact completion time, automatic approval reconstruction, generic overlap/reference-count algorithm or live application guarantee inferred.
 
+### APF-007 overlap and explicit revocation
+
+- Exact overlap: shared entitlement object reference within correct source/type/account context, not similar display names or a cross-account union.
+- Explicit non-role revocation: removes the revoked profile's entitlements including shared ones. A second non-role profile can become incomplete and lose association while its unique entitlements remain individually.
+- Detected origin: does not make explicit revocation label-only or preserve native memberships. Detection and original grant authorization remain different.
+- Role-required overlap: current assigned-role requirements retain overlapping access. Mere definition existence or another direct profile is not equivalent protection.
+- Governing role assignment: a role-held profile is not directly deprovisioned as an independent profile grant. Criteria/list and requested-role assignments require appropriate approved corrections; no shared-definition edit for one person or falsified identity data.
+- Lifecycle enforcement: ongoing current-state requirements can reprovision removed access; distinguish successful earlier withdrawal from later additions. No universal mixed-origin overlap algorithm inferred.
+- Residual entitlement versus effective action: Export membership can remain while ineffective without Readers, then become effective if Readers returns. Native membership, profile association and application authorization are different evidence.
+- Definition action versus identity action: disable, definition-reference removal and explicit revocation differ. Role-definition removal propagation is not a master switch for every explicit withdrawal.
+- Completion evidence: submission, applicable approval, per-account operation/result, collection/evaluation and fresh native state remain separate; partial removals and retained work require reconciliation.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

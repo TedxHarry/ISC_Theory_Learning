@@ -1,0 +1,16 @@
+Independent variation:
+Role Queue analyst still requires Readers
+
+Revoke Case review
+  Readers + Notes
+         |
+ check remaining role requirement
+         |
+ Readers required       Notes not required
+         |                     |
+ retain Readers          remove Notes
+         \                     /
+          resulting account
+           Readers + Export
+                  |
+     Evidence export remains complete

@@ -1,0 +1,42 @@
+ISC access-profile assignment and removal comparison
+Revision: 1.0
+Documentation verification date: October 24, 2026
+Scope: access-profile mechanisms authored through APF-007. This is not a universal removal algorithm for every mixed-origin, multiple-account or Just-In-Time configuration.
+
+Definitions and assignment
+An access profile names related entitlement references from one source. Its definition is not a native account or an independent application permission switch.
+A current role or lifecycle requirement can require its delivery. A direct profile request follows its applicable authorization and fulfillment route. Detection associates the profile with a complete recorded entitlement set; it does not itself fill missing memberships or reconstruct earlier approval.
+Exact source, entitlement type, object references, account association and freshness matter. Similar labels do not establish overlap.
+
+Definition additions
+For current role/lifecycle holders, added standing entitlements are provisioned to enforce the requirement. Previous direct-profile-request and detection holders do not automatically receive later additions; they retain the revised profile only with its complete entitlement set.
+A requested role containing a profile is a role requirement, not a previous direct request for the profile itself.
+Just-In-Time access has separate availability/activation behavior. Do not infer immediate standing membership.
+
+Definition removals and restoration
+Removing references can leave existing entitlements independent of the profile. However, an enabled role with Enable Role Access Removal Propagation on has a documented removal path that includes entitlements removed from an associated profile.
+Do not generalize retention to all configurations. Disabled-role edits are not replayed merely on later enablement. This setting does not control additions or every explicit access revocation.
+Restoring the old definition is not proof that completed native grants were reversed. Assess successful, failed, unselected and preexisting populations and any authorized compensating actions.
+
+Explicit non-role profile revocation
+For two profiles held outside roles, revoking one removes its entitlements, including shared ones. The other profile becomes incomplete and is lost; its unique entitlements remain individually.
+Example: A = Readers + Notes; B = Readers + Export. Start with all three. Successful A revocation leaves Export only, not B's complete pair.
+This is true for detected or provisioned non-role profiles. It is not safe reference counting based on all profiles mentioning the entitlement.
+
+Role-required overlap
+When a current role requires access overlapping a revoked profile, the role-required access is retained.
+Example variation: a current role requires Readers. A revocation removes Notes, while Readers and Export remain and B stays complete.
+If the profile itself comes through a role, direct profile deprovisioning is not the independent removal route. Examine the governing role assignment and all retained requirements. Do not confuse removing an assignment with editing shared role contents.
+
+Lifecycle enforcement
+Profiles required by the current lifecycle state are enforced while the identity remains in that state. A removal can be followed by reprovisioning if the requirement continues. Confirm separate before/removal/later activity rather than assuming the original operation failed.
+
+Disabling
+Disabling a profile definition removes its participation and associations after relevant evaluation, but does not itself deprovision existing entitlements. It is not equivalent to explicit revocation or native account disablement.
+
+Evidence and intended outcome
+Separate submitted request, applicable approval, account operation, reported result, collected record and current native action.
+Predict withdrawn permissions, retained work and residual entitlements individually. A second profile can disappear without all its entitlements being removed; a residual membership can be unusable now but become effective if a dependency returns.
+Check exact source/account/operation and relevant current requirements. Verify native memberships, account conditions, resource scope and intended application behavior. Treat partial delivery, manual tasks and stale observations explicitly.
+
+This reference supports the inline comparisons in APF-006 and APF-007. All examples are fictional; documentation review is not tenant testing, beginner validation or formal publication approval.

@@ -641,3 +641,10 @@ lessons:
     source: "lessons/APF-006_Changing_Access_Profiles_and_Assessing_Existing_User_Impact.md"
     url: "/lessons/APF-006_Changing_Access_Profiles_and_Assessing_Existing_User_Impact.html"
     description: "Assess shared definition changes by current assignment origin; distinguish required additions, full-set retention, conditional role-removal propagation, native delivery and compensating correction."
+  - id: APF-007
+    module: access-profiles
+    placement: "Module 11.7"
+    title: "If two profiles share an entitlement, what does revoking one remove?"
+    source: "lessons/APF-007_Overlapping_Profiles_and_Access_Removal_Behavior.md"
+    url: "/lessons/APF-007_Overlapping_Profiles_and_Access_Removal_Behavior.html"
+    description: "Trace shared-entitlement removal across directly held profiles, role-required retention, incomplete profile associations, residual native access and evidence for safe withdrawal."

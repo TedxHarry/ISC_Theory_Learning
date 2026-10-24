@@ -4491,6 +4491,45 @@ All account/group/permission/site/license examples and observations are supplied
 - First-use terms and independent Devi context reviewed; learner body has no source/course links or teaching-method commentary.
 - No actual source/tenant/API/aggregation/processing/provisioning/profile/role/lifecycle/request/approval/credential/license/native membership or target action. Learner validation remains pending.
 
+## APF-007
+
+- Current lesson: [APF-007](../lessons/APF-007_Overlapping_Profiles_and_Access_Removal_Behavior.md), revision 1.0.
+- Documentation verification: October 24, 2026; documentation-based author review only.
+- No tenant action, beginner validation or formal publication approval performed.
+
+### Primary sources and claim boundaries
+
+| Official reference | Supported explanation |
+|---|---|
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Deprovisioning with Access Profiles: explicit non-role shared entitlements removed, second profile incomplete/lost while nonshared entitlements remain; detected/provisioned origins; current-role overlap retention and role-held direct-deprovisioning restriction. Disable/reference-edit/revocation are not equivalent. |
+| [Requesting access removal](https://documentation.sailpoint.com/saas/user-help/requests/requesting_access_removal.html) | Revocability and actor authority, direct-profile versus role assignment, applicable removal approval, submission confirmation versus fulfillment; criteria-assigned roles and role-held profiles not revocable through ordinary direct request. |
+| [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Roles contain direct entitlements or profiles; assigned role overlap and remaining role requirements; assignment removal differs from definition edit and enabled-role removal propagation. Not a master switch for explicit direct-profile revocation. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Current configured criteria/list and actual identity values govern automatic requirements; inspect the governing assignment rather than falsifying data or using a one-person shared-definition edit. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Current lifecycle profile enforcement can reprovision withdrawn access; separate original successful operation from later enforcing addition. No mixed-origin generic algorithm asserted. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Account activity, reports and manual work; precise recipient/source/action/result and partial fulfillment evidence versus whole-request labels. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Collected account holdings and freshness; a pre-removal read does not prove post-removal target state. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Relevant identity/access evaluation separate from source membership write; no private engine order, exact completion latency or processing-as-write-verification claim. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Source access-object references, types and native meaning; similar names do not prove identical rights. Application dependencies are fictional supplied conditions, not universal group semantics. |
+
+Scope: one correctly correlated account per identity, current holdings, standing memberships, direct requested profiles and no current role/LCS/concurrent grants in main example. Separate enabled Queue analyst role directly requires Readers throughout role-protection variation. CaseDock Readers/Notes/Export and same-account reader dependency are fictional, as are source write support, approvals, UTC observations and reported/native outcomes. No real account action occurs. No automatic cross-account union, reference counting, atomic removals or universal mixed-origin/JIT algorithm inferred.
+
+### Assessment map and author review
+
+- Case 1 tests non-role set tracing. Supplied A/B pairs, successful removals and no other requirements yield only Export, incomplete B and denied export. Treating B as overlap protection is the misconception.
+- Case 2 changes the current requirement to an assigned role requiring Readers. Retain Readers/Export and remove Notes; actual role assignment/content and native note/export checks are evidence. A role definition alone is insufficient.
+- Case 3 changes assignment origin to detection. Native removal is still in scope; recognition is not label-only cleanup or evidence of original approval.
+- Case 4 supplies a role-held, directly nonrevocable profile. Investigate actual role assignment and approved requirement, not alternate bypass controls; no immediate profile-removal result is expected.
+- Case 5 supplies one rejected operation. Readers/Export remain and Notes is absent; activity detail plus native checks establish partial fulfillment. An overall label or missing profile is insufficient.
+- Case 6 supplies different reference keys. Compare exact source/type/object and native dependencies; no specific target outcome beyond supplied independent rights can be inferred from matching names.
+- Case 7 supplies definition disablement without writes. Native Notes withdrawal is unestablished; disabling is not revocation.
+- Case 8 supplies separate native removal/later addition and a current enforcing lifecycle requirement. Investigate later provisioning and correct the approved requirement for lasting withdrawal. Unknown later-operation cause would require more evidence, not invented failure.
+- Transfer changes native entitlement type to Editor license and combines it with Draft Authors/Publishers. Main non-role revocation removes Editor/Draft Authors, loses publishing association, retains Publishers and denies publishing under supplied rules; license assignment/result/capacity are separately verified. Current-role Editor variation changes retention. No learner test run.
+- Retained-work design example separates a future baseline/optional bundle design from migration of existing overlapping grants. New direct baseline alone does not protect old overlap. No scripted transition or unverified native operation recommended.
+- Two diagrams match [non-role removal](../assets/APF-007_shared_entitlement_and_nonrole_revocation.txt) and [role requirement](../assets/APF-007_role_required_overlap_and_retained_work.txt), maximum 32 and 42 columns. Two two-column tables and eight worked cases remain inline.
+- Added [assignment and removal comparison](../assets/ASSIGNMENT_REMOVAL_COMPARISON_GUIDE.txt), revision 1.0, scoped to authored profile mechanisms. Source mappings above and APF-006 cover its role/lifecycle additions, detection, conditional definition removal, disablement and compensating-correction distinctions. Three previous reference aids are not implied; two existing guides are preserved and this is the third.
+- Independent context, first-use terms, native/recorded/decision/attempt/result distinctions and patient voice checked; no learner-body links, citation labels, method announcements or em dashes.
+- Author review does not establish tenant execution, learner validation or formal publication approval.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

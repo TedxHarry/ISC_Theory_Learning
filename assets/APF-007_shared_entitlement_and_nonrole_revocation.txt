@@ -1,0 +1,20 @@
+Profile A: Case review
+  Readers + Notes
+       \
+        same Readers entitlement
+       /
+Profile B: Evidence export
+  Readers + Export
+
+Account before:
+  Readers + Notes + Export
+
+Revoke A; successful removals:
+  remove Readers + Notes
+
+Account after:
+  Export only
+
+B now lacks Readers:
+  B association is lost
+  Export membership remains
