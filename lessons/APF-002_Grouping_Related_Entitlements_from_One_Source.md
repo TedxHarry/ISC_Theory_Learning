@@ -277,7 +277,7 @@ Does the East denial establish a missing entitlement?
 
 **Reasoning:** No. It is consistent with the explicit business-unit restriction. Verify the resource and account scope before diagnosing failed provisioning. Broadening access to all units would change the approved boundary, not repair the supplied three-item package.
 
-### Case 7: Approval was removed from the definition
+### Case 7: The approver entitlement was removed from the definition
 
 **Facts:** The team removes Order Approver from a previously excessive profile. Current native evidence still shows an existing holder has the approver entitlement.
 
