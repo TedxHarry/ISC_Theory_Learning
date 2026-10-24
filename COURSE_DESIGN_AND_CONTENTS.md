@@ -268,7 +268,7 @@ Identity processing can start provisioning without validating that provisioning 
 ### Module 10. What does an entitlement mean?
 
 - 10.1 [Translating a source-specific permission or group into an entitlement.](lessons/ENT-001_Translating_Source_Permissions_and_Groups_into_Entitlements.md) **Authored:** ENT-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 10.2 Entitlement identifiers, display values, types, and metadata.
+- 10.2 [Entitlement identifiers, display values, types, and metadata.](lessons/ENT-002_Entitlement_Identifiers_Display_Values_Types_and_Metadata.md) **Authored:** ENT-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 10.3 Account membership information versus the entitlement catalog.
 - 10.4 Direct membership, inherited access, and the target application's interpretation.
 - 10.5 Ownership, descriptions, and identifying sensitive access.

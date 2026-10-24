@@ -562,3 +562,10 @@ lessons:
     source: "lessons/ENT-001_Translating_Source_Permissions_and_Groups_into_Entitlements.md"
     url: "/lessons/ENT-001_Translating_Source_Permissions_and_Groups_into_Entitlements.html"
     description: "Connect source access objects, account memberships and ISC representation to the permissions an application actually enforces."
+  - id: ENT-002
+    module: entitlements
+    placement: "Module 10.2"
+    title: "The entitlement name changed. Is it still the same access?"
+    source: "lessons/ENT-002_Entitlement_Identifiers_Display_Values_Types_and_Metadata.md"
+    url: "/lessons/ENT-002_Entitlement_Identifiers_Display_Values_Types_and_Metadata.html"
+    description: "Distinguish ISC and native identifiers, schema selections, types and metadata; reason through renames, replacements and controlled changes."

@@ -1,0 +1,18 @@
+Before: supplied verified records
+  E-102 -> G-6202
+  label: Case Review
+  rv-100202 groups: [G-6202]
+
+Rename label; retain group key
+  |
+  v
+After: supplied verified records
+  E-102 -> G-6202
+  label: Case Review Readers
+  rv-100202 groups: [G-6202]
+
+Same group and membership here.
+Permissions independently unchanged.
+
+New key G-9202 is a different question.
+Do not infer continuity from the label.

@@ -441,6 +441,16 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Native application role versus ISC role: the former can be represented as an entitlement; the latter organizes access-model requirements. A shared word does not make them the same object.
 - Membership removal versus loss of capability: removing one account relationship does not necessarily remove a capability supplied by another confirmed grant. An approved decision or a metadata edit is not a verified native permission change.
 
+### ENT-002 identifier and metadata boundaries
+
+- ISC entitlement object ID versus native value: E-102 refers to the ISC record, G-6202 to the selected source object value; neither is SC-102 schema ID or S-102 source ID. Short labels are fictional and never actual API identifiers.
+- Selected field versus field value: schema identityAttributegroupKey and displayAttributelabel select fields; G-6202 and CaseReviewReaders are one group's values. identityAttribute does not perform person correlation.
+- Type context: access-model category, native/schema object type, primitive data type and account attribute Type linkage answer different questions. No arbitrary new type confers connector capability.
+- Identification context: source, relevant type/attribute and native value are retained together; ISC object reference is preserved for operations needing it. This is investigation discipline, not a documented private deduplication key.
+- Rename versus replacement versus schema reidentification: verified same-key relabeling is distinct from newkeyG-9202 and changing selected identifying field. No universal persistence, automatic reference migration or key-lifecycle continuity promise.
+- Metadata provenance: collected source attributes, manually maintained name/description and managed access-model metadata have distinct maintenance roles. Protected manually updated descriptions are not overwritten merely by repeating collection.
+- Metadata/process effects: descriptive wording does not rewrite native permission; ownership/requestability can affect configured processes and are not inherently cosmetic. Owner change does not grant membership or prove existing-work rerouting.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

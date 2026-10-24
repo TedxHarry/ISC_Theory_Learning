@@ -1,0 +1,17 @@
+RecordsVault Production / S-102
+
+Account rv-100202
+  groups: [G-6202]
+              |
+              | linked type: groups
+              | matching source value
+              v
+Group schema SC-102
+  identityAttribute: groupKey
+  displayAttribute: label
+              |
+              | describes source objects
+              v
+ISC entitlement E-102
+  source value: G-6202
+  displayed: Case Review Readers

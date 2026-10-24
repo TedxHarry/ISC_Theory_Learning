@@ -3895,6 +3895,62 @@ Official cloud documentation may use Identity Services or Human Fabric names; th
 
 Author review checked first-use meanings, person/account/group identifiers, correct conditional scope, source/type/ID/name linkage, exact diagram equality and narrow width, case independence, cause-based correction and source placement. Real beginner read-through, teach-back and transfer validation remain pending.
 
+## ENT-002
+
+Revision 1.0. Documentation checked October 24, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi employee100202, correctly associated RecordsVault Production accountrv-100202/groups[G-6202]. Source S-102, schema SC-102 and entitlement E-102 are expressly short teaching labels, not real tenant IDs or valid API values.
+- Supplied supported native type groups, account entitlement attribute groups/Multi-Valued/Typegroups; schema identityAttributegroupKey and displayAttributelabel. Selected sourcegroupfields groupKeyG-6202, technicalNamecase.review, labelCaseReviewReaders, descriptionReadassignedcasefiles/noediting.
+- Owner verifies same G-6202 object retains key, members and assigned-case-read/noedit permissions while label changes CaseReview to CaseReviewReaders. Current ISC record E-102/sourcevalueG-6202/newlabel and fresh accountmembership independently verified as example facts. No assertion that every connector rename preserves IDs or refreshes all views immediately.
+- Selected model field meanings: idE-102, nameCaseReviewReaders, attributegroups, valueG-6202, sourceSchemaObjectTypegroups, sourceS-102. No full API payload, request schema or endpoint version asserted.
+- Independent variations: APIexpectsISCentitlementID; verifiedrename; deletedG-6202/replacementG-9202 with no newmembership and oldpackagereference; invalididentityAttributeG-6202/no suchfield; displaytechnicalNameversuslabel correction; supportedgroups42versusroles42; protectedmanualdescription; changedowner for futureconfiguredowner-reviewrequests.
+- License transfer has supportedlicenserepresentation, nativeLIC-17, ISCteachingE-L17, identityfieldlicenseCode/displayfieldtitle, ReportEditor-to-ReportAuthor with samecapabilities/key/record/holding verified. SeparateLIC-29 has differentfeatures and needs its own requirement/references/fulfillment review.
+- No actual tenant/API/source/schema/aggregation/provisioning/metadata/owner/application permission or target operation performed.
+
+### Official sources and claim mapping
+
+1. [Entitlement model, official Angular SDK](https://developer.sailpoint.com/docs/tools/sdk/angular/entitlements/models/entitlement/): distinct id/name/attribute/value/sourceSchemaObjectType/source fields, source attributes, accessModelMetadata and manual-update map. Mapped to record-context explanation and metadata distinction. These are selected model meanings, not a complete payload, API request shape, universal UI labels or a claim all fields are required.
+2. [Schema model, official Angular SDK](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/schema/): schema id, nativeObjectType, identityAttribute and displayAttribute. Mapped to schema-record ID versus selected field versus individual object's value. No identityAttribute/person-correlation equivalence.
+3. [Creating and managing entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html): supported native type, schema ID/name selections and duplicate risk after changing them; account Type linkage and primitive-versus-related type distinctions. Mapped to types, relational diagram and controlled identification/display change. No unsupported custom type inferred from a friendly category and no guarantee display changes are risk-free.
+4. [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): entitlement attribute designation, multiplicity and linking source values with selected entitlement ID. Mapped to accountgroups[G-6202] and same-source/type contract. Both account attribute and native type are groups here, satisfying same-name and explicit Type linkage conditions together.
+5. [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html): represented access, names/descriptions/owner/requestability, supported source collection and manual-field protection. Mapped to metadata purposes, source versus locally maintained display text, stale-description investigation and case7. No actual manual-update property spelling imposed; document prose and interface model can differ. No universal metadata-to-native-permission write.
+6. [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html): separate account memberships and entitlement details. Mapped to collection explanation and value-to-object relationship; no label collection implies membership creation.
+7. [Managing access model metadata](https://documentation.sailpoint.com/saas/help/access/metadata.html): managed default/custom metadata for access objects. Mapped to organization-defined context versus collected source attributes and native permissions. No arbitrary custom classification treated as an enforcement rule or required project feature.
+8. [Configuring entitlement access requests](https://documentation.sailpoint.com/saas/help/requests/config_entitlements.html): requestable items and configured entitlement-owner review. Mapped to request setting and future owner-routing case. No claim a changed owner receives the entitlement or already-created requests automatically reroute.
+9. [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) and [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html): same-source profile bundles, role access groups and entitlement references. Supporting replacement-impact questions and distinct access-model type meanings. No bulk migration algorithm, removal propagation or broader assignment behavior assumed.
+10. [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): account-to-identity association. Mapped to the brief independent supporting definition; not confused with identifying an entitlement object.
+11. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): changing external access and source/configuration dependence. Mapped to reading a changed label versus delivering a new membership. No real grant or guaranteed connector-write support asserted.
+
+Official cloud documentation may use Identity Services or Human Fabric names; course retains ISC. SDK source models are primary reference definitions, not IdentityIQ implementations. Source references remain author-only.
+
+### Scope and rendering boundaries
+
+- Primary coverage is identifiers, display selections, types and metadata. Full catalog reconciliation/freshness is reserved for10.3/10.6, inherited access10.4 and sensitivity/ownership design10.5. Supporting explanations remain self-contained.
+- Two editable text diagrams exactly match assets/ENT-002_identifiers_schema_and_membership.txt and assets/ENT-002_verified_rename_and_replacement_boundary.txt, maximum40/39columns. First is relational, not a hidden backend sequence. Second compares supplied verified before/after records, not a universal rename-state guarantee.
+- Two two-column tables compare values/record jobs and metadata/evidence limits. Eight cases each supply Facts and Reasoning; license transfer changes object kind while preserving the reasoning task.
+- Qualified source/type-or-attribute/value is an investigation discipline, not an asserted internal database uniqueness/deduplication key. No permanent/reusable native identifier or cross-environment ISC ID portability promise.
+- Schema-field selection changes are not a workaround for friendly labels. Display correction still requires supported controlled verification; ID/name changes can duplicate records. Native-group replacement cannot silently migrate references/memberships.
+- Manual description protection and maintenance authority are distinguished from failed collection. Owner/requestability can affect configured processes, while description/classification does not itself rewrite target permissions.
+- Keep all prior73lessons, assets/reference aids, templates/CSS/tests/specification byte-equivalent. ENT-003 remains a plan without a learner stub. Working edition has74lessons/10modules.
+
+### Assessment and acceptable alternatives
+
+| Item | Understanding tested | Misconception or unsupported alternative rejected |
+|---|---|---|
+| Case1 | Receiving operation determines identifier kind; actual retrieved ID needed | Nativevalue can replace ISC ID; teaching labels are valid tenant inputs |
+| Case2 | Verified same-object rename retains supplied membership/permissions | Any new name demands another grant |
+| Case3 | New native object and old stored reference require approved replacement review | Same label automatically migrates package references/memberships |
+| Case4 | Schema field selector versus one record's identifying value | identityAttribute should contain G-6202 |
+| Case5 | Display need versus identification contract; both require controlled verification | Choose label for ID too because it is readable, or display changes are universally harmless |
+| Case6 | Source/type context distinguishes equal raw values | Rawvalue42 alone identifies the right access item |
+| Case7 | Manual-update protection and intended metadata authority | Old text proves source read never occurred or repeated aggregation must overwrite it |
+| Case8 | Configured future-owner routing versus native access/existing work | Ownership is purely cosmetic, grants access or automatically reroutes old requests |
+| License transfer | New display value versus distinct license/capability replacement | Newtitle implies newgrant, or LIC-29 is equivalent solely because replacement is desired |
+
+Author review checked independent context, first-use meanings, field/value/record distinctions, supplied continuity evidence, conditional source behavior, case/diagram agreement, narrow width and no body citations/meta-announcements. Real beginner read-through, teach-back and unfamiliar-example validation remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
