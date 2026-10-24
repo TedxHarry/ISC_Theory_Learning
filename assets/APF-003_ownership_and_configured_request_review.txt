@@ -1,0 +1,22 @@
+Request for AP-3303
+|
+v
+Configured chain in this example:
+Manager
+  |
+  | approves
+  v
+Primary Owner: Leela
+  |
+  | approves
+  v
+Continue toward access delivery
+
+Different configured option:
+All Owners: Leela or Anil
+  |
+  | either one approves
+  v
+Continue toward access delivery
+
+Ownership alone starts neither path.

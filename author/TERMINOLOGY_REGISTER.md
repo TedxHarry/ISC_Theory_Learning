@@ -527,6 +527,21 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Definition correction versus existing holder correction: removingapproverfromprofiledoesnotproveoldnativegrantremoved; controlledpopulation/history/removalverification is separate.
 - Native account scope: ordinaryreader pluscreator/license onanotheraccount cannot satisfyper-accountnativeANDcondition; no ISCcrossaccountdetectionalgorithm asserted.
 
+### APF-003 profile meaning, ownership and control boundaries
+
+- Profile name/description: human-readable package purpose, actions, native resource scope, environment, exclusions and intendeduse, justified by exact references and current native permissions. Not recipient-selection rules, native queue restrictions or grants.
+- Profile identity: ISC record ID distinguishes supplied sameobject rename from replacement, even when names coincide. Teaching AP-3303/E-3301/E-3302 are not API ID syntax.
+- Primary/additional profile owners: identity and optional additional identity/governancegroup references; accepted organizational accountability distinct from native membership, ISC adminpermissions and actual configured workassignment.
+- Governance group: ISC group for configured governance work, not native application permissiongroup; maintain membership because identity disabled/lifecycleinactive does not automatically update it.
+- Profile owner versus entitlement owner/source responsibility/manager: bundle accountability versus individualright/systemintegration/workneed responsibilities; one person may hold multiple roles without collapsing their meanings.
+- Manager/PrimaryOwner chain: supplied explicit ordered profile-request reviewers, Manager is recipient's manager. Ownership alone does not insert stages.
+- All Owners: any one primary/additional owner can approve that stage, not unanimity. Other required stages remain separate.
+- Profile-request approval scope: role requests use their own approval; automatic role/lifecycle routes do not invoke profile-request approval. Local approval off does not prove global approval off. Certifications and manualtasks have their own assignments.
+- Definition versus native meaning: same entitlementreference can represent changed native capability; maintained wording must be rechecked. Description cannot remove export or implement eligibility.
+- Ownership handover: accepted responsibility/reference/control review plus actual pendingwork/authorizedreassignment verification, not promised retroactive taskmigration.
+- Definition correction versus old grants: removing EH-3399reference does not itself revoke existing native membership; need/history/authorizedremoval/result separate.
+- Meaningful bundle boundary: coherent complete task within one source, distinct work/data/environment/risk where justified; department/owner difference alone not entitlementneed evidence.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

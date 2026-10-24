@@ -1,0 +1,16 @@
+Profile AP-3303
+|
++-- Name and description
+|   Explain purpose and limits
+|
++-- Source and entitlement references
+|   EvidenceHub Production
+|   E-3301 -> group EH-3301
+|   E-3302 -> group EH-3302
+|
++-- Primary owner: Leela
+    Accountable for this package
+
+Separate native application checks:
+account rights + assigned queue
+Not taken from description text.

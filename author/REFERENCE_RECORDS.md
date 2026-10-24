@@ -4287,6 +4287,64 @@ IndependentEast/Westlicensechoicecase listsbothwithnoactualselector, same-nameTe
 
 Reviewed for independent Devi context, first-use meaning, useful designjudgment, connectedcause/effect, currentrecordconsistency, readablementorvoice, alternatives/missingevidenceanswers andno learner-body references orcourse-methodcommentary. No unresolved author content issue identified within scope. Full ownerconfiguration/change/detection/removal treatment remains in later Module11lessons; necessary supporting meanings and caveats are explained here. Real learner validation and formal approval remain pending.
 
+## APF-003
+
+- Current lesson: [APF-003](../lessons/APF-003_Names_Descriptions_Owners_and_Bundle_Boundaries.md), revision 1.0, Module 11.3.
+- Documentation checked: October 24, 2026. These sources support scoped current product mechanisms; no earlier lesson verification dates are renewed.
+- Documentation-based author review: complete within scope. Real learner validation and formal publication review/approval: pending.
+- No actual tenant/API/source/aggregation/processing/provisioning/profile/request/approval/ownership/reassignment/native permission or target operation performed.
+
+### Fictional work, ownership and native contract
+
+EvidenceHub Production and separate Test source, Devi110303/eh-110303 only Production account, correctly associated identity and assignedqueueWest. Native group EH-3301 CaseReaders permits assignedqueue read; EH-3302 ReviewNotes permits notes with reader, not evidence change/deletion; EH-3399 BulkExport permits allqueues export and is excluded. Enabledaccount/successfulsign-in prerequisites. Standingaccess; supplied supported fictional integration collects/assigns groups. E-3301/E-3302/AP-3303 are teaching labels, not real ID syntax/API payloads. Native rules are not an ISC permission engine.
+
+Case support becomes EvidenceHub | Case review | Production, same supplied ID/reference continuity; description intendeduse/exclusions/queue dependency are justified by the fictional native contract. West is account scope, not intrinsic group restriction or description-derived eligibility. Leela primaryowner/Anil additionalowner have accepted organizational responsibility; Leela has no app account. Manager-then-PrimaryOwner chain and alternative AllOwners-anyone are independent configured examples, not universal delivery sequence.
+
+ChangednativeEH-3301 export case, oldEH-3399 grant after definition repair, pending item stillassignedLeela after primaryownerAnil handover are supplied observations. No general retroactive assignment/rerouting contract asserted. Additionalgovernancegroupmembership maintenance scoped to documented lifecycle/disable behavior. Transfer reporting source compares regional summaries versus allregiondetailexport and responsibleownership versus integrationcontact; jobtitle alone neither mandates nor prohibits owner assignment.
+
+### Primary source claim map
+
+| Official reference | Claims and limits checked |
+|---|---|
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Source-specific related bundles; descriptive unique names, descriptions and identity primaryowner/additional identities or governancegroup; names/descriptions visible in requests/approvals/certifications. Relevant processing for access-model changes; removing definition entitlement does not revoke existing grants. Avoid UI/API source-immutability conflict, arbitrary fieldlimits, JIT-generalized removal, universal propagation/overlap rules or saved-wording-as-nativechange. |
+| [AccessProfile model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | Separate id/name/description/owner/source/entitlements/requestconfiguration/additionalowners. Supplied sameID rename continuity checked independently, not name-as-key. No executable payload or universal requestability default. |
+| [Entitlement model](https://developer.sailpoint.com/docs/tools/sdk/angular/entitlements/models/entitlement/) | Native value/source context versus ISC record/reference; profile labels do not rewrite referenced native capabilities. All example permissions verified only as fictional contract. |
+| [Profile request configuration](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Explicit Manager/PrimaryOwner/AdditionalOwners/AllOwners reviewer configuration, Manager is recipient's manager, AllOwners accepts anyone rather than unanimity, ordered stages; global approval may apply when local disabled. Role request uses role approval; automatic role/lifecycle delivery does not invoke profile-request approval. No certification/manual-task routing inferred from this chain. |
+| [Governance groups](https://documentation.sailpoint.com/saas/help/common/users/governance_groups.html) | ISC governance decision group distinct from native permissiongroup; maintain membership, lifecycle inactive/identitydisabled does not automatically update it. No blanket missingowner fallback inference or claim all work retroactively reroutes. |
+| [User level permissions](https://documentation.sailpoint.com/saas/help/common/users/user_levels.html) | ISC administrative permissions are separately configured; profile ownership is not an automatic OrgAdmin or native membership grant. No exhaustive adminmatrix taught. |
+| [Access model metadata](https://documentation.sailpoint.com/saas/help/access/metadata.html) | Contextual metadata on access profiles; fictional Audience value is descriptive without an actual consuming control. No invented built-in eligibility rule from text or tag. |
+| [Entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Entitlement-level owners, meanings and metadata separate from native rights and package accountability. Do not transfer manuallyprotected entitlementdescription behavior to profile descriptions. |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Broader ISC roles can include source-specific profiles; source boundary remains. No nestedprofile or automaticrequestapproval inheritance. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Organizational stage can have configured accessrequirements; short supporting meaning before contrasting profile-request route. No full LCS mechanics asserted. |
+| [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Evaluation against configuration distinct from record save and final target state; no claim every name/owner edit generates nativewrite or needs specific synchronous processing order. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Exact account/source/operation/result and manual-task reassignment evidence; reportedcompletion separate from current application evidence. |
+| [Approvals administration](https://documentation.sailpoint.com/saas/help/requests/approvals_admin.html) | Inspect actual assignees/pendingrequest and use authorized supported reassignment; no promise ownerfield retroactively changes all tasks/campaigns. |
+| [Understanding certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html) | Review of existing access distinct from new accessrequest; actual configured reviewers required, no profile-request-chain reuse claim. |
+
+### Diagrams and publication checks
+
+- [Profile meaning, references and native limits](../assets/APF-003_profile_meaning_references_and_native_limits.txt): exact inline source, maximum37columns. Relationship branches, not backendexecutionorder. E-to-group arrows mean representedaccessitem; applicationchecks independent of description.
+- [Ownership and configured request review](../assets/APF-003_ownership_and_configured_request_review.txt): exact inline source, maximum36columns. Main Manager-then-Leela chain versus independent alternativeAllOwners LeelaORAnil; positiveapprovalarrows and continuationtowarddelivery, not completednativegrant.
+- Two two-column tables cover native capabilities and evidence/claimlimits.
+- Preserve prior80lessons, all previous assets/templates/CSS/tests/specifications and both reference aids. APF-004 remains planned without stub.
+- Verify all81routes, eleven-module defaults/current/orderedlinks, exact completearticle/twodiagrams/twotables/assets, adjacentAPF002/003links and exactcommit Pagesbuild. Visual publication checks are distinct from source checks and beginner validation.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Described versus enforced boundary | Text cannot set nativequeue or recipients; verify actualrules and correct wording/design | West-only wording enforces accessscope | Profilemodel; metadata; fictionalqueuecontract |
+| Case 2 | Owner versus member | Responsibility alone no account/grant; separate justified assignment if needed | Owner automatically receives nativeaccess | Model; userlevels; fictionalnoassignment |
+| Case 3 | Owner metadata versus actual chain | Manager-only supplied chain does not gain Leela/Anil stages | Every owner is automatically an approver | Requestconfiguration |
+| Case 4 | AllOwners semantics | Anil's approval satisfies this stage; explicitly configure separate required decisions | AllOwners means unanimous | Requestconfiguration |
+| Case 5 | Rename identity and change evidence | Same AP-3303 with unchanged references shows supplied record edit, not nativegrant; traceID | New label implies new package or delivery | Profilemodel; fictionalcontinuity; monitoring |
+| Case 6 | Native meaning changes under same reference | Recheck native export/holders/package and wording; editactualdesign not labelonly | Unchanged list proves unchanged capability | Entitlementmodel; fictionalnativechange |
+| Case 7 | Owner handover versus pendingwork | Inspect actual assignment; authorized supportedreassignment/confirmation | New owner retroactively receives every old task | Approvalsadministration; monitoring |
+| Case 8 | Definition correction versus holder correction | Old EH-3399 grant needs separate need/history/authorizedremoval/nativeverification | Removing reference revokes oldgrant | Profileediting; processing; monitoring |
+| Reporting transfer | Meaningful boundaries, accountability and controls | Distinct purpose/scope names and verified contents; accepted appropriate owner; configureddecision/delivery checks. Engineer may hold both responsibilities if justified | Same department means samepackage; technician automatically businessowner; title categorically forbids ownership | Profiles; model; requests; fictionalwork/rights |
+
+Reviewed for independent context, first-use meanings, connected cause/effect, accountableownership rather than owner-as-magic, nativecapability and recipient-control distinctions, changed-condition cases, missing-evidence answers and polite mentor voice. No learnerbody citations, meta-teaching promises or unsupported private internals. No unresolved author content issue identified within scope. APF-004 covers enabled/requestable/automaticassignment in depth; no stub authored. Beginner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

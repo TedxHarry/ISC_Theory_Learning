@@ -613,3 +613,10 @@ lessons:
     source: "lessons/APF-002_Grouping_Related_Entitlements_from_One_Source.md"
     url: "/lessons/APF-002_Grouping_Related_Entitlements_from_One_Source.html"
     description: "Design coherent single-source bundles using exact entitlement references; distinguish dependencies, alternatives, exclusions and native resource conditions, then verify the right outcome."
+  - id: APF-003
+    module: access-profiles
+    placement: "Module 11.3"
+    title: "What should a profile's name, description and owner tell you?"
+    source: "lessons/APF-003_Names_Descriptions_Owners_and_Bundle_Boundaries.md"
+    url: "/lessons/APF-003_Names_Descriptions_Owners_and_Bundle_Boundaries.html"
+    description: "Make a bundle's purpose, native boundaries and accountability clear; distinguish descriptions from controls, owners from configured reviewers, and handover from pending-work reassignment."
