@@ -280,7 +280,7 @@ Separate entitlement aggregation can collect access items that no account curren
 
 ### Module 11. How should access profiles be designed?
 
-- 11.1 The problem an access profile solves.
+- 11.1 [The problem an access profile solves.](lessons/APF-001_The_Problem_an_Access_Profile_Solves.md) **Authored:** APF-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 11.2 Grouping related entitlements from one source.
 - 11.3 Choosing names, descriptions, owners, and sensible boundaries.
 - 11.4 Enabled access, requestable access, and automatic assignment.

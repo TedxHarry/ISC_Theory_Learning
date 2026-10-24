@@ -4173,6 +4173,63 @@ TransferL-706Standard/edit-export/zeroaccounts/approvednextmonthproject andL-709
 
 Reviewed for contextual first-use meanings, independent Devi context, observed-versus-inferred reasoning, acceptable missing-evidence answers, personal plain-language mentorship, no learner-body source links or course-method commentary. No unresolved author content issue identified within scope. Real learner testing and formal publication approval remain pending.
 
+## APF-001
+
+- Current lesson: [APF-001](../lessons/APF-001_The_Problem_an_Access_Profile_Solves.md), revision 1.0, Module 11.1.
+- Documentation checked: October 24, 2026; current official pages/models below consulted for the scoped mechanisms. Earlier lesson verification dates are unchanged.
+- Documentation-based author review: complete within stated scope. Beginner validation and formal publication review/approval: pending.
+- No tenant/API/source/aggregation/identity processing/provisioning/profile/request/approval/credential/native access or target operation was performed.
+
+### Example contract and boundaries
+
+ReceiptWorks Production/rw-110101 is Devi110101's only account on the source and is correctly associated with her identity. Application team confirms RW-1101InvoiceReaders assignedbusinessunitread, RW-1102InvoiceDraftEntry requiresreader forcreatedrafts, RW-1199paymentreleaseexcluded. Invoiceintake referencesfirsttwo/fromonesource; reference labels/nativekeys are illustrative, not executedISCAPIIDs/payload. Only standing entitlement delivery/removal is illustrated; separateactivation-basedaccess not included.
+
+Configuredenabled/requestable/profilemanagerapproval andsupportedsourcewrite are explicitassumptions. UTC10:00saveddefinition/readeronly,10:10approval,10:12RW-1102writecredentialrejection,10:15currentreaderonly/readdraftdenial. Laterapprovedcredentialpermissioncorrection/supportedretry/currentbothgroups/draftallowed/paymentdenied are suppliedfictionalobservations, no fixedlatency/atomicity/rollbackguarantee or automaticretryalgorithm.
+
+Independent variation: bothgroupspreexist/collectedcurrent/enableddefinitionapplied/processingdetectsprofile, notnewgrantorapproval; partialsetdetectiondoesnotcompleteaccess. CrosssourceDocumentStore component versus sourceboundary, validenablednonrequestableautomaticrole configuration, disableprofilelabelremovalwhilemembershipsremain. DesignHub single-source ReportAuthors+Editorlicense forprojectreports, noapprovedgrant/automaticrequirement, licensecapacityconditional; crosssourcevariant requiresseparatecomponents. No actual licensepurchase/assignment or accesschange.
+
+### Primary source claim map
+
+| Official reference | Claims and limitations checked |
+|---|---|
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Full-set detection during processing, owner responsibility/configured review, enabled versus requestable, automatic multiple-account selection, standing profile disable/delete and entitlement-list edits not assumed native revocation. Removal overlaps/assignment origins explicitly need exact documented path; no generic reference-count model. UI source-immutability versus newer API mutation differences are not taught as an absolute. |
+| [AccessProfile model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | Distinct ID/name/owner/source/entitlement-reference/enabled/requestable fields; nonempty enabled bundle and one-entitlement possibility. Model/API requestable defaults have Request Center/version conditions; lesson does not teach a universal API default or executable payload. |
+| [Access-profile requests](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | One request for related entitlements on one source, configured request route and approvals, native delivery separate from approval. Mainmanagerapproval is fictionalconfiguredchoice, notdefault. |
+| [Automatic role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Configured criteria select identities for automatic role assignment/provisioning; profile title/department wording alone is not selection logic. No universal criterion/population or account-selection algorithm asserted. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Organizational stage and configured profile requirements; active does not inherently mean invoice-intake. No new lifecycle implementation/defaults or universal removal contract inferred. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Identity-creation source/population, identity-value mappings and lifecycle configuration are not an access-profile bundle. Supporting contrast only, not a full identity-profile configuration lesson. |
+| [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Relevant processing applies new/changed configurations and reevaluates access; Save is not appliedidentity/deliveredsourceoutcome. No undocumented order, latency or one-row global isolation claim. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supported targetaccount/access changes and separate configuration/credential requirements; mainaccountpreexists, no newaccount/activation behavior promised. Connection support alone does not establish current operation success. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Scoped source/account/operation/error/native outcome evidence, activity and manualtasks. RejectedRW-1102write plus readerpresent is partialdesiredstate, not proof rollback/all-or-nothingcompletion. |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Broader business requirement can contain access profiles/entitlements; source-specific components can participate in wider role. No detailed role propagation/overlap deletion procedure. |
+| [Access applications](https://documentation.sailpoint.com/saas/help/access/app-config.html) | ISC request grouping/password-management configuration is distinct from native application, connector and entitlement membership. No application-object prerequisite asserted for everydirectprofile request. |
+| [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html) | Aggregation supplies access representations to ISC; collected versus current native state distinguished. Detection is not taught as live application authorization. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Source access rights and profile composition; grouppermissionmeaning/scoperequiresnativeevidence, descriptiondoesnotenforceexclusions. FictionalAND/dependency/unit/releasepolicy notclaimedISCpermissionsengine. |
+
+### Diagrams and publication checks
+
+- [Access profile and native groups](../assets/APF-001_access_profile_and_native_groups.txt): exact inline source, maximum36columns. ISCsource/entitlementreferences distinctfromnativeaccountmembership/applicationrule; notnewnativegroup orprocessingsequence.
+- [Request, delivery and detection paths](../assets/APF-001_request_delivery_and_detection_paths.txt): exact inline source, maximum34columns. Conditional approveddelivery and separatelyidentifieddetection route; notmandatorytwo-phasebackendorder or guaranteednewwrites.
+- One two-column evidence table separates definition/enabled/requestable/approval/native membership/capability conclusions. Verify accessible scroll region and complete text in intended publication.
+- Add eleventh navigation module only through data; preserve prior78lessons, allpreviousassets/templates/CSS/tests/specifications andbothreferenceguides. APF-002 remainsplannedwithoutstub.
+- Verify all79routes, elevenindependentmodule disclosures/current/defaults/orderedlinks, exactfullarticle/twodiagrams/onetable/assets andadjacentENT006/APF001links. Source checks, author review and deployment do not establish actual beginner understanding or formal approval.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Definition versus recipient/grant mechanism | Savedsource/contentscanbecorrectwithoutaccesschange; identifyapprovedgrantmechanism, notfillallincompleteaccounts | Save assigns everyone/missingnativewriteprovesSavefailed | Model; requests; role/lifecycle; processing |
+| Case 2 | Useful package versus excessive contents | CompareRW-1199releasewithintakework, controlleddesignreview/holderinvestigation; wordingnotnativecorrection | Familiarbundlelabeljustifiesextra rights | Fictionalpolicy/workneed; entitlements/profiledefinition |
+| Case 3 | Approval versus rejected delivery | Requiredcredentialpermission/exactoperation explains suppliedfailure; authorizedcorrection/recovery andnativeverification, notmoreapproval orguessedrollback | Oneapprovedpackageisatomiccompletedaccess | Provisioning; monitoring; fictionalobservations |
+| Case 4 | Existing-set detection versus historical grant/approval | Detectionexplainsholding; inspecthistory/continuingneed ratherthanassertISCcreatedmemberships | Detectedprofileprovesapprovedprofile request | Access profiles; collectedevidence |
+| Case 5 | Full-set detection versus completion rule | Onlyreaderdoesnotsatisfyprofile; businessneed/separatequalifiedgrantrequired | Detectiongrantsmissingentitlements | Access profiles |
+| Case 6 | Source boundary versus shared job | DifferentSourceDocumentStore modeledseparately, broaderroleifappropriate | Onejoballowscrosssourceprofile | Requests; model; roles |
+| Case 7 | Enabled versus direct requestability | Validsupportednonrequestableautomaticrole path doesnotrequiredirectrequestroute; inspectrole/configuration/processing/delivery | Requestablemustbeonforallgrantmechanisms | Access profiles; model/versionconditions; role assignment |
+| Case 8 | Disable association versus native deprovision | Standingmembershipsremainingconsistent; useapprovedassignment/removalpathandtargetevidence | Missingprofilelabelprovesnativeaccessrevoked | Access profiles enabling/disabling |
+| Permission/license transfer | Meaningfulmixedtypeonesourcebundle and deliverydependencies | Nameexplainsrelatedrights, noautomaticmissinglicensegrant; confirmneed/supportedroute/capacity/accountfeatures; crosssourcevariantseparate, existingfullsetcanbedetected | Profilecreationdeliverseveryright orsamejoberasesboundaries | Model; requests; access profiles; fictionallicense/reportcontract |
+
+Narration reviewed for independent Devi context, first-use meanings, practical cause/effect and no learner-body source links, course-method promises or unnecessary biography. Detailed grouping, ownership/configuration, detection, change propagation and removal treatment remains scoped to the subsequent Module11 lessons; necessary distinctions are taught here. No unresolved author content issue identified within current scope. Learner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

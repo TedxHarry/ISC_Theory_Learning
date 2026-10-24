@@ -1,0 +1,21 @@
+Request for Invoice intake
+             |
+             v
+Configured approval decision
+             |
+       if approved
+             |
+             v
+Supported account-access delivery
+             |
+             v
+Check memberships and capability
+
+Separate detection path:
+Current collected entitlement set
+             |
+             v
+Identity processing finds full set
+             |
+             v
+Access profile recorded as held

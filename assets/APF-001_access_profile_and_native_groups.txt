@@ -1,0 +1,17 @@
+ISC access profile: Invoice intake
+|
++-- source: ReceiptWorks Production
+|
++-- entitlement references
+    |
+    +-- RW-1101: Invoice Readers
+    |
+    +-- RW-1102: Invoice Draft Entry
+
+Native account: rw-110101
+|
++-- group memberships
+    -> application permission rules
+
+Profile references are not
+a new native parent group.

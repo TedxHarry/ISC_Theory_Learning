@@ -19,6 +19,8 @@ modules:
     title: "9. When does ISC reevaluate an identity?"
   - id: entitlements
     title: "10. What does an entitlement mean?"
+  - id: access-profiles
+    title: "11. How should access profiles be designed?"
 lessons:
   - id: SYS-001
     module: system
@@ -597,3 +599,10 @@ lessons:
     source: "lessons/ENT-006_Investigating_Unknown_Stale_or_Poorly_Described_Entitlements.md"
     url: "/lessons/ENT-006_Investigating_Unknown_Stale_or_Poorly_Described_Entitlements.html"
     description: "Investigate exact entitlement identity, collection scope, linkage and field authority; distinguish unused access from retired objects and verify controlled corrections at the right layer."
+  - id: APF-001
+    module: access-profiles
+    placement: "Module 11.1"
+    title: "Why give a set of entitlements a name?"
+    source: "lessons/APF-001_The_Problem_an_Access_Profile_Solves.md"
+    url: "/lessons/APF-001_The_Problem_an_Access_Profile_Solves.html"
+    description: "Explain why a single-source entitlement bundle is useful; distinguish its definition, grant routes, requestability, detection and verified native access."

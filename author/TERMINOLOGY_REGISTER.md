@@ -500,6 +500,20 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Correction layer and evidence: collection, metadata, account membership and sharedpermissiondefinition are different targets. Uncertainty needs an accountable next check/risk handling; neither automaticapproval nor unreviewed broaddeletion follows.
 - Stable membership/emptyholderlists versus license definitions: L-706/L-709 identical Standarddisplay does not make them duplicates; approvedfutureuse and nativefeatureboundary need separate evidence.
 
+### APF-001 access-profile purpose and evidence boundaries
+
+- Access profile: named related entitlement bundle from one ISC source; enabled profile has at least one entitlement. References do not merge native objects, create a native parent group or change application permission semantics.
+- Meaningful bundle: InvoiceintakeRW-1101+RW-1102 supports assignedunitread/draftentry; RW-1199paymentreleaseexcluded. Similarjob/name/existingcolleagueaccess does not justify broader rights.
+- Definition versus assignment: saved contents/source/owner do not choose recipients or grant missing rights. Assignment origin matters; request, role/lifecycle requirement and full-set detection are different mechanisms.
+- Enabled/requestable: supported access-model use versus availability of configured direct request route; neither is approval, recipient selection or native delivery. Tenant request experience/API conditions remain explicit.
+- Standing access: granted entitlements delivered without a separate just-in-time activation; examples exclude activation-based delivery/removal.
+- Detection: relevant processing recognizes the full collected entitlement set, not a new approval or proof that ISC created native memberships; partialset does not cause detection to grant missing items.
+- Provisioning evidence: approvedrequest can precede rejectedmembershipwrite and partialexistingnativeaccess. No universal atomicity, rollback or time guarantee.
+- Identity profile versus access profile: identity population/source/value/lifecycle configuration versus named source-entitlement bundle; shared word profile does not make them interchangeable.
+- Source boundary: one source per profile, not necessarily one human-recognizedapplication; broader role can combine source-specific components. Access application/request organization is not native software/connector/group.
+- Account and configuration scope: mainoneaccountunambiguous; automatic multipleaccountcriteria/relevantprocessing are separate dependencies, not inferred from bundle name or Save.
+- Removal caveat: disabling/deleting standing profile or editing its entitlement list does not itself prove native revocation; assignment/removal operation and overlaps must be investigated, not genericsharedgrantpreservation.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).
