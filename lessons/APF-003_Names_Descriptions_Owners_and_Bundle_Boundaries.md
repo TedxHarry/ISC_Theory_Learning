@@ -42,7 +42,7 @@ Those facts let us explain both the package and its limits. Membership supplies 
 
 A useful name helps a person distinguish this package from nearby choices.
 
-Compare **Case support** with **EvidenceHub | Case review | Production**.
+Compare **Case support** with **EvidenceHub \| Case review \| Production**.
 
 The second name identifies the system, the work and the environment. The separators are a naming convention for this example, not required ISC syntax. Choose a consistent convention that helps your organization distinguish real choices.
 
@@ -217,7 +217,7 @@ If the desired task also needs another source, do not disguise that cross-source
 
 ## When something changes, identify which layer needs attention
 
-Suppose the team renames **Case support** to **EvidenceHub | Case review | Production**, corrects the description and records a replacement owner.
+Suppose the team renames **Case support** to **EvidenceHub \| Case review \| Production**, corrects the description and records a replacement owner.
 
 The profile's ISC ID identifies the existing record. Check that ID when tracing the rename; do not treat the changed display name as proof that a new package was created. Conversely, a newly created profile with the old name is not automatically the same object.
 

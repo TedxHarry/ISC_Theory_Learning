@@ -4326,6 +4326,7 @@ ChangednativeEH-3301 export case, oldEH-3399 grant after definition repair, pend
 - [Profile meaning, references and native limits](../assets/APF-003_profile_meaning_references_and_native_limits.txt): exact inline source, maximum37columns. Relationship branches, not backendexecutionorder. E-to-group arrows mean representedaccessitem; applicationchecks independent of description.
 - [Ownership and configured request review](../assets/APF-003_ownership_and_configured_request_review.txt): exact inline source, maximum36columns. Main Manager-then-Leela chain versus independent alternativeAllOwners LeelaORAnil; positiveapprovalarrows and continuationtowarddelivery, not completednativegrant.
 - Two two-column tables cover native capabilities and evidence/claimlimits.
+- Escape literal vertical bars in example profile names: this site's Kramdown renderer can otherwise interpret prose as extra tables. Recheck the live rendered table count and complete article, not only Markdown table delimiters.
 - Preserve prior80lessons, all previous assets/templates/CSS/tests/specifications and both reference aids. APF-004 remains planned without stub.
 - Verify all81routes, eleven-module defaults/current/orderedlinks, exact completearticle/twodiagrams/twotables/assets, adjacentAPF002/003links and exactcommit Pagesbuild. Visual publication checks are distinct from source checks and beginner validation.
 
