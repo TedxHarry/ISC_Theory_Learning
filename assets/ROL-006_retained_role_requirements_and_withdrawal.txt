@@ -1,0 +1,24 @@
+Withdraw A's automatic assignment
+                 |
+B remains assigned to the same account
+                 |
+       +---------+----------+
+       |                    |
+Readers still required   Drafts not
+by B                     required
+       |                    |
+Retain Readers           Remove Drafts
+       +---------+----------+
+                 |
+       Readers + FollowUp remain
+                 |
+Read and follow up: allowed
+Edit drafts: denied
+
+Later: B also ends
+                 |
+No remaining stated requirements
+                 |
+Readers + FollowUp need removal
+                 |
+Verify each native outcome

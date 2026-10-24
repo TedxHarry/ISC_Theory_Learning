@@ -1,0 +1,17 @@
+Devi: two current role assignments
+                 |
+      +----------+----------+
+      |                     |
+A: Case preparer    B: Case follow-up
+      |                     |
+Profile AP-8601      Profile AP-8602
+Readers + Drafts    Readers + FollowUp
+      |                     |
+      +-- same E-8601 ------+
+                 |
+       Group CB-8601 Readers
+       on account cb-120606
+
+Four role-to-entitlement paths.
+Three distinct entitlement objects.
+One Readers membership on this account.

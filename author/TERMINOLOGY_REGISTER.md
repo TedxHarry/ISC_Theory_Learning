@@ -662,6 +662,21 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Effective dates/corrections: unused date fields create no time gate; partial records follow actual configured logic. Corrected data can support renewed automatic assignment, not erase prior operations or restore all native state.
 - Transfer: separate source removal/addition outcomes, no atomic no-gap/no-overlap promise or universal source execution order.
 
+### ROL-006 multiple roles, overlap and assignment origins
+
+- Overlap: same exact entitlement/source/type plus relevant same account target; labels or person-level union across separate accounts are insufficient.
+- Count levels: four role-to-entitlement paths, three distinct entitlement objects and one native Readers membership in the main case. No connector-call count or duplicate-membership inference.
+- Assignment origin: basis for a particular assignment, not the role's content or a reconstruction of original native approval. Current validity and account targets still need evidence.
+- Requested role versus requested profile: a profile inside an assigned requested role remains a role requirement; it is not independently held merely because a request authorized the role.
+- Retained-role requirement: withdrawal of A removes its unique DraftEditors requirement while current B retains Readers/FollowUp; another unassigned catalog role does not protect unique access.
+- Non-role profile contrast: explicit successful A profile revocation removes overlap, loses incomplete B profile and leaves unique FollowUp individually; applies to detected/provisioned origins, not a universal last-object algorithm.
+- Structural path versus external grant: direct entitlement reference inside a role remains governed by that role. Shared rights do not make roles inherit or nest each other's other contents.
+- Native evidence: positive retention basis, failed unique removal, successful earlier removal/later regrant and stale collected display are different explanations.
+- Origin-specific withdrawal: criteria/list maintenance versus specific requested-assignment revocation/expiry; role-held profile cannot be treated as independent direct-profile removal.
+- Lifecycle enforcement: required profile can return after actual removal while state remains; no undocumented all-origin priority list inferred.
+- Account/deletion and licensing: ending role entitlements does not delete/disable account or establish removal of unrelated native access. Retained Editor license is not a reclaimed paid seat; native assignment/capacity needs checking.
+- Scope: one main correlated account, enabled standard roles, standing entitlements; multi-account, unknown native history and JIT cases require actual supported evidence.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

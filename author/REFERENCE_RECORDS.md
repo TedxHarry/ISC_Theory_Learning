@@ -4713,6 +4713,34 @@ Editable diagrams: [identity change to role evaluation](../assets/ROL-005_identi
 
 No actual tenant/API/source/account/mapping/aggregation/processing/provisioning/role/list/request/review/revocation/credential/native task operation performed. Official documentation reviewed; no beginner read-through, independent transfer validation or formal publication approval. Sources remain author-only.
 
+## ROL-006
+
+Lesson: [One role was removed. Why does some access remain?](../lessons/ROL-006_Multiple_Roles_Overlapping_Access_and_Assignment_Origins.md). Revision 1.0. Documentation checked October 24, 2026.
+
+Primary sources and claim boundaries:
+
+- [Managing Roles](https://documentation.sailpoint.com/saas/help/access/roles.html): direct/profile role references, retained entitlements required by another assigned role, assignment versus shared-content changes, mixed automatic/requested holders, requested assignment details/account targets, source fulfillment and account-retention boundary. Main B is currently assigned and targets the same account; an unassigned catalog reference is not equivalent.
+- [Managing Access Profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html): single-source grouping, detection of complete holdings, role-held profile restriction, role overlap retention and explicit non-role profile overlap removal/loss of incomplete second profile with unique residual entitlements. Detected/provisioned origins do not change that stated non-role outcome. Standing/JIT activation scope differs from authorization origin.
+- [Automating Role Assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html): criteria/list bases, relevant processing and membership loss after current input changes. Main automatic policy uses fictional ServiceOps/CASE-PREP/working AND, not universal criteria.
+- [Requesting Access Removal](https://documentation.sailpoint.com/saas/user-help/requests/requesting_access_removal.html): requested role revocability, criteria/role-profile restrictions, exact assignment/account selection and applicable approval; submitted request is not native completion.
+- [Managing Requests for Roles and Access Profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html): role requests/target accounts, date configuration and role-versus-profile authorization distinction. No unperformed reviews or particular reviewer chain claimed for real tenant.
+- [Requesting Access](https://documentation.sailpoint.com/saas/user-help/requests/request_center.html): effective start/end dates, expiry initiating source deprovisioning/manual fulfillment, not instant native cutoff; main B authorization/current delivery/October30 end are supplied fictional records.
+- [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): applied identity/access recalculation separate from native write validation; no private execution order, connector-call count or latency inferred.
+- [Monitoring Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): per-source account action/result/error and manual-task evidence; distinct success/failure and native outcome verification.
+- [Loading Account Data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): account collection/history and observation freshness; pre-removal account record does not establish later native state.
+- [Setting Up Lifecycle States](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html): current lifecycle profiles are enforced while identity remains in the state; actual removal followed by later regrant differs from initial retention/failure. Main working state is Active with no lifecycle access requirement.
+- [Managing Entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html): source/type/access-object distinctions and standing/JIT access type; labels alone do not establish identical objects or native capability. CaseBridge dependencies and reporting licensing rules are fictional.
+
+Reasoning and assessment coverage:
+
+Main CaseBridge Production/Devi120606/cb-120606 is one correlated enabled/sign-in/North account. R-1206(A)/AP8601 requires E8601Readers+E8602DraftEditors; R-1266(B)/AP8602 requires sameE8601Readers+E8603FollowUp. E IDs identify teaching ISC objects; native groups use CB8601/8602/8603 keys, latter two requiring same-accountReaders. Four definition paths, three distinct entitlement objects, one native Readers membership; not four connector operations. Both standard/enabled/standing and provisioning supported, no other grants/current LCS requirements/concurrent changes. Aautomatic selector stops matching; BapprovedrequestedcurrentdeliveredthroughOctober30 17UTC. October28 Awithdrawal/Draftremoval success/native retained Readers+FollowUp are supplied, not observed tenant results.
+
+Cases 1-2 distinguish assigned-role retention from unassigned catalog references. Case3 tests unrelated native access and insufficient no-access evidence. Case4 tests exact source/object scope. Case5 contrasts successful non-role profile revocation and incomplete second profile. Case6 distinguishes correct retained B rights from failed unique Draft removal. Case7 tests expiry versus actual assignment/source evidence. Case8 tests multiple-account scope and accepts missing-evidence reasoning rather than fabricated native result. Paid-reporting-license transfer retains Editor through publisher role, removes DraftAuthors, preserves publishing and rejects inferred license-seat reclamation. Acceptable reasoning names exact assignments/accounts/requirements and verifies individual operations and native tasks.
+
+Editable diagrams: [role paths and shared account rights](../assets/ROL-006_role_paths_and_shared_account_rights.txt), 39 columns; [retained role requirements and withdrawal](../assets/ROL-006_retained_role_requirements_and_withdrawal.txt), 38 columns. Exact synchronized inline copies. Two two-column tables, eight cases and transfer reasoning checked. Diagrams describe references/required outcomes, not undocumented reference-count implementation, cross-account union or atomic operation sequence.
+
+No actual tenant/API/source/account/role/profile/list/request/review/aggregation/processing/provisioning/revocation/expiry/credential/license/native task operation performed. No universal all-origin priority/last-reference algorithm, duplicate native grant, nested role inheritance, account delete/disable or instant expiry claimed. Documentation-based author review only; beginner read-through, transfer validation and formal publication review/approval pending. Existing three reference guides preserved; their scopes are unchanged. Sources stay author-only.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

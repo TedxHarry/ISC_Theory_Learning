@@ -299,7 +299,7 @@ Removal behavior must be taught for the specific assignment mechanism. A general
 - 12.3 [Membership criteria and explicit membership.](lessons/ROL-003_Membership_Criteria_and_Explicit_Membership.md) **Authored:** ROL-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 12.4 [Automatic assignment and requested roles.](lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.md) **Authored:** ROL-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 12.5 [How identity-data changes affect role membership.](lessons/ROL-005_How_Identity_Data_Changes_Affect_Role_Membership.md) **Authored:** ROL-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 12.6 Multiple roles, overlapping access, and assignment origins.
+- 12.6 [Multiple roles, overlapping access, and assignment origins.](lessons/ROL-006_Multiple_Roles_Overlapping_Access_and_Assignment_Origins.md) **Authored:** ROL-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 12.7 Role changes, propagation, disabling, and removal implications.
 - 12.8 Avoiding excessive roles and designing manageable exceptions.
 
