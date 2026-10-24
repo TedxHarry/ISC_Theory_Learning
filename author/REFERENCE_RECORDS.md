@@ -4230,6 +4230,63 @@ Independent variation: bothgroupspreexist/collectedcurrent/enableddefinitionappl
 
 Narration reviewed for independent Devi context, first-use meanings, practical cause/effect and no learner-body source links, course-method promises or unnecessary biography. Detailed grouping, ownership/configuration, detection, change propagation and removal treatment remains scoped to the subsequent Module11 lessons; necessary distinctions are taught here. No unresolved author content issue identified within current scope. Learner validation and formal approval remain pending.
 
+## APF-002
+
+- Current lesson: [APF-002](../lessons/APF-002_Grouping_Related_Entitlements_from_One_Source.md), revision 1.0, Module 11.2.
+- Documentation checked: October 24, 2026. Current primary references below support the scoped product mechanisms; earlier verification dates are not renewed.
+- Documentation-based author review: complete within scope. Learner validation and formal publication review/approval: pending.
+- No actual tenant/API/source/schema/aggregation/processing/provisioning/profile/request/native access or target operation performed.
+
+### Fictional integration and permission contract
+
+OrderWorks Production/Devi110202/ow-110202onlyaccount inmaincase. Supportedfictionalconnector collects/assignsgroups, nativeroles andlicenses; these are not promiseduniversalconnectortypes. Nativekeysaretext: groups2201OrderReaders, roles2201DraftCreator, licenses2201DraftEditor distinctISCobjects labelledE-G2201/E-R2201/E-L2201; labelsnotrealAPIIDformats/payload. Accountfields/mappingsverifiedcorrect, source/type/reference distinctionexplicit.
+
+Native draft action requiresallthreeonthataccount plusenabled/successfulsign-in/orderinassignedbusinessunit. roles2299OrderApprover andgroups2298FullSupplierExportexcluded. This is suppliedapplicationpolicy, notISCpermissioncombiningengine, hiddenbackendorder ornativehierarchycreation. Mainbundleusesstandingaccess/noactivationstep; hypotheticalone-native-role sufficient onlyifverifiedrights/support/exclusions.
+
+IndependentEast/Westlicensechoicecase listsbothwithnoactualselector, same-nameTest/source distinction, DocumentStoreseparatesource, temporalreading/drafting andoverlapdesign caveats. Definitioncorrectionofoldapprover is notnativegrantremoval. Assignmentoriginsdefinedbeforedependentcomparison, no one-size-fits-allpropagation/removal. Case8twoaccountsusesper-accountnativepolicyonly, notassumedISCcrossaccountdetection. DirectorytransferDispatchDirectoryProductionD-25StockPortal+D-26ShipDesk requiredsamejob, D-29globaladminexcluded, ShipDeskAPIschedulingseparatesource; appconsumptionrequiresseparateevidence.
+
+### Primary source claim map
+
+| Official reference | Claims and limits checked |
+|---|---|
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Source-specific related bundles, one-entitlement possibility, role/lifecycle versus request/detection change behavior, removeddefinitionentitlement retainedindependently, source/assignment-dependent removal and multipleaccountresponsibilities. No source-immutability/API mutation rule, universal overlap preservation or native permission algorithm asserted. |
+| [AccessProfile model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | One source reference plus entitlement-reference list; enablednonemptybundle; references are entitlements, not nestedprofileobjects. No executableAPIpayload oruniversaldefaulttaught. |
+| [Entitlement model](https://developer.sailpoint.com/docs/tools/sdk/angular/entitlements/models/entitlement/) | Separate ISC ID, attribute/nativevalue, source/schemaobjecttype andname; repeatedtext2201 inthreefictionalnativekindsdoesnotmeanoneISCobject. |
+| [Entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html) | Multiple supportedsourceentitlementkinds/types and fieldconnection; mixedgroup/role/licensecontract explicitlyfictionalandsupportedonlyforthisexample. Notallconnectorssupportalltypes. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Entitlement-marked/type-linked fields and matching nativeidentifiervalues representcollectedrelationships; profilegroupingdoesnotinventmapping orderiveothertypesfromgroupvalue. |
+| [Entitlement requests through profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | One configured request for a defined relatedsingle-sourcepackage. Listingbothalternativesdoesnotexpressper-recipientOR; no sub-itemchoiceorautomaticdecisionlogicinvented. |
+| [Entitlements and hierarchy](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Grouped sourceaccessrights versus supported nativehierarchyrepresentation; names/descriptionsdo notremoveunwantedcapability. Nouniversalhierarchyinheritanceorgroupcreation. |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | ISC rolescanincludeaccessprofiles/entitlementsforbroaderrequirements; nativeDraftCreatorroleentitlementisdistinctfromISCrole. |
+| [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | New/changedconfigurationneedsrelevantprocessing, saveddefinitionversusidentity/currentnativeoutcomes. Nofixedlatency/privatequeue/one-rowisolatedglobalprocessingclaim. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Organizationalstageandconfiguredaccessrequirements provideoneassignmentorigin; nofullLCSconfiguration oruniversalretry/removalcontracttaught. |
+| [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html) | Source reads/representation and separate definitiondetailcollection; sourcecatalogevidencenotnativeauthorization. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Supportedsourcechange separatefromaggregation/definition, selectedaccount andconnection/credentialdependencies. Nouniversalatomicbundlewriteorrollbackguarantee. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Exactsource/account/operation/error andmanualdeliveryevidence, distinctfromcurrentnativeconditions. Hypotheticalabsentlicensealonecannotdiagnosecapacityorcredentialfailure. |
+
+### Diagrams and publication checks
+
+- [Source and typed entitlement references](../assets/APF-002_source_and_typed_entitlement_references.txt): exactinline source, maximum32columns. ThreeISCteachingrefs/oneSource/threenativekinds, not nativecreation, mergedkeys orprocessingorder.
+- [Native dependency and resource conditions](../assets/APF-002_native_dependency_and_resource_conditions.txt): exactinline source, maximum33columns. Fictionalper-accountALL3/enabled/sign-in/unitconditions, notISCengine, crossaccountunion orwriteorder.
+- Two two-column tables explain candidatecapabilities/groupingdecisions andevidence/claimlimits. Verify accessible scroll regions and complete published text.
+- Preserve prior79lessons, allpreviousassets/templates/CSS/tests/specifications andbothreferenceaids. APF-003 plannedwithoutstub.
+- Verify all80routes, eleven-module defaults/current/orderedlinks, exactfullarticle/twodiagrams/twotables/assets and adjacentAPF001/002links. Sourcechecks/deployment/visualinspectiondonotestablishbeginnerunderstandingorformalapproval.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Source eligibility versus justified access | Includeonlyreader/creator/editor forsuppliedwork, approve/exportseparate | Samesourcejustifiesallcontents | Access profiles; requests; fictionalwork/rights |
+| Case 2 | Typed reference identity | Three distinctISCobjects source/type/ID, onegroupdoesnotsupplyrole/license | Native2201orentrycountidentifiesthewholecapability | Profilemodel; entitlementmodel/types |
+| Case 3 | Required bundle versus alternativechoice | Bothlicenseslistedmeansbothincluded absentrealchooser; designvalidregionspecificselection | OrdinaryprofilelistmeansEastORWest | Profilemodel/list; requests; fictionalchoicecontract |
+| Case 4 | Source boundary versus common job | DocumentStorecomponentseparate/broaderISCroleifappropriate; native-role distinction | Sharedjoballowscrosssourceprofile | Profiles; roles |
+| Case 5 | Dependency evidence versus inventedinheritance | Explicitreader/licenseconditionsremain; onlyverifiednewnativecontractjustifiesone-rolealternative | Powerful-soundingrole/profilegroupingimpliesothergrants | Entitlementhierarchy; fictionalnativecontract |
+| Case 6 | All entitlements versus resourcecondition | Westsuccess/Eastdenialconsistentwithunitrestriction; nobasistoinfermissinggrant | Completebundlepermitsallresources | Fictionalapplicationpolicy; deliveryevidence distinction |
+| Case 7 | Definition repair versus existing holder removal | Definitionchangevalidwhileoldnativeapproverremains; inspecthistory/currentneed/approvedremoval | Removingreference revokesoldaccess | Profileeditbehavior; processing; provisioning |
+| Case 8 | Per-account capability versus person-levelunion | Ordinaryaccountlackscreator/license; inspectintendedaccountselection, notunionwithadminaccount | Rightsacrossaccountsautomaticallycombineforoneaction | Fictionalper-accountpolicy; provisioning/accountscope |
+| Directory/two-application transfer | Source versus applicationcount and need | D-25/D-26sameSource/sameworkcoherent; D-29unjustified; ShipDeskAPIschedulingseparate; verifyeachappconsumption | Twoappsnecessarilytwosources/allgroupsjustified/sameappalwayssamesource | Profilemodel; roles; fictionaldirectory/applicationcontract |
+
+Reviewed for independent Devi context, first-use meaning, useful designjudgment, connectedcause/effect, currentrecordconsistency, readablementorvoice, alternatives/missingevidenceanswers andno learner-body references orcourse-methodcommentary. No unresolved author content issue identified within scope. Full ownerconfiguration/change/detection/removal treatment remains in later Module11lessons; necessary supporting meanings and caveats are explained here. Real learner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

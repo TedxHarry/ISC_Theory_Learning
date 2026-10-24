@@ -606,3 +606,10 @@ lessons:
     source: "lessons/APF-001_The_Problem_an_Access_Profile_Solves.md"
     url: "/lessons/APF-001_The_Problem_an_Access_Profile_Solves.html"
     description: "Explain why a single-source entitlement bundle is useful; distinguish its definition, grant routes, requestability, detection and verified native access."
+  - id: APF-002
+    module: access-profiles
+    placement: "Module 11.2"
+    title: "Which entitlements actually belong in the same bundle?"
+    source: "lessons/APF-002_Grouping_Related_Entitlements_from_One_Source.md"
+    url: "/lessons/APF-002_Grouping_Related_Entitlements_from_One_Source.html"
+    description: "Design coherent single-source bundles using exact entitlement references; distinguish dependencies, alternatives, exclusions and native resource conditions, then verify the right outcome."

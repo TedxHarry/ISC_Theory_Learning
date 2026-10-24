@@ -1,0 +1,17 @@
+Profile: Order draft preparation
+Source: OrderWorks Production
+|
++-- E-G2201
+|   groups / "2201"
+|   Order Readers
+|
++-- E-R2201
+|   roles / "2201"
+|   Draft Creator
+|
++-- E-L2201
+    licenses / "2201"
+    Draft Editor
+
+Three distinct ISC references.
+One source, three native types.

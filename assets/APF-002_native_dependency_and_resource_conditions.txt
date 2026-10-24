@@ -1,0 +1,15 @@
+Account: ow-110202
+|
++-- groups includes "2201"
++-- roles includes "2201"
++-- licenses includes "2201"
+|
+v
+All three access items required
+|
++ enabled target account
++ successful sign-in
++ order in assigned business unit
+|
+v
+Native draft creation allowed

@@ -514,6 +514,19 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Account and configuration scope: mainoneaccountunambiguous; automatic multipleaccountcriteria/relevantprocessing are separate dependencies, not inferred from bundle name or Save.
 - Removal caveat: disabling/deleting standing profile or editing its entitlement list does not itself prove native revocation; assignment/removal operation and overlaps must be investigated, not genericsharedgrantpreservation.
 
+### APF-002 coherent grouping and native dependency boundaries
+
+- Same source versus justified bundle: source eligibility does not justify unrelated approval/export rights; intended recipients need every included capability for the stated purpose.
+- Typed identity: group/role/license textkey2201 are distinctobjects represented by separateISCIDs; source/type/record evidence, not name/nativevalue/count alone, identifies the bundle.
+- Mixed supported types: one-source entitlement references can represent different supportednativekinds; source collection/assignment contract must be verified, not assumed from license/role naming.
+- Dependencies versus alternatives: requiredreader+creator+editor is a complete capability; listingEastandWest alternatives definesboth, not a per-recipientOR/menu.
+- Native conditions versus grouping: profile references do not create hierarchy, native grants or permissioncombining logic. FictionalOrderWorksALL3 plusenabled/sign-in/businessunit is notISC's universal engine.
+- Native versus ISC role: source DraftCreator is an entitlement; broader ISC role can combine source-specific access components. A profile entitlement list is not a nested-profile list.
+- One source versus business-application count: directoryrights can governdifferentapplications; separateShipDeskAPI entitlement remainsoutsidedirectoryprofile.
+- Assignment origin: recordedassociation mechanism, includingrequest/role/lifecycle/detection; shareddefinitionchange/removalimpact depends onit and operation, not genericoverlapreferencecount.
+- Definition correction versus existing holder correction: removingapproverfromprofiledoesnotproveoldnativegrantremoved; controlledpopulation/history/removalverification is separate.
+- Native account scope: ordinaryreader pluscreator/license onanotheraccount cannot satisfyper-accountnativeANDcondition; no ISCcrossaccountdetectionalgorithm asserted.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).
