@@ -671,3 +671,10 @@ lessons:
     source: "lessons/ROL-003_Membership_Criteria_and_Explicit_Membership.md"
     url: "/lessons/ROL-003_Membership_Criteria_and_Explicit_Membership.html"
     description: "Trace standard membership criteria and explicit identity lists; preserve approved AND/OR combinations, inspect current inputs and distinguish selection, assignment and delivered access."
+  - id: ROL-004
+    module: roles
+    placement: "Module 12.4"
+    title: "The same role was granted in two ways. What changes?"
+    source: "lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.md"
+    url: "/lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.html"
+    description: "Compare automatic membership policy with requested role authorization; follow applicable review, access dates, account delivery and assignment-specific withdrawal."

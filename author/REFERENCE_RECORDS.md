@@ -4658,6 +4658,33 @@ Two diagrams match [complete alternatives](../assets/ROL-003_complete_group_matc
 
 No actual tenant/API/source/mapping/aggregation/processing/provisioning/role/list/request/approval/credential/native permission or target operation performed. Preserve prior87lessons, all old assets/templates/tests/specifications/three guides. ROL-004 planned only; documentation review and deployment do not replace learner validation or formal publication approval.
 
+## ROL-004
+
+Lesson: [The same role was granted in two ways. What changes?](../lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.md). Revision 1.0. Documentation checked October 24, 2026.
+
+Primary sources and claim boundaries:
+
+- [Automating Role Assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html): Standard Criteria and Identity List supply automatic membership; enabled configuration needs identity processing. Requestability is an additional route, including approved nonmatching needs. Ending automatic membership and account deletion differ.
+- [Managing Requests for Roles and Access Profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html): request enablement and applicable role review; profile direct-request approvals do not cascade into role requests/automatic grants. Future start/end and maximum-duration reference points, role-request target accounts and requested removal configuration. Main manager then primary-owner chain is illustrative, not universal.
+- [Managing Roles](https://documentation.sailpoint.com/saas/help/access/roles.html): standard role structure, Define Assignment/Access Requests/Manage Access distinctions, mixed-origin identity list and requested assignment details/account targets. Retained requirements from another assigned role can preserve an entitlement.
+- [Requesting Access](https://documentation.sailpoint.com/saas/user-help/requests/request_center.html): requester/recipient permissions, optional future start/time zone, dates, submission versus review and fulfillment; end timestamp initiates deprovisioning, connected/manual paths and end date not an account attribute. Duplicate existing item validation means the main histories are separate, not a promised second grant to the same identity.
+- [Requesting Access Removal](https://documentation.sailpoint.com/saas/user-help/requests/requesting_access_removal.html): requested role assignment revocation, inspect selected assignment/account targets, applicable removal approval, date-change requests; ordinary revoke requests do not override criteria-driven automatic role membership.
+- [Tracking Requests](https://documentation.sailpoint.com/saas/user-help/requests/tracking_access.html): request progress, review steps and errors in status tracker; not a universal proof of native task success.
+- [Monitoring Provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): provisioning activity/account activity and manual-task evidence; scope records to account/source/change rather than reinterpreting approval as fulfillment.
+- [Processing Identity Data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): current identity/access-model recalculation, manual application and role updates; processing initiates provisioning but does not validate that target delivery succeeded.
+- [Configuring Global Approval Settings](https://documentation.sailpoint.com/saas/help/requests/config_approval_settings.html): global/item approval timing configuration and precedence need inspection. Does not support an inference that an unchecked role-level option disables every applicable review control.
+- [Managing Access Profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html): source-bundle structure and enabled/disabled component distinction; direct-request configuration versus role inclusion.
+
+Reasoning and assessment coverage:
+
+Main ReviewHarbor records, native permission dependencies, role/entitlement/request IDs, criteria, selected accounts, reviewer chain, dates and operation outcomes are fictional teaching inputs. Automatic Assurance/EVIDENCE-REVIEW/working and independent requested PROJECT-COORD histories start separately; no undocumented coexistence/deduplication algorithm for two same-role origins is asserted. Request start/end dates, not JIT activation, define the temporary standing-access example. Partial delivery is explicitly supplied, not a tenant test.
+
+Cases 1-4 test nonmatching authorized requests, requestability without grant, automatic-policy review expectations and included-profile review boundaries. Cases 5-8 test pre-existing access before a future start, known failed source operation, exact multi-account assignment selection and retained-role entitlement requirements. Temporary design/font-license transfer tests the same causal chain in a different business setting; licensing/permissions/fulfillment must be validated before implementing that proposal.
+
+Editable diagrams: [assignment routes and delivery](../assets/ROL-004_assignment_routes_and_delivery.txt), 38 columns; [requested access dates and withdrawal](../assets/ROL-004_requested_access_dates_and_withdrawal.txt), 34 columns. Exact synchronized copies of inline blocks. Two two-column tables, eight worked cases, first-use definitions and standalone example checked. Sources stay in author records, not learner body.
+
+No actual tenant/API/source/account/role/list/request/review/provisioning/revocation/expiry/credential/license/native task operation performed. No private engine schedule, instant session cutoff, generic last-reference cleanup, account deletion or unconditional revocation of requested roles after identity-data changes claimed. Documentation-based author review only; beginner read-through, transfer validation and formal publication review/approval pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

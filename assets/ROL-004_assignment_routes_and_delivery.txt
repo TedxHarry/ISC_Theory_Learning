@@ -1,0 +1,19 @@
+AUTOMATIC ROUTE      REQUEST ROUTE
+Current criteria     Recipient + role
+or identity list     + business need
+        |                    |
+Relevant identity    Applicable review
+processing           + allowed dates
+        |                    |
+        +---------+----------+
+                  |
+        Role assignment basis
+                  |
+        Required source access
+                  |
+       Per-account provisioning
+                  |
+      Native rights and actual task
+
+A route explains WHY.
+Delivery shows WHAT reached WHERE.

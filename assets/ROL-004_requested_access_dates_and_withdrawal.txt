@@ -1,0 +1,21 @@
+Request submitted
+        |
+Applicable approvals complete
+        |
+Future start still ahead?
+        |
+Wait for authorized start
+        |
+Source changes attempted
+        |
+Verify account and native task
+        |
+End date and time reached
+        |
+Withdrawal process starts
+        |
+Check retained role requirements
+and actual source removals
+
+Approval is not source delivery.
+End time is not an instant cutoff.

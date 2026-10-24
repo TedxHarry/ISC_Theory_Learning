@@ -297,7 +297,7 @@ Removal behavior must be taught for the specific assignment mechanism. A general
 - 12.1 [Turning a business responsibility into an access requirement.](lessons/ROL-001_Turning_Business_Responsibilities_into_Access_Requirements.md) **Authored:** ROL-001 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 12.2 [Roles containing access profiles and direct entitlements.](lessons/ROL-002_Roles_Containing_Access_Profiles_and_Direct_Entitlements.md) **Authored:** ROL-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 12.3 [Membership criteria and explicit membership.](lessons/ROL-003_Membership_Criteria_and_Explicit_Membership.md) **Authored:** ROL-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 12.4 Automatic assignment and requested roles.
+- 12.4 [Automatic assignment and requested roles.](lessons/ROL-004_Automatic_Assignment_and_Requested_Roles.md) **Authored:** ROL-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 12.5 How identity-data changes affect role membership.
 - 12.6 Multiple roles, overlapping access, and assignment origins.
 - 12.7 Role changes, propagation, disabling, and removal implications.

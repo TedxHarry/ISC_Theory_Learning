@@ -633,6 +633,20 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Assignment/delivery: match or list selection, applied role association, reported source operation and native task differ. Main Readers delivered/Coordinator rejected does not make valid criteria wrong.
 - Ending requirement: criteria/list assignment changes differ from shared role-content edits, request revocation and account deletion; retained roles and actual removals need evidence.
 
+### ROL-004 automatic and requested role assignment
+
+- Assignment basis: configured criteria/list versus particular authorized request; same role/native rights do not imply the same history or ending condition.
+- Automatic policy: per-population authorization design, not a per-person access-request approval; Identity List is an automatic selector, not a completed request.
+- Requestable: availability for eligible request actions under permissions/configuration, not assignment, approval or a guarantee of visibility to everyone.
+- Request recipient/requester: access beneficiary versus submitter. Role, request, identity, assignment and source-account identifiers refer to different objects.
+- Review boundary: role requests use role review configuration, not included profiles' direct-request approvals; applicable global configuration must still be inspected. Main manager/primary-owner chain is explicitly fictional.
+- Dates: future access start differs from approval; access end initiates deprovisioning, not instant native cutoff/account deletion. Approval timeout is not access expiry. Duration anchor uses supplied start or otherwise request time.
+- Evidence: selection, required review, effective dates, per-account operation, later collected state and native task are separate; request tracker/provisioning activity serve different investigation questions.
+- Origin-specific withdrawal: criteria/list maintenance for automatic membership versus supported requested-assignment revocation/expiry; job change alone does not justify assuming every requested assignment vanished.
+- Account targets: verify actual assignment details before revoking one of multiple requested assignments.
+- Retained requirements: another assigned role can retain shared entitlements; no universal all-origin reference-count/removal algorithm inferred.
+- Scope: standard role, standing access, one main account; independent histories and explicit variations avoid assuming duplicate automatic/request grants on the same identity.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).
