@@ -569,3 +569,10 @@ lessons:
     source: "lessons/ENT-002_Entitlement_Identifiers_Display_Values_Types_and_Metadata.md"
     url: "/lessons/ENT-002_Entitlement_Identifiers_Display_Values_Types_and_Metadata.html"
     description: "Distinguish ISC and native identifiers, schema selections, types and metadata; reason through renames, replacements and controlled changes."
+  - id: ENT-003
+    module: entitlements
+    placement: "Module 10.3"
+    title: "The catalog has four items. Who actually holds them?"
+    source: "lessons/ENT-003_Account_Membership_Information_and_the_Entitlement_Catalog.md"
+    url: "/lessons/ENT-003_Account_Membership_Information_and_the_Entitlement_Catalog.html"
+    description: "Reconcile catalog objects, account memberships and identity holders; investigate independent collection freshness, missing detail and incomplete evidence."

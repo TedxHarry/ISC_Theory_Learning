@@ -451,6 +451,17 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Metadata provenance: collected source attributes, manually maintained name/description and managed access-model metadata have distinct maintenance roles. Protected manually updated descriptions are not overwritten merely by repeating collection.
 - Metadata/process effects: descriptive wording does not rewrite native permission; ownership/requestability can affect configured processes and are not inherently cosmetic. Owner change does not grant membership or prove existing-work rerouting.
 
+### ENT-003 catalog and holder boundaries
+
+- Catalog object versus account-group pair: shared access definition versus one represented holder relationship; four catalog objects and four pairs can conceal two unheld definitions.
+- Distinct held definition/account holder/identity holder: different measurements. Devi's two G-7301 accounts establish two pairs but one distinct identity under verified correlation; no actual UI counter formula promised.
+- Collection relationship and freshness: account collection can create simple entitlement representations; supported separate object collection supplies details/unheld items. A fresh definition read does not establish fresh account groups values in the stated integration.
+- Pilot completeness: exact3accounts/4groups/4baselinepairs only within supplied bounded source and unchanged observation window. No company-wide conclusion or automatic atomic snapshot.
+- Membership removal versus catalog retirement: approved native removal from ala-100303 leaves otheremployee's G-7302 and its group definition; updatedaccountcollection observes rather than performs removal. Unheld existing objects can validly remain.
+- Missing detail versus missing access: raw membership G-7399 without separately returned details requires linkage/scope/permission evidence; account-derived representation is possible. No automatic invalidity or failed native grant from absent name.
+- Negative membership evidence versus incomplete read: missing field/page/type/account coverage is not a complete empty relationship. Direct-membership absence alone does not establish no effective application permission.
+- Source catalog versus request availability: discovery/holder/requestable configuration are separate. Unused access is not automatically invalid, requestable or authorized for a new recipient.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

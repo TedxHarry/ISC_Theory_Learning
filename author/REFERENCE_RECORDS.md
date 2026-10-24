@@ -3951,6 +3951,61 @@ Official cloud documentation may use Identity Services or Human Fabric names; co
 
 Author review checked independent context, first-use meanings, field/value/record distinctions, supplied continuity evidence, conditional source behavior, case/diagram agreement, narrow width and no body citations/meta-announcements. Real beginner read-through, teach-back and unfamiliar-example validation remain pending.
 
+## ENT-003
+
+Revision 1.0. Documentation checked October 24, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi employee100303 has ordinaryal-100303 and administrativeala-100303, both correctly associated with her identity. Otheremployeeal-20402 is correctly associated with another identity. AssetLedger Pilot Production is deliberately bounded to exactly3accounts/4groups, not a company-wide population.
+- Initial complete records: al-100303[G-7301], ala-100303[G-7301,G-7302], al-20402[G-7302]. Native group definitions G-7301AssetReaders/read-equipment, G-7302AssetApprovers/approve-equipmentrequests, G-7303ExceptionReviewers andG-7304ExportOperators. Supplied policy is per-account; membership onadmin doesnot authorizeordinary. No inherited or activation-dependent paths included.
+- Four catalogobjects, four account-group pairs, two helddefinitions; G-7301twoaccountmembers/oneidentity. Counts are explicitly calculations from supplied records, not a literal UIcounter algorithm or platform private model.
+- Supported pilot reads: account groups attribute markedEntitlement/Multi-Valued/Typegroups, matchingnativeentitlementtypegroups; group schema groupKeyID/labelName. Nativeidentifiers/labels do different jobs. Membership/read permissions/type scope and linking valid in baseline.
+- October24UTC09:00-09:05verifiedunchangedbaseline, not an automatic atomic snapshot.10:00approvednativeapplication removalofG-7302 fromala-100303 is confirmed; otheremployee retainsG-7302.10:02entitlementread collects four definitions without accountgroupslists; latestcollectedaccount evidence stillbaseline.10:10supportedaccountcollection/inspection verifies bothDeviaccounts[G-7301], otheremployee[G-7302], threepairs/stillfourcatalog. Observedfictional sequence is not requiredorder or a latencyguarantee.
+- Independent variations: matched4totals, twoaccounts/oneperson, G-7302wrongaccount expectation, freshobjectread/oldmemberships, validretainedunheldG-7303, accountG-7399/no detailedobject withunverifiedreadcoverage, incompletefirstpage, uncorrelatedaccountnativeandcollectedG-7302.
+- License transfer has Basic/Editor/Analytics definitions, twoBasicholdingaccounts/oneperson, completecurrentboundedcoverage/nootherpaths; authorizedremovalfromoneconfirmedaccount leaves1pair/1helddefinition/1person/3catalogitems.
+- No actual tenant/API/source/schema/aggregation/provisioning/nativeaccess removal/application or target operation performed.
+
+### Official sources and claim mapping
+
+1. [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html): account-derived simple entitlement representations versus separate collection of details and unheld objects. Mapped to the core catalog/membership distinction and collection explanation. A represented native group is not created in the external application by collecting it.
+2. [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html): supported definition collection and selected-type scope; discovered-run totals can differ from accumulated catalog totals. Mapped to count interpretation, scope and10:02definition-only evidence. The stated account/group-read separation is supplied for this connector model, not universal connector membership behavior.
+3. [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html): catalog/source/item context, holder and account-target detail, and account aggregations not deleting catalog entitlements because they can exist unheld. Mapped to unused-object explanation and selected relationship removal. No native object deletion prescribed, no guarantee every old catalog entry still exists and no hardcoded UIcounter formula.
+4. [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): entitlement-marked account attributes and matching identifying values link to entitlement details. Mapped to groups/G-7301/groupKey linkage. Same-name accountattribute/nativegroups and explicitType supplied together.
+5. [Creating and managing entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html): supported types/schemas, ID/name designations and account Type linkage. Mapped to why rawmembership detail can be missing and why scope/type/identifiers need checking, not arbitrary label replacement.
+6. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): scoped account collection, changed/unchanged processing and operation history. Mapped to accountvalue freshness versus run status and appropriate evidence boundaries. No universal per-source snapshot consistency, inferred direct-membership absence from omitted field or unperformed accountrefresh claimed.
+7. [Assigning source accounts to identities](https://documentation.sailpoint.com/saas/help/accounts/correlation.html): account-to-identity association and uncorrelated accounts. Mapped to counts, verified two-account ownership and case8. Wrong/missing person link does not cancel native membership or require entitlement rename.
+8. [Configuring entitlement access requests](https://documentation.sailpoint.com/saas/help/requests/config_entitlements.html): item requestability and applicable feature/configuration are separate from discovery. Mapped to source inventory versus requester availability; no universal direct-request exposure or approval requirement.
+9. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): external access changes and supported fulfillment. Mapped to observing a supplied application-side removal versus performing that removal, and separation of read/representation from native grant/revoke. No actual provisioning run or automatic correction.
+
+Official cloud documentation may use Identity Services or Human Fabric names; course retains ISC. No IdentityIQ implementation imported. Source citations remain author-only.
+
+### Scope and rendering boundaries
+
+- Primary coverage compares access-object inventory, holder relationships and evidence scope. Module5.2 covers account/entitlement aggregation mechanisms; this lesson's deeper focus is relational accounting, per-account versus per-identity holder meaning and independent freshness after a real relationship change. Supporting concepts are explained in place.
+- Direct standing relationships only in mainexample. Effective permission can depend on other grants/inheritance; complete inheritance teaching is reserved for10.4. Native AssetLedger policy is fictional, not derived from a label.
+- Two editable text diagrams exactly match assets/ENT-003_catalog_objects_and_membership_pairs.txt and assets/ENT-003_independent_catalog_and_membership_freshness.txt, bothmaximum38columns. First arrows mean memberships, not enginejobs; second is supplied observations, not requiredsequence or latency.
+- Two two-column tables compare accounts/values and different counts. Eight cases supply Facts and Reasoning; different-system license transfer supplies complete coverage and changedrelationship facts.
+- Population completeness and fresh emptyrelationship require explicit evidence. Partialpages, hiddenfilters, missingfields and absentobjectdetail are not source-wide negatives. A supported read path may differ by connector; no universal rawrequest or physicalstorage architecture asserted.
+- Unheldexistingobject can validlyremain; zeroobservedholders alone doesnot prove appropriateness, requestability, invalidity or safedeletion. Recorded/currentnative/effectivepermission are distinct evidence.
+- Preserve prior74lessons, all assets/referenceaids, templates/CSS/tests/specification byte-equivalent. ENT-004 remains planned without a stub. Working edition has75lessons/10modules.
+
+### Assessment and acceptable alternatives
+
+| Item | Understanding tested | Misconception or unsupported alternative rejected |
+|---|---|---|
+| Case1 | Actual catalog IDs versus membership pairs, not equal totals | Four objects/four pairs proves all objects held |
+| Case2 | Two account holders can belong to one verified identity | Second membership is necessarily another person or a duplicate to remove |
+| Case3 | Account-specific native authorization and evidence | Any person-level entitlement association grants it to every account |
+| Case4 | Definition-read scope versus membership freshness | Fresh catalog proves old accountmembership is current or native removal failed |
+| Case5 | Complete noholder evidence plus confirmed retainedobject | Zero holders makes catalog presence erroneous or demands deletion |
+| Case6 | Membership value and missing detail; check linkage/scope/authority | Blank description proves no membership or requires another grant |
+| Case7 | Complete authorized coverage before source-wide negative | First page without membership proves nobody holds it |
+| Case8 | Account-to-group versus account-to-identity relationship | Entitlement rename repairs owner association or native access disappears when uncorrelated |
+| License transfer | Definition/helddefinition/pair/person counts before and after one removal | Every relationship removal reduces catalog or distinct person count |
+
+Author review checked first-use meanings, independent context, supplied completeness, set/pair/identity arithmetic, UTC consistency, missing-evidence reasoning, account selection, supported conditional boundaries and readable exact diagrams. Real beginner read-through, teach-back and unfamiliar-example validation remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

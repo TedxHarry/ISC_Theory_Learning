@@ -1,0 +1,16 @@
+09:00-09:05 verified baseline
+  Catalog: 4 groups
+  Memberships: 4 account-group pairs
+
+10:00 native membership removed
+  ala-100303 loses G-7302
+  Other account keeps G-7302
+
+10:02 group definitions collected
+  Catalog: still 4 groups
+  Account view: baseline evidence
+
+10:10 account values collected/checked
+  ala-100303 groups: [G-7301]
+  Memberships: now 3 pairs
+  Catalog: still 4 groups

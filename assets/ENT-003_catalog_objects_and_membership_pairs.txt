@@ -1,0 +1,14 @@
+Catalog: four group objects
+  G-7301  Asset Readers
+  G-7302  Asset Approvers
+  G-7303  Exception Reviewers
+  G-7304  Export Operators
+
+Represented account memberships
+  al-100303  --> G-7301
+  ala-100303 --> G-7301
+  ala-100303 --> G-7302
+  al-20402   --> G-7302
+
+Four arrows; two groups with holders.
+G-7303 and G-7304 have no arrows here.
