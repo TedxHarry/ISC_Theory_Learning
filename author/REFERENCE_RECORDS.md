@@ -4403,6 +4403,63 @@ Eightcases includeprehireANDfailure, futureapprovedrequest, disabledprofileinsid
 
 Reviewed for complete independent context, first-use meanings, correctstatusobject distinctions, realconfiguredselection versus humanrequest and laternativeoutcome, coherent suppliedUTCobservations, readable mentorvoice, changedconditions and missing-evidence answers. No learnerbodyreferences, prerequisiteannouncements, guaranteedconfidence, unsupportedbackendinternals or realtenanttesting claims. No unresolved authorcontentissue identified within scope. Existing-set detection/provisioning distinctions receive comprehensive treatment in APF-005; no stub authored. Beginner validation and formal approval remain pending.
 
+## APF-005
+
+- Current lesson: [APF-005](../lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.md), revision 1.0, Module 11.5.
+- Documentation checked: October 24, 2026. These sources support the stated product mechanisms; earlier lesson verification dates are not renewed.
+- Documentation-based author review: complete within scope. Real beginner validation and formal publication review/approval remain pending.
+- No actual tenant, API, source, aggregation, identity processing, provisioning, profile, request, approval, certification, native membership or target operation performed.
+
+### Fictional example and limits
+
+Devi110505/bl-110505 is the single correctly correlated BuildLedger Production account. Its enabled/sign-in/North-project conditions are supplied facts. Native BL-5501 ReleaseReaders permits reading assigned-project evidence; BL-5502 ReviewComments requires reader on the same account; BL-5599 ReleaseApprovers is additional access outside Devi's stated need. All three initially held. AP-5505 references ISC teaching labels E-5501/E-5502 for the first two; labels are not real ID formats or an API payload. The fictional connector supports collecting and changing memberships; schema groups field, entitlement linkage and catalog definitions are correct. Standing access only; no JIT activation or undocumented multiple-account detection behavior assumed.
+
+Main UTC09:00 native inspection/full set plus approver and successful North comment,09:10 collected same holdings/correct identity,09:20 profile saved/enabled/nonrequestable,09:25 relevant application/processing,09:28 profile association/native memberships unchanged. No role, lifecycle requirement or profile request exists in this controlled scenario. Observation dates are not original grant dates or latency guarantees.
+
+Independent partial-access variation has reader only and no grant route; detection supplies no missing entitlement. Separate enabled direct request/manager approval then attempts commenter addition; rejected versus delivered branches are alternatives, not two results for one operation. A real source need not issue exactly one minimal write. Stale09:10 full set/native09:15 commenter removal variation distinguishes recorded/current access without promising automatic remediation. Case8 detection-only definition change adds missing BL-5503/new comparison feature; no role/LCS requirement/new request, no automatic provision of added item. Directory transfer D-51 ticket read/D-52 internal notes compares catalog/full/partial/stale holdings; no actual account or group change.
+
+### Primary source claim map
+
+| Official reference | Claims and limits checked |
+|---|---|
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Detection during identity processing recognizes all referenced entitlements; source-specific bundles; existing standing holdings versus new provisioning; request/role/lifecycle routes; detected-origin definition additions are not provisioned and revised full set is required on evaluation. Supported revocation can remove underlying rights, and overlap rules depend on origin/operation. No private detection algorithm, exact-match-only restriction, missing-right repair, universal overlap preservation or harmless-label-revocation claim. |
+| [AccessProfile model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | Exact source/entitlement references, separate enabled/requestable state, nonrequestability supported under stated Request Center qualification. No universal default, detection-origin UI badge or executable payload invented. |
+| [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html) | Account aggregation supplies holdings; entitlement aggregation supplies catalog definitions/details and can include unheld objects. Catalog existence is not membership. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Entitlement-bearing account fields and type/key linkage connect memberships to represented objects. Fictional groups field assumed verified; no schema or source changes executed. |
+| [Account correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html) | Matching/assigning accounts to identities is distinct from detecting a profile combination. Incorrect person association needs cause-based investigation, not assumed source permission correction. No confidence-score algorithm. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Scope, account inclusion, optimization and collection freshness affect evidence. No assertion every aggregation rereads/reprocesses every identity or that reading group definitions refreshes memberships. |
+| [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | New access-model configuration needs relevant application/evaluation; data reads and identity evaluation differ. Processing can initiate other changes but does not validate successful native provisioning. No fixed scheduling/latency, universal execution order or whole-run read-only claim. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Authorized requirement can cause direct or manual source change. Detection itself is not a requirement to add missing rights; approved requirement and actual delivery distinct. No automatic successful retry or minimum-operation guarantee. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Exact source/account/operation/status/error/manual-task evidence and separate current target verification. No log absence treated as proof no historical grant or claim every detection generates a particular account event. |
+| [Profile and role requests](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Configured direct profile request, recipient/manager review and selected account; approval does not itself prove a native write. Requestability is a separate route, not a prerequisite for recognizing existing holdings. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Configured criteria or identity list can select a role requirement distinct from existing-set recognition. No detailed role propagation/removal mechanics taught. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Organizational stage and configured access requirements supply another grant route. No lifecycle state changed or general automatic repair contract asserted. |
+| [Understanding certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html) | Detected profiles can be reviewed under applicable certification configuration; profile/role encapsulation can affect review presentation. Review/remediation and native outcome differ. Availability conditions retained; no promise every item is independently visible in every campaign or historical approval reconstructed by detection. |
+
+### Diagrams and publication checks
+
+- [Existing holdings and detected profile](../assets/APF-005_existing_holdings_and_detected_profile.txt): exact inline source, maximum40columns. Full required pair plus independent approver; record comparison then profile association, not native writes, exact-set-only matching or cleanup.
+- [Partial holdings and separate provisioning](../assets/APF-005_partial_holdings_and_separate_provisioning.txt): exact inline source, maximum40columns. Partial comparison does not grant; a separate approved request supplies the operation. Rejected/delivered are alternative outcomes with native verification.
+- Two two-column tables cover native rights/holdings and evidence/claim boundaries. Check live table count and full article, not just Markdown delimiters.
+- Preserve all prior82lessons, all existing assets/templates/CSS/tests/specifications and both reference aids. APF-006 remains planned without stub.
+- Verify all83routes, eleven-module defaults/current/orderedlinks, exact complete article/two diagrams/two tables/assets, adjacentAPF004/005links and exact-commit Pages deployment. Publication rendering and source verification do not establish beginner understanding or formal approval.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Catalog versus account holding | Correct definitions do not establish commenter membership; inspect actual field/linkage | Catalog existence means person holds access | Loading entitlements; schemas |
+| Case 2 | Partial set versus grant requirement | No detection-driven completion; establish need and supported route | Reader plus profile causes editor/commenter grant | Profiles; provisioning |
+| Case 3 | Complete required subset versus only appropriate access | Pair supports recognition; extra approver remains separate and needs review | Detection removes or legitimizes extra access | Profiles; supplied native/work contract |
+| Case 4 | Direct request setting versus recognition | Enabled profile/full represented set/relevant evaluation supports detection without request | No request means profile association impossible | Profiles; model; request configuration |
+| Case 5 | Observation freshness versus native capability | Compare account read/current native state/processing; visible association insufficient | Profile label is continuous live permission proof | Account loading; processing; native variation |
+| Case 6 | Approval versus delivered membership | Permission rejection and confirmed absence mean failed addition; cause-based authorized recovery | Approval itself supplies native access | Requests; provisioning; monitoring |
+| Case 7 | Entitlement detection versus resource authorization | North scope explains South denial; inspect native conditions | Complete package means every resource allowed | Supplied native permission contract |
+| Case 8 | Detection origin versus definition-change provisioning | Missing third item not automatically provisioned for detected-only holder; revised full set needed | Old detected label requires every future addition | Access-profile change behavior; processing |
+| Directory transfer | Applying full/partial/catalog/freshness distinctions | First complete recorded set supports recognition, not historical approval; second partial not completed; later native removal changes present evidence | Recognition equals new grant/approval, catalog equals holder, stale record proves current access | Profiles; account/entitlement loading; provisioning |
+
+Reviewed for independent Devi context, first-use meanings, exact object/record distinctions, clearly separated alternate scenarios, supplied timestamp consistency, editable diagram synchronization, cause/effect questions, current-state versus historical uncertainty and warm precise narration. No learner-body references, teaching-method announcements or unsupported backend internals. No unresolved author content issue identified within scope. APF-006 owns comprehensive definition-change impact; APF-007 owns overlap/removal detail. Necessary limits are explained here. Real learner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

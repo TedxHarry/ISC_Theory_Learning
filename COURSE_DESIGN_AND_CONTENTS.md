@@ -284,7 +284,7 @@ Separate entitlement aggregation can collect access items that no account curren
 - 11.2 [Grouping related entitlements from one source.](lessons/APF-002_Grouping_Related_Entitlements_from_One_Source.md) **Authored:** APF-002 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 11.3 [Choosing names, descriptions, owners, and sensible boundaries.](lessons/APF-003_Names_Descriptions_Owners_and_Bundle_Boundaries.md) **Authored:** APF-003 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 11.4 [Enabled access, requestable access, and automatic assignment.](lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.md) **Authored:** APF-004 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 11.5 Detecting existing access and provisioning new access.
+- 11.5 [Detecting existing access and provisioning new access.](lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.md) **Authored:** APF-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 11.6 Changing an access profile and assessing the effect on existing users.
 - 11.7 Overlapping profiles and access-removal behavior.
 

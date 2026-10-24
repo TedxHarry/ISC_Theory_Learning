@@ -1,0 +1,19 @@
+Independent partial-access variation
+bl-110505 has BL-5501 only
+             |
+             v
+Detection: required set incomplete
+No missing-group grant from detection
+
+Separate approved profile request
+             |
+             v
+Provisioning attempts BL-5502 addition
+             |
+       +-----+------+
+       |            |
+    rejected     delivered
+       |            |
+       v            v
+Verify absent   Verify native membership
+Investigate     and intended action

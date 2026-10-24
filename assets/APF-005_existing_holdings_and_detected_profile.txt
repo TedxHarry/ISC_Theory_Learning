@@ -1,0 +1,14 @@
+Profile AP-5505 requires
+E-5501 -> group BL-5501
+E-5502 -> group BL-5502
+             |
+             | compare recorded holdings
+             v
+bl-110505: BL-5501 + BL-5502 + BL-5599
+             |
+             | required set present
+             v
+ISC associates AP-5505 with Devi
+
+Detection does not add native groups.
+BL-5599 remains outside this profile.

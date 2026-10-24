@@ -627,3 +627,10 @@ lessons:
     source: "lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.md"
     url: "/lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.html"
     description: "Distinguish enabled profiles, direct request availability and configured automatic assignments; follow processing and delivery, and understand why disabling a profile does not reclaim existing native access."
+  - id: APF-005
+    module: access-profiles
+    placement: "Module 11.5"
+    title: "The profile appeared. Did ISC actually grant new access?"
+    source: "lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.md"
+    url: "/lessons/APF-005_Detecting_Existing_Access_and_Provisioning_New_Access.html"
+    description: "Distinguish detection of existing entitlement holdings from new provisioning; trace catalog and account evidence, partial sets, assignment origin, freshness and actual native capability."

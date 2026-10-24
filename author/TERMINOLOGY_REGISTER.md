@@ -557,6 +557,19 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Standingaccess scope: ordinarymemberships/license no separateactivation; JIT-specific behavior outside mainexample.
 - Evidence layers: exactsavedobject/settings, actualassignment/origin/inputs, accountoperation/report, currentnativememberships and scopedapplicationaction. No label/status alone proves wholepath.
 
+### APF-005 detection, existing holdings and separate provisioning
+
+- Access-profile detection: identity processing recognizes all referenced entitlements as held and associates the profile. It does not itself add missing native memberships, reconstruct prior approval or remove extra access.
+- Required set versus entire holding set: the required pair can be present alongside another entitlement. Detection is not proof of exact-only access or appropriateness of everything held.
+- Catalog versus membership: represented entitlement definitions do not identify holders; entitlement-bearing account fields, exact type/key linkage and correct account correlation provide recorded holding evidence.
+- Observation and origin dates: native grant, collection and profile recognition are different events. First observed membership is not the original grant date; no current label supplies missing historical authorization.
+- Account correlation versus profile detection: person/account association differs from recognizing a complete access combination. No detection confidence score or cross-account permission union assumed.
+- Partial-set boundary: no commenter from reader-only holdings absent a separate authorized request, role/LCS requirement or supported grant route. Detection is not a completion policy.
+- Recorded versus native state: processing evaluates available records; a stale complete set or visible profile does not establish current application authorization. Verify account scope/freshness and native action conditions.
+- Provisioning: actual source/account change, direct or manual, separate from approved decision and from recognition. Specific reported operation/result needs target verification; no universal minimum write or guaranteed recovery.
+- Assignment origin and definition additions: detection-only holders do not automatically receive newly added profile entitlements; revised full set is needed to retain the profile after relevant evaluation. No universal propagation/repair rule inferred.
+- Governance and removal: detected profile can support an applicable existing-access review; recognition is not approval or cleanup. Revocation can remove native entitlements, not merely an ISC label; inspect specific origin/overlap behavior.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).
