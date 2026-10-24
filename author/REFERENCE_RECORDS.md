@@ -4116,6 +4116,63 @@ Transfer R-605/ExternalReviewers/doc-605: confirmedsharednativepermissionchange 
 
 Narration reviewed for contextual first-use meanings, independent Devi context, simple personal explanation, connected evidence and no learner-facing source links or course-method commentary. No unresolved author content issue identified within scope. No actual beginner test or formal approval occurred.
 
+## ENT-006
+
+- Current lesson: [ENT-006](../lessons/ENT-006_Investigating_Unknown_Stale_or_Poorly_Described_Entitlements.md), revision 1.0, Module 10.6.
+- Documentation checked: October 24, 2026. Current primary sources below support the stated mechanisms, not all earlier lesson claims.
+- Documentation-based author review: complete within scope. Learner validation and formal publication review/approval: pending.
+- No tenant/API/source/schema/aggregation/provisioning/owner/description/native deletion or target operation was performed. Fictional evidence is explicitly identified.
+
+### Example contract and scope
+
+CaseBridge Production/Devi100606/cb-100606 with currentmanager-confirmedassignedcasereviewwork. UTC09:00accountreadgroups[G-9601],09:05definitionreadsuccessforCurrentTeams,09:10nativeadministratorconfirmsG-9601existsLegacyTeams/CaseReviewers. AccountgroupsmarkedEntitlement/multiplevalues/Typegroups, groupKeyID/labelName andexactG-9601values are suppliedverifiedsettings. Container names, filter and source fields are fictional, not universal connector options or built-inCaseBridgebehavior.
+
+FictionalapprovedscopecorrectionincludesrequiredLegacyTeamsafterpopulationimpactreview; groupdetailthenreturnedwithSupportaccesswording. Nativeassignedcase-read/noedit/noexport suppliedconfirmedcapability; owneracceptsresponsibility/descriptionmaintained, currentnativeaccessunchanged. No claimed privatequeue/order, fixedlatency or filter-only-oneobjecteffect.
+
+Independentcases: G-9699 sameCaseReviewerslabeldifferentkey/noequivalenceevidence; G-9602MonthlyReviewerszero-currentholders/active/approvedperiodicuse; G-9603OldExportersconfirmedapprovednativedeletion/sufficientcompletecheck/previousentitlementaggregation/onlyaccountreadsince; protectedmanualwording, incompletefirstpage, entitlementtypedeletion and requiredmembershipremovalnotperformed. Account-only-createdcatalogentries specificallyexcludedfromgenericnative-deletion/entitlement-aggregationpromiseratherthaninventedcleanupAPI.
+
+TransferL-706Standard/edit-export/zeroaccounts/approvednextmonthproject andL-709Standard/view-only are distinctnativekeys; ambiguouslabelsnotduplicates/retirement. No actual licenseassignment, purchase or permissionchange.
+
+### Primary source claim map
+
+| Official reference | Claims and scope checked |
+|---|---|
+| [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html) | Account-held values produce simple entitlement representations; supported separate entitlement aggregation supplies richer definitions and unused objects. Neither path is taught as universal native authorization or all-account membership refresh. |
+| [Aggregating entitlements](https://documentation.sailpoint.com/saas/help/loading_entitlements/aggregating_entitlements.html) | Selected source/type collection and history, discovered count versus accumulated catalog, supported direct/flat-file distinction. No universal schedule, fixed latency, source-specific container option, maximum-count or character-limit lesson claim. |
+| [Account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html) | Schema meaning, entitlement-marked/multivalued account fields and matching account values to entitlement IDs; maingroups/typegroups names andvaluesagree. Identifier changes are not readability fixes. |
+| [Entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html) | Type connection, selected native identifier/display attributes, duplicate risks when changing identity/name selections after collection. Type deletion does not delete associated entitlements and prevents their aggregation/update until an appropriate type exists. |
+| [Entitlement model](https://developer.sailpoint.com/docs/tools/sdk/angular/entitlements/models/entitlement/) | ISC ID/source/attribute/value/object-type references versus display wording, owner/requestable and manually maintained fields. No literal SDK payload executed or invented stale-status/unknown-flag API. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Native-deletion plus entitlement-aggregation removal path with explicit account-only-created exception; account aggregation never deletes catalog entitlements. Directcatalogdelete not taught. Description/display edits not sent to source, manually updated fields protected; description/display mapping troubleshooting. These are supported mechanisms, not permission to delete native objects. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Operation-specific history/status and account-read evidence; account and definition reads not interchangeable. Fictional filters/pages/administratorcredentialvisibility and fileexportclock illustrate evidence-scope reasoning, not universal connector internals. |
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Single-source entitlement bundles and references can exist separately from current holders. Full assignment/detection/overlap/removal mechanics belong to later lessons. |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Business access model and ability to include access profiles/entitlements; reference review before retirement. No generic disabled-role/propagation/removal assertion. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Target-access changes separate from collection or metadata maintenance; actual delivery depends on supported connection/configuration. No automatic removal from a clearer description or requestability change. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Correctsource/account/operation evidence, activity and manual-task outcomes; case8 identifies unmetnativeoutcome without inventing unobservedfailurestage. |
+
+### Diagram and publication checks
+
+- [Evidence paths for an unknown entitlement](../assets/ENT-006_evidence_paths_for_an_unknown_entitlement.txt): exact inline source, maximum34columns. Two evidence paths plus independent nativepermission fact; not a mandatory backend order.
+- [Investigation and correction boundaries](../assets/ENT-006_investigation_and_correction_boundaries.txt): exact inline source, maximum33columns. Found/notfound investigation branches require fieldorigin/coverage checks; notfound is notdeletionauthorization. Human scopedcorrection/verification map, notISCengine.
+- Two two-column tables compare observation limits and cause-specific correction evidence. Verify accessible scroll wrappers and complete publication text.
+- Preserve previous77lessons, all earlier assets/templates/CSS/tests/specification and both complete guides. Only ENT-006 authored; APF-001 plannedwithoutstub/emptyModule11.
+- Verify all78routes, ten-module defaults/current/orderedlinks, exact fullarticle/twodiagrams/twotables/assets and adjacentENT005/006links. Source checks, deployment and visual inspection do not establish beginner understanding or formalapproval.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Successful scoped read versus intended coverage | CurrentTeamsonly explains LegacyTeamsomission; review controlledscopefix and verifydetail, do notchange key/member | Successful run covers everyintendedobject or missingdetailprovesconnectorfailure | Entitlement collection; fictionalfiltercontract |
+| Case 2 | Display similarity versus object identity | G-9699differentfromheldG-9601; seekexactdefinition/replacementevidence ratherthanmerge | Matching labels establish same access | Entitlement model; type/schema identity |
+| Case 3 | Zero holders versus valid unused definition | Nativeexistence/approvedfutureusevalid; accountaggregationnotcatalogdelete | No currentholders means obsolete | Loading entitlements; managing entitlements |
+| Case 4 | Native retirement versus catalog sync | ApprovedabsentG-9603previousentitlement-read requires relevantentitlementaggregation/outcome/dependencies, notanotheraccountread | Membershipdisappearance removescatalogobject | Managing entitlements; entitlement aggregation |
+| Case 5 | Collection versus maintained field authority | Protectedmanualdescriptionexplainsmismatch; confirmdesiredmeaning/authority/supportedmaintenance | Successfulread mustreplace everymanualfield | Managing entitlements; model |
+| Case 6 | Negative evidence requires coverage | Completepages or authorizedexactkeycheck; untilthenabsenceunestablished | First-pageabsence equals nativedeletion | Fictionalquerycontract; evidence-scope reasoning |
+| Case 7 | Type versus objects and update path | Type-delete retainsentitlements/stopsupdates; investigatefield/scope/schema | Deletingtypedeletespoorcatalogentries | Entitlement types |
+| Case 8 | Required access change versus description work | Membershipstillpresent meansoutcomenotdelivered; inspectactivity/task/exactnativechange, no guessedfailurestage | Betterdescription fulfills revocation | Provisioning overview; monitoring; fictionalstate |
+| License transfer | Unused active definitions, ambiguouslabels and approvedfutureuse | Retainkeydistinctions, confirmfeatures/accountability/fieldauthority, explainratherthanmerge/delete; futureassignmentrequiresrequirement/decision/delivery | Zeroassignedlicenseisobsolete orsameStandardlabelmeansduplicates | Loading entitlements; model; entitlements; fictionalfeatures/use |
+
+Reviewed for contextual first-use meanings, independent Devi context, observed-versus-inferred reasoning, acceptable missing-evidence answers, personal plain-language mentorship, no learner-body source links or course-method commentary. No unresolved author content issue identified within scope. Real learner testing and formal publication approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

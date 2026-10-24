@@ -590,3 +590,10 @@ lessons:
     source: "lessons/ENT-005_Entitlement_Ownership_Descriptions_and_Sensitive_Access.md"
     url: "/lessons/ENT-005_Entitlement_Ownership_Descriptions_and_Sensitive_Access.html"
     description: "Distinguish responsible owners from access holders; build evidence-based descriptions and sensitivity assessments, understand privilege labels and review routing, and verify separate access changes."
+  - id: ENT-006
+    module: entitlements
+    placement: "Module 10.6"
+    title: "This entitlement looks wrong. What exactly needs fixing?"
+    source: "lessons/ENT-006_Investigating_Unknown_Stale_or_Poorly_Described_Entitlements.md"
+    url: "/lessons/ENT-006_Investigating_Unknown_Stale_or_Poorly_Described_Entitlements.html"
+    description: "Investigate exact entitlement identity, collection scope, linkage and field authority; distinguish unused access from retired objects and verify controlled corrections at the right layer."

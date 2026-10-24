@@ -1,0 +1,17 @@
+CaseBridge Production
+|
++-- account read
+|   cb-100606 -> groups [G-9601]
+|               |
+|               v
+|   ISC membership representation
+|
++-- group definition read
+    filter: CurrentTeams only
+    |
+    +-- G-9601 in LegacyTeams
+        -> excluded from this read
+
+Application evidence:
+G-9601 exists and grants
+read of assigned support cases

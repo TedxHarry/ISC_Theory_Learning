@@ -1,0 +1,21 @@
+Identify exact source/type/key
+              |
+              v
+Compare current native evidence
+              |
+      +-------+-------+
+      |               |
+    found         not found
+      |               |
+      v               v
+Check read path   Verify coverage
+and field origin  before absence
+      |               |
+      +-------+-------+
+              |
+              v
+Choose scoped approved correction
+              |
+              v
+Verify that layer's result
++ any affected access outcome

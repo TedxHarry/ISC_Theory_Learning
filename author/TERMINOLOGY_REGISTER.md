@@ -486,6 +486,20 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Decision versus result: certification revoke requires applicable sign-off/delivery and current native evidence; label, requestability or owner changes are not proof of removing existing capability.
 - Shared capability change: R-605 membership unchanged while action/scope expands. Reassess meaning/classification and holder need; account access and shared permission-definition correction have different targets.
 
+### ENT-006 investigation and correction boundaries
+
+- Unknown/stale: name the missing or outdated fact and layer; rawidentifier, emptyowner, zeroholders, absentdetail and retirednativeobject are distinct findings, not one product status.
+- Exact identity: source/environment, entitlement type, account entitlement attribute/nativevalue and ISCcatalogID describe different references; display-name similarity does not establish equivalence.
+- Evidence paths: account-held values can supply simple catalog entries; supported entitlement reads add definitions. CurrentTeams-only success excludes G-9601 in LegacyTeams by fictional read contract, not by failed native membership or automatic obsolescence.
+- Linkage: verified accountgroups markedEntitlement/multiplevalues/Typegroups matches groupKeyIDG-9601. Wrong key/type selection requires controlled contract/schema review, not changing native membership to a label.
+- Coverage and freshness: selected source/type/container/permissions/pages/exporttime constrain conclusions; notfound is not deleted and recent operation is not complete/current evidence for every layer.
+- Field authority: returned description mapping and manual-update protection explain independent stale wording; one-item explanation versus source-wide mapping/protection have different impact.
+- Unused versus retired: G-9602 zeroholders with approvedfutureuse remains valid; confirmedG-9603nativedeletion is stronger evidence. Account aggregation never deletes catalog entitlements.
+- Catalog removal: documented native deletion plus entitlement aggregation path excludes account-only-created entries; determine origin/source-supported handling. No general directISCcatalogdelete, nativegroupdeletion-for-display-cleanup, or account-read-removal guarantee.
+- Entitlement type deletion: does not delete associated entitlements and prevents their collection/update until an appropriate type exists; not a cleanup shortcut.
+- Correction layer and evidence: collection, metadata, account membership and sharedpermissiondefinition are different targets. Uncertainty needs an accountable next check/risk handling; neither automaticapproval nor unreviewed broaddeletion follows.
+- Stable membership/emptyholderlists versus license definitions: L-706/L-709 identical Standarddisplay does not make them duplicates; approvedfutureuse and nativefeatureboundary need separate evidence.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).
