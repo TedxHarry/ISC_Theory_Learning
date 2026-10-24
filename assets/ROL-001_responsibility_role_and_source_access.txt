@@ -1,0 +1,12 @@
+Work: customer request intake
+                |
+     role Customer request intake
+        /                  \
+  RequestDesk         KnowledgeShelf
+       |                    |
+  intake profile      direct entitlement
+  Readers + Drafts    Guide Readers
+       |                    |
+  rd-120101           ks-120101
+       |                    |
+  North read/draft    published guide read

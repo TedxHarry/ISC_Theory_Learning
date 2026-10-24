@@ -594,6 +594,19 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Definition action versus identity action: disable, definition-reference removal and explicit revocation differ. Role-definition removal propagation is not a master switch for every explicit withdrawal.
 - Completion evidence: submission, applicable approval, per-account operation/result, collection/evaluation and fresh native state remain separate; partial removals and retained work require reconciliation.
 
+### ROL-001 responsibility, role and delivery
+
+- Business responsibility: specific authorized actions/data scope and exclusions, not job title or another person's entire access. Application teams verify exact native rights/dependencies.
+- ISC role: maintained grouping of related access for a responsibility; standard example uses profiles/direct entitlements and can span sources. Provisioning capability is a prerequisite. Not a cross-application native group or application authorization engine.
+- Access profile: source-specific related entitlement bundle; role can reference it alongside a direct entitlement from another source. A profile is not compulsory for every role entitlement.
+- Contents versus assignment: exact rights differ from criteria/list/request selecting an identity. Names/descriptions/enabled definitions do not select recipients alone.
+- Current input: approved HR record, collected source value and applied identity field differ; identity profile mappings and relevant processing establish the rule input. Technical lifecycle name working is compared in configured criteria.
+- AND policy: CustomerOps/SUP-INTAKE/working all required by supplied business decision; department-only or OR would broaden population. No universal job-code policy asserted.
+- Assignment versus provisioning: role association establishes the requirement, not successful independent source operations. Per-account results/native tasks establish delivered access; existing accounts/standing access stated.
+- Requested origin: applicable role request conditions differ from automatic criteria; requestability is not automatic eligibility or universal permission. Included profile approval chains are not independently run for a role request.
+- Ownership and least privilege: accountable responsibility/recipient maintenance and narrow justified contents, not automatic owner approval or removal of all preexisting access.
+- Ending requirement: assignment removal, shared-definition edit, retained overlaps and native account deletion are different. No universal removal/creation/transaction guarantee inferred.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

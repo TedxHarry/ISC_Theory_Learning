@@ -21,6 +21,8 @@ modules:
     title: "10. What does an entitlement mean?"
   - id: access-profiles
     title: "11. How should access profiles be designed?"
+  - id: roles
+    title: "12. How should roles be designed?"
 lessons:
   - id: SYS-001
     module: system
@@ -648,3 +650,10 @@ lessons:
     source: "lessons/APF-007_Overlapping_Profiles_and_Access_Removal_Behavior.md"
     url: "/lessons/APF-007_Overlapping_Profiles_and_Access_Removal_Behavior.html"
     description: "Trace shared-entitlement removal across directly held profiles, role-required retention, incomplete profile associations, residual native access and evidence for safe withdrawal."
+  - id: ROL-001
+    module: roles
+    placement: "Module 12.1"
+    title: "What access does this responsibility actually require?"
+    source: "lessons/ROL-001_Turning_Business_Responsibilities_into_Access_Requirements.md"
+    url: "/lessons/ROL-001_Turning_Business_Responsibilities_into_Access_Requirements.html"
+    description: "Translate approved work into verified native rights and cross-source role contents; distinguish recipient policy, current identity inputs, assignment and separate account delivery."

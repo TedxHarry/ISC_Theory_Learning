@@ -1,0 +1,16 @@
+Approved input and saved role
+                |
+      relevant identity evaluation
+                |
+     all conditions satisfied?
+          /              \
+        no               yes
+        |                 |
+ no assignment       role assigned
+ by this rule              |
+                required source changes
+                    /            \
+              RequestDesk   KnowledgeShelf
+                 result        result
+                    \            /
+                 verify each native task

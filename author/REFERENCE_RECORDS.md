@@ -4530,6 +4530,48 @@ Scope: one correctly correlated account per identity, current holdings, standing
 - Independent context, first-use terms, native/recorded/decision/attempt/result distinctions and patient voice checked; no learner-body links, citation labels, method announcements or em dashes.
 - Author review does not establish tenant execution, learner validation or formal publication approval.
 
+## ROL-001
+
+- Current lesson: [ROL-001](../lessons/ROL-001_Turning_Business_Responsibilities_into_Access_Requirements.md), revision 1.0.
+- Documentation verification: October 24, 2026; documentation-based author review only.
+- Beginner validation, tenant execution and formal publication review/approval: pending or not performed, not inferred from working-edition deployment.
+
+### Official sources by claim
+
+| Official reference | Supported explanation and limits |
+|---|---|
+| [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Roles group access across one/multiple sources, require Provisioning, support standard role and profile/direct entitlement contents, names/descriptions/owners, enabled and applied configuration. Role object is not a shared native permission. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Automatic criteria or identity list, actual current configured inputs, AND/OR, lifecycle technical name, enabled role and relevant processing. Role revocation does not delete source accounts. No universal policy or request-eligibility inference from automatic criteria. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Source-backed identity attribute mapping and applied inputs; identity profile differs from access profile. Approved source value is not itself current applied identity evidence. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Available identity data/access evaluation and applying changed configuration; saved/assigned/delivered outcomes remain separate. Timeline is fictional, not universal engine ordering or exact delay. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Account/access fulfillment through supported automatic/manual routes. Main accounts exist; no blanket creation guarantee or automatic write assumption. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Exact source/account/action/result, report/activity/manual work evidence; independent RequestDesk success and KnowledgeShelf rejection, then native checks. No whole-role atomicity or guaranteed recovery. |
+| [Managing requests for roles and access profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Requestable role route and applicable role-level review, not independent approval of each included profile. Owner can be configured reviewer, not every automatic assignment approved by owner. |
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Meaningful single-source bundle, entitlement references and enabled participation. Direct role entitlement is permitted without a compulsory wrapper. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Source-native rights/reference context versus descriptive labels; exact right and native permission verification. Group dependencies, queue limits and rights are supplied fictional application rules. |
+
+Scope: standard role, standing access, Provisioning supported and authorized administration. Existing single correctly correlated enabled/sign-in account per application, initial memberships absent/no role assignment/no other grant. Main automatic single-group AND policy uses mapped identity department/jobCode and lifecycle technical working; it is supplied business policy, not a platform default. Nonrequestable main role. No lifecycle access grant, account creation, role dimensions, cross-account union, generic role-removal propagation or full membership-builder mechanics claimed.
+
+### Assessment map
+
+- Case 1: compare peer access with approved tasks/exclusions. Correct reasoning rejects copying refund approval; application permissions and approved responsibility are evidence. Same title is insufficient.
+- Case 2: supplied observer population exposes department-only overassignment. Correct reasoning tests all agreed AND inputs; a cosmetic role-name change cannot narrow matching. Alternative policies need business approval, not guessing.
+- Case 3: supplied current identity SUP-OBS versus HR SUP-INTAKE tests input provenance. Trace collection/mapping/application; approved HR screenshot alone is insufficient and rule broadening is not a repair.
+- Case 4: saved/enabled contents with no selecting route tests definition versus assignment. Identify an approved route before diagnosing a source failure.
+- Case 5: proposed Test-source package tests exact source/reference context. Correct Production requirements before application; do not assume similar names or role cross-source support makes Test access correct. No saved cross-source access profile asserted.
+- Case 6: role assigned/RequestDesk works/KnowledgeShelf rejects tests requirement versus partial delivery. Correct authorized integration problem and verify guide read; removing necessary access from the definition is not a delivery fix.
+- Case 7: independent approved request tests assignment origin. Request approval does not change identity values or prove automatic matching. Scope/review/delivery evidence required.
+- Case 8: old unrelated refund membership tests least privilege versus actual total holdings. Assignment of narrow role does not prove cleanup. Investigate origin/need and authorized correction with retained requirements.
+- Laboratory transfer: exact native access and named-user license dependency/capacity remain unverified. Discovery can establish responsibility/exclusions, not final references or promised delivery. Accept different coherent packaging if verified rights/recipient policy/source boundaries and fulfillment evidence are maintained.
+
+### Consistency and presentation review
+
+- Devi120101/rd-120101/ks-120101 reintroduced independently. RD-8101 Readers + RD-8102 Drafts with reader dependency; KS-8101 published guides; refunds/export/publishing/admin excluded. R-1201/AP-8101/E-prefixed identifiers are teaching labels, not API IDs.
+- Supplied UTC08:00 HRcorrect/currentSUP-OBS,08:10 current values,08:15 assignment,08:18 source successes/rejection,08:25 native actions. No actual source, identity-profile/mapping, aggregation, processing, provisioning, role/request/approval, credential, license or native action performed.
+- Two exact editable 42-column diagrams match [role/source access](../assets/ROL-001_responsibility_role_and_source_access.txt) and [selection/delivery](../assets/ROL-001_membership_decision_and_separate_delivery.txt). Arrows show representation/dependencies and independent results, not private engine steps.
+- Two two-column tables, eight Facts/Reasoning cases and laboratory transfer remain inline. No learner-body external/course links, citation labels, method announcements, greetings or em dashes.
+- Module 12 navigation added with only ROL-001. Prior85lessons and all previous assets/templates/tests/specifications/three reference guides remain unchanged. Formal validation/approval is not claimed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
