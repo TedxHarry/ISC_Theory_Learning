@@ -1,0 +1,13 @@
+R-1202 Coordinator      R-8299 Readiness
+          \               /
+           same AP-8202-P
+          Readers + Drafts
+                  |
+       proposed addition: Case Tags
+                  |
+      review both role populations
+                  |
+      if approved and applied:
+   current role requirements include Tags
+                  |
+    verify each account's delivery

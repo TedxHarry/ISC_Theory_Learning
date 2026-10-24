@@ -1,0 +1,17 @@
+Role R-1202: Case intake coordinator
+  |
+  +-- profile AP-8202-P: Preparation
+  |     +-- E-CF-8201 Readers
+  |     +-- E-CF-8202 Drafts
+  |
+  +-- profile AP-8202-S: Submission
+  |     +-- E-CF-8201 Readers
+  |     +-- E-CF-8203 Submitters
+  |
+  +-- direct E-DV-8201 Evidence Readers
+
+CaseFlow account: cf-120202
+  Readers + Drafts + Submitters
+
+DocumentVault account: dv-120202
+  Evidence Readers

@@ -607,6 +607,19 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Ownership and least privilege: accountable responsibility/recipient maintenance and narrow justified contents, not automatic owner approval or removal of all preexisting access.
 - Ending requirement: assignment removal, shared-definition edit, retained overlaps and native account deletion are different. No universal removal/creation/transaction guarantee inferred.
 
+### ROL-002 role contents and reference paths
+
+- Immediate role entries: access-profile references and direct entitlement references; expand profile contents to trace exact source rights. UI counts at different relationship levels need their own semantics.
+- Path versus distinct object: PreparationReaders/Drafts + SubmissionReaders/Submitters + directVaultReader yields five paths/four distinct entitlements, not a connector-call count or double native Readers membership.
+- Direct entitlement in role: direct reference path, not identity grant outside role, separately requested entitlement or connector bypass.
+- Shared reference versus copy: two roles reference one profile object without nesting/inheriting each other's remaining contents. Similar-name separate IDs are separate objects; edited shared contents affect consumer requirements.
+- Packaging choice: single-source profile can make related rights meaningful/reusable; direct role entitlement does not require a wrapper. Migration/removal effects are separate from structural equivalence.
+- Disabled component: enabled role does not enable disabled profile; retained reference not new delivery. Existing native memberships are not removed merely by disabling profile.
+- Current-role addition: added standing entitlement in shared profile enforces relevant current role requirements after evaluation, with independent delivery. Not generalized to past direct requests or detection.
+- Processing/application: saved definition and relevant evaluation differ; list-page role/profile/application updates apply together to Active/Inactive(short-term), not long-term. Current source operations/native evidence remain separate.
+- Removal boundary: role-content removal propagation depends on setting/enabled role and retained requirements; not a generic last-reference or duplicate-path cleanup rule.
+- Scope: one account/source and standing access; no universal direct-entitlement multiple-account routing, nested role model, private scheduling or atomic transaction inferred.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

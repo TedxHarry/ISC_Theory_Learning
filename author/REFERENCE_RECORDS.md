@@ -4572,6 +4572,46 @@ Scope: standard role, standing access, Provisioning supported and authorized adm
 - Two two-column tables, eight Facts/Reasoning cases and laboratory transfer remain inline. No learner-body external/course links, citation labels, method announcements, greetings or em dashes.
 - Module 12 navigation added with only ROL-001. Prior85lessons and all previous assets/templates/tests/specifications/three reference guides remain unchanged. Formal validation/approval is not claimed.
 
+## ROL-002
+
+- Current lesson: [ROL-002](../lessons/ROL-002_Roles_Containing_Access_Profiles_and_Direct_Entitlements.md), revision 1.0.
+- Documentation verification: October 24, 2026; documentation-based author review only.
+- No tenant execution, beginner validation or formal publication approval performed.
+
+### Official claim map
+
+| Primary source | Supported explanation and boundaries |
+|---|---|
+| [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Standard role contents can include profiles and entitlements across sources; configured references/assignment differ. Role-content removal propagation/enabled-role qualifications are distinguished from assignment revocation. No nested-role inheritance asserted. |
+| [Role reference model](https://developer.sailpoint.com/docs/tools/sdk/go/roles/models/role/) | Separate AccessProfiles and Entitlements reference fields support immediate-entry distinction. Lesson uses conceptual teaching IDs, no SDK execution or API payload; no report-specific count semantics inferred. |
+| [AccessProfile reference model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | Source, identifier, enabled state and entitlement reference collection are distinct properties; profile entry is not a flattened private entitlement copy. |
+| [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Single-source contents, enabled versus requestable, disabled references/no provisioning and retained existing entitlements; current-role standing additions versus detection/previous direct profile requests. Removal summary qualified by specific role propagation source, not universal retention. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Explicit identity list selects the main recipient for automatic assignment; enabled/applied configuration and actual source-account delivery differ. Multiple-account routing not generalized from profile criteria. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Saved versus applied configuration; list-page role/profile/application configurations processed together, Active/Inactive(short-term) versus long-term scope; no private job order/exact latency. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Required account changes via supported automatic/manual fulfillment; direct role reference does not bypass source capabilities or account operations. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Account/source/operation/result, reports/manual tasks and partial success evidence separate from role association and current native action. |
+| [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html) | Exact source/type/object context and native permission meanings versus similar labels. Application dependencies are explicitly supplied fiction. |
+
+The three-entry/five-path/four-distinct-object comparison is a transparent enumeration of the fictional definition, not a claim about a specific UI card/API aggregate count or connector deduplication/call ordering. The native group model records one Readers membership regardless of two configuration paths. No universal reference-count removal rule is inferred.
+
+Scope: standard role, standing access, supported Provisioning, one correctly correlated existing enabled account per source, Active identity, authorized identity-list selection and no other grant/lifecycle requirement for missing rights. Profiles enabled/main direct requests off. Proposed Tags edit is conditional and not applied. Similar-name copy uses another ID, without assuming duplicate names are accepted.
+
+### Assessment and presentation review
+
+- Case 1 tests expansion/count semantics: supplied references yield five paths/four objects; number of source writes and UI total definition remain separate unknowns.
+- Case 2 tests both access-entry types: inspecting only profiles misses the direct DocumentVault requirement. Evidence is role references plus profile contents/source identity.
+- Case 3 tests shared consumers: both role populations need impact review for Tags, without inheriting the other role's remaining contents.
+- Case 4 tests similar label/separate object: follow actual ID/contents. No automatic change to a distinct copy is established.
+- Case 5 supplies new recipient/disabled Preparation/final Readers+Submitters but no Drafts. Intended draft task remains absent under supplied native rules; retained reference is not participation or delivery.
+- Case 6 supplies existing Drafts/no removal after disable. Native cleanup is unestablished; do not import new-recipient missing access into an old holder.
+- Case 7 tests direct path versus delivery: DocumentVault rejection does not reverse successful CaseFlow changes. Exact actor permission/account result and fresh evidence-read action are required.
+- Case 8 supplies definition-reference removal/unknown propagation/current Submission path. The correct answer identifies missing setting/state/remaining-requirement/operation evidence, not an unconditional Drafts deletion or last-reference rule.
+- Directory/license transfer changes native type and shared-source grouping: successful license report does not establish directory delivery; other profile consumer needs Full Archive Export review; current account/assignment/action and capacity where relevant remain separate.
+- Two inline editable diagrams match [role/source reference map](../assets/ROL-002_role_references_and_source_holdings.txt) and [shared-profile scope](../assets/ROL-002_shared_profile_and_change_scope.txt), maximum 39/41 columns. One two-column role-entry table and eight worked cases remain inline.
+- Devi120202/cf-120202/dv-120202 North context independent. CF Readers/Drafts/Submitters dependencies and DVread-only; R-1202/AP-8202-P/AP-8202-S and R-8299 references consistent. UTC09:00save/09:10apply/09:14CFadditions/09:16DVreject/09:20native are supplied observations, not timing guarantees.
+- No learner-body source/course links, citations, method announcements or em dashes. No actual tenant/API/source/aggregation/processing/provisioning/profile/role/list/request/approval/credential/license/native permission or target operation performed.
+- Prior86lessons and all previous assets/templates/tests/specifications/three guides preserved. ROL-003 remains planned only. Author review/deployment do not replace beginner validation or formal publication approval.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

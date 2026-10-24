@@ -657,3 +657,10 @@ lessons:
     source: "lessons/ROL-001_Turning_Business_Responsibilities_into_Access_Requirements.md"
     url: "/lessons/ROL-001_Turning_Business_Responsibilities_into_Access_Requirements.html"
     description: "Translate approved work into verified native rights and cross-source role contents; distinguish recipient policy, current identity inputs, assignment and separate account delivery."
+  - id: ROL-002
+    module: roles
+    placement: "Module 12.2"
+    title: "What is actually inside this role?"
+    source: "lessons/ROL-002_Roles_Containing_Access_Profiles_and_Direct_Entitlements.md"
+    url: "/lessons/ROL-002_Roles_Containing_Access_Profiles_and_Direct_Entitlements.html"
+    description: "Follow access-profile and direct-entitlement references across sources; distinguish shared objects, duplicate paths, enabled components and actual per-account delivery."
