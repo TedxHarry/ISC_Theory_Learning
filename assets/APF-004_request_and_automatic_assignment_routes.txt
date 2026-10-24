@@ -1,0 +1,19 @@
+Enabled profile AP-4404
+|
++-- Direct profile request
+|   Requestable + allowed audience
+|   Submit and review as configured
+|
++-- Automatic assignment
+    Enabled role + matching criteria
+    OR lifecycle access requirement
+
+A route establishes required access.
+             |
+             v
+Account selection and provisioning
+             |
+             v
+Verify native memberships and action
+
+Enablement alone creates no route.

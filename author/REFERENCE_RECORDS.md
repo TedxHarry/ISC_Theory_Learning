@@ -4346,6 +4346,63 @@ ChangednativeEH-3301 export case, oldEH-3399 grant after definition repair, pend
 
 Reviewed for independent context, first-use meanings, connected cause/effect, accountableownership rather than owner-as-magic, nativecapability and recipient-control distinctions, changed-condition cases, missing-evidence answers and polite mentor voice. No learnerbody citations, meta-teaching promises or unsupported private internals. No unresolved author content issue identified within scope. APF-004 covers enabled/requestable/automaticassignment in depth; no stub authored. Beginner validation and formal approval remain pending.
 
+## APF-004
+
+- Current lesson: [APF-004](../lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.md), revision 1.0, Module 11.4.
+- Documentation checked: October 24, 2026. These primary sources support the scoped mechanisms; no earlier lesson verification dates are renewed.
+- Documentation-based author review: complete within scope. Real beginner validation and formal publication review/approval: pending.
+- No actual tenant/API/source/aggregation/processing/provisioning/profile/role/lifecycle/request/approval/enablement/disablement/native access or target operation performed.
+
+### Fictional integration, assignment and permission contract
+
+AssetRoute Production, Devi110404/ar-110404onlyaccount, enabled/successfulsign-in, assignedsiteNorth; native AR-4401Readers permits site-scoped read, AR-4402Editors withreader permitsupdate, noadmin. AP-4404 is a teaching label, not real ISC ID/APIpayload. Supplied writablegroupintegration/standingaccess, no JITactivation. Initialbothgroupsabsent/norequest/norole/noLCSrequirement; enabled/nonrequestableprofile alone selectsnone.
+
+Facilities technician enabledrole includesAP-4404; applied identitydepartmentFacilities AND lifecycleStateworking technicalname forenabledWorkingstate in governingidentityprofile. Relevantprocessingeligibleidentity; supplied valuescorrect, notHR-onlyorPreview. Roleidentitylist/lifecyclebaseline are supporting alternatives, not additionalmainroutes. Directprofile request variation independently enabled/requestable/eligible/managerreview; futurestartdate variation no automaticroute. Requestedroleapproval distinct from constituentprofileapproval; do not treatnonrequestableprofile ascomplete underlyingentitlementdeny. SupportedRequestCenter nonrequestability assumed; no universalAPIdefault/legacybehavior asserted.
+
+UTC10:00enablednoroute/groupsabsent;10:15reviewedroleconfig/applicationstarted;10:17roleassigned/activitypending/nativegroupsabsent;10:24bothgroups/currentNorthupdateallowed/Southdenied. These are illustrative observations, not guaranteedlatency orprivateexecutionorder. UTC11:00profiledisabled;11:06afterrelevantprocessing profileassociationabsent/nativegroupsretained/Northupdatestillallowed. No assertion about roleassociation disappearing, in-flighttaskcancellation oruniversalremoval/overlap behavior.
+
+Eightcases includeprehireANDfailure, futureapprovedrequest, disabledprofileinsideenabledrole, sourcepermissionrejection despitecompletedidentityprocessing, profileassociationlossversusnativeaccess. TransferDesigneditor license/ProductdesignerjobcodeDESIGN/insufficientcapacity versusnonmatchingemployee; suppliedfictionalerror not a verifiedrealconnectorerrorstring. Separateexceptionrouteifapproved, nofalsifiedidentitydata; disabledprofiledoesnotproveexistinglicensereclaimed.
+
+### Primary source claim map
+
+| Official reference | Claims and limits checked |
+|---|---|
+| [Access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) | Source-specific bundles; UI-created disabled then enablewithentitlements; enabled/nonrequestable automaticuse; disabledprofile notprovisioned despite retainedrole/LCSreferences; disable removesRequestCenter/identityassociationonprocessing butretainsentitlements, existingcertrevocationstillpossible; autoredisable whenallentitlementsdeleted. No universalrename-deletesobject, pendingrequestcancellation, JITremoval, sourceimmutability or overlap contract. |
+| [AccessProfile model](https://developer.sailpoint.com/docs/tools/sdk/angular/access_profiles/models/access-profile/) | Separate enabled/requestable properties and entitlementreferences; supportednewRequestCenterqualification for nonrequestable; no executablepayload or universalrequestabledefault claimed. |
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Enabledrole/standardcriteria oridentitylist; appliedidentityattributes/AND; lifecyclecriteriontechnicalname; role includesprofiles andrequiresprocessing. No fullrolemodel, particularretry count or criteriaasdirectrequesteligibility taught. |
+| [Roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Broader accessmodel object contains profiles; accessrequest versusautomaticmembership origins; configuration application scope and source/delivery boundaries. Laterlessons own fullrolepropagation andremoval mechanics. |
+| [Lifecycle states](https://documentation.sailpoint.com/saas/help/provisioning/lifecycle.html) | Enabledgoverningstate withconfiguredprofileaccess can selectpeople automatically; scope is identityprofile/state, notinferreddepartment; names/technicalvalues and separateidentitystate/account/profile controls. NofullLCSremoval matrix or requestvisibility guarantee. |
+| [Identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Governing identitymapping/lifecycle configuration; appliedvalues versusupstreampreview context. No identitycreation/correlation changes performed. |
+| [Identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Accessmodelchangesneedrelevantprocessing; ApplyChanges acrossrole/profile/applicationconfigurations; accessrequirements andprovisioninginitiation notvalidationofsuccessfulnativewrite. No fixedwaittimes, universaljobschedule or allidentitystates equivalent. |
+| [Profile and role requests](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Directrequestconfiguration andManagerreview; globalsettingscanapplywhenlocaloff; rolesuseownapproval andautomaticrole/LCS routesdonotinvokeprofile-requestapproval. Audience/segmentation andaccountselection conditional. Turningoffrequestsnotrepresented asnativegrantrevocation or proveninflightcancellation. |
+| [Requesting access](https://documentation.sailpoint.com/saas/user-help/requests/request_center.html) | Recipient/request/submission/review/startdate distinct; approvedfuturestart notcurrentdelivery; manualdeliverycanwait. No uniformrequestcenterlayout claim or defaultapprovalguarantee. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Assignmentdrivers versus direct/manualsourcechanges, selectedoperation anddeliverycapacity/permission constraints; supportedconditionalrecovery notautomaticguaranteedretry. No actualsourceaccountcreationperformed. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Exactsource/account/operation/status/error/manualtask andcurrenttargetevidence; completedprocessing cannot overriderejectedwrite. No taskcompletion-as-proofallnativeaccess assumption. |
+
+### Diagrams and publication checks
+
+- [Request and automatic assignment routes](../assets/APF-004_request_and_automatic_assignment_routes.txt): exact inline source, maximum36columns. Alternative directprofile request and configuredautomaticrole/LCS requirement converge on neededaccountchange/delivery/verification. Mainprofileenabled; nohiddenengineorder, allroutesmustexecute, universalwriteorapproval promise.
+- [Disabled profile and retained native access](../assets/APF-004_disabled_profile_and_retained_native_access.txt): exact inline source, maximum37columns. Fictionalbefore/afterpause and relevantprocessing, no nativegroup removal shown. Account andprofile differentobjects.
+- Two two-column tables compare settings/routes and questions/evidence. Check live rendered table count, not just source delimiters; escape literal prose pipes.
+- Preserve prior81lessons, all previous assets/templates/CSS/tests/specifications and both reference aids. APF-005 remains planned without stub.
+- Verify all82routes, eleven-module defaults/current/orderedlinks, exact fullarticle/twodiagrams/twotables/assets, adjacentAPF003/004links and exactcommit Pagesbuild. RenderQA/documentationchecks/deployment do not establish beginner understanding or formal approval.
+
+### Assessment map
+
+| Exercise | Understanding tested | Expected reasoning and acceptable alternatives | Misconception exposed | Source support |
+|---|---|---|---|---|
+| Case 1 | Enablement versus selectedrecipients | No configuredroute means no newgrant; inspectapprovedassignmentdesign | Enabling meansgrantallsourceaccounts | Profilemodel; profiles; fictioninitialabsence |
+| Case 2 | Requestability versus automaticrole | Roleandprofileenabled/matchingcriteria/relevantprocessing can deliverwithoutrequest; verifytarget | Nonrequestable forbidsautomaticdelivery | Profiles; roleassignment; processing |
+| Case 3 | Requestavailability versus execution | No request/noautomaticroute meansnopersonselected | Visible/requestable meansalreadygranted | Requests; model; fictionalnoroute |
+| Case 4 | AND/currentappliedvalues | prehirefailsworkingcondition; inspectactualinput/approvedrequirements | One matchingcondition enough; falsifydataforgrant | Roleassignment; lifecycletechnicalname |
+| Case 5 | Approval versus accessstart | Futuredatestillnotarrived, notenoughevidencetodiagnosefailure; checktimezones/request/operation | Approved meansnativeaccessnow | Userrequests; requestsconfiguration |
+| Case 6 | Enabledparent versus disabledprofile | Referencepersistsbutdisabledprofileisnotprovisioned; inspectpausedreason | Roleenablement overridesprofiledisablement | Profiles |
+| Case 7 | Processing versus sourcewrite | Permissionrejection/nativeabsence meansselecteddeliveryfailed; approvedcause-basedrecovery | Finishedprocessingvalidatesallnativewrites | Processing; provisioning; monitoring |
+| Case 8 | Profileassociation versus nativecapability | RetainedgroupsandNorthsuccessconsistentwithdisable; specificremoval/requirements/nativeverification separate | Profilelabelgone meansrightsremoved | Profiles; scopednativefiction |
+| License transfer | Selection versus delivery versus reclamation | DESIGNmatchesbutcapacityblocksdelivery; nonmatchingemployee needsapprovedroute ornoaccess; requesttoggledoesnotcreatesparelicense/grant; disabledprofiledoesnotproveoldlicensereclaimed | Requestabilityfixesanymissingaccess ordisablingreclaimsnativelicense | Roleassignment; provisioning; profiles; suppliedlicensecontract |
+
+Reviewed for complete independent context, first-use meanings, correctstatusobject distinctions, realconfiguredselection versus humanrequest and laternativeoutcome, coherent suppliedUTCobservations, readable mentorvoice, changedconditions and missing-evidence answers. No learnerbodyreferences, prerequisiteannouncements, guaranteedconfidence, unsupportedbackendinternals or realtenanttesting claims. No unresolved authorcontentissue identified within scope. Existing-set detection/provisioning distinctions receive comprehensive treatment in APF-005; no stub authored. Beginner validation and formal approval remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

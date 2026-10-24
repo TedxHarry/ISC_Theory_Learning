@@ -542,6 +542,21 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Definition correction versus old grants: removing EH-3399reference does not itself revoke existing native membership; need/history/authorizedremoval/result separate.
 - Meaningful bundle boundary: coherent complete task within one source, distinct work/data/environment/risk where justified; department/owner difference alone not entitlementneed evidence.
 
+### APF-004 enablement, requestability and actual assignment
+
+- Enabled profile: access-model object's participation state, not selection of recipients or native account enablement. Disabled profile is not provisioned through retained role/lifecycle references.
+- Requestable profile: permitted direct profile-request route under supported Request Center/audience/configuration, not submittedrequest, universaleligibility, approval or grant. Inspect actual values rather than assuming defaults.
+- Automatic assignment: actual enabled role criteria/identitylist or governing lifecycle accessrequirement selects need; no dedicated profiletoggle invents recipients. Nonrequestability does not block configuredautomaticdelivery.
+- Role criteria: applied identity values tested against configured conditions, here Facilities AND lifecycletechnicalnameworking. UpstreamHR/Preview not proof of current input. Automaticcriteria are not automatically directrequesteligibility rules.
+- Lifecycle requirement: profile configured for enabledstate within governingidentityprofile; no departmentfilter inferred from name. Lifecycle/account/role/profile enabledstatuses and source provisioning capabilities concern differentobjects.
+- Request review/start/delivery: applicable local/global/role-specific approval and timing separate from account changes; automaticrole/LCS route does not invoke directprofile-request approval.
+- Assignment automation versus delivery automation: automaticselection can still require human sourcework; no guarantee connectedwrite, capacity or permission success.
+- Identity processing: evaluates requirements and can startprovisioning, but doesnotvalidate nativewrite success. ApplyChanges onrole/profile/applicationlistpages covers allthree configurations.
+- Disabled profile: removesrequestchoice/profileassociation afterrelevantprocessing, retains existingnativeentitlements; existingroles/LCSreferences andcertification work can remain. Not revocation, pendingrequest cancellation or license reclamation.
+- Reenablement: review current references/population/criteria/requestsettings beforeapplication; no blankslate, automaticrequestabilitydefault or restoringdeletedentitlement references assumed.
+- Standingaccess scope: ordinarymemberships/license no separateactivation; JIT-specific behavior outside mainexample.
+- Evidence layers: exactsavedobject/settings, actualassignment/origin/inputs, accountoperation/report, currentnativememberships and scopedapplicationaction. No label/status alone proves wholepath.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

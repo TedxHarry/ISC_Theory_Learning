@@ -1,0 +1,16 @@
+Before the pause
+AP-4404 enabled
+Devi associated with AP-4404
+ar-110404 has AR-4401 + AR-4402
+Work-order updates allowed
+          |
+          | disable profile
+          v
+After relevant identity processing
+AP-4404 disabled
+Profile association removed
+ar-110404 still has both groups
+Work-order updates still allowed
+
+Native removal needs separate action.
+Disabling is not that action.

@@ -620,3 +620,10 @@ lessons:
     source: "lessons/APF-003_Names_Descriptions_Owners_and_Bundle_Boundaries.md"
     url: "/lessons/APF-003_Names_Descriptions_Owners_and_Bundle_Boundaries.html"
     description: "Make a bundle's purpose, native boundaries and accountability clear; distinguish descriptions from controls, owners from configured reviewers, and handover from pending-work reassignment."
+  - id: APF-004
+    module: access-profiles
+    placement: "Module 11.4"
+    title: "The profile is enabled. Who actually receives its access?"
+    source: "lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.md"
+    url: "/lessons/APF-004_Enabled_Requestable_and_Automatically_Assigned_Access.html"
+    description: "Distinguish enabled profiles, direct request availability and configured automatic assignments; follow processing and delivery, and understand why disabling a profile does not reclaim existing native access."
