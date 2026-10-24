@@ -1,17 +1,16 @@
-RecordsVault Production / S-102
+Source S-102 / RecordsVault Production
 
-Account rv-100202
-  groups: [G-6202]
-              |
-              | linked type: groups
-              | matching source value
-              v
-Group schema SC-102
+Schema SC-102 selects group fields
   identityAttribute: groupKey
   displayAttribute: label
               |
-              | describes source objects
+              | interprets source data
               v
 ISC entitlement E-102
-  source value: G-6202
-  displayed: Case Review Readers
+  value: G-6202
+  name: Case Review Readers
+              ^
+              | same source, type groups
+              | membership value G-6202
+Account rv-100202
+  groups: [G-6202]

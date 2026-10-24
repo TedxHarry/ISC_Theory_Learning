@@ -90,26 +90,25 @@ The account's collected groups value includes G-6202. The group record's selecte
 That agreement connects the membership to the represented group details. The comparison isn't with the text Case Review Readers.
 
 ```text
-RecordsVault Production / S-102
+Source S-102 / RecordsVault Production
 
-Account rv-100202
-  groups: [G-6202]
-              |
-              | linked type: groups
-              | matching source value
-              v
-Group schema SC-102
+Schema SC-102 selects group fields
   identityAttribute: groupKey
   displayAttribute: label
               |
-              | describes source objects
+              | interprets source data
               v
 ISC entitlement E-102
-  source value: G-6202
-  displayed: Case Review Readers
+  value: G-6202
+  name: Case Review Readers
+              ^
+              | same source, type groups
+              | membership value G-6202
+Account rv-100202
+  groups: [G-6202]
 ```
 
-The arrows show identification and representation relationships, not an order in which private backend jobs must run. The schema supplies the interpretation; the collected records supply the values.
+The top arrow means the schema tells ISC which source fields supply the group's identifying and displayed values. The lower arrow connects the account's membership value to the entitlement it references. These are relationships, not an order in which private backend jobs must run.
 
 In the supplied design, account attribute and entitlement type are both named groups, and the account attribute's Type points to that supported type. These are explicit configuration facts, not a rule that every connector must call its group data groups.
 
