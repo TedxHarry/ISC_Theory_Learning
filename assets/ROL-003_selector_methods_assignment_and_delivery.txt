@@ -1,0 +1,12 @@
+Standard Criteria       Identity List
+ compare current data    check identity
+          \                /
+        alternative selector methods
+                    |
+       relevant identity processing
+                    |
+            role assignment
+                    |
+       required account changes
+                    |
+      verify operation and native task

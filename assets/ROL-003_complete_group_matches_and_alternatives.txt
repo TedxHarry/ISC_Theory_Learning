@@ -1,0 +1,13 @@
+Group A
+  Operations
+  AND DISPATCH-DESK
+  AND working
+         \
+          OR --> selected by criteria
+         /
+Group B
+  CustomerCare
+  AND RETURNS-DESK
+  AND working
+
+Each branch must be a complete match.

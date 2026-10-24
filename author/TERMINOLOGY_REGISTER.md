@@ -620,6 +620,19 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Removal boundary: role-content removal propagation depends on setting/enabled role and retained requirements; not a generic last-reference or duplicate-path cleanup rule.
 - Scope: one account/source and standing access; no universal direct-entitlement multiple-account routing, nested role model, private scheduling or atomic transaction inferred.
 
+### ROL-003 membership criteria and identity lists
+
+- Membership selector: configured recipient basis; Standard Criteria and Identity List are alternatives, not an assumed combined criteria-plus-exceptions mechanism.
+- Criterion input: mapped identity field, supported source-account field or exact source entitlement. Same-named identity/account attributes can differ; builder supports string/boolean fields and excludes account description/ID/name designations.
+- Group semantics: AND within groups gives OR between groups; OR within gives AND between. Main two complete department/job/working triples preserve pairs, unlike independent department/job alternatives.
+- Within-row alternatives: multiple Equals values use OR; AND between rows still requires that complete row and other conditions. Not multiple simultaneous scalar job values.
+- Operation semantics: Equals versus Contains changes membership; case-insensitive Value comparison does not imply trimming/normalization or case-sensitive business separation. No universal missing/negative/null result inferred.
+- Lifecycle input: criterion uses technical name working, not display CurrentlyEmployed; placing it only in one OR branch does not guard the other.
+- Identity List: explicit ISC identity references drive automatic assignment when applied; not native account/group membership, one-time access request or hidden former criteria. Maintenance/expiry procedures must be agreed, not assumed automatic.
+- Current input versus source approval: producer value, collected source account and applied identity field differ; trace mapping/application rather than broadening conditions to mask stale data.
+- Assignment/delivery: match or list selection, applied role association, reported source operation and native task differ. Main Readers delivered/Coordinator rejected does not make valid criteria wrong.
+- Ending requirement: criteria/list assignment changes differ from shared role-content edits, request revocation and account deletion; retained roles and actual removals need evidence.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

@@ -4612,6 +4612,52 @@ Scope: standard role, standing access, supported Provisioning, one correctly cor
 - No learner-body source/course links, citations, method announcements or em dashes. No actual tenant/API/source/aggregation/processing/provisioning/profile/role/list/request/approval/credential/license/native permission or target operation performed.
 - Prior86lessons and all previous assets/templates/tests/specifications/three guides preserved. ROL-003 remains planned only. Author review/deployment do not replace beginner validation or formal publication approval.
 
+## ROL-003
+
+- Current lesson: [ROL-003](../lessons/ROL-003_Membership_Criteria_and_Explicit_Membership.md), revision 1.0.
+- Documentation verification: October 24, 2026; documentation-based author review only.
+- No actual tenant action, beginner read-through or formal publication approval performed.
+
+### Official source map
+
+| Primary source | Claims supported and limits |
+|---|---|
+| [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html) | Standard Criteria versus Identity List; identity/account/entitlement inputs, string/boolean support and excluded account description/ID/name, exact/source context, Equals multiple-value OR, case-insensitive Value field, AND-within/OR-between and reverse combination, technical lifecycle name and saved/enabled/applied distinctions. |
+| [RoleMembershipSelector model](https://developer.sailpoint.com/docs/tools/sdk/go/roles/models/role-membership-selector/) | Type, criteria and identities are distinct fields; IDENTITY_LIST membership exclusive to specified identities. No presumed hidden conjunction with former standard criteria or combined exception selector. No SDK/API executed. |
+| [Selector type model](https://developer.sailpoint.com/docs/tools/sdk/go/roles/models/role-membership-selector-type/) | Supported standard and identity-list selector alternatives; lesson stays with standard role configuration, not IIQ identity-selector scripts or unsupported extra modes. |
+| [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html) | Mapped identity attributes, producer/source/current identity differences; correct provenance/application rather than broadening comparison to hide stale data. |
+| [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html) | Collection of account values distinct from applied identity field/evaluation and native write. No single universal aggregation-to-delivery schedule asserted. |
+| [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html) | Relevant evaluation applies access-model changes; list-page role/profile/application configurations processed together, selected versus broad scope and separate downstream results. |
+| [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html) | Membership/criteria/list assignment removal differs from content-removal propagation; retained role requirements and native accounts need separate assessment. No last-reference or guaranteed removal result. |
+| [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html) | Account/access fulfillment through supported automatic/manual path; selected assignment is not full delivered access. |
+| [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html) | Exact source/account/operation/result and native evidence for partial Readers success/Coordinators permission rejection; no universal retry or fixed completion time. |
+| [Managing role/profile requests](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html) | Requested role is a separate applicable authorization/assignment route; approval does not make automatic criterion comparisons true. Main direct role requests off. |
+
+All group expressions and test rows are fictional business policy, not platform defaults. Main policy is (Operations AND DISPATCH-DESK AND working) OR (CustomerCare AND RETURNS-DESK AND working), one within-group AND setting and outer OR. The independent department/job alternative lists are intentionally broader. Both branches explicitly repeat state restriction.
+
+Supported type/input rules are scoped to the documented standard builder. No assumption of trimming, generic normalization, case-sensitive values, arbitrary arrays/dates/numbers or universal missing/negative/null operator semantics. Positive missing-code case lacks established eligibility; exact operator behavior must be tested for real unknown values. No multi-account matching/cross-account union algorithm asserted.
+
+### Assessment map
+
+- Case 1 tests complete alternatives versus pooled partial comparisons. Known Operations/RETURNS/working fails each approved pair; cannot combine partial matches. Expected nonmembership only by this expression, not a global assignment claim.
+- Case 2 tests branch guarding. CustomerCare/RETURNS/prehire passes the deliberately shortened Group B when working is omitted there. Correct condition placement before application; existing Group A does not guard B.
+- Case 3 tests OR within a multi-value Equals row versus AND between rows. Approved Operations/DISPATCH-COVER/working passes revised Group A; both job strings need not coexist in one scalar field.
+- Case 4 tests comparison operation: Contains accepts the trainee suffix, contradicting supplied policy. Fix approved comparison and population, not correct producer data.
+- Case 5 tests missing evidence. Trace approved source/mapping/application; no qualifying fallback or generic null-negative inference is acceptable without policy and verification.
+- Case 6 tests explicit-list maintenance. Changed department does not delete the list entry or secretly run old criteria. Review exact identity/list, governing requirement and downstream outcome; other platform/lifecycle controls remain separate.
+- Case 7 tests record category/provenance: selected current identity Finance is not source account Operations. Evidence is mapping/current selected field; changing category changes the policy input.
+- Case 8 tests valid membership versus partial source failure: match/assignment/Readers exist, Coordinator rejected; inspect authorized source correction/result/native North update rather than editing valid selection.
+- Transfer preserves Research/LAB-TRAINER and Manufacturing/FLOOR-TRAINER pairs plus working. Cross-pairs/nonworking/missing inputs and explicit-list identity/owner/maintenance review are required. Different designs acceptable only if they implement the approved population and establish actual delivery.
+- Author's logical trace checks use supplied known-value combinations only, not a tenant emulation or a claim about runtime null evaluation. Learner validation remains pending.
+
+### Consistency and presentation
+
+Devi120303/dl-120303 North account, correctly correlated/enabled/sign-in. R-1203/DispatchLane coordination/ReadersDL8301+CoordinatorsDL8302 requiring reader, standard/standing/supportedProvisioning, enabled/nonrequestable/no other grant/LCS access. Lifecycle displayCurrentlyEmployed/technicalworking. MainDeviOperation/DISPATCH-DESK/working matches A; independent Identity List includesDevi+oneother. UTC12:00applied/currentA,12:05assignment,12:10Readerssuccess/Coordinatorreject,12:15native Northreadyes/update no. All identifiers/rights/observations are teaching fiction.
+
+Two diagrams match [complete alternatives](../assets/ROL-003_complete_group_matches_and_alternatives.txt) and [selector/application/delivery](../assets/ROL-003_selector_methods_assignment_and_delivery.txt), maximum37/39columns; branches indicate logic/alternatives/dependencies, not private engine order. Two two-column tables, eight Facts/Reasoning cases and training transfer stay inline. No learner-body source/course links, citations, method announcements or em dashes.
+
+No actual tenant/API/source/mapping/aggregation/processing/provisioning/role/list/request/approval/credential/native permission or target operation performed. Preserve prior87lessons, all old assets/templates/tests/specifications/three guides. ROL-004 planned only; documentation review and deployment do not replace learner validation or formal publication approval.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.
