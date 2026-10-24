@@ -1,0 +1,20 @@
+Path A: nested membership route
+  rd-100404
+      | direct member of
+      v
+  G-8401 Support Team
+      | group is a member of
+      v
+  G-8402 Report Readers
+      | application permits
+      v
+  Read West reports
+
+Path B: separate direct route
+  rd-100404
+      | direct member of
+      v
+  G-8403 Exception Readers
+      | application permits
+      v
+  Read West reports

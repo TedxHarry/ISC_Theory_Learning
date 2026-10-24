@@ -4006,6 +4006,61 @@ Official cloud documentation may use Identity Services or Human Fabric names; co
 
 Author review checked first-use meanings, independent context, supplied completeness, set/pair/identity arithmetic, UTC consistency, missing-evidence reasoning, account selection, supported conditional boundaries and readable exact diagrams. Real beginner read-through, teach-back and unfamiliar-example validation remain pending.
 
+## ENT-004
+
+Revision 1.0. Documentation checked October 24, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi employee100404, correctly associated ReportDesk Production accountrd-100404. Native initial direct memberships G-8401SupportTeam and G-8403ExceptionReaders; no directG-8402ReportReaders.
+- Native G-8401 is a member of G-8402. Fictional group field parentGroups onG-8401 lists containingG-8402. Exact field and direction supplied as contract, not universal ISC names, UI parent/child semantics or actual connector payload.
+- Owner-supplied permission rule: reachableG-8402 (direct or supportednested) OR directG-8403 permitsreading, AND enabledaccount/successfulsign-in/businessUnitWest/selectedWestreport. Neither group permitsediting; Exceptiondoesnotbypassregion. No other grants/restrictions/activation requirements in the selected main policy.
+- Supported sourceaccountgroups is direct-only/entitlementmarked/multiplevalues/Typegroups; group schema groupKeyID/labelName and appropriate hierarchy interpretation supplied. No physicaldatabase or ISC universal expansion/revocation behavior claimed.
+- Approved operation removesrd-100404 fromG-8401; currentnative evidence confirmsabsence, G-8403retained, sharedG-8401-toG-8402 unchanged, othermembers unaffected by selectedaccountremoval. FreshWestread remainsallowed throughG-8403. Selectedmembershipsuccess differsfrombroadercapabilityremoval.
+- Every supplied allow/deny result is freshauthorization using statedcurrentrelationships, not stale signed-insession. No timestamp/latency, automatictokenrefresh, cacheexpiry or sessioninvalidating operation invented.
+- Independent table variants bothgroups/eachgroup/neitherandnodirectG-8402, Eastresource and editaction; accountenabled/sign-inverified/noothergrants. Independent cases cover indirectonly, retainedsecondgrant, direct-onlypolicy, reversedmembership, sharededgeimpact, expandedlist, omittedhierarchy and resourceboundary.
+- Transfer doc-551 belongsProjectReviewers nestedinDocumentReaders and hasseparatenative-document-readerrole; ownerconfirmsbothsupportedroutes/selectedprojectconditions/noothergrants. VerifiedProjectReviewersremoval leavesnative-rolepermission. Alternative roleabsent/direct-onlyreading/nodirectDocumentReaders doesnotauthorize. Native roleexplicitlynotISCrole.
+- No actual tenant/API/source/schema/aggregation/provisioning/application group edit/nativepermission/session or target operation performed.
+
+### Official sources and claim mapping
+
+1. [Managing entitlements](https://documentation.sailpoint.com/saas/help/access/entitlements.html), Representing Nested Entitlements and account-target detail: hierarchical access-object relationships supported where applicable; configuration is not an application authorization proof. Mapped to conditional representation and exact selectedrelationship/removal boundaries. No automatic expansion, write capability or allpathsrevocation guarantee.
+2. [Creating and managing entitlement types](https://documentation.sailpoint.com/saas/help/loading_entitlements/entitlement_types.html), Linking Multiple Entitlement Types and Connecting Account Data: linked schema references can represent relationships between supported access types. Mapped to sourcecapability/schema support and explicitaccountType. DoesnotprescribeanestedgroupJSONmodel or importedIdentityIQalgorithm.
+3. [Schema model, official Angular SDK](https://developer.sailpoint.com/docs/tools/sdk/angular/sources/models/schema/): hierarchyAttribute names attribute representing other hierarchyobjects; identityAttribute/displayAttribute and source-supported features distinguish interpretation from arbitrarynewfield. Mapped to hierarchysettingmeaning; no universal parentGroupsname/direction or unsupportedfeaturetoggle recipe.
+4. [Loading entitlement data](https://documentation.sailpoint.com/saas/help/loading_entitlements/index.html): account accessvalues and separateobjectdetails/relationships collection. Mapped to representationlane and incompletecollection evidence, not a claim reading relationships performs native writes.
+5. [Managing source account schemas](https://documentation.sailpoint.com/saas/help/accounts/schema.html): supported entitlement attributes and matching identifiers link memberships with objectdetails. Mapped to groupKey/groupvalues/nativecontext. groupssame-name and relatedType supplied; neither finding friendlylabels nor matchingpersonID establishes hierarchy.
+6. [Manage users and groups assignment to an application, Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/assign-user-or-group-access-portal): enterprise-app group assignment doesnotcascade to nestedgroups. Mapped to precisely scoped realcounterexample. Not generalized to every Microsoftresource/groupclaim/provisioningmechanism or to fictionalReportDesk.
+7. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): supported external account/accesschanges. Mapped to requirement/attempt/nativeoutcome distinction and account-membership versus sharedrelationship operation scope. No actual grant/revoke or instruction to submit deletion.
+8. [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html) and [Managing roles](https://documentation.sailpoint.com/saas/help/access/roles.html): profile/sourcebundle and ISC access-model roles. Mapped to distinction between accessrequirements and native group nesting. No sharedaccessdeprovisioning algorithm or guaranteed hierarchy-driven role change asserted.
+
+Real Entra limitation is current official documentation; ReportDesk expansion, policy, outcomes and integration contract are expressly fictional. No IdentityIQ code/semantics imported. Official cloud pages may use Identity Services/Human Fabric names; course retains ISC. Learner body has no source citations or external/course links.
+
+### Scope and rendering boundaries
+
+- Primary lesson teaches direct/nested/transitive membership and inherited permission accepted by an application, not resource-ACL inheritance, protocol claims, connector engineering or full access-removal orchestration. Supporting session caveat asks for evidence, not timing assumptions.
+- Two exact editable diagrams match assets/ENT-004_nested_and_independent_access_paths.txt (maximum31columns) and assets/ENT-004_collection_and_authorization_boundaries.txt (maximum38columns). First membership arrows point member-to-containinggroup; permission arrows explicitlyusefictionalpolicy, withWest/enabled/sign-in conditions in nearby prose. Second separates evidence lanes, not enginejob ordering.
+- Two two-column tables describe application rules and independent predicted outcomes. Eight cases supply Facts/Reasoning; document-readerrole transfer changes objectkind/policy without requiring priorstory.
+- Directgroups list is explicitlydefined, not assumedforallconnectors. Expandedmembership is not proof of directnativegrant. Parent/childdirection is verifiedbeforeusinglabels; no reversepropagation invented.
+- SelectedaccountG-8401removal is verified; G-8403remaining explainsmainresult. SharedG-8401-toG-8402 edit affectsothermembers; legitimateotherpermissions and authorization reviewedbeforefurtherchange. No unapproved broad removal or convenienceflattening prescribed.
+- MissingISC hierarchy doesnotremove confirmednativeedge. Historicalview/policy/session evidence cannot automatically provecurrentnativeabsence or a new grant. No universal delay, token/cache behavior or total-capability lossguarantee.
+- Preserve prior75lessons, all assets/referenceaids, templates/CSS/tests/specification byte-equivalent. ENT-005 remains planned without a stub. Workingedition has76lessons/10modules.
+
+### Assessment and acceptable alternatives
+
+| Item | Understanding tested | Misconception or unsupported alternative rejected |
+|---|---|---|
+| Case1 | Nestedroute satisfies statedpolicy without directG-8402 | Addredundantdirectmembership because directReaders absent |
+| Case2 | Confirmedselectedremoval plus independentgrant | Remainingread provesfailedG-8401operation or allaccessremoval complete |
+| Case3 | Direct-onlyapplication rejects indirectroute | Hierarchy alone provesauthorization/provisioningfailure |
+| Case4 | Membershipdirection doesnotreverse | G-8402membership impliesG-8401membership |
+| Case5 | Sharedgroupedge versus selectedaccountedge | Person'sticket isolates sharedrelationshipchange |
+| Case6 | Expandedread versus native directgrant | Displayeditem provesseparately writable directmembership |
+| Case7 | Representationgap versus confirmednativepath | MissingISCedge disablesnativepolicy or requiresnewgrant |
+| Case8 | Groupgrant OR stillsubjectto resourceAND | Fixcorrectaggregation to bypassWestrestriction |
+| Transfer | Separate native role persists after selectedgroupremoval; changed direct-onlypolicy changesanswer | Everyreadpersistence is failedremoval; nestedpath alwaysworks; native role equals ISC role |
+
+Author review checked first-use meanings, independent context, direction/policy/OR-AND consistency, target and resource specificity, supplied freshchecks, selective/sharedchange consequences, conditional representation and exact readable diagrams. Real beginner read-through, teach-back and unfamiliar-example validation remain pending.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

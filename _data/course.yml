@@ -576,3 +576,10 @@ lessons:
     source: "lessons/ENT-003_Account_Membership_Information_and_the_Entitlement_Catalog.md"
     url: "/lessons/ENT-003_Account_Membership_Information_and_the_Entitlement_Catalog.html"
     description: "Reconcile catalog objects, account memberships and identity holders; investigate independent collection freshness, missing detail and incomplete evidence."
+  - id: ENT-004
+    module: entitlements
+    placement: "Module 10.4"
+    title: "The membership was removed. Why does access still work?"
+    source: "lessons/ENT-004_Direct_Membership_Inherited_Access_and_Application_Interpretation.md"
+    url: "/lessons/ENT-004_Direct_Membership_Inherited_Access_and_Application_Interpretation.html"
+    description: "Trace direct and nested grant paths, application-specific permission rules and represented hierarchy; distinguish selected membership removal from eliminating a capability."

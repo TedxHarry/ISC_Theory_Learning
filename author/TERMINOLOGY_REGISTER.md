@@ -462,6 +462,17 @@ A lesson explains each necessary term where it becomes useful. Use the concrete 
 - Negative membership evidence versus incomplete read: missing field/page/type/account coverage is not a complete empty relationship. Direct-membership absence alone does not establish no effective application permission.
 - Source catalog versus request availability: discovery/holder/requestable configuration are separate. Unused access is not automatically invalid, requestable or authorized for a new recipient.
 
+### ENT-004 direct and inherited access boundaries
+
+- Direct membership: explicit account-to-group relation; nested membership: group-to-group relation; transitive membership follows supported chains. Inherited access here is permission accepted by application through those indirect relationships, not copied direct memberships.
+- Direction: G-8401 is member of G-8402 does not imply everyG-8402member belongsG-8401. Containing/contained lists and parent/child labels require actual source semantics.
+- Alternative grants and conditions: ReportDesk accepts reachableG-8402 OR directG-8403, with enabled/sign-in/West restriction stillrequired. This is fictional application policy, not ISC's universal permission-combining engine.
+- Representation versus enforcement: supported ISC entitlement hierarchy and hierarchyAttribute describe represented references; collection, local metadata and a diagram do not create native nesting or force an application to honor it.
+- Direct-only versus expanded read: a collected list may distinguish or combine direct/indirect memberships according to its contract; displayed inherited item is not proof of a separate writable direct relationship.
+- Selected membership removal versus complete capability removal: removing rd-100404-toG-8401 leaves G-8403 and read capability. Removing sharedG-8401-toG-8402 is a different change affecting other members.
+- Access-model requirement versus native relationship: ISC role/access profile requirements are not source group nesting. A native edge edit does not prove every ISC requirement removed.
+- Fresh enforcement evidence: verify account/action/resource and relationship/policy state consumed by application; old sessions or missing hierarchy data cannot be silently treated as newgrant proof or native absence. Main checks expresslyfresh.
+
 ## Source anchors
 
 The lesson-specific mappings and check dates are in [reference records](REFERENCE_RECORDS.md). The core anchors are [identities](https://documentation.sailpoint.com/saas/help/identities/index.html), [sources](https://documentation.sailpoint.com/saas/help/sources/index.html), [correlation](https://documentation.sailpoint.com/saas/help/accounts/correlation.html), [access objects](https://documentation.sailpoint.com/saas/help/access/index.html), [provisioning](https://documentation.sailpoint.com/saas/help/provisioning/index.html), [identity processing](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html), [certifications](https://documentation.sailpoint.com/saas/help/certs/understanding_certifications.html), and [OWASP authorization guidance](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html).

@@ -1,0 +1,16 @@
+Collection evidence
+  Native account + group records
+        |
+        | supported reads and mapping
+        v
+  ISC membership + hierarchy view
+
+Authorization evidence
+  Account used + current relationships
+        |
+        | ReportDesk permission policy
+        v
+  Action/resource allowed or denied
+
+A represented edge is not a new grant.
+A read is not a permission change.
