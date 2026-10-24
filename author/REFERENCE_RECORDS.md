@@ -3781,6 +3781,64 @@ Current official cloud documentation governs claims; some pages use Human Fabric
 - Transfer: tests simultaneous oldview and realfailedoperation. VerifiedTerminated plusoldSearch doesnot negate permissionfailed/freshenabledtarget; approvedurgenthandling required with separate recoveryevidence. Accept processspecificescalation/unknownrepairoutcome; reject waitingforSearchasdisable. Sources1,3-4,9,11.
 - Author review checks independentDevi facts, first-use meanings, configuredlogic/inputs, UTC/timeline consistency, scope/status distinctions, diagrams/exercises and mentor narration. No beginner learner or formalpublication test performed.
 
+## PRC-008
+
+Revision 1.0. Documentation checked October 23, 2026. Documentation-based author review completed; tenant execution, beginner validation and formal publication approval not performed.
+
+### Independent fictional evidence
+
+- Devi98008, teaching I-98008 (not actual ISC object ID), valid Active Employees identity with correctly associated authoritative PeopleRecord Production pp-98008. Businessapprovedlocationinput is accountcurrentOffice; legacyOffice is historical. Current workerTypeEMP independently mapped directly.
+- Enabled Bristol Workspace role requires identitylocationBristol AND workerTypeEMP; enabled Bristol Tools accessprofile contains ordinary standingOfficeDirectoryBR-WORK, no JITactivation. Two existingcorrectassociatedaccounts: od-98008/typePrimary, oda-98008/typeAdmin. Automatic multiple-account criteria typeEqualsPrimary uniquely selectsod-98008. Supportedgroupadd/provisioningenabled; bothinitiallylackgroup.
+- No accountcreation, fieldsync or oldofficecleanup. Reviewed changes limited to approved sharedmapping correction and connectionpermission recovery. Currentcase not wholemover acceptance; widerprofile impact/inputcoverage/applicationvalidation trackedseparately.
+- October23 UTC18:00producerapprovedcurrentOfficeBristol/legacyLeeds;18:05bothcollected.18:06selectedProcessIdentitycomplete/currentlocationLeeds/workerTypeEMP/norole. Actual savedlocationmap selectslegacyOffice. Selectedmanual path deliberatelysupplied; no guessed eventtrigger from changes to an otherwiseunmapped accountfield.
+- Approvedmappingcorrected/saved18:10;18:11PreviewBristol butcurrentLeeds. Authorizedselectedstart18:12;18:15completion/currentBristolEMP/roleverified.18:16SearchstillLeeds;18:17exactBR-WORKadd onprimary insufficientpermission;18:18freshbothaccountsabsent.18:24SearchBristol. Approvedpermission/recovery process yieldsspecificgroupaddcomplete18:34 andfreshprimarypresent/adminabsent18:35, role retained.
+- No timingguarantee or universalbackend sequence inferred. Completion ofselectedcase doesnotprovepopulationapplication, independentoldofficecleanup or everyapplicationpermission.
+- Eight independent variants cover missingcollectedinput, inappropriatelegacyselection, Preview-only, falseANDconditionCONT, longtermexcludedfrombroadAPaction, confirmedpermissionfailure, emptysearch/unknownoutcome, and groupwrongAdminaccount.
+- Manager transfer uses reference71001-to-nonnull71002, one supplyingprofile/source, correctManagerName/sourcecorrelationsetup, existingresolved71001 butnoidentitycandidateidentificationNumber71002. Selectedprocessingcomplete/oldmanagerretained is consistent with documented unmatchedbehavior. No inventedmanager creation, nullclearing fornonnull or existingapprovalreroute guarantee.
+- No actual tenant/API/source/profile/mapping/aggregation/processing/provisioning/permission change/Search update or target operation performed. Local comparisons validate fictional consistency, not tenant execution.
+
+### Official sources and claim mapping
+
+1. [Processing identity data](https://documentation.sailpoint.com/saas/help/setup/identity_processing.html): selectedProcessIdentity and broaderprofile/list scope, actualreevaluation versuscorrectresult, separateprovisioningsuccess and Search propagation, queued/running visibility. Mapped to initial18:06manualevidence, corrected18:12application, sharedscope and missingboundary questions. No automatictrigger guaranteed for unmappedcurrentOffice change or finegrainedprivate log invented.
+2. [Creating identity profiles](https://documentation.sailpoint.com/saas/help/setup/identity_profiles.html): selectedsource/field mappings and custom/standardidentityvalues; Save/Preview/application distinctions and sharedprofile configuration. Mapped to currentOfficeversuslegacyOffice, no unnecessarytransform, correctPreview/currentLeeds and broaderinputcoverage review.
+3. [Loading account data](https://documentation.sailpoint.com/saas/help/accounts/loading_data.html): collection populatesexactaccountdata, aggregation scope/history and viewfreshness. Mapped to producer-versuscollected evidence, case1 and oldreport limitations. No globalaggregationstatus substitutedfor selectedaccount content.
+4. [Automating role assignment](https://documentation.sailpoint.com/saas/help/provisioning/role_assignment.html): enabledrolecriteria and AND logic, identityvalue-based qualification and separateaccess delivery. Mapped to BristolAND_EMP versusCONT variation, currentrole and newBR-WORK requirement.
+5. [Managing access profiles](https://documentation.sailpoint.com/saas/help/access/access-profiles.html), Multiple Account Options: source-specific bundles, standingaccess, automaticrole/lifecycle accountselection, unique accountmatch. Mapped to typePrimary selectingod-98008 amongtwo; not an accessrequest account-selection claim, not a rule appliedtoonlyoneaccount. No claim rolegrant must deliver toboth accounts.
+6. [Provisioning overview](https://documentation.sailpoint.com/saas/help/provisioning/index.html): connectioncapability/configuration and actualexternalchange; error-specificretry. Mapped to supportedoperation versusmissingpermission, approvedspecificrecovery and no universalreprocessing retry. Fictionalpermissionmessage not classified as an actualconnectorretrycode.
+7. [Monitoring provisioning](https://documentation.sailpoint.com/saas/help/provisioning/tracking.html): specificaccount/source/action/error inspection and result evidence. Mapped to18:17failedattempt,18:18unmetrequirement,18:34operationcomplete and18:35fresh target. Missingsearchresult is notequivalentto failedattempt.
+8. [Search overview](https://documentation.sailpoint.com/saas/help/search/index.html): representations, filters and operation-specific status/error evidence. Mapped to independentview investigation, actualquerycoverage and unknown-case reasoning; no universalfixedvisibility delay or failurefromnoresult.
+9. [Identity states overview](https://documentation.sailpoint.com/saas/help/provisioning/identity_states.html): broadrole/AP/application action excludeslongterm; profile and selectedprocessing includeallthree. Mapped to case5 only. MainActive doesnotneed a stateworkaround.
+10. [Configuring manager correlation](https://documentation.sailpoint.com/saas/help/sources/manager_correlation.html): ManagerName plus sourceconfiguration, matching employeereference to manageridentityvalue, nonnullunmatchedretainsexisting versusnullclearing. Mapped to supportingdefinition and complete transfer. One-sourceprofile assumption explicit.
+11. [Managing requests for roles and access profiles](https://documentation.sailpoint.com/saas/help/requests/config_ap_roles.html): manager-dependentapproval configuredforrequest. Supporting separatealreadycreatedapproval handling intransfer; no claim currentrelationshipautomaticallyreroutes work or allapprovalsareimmutable.
+
+Current official cloud documentation governs claims, including pages using Human Fabric/Identity Services names; course retains ISC. No IdentityIQ implementation imported. Authorreference availability is not tenant testing.
+
+### Scope and rendering boundaries
+
+- Integrates Module9 processing investigation rather than replacing source-specificdeepdives, fullprojecttemplates, fullmover/offboarding orchestration or hands-on repairprocedures. Businessexpectation, evidence, hypothesis and cause-basedcorrection remain distinct.
+- Initialselectedprocessing is alreadyverified; wrongmap explains unchangedvalue. No needto editapproveddata or repeatunchangedlogic to manufacture result. Laterapplication aftersavedconfig is explicitlyneeded/verified for currentcase.
+- Sharedconfiguration notisolatedbyselectedscope; appropriateowners/populationreview supplied, widerapplicationvalidation separatelytracked. No assertiononeDeviresult provesallEmployeescorrect.
+- WholeANDcondition verifiedbeforecallingrolequalified; falseCONT variationcorrectlydoesnotqualify. Twoaccounts/uniquePrimary criterion makes deliverytargetexplicit. WrongAdmingrant is not primarysuccess and no unapprovedcopy/removal prescribed.
+- Confirmedfailedattempt uses operationerror; freshabsence means unmetrequirement without determining whetherfailed/waiting/neverinitiated. Noactivityinthefirstsearch remains unknownevidence, not invented error.
+- CurrentidentityBristolverifiedbeforeoldSearchlabel calledbehind. LaterSearchupdate doesnot repairpermissionfailure; approvedrecovery andspecificfreshprimaryverification establishdelivery separately.
+- Editable diagrams ../assets/PRC-008_collected_inputs_and_selected_mapping.txt and ../assets/PRC-008_role_requirement_account_selection_and_delivery.txt exactly match inline blocks; maximum widths42 and41. Dependencies/selection/observations, not universal executionorder or SLA.
+- Two two-column tables, eight workedcases and manager transfer retained. First-use terms/context supplied; no learnerbody source/course links, emdash, forcedslang, teaching-method announcements or realtenantclaims.
+- All eight Module9 lessons nowauthored, not learnervalidated. Preserve prior71lessons/assets/site/templates/tests/specs and bothreferenceaids. ENT-001 planned only; no tenth navigationmodule untilfirstcompleteModule10lesson.
+- Verify72live routes/native9module defaults/current links/fullorderedarticle and exact accessible diagram/table rendering. Authorreview and workingeditiondeployment not formalpublicationapproval.
+
+### Assessment mapping
+
+- Case1 tests producer/collected/selectedinput. Correctmap/currentISCLeeds despiteproducerBristol callsfor collection/scope/freshness inspection, not incorrectmapcompensation. Accept exactaccountcause investigation; reject processorproducingunavailableBristol. Sources1-3.
+- Case2 tests executed versusbusinesscorrect. CurrentBristol/legacyLeeds maplegacy yieldsLeeds afterverifiedprocess; fixreviewedinstruction, not denyexecution. Accept configuredversusapproveddistinction; reject repetitionasrepair. Sources1-2.
+- Case3 tests Previewversusapplied. Savedcorrect/PreviewBristol/currentLeeds/noapplication cannotproverole/targetcompletion. Accept supportedauthorizedapplication/currentchecks; reject previewassuccessreceipt. Sources1-2,4,7.
+- Case4 tests AND. Bristol+CONTfailsBristolAND_EMP; missingrolecanbecorrect. Accept approvedpolicy/datareview ifrequirementdiffers; reject removingemployeeconditiontoforcegrant. Source4.
+- Case5 tests scope. LongtermexcludedfrombroadAPaction, selected/profilealternativesdiffer; actualauthorization/affectedresultsneeded. Accept properpath withoutstateflipping; reject allApplyChangesidenticalscope. Sources1,9.
+- Case6 tests deliveryfailure. CorrectcurrentBristolEMP/role plus exactpermissionerror requires specificoperationrecovery/freshtarget. Accept approvedpermissionreview; reject transformchange or Searchwaitasrepair. Sources4-8.
+- Case7 tests evidencegap. Assignedrole/emptysearch/no freshtarget leavescauseunknown. Accept query/time/source/account/selection/existingaccess checks; reject failureorabsencedeclarationfromoneview. Sources5,7-8.
+- Case8 tests exactaccountrequirement. Adminhasgroup/primaryabsent withPrimaryselection leavesintendedrequirementunmet andAdminoriginunexplained. Accept authorization-awareinvestigation; reject indiscriminatecopy/delete. Sources5-7.
+- Transfer tests managercandidateavailability and unmatchedretention. Correctnonnull71002reference/no candidate/current71001 afterprocessing is documentedretention; verifyapprovedreference/candidatepreparation thenactualrelationship andseparateexistingwork. Accept actualdata/candidate correction basedonevidence; reject guessedmanager creation, clearingonunmatchednonnull or automaticapprovalreroute. Sources1-2,10-11.
+- Authorreview checks independentfacts, first-useconcepts, currentversuslegacyselection, authorizedscope, twoaccountidentifiers/criteria, allUTCobservations, evidencegap distinctions, exactdiagrams/exercises and mentorvoice. No beginnerreadthrough or formalpublication test performed.
+
 ## ARC-005
 
 - Lesson: [ARC-005](../lessons/ARC-005_Connection_Dependencies_and_Operation_Support.md), revision 1.0.

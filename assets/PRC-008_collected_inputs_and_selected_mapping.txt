@@ -1,0 +1,11 @@
+Collected account pp-98008
+  currentOffice: Bristol  (approved input)
+  legacyOffice: Leeds     (historical)
+
+Saved location mapping
+  selects legacyOffice -> identity Leeds
+
+Approved correction
+  selects currentOffice -> Bristol
+  Preview result is not application proof
+  Verify current identity after processing

@@ -546,3 +546,10 @@ lessons:
     source: "lessons/PRC-007_Ordering_Dependencies_Queued_Work_and_Visibility_Delays.md"
     url: "/lessons/PRC-007_Ordering_Dependencies_Queued_Work_and_Visibility_Delays.html"
     description: "Trace dependencies, queued work, applied identity results, target delivery and view freshness; read status fields in context and choose evidence-based next checks."
+  - id: PRC-008
+    module: processing
+    placement: "Module 9.8"
+    title: "The data changed. Where did the expected result stop?"
+    source: "lessons/PRC-008_Investigating_Changed_Data_Without_the_Expected_Result.md"
+    url: "/lessons/PRC-008_Investigating_Changed_Data_Without_the_Expected_Result.html"
+    description: "Investigate exact input, mapping, processing scope, role conditions and selected-account delivery; separate confirmed failures, missing evidence and delayed views."

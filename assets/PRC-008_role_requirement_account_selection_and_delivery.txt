@@ -1,0 +1,12 @@
+Bristol Workspace assigned
+  -> Bristol Tools access profile
+  -> OfficeDirectory group BR-WORK
+
+Automatic account selection: type Primary
+  od-98008  / Primary -> selected
+  oda-98008 / Admin   -> not selected
+
+18:17 selected-account add failed
+18:18 od-98008 checked: BR-WORK absent
+After approved delivery recovery
+18:35 od-98008 present; oda-98008 absent

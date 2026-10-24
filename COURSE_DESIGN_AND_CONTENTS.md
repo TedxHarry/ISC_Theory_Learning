@@ -257,7 +257,7 @@ Teach input-to-output reasoning before configuration syntax. [Transforms](https:
 - 9.5 [Reevaluating identity values, manager relationships, lifecycle access, and role assignments.](lessons/PRC-005_Reevaluating_Identity_Values_Manager_Relationships_Lifecycle_Access_and_Role_Assignments.md) **Authored:** PRC-005 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 9.6 [Identity states and participation in processing.](lessons/PRC-006_Identity_States_and_Participation_in_Processing.md) **Authored:** PRC-006 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 - 9.7 [Ordering, dependencies, queued work, and visibility delays.](lessons/PRC-007_Ordering_Dependencies_Queued_Work_and_Visibility_Delays.md) **Authored:** PRC-007 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
-- 9.8 Investigating "the data changed, but the expected result did not."
+- 9.8 [Investigating "the data changed, but the expected result did not."](lessons/PRC-008_Investigating_Changed_Data_Without_the_Expected_Result.md) **Authored:** PRC-008 revision 1.0; documentation-based author review complete, learner validation and formal approval pending.
 
 **Outcome:** Identify which process needs to occur and choose evidence showing whether it did.
 
